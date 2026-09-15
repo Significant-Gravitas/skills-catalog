@@ -38,6 +38,13 @@ frontmatter with `name`, `description` and optional `triggers`, then markdown.
 Re-running the script on a slug refreshes it from upstream HEAD and overwrites any
 hand edits, so keep those minimal or upstream them.
 
+## Checks
+
+`python tools/check.py` validates the catalog the way the platform seed will:
+slugs match folder and frontmatter names, categories are canonical, package files
+stay within the platform's caps, nothing is hidden, and no markdown links out of
+its skill folder. The `Check catalog` workflow runs it on every PR and push to `main`.
+
 ## Publishing
 
 Merging to `main` does not publish by itself. The platform seed pulls this repo and
