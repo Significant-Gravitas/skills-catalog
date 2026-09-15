@@ -1,0 +1,130 @@
+# Every entry becomes a platform-authored listing in the AutoGPT Platform
+# Skills marketplace. The seed reads this file plus skills/<slug>/.
+#
+#   slug                the listing slug, the folder name, and the SKILL.md name
+#   categories          marketplace categories shown on the card
+#   required_providers  integrations the instructions assume are connected
+#   source              "platform" for skills written here, or
+#                       owner/repo/path for a skill vendored with tools/vendor.py
+#   license             SPDX id of the upstream licence (vendored skills only)
+
+skills:
+  - slug: brand-voice-guide
+    categories: [content]
+    required_providers: []
+    source: platform
+
+  - slug: outreach-playbook
+    categories: [sales]
+    required_providers: [google]
+    source: platform
+
+  # coreyhaines31/marketingskills — MIT
+  - slug: cold-email
+    categories: [sales]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/cold-email
+    license: MIT
+
+  - slug: copywriting
+    categories: [content]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/copywriting
+    license: MIT
+
+  - slug: emails
+    categories: [marketing]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/emails
+    license: MIT
+
+  - slug: onboarding
+    categories: [marketing]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/onboarding
+    license: MIT
+
+  - slug: prospecting
+    categories: [sales]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/prospecting
+    license: MIT
+
+  - slug: sales-enablement
+    categories: [sales]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/sales-enablement
+    license: MIT
+
+  - slug: customer-research
+    categories: [marketing]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/customer-research
+    license: MIT
+
+  - slug: pricing
+    categories: [marketing]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/pricing
+    license: MIT
+
+  - slug: churn-prevention
+    categories: [marketing]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/churn-prevention
+    license: MIT
+
+  - slug: public-relations
+    categories: [marketing]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/public-relations
+    license: MIT
+
+  - slug: social
+    categories: [content]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/social
+    license: MIT
+
+  - slug: launch
+    categories: [marketing]
+    required_providers: []
+    source: coreyhaines31/marketingskills/skills/launch
+    license: MIT
+
+  # wondelai/skills — MIT
+  - slug: mom-test
+    categories: [research]
+    required_providers: []
+    source: wondelai/skills/mom-test
+    license: MIT
+
+  - slug: storybrand-messaging
+    categories: [content]
+    required_providers: []
+    source: wondelai/skills/storybrand-messaging
+    license: MIT
+
+  - slug: predictable-revenue
+    categories: [sales]
+    required_providers: []
+    source: wondelai/skills/predictable-revenue
+    license: MIT
+
+  - slug: negotiation
+    categories: [sales]
+    required_providers: []
+    source: wondelai/skills/negotiation
+    license: MIT
+
+  - slug: obviously-awesome
+    categories: [marketing]
+    required_providers: []
+    source: wondelai/skills/obviously-awesome
+    license: MIT
+
+  - slug: jobs-to-be-done
+    categories: [research]
+    required_providers: []
+    source: wondelai/skills/jobs-to-be-done
+    license: MIT
