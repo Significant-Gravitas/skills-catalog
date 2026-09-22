@@ -992,6 +992,16 @@ skills:
     required_providers: []
     source: platform
 
+  - slug: competitive-intelligence
+    categories: [marketing, research]
+    required_providers: [google, mcp_gong]
+    source: platform
+
+  - slug: commercial-launch-strategy
+    categories: [marketing]
+    required_providers: [google, mcp_linear]
+    source: platform
+
   - slug: compliance-and-regulated-support
     categories: [support, operations]
     required_providers: []
@@ -1030,6 +1040,11 @@ skills:
   - slug: design-the-partner-program
     categories: [sales, operations]
     required_providers: []
+    source: platform
+
+  - slug: developer-and-api-motion
+    categories: [marketing, development]
+    required_providers: [mcp_amplitude]
     source: platform
 
   - slug: discovery-and-qualification
@@ -1092,6 +1107,11 @@ skills:
     required_providers: []
     source: platform
 
+  - slug: field-enablement-content
+    categories: [sales, marketing]
+    required_providers: [google, mcp_gong]
+    source: platform
+
   - slug: finance-board-and-investor-reporting
     categories: [finance, content]
     required_providers: [google]
@@ -1110,6 +1130,16 @@ skills:
   - slug: govern-the-strategic-alliance
     categories: [sales, operations]
     required_providers: []
+    source: platform
+
+  - slug: gtm-planning-and-market-entry
+    categories: [marketing, sales]
+    required_providers: [google]
+    source: platform
+
+  - slug: gtm-performance-diagnostics
+    categories: [marketing, sales]
+    required_providers: [google, hubspot, mcp_amplitude]
     source: platform
 
   - slug: handle-a-reply
@@ -1135,6 +1165,11 @@ skills:
   - slug: hiring-pipeline-analytics
     categories: [operations]
     required_providers: []
+    source: platform
+
+  - slug: icp-and-segmentation
+    categories: [marketing, sales]
+    required_providers: [apollo, hubspot]
     source: platform
 
   - slug: industrial-pursuit-tender-handover
@@ -1262,6 +1297,11 @@ skills:
     required_providers: []
     source: platform
 
+  - slug: opportunity-sizing-and-business-case
+    categories: [marketing, finance]
+    required_providers: [apollo, google]
+    source: platform
+
   - slug: ops-automate-a-workflow
     categories: [operations]
     required_providers: []
@@ -1352,9 +1392,19 @@ skills:
     required_providers: []
     source: platform
 
+  - slug: positioning-and-messaging
+    categories: [marketing]
+    required_providers: [google, mcp_gong]
+    source: platform
+
   - slug: prep-the-partner-qbr
     categories: [sales, operations]
     required_providers: [google]
+    source: platform
+
+  - slug: pricing-and-packaging
+    categories: [marketing, finance]
+    required_providers: [google, stripe]
     source: platform
 
   - slug: product-ai-feature-scoping-and-evals
@@ -1502,6 +1552,11 @@ skills:
     required_providers: []
     source: platform
 
+  - slug: sales-marketing-alignment-and-sla
+    categories: [marketing, sales]
+    required_providers: [hubspot]
+    source: platform
+
   - slug: sales-ops-coverage-and-quota
     categories: [sales, operations, finance]
     required_providers: []
@@ -1627,6 +1682,11 @@ skills:
     required_providers: [google]
     source: platform
 
+  - slug: vertical-industry-plays
+    categories: [marketing, sales]
+    required_providers: []
+    source: platform
+
   - slug: vip-and-white-glove-care
     categories: [support, sales]
     required_providers: []
@@ -1656,3 +1716,8 @@ skills:
     categories: [operations, support]
     required_providers: []
     source: platform
+  - slug: zara-getting-started
+    categories: [marketing, sales]
+    required_providers: [apollo, google, hubspot, mcp_amplitude, mcp_gong, mcp_linear, slack, stripe]
+    source: platform
+
