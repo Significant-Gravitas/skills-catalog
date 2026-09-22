@@ -7,6 +7,8 @@
 #   source              "platform" for skills written here, or
 #                       owner/repo/path for a skill vendored with tools/vendor.py
 #   license             SPDX id of the upstream licence (vendored skills only)
+#   adapted_from        repos whose frameworks shaped a platform-written skill,
+#                       each with its licence; not a copy (see PROVENANCE.md)
 
 skills:
   - slug: brand-voice-guide
@@ -1001,6 +1003,8 @@ skills:
     categories: [marketing]
     required_providers: [google, mcp_linear]
     source: platform
+    adapted_from:
+      - {repo: hah23255/pm-claude-skills, license: MIT}
 
   - slug: compliance-and-regulated-support
     categories: [support, operations]
@@ -1396,6 +1400,8 @@ skills:
     categories: [marketing]
     required_providers: [google, mcp_gong]
     source: platform
+    adapted_from:
+      - {repo: LeadMagic/gtm-skills, license: MIT}
 
   - slug: prep-the-partner-qbr
     categories: [sales, operations]
@@ -1416,6 +1422,8 @@ skills:
     categories: [research]
     required_providers: []
     source: platform
+    adapted_from:
+      - {repo: hah23255/pm-claude-skills, license: MIT}
 
   - slug: product-exec-briefing
     categories: [operations, development]
@@ -1426,6 +1434,9 @@ skills:
     categories: [research, development]
     required_providers: []
     source: platform
+    adapted_from:
+      - {repo: robotijn/ctoc, license: PolyForm-Shield-1.0.0}
+      - {repo: ZiDuNet/clawith-claude, license: Apache-2.0}
 
   - slug: product-launch-plan
     categories: [marketing, operations]
@@ -1451,11 +1462,15 @@ skills:
     categories: [development, operations]
     required_providers: []
     source: platform
+    adapted_from:
+      - {repo: menkesu/awesome-pm-skills, license: MIT}
 
   - slug: product-strategy-and-bets
     categories: [research, development]
     required_providers: []
     source: platform
+    adapted_from:
+      - {repo: menkesu/awesome-pm-skills, license: MIT}
 
   - slug: quality-csat-and-coaching
     categories: [support, operations]
@@ -1556,6 +1571,8 @@ skills:
     categories: [marketing, sales]
     required_providers: [hubspot]
     source: platform
+    adapted_from:
+      - {repo: LeadMagic/gtm-skills, license: MIT}
 
   - slug: sales-ops-coverage-and-quota
     categories: [sales, operations, finance]
