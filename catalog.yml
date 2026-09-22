@@ -924,11 +924,6 @@ skills:
     required_providers: []
     source: platform
 
-  - slug: blake-getting-started
-    categories: [sales]
-    required_providers: [google, hubspot, mcp_gong, mcp_granola, notion, slack]
-    source: platform
-
   - slug: bpo-vendor-quality-ops
     categories: [support, operations]
     required_providers: []
@@ -1244,6 +1239,11 @@ skills:
   - slug: mass-recovery-and-bulk-comms
     categories: [support, operations]
     required_providers: []
+    source: platform
+
+  - slug: max-getting-started
+    categories: [sales]
+    required_providers: [google, hubspot, mcp_gong, mcp_granola, notion, slack]
     source: platform
 
   - slug: maya-getting-started

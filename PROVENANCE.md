@@ -164,7 +164,7 @@ Public articles and guides the web sweep cited are named inline in the notes bel
 - **`exec-engagement-and-sponsorship`** — No reuse note recorded by the build.
 - **`field-call-route-discipline`** — No reuse note recorded by the build.
 - **`find-the-decision-makers`** — No reuse note recorded by the build.
-- **`blake-getting-started`** — No reuse note recorded by the build.
+- **`max-getting-started`** (shipped for a day as `blake-getting-started`) — No reuse note recorded by the build.
 - **`handle-a-reply`** — No reuse note recorded by the build.
 - **`industrial-pursuit-tender-handover`** — No reuse note recorded by the build.
 - **`marketplace-partner-revenue-growth`** — No reuse note recorded by the build.
