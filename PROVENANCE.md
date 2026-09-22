@@ -1,9 +1,15 @@
 # Provenance of the platform-authored expert skills
-The skills bundled by the machine-built experts (Robin, Anika, Alex, Daniel, Sofia, Blake, Maya, James, Zara) were produced by the `muse-made-bots` build workflow: ten job-description researchers per role, a reuse hunt over the earlier packages, an adversarial review loop, and a web sweep for current practice. Each skill's build carried a reuse note naming what it adapted and from where. Those notes were dropped when the skills were converted to the platform format; this file keeps them.
+
+The skills bundled by the machine-built experts (Robin, Anika, Alex, Daniel, Sofia, Blake, Maya, James, Zara) were produced by the `muse-made-bots` build workflow: ten job-description researchers per role, a reuse hunt over the earlier packages, an adversarial review loop, and a web sweep for current practice. Each skill's build carried a reuse note naming what it adapted and from where. Those notes were dropped when the skills were converted to the platform format; this file keeps them. Where a skill was renamed in conversion, the note is listed under the catalog slug with the name it was built as.
+
 ## What this means for licensing
+
 Two kinds of donor appear below. `muse-made-bots/...` and `grok-bots/...` are earlier packages from the same in-house pipeline. Everything else is an external source the builder read for frameworks, benchmarks, or practice — open-source skill repos and public articles.
+
 On 2026-09-22 every in-repo skill (320 files) was scanned for shared 8-word sequences against all 27,845 markdown files in the external repos listed here. No skill shares 1% or more of its 8-grams with any donor, and no shared span reaches 12 words; the longest is nine, and those are stock formulas (the MEDDPICC letters, the "for [who], [product] is a [category] that [benefit]" positioning template). The external repos informed structure and framework names; their text was not copied, so no licence notice is owed. They are credited here anyway.
+
 ## External repositories cited
+
 | Repository | Licence |
 |---|---|
 | https://github.com/aviskaar/open-org | Apache-2.0 |
@@ -25,7 +31,7 @@ On 2026-09-22 every in-repo skill (320 files) was scanned for shared 8-word sequ
 
 Public articles and guides the web sweep cited are named inline in the notes below.
 
-## Robin — `customer-service-rep-v4`
+## Robin — built as `customer-service-rep-v4`
 
 - **`account-health-and-qbrs`** — No reuse note recorded by the build.
 - **`billing-refunds-and-exceptions`** — No reuse note recorded by the build.
@@ -62,7 +68,7 @@ Public articles and guides the web sweep cited are named inline in the notes bel
 - **`voice-of-customer-and-feedback`** — No reuse note recorded by the build.
 - **`workforce-and-capacity-planning`** — No reuse note recorded by the build.
 
-## Anika — `partner-manager-v4`
+## Anika — built as `partner-manager-v4`
 
 - **`assure-partner-led-delivery`** — No reuse note recorded by the build.
 - **`build-data-and-r-d-alliances`** — No reuse note recorded by the build.
@@ -71,45 +77,76 @@ Public articles and guides the web sweep cited are named inline in the notes bel
 - **`define-the-partner-icp`** — No reuse note recorded by the build.
 - **`design-the-partner-program`** — No reuse note recorded by the build.
 - **`drive-alliance-ma-and-strategic-investments`** — No reuse note recorded by the build.
+- **`partner-first-touch-outreach`** (built as `first-touch-outreach`) — No reuse note recorded by the build.
 - **`anika-getting-started`** — No reuse note recorded by the build.
 - **`govern-the-strategic-alliance`** — No reuse note recorded by the build.
+- **`handle-partner-conflict-and-churn`** (built as `handle-conflict-and-churn`) — No reuse note recorded by the build.
+- **`manage-partner-renewals-and-exits`** (built as `manage-renewals-exits-change-control`) — No reuse note recorded by the build.
+- **`map-the-partner-ecosystem`** (built as `map-the-ecosystem`) — No reuse note recorded by the build.
 - **`model-the-partnership-commercials`** — No reuse note recorded by the build.
+- **`onboard-and-enable-partners`** (built as `onboard-and-enable`) — No reuse note recorded by the build.
+- **`orchestrate-multi-party-partner-bids`** (built as `orchestrate-multi-party-and-bid-motions`) — No reuse note recorded by the build.
 - **`own-the-alliance-pnl`** — No reuse note recorded by the build.
 - **`plan-the-multi-year-partnership`** — No reuse note recorded by the build.
 - **`prep-the-partner-qbr`** — No reuse note recorded by the build.
+- **`run-brand-oem-and-supply-partnerships`** (built as `run-brand-oem-supply-portfolios`) — No reuse note recorded by the build.
+- **`run-creator-and-affiliate-partner-programs`** (built as `run-creator-and-affiliate-programs`) — No reuse note recorded by the build.
 - **`run-global-partner-executive-councils`** — No reuse note recorded by the build.
+- **`run-hyperscaler-marketplace-co-sell`** (built as `run-marketplace-co-sell`) — No reuse note recorded by the build.
 - **`run-partner-strategy-and-operations`** — No reuse note recorded by the build.
 - **`run-regulated-partnership-motions`** — No reuse note recorded by the build.
+- **`run-the-partner-co-sell-cadence`** (built as `run-the-co-sell-cadence`) — No reuse note recorded by the build.
 - **`run-the-partner-marketing-engine`** — No reuse note recorded by the build.
+- **`scale-the-partner-channel`** (built as `scale-the-channel`) — No reuse note recorded by the build.
 - **`scope-the-tech-partnership`** — No reuse note recorded by the build.
 - **`set-board-level-alliance-strategy`** — No reuse note recorded by the build.
 - **`source-and-qualify-partners`** — No reuse note recorded by the build.
+- **`source-partners-via-investor-ecosystems`** (built as `source-via-startup-vc-pe-ecosystems`) — No reuse note recorded by the build.
+- **`structure-the-partner-agreement`** (built as `structure-the-agreement`) — No reuse note recorded by the build.
 - **`track-partner-pipeline`** — No reuse note recorded by the build.
 
-## Alex — `product-manager`
+## Alex — built as `product-manager`
 
+- **`product-exec-briefing`** (built as `brief-the-room`) — Reuse: adoption/value/roadmap deck shape and every-number-sourced rule from grok-bots/ebr-value-deck-builder/skills/ebr-deck.md; KPI grade bands with forward commitments from muse-made-bots/joint-plan-builder/skills/qbr-prep.md; notes-only recap discipline from grok-bots/meeting-recap-deck/skills/build-the-recap-deck.md; exec narrative spine from financial-analyst board-and-investor-reporting.
+- **`product-experiment-design`** (built as `design-the-experiment`) — Reuse: bottleneck-belief design with precommitted upgrade/ambiguous/downgrade bands from grok-bots/product-idea-stress-test/skills/pist-experiment-designer.md; control/variant/sample/SRM/CUPED output shape from robotijn/ctoc experiment-designer; ICE plus guardrail framing from zidunet/clawith-claude.
 - **`alex-getting-started`** — Reuse: adapted from muse-made-bots/marketing-manager/skills/getting-started.md (connector check-first, prefs block, starter menu, routine offers, arc); PM questions and connectors swapped.
+- **`product-market-and-competitor-read`** (built as `map-the-market`) — Reuse: what-changed/so-what/quiet shape with sourced links from grok-bots/competitor-watch/skills/weekly-competitor-brief.md; pricing-table extraction with no-estimate rule from pricing-and-packaging-comparison.md; watch-list setup from build-the-watch-list.md.
+- **`product-roadmap-and-prioritization`** (built as `own-the-roadmap`) — Reuse: none — new skill. Corpus-wide grep found zero RICE/MoSCoW/Kano skills (raw-0 evidence); closest patterns (account-tiering weighted scoring, tune-the-decision-rubric backtest, score-and-qualify-leads tiers) score other domains and none covers backlog-to-roadmap with capacity check. Framework names follow awesome-pm-skills/prioritization-craft (MIT).
+- **`product-launch-plan`** (built as `plan-the-launch`) — Reuse: tiered launch plan, messaging doc, go/no-go gate, and 90-day measure from muse-made-bots/marketing-manager/skills/plan-a-launch.md; enablement kit spec from muse-made-bots/partner-manager-v4/skills/onboard-and-enable.md; dated-milestone mechanics from sales-rep-v4 signature-to-launch-and-account-ops.
+- **`product-metrics-and-instrumentation`** (built as `read-the-numbers`) — Reuse: movers-with-decomposition read and FACT/INFERENCE/UNKNOWN discipline from muse-made-bots/marketing-manager/skills/report-the-week.md; INPUT/OUTPUT metric definitions with R/Y/G and thin-sample rule from operations-manager build-the-ops-scorecard; metric-decomposition commentary from grok-bots/paid-media-report-desk/skills/what-moved-and-why.md.
+- **`product-discovery-and-user-research`** (built as `run-discovery`) — Reuse: interview-prep flow from deanpeters discovery-interview-prep SKILL.md; verbatim-quote mining and repeated-language callout from grok-bots/customer-proof-desk/skills/mine-a-batch-of-calls.md; win-loss program shape and 3-account pattern bar from muse-made-bots/sales-rep-v4/skills/voice-of-customer-loop.md; ticket-batch theme mining from muse-made-bots/customer-service-rep-v2/skills/voice-of-customer-and-feedback.md.
+- **`product-ai-feature-scoping-and-evals`** (built as `ship-the-ai-feature`) — Reuse: prompt-corpus design (count + mark-top-five pattern) from grok-bots/ai-search-visibility/skills/build-the-prompt-list.md, taxonomy adapted to feature-input kinds (happy-path/edge/adversarial/out-of-scope); capture-before-judge protocol from run-a-visibility-check.md; scoreboard with 3-run trend from share-of-answer-comparison.md; harness pointers promptfoo/deepeval/langfuse (OSS) from duty-0. New glue: nothing reused covers AI scoping-to-eval for PMs.
+- **`product-prd-and-acceptance-criteria`** (built as `write-the-prd`) — Reuse: PRD section shape adapted from reqsmith-template and ancplua prd-template (Copy-as-Markdown pattern); MVP boundary and outcome slicing from grok-bots/tech-demos/skills/project-planning.md; one-ticket-per-finding shape from grok-bots/critiquito-design-critique/skills/hand-off-the-fixes.md (severity field adapted to story priority); wireframe-level states from grok-bots/figma-bro/skills/build-a-screen-from-a-brief.md.
+- **`product-strategy-and-bets`** (built as `write-the-strategy`) — Reuse: narrative from grok-bots/ebr-value-deck-builder/skills/three-whys.md; for-and-against graded packets from grok-bots/product-idea-stress-test/skills/pist-evidence-investigator.md; strategy-doc shape informed by awesome-pm-skills/strategy-frameworks (MIT). New glue: nothing reused covers the PM strategy-doc-to-roadmap handoff.
 
-## Daniel — `financial-analyst`
+## Daniel — built as `financial-analyst`
 
 - **`automate-finance-reporting`** — No reuse note recorded by the build.
+- **`finance-board-and-investor-reporting`** (built as `board-and-investor-reporting`) — No reuse note recorded by the build.
+- **`budget-vs-actuals-and-reforecast`** (built as `budget-forecast-and-plan`) — No reuse note recorded by the build.
 - **`cash-treasury-and-fx`** — No reuse note recorded by the build.
 - **`close-controls-and-accounting`** — No reuse note recorded by the build.
+- **`deal-economics-and-pricing-guardrails`** (built as `deal-desk-and-pricing`) — No reuse note recorded by the build.
 - **`daniel-getting-started`** — No reuse note recorded by the build.
 - **`saas-gtm-finance`** — No reuse note recorded by the build.
 - **`unit-economics-and-roi`** — No reuse note recorded by the build.
 - **`variance-and-flux-analysis`** — No reuse note recorded by the build.
 
-## Sofia — `recruiter`
+## Sofia — built as `recruiter`
 
+- **`hiring-debrief-and-decision`** (built as `debrief-and-decision-support`) — No reuse note recorded by the build.
 - **`sofia-getting-started`** — No reuse note recorded by the build.
+- **`role-intake-and-scorecard`** (built as `intake-and-role-scoping`) — No reuse note recorded by the build.
 - **`interview-coordination`** — No reuse note recorded by the build.
 - **`interview-kit-design`** — No reuse note recorded by the build.
 - **`job-description-drafting`** — No reuse note recorded by the build.
+- **`job-offer-and-close-plan`** (built as `offer-strategy-and-close`) — No reuse note recorded by the build.
 - **`passive-candidate-outreach`** — No reuse note recorded by the build.
+- **`hiring-pipeline-analytics`** (built as `pipeline-analytics`) — No reuse note recorded by the build.
 - **`resume-screening`** — No reuse note recorded by the build.
+- **`candidate-sourcing-strategy`** (built as `sourcing-strategy`) — No reuse note recorded by the build.
 
-## Blake — `sales-rep-v4`
+## Blake — built as `sales-rep-v4`
 
 - **`alliance-co-commercialization`** — No reuse note recorded by the build.
 - **`build-the-target-list`** — No reuse note recorded by the build.
@@ -149,15 +186,33 @@ Public articles and guides the web sweep cited are named inline in the notes bel
 - **`territory-and-account-planning`** — No reuse note recorded by the build.
 - **`voice-of-customer-loop`** — No reuse note recorded by the build.
 
-## Maya — `marketing-manager`
+## Maya — built as `marketing-manager`
 
+- `brief-and-recap-an-event` — not shipped. Build note: No reuse note recorded by the build.
+- **`nurture-sequence-build-and-readout`** (built as `build-a-nurture`) — No reuse note recorded by the build.
+- **`messaging-and-tone-matrix`** (built as `build-the-voice-profile`) — No reuse note recorded by the build.
+- **`channel-draft-shapes`** (built as `draft-for-a-channel`) — No reuse note recorded by the build.
 - **`maya-getting-started`** — No reuse note recorded by the build.
+- **`campaign-brief-and-asset-plan`** (built as `plan-a-campaign`) — No reuse note recorded by the build.
+- `plan-a-launch` — not shipped — Alex's product-launch-plan covers the launch plan. Build note: No reuse note recorded by the build.
+- **`weekly-marketing-read`** (built as `report-the-week`) — No reuse note recorded by the build.
+- **`editorial-calendar-ops`** (built as `run-the-editorial-calendar`) — No reuse note recorded by the build.
+- **`content-brief-writer-handoff`** (built as `write-a-content-brief`) — No reuse note recorded by the build.
 
-## James — `operations-manager`
+## James — built as `operations-manager`
 
+- **`ops-automate-a-workflow`** (built as `automate-a-workflow`) — No reuse note recorded by the build.
+- **`ops-scorecard-and-kpis`** (built as `build-the-ops-scorecard`) — No reuse note recorded by the build.
 - **`james-getting-started`** — No reuse note recorded by the build.
+- **`ops-govern-a-program`** (built as `govern-a-program`) — No reuse note recorded by the build.
+- **`ops-map-and-improve-a-process`** (built as `map-and-improve-a-process`) — No reuse note recorded by the build.
+- **`ops-capacity-and-headcount-plan`** (built as `plan-capacity-and-headcount`) — No reuse note recorded by the build.
+- **`ops-controls-and-escalations`** (built as `run-controls-and-escalations`) — No reuse note recorded by the build.
+- **`ops-run-the-operating-rhythm`** (built as `run-the-operating-rhythm`) — No reuse note recorded by the build.
+- **`ops-vendor-and-procurement`** (built as `run-vendor-and-procurement-ops`) — No reuse note recorded by the build.
+- **`ops-write-an-sop`** (built as `write-an-sop`) — No reuse note recorded by the build.
 
-## Zara — `gtm-strategist`
+## Zara — built as `gtm-strategist`
 
 - **`commercial-launch-strategy`** — Reuse: tiered launch plan (quiet/standard/tentpole), messaging doc, go/no-go gate, and 90-day measure from muse-made-bots/marketing-manager/skills/plan-a-launch.md; extended gate items (support, legal, pricing, feedback channel) plus retrospective from muse-made-bots/product-manager/skills/plan-the-launch.md; dated milestones with entry/exit criteria from muse-made-bots/sales-rep-v3/skills/signature-to-launch-and-account-ops.md. Hardened with 24h go/no-go + evidence-per-item patterns (hah23255/pm-claude-skills, oghma launch-checklist, verified via curl).
 - **`competitive-intelligence`** — Reuse: what-changed/so-what/quiet shape with sourced links from grok-bots/competitor-watch/skills/weekly-competitor-brief.md; 4-page watch-list setup from build-the-watch-list.md; material-vs-noise diff bar from competitor-page-diff.md; 3-discriminator win strategy from muse-made-bots/sales-rep-v2/skills/rfp-and-competitive-bid-response.md; quoted-not-paraphrased win-loss loop from muse-made-bots/sales-rep-v4/skills/voice-of-customer-loop.md. Web audit: win/loss zones, Know/Say/Show, scenario variants, refresh-on-signal + provenance footer, 90-day deal-intel pane, review/demo/community sources.
