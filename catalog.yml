@@ -1,635 +1,280 @@
-# Schema v2: original upstream names/files, external attribution and provenance.
-# Incompatible with the current platform seed; see docs/IMPORT_COMPATIBILITY.md.
-schema_version: 2
+# Existing AutoGPT catalog format. Provenance and build rules are separate.
 skills:
-- slug: product-marketing
-  name: product-marketing
-  path: skills/coreyhaines31/marketingskills/skills/product-marketing
-  package_root: skills/coreyhaines31/marketingskills
+- slug: product-marketing-context
   categories:
   - research
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/product-marketing
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/product-marketing.json
-  status: core
-  experts:
-  - Jules
-  - Maria
-  - Nadia
-  - Remy
-- slug: copy-editing
-  name: copy-editing
-  path: skills/coreyhaines31/marketingskills/skills/copy-editing
-  package_root: skills/coreyhaines31/marketingskills
+- slug: marketing-copy-editing
   categories:
   - content
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/copy-editing
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/copy-editing.json
-  status: core
-  experts:
-  - Jules
-  - Maria
-  - Remy
-- slug: social
-  name: social
-  path: skills/coreyhaines31/marketingskills/skills/social
-  package_root: skills/coreyhaines31/marketingskills
+- slug: social-media-management
   categories:
   - content
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/social
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/social.json
-  status: core
-  experts:
-  - Jules
-- slug: emails
-  name: emails
-  path: skills/coreyhaines31/marketingskills/skills/emails
-  package_root: skills/coreyhaines31/marketingskills
+- slug: lifecycle-email-marketing
   categories:
   - content
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/emails
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/emails.json
-  status: core
-  experts:
-  - Remy
 - slug: competitor-profiling
-  name: competitor-profiling
-  path: skills/coreyhaines31/marketingskills/skills/competitor-profiling
-  package_root: skills/coreyhaines31/marketingskills
   categories:
   - research
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/competitor-profiling
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/competitor-profiling.json
-  status: core
-  experts:
-  - Nadia
-- slug: coreyhaines31-customer-research
-  name: customer-research
-  path: skills/coreyhaines31/marketingskills/skills/customer-research
-  package_root: skills/coreyhaines31/marketingskills
+- slug: customer-insight-research
   categories:
   - research
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/customer-research
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/coreyhaines31-customer-research.json
-  status: core
-  experts:
-  - Nadia
-  - Riley
-- slug: content-strategy
-  name: content-strategy
-  path: skills/coreyhaines31/marketingskills/skills/content-strategy
-  package_root: skills/coreyhaines31/marketingskills
+- slug: marketing-content-strategy
   categories:
   - content
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/content-strategy
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/content-strategy.json
-  status: core
-  experts:
-  - Maria
-- slug: copywriting
-  name: copywriting
-  path: skills/coreyhaines31/marketingskills/skills/copywriting
-  package_root: skills/coreyhaines31/marketingskills
+- slug: marketing-copywriting
   categories:
   - content
   - marketing
   required_providers: []
   source: coreyhaines31/marketingskills/skills/copywriting
-  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
   license: MIT
-  provenance: provenance/skills/copywriting.json
-  status: core
-  experts:
-  - Maria
-- slug: anthropics-customer-research
-  name: customer-research
-  path: skills/anthropics/knowledge-work-plugins/customer-support/skills/customer-research
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: customer-support-research
   categories:
   - support
   - research
   required_providers: []
   source: anthropics/knowledge-work-plugins/customer-support/skills/customer-research
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/anthropics-customer-research.json
-  status: core
-  experts:
-  - Riley
-- slug: draft-response
-  name: draft-response
-  path: skills/anthropics/knowledge-work-plugins/customer-support/skills/draft-response
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: customer-response-drafting
   categories:
   - support
   - research
   required_providers: []
   source: anthropics/knowledge-work-plugins/customer-support/skills/draft-response
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/draft-response.json
-  status: core
-  experts:
-  - Riley
 - slug: customer-escalation
-  name: customer-escalation
-  path: skills/anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation
-  package_root: skills/anthropics/knowledge-work-plugins
   categories:
   - support
   - research
   required_providers: []
   source: anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/customer-escalation.json
-  status: core
-  experts:
-  - Riley
-- slug: seo-audit
-  name: seo-audit
-  path: skills/every-app/open-seo/plugins/openseo/skills/seo-audit
-  package_root: skills/every-app/open-seo
+- slug: website-seo-audit
   categories:
   - marketing
   - research
   required_providers: []
   source: every-app/open-seo/plugins/openseo/skills/seo-audit
-  upstream_commit: 0ffff93101043aad7600a3b6a499a0cd2887ef49
   license: MIT
-  provenance: provenance/skills/seo-audit.json
-  status: conditional
-  experts:
-  - Maria
-- slug: seo-report
-  name: seo-report
-  path: skills/every-app/open-seo/plugins/openseo/skills/seo-report
-  package_root: skills/every-app/open-seo
+- slug: seo-report-generation
   categories:
   - marketing
   - research
   required_providers: []
   source: every-app/open-seo/plugins/openseo/skills/seo-report
-  upstream_commit: 0ffff93101043aad7600a3b6a499a0cd2887ef49
   license: MIT
-  provenance: provenance/skills/seo-report.json
-  status: conditional
-  experts:
-  - Maria
-- slug: reconciliation
-  name: reconciliation
-  path: skills/anthropics/knowledge-work-plugins/finance/skills/reconciliation
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: account-reconciliation
   categories:
   - finance
   required_providers: []
   source: anthropics/knowledge-work-plugins/finance/skills/reconciliation
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/reconciliation.json
-  status: core
-  experts:
-  - Mina
-- slug: close-management
-  name: close-management
-  path: skills/anthropics/knowledge-work-plugins/finance/skills/close-management
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: month-end-close-management
   categories:
   - finance
   required_providers: []
   source: anthropics/knowledge-work-plugins/finance/skills/close-management
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/close-management.json
-  status: core
-  experts:
-  - Mina
-- slug: financial-statements
-  name: financial-statements
-  path: skills/anthropics/knowledge-work-plugins/finance/skills/financial-statements
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: financial-statement-preparation
   categories:
   - finance
   required_providers: []
   source: anthropics/knowledge-work-plugins/finance/skills/financial-statements
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/financial-statements.json
-  status: core
-  experts:
-  - Mina
-  - Theo
-- slug: invoice-chase
-  name: invoice-chase
-  path: skills/anthropics/knowledge-work-plugins/small-business/skills/invoice-chase
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: overdue-invoice-follow-up
   categories:
   - finance
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/small-business/skills/invoice-chase
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/invoice-chase.json
-  status: core
-  experts:
-  - Mina
-- slug: vendor-review
-  name: vendor-review
-  path: skills/anthropics/knowledge-work-plugins/operations/skills/vendor-review
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: vendor-evaluation
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/operations/skills/vendor-review
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/vendor-review.json
-  status: core
-  experts:
-  - Vera
-- slug: vendor-check
-  name: vendor-check
-  path: skills/anthropics/knowledge-work-plugins/legal/skills/vendor-check
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: vendor-contract-status
   categories:
   - operations
   - research
   required_providers: []
   source: anthropics/knowledge-work-plugins/legal/skills/vendor-check
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/vendor-check.json
-  status: core
-  experts:
-  - Vera
 - slug: board-deck-builder
-  name: board-deck-builder
-  path: skills/alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder
-  package_root: skills/alirezarezvani/claude-skills
   categories:
   - finance
   - content
   required_providers: []
   source: alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder
-  upstream_commit: 19392f7a08264ed00486a251f5b2098321771f94
   license: MIT
-  provenance: provenance/skills/board-deck-builder.json
-  status: core
-  experts:
-  - Theo
-- slug: knowledge-synthesis
-  name: knowledge-synthesis
-  path: skills/anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: multi-source-research-synthesis
   categories:
   - research
   required_providers: []
   source: anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/knowledge-synthesis.json
-  status: core
-  experts:
-  - Frankie
-  - Theo
-- slug: status-report
-  name: status-report
-  path: skills/anthropics/knowledge-work-plugins/operations/skills/status-report
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: project-status-report
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/operations/skills/status-report
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/status-report.json
-  status: core
-  experts:
-  - Frankie
-- slug: risk-assessment
-  name: risk-assessment
-  path: skills/anthropics/knowledge-work-plugins/operations/skills/risk-assessment
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: operational-risk-assessment
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/operations/skills/risk-assessment
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/risk-assessment.json
-  status: core
-  experts:
-  - Frankie
-  - Vera
-- slug: meeting-briefing
-  name: meeting-briefing
-  path: skills/anthropics/knowledge-work-plugins/legal/skills/meeting-briefing
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: legal-meeting-briefing
   categories:
   - operations
   - research
   required_providers: []
   source: anthropics/knowledge-work-plugins/legal/skills/meeting-briefing
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/meeting-briefing.json
-  status: conditional
-  experts:
-  - Frankie
-- slug: task-management
-  name: task-management
-  path: skills/anthropics/knowledge-work-plugins/productivity/skills/task-management
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: task-list-management
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/productivity/skills/task-management
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/task-management.json
-  status: conditional
-  experts:
-  - Frankie
-- slug: memory-management
-  name: memory-management
-  path: skills/anthropics/knowledge-work-plugins/productivity/skills/memory-management
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: workplace-memory-management
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/memory-management.json
-  status: conditional
-  experts:
-  - Frankie
-- slug: start
-  name: start
-  path: skills/anthropics/knowledge-work-plugins/productivity/skills/start
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: productivity-setup
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/productivity/skills/start
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/start.json
-  status: conditional
-  experts:
-  - Frankie
-- slug: update
-  name: update
-  path: skills/anthropics/knowledge-work-plugins/productivity/skills/update
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: productivity-task-sync
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/productivity/skills/update
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/update.json
-  status: conditional
-  experts:
-  - Frankie
-- slug: explore-data
-  name: explore-data
-  path: skills/anthropics/knowledge-work-plugins/data/skills/explore-data
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: dataset-exploration
   categories:
   - research
   - development
   required_providers: []
   source: anthropics/knowledge-work-plugins/data/skills/explore-data
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/explore-data.json
-  status: core
-  experts:
-  - Quinn
 - slug: data-visualization
-  name: data-visualization
-  path: skills/anthropics/knowledge-work-plugins/data/skills/data-visualization
-  package_root: skills/anthropics/knowledge-work-plugins
   categories:
   - research
   - development
   required_providers: []
   source: anthropics/knowledge-work-plugins/data/skills/data-visualization
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/data-visualization.json
-  status: core
-  experts:
-  - Quinn
-- slug: cohort-analysis
-  name: cohort-analysis
-  path: skills/phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis
-  package_root: skills/phuryn/pm-skills
+- slug: user-cohort-analysis
   categories:
   - research
   required_providers: []
   source: phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis
-  upstream_commit: 8607e3b077817f89bf4a9b623246219734ac3be0
   license: MIT
-  provenance: provenance/skills/cohort-analysis.json
-  status: core
-  experts:
-  - Quinn
 - slug: supply-chain-risk-auditor
-  name: supply-chain-risk-auditor
-  path: skills/trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
-  package_root: skills/trailofbits/skills
   categories:
   - development
   required_providers: []
   source: trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
-  upstream_commit: 32e34f8173796e3566a51aee877dc96bc5191f64
   license: CC-BY-SA-4.0
-  provenance: provenance/skills/supply-chain-risk-auditor.json
-  status: core
-  experts:
-  - Devon
-- slug: differential-review
-  name: differential-review
-  path: skills/trailofbits/skills/plugins/differential-review/skills/differential-review
-  package_root: skills/trailofbits/skills
+- slug: code-change-security-review
   categories:
   - development
   required_providers: []
   source: trailofbits/skills/plugins/differential-review/skills/differential-review
-  upstream_commit: 32e34f8173796e3566a51aee877dc96bc5191f64
   license: CC-BY-SA-4.0
-  provenance: provenance/skills/differential-review.json
-  status: core
-  experts:
-  - Devon
-- slug: pipeline-review
-  name: pipeline-review
-  path: skills/anthropics/knowledge-work-plugins/sales/skills/pipeline-review
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: sales-pipeline-review
   categories:
   - sales
   required_providers: []
   source: anthropics/knowledge-work-plugins/sales/skills/pipeline-review
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/pipeline-review.json
-  status: core
-  experts:
-  - Jordan
-- slug: proposal-writer
-  name: proposal-writer
-  path: skills/jezweb/claude-skills/plugins/writing/skills/proposal-writer
-  package_root: skills/jezweb/claude-skills
+- slug: client-proposal-writing
   categories:
   - sales
   - content
   required_providers: []
   source: jezweb/claude-skills/plugins/writing/skills/proposal-writer
-  upstream_commit: e875a6bfff809e5d42c584104031e36e1f014f18
   license: MIT
-  provenance: provenance/skills/proposal-writer.json
-  status: core
-  experts:
-  - Jordan
-- slug: nda-review
-  name: nda-review
-  path: skills/anthropics/claude-for-legal/commercial-legal/skills/nda-review
-  package_root: skills/anthropics/claude-for-legal
+- slug: nda-risk-review
   categories:
   - operations
   required_providers: []
   source: anthropics/claude-for-legal/commercial-legal/skills/nda-review
-  upstream_commit: 4a6c651889c97cc9140580363c73e0eb17379c2b
   license: Apache-2.0
-  provenance: provenance/skills/nda-review.json
-  status: core
-  experts:
-  - Ellis
-- slug: amendment-history
-  name: amendment-history
-  path: skills/anthropics/claude-for-legal/commercial-legal/skills/amendment-history
-  package_root: skills/anthropics/claude-for-legal
+- slug: contract-amendment-history
   categories:
   - operations
   required_providers: []
   source: anthropics/claude-for-legal/commercial-legal/skills/amendment-history
-  upstream_commit: 4a6c651889c97cc9140580363c73e0eb17379c2b
   license: Apache-2.0
-  provenance: provenance/skills/amendment-history.json
-  status: core
-  experts:
-  - Ellis
-- slug: interview-prep
-  name: interview-prep
-  path: skills/anthropics/knowledge-work-plugins/human-resources/skills/interview-prep
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: candidate-interview-planning
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/human-resources/skills/interview-prep
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/interview-prep.json
-  status: core
-  experts:
-  - Harper
-- slug: draft-offer
-  name: draft-offer
-  path: skills/anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: employment-offer-drafting
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/draft-offer.json
-  status: core
-  experts:
-  - Harper
 - slug: recruiting-pipeline
-  name: recruiting-pipeline
-  path: skills/anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline
-  package_root: skills/anthropics/knowledge-work-plugins
   categories:
   - operations
   required_providers: []
   source: anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/recruiting-pipeline.json
-  status: core
-  experts:
-  - Harper
-- slug: account-research
-  name: account-research
-  path: skills/anthropics/knowledge-work-plugins/sales/skills/account-research
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: sales-account-research
   categories:
   - sales
   required_providers: []
   source: anthropics/knowledge-work-plugins/sales/skills/account-research
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/account-research.json
-  status: core
-  experts:
-  - Max
-- slug: draft-outreach
-  name: draft-outreach
-  path: skills/anthropics/knowledge-work-plugins/sales/skills/draft-outreach
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: sales-outreach-drafting
   categories:
   - sales
   required_providers: []
   source: anthropics/knowledge-work-plugins/sales/skills/draft-outreach
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/draft-outreach.json
-  status: core
-  experts:
-  - Max
-- slug: call-prep
-  name: call-prep
-  path: skills/anthropics/knowledge-work-plugins/sales/skills/call-prep
-  package_root: skills/anthropics/knowledge-work-plugins
+- slug: sales-call-preparation
   categories:
   - sales
   required_providers: []
   source: anthropics/knowledge-work-plugins/sales/skills/call-prep
-  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
   license: Apache-2.0
-  provenance: provenance/skills/call-prep.json
-  status: core
-  experts:
-  - Max

@@ -1,109 +1,111 @@
 # AutoGPT skills catalog
 
-43 selected upstream skills, preserved exactly as authored, with supporting files,
-original attribution, pinned commits and licences. This replaces the previous
-171-entry catalog. AutoGPT curates the collection; the skill authors remain the
-upstream authors.
+43 selected community skills in ordinary, self-contained Agent Skills packages.
+This replaces all 171 previous catalog entries. The original authors retain
+authorship; AutoGPT curates and adapts packaging, names and attribution metadata.
 
-**Catalog schema v2 is not compatible with the current AutoGPT platform importer.
-Do not run a production seed against this revision.** See
-[import compatibility](docs/IMPORT_COMPATIBILITY.md) for required platform changes,
-including original names/paths, metadata, attribution and retirement of previous
-listings. Repository checks do not establish runtime or importer compatibility.
+The existing AutoGPT loader accepts all 43 packages in an isolated check using
+the inspected parser and package validators. **This is still a draft collection:
+runtime integration and production migration have not been performed.** See
+[import and runtime status](docs/IMPORT_COMPATIBILITY.md).
 
-## Selections
+## Skills and format
 
-[SELECTIONS.md](SELECTIONS.md) lists every skill, its function, author, licence and
-proposed expert assignments. There are 36 core selections (45 expert assignments)
-and seven conditional sources. Conditional sources need the recorded native
-service, runtime or specialist context. Max and Frankie had no original skills;
-their proposed assignments are optional additions.
+[SELECTIONS.md](SELECTIONS.md) lists every skill, essential function, source,
+licence and proposed expert assignment. The collection contains 36 core and seven
+conditional selections: 45 core and seven conditional expert assignments.
 
-Research captured 24 September 2026. Every candidate has individual installation
-evidence. Counts are telemetry, not unique users or proven outcomes. Three niche
-choices have smaller adoption: amendment-history (566), board-deck-builder (603)
-and nda-review (643). seo-report (368) is only the required companion to the
-conditional OpenSEO audit. No skill was executed or benchmarked during curation.
-
-## Layout
+The package format follows [Agent Skills](https://agentskills.io/specification):
 
 ```
-catalog.yml                         unique registry IDs, original names and paths
-skills/<owner>/<repo>/...            unchanged upstream tree-relative files
-skills/.../<skill>/SKILL.md          original instructions, never rewritten
-skills/.../<skill>/LICENSE           exact controlling licence copy
-provenance/files.json                source commit, path, hashes and mode per file
-provenance/skills/<slug>.json         attribution, evidence, licence and review
-provenance/evidence.json             dated observations and source-response hashes
-provenance/replaced-catalog.json     previous registry entries for migration
+skills/<clear-unique-name>/
+  SKILL.md                 name, description, licence, metadata and instructions
+  LICENSE                  exact controlling upstream licence
+  ATTRIBUTION.md           original author, source, adaptations and requirements
+  references/              required local guidance, when used
+  scripts/                 required executable code, when used
+  assets/                  required templates/resources, when used
+catalog.yml                existing AutoGPT catalog format
+provenance/                 source archives, hashes, changes and research evidence
 ```
 
-Only the 43 selected SKILL.md files are included. Shared support is stored once,
-with original relative paths. Upstream README/plugin metadata may mention skills
-that are not selected or supplied. These trees are not complete plugin installs;
-do not automatically register every command or metadata file.
+`name` matches the individual folder. Thirty-seven names have been clarified,
+including the two different upstream `customer-research` skills, now
+`customer-insight-research` and `customer-support-research`. The full mapping is
+in [provenance/name-mapping.json](provenance/name-mapping.json).
 
-`slug` is a unique catalog identity; `name` is the unchanged upstream name. Corey
-and Anthropic both use customer-research, so their registration IDs differ while
-both retain their original names. `path` points to the original skill folder.
-`package_root` identifies its upstream tree, not a request to bundle every shared
-file into every skill. The platform needs shared-source/dependency support.
+Standard `license` and `metadata` fields carry the original licence and
+attribution. `metadata.source` and `metadata.source_url` are conventions understood
+by AutoGPT inside the standard extension map. Upstream native extension fields
+remain present; their runtime behavior is a separate compatibility requirement.
+There is no new platform import schema or shared-package-root requirement.
 
-## Provenance and licensing
+## Dependency packaging
 
-Every original file records its repository, full commit, original path, Git blob
-SHA-1, SHA-256 and executable mode. Adjacent licence copies identify their actual
-upstream source path. Source bytes are preserved with Git newline conversion off.
-Per-skill sidecars contain authorship, licence scope/obligations, adoption/activity
-evidence, review limitations and native prerequisites, without changing skill text.
+Only selected skills and the supporting files their workflows use are installed.
+Each package carries its own required local references. References have been
+updated when files moved. Optional upstream discovery links point to immutable
+source revisions; project-state files and external API identifiers keep their
+authored names.
 
-Evidence records preserve factual observations, source URLs, capture dates and
-hashes of original responses. They do not republish whole third-party web pages
-or claim certified timestamps. The checksum of the separate complete local
-research archive is recorded; that archive retains the full source responses.
+The marketing packages need ten shared tool guides, not the complete 164-file
+tool collection. Unused development fixtures and unrelated tools are excluded.
+The full collection has 221 installed files, including 43 licences and 43
+attribution files; the largest package has 17 supplementary files and is under
+180 KiB. No complete upstream repository or hidden plugin install is bundled.
 
-Preserve MIT/Apache licence and applicable notices. The two Trail of Bits skills
-retain CC-BY-SA-4.0 attribution and recipients' licence rights; do not impose
-proprietary-only restrictions on that material. Services, third-party linked
-content and trademarks have separate terms. No endorsement or human-only
-upstream authorship is claimed.
+Automated checks verify definite local Markdown links and report literal paths,
+Python imports and dynamic/native references for review. Prose and optional
+provider branches are ambiguous: a scan alone cannot determine every dependency.
+The reviewed inclusion/exclusion decisions and unresolved runtime needs are
+recorded in `provenance/dependency-review.json` and each skill's provenance.
 
-Seven selections inherit an Anthropic root Apache licence with unexplained
-appended text: the three human-resources skills, invoice-chase, vendor-review,
-risk-assessment and status-report. The exact text is preserved; research found no
-additional commercial restriction. Resolve that anomaly before commercial release.
-Other plugin-local licences are retained separately.
+## Provenance, authorship and changes
 
-## Verify and restore
+`provenance/files.json` records each installed file's upstream repository, path,
+immutable commit, Git blob, original SHA-256, packaged SHA-256 and executable
+mode. Exact original bytes are stored under `provenance/originals/<sha256>`;
+these archives are outside the install tree and are not additional skills.
+Identical source bytes are stored once. Recorded, counted transformations can
+recreate every adapted package offline; modified files identify the adaptation.
 
-Use Python 3.12 and PyYAML:
+Instructions and approval gates are retained. Adaptations cover clear names,
+accurate metadata, required local paths and explicit references to original
+plugin guidance. YAML headers are normalized; authored body formatting is not
+globally reformatted. Licences and unchanged support files retain exact bytes.
 
-```sh
+Research evidence was captured on 2026-09-24. Per-skill provenance retains
+adoption/activity observations, source URLs and response hashes. Counts are
+installation telemetry, not unique users or evidence of successful outcomes.
+The complete local research archive's checksum is recorded in the evidence file.
+No source has been executed or benchmarked during curation/packaging.
+
+Retain MIT/Apache copyright/licence notices. The Trail of Bits adaptations retain
+CC-BY-SA-4.0 attribution and share-alike terms. Seven selections inherit an
+Anthropic Apache licence with unexplained appended text; preserve the exact
+licence and resolve that recorded ambiguity before commercial release. See the
+individual provenance records. Original authorship does not establish human-only
+authorship, and no upstream endorsement is claimed.
+
+## Contributing and checking
+
+Read [AGENTS.md](AGENTS.md) for mandatory naming, dependency, formatting,
+attribution and publication rules.
+
+```
 python -m pip install pyyaml
+python -m unittest discover -s tools -p 'test_*.py' -v
 python tools/check.py --expected-count 43
-python -m unittest discover -s tools -p 'test_*.py'
+python tools/audit_dependencies.py --check
 python tools/vendor.py --check
-python tools/vendor.py --fetch
 ```
 
-The checker validates catalog/provenance consistency and unchanged source bytes;
-it does not claim parity with the old platform importer. The vendor tool restores
-missing files from recorded immutable URLs, verifies responses before writing,
-and refuses to overwrite mismatched existing content. It never fetches HEAD,
-rewrites frontmatter, trims Markdown or strips sections. Revision/selection changes
-require a new reviewed manifest and source update.
+On POSIX use `--strict-modes` with the checker. `tools/vendor.py --restore`
+recreates missing package files from the local source archives and recorded
+transformations. It does not fetch upstream HEAD, overwrite edited files or
+execute third-party code. The exact source-specific importer probe and its
+limitations are documented in [IMPORT_COMPATIBILITY.md](docs/IMPORT_COMPATIBILITY.md).
 
-## Why vendored files rather than submodules?
-
-Submodules pin whole repositories, not chosen skill folders. They require recursive
-checkout and their content is absent from ordinary GitHub source tarballs, which
-the existing platform seed downloads. Vendored immutable files keep the selected
-source, licences and provenance visible in one PR and ordinary clone/tarball.
-Commit pins and hashes provide traceability without following upstream updates.
-
-## Publishing
-
-This repository change does not remove database listings or update expert
-assignments. Importer support, explicit listing retirement, expert reassignment
-and end-to-end runtime checks remain separate prerequisites documented in
-[import compatibility](docs/IMPORT_COMPATIBILITY.md).
+Merging this repository does not retire production listings or reassign experts.
+Publication requires the documented runtime decisions, migration and end-to-end
+verification; it is not implied by passing the packaging checks.

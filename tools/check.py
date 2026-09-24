@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Validate schema-v2 provenance and unchanged source bytes, offline.
+"""Validate flat skill packages, original evidence, and recorded adaptations offline.
 
-This is an archival integrity contract, not a platform-import compatibility
-check. Upstream names, frontmatter, body sizes and relative links are preserved.
+Package limits follow AutoGPT's inspected skills.py (2026-09-25). This does not
+execute skills or certify their runtime dependencies or semantic correctness.
 """
 from __future__ import annotations
 
@@ -24,8 +24,13 @@ ROOT = Path(__file__).resolve().parent.parent
 CATEGORIES = {"marketing", "sales", "finance", "support", "operations", "research", "content", "development"}
 SHA1 = re.compile(r"^[0-9a-f]{40}$")
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
-REGISTRY_ID = re.compile(r"^[a-z0-9][a-z0-9-]*$")
+REGISTRY_ID = re.compile(r"^[a-z0-9](?:[a-z0-9_-]{0,62}[a-z0-9])?$")
 REPO_PART = re.compile(r"^[A-Za-z0-9_][A-Za-z0-9_.-]*$")
+PACKAGE_SEGMENT = re.compile(r"^[A-Za-z0-9_-][A-Za-z0-9._-]*$")
+MAX_PACKAGE_FILES = 100  # Siblings only; the root SKILL.md is separate.
+MAX_PACKAGE_FILE_BYTES = 2 * 1024 * 1024
+MAX_PACKAGE_BYTES = 20 * 1024 * 1024  # Includes root SKILL.md.
+MAX_PACKAGE_PATH_DEPTH = 8
 
 
 class ValidationError(ValueError):
@@ -33,7 +38,7 @@ class ValidationError(ValueError):
 
 
 class UniqueLoader(yaml.SafeLoader):
-    """Reject duplicate YAML keys instead of silently discarding information."""
+    """Reject duplicate keys rather than discarding evidence."""
 
 
 def _mapping(loader: UniqueLoader, node: Any, deep: bool = False) -> dict:
@@ -59,13 +64,12 @@ def _json_pairs(pairs: list[tuple[str, Any]]) -> dict:
 
 
 def relative_path(value: Any) -> str:
-    """Require an unambiguous relative POSIX path on Windows and Unix."""
+    """An unambiguous confined relative path on Windows and Unix."""
     if not isinstance(value, str) or not value or "\\" in value or ":" in value:
         raise ValidationError(f"unsafe relative path: {value!r}")
     if any(ord(c) < 32 for c in value):
         raise ValidationError(f"control character in path: {value!r}")
-    parts = value.split("/")
-    if any(p in {"", ".", ".."} or p.endswith((" ", ".")) for p in parts):
+    if any(p in {"", ".", ".."} or p != p.strip() or p.endswith(".") for p in value.split("/")):
         raise ValidationError(f"path must be normalized and confined: {value!r}")
     return value
 
@@ -74,7 +78,6 @@ def _is_link(path: Path) -> bool:
     if path.is_symlink():
         return True
     try:
-        # Includes Windows junctions, which may not be reported as symlinks.
         return bool(getattr(path.lstat(), "st_file_attributes", 0) & 0x400)
     except FileNotFoundError:
         return False
@@ -97,13 +100,18 @@ def git_blob_sha1(content: bytes) -> str:
 
 
 def verify_bytes(record: dict, content: bytes) -> None:
-    path = record["path"]
+    """Verify output metadata; original blob identity is checked separately."""
+    label = record.get("path", record.get("archive", "content"))
     if len(content) != record["size"]:
-        raise ValidationError(f"{path}: size differs from immutable manifest")
+        raise ValidationError(f"{label}: size differs from manifest")
     if hashlib.sha256(content).hexdigest() != record["sha256"]:
-        raise ValidationError(f"{path}: SHA-256 differs from immutable manifest")
-    if git_blob_sha1(content) != record["source"]["blob_sha1"]:
-        raise ValidationError(f"{path}: Git blob SHA-1 differs from immutable manifest")
+        raise ValidationError(f"{label}: SHA-256 differs from manifest")
+
+
+def verify_original(source: dict, content: bytes) -> None:
+    verify_bytes(source, content)
+    if git_blob_sha1(content) != source["blob_sha1"]:
+        raise ValidationError(f"{source['path']}: original Git blob SHA-1 differs")
 
 
 @dataclass
@@ -113,6 +121,7 @@ class Result:
     records: dict[str, dict] = field(default_factory=dict)
     errors: list[str] = field(default_factory=list)
     provenance: dict[str, dict] = field(default_factory=dict)
+    rendered: dict[str, bytes] = field(default_factory=dict)
 
     def require_valid(self) -> None:
         if self.errors:
@@ -121,9 +130,13 @@ class Result:
 
 def _read_document(root: Path, relative: str, *, as_yaml: bool = False) -> Any:
     text = confined_path(root, relative).read_text(encoding="utf-8-sig")
-    if as_yaml:
-        return yaml.load(text, Loader=UniqueLoader)
-    return json.loads(text, object_pairs_hook=_json_pairs)
+    return yaml.load(text, Loader=UniqueLoader) if as_yaml else json.loads(text, object_pairs_hook=_json_pairs)
+
+
+def _text(value: Any, label: str) -> str:
+    if not isinstance(value, str) or not value.strip():
+        raise ValidationError(f"{label}: nonempty string required")
+    return value
 
 
 def _strings(value: Any, label: str, *, nonempty: bool = False) -> list[str]:
@@ -143,146 +156,169 @@ def _source(value: Any) -> tuple[str, str]:
     return "/".join(parts[:2]), "/".join(parts[2:])
 
 
+def _digest_fields(value: dict, label: str) -> None:
+    if not isinstance(value.get("sha256"), str) or not SHA256.fullmatch(value["sha256"]):
+        raise ValidationError(f"{label}: SHA-256 is required")
+    if type(value.get("size")) is not int or value["size"] < 0:
+        raise ValidationError(f"{label}: nonnegative byte size is required")
+
+
+def _pinned_url(url: Any, source: dict) -> bool:
+    normalized = urllib.parse.unquote(url.split("#", 1)[0]) if isinstance(url, str) else None
+    return normalized in {
+        f"https://github.com/{source['repo']}/blob/{source['commit']}/{source['path']}",
+        f"https://raw.githubusercontent.com/{source['repo']}/{source['commit']}/{source['path']}",
+    }
+
+
+def _transforms(record: dict) -> None:
+    transforms = record.get("transformations")
+    if not isinstance(transforms, list):
+        raise ValidationError(f"{record['path']}: transformations must be a list")
+    for transform in transforms:
+        if not isinstance(transform, dict):
+            raise ValidationError("transformation must be a mapping")
+        _text(transform.get("reason"), "transformation reason")
+        kind = transform.get("kind")
+        if kind == "replace":
+            _text(transform.get("old"), "replacement old text")
+            if not isinstance(transform.get("new"), str) or type(transform.get("expected_count")) is not int or transform["expected_count"] < 1:
+                raise ValidationError("replacement requires new text and a positive exact occurrence count")
+        elif kind == "frontmatter":
+            if record["role"] != "skill" or not isinstance(transform.get("updates"), dict) or not transform["updates"]:
+                raise ValidationError("frontmatter updates require a primary skill and nonempty mapping")
+            if set(transform["updates"]) - {"name", "license", "metadata", "allowed-tools"}:
+                raise ValidationError("frontmatter changes may only update name, license, metadata or tool formatting")
+        elif kind == "notice":
+            _text(transform.get("text"), "notice text")
+        else:
+            raise ValidationError(f"unknown transformation kind: {kind}")
+    if record["role"] == "license" and transforms:
+        raise ValidationError("controlling license bytes may not be transformed")
+
+
 def _load_plan(root: Path) -> Result:
     result = Result(root)
     try:
         catalog = _read_document(root, "catalog.yml", as_yaml=True)
         manifest = _read_document(root, "provenance/files.json")
         evidence = _read_document(root, "provenance/evidence.json")
-        if not isinstance(catalog, dict) or catalog.get("schema_version") != 2:
-            raise ValidationError("catalog.yml: schema_version must be 2")
-        if not isinstance(manifest, dict) or manifest.get("schema_version") != 2:
-            raise ValidationError("provenance/files.json: schema_version must be 2")
-        if not isinstance(catalog.get("skills"), list) or not catalog["skills"]:
-            raise ValidationError("catalog.yml: skills must be a nonempty list")
-        if not isinstance(manifest.get("files"), list) or not manifest["files"]:
-            raise ValidationError("provenance/files.json: files must be a nonempty list")
-        if not isinstance(evidence, dict) or evidence.get("schema_version") != 2 or not isinstance(evidence.get("observations"), list):
-            raise ValidationError("provenance/evidence.json: schema-v2 observations list required")
+        if not isinstance(catalog, dict) or not isinstance(catalog.get("skills"), list) or not catalog["skills"]:
+            raise ValidationError("catalog.yml: nonempty skills list required")
+        if catalog.get("schema_version", 1) != 1:
+            raise ValidationError("catalog.yml: standard v1 layout required")
+        if not isinstance(manifest, dict) or manifest.get("schema_version") != 3 or not isinstance(manifest.get("files"), list) or not manifest["files"]:
+            raise ValidationError("provenance/files.json: schema-v3 nonempty files list required")
+        if not isinstance(evidence, dict) or evidence.get("schema_version") not in {2, 3} or not isinstance(evidence.get("observations"), list):
+            raise ValidationError("provenance/evidence.json: observations list required")
         evidence_ids = set()
         for observation in evidence["observations"]:
-            if not isinstance(observation, dict) or not isinstance(observation.get("id"), str) or not observation["id"]:
-                raise ValidationError("evidence observation requires an ID")
-            if observation["id"] in evidence_ids:
-                raise ValidationError(f"duplicate evidence ID: {observation['id']}")
-            evidence_ids.add(observation["id"])
-    except (OSError, ValueError, TypeError, yaml.YAMLError) as exc:
+            identity = _text(observation.get("id"), "evidence ID")
+            if identity in evidence_ids:
+                raise ValidationError(f"duplicate evidence ID: {identity}")
+            evidence_ids.add(identity)
+    except (OSError, ValueError, TypeError, AttributeError, yaml.YAMLError) as exc:
         result.errors.append(str(exc))
         return result
-    seen_ids: set[str] = set()
-    seen_paths: set[str] = set()
-    pins: dict[str, str] = {}
+    seen_ids = set()
     for index, entry in enumerate(catalog["skills"]):
         try:
             if not isinstance(entry, dict):
                 raise ValidationError("entry must be a mapping")
             slug = entry.get("slug")
-            if not isinstance(slug, str) or not REGISTRY_ID.fullmatch(slug):
-                raise ValidationError("slug must be a lowercase registry ID")
+            if not isinstance(slug, str) or not REGISTRY_ID.fullmatch(slug) or slug == "agent_building_guide":
+                raise ValidationError("slug must be a non-reserved platform name of 1–64 characters")
             if slug in seen_ids:
                 raise ValidationError(f"duplicate registry ID: {slug}")
             seen_ids.add(slug)
-            name = entry.get("name")
-            if not isinstance(name, str) or not name:
-                raise ValidationError(f"{slug}: original name is required")
-            repo, upstream_path = _source(entry.get("source"))
-            pin = entry.get("upstream_commit")
-            if not isinstance(pin, str) or not SHA1.fullmatch(pin):
-                raise ValidationError(f"{slug}: upstream_commit must be a full immutable SHA")
-            if repo in pins and pins[repo] != pin:
-                raise ValidationError(f"{slug}: multiple commits share package_root for {repo}")
-            pins[repo] = pin
-            if entry.get("package_root") != f"skills/{repo}":
-                raise ValidationError(f"{slug}: package_root must match skills/owner/repo")
-            path = relative_path(entry.get("path"))
-            confined_path(root, path)
-            if path != f"skills/{repo}/{upstream_path}":
-                raise ValidationError(f"{slug}: path must preserve original source layout")
-            if path.casefold() in seen_paths:
-                raise ValidationError(f"{slug}: duplicate/case-colliding skill path: {path}")
-            seen_paths.add(path.casefold())
+            if any(key in entry for key in ("path", "package_root", "upstream_commit", "name", "provenance")):
+                raise ValidationError(f"{slug}: obsolete nested-layout catalog fields")
+            repo, upstream = _source(entry.get("source"))
             categories = _strings(entry.get("categories"), f"{slug} categories", nonempty=True)
             if set(categories) - CATEGORIES:
-                raise ValidationError(f"{slug}: unknown categories: {sorted(set(categories) - CATEGORIES)}")
+                raise ValidationError(f"{slug}: unknown category")
             _strings(entry.get("required_providers"), f"{slug} required_providers")
-            _strings(entry.get("experts"), f"{slug} experts")
-            if entry.get("status") not in {"core", "conditional"}:
-                raise ValidationError(f"{slug}: status must be core or conditional")
-            if not isinstance(entry.get("license"), str) or not entry["license"].strip():
-                raise ValidationError(f"{slug}: license identifier is required")
-            if entry.get("provenance") != f"provenance/skills/{slug}.json":
-                raise ValidationError(f"{slug}: provenance path must match registry ID")
-            proof = _read_document(root, entry["provenance"])
-            expected_source = {"repo": repo, "commit": pin, "path": upstream_path}
-            if not isinstance(proof, dict) or proof.get("slug") != slug or proof.get("name") != name:
+            _text(entry.get("license"), f"{slug} license identifier")
+            proof = _read_document(root, f"provenance/skills/{slug}.json")
+            if not isinstance(proof, dict) or proof.get("schema_version") != 3 or proof.get("slug") != slug or proof.get("name") != slug:
                 raise ValidationError(f"{slug}: per-skill provenance identity differs")
-            if not isinstance(proof.get("source"), dict) or any(proof["source"].get(k) != v for k, v in expected_source.items()):
+            src = proof.get("source")
+            if not isinstance(src, dict) or src.get("repo") != repo or src.get("path") != upstream or not isinstance(src.get("commit"), str) or not SHA1.fullmatch(src["commit"]):
                 raise ValidationError(f"{slug}: per-skill provenance source differs")
-            if not isinstance(proof.get("author"), str) or not proof["author"].strip():
-                raise ValidationError(f"{slug}: upstream author attribution is required")
-            if proof.get("status") != entry["status"]:
-                raise ValidationError(f"{slug}: provenance status differs from catalog")
+            _text(proof.get("author"), f"{slug} upstream author attribution")
+            _text(proof.get("original_name"), f"{slug} original_name")
+            if proof.get("status") not in {"core", "conditional"}:
+                raise ValidationError(f"{slug}: provenance status must be core or conditional")
             license_meta = proof.get("license")
-            if not isinstance(license_meta, dict) or license_meta.get("spdx") != entry["license"] or license_meta.get("file") != path + "/LICENSE":
-                raise ValidationError(f"{slug}: per-skill license identity differs from catalog/path")
+            if not isinstance(license_meta, dict) or license_meta.get("spdx") != entry["license"] or license_meta.get("file") != f"skills/{slug}/LICENSE":
+                raise ValidationError(f"{slug}: per-skill license identity differs")
             refs = _strings(proof.get("evidence_ids"), f"{slug} evidence_ids", nonempty=True)
             if set(refs) - evidence_ids:
-                raise ValidationError(f"{slug}: unresolved evidence IDs: {sorted(set(refs) - evidence_ids)}")
-            result.provenance[slug] = proof
+                raise ValidationError(f"{slug}: unresolved evidence IDs")
+            if not isinstance(proof.get("packaging"), dict):
+                raise ValidationError(f"{slug}: packaging record required")
             result.entries.append(entry)
+            result.provenance[slug] = proof
         except (OSError, ValueError, TypeError, yaml.YAMLError) as exc:
             result.errors.append(f"catalog entry {index + 1}: {exc}")
-    file_paths: set[str] = set()
+    paths = set()
     for index, record in enumerate(manifest["files"]):
         try:
             if not isinstance(record, dict):
                 raise ValidationError("file record must be a mapping")
             path = relative_path(record.get("path"))
             confined_path(root, path)
-            if not path.startswith("skills/"):
-                raise ValidationError(f"{path}: manifest covers only skills/")
-            if path.casefold() in file_paths:
+            parts = path.split("/")
+            if len(parts) < 3 or parts[0] != "skills" or parts[1] not in result.provenance:
+                raise ValidationError(f"{path}: output must belong to a declared skills/<slug>/ package")
+            if path.casefold() in paths:
                 raise ValidationError(f"duplicate/case-colliding manifest path: {path}")
-            file_paths.add(path.casefold())
-            source = record.get("source")
-            if not isinstance(source, dict):
-                raise ValidationError(f"{path}: source mapping is required")
-            repo = source.get("repo")
-            source_path = relative_path(source.get("path"))
-            if not isinstance(repo, str) or repo not in pins:
-                raise ValidationError(f"{path}: source repo is not in catalog")
-            if source.get("commit") != pins[repo]:
-                raise ValidationError(f"{path}: source commit does not match catalog pin")
-            if not isinstance(source.get("blob_sha1"), str) or not SHA1.fullmatch(source["blob_sha1"]):
-                raise ValidationError(f"{path}: full source Git blob SHA-1 is required")
-            if record.get("role") == "upstream":
-                if path != f"skills/{repo}/{source_path}":
-                    raise ValidationError(f"{path}: upstream path was relocated")
-            elif record.get("role") == "license-copy":
-                owners = [e for e in result.entries if path == e["path"] + "/LICENSE"]
-                if not owners or owners[0]["package_root"] != f"skills/{repo}":
-                    raise ValidationError(f"{path}: license-copy must be in its owning skill folder")
-            else:
-                raise ValidationError(f"{path}: role must be upstream or license-copy")
-            if not isinstance(record.get("sha256"), str) or not SHA256.fullmatch(record["sha256"]):
-                raise ValidationError(f"{path}: SHA-256 is required")
-            if type(record.get("size")) is not int or record["size"] < 0:
-                raise ValidationError(f"{path}: nonnegative byte size is required")
+            paths.add(path.casefold())
+            relative = "/".join(parts[2:])
+            if len(parts[2:]) > MAX_PACKAGE_PATH_DEPTH or any(not PACKAGE_SEGMENT.fullmatch(p) for p in parts[2:]):
+                raise ValidationError(f"{path}: unsafe package segment or path depth exceeds 8")
+            role = record.get("role")
+            if role not in {"skill", "support", "license", "attribution"}:
+                raise ValidationError(f"{path}: unsupported file role")
+            if (relative == "SKILL.md") != (role == "skill") or (relative == "LICENSE") != (role == "license"):
+                raise ValidationError(f"{path}: primary/controlling-license role differs from path")
+            if relative != "SKILL.md" and parts[-1] == "SKILL.md":
+                raise ValidationError(f"{path}: additional SKILL.md is not a selected package")
+            _digest_fields(record, path)
             if record.get("mode") not in {"100644", "100755"}:
-                raise ValidationError(f"{path}: unsupported source mode (symlinks are forbidden)")
+                raise ValidationError(f"{path}: unsupported mode (symlinks are forbidden)")
+            _text(record.get("reason"), f"{path} inclusion reason")
+            _transforms(record)
+            src = record.get("source")
+            if src is None:
+                if role != "attribution" or not isinstance(record.get("content"), str) or record["transformations"]:
+                    raise ValidationError(f"{path}: generated content is allowed only for untransformed attribution")
+            else:
+                if not isinstance(src, dict) or "content" in record:
+                    raise ValidationError(f"{path}: sourced output cannot contain generated content")
+                proof_source = result.provenance[parts[1]]["source"]
+                if src.get("repo") != proof_source["repo"] or src.get("commit") != proof_source["commit"]:
+                    raise ValidationError(f"{path}: source commit/repo does not match skill provenance")
+                relative_path(src.get("path"))
+                _digest_fields(src, path + " original")
+                if not isinstance(src.get("blob_sha1"), str) or not SHA1.fullmatch(src["blob_sha1"]):
+                    raise ValidationError(f"{path}: original Git blob SHA-1 required")
+                if src.get("archive") != "provenance/originals/" + src["sha256"]:
+                    raise ValidationError(f"{path}: archive path must match original SHA-256")
+                confined_path(root, src["archive"])
             result.records[path] = record
         except (OSError, ValueError, TypeError) as exc:
             result.errors.append(f"manifest entry {index + 1}: {exc}")
     return result
 
 
-def _inventory(root: Path, errors: list[str]) -> set[str]:
+def _inventory(root: Path, relative: str, errors: list[str]) -> set[str]:
     try:
-        directory = confined_path(root, "skills")
+        directory = confined_path(root, relative)
         if not directory.exists():
             return set()
         if not directory.is_dir():
-            raise ValidationError("skills must be a directory")
+            raise ValidationError(f"{relative} must be a directory")
         found = set()
         for parent, directories, files in os.walk(directory, followlinks=False, onerror=lambda exc: errors.append(str(exc))):
             for name in list(directories):
@@ -292,95 +328,154 @@ def _inventory(root: Path, errors: list[str]) -> set[str]:
                     directories.remove(name)
             for name in files:
                 child = Path(parent) / name
-                relative = child.relative_to(root).as_posix()
+                path = child.relative_to(root).as_posix()
                 if _is_link(child) or not stat.S_ISREG(child.lstat().st_mode):
-                    errors.append(f"nonregular source file is not allowed: {relative}")
+                    errors.append(f"nonregular file is not allowed: {path}")
                 else:
-                    found.add(relative)
+                    found.add(path)
         return found
     except (OSError, ValidationError) as exc:
         errors.append(str(exc))
         return set()
 
 
-def _original_name(content: bytes, label: str) -> str:
-    lines = content.decode("utf-8").splitlines()
-    if not lines or lines[0] != "---":
-        raise ValidationError(f"{label}: SKILL.md must start with YAML frontmatter")
-    try:
-        end = lines.index("---", 1)
-    except ValueError as exc:
-        raise ValidationError(f"{label}: frontmatter closing delimiter missing") from exc
-    metadata = yaml.load("\n".join(lines[1:end]), Loader=UniqueLoader)
+def frontmatter(content: bytes, label: str) -> tuple[dict, str]:
+    # Path.read_text in the actual seed normalizes CRLF before parsing.
+    text = content.decode("utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    match = re.match(r"^---\n(.*?)\n---\n?(.*)$", text, re.DOTALL)
+    if not match:
+        raise ValidationError(f"{label}: canonical YAML frontmatter required")
+    metadata = yaml.load(match.group(1), Loader=UniqueLoader)
     if not isinstance(metadata, dict) or not isinstance(metadata.get("name"), str):
         raise ValidationError(f"{label}: frontmatter name must be a string")
-    return metadata["name"]
+    return metadata, match.group(2).lstrip("\n")
+
+
+def _skill_content(content: bytes, entry: dict, proof: dict) -> None:
+    slug = entry["slug"]
+    metadata, body = frontmatter(content, slug)
+    if metadata["name"] != slug:
+        raise ValidationError(f"{slug}: frontmatter name differs from folder/catalog slug")
+    description = metadata.get("description")
+    if not isinstance(description, str) or not description.strip() or len(description.strip()) > 1024:
+        raise ValidationError(f"{slug}: description must contain 1–1024 characters")
+    if not body or len(body) > 50_000:
+        raise ValidationError(f"{slug}: body must contain 1–50000 characters")
+    triggers = metadata.get("triggers") or []
+    if isinstance(triggers, str):
+        triggers = [s.strip() for s in triggers.split(",") if s.strip()]
+    elif not isinstance(triggers, list):
+        raise ValidationError(f"{slug}: triggers must be a list or comma-delimited string")
+    triggers = [str(t).strip() for t in triggers if str(t).strip()]
+    if len(triggers) > 10 or any(len(t) > 64 for t in triggers):
+        raise ValidationError(f"{slug}: triggers exceed 10 entries or 64 characters")
+    if metadata.get("license") != entry["license"]:
+        raise ValidationError(f"{slug}: frontmatter license differs")
+    attribution = metadata.get("metadata")
+    if not isinstance(attribution, dict) or any(not isinstance(k, str) or not isinstance(v, str) for k, v in attribution.items()):
+        raise ValidationError(f"{slug}: metadata must map string keys to string values")
+    for key, expected in {"author": proof["author"], "source": entry["source"], "source_url": proof.get("source_url")}.items():
+        if attribution.get(key) != expected:
+            raise ValidationError(f"{slug}: metadata {key} differs from provenance")
 
 
 def validate(root: Path = ROOT, *, expected_count: int | None = None, allow_missing: bool = False, supplied: dict[str, bytes] | None = None, strict_modes: bool = False) -> Result:
-    """supplied overlays downloads for complete preflight without source writes."""
+    """Verify original archives, deterministic replay and installable package shape."""
     root = root.resolve()
     result = _load_plan(root)
     if result.errors:
         return result
     supplied = supplied or {}
     if set(supplied) - set(result.records):
-        result.errors.append(f"supplied files not declared: {sorted(set(supplied) - set(result.records))}")
+        result.errors.append("supplied output files are not declared")
     if expected_count is not None and len(result.entries) != expected_count:
         result.errors.append(f"expected {expected_count} skills, catalog declares {len(result.entries)}")
-    actual = _inventory(root, result.errors)
-    effective = actual | set(supplied)
+    actual = _inventory(root, "skills", result.errors)
     for path in sorted(actual - set(result.records)):
-        result.errors.append(f"{path}: source file is not tracked by provenance/files.json")
+        result.errors.append(f"{path}: output file is not tracked by provenance/files.json")
+    effective = actual | set(supplied)
     if not allow_missing:
         for path in sorted(set(result.records) - effective):
             result.errors.append(f"{path}: manifest file is missing")
-    declared_skills = {e["path"] + "/SKILL.md" for e in result.entries}
-    manifest_skills = {p for p in result.records if p.endswith("/SKILL.md")}
-    if declared_skills != manifest_skills:
-        result.errors.append("SKILL.md completeness differs: " + f"undeclared={sorted(manifest_skills - declared_skills)}, untracked={sorted(declared_skills - manifest_skills)}")
-    for path in sorted(effective & set(result.records)):
+    expected_proofs = {f"provenance/skills/{e['slug']}.json" for e in result.entries}
+    if _inventory(root, "provenance/skills", result.errors) != expected_proofs:
+        result.errors.append("per-skill provenance inventory differs from catalog")
+    originals = {r["source"]["archive"] for r in result.records.values() if r.get("source")}
+    if _inventory(root, "provenance/originals", result.errors) != originals:
+        result.errors.append("original archive inventory differs: missing or unreferenced archive")
+    from package import render_file  # Renderer owns only the declared mechanical changes.
+    for path, record in result.records.items():
         try:
-            content = supplied[path] if path in supplied else confined_path(root, path).read_bytes()
-            verify_bytes(result.records[path], content)
-            if strict_modes and os.name != "nt" and path not in supplied:
-                executable = bool(confined_path(root, path).stat().st_mode & 0o111)
-                if executable != (result.records[path]["mode"] == "100755"):
-                    result.errors.append(f"{path}: executable mode differs from manifest")
-        except (OSError, ValueError) as exc:
-            result.errors.append(str(exc))
+            if record.get("source"):
+                src = record["source"]
+                verify_original(src, confined_path(root, src["archive"]).read_bytes())
+            rendered = render_file(record, root)
+            verify_bytes(record, rendered)
+            result.rendered[path] = rendered
+            if path in effective:
+                content = supplied[path] if path in supplied else confined_path(root, path).read_bytes()
+                verify_bytes(record, content)
+                if content != rendered:
+                    raise ValidationError(f"{path}: output differs from recorded adaptation replay")
+                if strict_modes and os.name != "nt" and path not in supplied:
+                    executable = bool(confined_path(root, path).stat().st_mode & 0o111)
+                    if executable != (record["mode"] == "100755"):
+                        raise ValidationError(f"{path}: executable mode differs from manifest")
+        except (OSError, ValueError, TypeError, KeyError, yaml.YAMLError) as exc:
+            result.errors.append(f"{path}: {exc}")
     for entry in result.entries:
-        skill_path = entry["path"] + "/SKILL.md"
-        license_path = entry["path"] + "/LICENSE"
-        for required in (skill_path, license_path):
-            if required not in result.records:
-                result.errors.append(f"{entry['slug']}: required manifest file absent: {required}")
-        if license_path in result.records and result.records[license_path]["size"] == 0:
-            result.errors.append(f"{entry['slug']}: controlling LICENSE is empty")
-        proof = result.provenance[entry["slug"]]
-        if skill_path in result.records and proof.get("primary_sha256") != result.records[skill_path]["sha256"]:
-            result.errors.append(f"{entry['slug']}: primary_sha256 differs from SKILL.md manifest")
-        if license_path in result.records:
-            src = result.records[license_path]["source"]
-            expected_urls = {
-                f"https://github.com/{src['repo']}/blob/{src['commit']}/{src['path']}",
-                f"https://raw.githubusercontent.com/{src['repo']}/{src['commit']}/{src['path']}",
-            }
-            license_url = proof["license"].get("source_url")
-            normalized_url = urllib.parse.unquote(license_url.split("#", 1)[0]) if isinstance(license_url, str) else None
-            if normalized_url not in expected_urls:
-                result.errors.append(f"{entry['slug']}: license source URL differs from exact copied source")
-        if skill_path not in effective:
+        slug = entry["slug"]
+        prefix = f"skills/{slug}/"
+        members = {p: r for p, r in result.records.items() if p.startswith(prefix)}
+        primary = members.get(prefix + "SKILL.md")
+        license_record = members.get(prefix + "LICENSE")
+        if primary is None or license_record is None:
+            result.errors.append(f"{slug}: required manifest file absent: SKILL.md or LICENSE")
             continue
+        if not any(r["role"] == "attribution" for r in members.values()):
+            result.errors.append(f"{slug}: attribution file required")
+        if len(members) - 1 > MAX_PACKAGE_FILES:
+            result.errors.append(f"{slug}: package exceeds 100 sibling files")
+        if any(r["size"] > MAX_PACKAGE_FILE_BYTES for r in members.values() if r["role"] != "skill"):
+            result.errors.append(f"{slug}: package file exceeds 2 MiB")
+        if sum(r["size"] for r in members.values()) > MAX_PACKAGE_BYTES:
+            result.errors.append(f"{slug}: package exceeds 20 MiB")
+        proof = result.provenance[slug]
         try:
-            content = supplied[skill_path] if skill_path in supplied else confined_path(root, skill_path).read_bytes()
-            if _original_name(content, entry["slug"]) != entry["name"]:
-                result.errors.append(f"{entry['slug']}: original frontmatter name differs from catalog name")
-            record = result.records.get(skill_path)
-            if record and record["role"] != "upstream":
-                result.errors.append(f"{entry['slug']}: SKILL.md must have upstream provenance")
-        except (OSError, ValueError, TypeError, yaml.YAMLError) as exc:
-            result.errors.append(str(exc))
+            src = primary["source"]
+            if src["path"] != proof["source"]["path"] + "/SKILL.md":
+                raise ValidationError("primary source path differs from skill provenance")
+            if proof.get("primary_sha256") != src["sha256"] or proof.get("packaged_sha256") != primary["sha256"]:
+                raise ValidationError("primary_sha256 or packaged_sha256 differs from manifest")
+            if not _pinned_url(proof.get("source_url"), src):
+                raise ValidationError("primary source URL differs")
+            if not _pinned_url(proof["license"].get("source_url"), license_record["source"]):
+                raise ValidationError("license source URL differs from exact copied source")
+            if license_record["size"] == 0:
+                raise ValidationError("controlling LICENSE is empty")
+            if proof.get("source_modified") != any(r.get("source") and r["sha256"] != r["source"]["sha256"] for r in members.values()):
+                raise ValidationError("source_modified differs from actual adapted bytes")
+            original = confined_path(root, src["archive"]).read_bytes()
+            original_meta = frontmatter(original, slug + " original")[0]
+            if original_meta["name"] != proof["original_name"]:
+                raise ValidationError("original_name differs from archived upstream frontmatter")
+            if prefix + "SKILL.md" in result.rendered:
+                packaged = result.rendered[prefix + "SKILL.md"]
+                packaged_meta = frontmatter(packaged, slug)[0]
+                permitted = {"name", "license", "metadata", "allowed-tools"}
+                preserved_keys = (set(original_meta) | set(packaged_meta)) - permitted
+                if any(original_meta.get(k) != packaged_meta.get(k) for k in preserved_keys):
+                    raise ValidationError("original frontmatter fields changed outside permitted metadata adaptation")
+                if original_meta.get("allowed-tools") != packaged_meta.get("allowed-tools"):
+                    def tool_tokens(value: Any) -> list[str]:
+                        if not isinstance(value, str):
+                            raise ValidationError("allowed-tools may change only its string separator formatting")
+                        return value.replace(",", " ").split()
+                    if tool_tokens(original_meta.get("allowed-tools")) != tool_tokens(packaged_meta.get("allowed-tools")):
+                        raise ValidationError("allowed-tools names changed beyond separator formatting")
+                _skill_content(packaged, entry, proof)
+        except (OSError, ValueError, TypeError, KeyError, yaml.YAMLError) as exc:
+            result.errors.append(f"{slug}: {exc}")
     return result
 
 
@@ -388,13 +483,13 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--expected-count", type=int)
-    parser.add_argument("--strict-modes", action="store_true", help="also compare POSIX executable bits (Windows uses Git index validation)")
+    parser.add_argument("--strict-modes", action="store_true", help="verify executable bits on POSIX; Windows requires a Git-index check")
     args = parser.parse_args(argv)
     result = validate(args.root, expected_count=args.expected_count, strict_modes=args.strict_modes)
     for error in result.errors:
         print(f"error: {error}", file=sys.stderr)
-    print(f"{len(result.entries)} skills, {len(result.records)} source files, {len(result.errors)} errors")
-    return int(bool(result.errors))
+    print(f"Checked {len(result.entries)} skills, {len(result.records)} packaged files: {len(result.errors)} error(s).")
+    return 1 if result.errors else 0
 
 
 if __name__ == "__main__":

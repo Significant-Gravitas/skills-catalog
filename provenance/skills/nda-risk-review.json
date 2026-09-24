@@ -1,0 +1,85 @@
+{
+  "schema_version": 3,
+  "slug": "nda-risk-review",
+  "name": "nda-risk-review",
+  "source": {
+    "repo": "anthropics/claude-for-legal",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "path": "commercial-legal/skills/nda-review"
+  },
+  "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/commercial-legal/skills/nda-review/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/claude-for-legal/nda-review",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/nda-risk-review/LICENSE",
+    "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/LICENSE",
+    "scope": "Inspected controlling LICENSE and repository file inventory; no nested exception in this skill subtree.",
+    "obligations": [
+      "Provide a copy of Apache-2.0 to recipients.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE.",
+      "Prominently identify modified files; license grants no general trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "9e5f5b79311885bd1e2a8a146a344f1700e49e918a789173e076ad59f7c8b29c",
+  "assignments": [
+    {
+      "expert": "Ellis",
+      "role": "Contract Manager",
+      "status": "core",
+      "essential_function": "Triage commercial NDAs against the team's attorney-reviewed positions and route exceptions to counsel.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "66ebae8a2f53d5c962060591",
+    "57239675de416aa4cfc00795",
+    "f208c36cb2bc40bed5e510b4"
+  ],
+  "review": "Reclassified as selected unchanged for the broader Contract Manager role. Full native source supports assistive GREEN/YELLOW/RED NDA triage from side-specific attorney-reviewed playbook positions, asks when a position is absent, routes hidden non-NDA obligations to counsel, and includes a native attorney gate for non-lawyer signature steps. Does not hardcode commercial NDA thresholds. Human legal review remains intrinsic to the native workflow; no corrective wrapper is proposed. Native reference skill has user-invocable:false.",
+  "native_prerequisites": [
+    "An attorney-reviewed side-specific NDA playbook and configured legal approvers; uploaded contract text/files",
+    "Runtime must support loading a native reference skill; upstream /commercial-legal:review is its usual dispatcher",
+    "Optional CLM for native record-creation offers; no CLM required for document triage"
+  ],
+  "evidence_qualification": "Lower-adoption specialist selection: 643 installs. Publisher/repository evidence and substantive source review support selection, but individual uptake is smaller and effectiveness is not independently proven.",
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "nda-review",
+  "previous_catalog_slug": "nda-review",
+  "packaged_sha256": "25c07c5b924838885d717f9caa734a6a43e47f7fe10d4ffbb66dcbe27a1d5034",
+  "original_native_prerequisites": [
+    "Preserve commercial-legal/CLAUDE.md and native practice configuration at the documented config path",
+    "An attorney-reviewed side-specific NDA playbook and configured legal approvers; uploaded contract text/files",
+    "Runtime must support loading a native reference skill; upstream /commercial-legal:review is its usual dispatcher",
+    "Optional CLM for native record-creation offers; no CLM required for document triage"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Leave ~/.claude/plugins/config/... user-state paths unchanged in this recipe. These are runtime configuration locations, not static support paths. Any relocation must be coordinated across both legal skills and retain matter isolation.",
+      "Before substantive use, load references/practice-profile-template.md for the original configuration/guardrail contract. Never use its placeholders as populated practice configuration.",
+      "The company-profile template is provided as a schema reference; do not overwrite existing configured user files."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [
+      "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it.",
+      "Requires a populated persistent practice/company profile with the original setup and attorney-review gates. Packaging cannot invent legal positions or configured approvers.",
+      "Preserve matter isolation and native setup/dispatch expectations; no hidden config source file is installed by this flat package."
+    ],
+    "preserved_native_fields": {
+      "user-invocable": false
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  },
+  "original_packaging_notes": [
+    "The native /commercial-legal:review dispatcher is an unselected skill and is not supplied. Preserve user-invocable:false; runtime must support loading the original reference skill with its parent instructions and configured playbook.",
+    "Parent instructions describe plugin-root references, while the pinned upstream repository stores reference templates at repository root. Native runtime/path compatibility remains unresolved; no corrective mirror or wrapper is included."
+  ]
+}

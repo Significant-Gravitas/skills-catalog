@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "slug": "supply-chain-risk-auditor",
   "name": "supply-chain-risk-auditor",
   "source": {
@@ -12,7 +12,7 @@
   "author": "Eric Quintero; published by Trail of Bits",
   "license": {
     "spdx": "CC-BY-SA-4.0",
-    "file": "skills/trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/LICENSE",
+    "file": "skills/supply-chain-risk-auditor/LICENSE",
     "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/LICENSE",
     "scope": "Root LICENSE is CC-BY-SA-4.0; no nested license override in the complete selected plugin directories. Unchanged skill material can be commercially redistributed with required attribution/license and without extra restrictions. It cannot be relabeled proprietary; unrelated separable AutoGPT platform code is not automatically share-alike.",
     "obligations": [
@@ -46,9 +46,37 @@
     "Authenticated gh strongly recommended for GitHub rate limits; collector can return unassessable without it",
     "Network to OSV, npm/PyPI registries, Go module proxy, deps.dev, OpenSSF Scorecard and GitHub",
     "Optional pip-audit integration detected by source; no project/package installation by collector",
-    "Full scripts directory must accompany SKILL.md; not a text-only drop-in"
+    "Run documented uv commands from the skill package directory; Python >=3.11 is declared by the scripts’ inline PEP 723 metadata."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
-  "source_modified": false
+  "source_modified": true,
+  "original_name": "supply-chain-risk-auditor",
+  "previous_catalog_slug": "supply-chain-risk-auditor",
+  "packaged_sha256": "355e5eca44f51aea4e74ebe3e3337c0ece65c3180f9c8b03359a63743c940888",
+  "original_native_prerequisites": [
+    "Python >=3.11 and uv; bundled scripts are stdlib-only",
+    "Authenticated gh strongly recommended for GitHub rate limits; collector can return unassessable without it",
+    "Network to OSV, npm/PyPI registries, Go module proxy, deps.dev, OpenSSF Scorecard and GitHub",
+    "Optional pip-audit integration detected by source; no project/package installation by collector",
+    "Full scripts directory must accompany SKILL.md; not a text-only drop-in"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Excluded test_*.py, evals, fixtures, icon assets, agent UI metadata, pyproject.toml and uv.lock. Executed scripts use inline Python>=3.11 metadata and only import model.py/sources.py plus stdlib; test/lint manifests are not runtime inputs."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [
+      "Requires an actual script execution environment, uv/Python3.11+, target manifests and network API access. Never replace script measurements with model estimates."
+    ],
+    "preserved_native_fields": {
+      "allowed-tools": "Read Write Bash Glob Grep"
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
 }

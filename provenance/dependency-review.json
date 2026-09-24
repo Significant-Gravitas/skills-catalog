@@ -1,0 +1,761 @@
+{
+  "schema_version": 1,
+  "method": "Literal dependency scan plus source review; ambiguous prose/dynamic/native references need human judgment. Not execution or exhaustive dependency proof.",
+  "packages": [
+    {
+      "slug": "product-marketing-context",
+      "original_name": "product-marketing",
+      "source": "coreyhaines31/marketingskills/skills/product-marketing",
+      "native_prerequisites": [
+        "Persistent project workspace with write access to the authored product-marketing context file; source workflow asks for missing inputs and user review."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 13491,
+      "changes": 1
+    },
+    {
+      "slug": "marketing-copy-editing",
+      "original_name": "copy-editing",
+      "source": "coreyhaines31/marketingskills/skills/copy-editing",
+      "native_prerequisites": [
+        "Draft and product/audience context; optional access to the current webpage and its performance data for content refresh. No bundled executable required."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 6,
+      "supplementary_files": 5,
+      "package_bytes": 32118,
+      "changes": 2
+    },
+    {
+      "slug": "social-media-management",
+      "original_name": "social",
+      "source": "coreyhaines31/marketingskills/skills/social",
+      "native_prerequisites": [
+        "Persistent project context/source list and supplied social content/performance data.",
+        "The listening reference optionally uses curl, jq and xmllint, public Reddit/Hacker News/Bluesky/RSS endpoints, or authenticated browser sessions for LinkedIn/X. These are external tools and accounts, not vendored source dependencies.",
+        "Native saved searches/hashtag follows remain the authored alternative for Instagram/TikTok. Authored privacy/platform/reply rules remain intact."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 11,
+      "supplementary_files": 10,
+      "package_bytes": 70679,
+      "changes": 2
+    },
+    {
+      "slug": "lifecycle-email-marketing",
+      "original_name": "emails",
+      "source": "coreyhaines31/marketingskills/skills/emails",
+      "native_prerequisites": [
+        "Drafting works from supplied product/audience/sequence facts. Live implementation needs the chosen provider account, credentials, permission and native API/MCP support.",
+        "Customer.io, Mailchimp, Nitrosend, Resend, SendGrid and Kit are alternative authored providers, not six mandatory accounts.",
+        "Resend guide uses its externally installed official resend-cli or resend SDK; SendGrid SDK examples likewise require the external package. Template ./emails/welcome in a React example is user application code, not a missing upstream file.",
+        "The general upstream tools registry remains a pinned optional discovery link. No local repository CLI is needed for the kept guide examples."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 12,
+      "supplementary_files": 11,
+      "package_bytes": 54436,
+      "changes": 1
+    },
+    {
+      "slug": "competitor-profiling",
+      "original_name": "competitor-profiling",
+      "source": "coreyhaines31/marketingskills/skills/competitor-profiling",
+      "native_prerequisites": [
+        "Firecrawl and DataForSEO native MCP/tool capabilities, account access and raw-response capture are intrinsic to the specified research workflow.",
+        "Persistent competitor-profiles/ project output directory. Its tool-reference.md contains the native operation recipes; the unrelated repository DataForSEO CLI does not replace those MCP operations."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 5,
+      "supplementary_files": 4,
+      "package_bytes": 30846,
+      "changes": 1
+    },
+    {
+      "slug": "customer-insight-research",
+      "original_name": "customer-research",
+      "source": "coreyhaines31/marketingskills/skills/customer-research",
+      "native_prerequisites": [
+        "Supplied research assets or access to chosen public/customer sources; primary interviews/surveys require the author-requested recruiting context and human participation.",
+        "SparkToro is an optional browser/account research path. The retained guide has no API/MCP/CLI dependency.",
+        "Interview/survey/source files remain local. Relevant-skills suggestions are not executable dependencies."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 6,
+      "supplementary_files": 5,
+      "package_bytes": 49940,
+      "changes": 3
+    },
+    {
+      "slug": "marketing-content-strategy",
+      "original_name": "content-strategy",
+      "source": "coreyhaines31/marketingskills/skills/content-strategy",
+      "native_prerequisites": [
+        "Supplied business/audience/content evidence and optional analytics/search/customer-research sources.",
+        "Sanity, Contentful and Strapi are alternative CMS implementation paths. The kept guides use external service accounts, APIs and their official CLIs/SDKs, not repository wrappers."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 8,
+      "supplementary_files": 7,
+      "package_bytes": 50516,
+      "changes": 2
+    },
+    {
+      "slug": "marketing-copywriting",
+      "original_name": "copywriting",
+      "source": "coreyhaines31/marketingskills/skills/copywriting",
+      "native_prerequisites": [
+        "Product/audience/proof input and a draft/page brief; no executable runtime support.",
+        "The AI-writing-detection cross-skill reference is optional reading retained as a pinned upstream link, not an installed seo-audit dependency."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 5,
+      "supplementary_files": 4,
+      "package_bytes": 33347,
+      "changes": 2
+    },
+    {
+      "slug": "customer-support-research",
+      "original_name": "customer-research",
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/customer-research",
+      "native_prerequisites": [
+        "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<question or topic>"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 28667,
+      "changes": 2
+    },
+    {
+      "slug": "customer-response-drafting",
+      "original_name": "draft-response",
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/draft-response",
+      "native_prerequisites": [
+        "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<situation description>"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 33007,
+      "changes": 2
+    },
+    {
+      "slug": "customer-escalation",
+      "original_name": "customer-escalation",
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation",
+      "native_prerequisites": [
+        "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<issue summary> [customer name]"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 29650,
+      "changes": 2
+    },
+    {
+      "slug": "website-seo-audit",
+      "original_name": "seo-audit",
+      "source": "every-app/open-seo/plugins/openseo/skills/seo-audit",
+      "native_prerequisites": [
+        "Original OpenSEO MCP endpoint/account and service credits; native tool names and project/report persistence must be supported."
+      ],
+      "runtime_blockers": [
+        "A package cannot provide OpenSEO authentication, credits, live SEO data or save_report/project persistence. Preserve the authored stop on missing connection."
+      ],
+      "preserved_native_fields": {},
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 39549,
+      "changes": 1
+    },
+    {
+      "slug": "seo-report-generation",
+      "original_name": "seo-report",
+      "source": "every-app/open-seo/plugins/openseo/skills/seo-report",
+      "native_prerequisites": [
+        "Original OpenSEO MCP endpoint/account and service credits; native tool names and project/report persistence must be supported."
+      ],
+      "runtime_blockers": [
+        "A package cannot provide OpenSEO authentication, credits, live SEO data or save_report/project persistence. Preserve the authored stop on missing connection."
+      ],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 24103,
+      "changes": 1
+    },
+    {
+      "slug": "account-reconciliation",
+      "original_name": "reconciliation",
+      "source": "anthropics/knowledge-work-plugins/finance/skills/reconciliation",
+      "native_prerequisites": [
+        "Bank statements and GL/subledger balances with source detail.",
+        "Organization-specific materiality and retention policy are ordinary inputs requested by the upstream skill."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<account> [period]"
+      },
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 24570,
+      "changes": 1
+    },
+    {
+      "slug": "month-end-close-management",
+      "original_name": "close-management",
+      "source": "anthropics/knowledge-work-plugins/finance/skills/close-management",
+      "native_prerequisites": [
+        "Close calendar,accounting policies,task owners and current task status.",
+        "Accounting system access for system actions if requested; otherwise the documented calendar/status/checklist work uses supplied inputs.",
+        "Original source requires qualified financial-professional review of close activities."
+      ],
+      "runtime_blockers": [
+        "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it."
+      ],
+      "preserved_native_fields": {
+        "user-invocable": false
+      },
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 27056,
+      "changes": 1
+    },
+    {
+      "slug": "financial-statement-preparation",
+      "original_name": "financial-statements",
+      "source": "anthropics/knowledge-work-plugins/finance/skills/financial-statements",
+      "native_prerequisites": [
+        "Trial balance or income-statement data,account hierarchy,comparison periods and known adjustments.",
+        "Optional ERP/data warehouse connector; original manual upload/paste fallback is complete.",
+        "Qualified financial-professional review is required by upstream; optional /flux drilldown reference is not necessary to produce its listed outputs."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<frequency> <period>"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 33202,
+      "changes": 2
+    },
+    {
+      "slug": "overdue-invoice-follow-up",
+      "original_name": "invoice-chase",
+      "source": "anthropics/knowledge-work-plugins/small-business/skills/invoice-chase",
+      "native_prerequisites": [
+        "AR aging and payment history or original CSV upload/manual-send fallback.",
+        "Optional supported ledger,processor,mail connectors and output artifact capability; context/voice/output preferences supplied normally.",
+        "Upstream optional adjacent-skill offers (plan-payroll,cash-flow-snapshot,close-month,build-connector) are not part of this curated kit; those separate functions remain unavailable unless supplied unchanged and independently assessed.",
+        "Native persistent business profile/shared state and artifact delivery; upstream owner approval applies to draft queues as well as actual sends.",
+        "Persistent owner Business context and voice profile; updates must survive sessions and package re-materialization.",
+        "Actual mail/ledger/payment connectors only for connected actions; owner approval for queued drafts and sends remains unchanged.",
+        "The authored visual-artifact/publishing or user-selected output delivery capability."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "version": "0.3.0",
+        "allowed-tools": "Read, WebFetch"
+      },
+      "package_files": 18,
+      "supplementary_files": 17,
+      "package_bytes": 118749,
+      "changes": 7
+    },
+    {
+      "slug": "vendor-evaluation",
+      "original_name": "vendor-review",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/vendor-review",
+      "native_prerequisites": [
+        "Proposal,contract,pricing and current performance documents.",
+        "operations/CONNECTORS.md; optional procurement or knowledge-base connections for existing policies/contracts/spend.",
+        "User context for purchase,renewal or comparison; source does not supply market data automatically."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<vendor name or proposal>"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 21879,
+      "changes": 2
+    },
+    {
+      "slug": "vendor-contract-status",
+      "original_name": "vendor-check",
+      "source": "anthropics/knowledge-work-plugins/legal/skills/vendor-check",
+      "native_prerequisites": [
+        "Original vendor agreements in connected CLM/CRM/email/docs/chat or manually supplied source material.",
+        "legal/CONNECTORS.md; missing-source behavior is authored.",
+        "Qualified legal verification of agreement interpretation is an upstream requirement."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "[vendor name]"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 23974,
+      "changes": 2
+    },
+    {
+      "slug": "board-deck-builder",
+      "original_name": "board-deck-builder",
+      "source": "alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder",
+      "native_prerequisites": [
+        "Verified company metrics and section-owner inputs; stage and meeting cadence.",
+        "Best fit is venture-backed SaaS boards; supplied company context chooses relevant metrics as upstream permits.",
+        "Deck content/template generation works directly; native slide rendering is a separate tool capability,not a bundled licensed dependency."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 5,
+      "supplementary_files": 4,
+      "package_bytes": 24286,
+      "changes": 1
+    },
+    {
+      "slug": "multi-source-research-synthesis",
+      "original_name": "knowledge-synthesis",
+      "source": "anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis",
+      "native_prerequisites": [
+        "Raw source results or supplied documents with dates,authors,locations and titles.",
+        "Optional chat/email/docs/project-tracker retrieval; enterprise-search/CONNECTORS.md explains dynamic categories.",
+        "No independent ability to retrieve inaccessible sources or guarantee that input set is complete."
+      ],
+      "runtime_blockers": [
+        "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it."
+      ],
+      "preserved_native_fields": {
+        "user-invocable": false
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 27367,
+      "changes": 2
+    },
+    {
+      "slug": "project-status-report",
+      "original_name": "status-report",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/status-report",
+      "native_prerequisites": [
+        "Project/team reporting period,actual status,KPIs and action owners supplied directly or through optional tracker/chat/calendar connectors.",
+        "Posting to chat is optional authored functionality and requires available connector capabilities."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "[weekly | monthly | quarterly] [project or team]"
+      },
+      "package_files": 5,
+      "supplementary_files": 4,
+      "package_bytes": 23184,
+      "changes": 2
+    },
+    {
+      "slug": "operational-risk-assessment",
+      "original_name": "risk-assessment",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/risk-assessment",
+      "native_prerequisites": [
+        "Specific project,vendor,process or decision context and known evidence.",
+        "Human likelihood/impact and mitigation ownership judgments; no external connector required."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 18175,
+      "changes": 1
+    },
+    {
+      "slug": "legal-meeting-briefing",
+      "original_name": "meeting-briefing",
+      "source": "anthropics/knowledge-work-plugins/legal/skills/meeting-briefing",
+      "native_prerequisites": [
+        "Meeting details,participants,agenda,relevant agreements and legal-team role/context.",
+        "Available calendar,email,chat,document,CLM/CRM connectors or supplied records; source flags unavailable or unverified information.",
+        "Briefings require accuracy/completeness review as upstream instructs; no legal advice is provided."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 25420,
+      "changes": 1
+    },
+    {
+      "slug": "task-list-management",
+      "original_name": "task-management",
+      "source": "anthropics/knowledge-work-plugins/productivity/skills/task-management",
+      "native_prerequisites": [
+        "Writable persistent TASKS.md,CLAUDE.md,memory folder; user can open dashboard in a browser supporting File System Access APIs.",
+        "Original optional connectors for tracker/chat/email/calendar/docs; normal provisioning only,no dispatch wrappers or instruction overrides.",
+        "A stable shared working directory for TASKS.md, CLAUDE.md and memory/ that all four workflows use across sessions.",
+        "Ability to deliver/open dashboard.html in a browser with File System Access APIs against those same persistent files.",
+        "Use bundled sibling documents as instructions; no /productivity:* command handler is installed by this recipe."
+      ],
+      "runtime_blockers": [
+        "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it.",
+        "The dashboard/browser and agent must access the same persistent task/memory files. Source relocation cannot provide that filesystem/UI integration."
+      ],
+      "preserved_native_fields": {
+        "user-invocable": false
+      },
+      "package_files": 7,
+      "supplementary_files": 6,
+      "package_bytes": 131857,
+      "changes": 4
+    },
+    {
+      "slug": "workplace-memory-management",
+      "original_name": "memory-management",
+      "source": "anthropics/knowledge-work-plugins/productivity/skills/memory-management",
+      "native_prerequisites": [
+        "Writable persistent TASKS.md,CLAUDE.md,memory folder; user can open dashboard in a browser supporting File System Access APIs.",
+        "Original optional connectors for tracker/chat/email/calendar/docs; normal provisioning only,no dispatch wrappers or instruction overrides.",
+        "A stable shared working directory for TASKS.md, CLAUDE.md and memory/ that all four workflows use across sessions.",
+        "Ability to deliver/open dashboard.html in a browser with File System Access APIs against those same persistent files.",
+        "Use bundled sibling documents as instructions; no /productivity:* command handler is installed by this recipe."
+      ],
+      "runtime_blockers": [
+        "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it.",
+        "The dashboard/browser and agent must access the same persistent task/memory files. Source relocation cannot provide that filesystem/UI integration."
+      ],
+      "preserved_native_fields": {
+        "user-invocable": false
+      },
+      "package_files": 8,
+      "supplementary_files": 7,
+      "package_bytes": 141082,
+      "changes": 5
+    },
+    {
+      "slug": "productivity-setup",
+      "original_name": "start",
+      "source": "anthropics/knowledge-work-plugins/productivity/skills/start",
+      "native_prerequisites": [
+        "Writable persistent TASKS.md,CLAUDE.md,memory folder; user can open dashboard in a browser supporting File System Access APIs.",
+        "Original optional connectors for tracker/chat/email/calendar/docs; normal provisioning only,no dispatch wrappers or instruction overrides.",
+        "A stable shared working directory for TASKS.md, CLAUDE.md and memory/ that all four workflows use across sessions.",
+        "Ability to deliver/open dashboard.html in a browser with File System Access APIs against those same persistent files.",
+        "Use bundled sibling documents as instructions; no /productivity:* command handler is installed by this recipe."
+      ],
+      "runtime_blockers": [
+        "The dashboard/browser and agent must access the same persistent task/memory files. Source relocation cannot provide that filesystem/UI integration."
+      ],
+      "preserved_native_fields": {},
+      "package_files": 7,
+      "supplementary_files": 6,
+      "package_bytes": 131569,
+      "changes": 4
+    },
+    {
+      "slug": "productivity-task-sync",
+      "original_name": "update",
+      "source": "anthropics/knowledge-work-plugins/productivity/skills/update",
+      "native_prerequisites": [
+        "Writable persistent TASKS.md,CLAUDE.md,memory folder; user can open dashboard in a browser supporting File System Access APIs.",
+        "Original optional connectors for tracker/chat/email/calendar/docs; normal provisioning only,no dispatch wrappers or instruction overrides.",
+        "A stable shared working directory for TASKS.md, CLAUDE.md and memory/ that all four workflows use across sessions.",
+        "Ability to deliver/open dashboard.html in a browser with File System Access APIs against those same persistent files.",
+        "Use bundled sibling documents as instructions; no /productivity:* command handler is installed by this recipe."
+      ],
+      "runtime_blockers": [
+        "The dashboard/browser and agent must access the same persistent task/memory files. Source relocation cannot provide that filesystem/UI integration."
+      ],
+      "preserved_native_fields": {
+        "argument-hint": "[--comprehensive]"
+      },
+      "package_files": 7,
+      "supplementary_files": 6,
+      "package_bytes": 131711,
+      "changes": 4
+    },
+    {
+      "slug": "dataset-exploration",
+      "original_name": "explore-data",
+      "source": "anthropics/knowledge-work-plugins/data/skills/explore-data",
+      "native_prerequisites": [
+        "Local reader for CSV/Excel/Parquet/JSON, or connected warehouse MCP and SQL execution.",
+        "For actual profiles an analysis runtime and the underlying data are required."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<table or file>"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 29609,
+      "changes": 2
+    },
+    {
+      "slug": "data-visualization",
+      "original_name": "data-visualization",
+      "source": "anthropics/knowledge-work-plugins/data/skills/data-visualization",
+      "native_prerequisites": [
+        "Python with matplotlib, seaborn, pandas, numpy; plotly for its interactive-chart examples.",
+        "Prepared tabular input and a runtime that can write/display image or HTML artifacts."
+      ],
+      "runtime_blockers": [
+        "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it."
+      ],
+      "preserved_native_fields": {
+        "user-invocable": false
+      },
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 27636,
+      "changes": 1
+    },
+    {
+      "slug": "user-cohort-analysis",
+      "original_name": "cohort-analysis",
+      "source": "phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis",
+      "native_prerequisites": [
+        "CSV/Excel/JSON or SQL-result reading; user supplies defined cohorts, time periods and engagement metrics.",
+        "Python pandas/numpy and charting runtime when code/charts are requested.",
+        "Further-reading article links are optional, not bundled article content or mandatory executable dependencies."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 8528,
+      "changes": 1
+    },
+    {
+      "slug": "supply-chain-risk-auditor",
+      "original_name": "supply-chain-risk-auditor",
+      "source": "trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor",
+      "native_prerequisites": [
+        "Python >=3.11 and uv; bundled scripts are stdlib-only",
+        "Authenticated gh strongly recommended for GitHub rate limits; collector can return unassessable without it",
+        "Network to OSV, npm/PyPI registries, Go module proxy, deps.dev, OpenSSF Scorecard and GitHub",
+        "Optional pip-audit integration detected by source; no project/package installation by collector",
+        "Run documented uv commands from the skill package directory; Python >=3.11 is declared by the scripts’ inline PEP 723 metadata."
+      ],
+      "runtime_blockers": [
+        "Requires an actual script execution environment, uv/Python3.11+, target manifests and network API access. Never replace script measurements with model estimates."
+      ],
+      "preserved_native_fields": {
+        "allowed-tools": "Read Write Bash Glob Grep"
+      },
+      "package_files": 7,
+      "supplementary_files": 6,
+      "package_bytes": 179208,
+      "changes": 1
+    },
+    {
+      "slug": "code-change-security-review",
+      "original_name": "differential-review",
+      "source": "trailofbits/skills/plugins/differential-review/skills/differential-review",
+      "native_prerequisites": [
+        "A local Git repository with accessible base/head refs, file reading/search, Bash/POSIX shell commands and file writing; gh only for PR metadata.",
+        "audit-context-building optional; source documents manual line-by-line fallback.",
+        "Namespaced adversarial-modeler agent optional; source offers direct adversarial.md route.",
+        "issue-writer is an optional follow-on, not verified or supplied as a required executable.",
+        "AutoGPT compatibility with the skill loader and tool interface has not been tested."
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "allowed-tools": "Read Write Grep Glob Bash"
+      },
+      "package_files": 7,
+      "supplementary_files": 6,
+      "package_bytes": 56990,
+      "changes": 1
+    },
+    {
+      "slug": "sales-pipeline-review",
+      "original_name": "pipeline-review",
+      "source": "anthropics/knowledge-work-plugins/sales/skills/pipeline-review",
+      "native_prerequisites": [
+        "CRM or uploaded pipeline export; history needed for genuine stage aging and slippage",
+        "Native team context supplies stages, scope, quota and cycle length; no skill edit required"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<segment or rep>"
+      },
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 23796,
+      "changes": 1
+    },
+    {
+      "slug": "client-proposal-writing",
+      "original_name": "proposal-writer",
+      "source": "jezweb/claude-skills/plugins/writing/skills/proposal-writer",
+      "native_prerequisites": [
+        "Client brief and seller-supplied pricing, scope, timeline and factual proof points",
+        "No connector or executable dependency; optional branded document tool outside this skill"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14989,
+      "changes": 1
+    },
+    {
+      "slug": "nda-risk-review",
+      "original_name": "nda-review",
+      "source": "anthropics/claude-for-legal/commercial-legal/skills/nda-review",
+      "native_prerequisites": [
+        "An attorney-reviewed side-specific NDA playbook and configured legal approvers; uploaded contract text/files",
+        "Runtime must support loading a native reference skill; upstream /commercial-legal:review is its usual dispatcher",
+        "Optional CLM for native record-creation offers; no CLM required for document triage"
+      ],
+      "runtime_blockers": [
+        "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it.",
+        "Requires a populated persistent practice/company profile with the original setup and attorney-review gates. Packaging cannot invent legal positions or configured approvers.",
+        "Preserve matter isolation and native setup/dispatch expectations; no hidden config source file is installed by this flat package."
+      ],
+      "preserved_native_fields": {
+        "user-invocable": false
+      },
+      "package_files": 6,
+      "supplementary_files": 5,
+      "package_bytes": 85828,
+      "changes": 2
+    },
+    {
+      "slug": "contract-amendment-history",
+      "original_name": "amendment-history",
+      "source": "anthropics/claude-for-legal/commercial-legal/skills/amendment-history",
+      "native_prerequisites": [
+        "Complete base agreement and all relevant amendments, uploaded or pasted",
+        "Native commercial-legal practice configuration and support instructions; optional matter folder isolation",
+        "Document-reading capability; CLM/repository retrieval must not be advertised as already implemented"
+      ],
+      "runtime_blockers": [
+        "Requires a populated persistent practice/company profile with the original setup and attorney-review gates. Packaging cannot invent legal positions or configured approvers.",
+        "Preserve matter isolation and native setup/dispatch expectations; no hidden config source file is installed by this flat package."
+      ],
+      "preserved_native_fields": {
+        "argument-hint": "[file(s) | [CLM ID (coming soon)] | [repository link (coming soon)]] [--provision <clause name>]"
+      },
+      "package_files": 6,
+      "supplementary_files": 5,
+      "package_bytes": 76515,
+      "changes": 2
+    },
+    {
+      "slug": "candidate-interview-planning",
+      "original_name": "interview-prep",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/interview-prep",
+      "native_prerequisites": [
+        "Role requirements and desired competencies supplied by the recruiter",
+        "No external connector required"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 17934,
+      "changes": 1
+    },
+    {
+      "slug": "employment-offer-drafting",
+      "original_name": "draft-offer",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/draft-offer",
+      "native_prerequisites": [
+        "Actual compensation, employment classification, benefits, start date and manager from the company",
+        "human-resources/CONNECTORS.md; optional HRIS for bands/headcount and optional ATS for candidate/status",
+        "If ATS is connected, its native workflow may update offer status; connector permissions must be supported"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {
+        "argument-hint": "<role and level>"
+      },
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 20973,
+      "changes": 2
+    },
+    {
+      "slug": "recruiting-pipeline",
+      "original_name": "recruiting-pipeline",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline",
+      "native_prerequisites": [
+        "Current requisitions/candidate stages and timestamps; pasted data or an ATS connector",
+        "ATS status writes are native behavior when connected; connector permissions must be supported"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 17798,
+      "changes": 1
+    },
+    {
+      "slug": "sales-account-research",
+      "original_name": "account-research",
+      "source": "anthropics/knowledge-work-plugins/sales/skills/account-research",
+      "native_prerequisites": [
+        "Target company/domain and the seller's ICP, value proposition and proof points",
+        "Web search or enrichment for current public facts; CRM or uploaded account book for ownership/deduplication",
+        "Native sales context and optional CONNECTORS.md category bindings; no prompt edit required"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 24181,
+      "changes": 1
+    },
+    {
+      "slug": "sales-outreach-drafting",
+      "original_name": "draft-outreach",
+      "source": "anthropics/knowledge-work-plugins/sales/skills/draft-outreach",
+      "native_prerequisites": [
+        "Named prospect, seller value proposition and real proof points; account-research provides sourced hooks",
+        "Optional email/CRM/enrichment; works as paste-ready text with no connector",
+        "Optional sales engagement connector for requested sequence enrollment; native connector permissions and user requests govern actions"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 26111,
+      "changes": 1
+    },
+    {
+      "slug": "sales-call-preparation",
+      "original_name": "call-prep",
+      "source": "anthropics/knowledge-work-plugins/sales/skills/call-prep",
+      "native_prerequisites": [
+        "Upcoming meeting/account details and whatever relevant CRM records, notes or transcripts exist",
+        "Optional calendar, CRM, Gong/transcripts, email, docs and chat; uploads and pasted notes are natively supported",
+        "No connector actions needed for the file-based preparation workflow"
+      ],
+      "runtime_blockers": [],
+      "preserved_native_fields": {},
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 25753,
+      "changes": 1
+    }
+  ],
+  "marketing_review": {},
+  "nonmarketing_review": {}
+}

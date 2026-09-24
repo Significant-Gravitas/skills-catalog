@@ -1,0 +1,74 @@
+{
+  "schema_version": 3,
+  "slug": "vendor-evaluation",
+  "name": "vendor-evaluation",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/vendor-review"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/operations/skills/vendor-review/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/vendor-review",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/vendor-evaluation/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/LICENSE",
+    "scope": "Root LICENSE contains the full explicit Apache-2.0 grant followed by9 anomalous prose lines after the appendix (Syntax-file, code separations, code vault, data/input text). This suffix states no license condition,restriction or contrary ownership, so the complete Apache2 grant is treated as controlling. No operations or small-business child license exists. Exact anomalous root bytes preserved; disclose suffix in redistribution review. Unchanged selected skill/shared files contain no overriding license.",
+    "obligations": [
+      "Distribute complete Apache-2.0 license.",
+      "Retain relevant copyright, patent, trademark and attribution notices; preserve any applicable NOTICE text.",
+      "State changes prominently in modified files; license supplies no trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "c2a959a7ed068e34a83984cf223754062e6819deb0ba1ca33eb747b4cc808d5e",
+  "assignments": [
+    {
+      "expert": "Vera",
+      "role": "Procurement Specialist",
+      "status": "core",
+      "essential_function": "Compare suppliers and renewals using total cost,risk,performance and negotiation options.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "9e22dc431e1554640b050523",
+    "2037c95a6f4dad81eae32594",
+    "9818315323f66d10bfb36581",
+    "f783cc14fb5ca01687d8d78f",
+    "4d384707e8d97a0ebff2066a"
+  ],
+  "review": "Selected unchanged for evaluating new suppliers,renewals and alternatives: TCO,financial/security/continuity/concentration risk,SLA/support/uptime,comparison matrix and negotiation recommendation. Concise but concrete workflow with proposal-upload and connector options. Proceed/negotiate/pass recommendations are accepted as authored. Scope is analytical decision support; no built-in purchase/payment execution. Root-license anomaly disclosed; no conflicting condition identified.",
+  "native_prerequisites": [
+    "Proposal,contract,pricing and current performance documents.",
+    "operations/CONNECTORS.md; optional procurement or knowledge-base connections for existing policies/contracts/spend.",
+    "User context for purchase,renewal or comparison; source does not supply market data automatically."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "vendor-review",
+  "previous_catalog_slug": "vendor-review",
+  "packaged_sha256": "78c8bc2fd5842c022fcc8196dacb159cd0415a5b3fcdcc35aeb44e705cfe9258",
+  "original_native_prerequisites": [
+    "Proposal,contract,pricing and current performance documents.",
+    "operations/CONNECTORS.md; optional procurement or knowledge-base connections for existing policies/contracts/spend.",
+    "User context for purchase,renewal or comparison; source does not supply market data automatically."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {
+      "argument-hint": "<vendor name or proposal>"
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}

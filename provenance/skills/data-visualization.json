@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "slug": "data-visualization",
   "name": "data-visualization",
   "source": {
@@ -12,7 +12,7 @@
   "author": "Anthropic",
   "license": {
     "spdx": "Apache-2.0",
-    "file": "skills/anthropics/knowledge-work-plugins/data/skills/data-visualization/LICENSE",
+    "file": "skills/data-visualization/LICENSE",
     "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/LICENSE",
     "scope": "Root LICENSE and data/LICENSE are Apache-2.0; selected skill directories have no nested override or NOTICE. Preserve copyright/license notices. External Python libraries/warehouse services retain their own terms.",
     "obligations": [
@@ -41,10 +41,33 @@
   "review": "Read complete unchanged SKILL.md, including its Python examples. Covers chart selection, Matplotlib/Seaborn/Plotly examples, scales, labeling, accessible color and data-table alternatives. A practical plotting/design guide, not an analysis or inference engine. Examples expect appropriately prepared data; no scripts were executed and plot-library compatibility has not been empirically tested. Individual path history unavailable because the public GitHub API rate limit was reached; repository activity is recorded separately.",
   "native_prerequisites": [
     "Python with matplotlib, seaborn, pandas, numpy; plotly for its interactive-chart examples.",
-    "Prepared tabular input and a runtime that can write/display image or HTML artifacts.",
-    "Preserve frontmatter user-invocable:false: this is background guidance rather than a required slash command."
+    "Prepared tabular input and a runtime that can write/display image or HTML artifacts."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
-  "source_modified": false
+  "source_modified": true,
+  "original_name": "data-visualization",
+  "previous_catalog_slug": "data-visualization",
+  "packaged_sha256": "ed4847a1e7af46a7758f8d8d7a6558deb2c0c057a90e694b971733f38c641acd",
+  "original_native_prerequisites": [
+    "Python with matplotlib, seaborn, pandas, numpy; plotly for its interactive-chart examples.",
+    "Prepared tabular input and a runtime that can write/display image or HTML artifacts.",
+    "Preserve frontmatter user-invocable:false: this is background guidance rather than a required slash command."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [
+      "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it."
+    ],
+    "preserved_native_fields": {
+      "user-invocable": false
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
 }

@@ -1,0 +1,89 @@
+{
+  "schema_version": 3,
+  "slug": "marketing-content-strategy",
+  "name": "marketing-content-strategy",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "path": "skills/content-strategy"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/content-strategy/SKILL.md",
+  "discovery_url": "https://www.skills.sh/coreyhaines31/marketingskills/content-strategy",
+  "author": "Corey Haines / contributors; retain upstream copyright and notices.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/marketing-content-strategy/LICENSE",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
+    "obligations": [
+      "Retain copyright and permission notice in copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "0ad572d607884c561668810f77cd21bbe3e0508c64090f2997661a728360f946",
+  "assignments": [
+    {
+      "expert": "Maria",
+      "role": "SEO Content Manager",
+      "status": "core",
+      "essential_function": "Plan evidence-led topics, content clusters and distribution.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "7167402a6419c32c8817ba8e",
+    "12843469c87c24da1ce965f5",
+    "e12751dc43af8207be6af149",
+    "8b1e2a7e99c0c48f45506c40"
+  ],
+  "review": "Plans content pillars, topic clusters, editorial priorities and distribution from customer evidence and keyword exports. Native deliverable is a content programme; it is no longer forced into the old single-article brief format.",
+  "native_prerequisites": [
+    "Supplied business/audience/content evidence and optional analytics/search/customer-research sources.",
+    "Sanity, Contentful and Strapi are alternative CMS implementation paths. The kept guides use external service accounts, APIs and their official CLIs/SDKs, not repository wrappers."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "content-strategy",
+  "previous_catalog_slug": "content-strategy",
+  "packaged_sha256": "5864f81c6a0eb2f2bf860a38aa9c2f773abb8237a8b67e4bb25332bbdba01b23",
+  "original_native_prerequisites": [
+    "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
+    "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/.",
+    "Keyword exports or web research and customer/product context."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      {
+        "scope": "shared tools directory",
+        "decision": "include only named guide files",
+        "reason": "Only direct skill/reference file edges create local support requirements. The general registry and related-skills lists are discovery, while external APIs/CLIs require native access rather than copied wrapper code."
+      },
+      {
+        "scope": "evals/evals.json",
+        "decision": "exclude",
+        "reason": "No selected instruction calls or reads the development fixture; source evidence remains in provenance."
+      },
+      {
+        "scope": "project context files",
+        "decision": "runtime state, do not vendor or rename",
+        "reason": "The instructions intentionally exchange persistent project context through .agents/.claude paths; packaging must not turn them into skill assets."
+      }
+    ],
+    "excluded_files": [
+      {
+        "source": "skills/coreyhaines31/marketingskills/skills/content-strategy/evals/evals.json",
+        "reason": "Development evaluation fixture; no runtime or reference edge from this skill. Not needed in an installed package."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}

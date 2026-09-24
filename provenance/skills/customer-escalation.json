@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "slug": "customer-escalation",
   "name": "customer-escalation",
   "source": {
@@ -12,7 +12,7 @@
   "author": "Anthropic / upstream contributors; retain Apache-2.0 and applicable notices.",
   "license": {
     "spdx": "Apache-2.0",
-    "file": "skills/anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation/LICENSE",
+    "file": "skills/customer-escalation/LICENSE",
     "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/LICENSE",
     "scope": "Clean customer-support/Apache-2.0 LICENSE inspected; no selected-subtree licence override found. Source copied unchanged; external connectors have separate terms.",
     "obligations": [
@@ -41,10 +41,30 @@
   ],
   "review": "Builds evidence-rich escalation briefs with customer impact, reproduction steps, prior attempts, accountable teams, deadlines and follow-up. Native routing supports churn threats and blocked customers, extending Riley into practical customer advocacy.",
   "native_prerequisites": [
-    "Preserve customer-support/CONNECTORS.md and relative layout.",
     "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
-  "source_modified": false
+  "source_modified": true,
+  "original_name": "customer-escalation",
+  "previous_catalog_slug": "customer-escalation",
+  "packaged_sha256": "318c180990ceff12e86a29883f132def955a73129329e2f93d81047ddd55f69b",
+  "original_native_prerequisites": [
+    "Preserve customer-support/CONNECTORS.md and relative layout.",
+    "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {
+      "argument-hint": "<issue summary> [customer name]"
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
 }

@@ -1,0 +1,69 @@
+{
+  "schema_version": 3,
+  "slug": "user-cohort-analysis",
+  "name": "user-cohort-analysis",
+  "source": {
+    "repo": "phuryn/pm-skills",
+    "commit": "8607e3b077817f89bf4a9b623246219734ac3be0",
+    "path": "pm-data-analytics/skills/cohort-analysis"
+  },
+  "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-data-analytics/skills/cohort-analysis/SKILL.md",
+  "discovery_url": "https://www.skills.sh/phuryn/pm-skills/cohort-analysis",
+  "author": "Pawel Huryn",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/user-cohort-analysis/LICENSE",
+    "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/LICENSE",
+    "scope": "Root MIT license Copyright (c) 2026 Pawel Huryn; no nested license or exception in the selected cohort skill. Linked external articles are not included.",
+    "obligations": [
+      "Include upstream copyright and MIT permission/disclaimer text with copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "bd721a429e58c71a1a488ac1e89ba2bcbb9e179cb9c0b5eac44a3c3b3e9fdb15",
+  "assignments": [
+    {
+      "expert": "Quinn",
+      "role": "Data Analyst",
+      "status": "core",
+      "essential_function": "Explore supplied customer cohorts through retention/adoption summaries, curves and heatmaps, then suggest research to explain patterns.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "7fb675f5e226c13f6c468e41",
+    "13c791fcf36994c601091f82",
+    "ca543ade71189f5fd5b84ae5",
+    "5cacf607c7a839abeac9434a"
+  ],
+  "review": "Read complete unchanged SKILL.md. Provides a compact, specific supplied-data workflow: validate cohort structure, summarize retention/adoption, plot heatmaps and curves, compare patterns, and propose qualitative follow-up. Selected for descriptive cohort exploration, where omissions are stated scope limits; it is not sold as a complete statistical retention engine. No mathematical formula or causal claim in this skill needed correction. The guide is thinner than the Anthropic profiling/visualization references and no independent efficacy benchmark was found.",
+  "native_prerequisites": [
+    "CSV/Excel/JSON or SQL-result reading; user supplies defined cohorts, time periods and engagement metrics.",
+    "Python pandas/numpy and charting runtime when code/charts are requested.",
+    "Further-reading article links are optional, not bundled article content or mandatory executable dependencies."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "cohort-analysis",
+  "previous_catalog_slug": "cohort-analysis",
+  "packaged_sha256": "ef06d995d47e790ba848339443245cc1433a63f64159a092de7a3f703756ff9a",
+  "original_native_prerequisites": [
+    "CSV/Excel/JSON or SQL-result reading; user supplies defined cohorts, time periods and engagement metrics.",
+    "Python pandas/numpy and charting runtime when code/charts are requested.",
+    "Further-reading article links are optional, not bundled article content or mandatory executable dependencies."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Replay immutable manifest bytes, without transforming or overwriting sources.
+"""Restore reviewed package outputs from verified local original archives.
 
 Default / --check: offline verification only.
---fetch: restore missing files from commit-pinned raw URLs. Existing edits,
-undeclared files and symlinks are errors. Verify every download and the complete
-proposed tree before writing. No HEAD lookup, cleanup or partial-slug operation.
+--restore: recreate only missing package members by replaying the exact recorded
+adaptations. Existing edits, undeclared files and symlinks are errors. Original
+archives are required and never changed. No network, cleanup or skill execution.
 """
 from __future__ import annotations
 
@@ -12,24 +12,9 @@ import argparse
 import os
 import sys
 import tempfile
-import urllib.parse
-import urllib.request
 from pathlib import Path
-from typing import Callable
 
-from check import ROOT, confined_path, validate, verify_bytes
-
-
-def raw_url(record: dict) -> str:
-    source = record["source"]
-    path = urllib.parse.quote(source["path"], safe="/")
-    return f"https://raw.githubusercontent.com/{source['repo']}/{source['commit']}/{path}"
-
-
-def download(url: str) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": "skills-catalog-immutable-replay"})
-    with urllib.request.urlopen(request, timeout=60) as response:
-        return response.read()
+from check import ROOT, ValidationError, confined_path, validate
 
 
 def _publish_missing(root: Path, relative: str, content: bytes, mode: str) -> None:
@@ -53,23 +38,20 @@ def _publish_missing(root: Path, relative: str, content: bytes, mode: str) -> No
             Path(temporary).unlink(missing_ok=True)
 
 
-def fetch_missing(root: Path = ROOT, *, fetcher: Callable[[str], bytes] = download, expected_count: int | None = None) -> int:
+def restore_missing(root: Path = ROOT, *, expected_count: int | None = None) -> int:
     root = root.resolve()
     initial = validate(root, allow_missing=True, expected_count=expected_count)
-    initial.require_valid()  # Fail dirty/unknown files before network access.
+    initial.require_valid()  # All originals and rendered outputs pass before writing.
     supplied: dict[str, bytes] = {}
-    cache: dict[str, bytes] = {}
     for relative, record in sorted(initial.records.items()):
         if confined_path(root, relative).exists():
             continue
-        url = raw_url(record)
-        if url not in cache:
-            cache[url] = fetcher(url)
-        content = cache[url]
-        verify_bytes(record, content)
-        supplied[relative] = content
-    validate(root, supplied=supplied, expected_count=expected_count).require_valid()
-    # Final preflight also catches changes to existing sources during download.
+        supplied[relative] = initial.rendered[relative]
+    final = validate(root, supplied=supplied, expected_count=expected_count)
+    final.require_valid()
+    if final.records != initial.records or final.provenance != initial.provenance or final.entries != initial.entries:
+        raise ValidationError("catalog/provenance changed during restoration preflight")
+    # Final preflight also catches changes to existing sources during preparation.
     # Publication is per-file atomic, not a filesystem-wide transaction.
     for relative, content in supplied.items():
         _publish_missing(root, relative, content, initial.records[relative]["mode"])
@@ -82,13 +64,16 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--root", type=Path, default=ROOT)
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument("--check", action="store_true", help="offline verification (default)")
-    modes.add_argument("--fetch", action="store_true", help="restore missing files from immutable URLs")
+    modes.add_argument("--restore", action="store_true", help="restore missing package files from local original archives")
+    modes.add_argument("--fetch", action="store_true", help="deprecated alias for --restore; no network requests")
     parser.add_argument("--expected-count", type=int)
     args = parser.parse_args(argv)
     try:
-        if args.fetch:
-            count = fetch_missing(args.root, expected_count=args.expected_count)
-            print(f"Restored {count} missing files; all manifest bytes verified unchanged.")
+        if args.restore or args.fetch:
+            if args.fetch:
+                print("--fetch is deprecated; using offline --restore (no downloads).", file=sys.stderr)
+            count = restore_missing(args.root, expected_count=args.expected_count)
+            print(f"Restored {count} missing package files from verified originals and recorded adaptations.")
         else:
             result = validate(args.root, expected_count=args.expected_count)
             result.require_valid()

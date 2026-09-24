@@ -1,0 +1,84 @@
+{
+  "schema_version": 3,
+  "slug": "overdue-invoice-follow-up",
+  "name": "overdue-invoice-follow-up",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "small-business/skills/invoice-chase"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/small-business/skills/invoice-chase/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/invoice-chase",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/overdue-invoice-follow-up/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/LICENSE",
+    "scope": "Root LICENSE contains the full explicit Apache-2.0 grant followed by9 anomalous prose lines after the appendix (Syntax-file, code separations, code vault, data/input text). This suffix states no license condition,restriction or contrary ownership, so the complete Apache2 grant is treated as controlling. No operations or small-business child license exists. Exact anomalous root bytes preserved; disclose suffix in redistribution review. Unchanged selected skill/shared files contain no overriding license.",
+    "obligations": [
+      "Distribute complete Apache-2.0 license.",
+      "Retain relevant copyright, patent, trademark and attribution notices; preserve any applicable NOTICE text.",
+      "State changes prominently in modified files; license supplies no trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "538d4b6c0120f8279d1f8bafcd2be79f9836959c75ee52f3dff4a77e3a3c6b66",
+  "assignments": [
+    {
+      "expert": "Mina",
+      "role": "Bookkeeper",
+      "status": "core",
+      "essential_function": "Review overdue customer balances and prepare or send owner-approved collection reminders.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "9ffeb13ba34a24b239a17993",
+    "2037c95a6f4dad81eae32594",
+    "9818315323f66d10bfb36581",
+    "cd9184c566a2ba4ea7874305",
+    "4d384707e8d97a0ebff2066a"
+  ],
+  "review": "Selected unchanged for overdue receivable review, recent-payment cross-checks, payer scoring and tone-matched collection reminders. Detailed source-specific deduplication and owner batch approval are intrinsic. PayPal reminders may be sent after approval; other reminders queue in owner mail drafts and approved Airwallex links may be minted. Those are accepted authored capabilities, not overridden. CSV/manual-send fallback is explicit. Requires preserving reference and shared-file layout. Root-license anomaly is disclosed but no contrary term was found.",
+  "native_prerequisites": [
+    "AR aging and payment history or original CSV upload/manual-send fallback.",
+    "Optional supported ledger,processor,mail connectors and output artifact capability; context/voice/output preferences supplied normally.",
+    "Upstream optional adjacent-skill offers (plan-payroll,cash-flow-snapshot,close-month,build-connector) are not part of this curated kit; those separate functions remain unavailable unless supplied unchanged and independently assessed.",
+    "Native persistent business profile/shared state and artifact delivery; upstream owner approval applies to draft queues as well as actual sends.",
+    "Persistent owner Business context and voice profile; updates must survive sessions and package re-materialization.",
+    "Actual mail/ledger/payment connectors only for connected actions; owner approval for queued drafts and sends remains unchanged.",
+    "The authored visual-artifact/publishing or user-selected output delivery capability."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "invoice-chase",
+  "previous_catalog_slug": "invoice-chase",
+  "packaged_sha256": "f9beb58af1d151270852fa1b37bf895fb482b69190a8b8fe9b8d52f3d3071bd3",
+  "original_native_prerequisites": [
+    "AR aging and payment history or original CSV upload/manual-send fallback.",
+    "Whole original invoice-chase reference directory and referenced small-business/shared files, all preserved.",
+    "Optional supported ledger,processor,mail connectors and output artifact capability; context/voice/output preferences supplied normally.",
+    "Upstream optional adjacent-skill offers (plan-payroll,cash-flow-snapshot,close-month,build-connector) are not part of this curated kit; those separate functions remain unavailable unless supplied unchanged and independently assessed.",
+    "Native persistent business profile/shared state and artifact delivery; upstream owner approval applies to draft queues as well as actual sends."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Excluded absent-is-not-zero.md, chain-seams.md, crm-of-record.md, document-format.md and personal-data.md: no direct/transitive runtime reference from included invoice guidance.",
+      "Voice-profile is mutable owner state under the upstream workflow. A static packaged template is not durable memory; preserve persistence separately."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {
+      "version": "0.3.0",
+      "allowed-tools": "Read, WebFetch"
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}

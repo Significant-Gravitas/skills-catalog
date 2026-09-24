@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "slug": "competitor-profiling",
   "name": "competitor-profiling",
   "source": {
@@ -12,7 +12,7 @@
   "author": "Corey Haines / contributors; retain upstream copyright and notices.",
   "license": {
     "spdx": "MIT",
-    "file": "skills/coreyhaines31/marketingskills/skills/competitor-profiling/LICENSE",
+    "file": "skills/competitor-profiling/LICENSE",
     "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
     "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
     "obligations": [
@@ -39,11 +39,51 @@
   ],
   "review": "Archives raw research, uses consistent comparison metrics and separates source observations from inference before proposing strategic implications. Native quantitative market-research workflow directly supports Nadia.",
   "native_prerequisites": [
+    "Firecrawl and DataForSEO native MCP/tool capabilities, account access and raw-response capture are intrinsic to the specified research workflow.",
+    "Persistent competitor-profiles/ project output directory. Its tool-reference.md contains the native operation recipes; the unrelated repository DataForSEO CLI does not replace those MCP operations."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "competitor-profiling",
+  "previous_catalog_slug": "competitor-profiling",
+  "packaged_sha256": "e59cbf76a02534686e7a4475131abdf4c70927821aad99dad53577c04f2529fd",
+  "original_native_prerequisites": [
     "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
     "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/.",
     "Firecrawl and DataForSEO tools as documented; service accounts/credits and access to public competitor evidence."
   ],
-  "evidence_qualification": null,
-  "runtime_verified": false,
-  "source_modified": false
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      {
+        "scope": "shared tools directory",
+        "decision": "exclude entire tools tree",
+        "reason": "Only direct skill/reference file edges create local support requirements. The general registry and related-skills lists are discovery, while external APIs/CLIs require native access rather than copied wrapper code."
+      },
+      {
+        "scope": "evals/evals.json",
+        "decision": "exclude",
+        "reason": "No selected instruction calls or reads the development fixture; source evidence remains in provenance."
+      },
+      {
+        "scope": "project context files",
+        "decision": "runtime state, do not vendor or rename",
+        "reason": "The instructions intentionally exchange persistent project context through .agents/.claude paths; packaging must not turn them into skill assets."
+      }
+    ],
+    "excluded_files": [
+      {
+        "source": "skills/coreyhaines31/marketingskills/skills/competitor-profiling/evals/evals.json",
+        "reason": "Development evaluation fixture; no runtime or reference edge from this skill. Not needed in an installed package."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
 }

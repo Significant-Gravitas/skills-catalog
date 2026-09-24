@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "slug": "recruiting-pipeline",
   "name": "recruiting-pipeline",
   "source": {
@@ -12,7 +12,7 @@
   "author": "Anthropic and upstream contributors",
   "license": {
     "spdx": "Apache-2.0",
-    "file": "skills/anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline/LICENSE",
+    "file": "skills/recruiting-pipeline/LICENSE",
     "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/LICENSE",
     "scope": "Inspected controlling LICENSE and repository file inventory; no nested exception in this skill subtree. Root contains the complete Apache-2.0 grant followed by unexplained non-license prose after its appendix; preserve exact bytes and flag upstream. No added commercial restriction was found. Nested clean sales/legal licenses do not govern this subtree.",
     "obligations": [
@@ -45,5 +45,24 @@
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
-  "source_modified": false
+  "source_modified": true,
+  "original_name": "recruiting-pipeline",
+  "previous_catalog_slug": "recruiting-pipeline",
+  "packaged_sha256": "1865aef702e65cd65e4be305411a8bd89f7a946b0a361f7e1c38a11809e9b12d",
+  "original_native_prerequisites": [
+    "Current requisitions/candidate stages and timestamps; pasted data or an ATS connector",
+    "ATS status writes are native behavior when connected; connector permissions must be supported"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
 }

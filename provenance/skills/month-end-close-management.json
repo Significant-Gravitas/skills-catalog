@@ -1,0 +1,76 @@
+{
+  "schema_version": 3,
+  "slug": "month-end-close-management",
+  "name": "month-end-close-management",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "finance/skills/close-management"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/skills/close-management/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/close-management",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/month-end-close-management/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/LICENSE",
+    "scope": "Root Apache-2.0 and, for finance/legal, same-license plugin LICENSE apply. Recursive tree shows no overriding license within selected skill/shared-reference paths. Downloaded selected folders plus relevant CONNECTORS/shared files. External links and integration services are not relicensed.",
+    "obligations": [
+      "Distribute complete Apache-2.0 license.",
+      "Retain relevant copyright, patent, trademark and attribution notices; preserve any applicable NOTICE text.",
+      "State changes prominently in modified files; license supplies no trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "6c2df93bcd15eddf65017445fa44f3eb0b16a755711a5e0602d73ca595e73732",
+  "assignments": [
+    {
+      "expert": "Mina",
+      "role": "Bookkeeper",
+      "status": "core",
+      "essential_function": "Plan and coordinate month-end close tasks,dependencies,owners and review status.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "581a2452a2d1845ed0a77a8d",
+    "2037c95a6f4dad81eae32594",
+    "9818315323f66d10bfb36581",
+    "e58ecc53d104195d976939c9",
+    "4d384707e8d97a0ebff2066a"
+  ],
+  "review": "Selected unchanged for month-end close planning and tracking. Detailed pre-close and T+1–T+5 sequence, dependencies, owners, blockers, review gates and retrospective. Authored scope includes posting,locking periods and distributing reporting packages; the redesigned role accepts that full scope rather than forbidding it through new instructions. User-invocable:false means supporting knowledge rather than a directly registered command. No material arithmetic defect found in inspected instructions; runtime untested.",
+  "native_prerequisites": [
+    "Close calendar,accounting policies,task owners and current task status.",
+    "Accounting system access for system actions if requested; otherwise the documented calendar/status/checklist work uses supplied inputs.",
+    "Original source requires qualified financial-professional review of close activities."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "close-management",
+  "previous_catalog_slug": "close-management",
+  "packaged_sha256": "6ed3b7c2fec254e64f6820ed497fa41b827b6f303d41eb5b91b7e284fd48fbf3",
+  "original_native_prerequisites": [
+    "Close calendar,accounting policies,task owners and current task status.",
+    "Accounting system access for system actions if requested; otherwise the documented calendar/status/checklist work uses supplied inputs.",
+    "Original source requires qualified financial-professional review of close activities."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [
+      "The inspected platform drops user-invocable:false. Preserve this flag and require an explicit runtime/background-loading decision; packaging alone does not implement it."
+    ],
+    "preserved_native_fields": {
+      "user-invocable": false
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}

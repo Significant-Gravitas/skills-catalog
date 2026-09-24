@@ -1,0 +1,69 @@
+{
+  "schema_version": 3,
+  "slug": "candidate-interview-planning",
+  "name": "candidate-interview-planning",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/interview-prep"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/human-resources/skills/interview-prep/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/interview-prep",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/candidate-interview-planning/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/LICENSE",
+    "scope": "Inspected controlling LICENSE and repository file inventory; no nested exception in this skill subtree. Root contains the complete Apache-2.0 grant followed by unexplained non-license prose after its appendix; preserve exact bytes and flag upstream. No added commercial restriction was found. Nested clean sales/legal licenses do not govern this subtree.",
+    "obligations": [
+      "Provide a copy of Apache-2.0 to recipients.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE.",
+      "Prominently identify modified files; license grants no general trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "c687311babdeccf086aa5f6d86dcbfc3a9d1b8bb7124f072450ffa4315d98c4c",
+  "assignments": [
+    {
+      "expert": "Harper",
+      "role": "Recruiter",
+      "status": "core",
+      "essential_function": "Create consistent competency-based interview questions, panel assignments, scorecards and debrief templates.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "f80509b6fa1c7a783de56b59",
+    "fe2e7901829b75e6359679b2",
+    "a5600b42a48b71d6cc2a0e5b",
+    "86f033dff577128d178e1180"
+  ],
+  "review": "Selected unchanged as a compact structured-interview workflow. Full source ties consistent behavioral and situational questions to four-to-six role competencies, assigns panel coverage, anchors a one-to-four rubric and produces a debrief template. The skill prepares human interviews; it does not screen resumes, reconcile completed scorecards or make an automated hiring decision.",
+  "native_prerequisites": [
+    "Role requirements and desired competencies supplied by the recruiter",
+    "No external connector required"
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "interview-prep",
+  "previous_catalog_slug": "interview-prep",
+  "packaged_sha256": "71ddf50b36336ba2f2ec6218773a5979609c3424fcae98ff4e89601ace5994e5",
+  "original_native_prerequisites": [
+    "Role requirements and desired competencies supplied by the recruiter",
+    "No external connector required"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}
