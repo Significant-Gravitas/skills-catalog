@@ -160,7 +160,7 @@ skills:
     provenance: vendored
     source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
     source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/mom-test
-    review_reason: Named third-party books or methods need copyright and trademark review.
+    review_reason: MIT file verified; book-derived text and method names still need rights review.
 
   - slug: storybrand-messaging
     categories: [content]
@@ -171,7 +171,7 @@ skills:
     provenance: vendored
     source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
     source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/storybrand-messaging
-    review_reason: Named third-party books or methods need copyright and trademark review.
+    review_reason: MIT file verified; book-derived text and method names still need rights review.
 
   - slug: predictable-revenue
     categories: [sales]
@@ -182,7 +182,7 @@ skills:
     provenance: vendored
     source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
     source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/predictable-revenue
-    review_reason: Named third-party books or methods need copyright and trademark review.
+    review_reason: MIT file verified; book-derived text and method names still need rights review.
 
   - slug: negotiation
     categories: [sales]
@@ -193,7 +193,7 @@ skills:
     provenance: vendored
     source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
     source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/negotiation
-    review_reason: Named third-party books or methods need copyright and trademark review.
+    review_reason: MIT file verified; book-derived text and method names still need rights review.
 
   - slug: obviously-awesome
     categories: [marketing]
@@ -204,7 +204,7 @@ skills:
     provenance: vendored
     source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
     source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/obviously-awesome
-    review_reason: Named third-party books or methods need copyright and trademark review.
+    review_reason: MIT file verified; book-derived text and method names still need rights review.
 
   - slug: jobs-to-be-done
     categories: [research]
@@ -215,7 +215,7 @@ skills:
     provenance: vendored
     source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
     source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/jobs-to-be-done
-    review_reason: Named third-party books or methods need copyright and trademark review.
+    review_reason: MIT file verified; book-derived text and method names still need rights review.
 
   # Skills the expert roster ships with, moved here from the platform repo
   - slug: seo-content-brief
