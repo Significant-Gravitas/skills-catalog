@@ -4,14 +4,16 @@
     python tools/vendor.py            # every entry with a GitHub source
     python tools/vendor.py cold-email # one slug
 
-For each entry whose ``source`` is ``owner/repo/path`` the script downloads
-the skill folder at the repo's current HEAD, drops the upstream's eval
+For each approved entry whose ``source`` is ``owner/repo/path`` the script
+downloads the skill folder at its pinned ``source_commit``, drops upstream eval
 fixtures and hidden files, copies the repo licence in beside the skill, and
 rewrites the SKILL.md frontmatter so the listing carries where it came from.
 
 Only the stdlib plus PyYAML. Set GITHUB_TOKEN to lift the anonymous API rate
 limit.
 """
+
+from __future__ import annotations
 
 import json
 import os
@@ -62,8 +64,10 @@ def _split_source(source: str) -> tuple[str, str, str]:
     return owner, repo, "/".join(rest)
 
 
-def _tree(owner: str, repo: str) -> tuple[str, list[dict]]:
-    sha = _api(f"/repos/{owner}/{repo}/commits/HEAD")["sha"]
+def _tree(owner: str, repo: str, commit: str) -> tuple[str, list[dict]]:
+    sha = _api(f"/repos/{owner}/{repo}/commits/{commit}")["sha"]
+    if sha != commit:
+        raise RuntimeError(f"{owner}/{repo}: source_commit did not resolve exactly")
     tree = _api(f"/repos/{owner}/{repo}/git/trees/{sha}?recursive=1")
     if tree.get("truncated"):
         raise RuntimeError(f"{owner}/{repo} tree is truncated; vendor by hand")
@@ -122,7 +126,7 @@ def _rewrite_skill_md(
     metadata.update(
         {
             "source": f"{owner}/{repo}",
-            "source_url": f"https://github.com/{owner}/{repo}/tree/{sha[:12]}/{path}",
+            "source_url": entry["source_url"],
             "upstream_commit": sha,
         }
     )
@@ -138,7 +142,10 @@ def vendor(entry: dict) -> None:
     slug = entry["slug"]
     owner, repo, path = _split_source(entry["source"])
     print(f"{slug} <- {owner}/{repo}/{path}")
-    sha, blobs = _tree(owner, repo)
+    commit = str(entry.get("source_commit") or "")
+    if not re.fullmatch(r"[0-9a-f]{40}", commit):
+        raise ValueError(f"{slug}: source_commit must be a full Git SHA")
+    sha, blobs = _tree(owner, repo, commit)
     prefix = f"{path}/"
     members = [b for b in blobs if b["path"].startswith(prefix)]
     if not members:
@@ -174,7 +181,18 @@ def vendor(entry: dict) -> None:
             _get(f"{RAW}/{owner}/{repo}/{sha}/{license_path}")
         )
     else:
-        print(f"  warning: {slug}: no LICENSE file found in {owner}/{repo}")
+        raise RuntimeError(f"{slug}: no LICENSE file found in {owner}/{repo}")
+
+    notice = (
+        f"{slug}\n\n"
+        f"Source: {entry['source_url']}\n"
+        f"Upstream commit: {sha}\n"
+        f"License: {entry['license']} (see LICENSE)\n\n"
+        "Significant Gravitas vendors this package for the AutoGPT Skills "
+        "catalog. The vendoring step rewrites package metadata and may remove "
+        "upstream-only links, tests, hidden files, and sponsored tool tables.\n"
+    )
+    (target / "NOTICE").write_text(notice, encoding="utf-8")
 
     count = sum(1 for p in target.rglob("*") if p.is_file())
     print(f"  {count} files at {sha[:12]}")
@@ -184,6 +202,8 @@ def main(argv: list[str]) -> int:
     catalog = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))
     only = set(argv)
     for entry in catalog["skills"]:
+        if entry.get("distribution_status") != "approved":
+            continue
         if entry["source"] == "platform":
             continue
         if only and entry["slug"] not in only:

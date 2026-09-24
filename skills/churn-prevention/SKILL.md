@@ -4,7 +4,7 @@ description: When the user wants to reduce churn, build cancellation flows, set 
 metadata:
   version: 2.0.0
   source: coreyhaines31/marketingskills
-  source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c/skills/churn-prevention
+  source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/churn-prevention
   upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
 license: MIT
 ---

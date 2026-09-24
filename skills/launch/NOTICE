@@ -1,0 +1,6 @@
+launch
+Source: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/launch
+Upstream commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+License: MIT (see LICENSE)
+Significant Gravitas vendors this package for the AutoGPT Skills catalog. The vendoring step rewrites package metadata and may remove upstream-only links, tests, hidden files, and sponsored tool tables.
+

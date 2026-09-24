@@ -4,7 +4,7 @@ description: When the user wants to optimize post-signup onboarding, user activa
 metadata:
   version: 2.0.1
   source: coreyhaines31/marketingskills
-  source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c/skills/onboarding
+  source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/onboarding
   upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
 license: MIT
 ---

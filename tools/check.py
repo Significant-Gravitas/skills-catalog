@@ -8,6 +8,8 @@ PR here rather than during a seed run against an environment. The rules
 mirror backend/copilot/tools/skills.py in the platform repo; keep them in sync.
 """
 
+from __future__ import annotations
+
 import posixpath
 import re
 import sys
@@ -43,7 +45,14 @@ MAX_PACKAGE_PATH_DEPTH = 8
 _FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n?(.*)$", re.DOTALL)
 _SEGMENT_RE = re.compile(r"^[A-Za-z0-9_-][A-Za-z0-9._-]*$")
 _NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
+_COMMIT_RE = re.compile(r"^[0-9a-f]{40}$")
 _OUTSIDE_LINK_RE = re.compile(r"\]\((\.\./[^)]+)\)")
+
+DISTRIBUTION_STATUSES = {
+    "approved",
+    "legal_review",
+    "provenance_review",
+}
 
 
 def main() -> int:
@@ -55,9 +64,14 @@ def main() -> int:
     for directory in sorted(p for p in SKILLS_DIR.iterdir() if p.is_dir()):
         if directory.name not in listed:
             errors.append(f"skills/{directory.name}: not listed in catalog.yml")
+    counts: dict[str, int] = {}
+    for entry in entries:
+        status = entry.get("distribution_status", "")
+        counts[status] = counts.get(status, 0) + 1
     for error in errors:
         print(f"error: {error}")
-    print(f"{len(entries)} skills checked, {len(errors)} errors")
+    summary = ", ".join(f"{status}: {count}" for status, count in sorted(counts.items()))
+    print(f"{len(entries)} skills checked ({summary}), {len(errors)} errors")
     return 1 if errors else 0
 
 
@@ -89,12 +103,46 @@ def _load_catalog(errors: list[str]) -> list[dict]:
         source = str(item.get("source") or "")
         if source != "platform" and len(source.split("/")) < 3:
             errors.append(f"{slug}: source must be 'platform' or owner/repo/path")
-        if source != "platform" and not item.get("license"):
-            errors.append(f"{slug}: a vendored skill needs its upstream license")
+        status = str(item.get("distribution_status") or "")
+        if status not in DISTRIBUTION_STATUSES:
+            errors.append(
+                f"{slug}: distribution_status must be one of "
+                f"{sorted(DISTRIBUTION_STATUSES)}, got '{status}'"
+            )
+        if status == "approved":
+            _check_approved_catalog_entry(slug, item, errors)
+        elif not str(item.get("review_reason") or "").strip():
+            errors.append(f"{slug}: a held skill needs review_reason")
         valid.append(item)
     if not valid and not errors:
         errors.append("catalog.yml lists no skills")
     return valid
+
+
+def _check_approved_catalog_entry(
+    slug: str, entry: dict, errors: list[str]
+) -> None:
+    source = str(entry.get("source") or "")
+    license_name = str(entry.get("license") or "").strip()
+    provenance = str(entry.get("provenance") or "").strip()
+    if not license_name:
+        errors.append(f"{slug}: an approved skill needs a license")
+    if provenance not in {"original", "vendored"}:
+        errors.append(
+            f"{slug}: approved provenance must be 'original' or 'vendored'"
+        )
+    if source == "platform":
+        if provenance != "original":
+            errors.append(f"{slug}: a platform skill must have original provenance")
+        return
+    commit = str(entry.get("source_commit") or "").strip()
+    source_url = str(entry.get("source_url") or "").strip()
+    if not _COMMIT_RE.fullmatch(commit):
+        errors.append(f"{slug}: approved vendored source_commit must be a full SHA")
+    if not source_url:
+        errors.append(f"{slug}: approved vendored skill needs source_url")
+    elif commit and commit not in source_url:
+        errors.append(f"{slug}: source_url must contain source_commit")
 
 
 def _check_skill(entry: dict, errors: list[str]) -> None:
@@ -105,27 +153,30 @@ def _check_skill(entry: dict, errors: list[str]) -> None:
         errors.append(f"{slug}: skills/{slug}/SKILL.md is missing")
         return
     text = skill_md.read_text(encoding="utf-8")
-    _check_skill_md(slug, text, errors)
+    meta = _check_skill_md(slug, text, errors)
     _check_package(slug, directory, len(text.encode("utf-8")), errors)
+    _check_distribution(entry, directory, meta, errors)
     for path in sorted(directory.rglob("*.md")):
         for match in _OUTSIDE_LINK_RE.finditer(path.read_text(encoding="utf-8")):
             rel = path.relative_to(directory).as_posix()
             errors.append(f"{slug}: {rel} links outside the skill: {match.group(1)}")
 
 
-def _check_skill_md(slug: str, text: str, errors: list[str]) -> None:
+def _check_skill_md(
+    slug: str, text: str, errors: list[str]
+) -> dict | None:
     match = _FRONTMATTER_RE.match(text)
     if not match:
         errors.append(f"{slug}: SKILL.md has no YAML frontmatter")
-        return
+        return None
     try:
         meta = yaml.safe_load(match.group(1)) or {}
     except yaml.YAMLError as exc:
         errors.append(f"{slug}: frontmatter is not valid YAML: {exc}")
-        return
+        return None
     if not isinstance(meta, dict):
         errors.append(f"{slug}: frontmatter must be a mapping")
-        return
+        return None
     name = str(meta.get("name") or "").strip()
     description = str(meta.get("description") or "").strip()
     if name != slug:
@@ -147,6 +198,43 @@ def _check_skill_md(slug: str, text: str, errors: list[str]) -> None:
     body = match.group(2).lstrip("\n")
     if len(body) > MAX_BODY_CHARS:
         errors.append(f"{slug}: body is {len(body)} chars, over {MAX_BODY_CHARS}")
+    return meta
+
+
+def _check_distribution(
+    entry: dict, directory: Path, meta: dict | None, errors: list[str]
+) -> None:
+    if entry.get("distribution_status") != "approved":
+        return
+    slug = entry["slug"]
+    for filename in ("LICENSE", "NOTICE"):
+        if not (directory / filename).is_file():
+            errors.append(f"{slug}: approved package needs {filename}")
+    if meta is None:
+        return
+    declared_license = str(meta.get("license") or "").strip()
+    if declared_license != str(entry.get("license") or "").strip():
+        errors.append(
+            f"{slug}: frontmatter license '{declared_license}' does not match catalog"
+        )
+    if entry.get("source") == "platform":
+        return
+    metadata = meta.get("metadata") or {}
+    if not isinstance(metadata, dict):
+        errors.append(f"{slug}: frontmatter metadata must be a mapping")
+        return
+    owner, repo, *_ = str(entry["source"]).split("/")
+    expected_source = f"{owner}/{repo}"
+    expected = {
+        "source": expected_source,
+        "source_url": entry.get("source_url"),
+        "upstream_commit": entry.get("source_commit"),
+    }
+    for key, value in expected.items():
+        if metadata.get(key) != value:
+            errors.append(
+                f"{slug}: frontmatter metadata.{key} must be '{value}'"
+            )
 
 
 def _check_package(

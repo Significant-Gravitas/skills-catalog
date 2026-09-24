@@ -1,23 +1,33 @@
-# Every entry becomes a platform-authored listing in the AutoGPT Platform
-# Skills marketplace. The seed reads this file plus skills/<slug>/.
+# Every skill stays in this manifest. Only distribution_status: approved may be
+# exported to a public repo or seeded into a public marketplace.
 #
 #   slug                the listing slug, the folder name, and the SKILL.md name
 #   categories          marketplace categories shown on the card
 #   required_providers  integrations the instructions assume are connected
 #   source              "platform" for skills written here, or
 #                       owner/repo/path for a skill vendored with tools/vendor.py
-#   license             SPDX id of the upstream licence (vendored skills only)
+#   license             SPDX id for every approved skill
+#   distribution_status approved, provenance_review or legal_review
+#   provenance          original, vendored or unverified
+#   source_commit       full pinned SHA for vendored skills
+#   source_url          source path pinned to source_commit
 
 skills:
   - slug: brand-voice-guide
     categories: [content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: outreach-playbook
     categories: [sales]
     required_providers: [google]
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   # coreyhaines31/marketingskills — MIT
   - slug: cold-email
@@ -25,72 +35,120 @@ skills:
     required_providers: []
     source: coreyhaines31/marketingskills/skills/cold-email
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/cold-email
 
   - slug: copywriting
     categories: [content]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/copywriting
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/copywriting
 
   - slug: emails
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/emails
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/emails
 
   - slug: onboarding
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/onboarding
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/onboarding
 
   - slug: prospecting
     categories: [sales]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/prospecting
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/prospecting
 
   - slug: sales-enablement
     categories: [sales]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/sales-enablement
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/sales-enablement
 
   - slug: customer-research
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/customer-research
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/customer-research
 
   - slug: pricing
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/pricing
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/pricing
 
   - slug: churn-prevention
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/churn-prevention
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/churn-prevention
 
   - slug: public-relations
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/public-relations
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/public-relations
 
   - slug: social
     categories: [content]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/social
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/social
 
   - slug: launch
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/launch
     license: MIT
+    distribution_status: approved
+    provenance: vendored
+    source_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+    source_url: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/launch
 
   # wondelai/skills — MIT
   - slug: mom-test
@@ -98,789 +156,1272 @@ skills:
     required_providers: []
     source: wondelai/skills/mom-test
     license: MIT
+    distribution_status: legal_review
+    provenance: vendored
+    source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
+    source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/mom-test
+    review_reason: Named third-party books or methods need copyright and trademark review.
 
   - slug: storybrand-messaging
     categories: [content]
     required_providers: []
     source: wondelai/skills/storybrand-messaging
     license: MIT
+    distribution_status: legal_review
+    provenance: vendored
+    source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
+    source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/storybrand-messaging
+    review_reason: Named third-party books or methods need copyright and trademark review.
 
   - slug: predictable-revenue
     categories: [sales]
     required_providers: []
     source: wondelai/skills/predictable-revenue
     license: MIT
+    distribution_status: legal_review
+    provenance: vendored
+    source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
+    source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/predictable-revenue
+    review_reason: Named third-party books or methods need copyright and trademark review.
 
   - slug: negotiation
     categories: [sales]
     required_providers: []
     source: wondelai/skills/negotiation
     license: MIT
+    distribution_status: legal_review
+    provenance: vendored
+    source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
+    source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/negotiation
+    review_reason: Named third-party books or methods need copyright and trademark review.
 
   - slug: obviously-awesome
     categories: [marketing]
     required_providers: []
     source: wondelai/skills/obviously-awesome
     license: MIT
+    distribution_status: legal_review
+    provenance: vendored
+    source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
+    source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/obviously-awesome
+    review_reason: Named third-party books or methods need copyright and trademark review.
 
   - slug: jobs-to-be-done
     categories: [research]
     required_providers: []
     source: wondelai/skills/jobs-to-be-done
     license: MIT
+    distribution_status: legal_review
+    provenance: vendored
+    source_commit: c172996495bed0fcd26896a9416b2093fd7073f0
+    source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/jobs-to-be-done
+    review_reason: Named third-party books or methods need copyright and trademark review.
 
   # Skills the expert roster ships with, moved here from the platform repo
   - slug: seo-content-brief
     categories: [marketing, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: on-page-seo-audit
     categories: [marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: content-repurposing
     categories: [marketing, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: competitor-teardown
     categories: [research, marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: icp-and-positioning
     categories: [marketing, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: lifecycle-email-map
     categories: [marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: email-deliverability-guardrails
     categories: [marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: bookkeeping-getting-started
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: expense-categorization
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: invoice-drafting-and-issue
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: accounts-receivable-follow-up
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: statement-reconciliation
     categories: [finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: month-end-close-checklist
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: monthly-profit-and-loss-summary
     categories: [finance, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: bookkeeping-exception-escalation
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: investor-relations-getting-started
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: pitch-deck-review
     categories: [finance, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: fundraising-data-room-checklist
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: investor-targeting-and-research
     categories: [finance, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: fundraising-pipeline-review
     categories: [finance, sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: cap-table-hygiene
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: monthly-investor-update
     categories: [finance, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: board-and-investor-metrics-brief
     categories: [finance, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: kpi-analysis-getting-started
     categories: [research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: metric-definition-and-data-quality
     categories: [research, development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: weekly-kpi-digest
     categories: [research, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: metric-anomaly-detection
     categories: [research, development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: metric-movement-analysis
     categories: [research, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: cohort-and-retention-analysis
     categories: [research, marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: funnel-conversion-analysis
     categories: [research, marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: experiment-readout
     categories: [research, development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: recruiting-getting-started
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: role-intake-and-job-description
     categories: [operations, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: hiring-rubric-design
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: resume-screening
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: interview-plan-and-scorecard
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: candidate-interview-debrief
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: candidate-rejection-email
     categories: [operations, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: candidate-offer-draft
     categories: [operations, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: procurement-getting-started
     categories: [operations, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: vendor-requirements-brief
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: vendor-quote-comparison
     categories: [operations, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: vendor-due-diligence
     categories: [operations, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: procurement-decision-memo
     categories: [operations, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: contract-renewal-tracker
     categories: [operations, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: vendor-performance-review
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: spend-anomaly-review
     categories: [finance, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: contract-ops-getting-started
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: nda-playbook-review
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: msa-playbook-review
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: contract-clause-comparison
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: contract-key-term-extraction
     categories: [operations, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: contract-deviation-triage
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: contract-obligation-tracker
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: counsel-escalation-brief
     categories: [operations, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: dependency-security-getting-started
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: dependency-inventory
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: outdated-dependency-review
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: vulnerability-triage
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: cve-stack-relevance
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: dependency-upgrade-plan
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: dependency-upgrade-pr
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: dependency-change-risk-review
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: customer-success-getting-started
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: customer-onboarding-plan
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: customer-health-score
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: churn-risk-review
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: renewal-readiness-review
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: renewal-touchpoint-draft
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: expansion-opportunity-brief
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: customer-success-plan
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: deal-desk-getting-started
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: proposal-draft
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: statement-of-work-draft
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: pipeline-stage-aging-review
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: deal-risk-review
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: renewal-negotiation-brief
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: pricing-and-terms-approval-brief
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: proposal-quality-check
     categories: [sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: support-getting-started
     categories: [support, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: ticket-triage
     categories: [support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: support-reply-draft
     categories: [support, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: support-macro-library
     categories: [support, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: help-article-from-tickets
     categories: [support, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: bug-report-handoff
     categories: [support, development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: refund-and-exception-brief
     categories: [support, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: weekly-ticket-themes
     categories: [support, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: product-getting-started
     categories: [research, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: feedback-synthesis
     categories: [research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: feature-request-triage
     categories: [research, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: user-interview-guide
     categories: [research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: opportunity-brief
     categories: [research, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: product-requirements-draft
     categories: [content, development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: roadmap-prioritisation
     categories: [operations, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: release-notes-draft
     categories: [content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: paid-ads-getting-started
     categories: [marketing, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: campaign-structure-plan
     categories: [marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: ad-copy-variants
     categories: [marketing, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: landing-page-message-match
     categories: [marketing, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: wasted-spend-audit
     categories: [marketing, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: budget-pacing-review
     categories: [marketing, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: creative-test-readout
     categories: [marketing, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: paid-performance-report
     categories: [marketing, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: communications-getting-started
     categories: [marketing, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: news-angle-and-key-messages
     categories: [marketing, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: press-release-draft
     categories: [content, marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: media-list-research
     categories: [research, marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: media-pitch-email
     categories: [content, marketing]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: launch-communications-plan
     categories: [marketing, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: holding-statement-draft
     categories: [content, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: spokesperson-briefing
     categories: [content, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: code-quality-getting-started
     categories: [development, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: pull-request-review
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: test-plan-draft
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: bug-reproduction-report
     categories: [development, support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: flaky-test-triage
     categories: [development]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: regression-risk-review
     categories: [development, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: release-readiness-checklist
     categories: [development, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: incident-postmortem-draft
     categories: [development, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: people-ops-getting-started
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: new-hire-onboarding-plan
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: handbook-policy-draft
     categories: [operations, content]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: one-to-one-agenda
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: performance-review-prep
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: engagement-survey-readout
     categories: [operations, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: offboarding-checklist
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: hr-escalation-brief
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: revops-getting-started
     categories: [sales, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: crm-field-audit
     categories: [sales, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: crm-duplicate-review
     categories: [sales, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: pipeline-stage-definitions
     categories: [sales, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: lead-routing-rules
     categories: [sales, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: sales-forecast-rollup
     categories: [sales, finance]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: lost-deal-analysis
     categories: [sales, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: crm-hygiene-report
     categories: [sales, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: compliance-ops-getting-started
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: security-questionnaire-answers
     categories: [operations, sales]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: personal-data-map
     categories: [operations, research]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: subprocessor-register
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: dpa-checklist-review
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: policy-gap-review
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: data-subject-request-draft
     categories: [operations, support]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: compliance-escalation-brief
     categories: [operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: executive-assistant-getting-started
     categories: [support, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: inbox-triage
     categories: [support, operations]
     required_providers: [google]
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: reply-draft-in-your-voice
     categories: [support, content]
     required_providers: [google]
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: meeting-prep-brief
     categories: [support, operations]
     required_providers: [google]
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: meeting-follow-up-draft
     categories: [support, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: calendar-conflict-review
     categories: [support, operations]
     required_providers: [google]
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: travel-plan
     categories: [support, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.
 
   - slug: weekly-priorities-review
     categories: [support, operations]
     required_providers: []
     source: platform
+    distribution_status: provenance_review
+    provenance: unverified
+    review_reason: Original source and commercial redistribution rights are not verified.

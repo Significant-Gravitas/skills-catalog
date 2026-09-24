@@ -15,3 +15,8 @@ jobs:
           python-version: "3.12"
       - run: pip install pyyaml
       - run: python tools/check.py
+      - name: Check public export
+        run: |
+          output="$(mktemp -d)"
+          python tools/export_public.py "$output"
+          python "$output/tools/check.py"
