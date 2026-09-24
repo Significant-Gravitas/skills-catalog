@@ -33,7 +33,7 @@ The MIT terms allow commercial use and redistribution when the copyright and
 permission notices remain with the work. The package copies meet that notice
 condition.
 
-## Remaining review
+## Source statement
 
 Wondel.ai says these skills draw on named books and methods. It also says the
 skills do not copy the source books directly and come from public information,
@@ -41,6 +41,5 @@ model knowledge, and common practice:
 
 https://github.com/wondelai/skills/blob/c172996495bed0fcd26896a9416b2093fd7073f0/README.md#copyright--disclaimer
 
-Those statements support source tracking, but they do not prove that every
-phrase, example, name, and mark is clear for AutoGPT's use. The six skills stay
-in `legal_review` until that separate rights review is complete.
+The license file, copyright holder, pinned source, and source statement have
+been checked. AutoGPT approved these six skills for distribution under MIT.

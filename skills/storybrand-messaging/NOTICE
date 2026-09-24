@@ -1,0 +1,7 @@
+storybrand-messaging
+
+Source: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/storybrand-messaging
+Upstream commit: c172996495bed0fcd26896a9416b2093fd7073f0
+License: MIT (see LICENSE)
+
+Significant Gravitas vendors this package for the AutoGPT Skills catalog. The vendoring step rewrites package metadata and may remove upstream-only links, tests, hidden files, and sponsored tool tables.

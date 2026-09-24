@@ -6,7 +6,7 @@ metadata:
   author: wondelai
   version: 1.5.0
   source: wondelai/skills
-  source_url: https://github.com/wondelai/skills/tree/c172996495be/jobs-to-be-done
+  source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/jobs-to-be-done
   upstream_commit: c172996495bed0fcd26896a9416b2093fd7073f0
 ---
 

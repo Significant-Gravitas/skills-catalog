@@ -6,7 +6,7 @@ metadata:
   author: wondelai
   version: 1.4.1
   source: wondelai/skills
-  source_url: https://github.com/wondelai/skills/tree/c172996495be/obviously-awesome
+  source_url: https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/obviously-awesome
   upstream_commit: c172996495bed0fcd26896a9416b2093fd7073f0
 ---
 
