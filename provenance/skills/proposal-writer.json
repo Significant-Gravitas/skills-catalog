@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "slug": "proposal-writer",
+  "name": "proposal-writer",
+  "source": {
+    "repo": "jezweb/claude-skills",
+    "commit": "e875a6bfff809e5d42c584104031e36e1f014f18",
+    "path": "plugins/writing/skills/proposal-writer"
+  },
+  "source_url": "https://github.com/jezweb/claude-skills/blob/e875a6bfff809e5d42c584104031e36e1f014f18/plugins/writing/skills/proposal-writer/SKILL.md",
+  "discovery_url": "https://skills.sh/jezweb/claude-skills/proposal-writer",
+  "author": "Jeremy Dawes (Jezweb) and upstream contributors",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/jezweb/claude-skills/plugins/writing/skills/proposal-writer/LICENSE",
+    "source_url": "https://github.com/jezweb/claude-skills/blob/e875a6bfff809e5d42c584104031e36e1f014f18/LICENSE",
+    "scope": "Inspected controlling LICENSE and repository file inventory; no nested exception in this skill subtree.",
+    "obligations": [
+      "Include the complete MIT copyright and permission notice in all copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "ba52a8eedd84b5c9df1c239765895f892b367e672cc716fa5561835e9c896217",
+  "assignments": [
+    {
+      "expert": "Jordan",
+      "role": "Deal Desk Manager",
+      "status": "core",
+      "essential_function": "Turn discovery notes, scope, pricing and timelines into a clear client proposal or service SOW draft.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "fdf1d60493d01f6bf52fb033",
+    "2325fd96144183ecc5fa2660",
+    "86e522764b7ecb2fdad059f8",
+    "a1297935efee91a595f7dc41"
+  ],
+  "review": "Selected unchanged for proposal, quote and service-SOW drafting. Full source gathers client needs, seller scope, pricing and timeline; writes concrete deliverables, exclusions, dependencies and commercial expectations; forbids invented statistics and unsupported guarantees. Its Australian/service-business examples and illustrative terms are examples, not approved company policy. Produces Markdown, not a legally validated contract or designed PDF.",
+  "native_prerequisites": [
+    "Client brief and seller-supplied pricing, scope, timeline and factual proof points",
+    "No connector or executable dependency; optional branded document tool outside this skill"
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

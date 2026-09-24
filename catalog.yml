@@ -1,886 +1,635 @@
-# Every entry becomes a platform-authored listing in the AutoGPT Platform
-# Skills marketplace. The seed reads this file plus skills/<slug>/.
-#
-#   slug                the listing slug, the folder name, and the SKILL.md name
-#   categories          marketplace categories shown on the card
-#   required_providers  integrations the instructions assume are connected
-#   source              "platform" for skills written here, or
-#                       owner/repo/path for a skill vendored with tools/vendor.py
-#   license             SPDX id of the upstream licence (vendored skills only)
-
+# Schema v2: original upstream names/files, external attribution and provenance.
+# Incompatible with the current platform seed; see docs/IMPORT_COMPATIBILITY.md.
+schema_version: 2
 skills:
-  - slug: brand-voice-guide
-    categories: [content]
-    required_providers: []
-    source: platform
-
-  - slug: outreach-playbook
-    categories: [sales]
-    required_providers: [google]
-    source: platform
-
-  # coreyhaines31/marketingskills — MIT
-  - slug: cold-email
-    categories: [sales]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/cold-email
-    license: MIT
-
-  - slug: copywriting
-    categories: [content]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/copywriting
-    license: MIT
-
-  - slug: emails
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/emails
-    license: MIT
-
-  - slug: onboarding
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/onboarding
-    license: MIT
-
-  - slug: prospecting
-    categories: [sales]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/prospecting
-    license: MIT
-
-  - slug: sales-enablement
-    categories: [sales]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/sales-enablement
-    license: MIT
-
-  - slug: customer-research
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/customer-research
-    license: MIT
-
-  - slug: pricing
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/pricing
-    license: MIT
-
-  - slug: churn-prevention
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/churn-prevention
-    license: MIT
-
-  - slug: public-relations
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/public-relations
-    license: MIT
-
-  - slug: social
-    categories: [content]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/social
-    license: MIT
-
-  - slug: launch
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/launch
-    license: MIT
-
-  # wondelai/skills — MIT
-  - slug: mom-test
-    categories: [research]
-    required_providers: []
-    source: wondelai/skills/mom-test
-    license: MIT
-
-  - slug: storybrand-messaging
-    categories: [content]
-    required_providers: []
-    source: wondelai/skills/storybrand-messaging
-    license: MIT
-
-  - slug: predictable-revenue
-    categories: [sales]
-    required_providers: []
-    source: wondelai/skills/predictable-revenue
-    license: MIT
-
-  - slug: negotiation
-    categories: [sales]
-    required_providers: []
-    source: wondelai/skills/negotiation
-    license: MIT
-
-  - slug: obviously-awesome
-    categories: [marketing]
-    required_providers: []
-    source: wondelai/skills/obviously-awesome
-    license: MIT
-
-  - slug: jobs-to-be-done
-    categories: [research]
-    required_providers: []
-    source: wondelai/skills/jobs-to-be-done
-    license: MIT
-
-  # Skills the expert roster ships with, moved here from the platform repo
-  - slug: seo-content-brief
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: on-page-seo-audit
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: content-repurposing
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: competitor-teardown
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: icp-and-positioning
-    categories: [marketing, research]
-    required_providers: []
-    source: platform
-
-  - slug: lifecycle-email-map
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: email-deliverability-guardrails
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: bookkeeping-getting-started
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: expense-categorization
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: invoice-drafting-and-issue
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: accounts-receivable-follow-up
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: statement-reconciliation
-    categories: [finance]
-    required_providers: []
-    source: platform
-
-  - slug: month-end-close-checklist
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: monthly-profit-and-loss-summary
-    categories: [finance, research]
-    required_providers: []
-    source: platform
-
-  - slug: bookkeeping-exception-escalation
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: investor-relations-getting-started
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: pitch-deck-review
-    categories: [finance, content]
-    required_providers: []
-    source: platform
-
-  - slug: fundraising-data-room-checklist
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: investor-targeting-and-research
-    categories: [finance, research]
-    required_providers: []
-    source: platform
-
-  - slug: fundraising-pipeline-review
-    categories: [finance, sales]
-    required_providers: []
-    source: platform
-
-  - slug: cap-table-hygiene
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: monthly-investor-update
-    categories: [finance, content]
-    required_providers: []
-    source: platform
-
-  - slug: board-and-investor-metrics-brief
-    categories: [finance, research]
-    required_providers: []
-    source: platform
-
-  - slug: kpi-analysis-getting-started
-    categories: [research]
-    required_providers: []
-    source: platform
-
-  - slug: metric-definition-and-data-quality
-    categories: [research, development]
-    required_providers: []
-    source: platform
-
-  - slug: weekly-kpi-digest
-    categories: [research, finance]
-    required_providers: []
-    source: platform
-
-  - slug: metric-anomaly-detection
-    categories: [research, development]
-    required_providers: []
-    source: platform
-
-  - slug: metric-movement-analysis
-    categories: [research, finance]
-    required_providers: []
-    source: platform
-
-  - slug: cohort-and-retention-analysis
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: funnel-conversion-analysis
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: experiment-readout
-    categories: [research, development]
-    required_providers: []
-    source: platform
-
-  - slug: recruiting-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: role-intake-and-job-description
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: hiring-rubric-design
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: resume-screening
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: interview-plan-and-scorecard
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: candidate-interview-debrief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: candidate-rejection-email
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: candidate-offer-draft
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: procurement-getting-started
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-requirements-brief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-quote-comparison
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-due-diligence
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: procurement-decision-memo
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: contract-renewal-tracker
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-performance-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: spend-anomaly-review
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-ops-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: nda-playbook-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: msa-playbook-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-clause-comparison
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-key-term-extraction
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: contract-deviation-triage
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-obligation-tracker
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: counsel-escalation-brief
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-security-getting-started
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-inventory
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: outdated-dependency-review
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: vulnerability-triage
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: cve-stack-relevance
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-upgrade-plan
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-upgrade-pr
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-change-risk-review
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: customer-success-getting-started
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: customer-onboarding-plan
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: customer-health-score
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: churn-risk-review
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: renewal-readiness-review
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: renewal-touchpoint-draft
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: expansion-opportunity-brief
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: customer-success-plan
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: deal-desk-getting-started
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: proposal-draft
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: statement-of-work-draft
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: pipeline-stage-aging-review
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: deal-risk-review
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: renewal-negotiation-brief
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: pricing-and-terms-approval-brief
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: proposal-quality-check
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: support-getting-started
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: ticket-triage
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: support-reply-draft
-    categories: [support, content]
-    required_providers: []
-    source: platform
-
-  - slug: support-macro-library
-    categories: [support, content]
-    required_providers: []
-    source: platform
-
-  - slug: help-article-from-tickets
-    categories: [support, content]
-    required_providers: []
-    source: platform
-
-  - slug: bug-report-handoff
-    categories: [support, development]
-    required_providers: []
-    source: platform
-
-  - slug: refund-and-exception-brief
-    categories: [support, finance]
-    required_providers: []
-    source: platform
-
-  - slug: weekly-ticket-themes
-    categories: [support, research]
-    required_providers: []
-    source: platform
-
-  - slug: product-getting-started
-    categories: [research, operations]
-    required_providers: []
-    source: platform
-
-  - slug: feedback-synthesis
-    categories: [research]
-    required_providers: []
-    source: platform
-
-  - slug: feature-request-triage
-    categories: [research, operations]
-    required_providers: []
-    source: platform
-
-  - slug: user-interview-guide
-    categories: [research]
-    required_providers: []
-    source: platform
-
-  - slug: opportunity-brief
-    categories: [research, content]
-    required_providers: []
-    source: platform
-
-  - slug: product-requirements-draft
-    categories: [content, development]
-    required_providers: []
-    source: platform
-
-  - slug: roadmap-prioritisation
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: release-notes-draft
-    categories: [content]
-    required_providers: []
-    source: platform
-
-  - slug: paid-ads-getting-started
-    categories: [marketing, operations]
-    required_providers: []
-    source: platform
-
-  - slug: campaign-structure-plan
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: ad-copy-variants
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: landing-page-message-match
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: wasted-spend-audit
-    categories: [marketing, finance]
-    required_providers: []
-    source: platform
-
-  - slug: budget-pacing-review
-    categories: [marketing, finance]
-    required_providers: []
-    source: platform
-
-  - slug: creative-test-readout
-    categories: [marketing, research]
-    required_providers: []
-    source: platform
-
-  - slug: paid-performance-report
-    categories: [marketing, research]
-    required_providers: []
-    source: platform
-
-  - slug: communications-getting-started
-    categories: [marketing, operations]
-    required_providers: []
-    source: platform
-
-  - slug: news-angle-and-key-messages
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: press-release-draft
-    categories: [content, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: media-list-research
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: media-pitch-email
-    categories: [content, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: launch-communications-plan
-    categories: [marketing, operations]
-    required_providers: []
-    source: platform
-
-  - slug: holding-statement-draft
-    categories: [content, operations]
-    required_providers: []
-    source: platform
-
-  - slug: spokesperson-briefing
-    categories: [content, operations]
-    required_providers: []
-    source: platform
-
-  - slug: code-quality-getting-started
-    categories: [development, operations]
-    required_providers: []
-    source: platform
-
-  - slug: pull-request-review
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: test-plan-draft
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: bug-reproduction-report
-    categories: [development, support]
-    required_providers: []
-    source: platform
-
-  - slug: flaky-test-triage
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: regression-risk-review
-    categories: [development, research]
-    required_providers: []
-    source: platform
-
-  - slug: release-readiness-checklist
-    categories: [development, operations]
-    required_providers: []
-    source: platform
-
-  - slug: incident-postmortem-draft
-    categories: [development, operations]
-    required_providers: []
-    source: platform
-
-  - slug: people-ops-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: new-hire-onboarding-plan
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: handbook-policy-draft
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: one-to-one-agenda
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: performance-review-prep
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: engagement-survey-readout
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: offboarding-checklist
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: hr-escalation-brief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: revops-getting-started
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: crm-field-audit
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: crm-duplicate-review
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: pipeline-stage-definitions
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: lead-routing-rules
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: sales-forecast-rollup
-    categories: [sales, finance]
-    required_providers: []
-    source: platform
-
-  - slug: lost-deal-analysis
-    categories: [sales, research]
-    required_providers: []
-    source: platform
-
-  - slug: crm-hygiene-report
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: compliance-ops-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: security-questionnaire-answers
-    categories: [operations, sales]
-    required_providers: []
-    source: platform
-
-  - slug: personal-data-map
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: subprocessor-register
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: dpa-checklist-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: policy-gap-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: data-subject-request-draft
-    categories: [operations, support]
-    required_providers: []
-    source: platform
-
-  - slug: compliance-escalation-brief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: executive-assistant-getting-started
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: inbox-triage
-    categories: [support, operations]
-    required_providers: [google]
-    source: platform
-
-  - slug: reply-draft-in-your-voice
-    categories: [support, content]
-    required_providers: [google]
-    source: platform
-
-  - slug: meeting-prep-brief
-    categories: [support, operations]
-    required_providers: [google]
-    source: platform
-
-  - slug: meeting-follow-up-draft
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: calendar-conflict-review
-    categories: [support, operations]
-    required_providers: [google]
-    source: platform
-
-  - slug: travel-plan
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: weekly-priorities-review
-    categories: [support, operations]
-    required_providers: []
-    source: platform
+- slug: product-marketing
+  name: product-marketing
+  path: skills/coreyhaines31/marketingskills/skills/product-marketing
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/product-marketing
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/product-marketing.json
+  status: core
+  experts:
+  - Jules
+  - Maria
+  - Nadia
+  - Remy
+- slug: copy-editing
+  name: copy-editing
+  path: skills/coreyhaines31/marketingskills/skills/copy-editing
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/copy-editing
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/copy-editing.json
+  status: core
+  experts:
+  - Jules
+  - Maria
+  - Remy
+- slug: social
+  name: social
+  path: skills/coreyhaines31/marketingskills/skills/social
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/social
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/social.json
+  status: core
+  experts:
+  - Jules
+- slug: emails
+  name: emails
+  path: skills/coreyhaines31/marketingskills/skills/emails
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/emails
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/emails.json
+  status: core
+  experts:
+  - Remy
+- slug: competitor-profiling
+  name: competitor-profiling
+  path: skills/coreyhaines31/marketingskills/skills/competitor-profiling
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/competitor-profiling
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/competitor-profiling.json
+  status: core
+  experts:
+  - Nadia
+- slug: coreyhaines31-customer-research
+  name: customer-research
+  path: skills/coreyhaines31/marketingskills/skills/customer-research
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/customer-research
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/coreyhaines31-customer-research.json
+  status: core
+  experts:
+  - Nadia
+  - Riley
+- slug: content-strategy
+  name: content-strategy
+  path: skills/coreyhaines31/marketingskills/skills/content-strategy
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/content-strategy
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/content-strategy.json
+  status: core
+  experts:
+  - Maria
+- slug: copywriting
+  name: copywriting
+  path: skills/coreyhaines31/marketingskills/skills/copywriting
+  package_root: skills/coreyhaines31/marketingskills
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/copywriting
+  upstream_commit: 5b2c0007766c6a1cf1d53fd8fc73e979e0821022
+  license: MIT
+  provenance: provenance/skills/copywriting.json
+  status: core
+  experts:
+  - Maria
+- slug: anthropics-customer-research
+  name: customer-research
+  path: skills/anthropics/knowledge-work-plugins/customer-support/skills/customer-research
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-research
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/anthropics-customer-research.json
+  status: core
+  experts:
+  - Riley
+- slug: draft-response
+  name: draft-response
+  path: skills/anthropics/knowledge-work-plugins/customer-support/skills/draft-response
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/draft-response
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/draft-response.json
+  status: core
+  experts:
+  - Riley
+- slug: customer-escalation
+  name: customer-escalation
+  path: skills/anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/customer-escalation.json
+  status: core
+  experts:
+  - Riley
+- slug: seo-audit
+  name: seo-audit
+  path: skills/every-app/open-seo/plugins/openseo/skills/seo-audit
+  package_root: skills/every-app/open-seo
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: every-app/open-seo/plugins/openseo/skills/seo-audit
+  upstream_commit: 0ffff93101043aad7600a3b6a499a0cd2887ef49
+  license: MIT
+  provenance: provenance/skills/seo-audit.json
+  status: conditional
+  experts:
+  - Maria
+- slug: seo-report
+  name: seo-report
+  path: skills/every-app/open-seo/plugins/openseo/skills/seo-report
+  package_root: skills/every-app/open-seo
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: every-app/open-seo/plugins/openseo/skills/seo-report
+  upstream_commit: 0ffff93101043aad7600a3b6a499a0cd2887ef49
+  license: MIT
+  provenance: provenance/skills/seo-report.json
+  status: conditional
+  experts:
+  - Maria
+- slug: reconciliation
+  name: reconciliation
+  path: skills/anthropics/knowledge-work-plugins/finance/skills/reconciliation
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/reconciliation
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/reconciliation.json
+  status: core
+  experts:
+  - Mina
+- slug: close-management
+  name: close-management
+  path: skills/anthropics/knowledge-work-plugins/finance/skills/close-management
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/close-management
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/close-management.json
+  status: core
+  experts:
+  - Mina
+- slug: financial-statements
+  name: financial-statements
+  path: skills/anthropics/knowledge-work-plugins/finance/skills/financial-statements
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/financial-statements
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/financial-statements.json
+  status: core
+  experts:
+  - Mina
+  - Theo
+- slug: invoice-chase
+  name: invoice-chase
+  path: skills/anthropics/knowledge-work-plugins/small-business/skills/invoice-chase
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - finance
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/small-business/skills/invoice-chase
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/invoice-chase.json
+  status: core
+  experts:
+  - Mina
+- slug: vendor-review
+  name: vendor-review
+  path: skills/anthropics/knowledge-work-plugins/operations/skills/vendor-review
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/vendor-review
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/vendor-review.json
+  status: core
+  experts:
+  - Vera
+- slug: vendor-check
+  name: vendor-check
+  path: skills/anthropics/knowledge-work-plugins/legal/skills/vendor-check
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/legal/skills/vendor-check
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/vendor-check.json
+  status: core
+  experts:
+  - Vera
+- slug: board-deck-builder
+  name: board-deck-builder
+  path: skills/alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder
+  package_root: skills/alirezarezvani/claude-skills
+  categories:
+  - finance
+  - content
+  required_providers: []
+  source: alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder
+  upstream_commit: 19392f7a08264ed00486a251f5b2098321771f94
+  license: MIT
+  provenance: provenance/skills/board-deck-builder.json
+  status: core
+  experts:
+  - Theo
+- slug: knowledge-synthesis
+  name: knowledge-synthesis
+  path: skills/anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/knowledge-synthesis.json
+  status: core
+  experts:
+  - Frankie
+  - Theo
+- slug: status-report
+  name: status-report
+  path: skills/anthropics/knowledge-work-plugins/operations/skills/status-report
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/status-report
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/status-report.json
+  status: core
+  experts:
+  - Frankie
+- slug: risk-assessment
+  name: risk-assessment
+  path: skills/anthropics/knowledge-work-plugins/operations/skills/risk-assessment
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/risk-assessment
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/risk-assessment.json
+  status: core
+  experts:
+  - Frankie
+  - Vera
+- slug: meeting-briefing
+  name: meeting-briefing
+  path: skills/anthropics/knowledge-work-plugins/legal/skills/meeting-briefing
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/legal/skills/meeting-briefing
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/meeting-briefing.json
+  status: conditional
+  experts:
+  - Frankie
+- slug: task-management
+  name: task-management
+  path: skills/anthropics/knowledge-work-plugins/productivity/skills/task-management
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/task-management
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/task-management.json
+  status: conditional
+  experts:
+  - Frankie
+- slug: memory-management
+  name: memory-management
+  path: skills/anthropics/knowledge-work-plugins/productivity/skills/memory-management
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/memory-management.json
+  status: conditional
+  experts:
+  - Frankie
+- slug: start
+  name: start
+  path: skills/anthropics/knowledge-work-plugins/productivity/skills/start
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/start
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/start.json
+  status: conditional
+  experts:
+  - Frankie
+- slug: update
+  name: update
+  path: skills/anthropics/knowledge-work-plugins/productivity/skills/update
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/update
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/update.json
+  status: conditional
+  experts:
+  - Frankie
+- slug: explore-data
+  name: explore-data
+  path: skills/anthropics/knowledge-work-plugins/data/skills/explore-data
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - research
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/data/skills/explore-data
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/explore-data.json
+  status: core
+  experts:
+  - Quinn
+- slug: data-visualization
+  name: data-visualization
+  path: skills/anthropics/knowledge-work-plugins/data/skills/data-visualization
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - research
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/data/skills/data-visualization
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/data-visualization.json
+  status: core
+  experts:
+  - Quinn
+- slug: cohort-analysis
+  name: cohort-analysis
+  path: skills/phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis
+  package_root: skills/phuryn/pm-skills
+  categories:
+  - research
+  required_providers: []
+  source: phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis
+  upstream_commit: 8607e3b077817f89bf4a9b623246219734ac3be0
+  license: MIT
+  provenance: provenance/skills/cohort-analysis.json
+  status: core
+  experts:
+  - Quinn
+- slug: supply-chain-risk-auditor
+  name: supply-chain-risk-auditor
+  path: skills/trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
+  package_root: skills/trailofbits/skills
+  categories:
+  - development
+  required_providers: []
+  source: trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
+  upstream_commit: 32e34f8173796e3566a51aee877dc96bc5191f64
+  license: CC-BY-SA-4.0
+  provenance: provenance/skills/supply-chain-risk-auditor.json
+  status: core
+  experts:
+  - Devon
+- slug: differential-review
+  name: differential-review
+  path: skills/trailofbits/skills/plugins/differential-review/skills/differential-review
+  package_root: skills/trailofbits/skills
+  categories:
+  - development
+  required_providers: []
+  source: trailofbits/skills/plugins/differential-review/skills/differential-review
+  upstream_commit: 32e34f8173796e3566a51aee877dc96bc5191f64
+  license: CC-BY-SA-4.0
+  provenance: provenance/skills/differential-review.json
+  status: core
+  experts:
+  - Devon
+- slug: pipeline-review
+  name: pipeline-review
+  path: skills/anthropics/knowledge-work-plugins/sales/skills/pipeline-review
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/pipeline-review
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/pipeline-review.json
+  status: core
+  experts:
+  - Jordan
+- slug: proposal-writer
+  name: proposal-writer
+  path: skills/jezweb/claude-skills/plugins/writing/skills/proposal-writer
+  package_root: skills/jezweb/claude-skills
+  categories:
+  - sales
+  - content
+  required_providers: []
+  source: jezweb/claude-skills/plugins/writing/skills/proposal-writer
+  upstream_commit: e875a6bfff809e5d42c584104031e36e1f014f18
+  license: MIT
+  provenance: provenance/skills/proposal-writer.json
+  status: core
+  experts:
+  - Jordan
+- slug: nda-review
+  name: nda-review
+  path: skills/anthropics/claude-for-legal/commercial-legal/skills/nda-review
+  package_root: skills/anthropics/claude-for-legal
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/claude-for-legal/commercial-legal/skills/nda-review
+  upstream_commit: 4a6c651889c97cc9140580363c73e0eb17379c2b
+  license: Apache-2.0
+  provenance: provenance/skills/nda-review.json
+  status: core
+  experts:
+  - Ellis
+- slug: amendment-history
+  name: amendment-history
+  path: skills/anthropics/claude-for-legal/commercial-legal/skills/amendment-history
+  package_root: skills/anthropics/claude-for-legal
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/claude-for-legal/commercial-legal/skills/amendment-history
+  upstream_commit: 4a6c651889c97cc9140580363c73e0eb17379c2b
+  license: Apache-2.0
+  provenance: provenance/skills/amendment-history.json
+  status: core
+  experts:
+  - Ellis
+- slug: interview-prep
+  name: interview-prep
+  path: skills/anthropics/knowledge-work-plugins/human-resources/skills/interview-prep
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/interview-prep
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/interview-prep.json
+  status: core
+  experts:
+  - Harper
+- slug: draft-offer
+  name: draft-offer
+  path: skills/anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/draft-offer.json
+  status: core
+  experts:
+  - Harper
+- slug: recruiting-pipeline
+  name: recruiting-pipeline
+  path: skills/anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/recruiting-pipeline.json
+  status: core
+  experts:
+  - Harper
+- slug: account-research
+  name: account-research
+  path: skills/anthropics/knowledge-work-plugins/sales/skills/account-research
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/account-research
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/account-research.json
+  status: core
+  experts:
+  - Max
+- slug: draft-outreach
+  name: draft-outreach
+  path: skills/anthropics/knowledge-work-plugins/sales/skills/draft-outreach
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/draft-outreach
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/draft-outreach.json
+  status: core
+  experts:
+  - Max
+- slug: call-prep
+  name: call-prep
+  path: skills/anthropics/knowledge-work-plugins/sales/skills/call-prep
+  package_root: skills/anthropics/knowledge-work-plugins
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/call-prep
+  upstream_commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  license: Apache-2.0
+  provenance: provenance/skills/call-prep.json
+  status: core
+  experts:
+  - Max

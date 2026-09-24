@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "slug": "status-report",
+  "name": "status-report",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/status-report"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/operations/skills/status-report/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/status-report",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/operations/skills/status-report/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/LICENSE",
+    "scope": "Root LICENSE contains full explicit Apache-2.0 text plus9 nonsensical appended lines after appendix. The suffix states no license condition,restriction or contrary ownership; complete grant treated as controlling. Exact anomalous bytes preserved and disclosed. No operations child LICENSE exists and selected skill contains no override.",
+    "obligations": [
+      "Include complete controlling Apache2 license and preserve attribution/copyright notices.",
+      "Preserve any applicable NOTICE text. No source changes proposed; Apache2 modification notices would apply only if changed later.",
+      "No trademark rights or third-party service rights are granted."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "8c3a21075294a5c5b7a1a7930613e53f0afbdbc12cf9e05d4bd08e6950c0a0d9",
+  "assignments": [
+    {
+      "expert": "Frankie",
+      "role": "Executive Assistant",
+      "status": "core",
+      "essential_function": "Draft leadership status reports with progress,KPIs,risks,decisions and next actions.",
+      "optional_new_kit": true
+    }
+  ],
+  "evidence_ids": [
+    "84d2196f41aeff49aded811f",
+    "fc34a1abecd1b9b7de3630e4",
+    "0511389f10803b0fdefbe7bb"
+  ],
+  "review": "Selected unchanged for weekly/monthly/quarterly leadership reports with headline,KPI target/actual/trend,progress,owners,ETAs,risks,decisions and next priorities. Optional tool reads and offered posting are accepted authored behavior. Concrete portable output format; risk-assessment is an explicit sibling reference and included in this kit. Requires factual inputs; no native command runtime needed to follow markdown workflow.2.8K installs.",
+  "native_prerequisites": [
+    "Project/team reporting period,actual status,KPIs and action owners supplied directly or through optional tracker/chat/calendar connectors.",
+    "Original operations/CONNECTORS.md and risk-assessment sibling skill preserved.",
+    "Posting to chat is optional authored functionality and requires available connector capabilities."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

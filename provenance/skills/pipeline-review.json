@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "slug": "pipeline-review",
+  "name": "pipeline-review",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "sales/skills/pipeline-review"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/pipeline-review/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/pipeline-review",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/sales/skills/pipeline-review/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/LICENSE",
+    "scope": "Inspected controlling sales/LICENSE and repository file inventory; no nested exception in this skill subtree.",
+    "obligations": [
+      "Provide a copy of Apache-2.0 to recipients.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE.",
+      "Prominently identify modified files; license grants no general trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "8172970f71ca4d508e359404e8ba7de1d24ccbdd7533e23bc87c645801985ad7",
+  "assignments": [
+    {
+      "expert": "Jordan",
+      "role": "Deal Desk Manager",
+      "status": "core",
+      "essential_function": "Find stale, slipping and stuck deals, show pipeline coverage and prioritize follow-up.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "ab864a5eb2adc98e950b7ddb",
+    "fe2e7901829b75e6359679b2",
+    "a5600b42a48b71d6cc2a0e5b",
+    "cb6b1d17a684229f869a1ff9"
+  ],
+  "review": "Selected as an unchanged read-only pipeline-health workflow. Full source grounds live CRM fields, uses uploaded exports when connectors are absent, distinguishes real stage-entry age from created-date fallback, flags stale/slipping/stuck deals, and exposes coverage heuristics. Native context intake permits team cycle thresholds. Heuristics are prioritization aids, not validated forecasts.",
+  "native_prerequisites": [
+    "CRM or uploaded pipeline export; history needed for genuine stage aging and slippage",
+    "Native team context supplies stages, scope, quota and cycle length; no skill edit required"
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

@@ -1,58 +1,109 @@
-# skills-catalog
+# AutoGPT skills catalog
 
-The skills the AutoGPT Platform ships in its Skills marketplace as platform-authored
-listings. The backend seed reads this repo and upserts one listing per entry in
-`catalog.yml`, so publishing a skill is a merge here plus a seed run.
+43 selected upstream skills, preserved exactly as authored, with supporting files,
+original attribution, pinned commits and licences. This replaces the previous
+171-entry catalog. AutoGPT curates the collection; the skill authors remain the
+upstream authors.
+
+**Catalog schema v2 is not compatible with the current AutoGPT platform importer.
+Do not run a production seed against this revision.** See
+[import compatibility](docs/IMPORT_COMPATIBILITY.md) for required platform changes,
+including original names/paths, metadata, attribution and retirement of previous
+listings. Repository checks do not establish runtime or importer compatibility.
+
+## Selections
+
+[SELECTIONS.md](SELECTIONS.md) lists every skill, its function, author, licence and
+proposed expert assignments. There are 36 core selections (45 expert assignments)
+and seven conditional sources. Conditional sources need the recorded native
+service, runtime or specialist context. Max and Frankie had no original skills;
+their proposed assignments are optional additions.
+
+Research captured 24 September 2026. Every candidate has individual installation
+evidence. Counts are telemetry, not unique users or proven outcomes. Three niche
+choices have smaller adoption: amendment-history (566), board-deck-builder (603)
+and nda-review (643). seo-report (368) is only the required companion to the
+conditional OpenSEO audit. No skill was executed or benchmarked during curation.
 
 ## Layout
 
 ```
-catalog.yml            what gets published, with categories and provenance
-skills/<slug>/SKILL.md the skill itself: frontmatter + instructions
-skills/<slug>/...      supporting docs the instructions reference
-skills/<slug>/LICENSE  upstream licence, for vendored skills
-tools/vendor.py        pulls a skill from a public GitHub repo into skills/
+catalog.yml                         unique registry IDs, original names and paths
+skills/<owner>/<repo>/...            unchanged upstream tree-relative files
+skills/.../<skill>/SKILL.md          original instructions, never rewritten
+skills/.../<skill>/LICENSE           exact controlling licence copy
+provenance/files.json                source commit, path, hashes and mode per file
+provenance/skills/<slug>.json         attribution, evidence, licence and review
+provenance/evidence.json             dated observations and source-response hashes
+provenance/replaced-catalog.json     previous registry entries for migration
 ```
 
-A skill's folder name, its `catalog.yml` slug and the `name` in its frontmatter must
-all match. The SKILL.md format is the one the platform uses everywhere: YAML
-frontmatter with `name`, `description` and optional `triggers`, then markdown.
+Only the 43 selected SKILL.md files are included. Shared support is stored once,
+with original relative paths. Upstream README/plugin metadata may mention skills
+that are not selected or supplied. These trees are not complete plugin installs;
+do not automatically register every command or metadata file.
 
-## Adding a skill we wrote
+`slug` is a unique catalog identity; `name` is the unchanged upstream name. Corey
+and Anthropic both use customer-research, so their registration IDs differ while
+both retain their original names. `path` points to the original skill folder.
+`package_root` identifies its upstream tree, not a request to bundle every shared
+file into every skill. The platform needs shared-source/dependency support.
 
-1. Create `skills/<slug>/SKILL.md`.
-2. Add an entry to `catalog.yml` with `source: platform`.
-3. Open a PR.
+## Provenance and licensing
 
-## Adding a skill from an open-source repo
+Every original file records its repository, full commit, original path, Git blob
+SHA-1, SHA-256 and executable mode. Adjacent licence copies identify their actual
+upstream source path. Source bytes are preserved with Git newline conversion off.
+Per-skill sidecars contain authorship, licence scope/obligations, adoption/activity
+evidence, review limitations and native prerequisites, without changing skill text.
 
-1. Check the upstream licence allows redistribution. MIT and Apache-2.0 do.
-2. Add an entry to `catalog.yml` with `source: owner/repo/path/to/skill` and `license`.
-3. Run `GITHUB_TOKEN=$(gh auth token) python tools/vendor.py <slug>`.
-4. Read the result. The script drops upstream eval fixtures, hidden files, sponsored
-   tool tables and links into folders it did not copy, and records the source repo,
-   URL and commit in the frontmatter. Anything else that does not fit our product
-   gets edited by hand.
-5. Open a PR.
+Evidence records preserve factual observations, source URLs, capture dates and
+hashes of original responses. They do not republish whole third-party web pages
+or claim certified timestamps. The checksum of the separate complete local
+research archive is recorded; that archive retains the full source responses.
 
-Re-running the script on a slug refreshes it from upstream HEAD and overwrites any
-hand edits, so keep those minimal or upstream them.
+Preserve MIT/Apache licence and applicable notices. The two Trail of Bits skills
+retain CC-BY-SA-4.0 attribution and recipients' licence rights; do not impose
+proprietary-only restrictions on that material. Services, third-party linked
+content and trademarks have separate terms. No endorsement or human-only
+upstream authorship is claimed.
 
-## Checks
+Seven selections inherit an Anthropic root Apache licence with unexplained
+appended text: the three human-resources skills, invoice-chase, vendor-review,
+risk-assessment and status-report. The exact text is preserved; research found no
+additional commercial restriction. Resolve that anomaly before commercial release.
+Other plugin-local licences are retained separately.
 
-`python tools/check.py` validates the catalog the way the platform seed will:
-slugs match folder and frontmatter names, categories are canonical, package files
-stay within the platform's caps, nothing is hidden, and no markdown links out of
-its skill folder. The `Check catalog` workflow runs it on every PR and push to `main`.
+## Verify and restore
+
+Use Python 3.12 and PyYAML:
+
+```sh
+python -m pip install pyyaml
+python tools/check.py --expected-count 43
+python -m unittest discover -s tools -p 'test_*.py'
+python tools/vendor.py --check
+python tools/vendor.py --fetch
+```
+
+The checker validates catalog/provenance consistency and unchanged source bytes;
+it does not claim parity with the old platform importer. The vendor tool restores
+missing files from recorded immutable URLs, verifies responses before writing,
+and refuses to overwrite mismatched existing content. It never fetches HEAD,
+rewrites frontmatter, trims Markdown or strips sections. Revision/selection changes
+require a new reviewed manifest and source update.
+
+## Why vendored files rather than submodules?
+
+Submodules pin whole repositories, not chosen skill folders. They require recursive
+checkout and their content is absent from ordinary GitHub source tarballs, which
+the existing platform seed downloads. Vendored immutable files keep the selected
+source, licences and provenance visible in one PR and ordinary clone/tarball.
+Commit pins and hashes provide traceability without following upstream updates.
 
 ## Publishing
 
-Merging to `main` does not publish by itself. The platform seed pulls this repo and
-writes the listings to the database:
-
-```
-poetry run python -m backend.api.features.store.skill_seed
-```
-
-Run it against the environment you want updated. It is idempotent and rewrites each
-listing's live version in place.
+This repository change does not remove database listings or update expert
+assignments. Importer support, explicit listing retirement, expert reassignment
+and end-to-end runtime checks remain separate prerequisites documented in
+[import compatibility](docs/IMPORT_COMPATIBILITY.md).

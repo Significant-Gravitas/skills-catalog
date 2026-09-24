@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "slug": "draft-response",
+  "name": "draft-response",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "customer-support/skills/draft-response"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/draft-response/SKILL.md",
+  "discovery_url": "https://www.skills.sh/anthropics/knowledge-work-plugins/draft-response",
+  "author": "Anthropic / upstream contributors; retain Apache-2.0 and applicable notices.",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/customer-support/skills/draft-response/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/LICENSE",
+    "scope": "Clean customer-support/Apache-2.0 LICENSE inspected; no selected-subtree licence override found. Source copied unchanged; external connectors have separate terms.",
+    "obligations": [
+      "Include a copy of Apache-2.0.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE (none found in selected plugin subtrees).",
+      "Mark modified files prominently; do not imply publisher endorsement or trademark permission."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "1a201228b75a98fc3b5d45090cb7443d50df204b2ee748bfc8970790a64f0026",
+  "assignments": [
+    {
+      "expert": "Riley",
+      "role": "Customer Success Manager",
+      "status": "core",
+      "essential_function": "Draft account updates and sensitive customer replies.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "08bc1eaeadcefd77f64c9984",
+    "eb8864bf57a9db65444a3979",
+    "eeb623c643d57ce5a85ecc71",
+    "4194a494050999e466f744d9"
+  ],
+  "review": "Drafts customer communications using account context and prior commitments; its native quality check prohibits commitments beyond authorization and provides internal verification notes. Covers updates, issues, requests and sensitive conversations without requiring a custom policy overlay.",
+  "native_prerequisites": [
+    "Preserve customer-support/CONNECTORS.md and relative layout.",
+    "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

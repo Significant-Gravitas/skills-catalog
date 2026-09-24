@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "slug": "reconciliation",
+  "name": "reconciliation",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "finance/skills/reconciliation"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/skills/reconciliation/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/reconciliation",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/finance/skills/reconciliation/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/LICENSE",
+    "scope": "Root Apache-2.0 and, for finance/legal, same-license plugin LICENSE apply. Recursive tree shows no overriding license within selected skill/shared-reference paths. Downloaded selected folders plus relevant CONNECTORS/shared files. External links and integration services are not relicensed.",
+    "obligations": [
+      "Distribute complete Apache-2.0 license.",
+      "Retain relevant copyright, patent, trademark and attribution notices; preserve any applicable NOTICE text.",
+      "State changes prominently in modified files; license supplies no trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "aa17e90539f4d4d84130c910c7f527236bfaa71977c4c03493c8e8e515ddeea6",
+  "assignments": [
+    {
+      "expert": "Mina",
+      "role": "Bookkeeper",
+      "status": "core",
+      "essential_function": "Reconcile bank and ledger balances,explain differences and track unresolved items.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "2ee762765e1fd82204dbc069",
+    "2037c95a6f4dad81eae32594",
+    "9818315323f66d10bfb36581",
+    "b07f32879041fc0a81b92153",
+    "4d384707e8d97a0ebff2066a"
+  ],
+  "review": "Selected unchanged for bank,GL/subledger and intercompany reconciliation. Substantive adjusted-balance process, timing/adjustment/investigation categories, aging, evidence, reviewer and escalation controls. Source explicitly allows organization-specific materiality inputs and includes adjusting-entry preparation; this broader authored scope is accepted. No corrective wrapper or no-posting rewrite is assumed. Qualified accounting review is part of the original skill. Static inspection only.",
+  "native_prerequisites": [
+    "Bank statements and GL/subledger balances with source detail.",
+    "Organization-specific materiality and retention policy are ordinary inputs requested by the upstream skill.",
+    "Original finance/CONNECTORS.md and finance/LICENSE; optional ERP/warehouse access or user exports."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

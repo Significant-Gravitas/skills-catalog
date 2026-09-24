@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "slug": "emails",
+  "name": "emails",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "path": "skills/emails"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/emails/SKILL.md",
+  "discovery_url": "https://www.skills.sh/coreyhaines31/marketingskills/emails",
+  "author": "Corey Haines / contributors; retain upstream copyright and notices.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/coreyhaines31/marketingskills/skills/emails/LICENSE",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
+    "obligations": [
+      "Retain copyright and permission notice in copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "1fbd54df4c59f48408057e7db0dfb1a53c033e6a4ca5cd1927a47c51ec28d8f1",
+  "assignments": [
+    {
+      "expert": "Remy",
+      "role": "Email Marketing Manager",
+      "status": "core",
+      "essential_function": "Plan lifecycle sequences, timing, triggers, exits and individual emails.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "27f965272fb371ef7de004bd",
+    "12843469c87c24da1ce965f5",
+    "e12751dc43af8207be6af149",
+    "8b1e2a7e99c0c48f45506c40"
+  ],
+  "review": "Native lifecycle sequence planning and copy, with sequence triggers, timing, segments, exits and templates. The author’s cadence is accepted as supplied; no 48-hour override or custom cancellation policy is proposed. This is campaign strategy/copy, not certified deliverability or legal compliance.",
+  "native_prerequisites": [
+    "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
+    "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/.",
+    "Email-platform connection only for implementation; drafts can be produced from supplied campaign inputs."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

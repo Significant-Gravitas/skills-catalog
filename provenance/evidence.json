@@ -1,0 +1,791 @@
+{
+  "schema_version": 2,
+  "captured_date": "2026-09-24",
+  "description": "Dated factual observations from the source review, with source URLs and hashes of the full captured responses. Installation counts are not unique users or outcome benchmarks. Full third-party pages are retained in the separate local research archive, not republished here.",
+  "research_archive": {
+    "filename": "autogpt-expert-skill-kits-provenance.zip",
+    "sha256": "74c84dae628bc1b9f575527c1aa6e324b93c36e0b7521af6532a0b249079cb77"
+  },
+  "observations": [
+    {
+      "id": "5fb04c6b459ae4327a3c9c78",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed installs (rounded where shown)",
+      "value": "68.5K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/product-marketing",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "90bc11ccd2dccf39eefd6373277b2e3a45a550ab0169722ab4d7295d4efdb0e4"
+    },
+    {
+      "id": "12843469c87c24da1ce965f5",
+      "kind": "repo-stars",
+      "metric": "GitHub repository stars, not individual skill users",
+      "value": 51391,
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "8837ed8d93534e38a6cded81b10096bc5f6988d8088ac9e79f13761363bc4b1b"
+    },
+    {
+      "id": "e12751dc43af8207be6af149",
+      "kind": "maintenance",
+      "metric": "Pinned repository last commit date (not per-skill)",
+      "value": "2026-09-05T04:48:02Z",
+      "url": "https://github.com/coreyhaines31/marketingskills/commit/5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "8a7a148541e7a19a11a0bbaac44afe04e0036d107c7ebc5ff6565aa45f4beb7d"
+    },
+    {
+      "id": "8b1e2a7e99c0c48f45506c40",
+      "kind": "community-use",
+      "metric": "User reproduces broken support links in installed emails/churn-prevention copies; says v2 improved. Repository/package evidence, not endorsement of all skills.",
+      "value": "Issue #524, installed copies dated 2026-08-16; unresolved portable-file issue",
+      "url": "https://github.com/coreyhaines31/marketingskills/issues/524",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "98859825a035ca99fbfb5cbde402cefdefc7ef3da1f045173b4d06038359fc18"
+    },
+    {
+      "id": "cb98602c068c2daf9dbe688f",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed installs (rounded where shown)",
+      "value": "130.0K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/copy-editing",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "1b65586b24a3ab9f8187b148308b146d037071b1288ced4abd78062f22764bb8"
+    },
+    {
+      "id": "2ddd7110ec5b75122c982688",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed installs (rounded where shown)",
+      "value": "67.0K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/social",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "c18b664a82b5150ab4dbbb2e57f1964568a1af0b67a147c8eee83d452f23d0b0"
+    },
+    {
+      "id": "27f965272fb371ef7de004bd",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed installs (rounded where shown)",
+      "value": "62.9K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/emails",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "183b2141ca8db0d766d0efbc8effe5cb7e3d91e7bbfc4bc7e082b53f21a33cce"
+    },
+    {
+      "id": "684137b122b16911dc051c4b",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed installs (rounded where shown)",
+      "value": "78.3K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/competitor-profiling",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "5c5d6d408a91f267e3ea477d68d15a63a2d78669da76475954cfda0bc07146e1"
+    },
+    {
+      "id": "c1d895b1cdb71b6e02ef580a",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "98.2K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/customer-research",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "3f0519c72f85ac605d6a11c9bc107ed2e1a8a0d5b3350d999f15ac79cb694c39"
+    },
+    {
+      "id": "7167402a6419c32c8817ba8e",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "144.6K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/content-strategy",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "2432ce7626ef393b110156d49e698031fe4ea833670d8810ef08af14e7147d69"
+    },
+    {
+      "id": "59f44e4275cb5a4ba105466d",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "207.0K",
+      "url": "https://www.skills.sh/coreyhaines31/marketingskills/copywriting",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "ab8e6ec2ac839e9bed57ebaca3646c57a196398156ec9aae14b1a71d8afdb411"
+    },
+    {
+      "id": "ec3a9ccdadc4c35c78c882a2",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "2.9K",
+      "url": "https://www.skills.sh/anthropics/knowledge-work-plugins/customer-research",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "84cff94ffc3310d3f2d05654466e80ce8d47e1ee828b65f66ce8a475bc415339"
+    },
+    {
+      "id": "eb8864bf57a9db65444a3979",
+      "kind": "repo-stars",
+      "metric": "GitHub stargazers_count (repository-level, not skill usage)",
+      "value": "25,533",
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "bc70350ad321c6541ae46627c716cb35af94fec486c1db8b68319f5249c3a7c8"
+    },
+    {
+      "id": "eeb623c643d57ce5a85ecc71",
+      "kind": "maintenance",
+      "metric": "Repository pushed_at (not individual skill revision)",
+      "value": "2026-09-24T07:36:14Z",
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "bc70350ad321c6541ae46627c716cb35af94fec486c1db8b68319f5249c3a7c8"
+    },
+    {
+      "id": "4194a494050999e466f744d9",
+      "kind": "maintenance",
+      "metric": "Captured customer-support path history, not a claim of every-file revision date",
+      "value": "Upstream commit history saved",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/commits/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "be0bbb55c2af242350f2031a1a3fe9f663dd422e7be920089a7f91a844bff61b"
+    },
+    {
+      "id": "08bc1eaeadcefd77f64c9984",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "2.6K",
+      "url": "https://www.skills.sh/anthropics/knowledge-work-plugins/draft-response",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "e3f08231fee2f5fd8c2bace4dada90230b7f4cc3feeb44deff8e392eef13f22d"
+    },
+    {
+      "id": "181f03b5d7b42b1a34790068",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "2.7K",
+      "url": "https://www.skills.sh/anthropics/knowledge-work-plugins/customer-escalation",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "fcd2c1d6489cb1b76b3ff87af57cead46df559e91fad323e9c72752c850ea4e0"
+    },
+    {
+      "id": "507854752d52ddb17a7cf657",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "3.5K",
+      "url": "https://www.skills.sh/every-app/open-seo/seo-audit",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "c9cb5116d9f159a4a11eaece80c6e95bce7106a8036645acfcc71c0fbb8c6b77"
+    },
+    {
+      "id": "84b629689c14795583232a2e",
+      "kind": "repo-stars",
+      "metric": "Repository stars displayed by skills.sh, not individual users",
+      "value": "20.4K",
+      "url": "https://www.skills.sh/every-app/open-seo/seo-audit",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "c9cb5116d9f159a4a11eaece80c6e95bce7106a8036645acfcc71c0fbb8c6b77"
+    },
+    {
+      "id": "606c3d48761715a2049a006e",
+      "kind": "maintenance",
+      "metric": "Pinned commit directly rewrites SEO audit workflow; Git object metadata",
+      "value": "2026-09-19T16:55:56-07:00",
+      "url": "https://github.com/every-app/open-seo/commit/0ffff93101043aad7600a3b6a499a0cd2887ef49",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "c1c24569535062f97a646d557aed6f43137ddaeae96efd8a3dac5f73cb9d5766"
+    },
+    {
+      "id": "49261631ed676b1ddce065b9",
+      "kind": "audit",
+      "metric": "Scanner warning investigated; not treated as a quality endorsement",
+      "value": "Snyk medium W011: fetching third-party page text creates indirect prompt-injection exposure; no corrective source patch proposed.",
+      "url": "https://www.skills.sh/every-app/open-seo/seo-audit/security/snyk",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "c9472f51d60f9fcd517727bb827957abe7b82ac681455537181f0dc76bf8c824"
+    },
+    {
+      "id": "c35b76075431675cd8c775aa",
+      "kind": "individual-installs",
+      "metric": "skills.sh displayed cumulative install telemetry, not active users",
+      "value": "368",
+      "url": "https://www.skills.sh/every-app/open-seo/seo-report",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "5b6547b74af5e34dabda85561d2c695ef1bc5b8c0140e957c7a3354f0015ee3c"
+    },
+    {
+      "id": "79201898c6e0fa55645b5ffe",
+      "kind": "repo-stars",
+      "metric": "Repository stars displayed by skills.sh, not individual users",
+      "value": "20.4K",
+      "url": "https://www.skills.sh/every-app/open-seo/seo-report",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "5b6547b74af5e34dabda85561d2c695ef1bc5b8c0140e957c7a3354f0015ee3c"
+    },
+    {
+      "id": "2ee762765e1fd82204dbc069",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed count; installations, not unique users)",
+      "value": "3.2K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/reconciliation",
+      "observed_at": "2026-09-24T13:43:53.2742339Z",
+      "original_response_sha256": "ec01be9a20b10b7f42e621bda65cd94ce5cad3060b1fa79ba34222a0ab669367"
+    },
+    {
+      "id": "2037c95a6f4dad81eae32594",
+      "kind": "repo-stars",
+      "metric": "GitHub repository stargazers_count (repository-wide, not candidate-specific use)",
+      "value": 25533,
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24T13:35:15.1656696Z",
+      "original_response_sha256": "b800d06aa54d3a1debcd7cc9b31ce93e0501c948bc6689182268beb179b18c1d"
+    },
+    {
+      "id": "9818315323f66d10bfb36581",
+      "kind": "maintenance",
+      "metric": "GitHub repository pushed_at (repository-wide, not proof this skill was recently edited)",
+      "value": "2026-09-24T07:36:14Z",
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24T13:35:15.1656696Z",
+      "original_response_sha256": "b800d06aa54d3a1debcd7cc9b31ce93e0501c948bc6689182268beb179b18c1d"
+    },
+    {
+      "id": "b07f32879041fc0a81b92153",
+      "kind": "individual-installs",
+      "metric": "Weekly installs (8 displayed buckets, dates not exposed in label; same skills.sh telemetry source)",
+      "value": "105, 88, 110, 81, 74, 65, 88, 84",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/reconciliation",
+      "observed_at": "2026-09-24T13:43:53.2742339Z",
+      "original_response_sha256": "ec01be9a20b10b7f42e621bda65cd94ce5cad3060b1fa79ba34222a0ab669367"
+    },
+    {
+      "id": "4d384707e8d97a0ebff2066a",
+      "kind": "community-use",
+      "metric": "User integration report across finance/legal/sales plugins; bundle use signal and runtime caveat",
+      "value": "Issue1031 describes duplicate authentication across installed plugins. Does not establish individual skill outcome quality.",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/issues/1031",
+      "observed_at": "2026-09-24T13:50:54.8025284Z",
+      "original_response_sha256": "8aaf5ef5b1b64a4d7863088fbbcea136203acb71f76f427468525cfa582b205f"
+    },
+    {
+      "id": "581a2452a2d1845ed0a77a8d",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed count; installations, not unique users)",
+      "value": "2.8K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/close-management",
+      "observed_at": "2026-09-24T13:43:53.1500571Z",
+      "original_response_sha256": "ae9ada50d327061a5a4cb1cef9ba8e71d91218eaddbff90654db1a06e1f05106"
+    },
+    {
+      "id": "e58ecc53d104195d976939c9",
+      "kind": "individual-installs",
+      "metric": "Weekly installs (8 displayed buckets, dates not exposed in label; same skills.sh telemetry source)",
+      "value": "86, 73, 92, 63, 66, 51, 65, 80",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/close-management",
+      "observed_at": "2026-09-24T13:43:53.1500571Z",
+      "original_response_sha256": "ae9ada50d327061a5a4cb1cef9ba8e71d91218eaddbff90654db1a06e1f05106"
+    },
+    {
+      "id": "ede32972100c2c4cd4b9198f",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed count; installations, not unique users)",
+      "value": "4.1K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/financial-statements",
+      "observed_at": "2026-09-24T13:43:53.2512366Z",
+      "original_response_sha256": "0ac8212699fc4afe056d7da86af25adea4131f08b96ba1900158b8ae5c0434d0"
+    },
+    {
+      "id": "80fc7fd06eecefe8b974a79e",
+      "kind": "individual-installs",
+      "metric": "Weekly installs (8 displayed buckets, dates not exposed in label; same skills.sh telemetry source)",
+      "value": "139, 108, 110, 92, 90, 72, 78, 98",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/financial-statements",
+      "observed_at": "2026-09-24T13:43:53.2512366Z",
+      "original_response_sha256": "0ac8212699fc4afe056d7da86af25adea4131f08b96ba1900158b8ae5c0434d0"
+    },
+    {
+      "id": "9ffeb13ba34a24b239a17993",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed count; installations, not unique users)",
+      "value": "1.8K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/invoice-chase",
+      "observed_at": "2026-09-24T13:43:54.5819302Z",
+      "original_response_sha256": "775cf43d627a1cee7580320bc6b73f886f16364d72e1b922503dc9d8e1e17934"
+    },
+    {
+      "id": "cd9184c566a2ba4ea7874305",
+      "kind": "individual-installs",
+      "metric": "Weekly installs (8 displayed buckets, dates not exposed in label; same skills.sh telemetry source)",
+      "value": "85, 72, 85, 59, 63, 45, 54, 77",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/invoice-chase",
+      "observed_at": "2026-09-24T13:43:54.5819302Z",
+      "original_response_sha256": "775cf43d627a1cee7580320bc6b73f886f16364d72e1b922503dc9d8e1e17934"
+    },
+    {
+      "id": "9e22dc431e1554640b050523",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed count; installations, not unique users)",
+      "value": "2.6K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/vendor-review",
+      "observed_at": "2026-09-24T13:43:54.6416222Z",
+      "original_response_sha256": "41c1821d13bb2c64a59cff7a66dfb59beac6b1c3fed3ec957955ee25dce728af"
+    },
+    {
+      "id": "f783cc14fb5ca01687d8d78f",
+      "kind": "individual-installs",
+      "metric": "Weekly installs (8 displayed buckets, dates not exposed in label; same skills.sh telemetry source)",
+      "value": "88, 69, 76, 57, 63, 51, 57, 72",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/vendor-review",
+      "observed_at": "2026-09-24T13:43:54.6416222Z",
+      "original_response_sha256": "41c1821d13bb2c64a59cff7a66dfb59beac6b1c3fed3ec957955ee25dce728af"
+    },
+    {
+      "id": "8a91282dd4a1d6f864ed9885",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed count; installations, not unique users)",
+      "value": "2.6K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/vendor-check",
+      "observed_at": "2026-09-24T13:43:54.7121295Z",
+      "original_response_sha256": "a3f46a03d72116b28d9a947ffce95353b3ea05d7fdcc4c59bd442d006a1c0b1c"
+    },
+    {
+      "id": "d089ddb172d57852310c158c",
+      "kind": "individual-installs",
+      "metric": "Weekly installs (8 displayed buckets, dates not exposed in label; same skills.sh telemetry source)",
+      "value": "84, 71, 76, 60, 61, 44, 55, 69",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/vendor-check",
+      "observed_at": "2026-09-24T13:43:54.7121295Z",
+      "original_response_sha256": "a3f46a03d72116b28d9a947ffce95353b3ea05d7fdcc4c59bd442d006a1c0b1c"
+    },
+    {
+      "id": "09cfedf2f833613e83f39122",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed count; installations, not unique users)",
+      "value": "603",
+      "url": "https://skills.sh/alirezarezvani/claude-skills/board-deck-builder",
+      "observed_at": "2026-09-24T13:43:55.6288721Z",
+      "original_response_sha256": "f44a3f2d1891a12986c28ca2ffa21c2334ce4447d5c8fcce2f70164ff35a95eb"
+    },
+    {
+      "id": "d3d312abfeaedd9937101657",
+      "kind": "repo-stars",
+      "metric": "GitHub repository stargazers_count (repository-wide, not candidate-specific use)",
+      "value": 26392,
+      "url": "https://api.github.com/repos/alirezarezvani/claude-skills",
+      "observed_at": "2026-09-24T13:43:10.1166312Z",
+      "original_response_sha256": "301d80cc42599c10de29b32176599e4ed4d0cb19aa7b0850486ebddaefce704f"
+    },
+    {
+      "id": "564fc33b2e581dbfde46c77f",
+      "kind": "maintenance",
+      "metric": "GitHub repository pushed_at (repository-wide, not proof this skill was recently edited)",
+      "value": "2026-08-30T09:46:16Z",
+      "url": "https://api.github.com/repos/alirezarezvani/claude-skills",
+      "observed_at": "2026-09-24T13:43:10.1166312Z",
+      "original_response_sha256": "301d80cc42599c10de29b32176599e4ed4d0cb19aa7b0850486ebddaefce704f"
+    },
+    {
+      "id": "881493ff05ad154cc947ebd8",
+      "kind": "individual-installs",
+      "metric": "Weekly installs (8 displayed buckets, dates not exposed in label; same skills.sh telemetry source)",
+      "value": "3, 3, 7, 2, 6, 5, 5, 2",
+      "url": "https://skills.sh/alirezarezvani/claude-skills/board-deck-builder",
+      "observed_at": "2026-09-24T13:43:55.6288721Z",
+      "original_response_sha256": "f44a3f2d1891a12986c28ca2ffa21c2334ce4447d5c8fcce2f70164ff35a95eb"
+    },
+    {
+      "id": "6cfad844a8322da111e381be",
+      "kind": "community-use",
+      "metric": "User installation report for c-level-advisor bundle; integration complaint, not candidate quality endorsement",
+      "value": "Issue949 reports bundle installation and use; scope is c-level bundle, not proof of individual vendor/procurement skill use.",
+      "url": "https://github.com/alirezarezvani/claude-skills/issues/949",
+      "observed_at": "2026-09-24T13:50:54.0517281Z",
+      "original_response_sha256": "3730d8613b10e5f029243a54b006dbbb66efa1fd96dcdc2b609e79820cab9bb9"
+    },
+    {
+      "id": "f3e7fb0a19f9f47869edbe09",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "6.1K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/knowledge-synthesis",
+      "observed_at": "2026-09-24T14:09:48.1850511Z",
+      "original_response_sha256": "a5d3cee2acf3d2ec5d3cbf93555105857d3e9db7d1232f34a04517be4239ab3a"
+    },
+    {
+      "id": "fc34a1abecd1b9b7de3630e4",
+      "kind": "repo-stars",
+      "metric": "GitHub stargazers_count; repository-wide popularity,not individual skill use",
+      "value": 25533,
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24T13:35:15.1656696Z",
+      "original_response_sha256": "b800d06aa54d3a1debcd7cc9b31ce93e0501c948bc6689182268beb179b18c1d"
+    },
+    {
+      "id": "0511389f10803b0fdefbe7bb",
+      "kind": "maintenance",
+      "metric": "Repository pushed_at; not per-skill latest edit",
+      "value": "2026-09-24T07:36:14Z",
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24T13:35:15.1656696Z",
+      "original_response_sha256": "b800d06aa54d3a1debcd7cc9b31ce93e0501c948bc6689182268beb179b18c1d"
+    },
+    {
+      "id": "84d2196f41aeff49aded811f",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "2.8K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/status-report",
+      "observed_at": "2026-09-24T14:06:59.1181669Z",
+      "original_response_sha256": "1f90f0295aa14782c1aa92305f62a1ef9f837a01492a89b07dbdb5f7abeef109"
+    },
+    {
+      "id": "347e5184327f25f68ae23494",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "3.1K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/risk-assessment",
+      "observed_at": "2026-09-24T14:10:59.9900692Z",
+      "original_response_sha256": "82e0189d1a6aec3472c3ed57925ca9178011fceb3e7a6b010f0090bb4e5640b1"
+    },
+    {
+      "id": "d190068557cfeb0de486e3d0",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "2.8K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/meeting-briefing",
+      "observed_at": "2026-09-24T14:16:48.1328951Z",
+      "original_response_sha256": "ab5ffdd50fd43124bd4b98fd8dd0f1bf4074050fe7ed57243e18d3fdd08b1123"
+    },
+    {
+      "id": "1b14b0720ccc86fd18f4fab8",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "7.0K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/task-management",
+      "observed_at": "2026-09-24T14:06:54.8733261Z",
+      "original_response_sha256": "a523beff1929dbd258a44b604c07a69094cd1fc3006d7a54581efe7224d5ed11"
+    },
+    {
+      "id": "22696e5b40794049ef423e0d",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "7.2K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/memory-management",
+      "observed_at": "2026-09-24T14:06:55.7681630Z",
+      "original_response_sha256": "c5dc90408b7ce34da6c2d49f4c491e92a77f6d4cf11fb3e789fdd0d247a16d9e"
+    },
+    {
+      "id": "14c18e5e70dcca70b242b162",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "4.7K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/start",
+      "observed_at": "2026-09-24T14:06:56.5686711Z",
+      "original_response_sha256": "d30acf43b5a0000c85fa2294adfb6cdf1b68aca5953b4e75b6695fe6f4d45270"
+    },
+    {
+      "id": "96055877a7fae2e0b4a5bcf2",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed installations,not unique users)",
+      "value": "4.8K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/update",
+      "observed_at": "2026-09-24T14:06:57.4055872Z",
+      "original_response_sha256": "1543a1f30cc8221f7dc606a35e2eab2dbcc78a02ef692346ab778ce46a85686e"
+    },
+    {
+      "id": "1d0a832c73382189f0ab687b",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed cumulative count, rounded where K is shown; not unique users)",
+      "value": "5.6K",
+      "url": "https://www.skills.sh/anthropics/knowledge-work-plugins/explore-data",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "ff64dfaad755d859b90263526620273aba0e6300358aa74513d47cf5226660de"
+    },
+    {
+      "id": "7754864b4c260f8b368330e7",
+      "kind": "maintenance",
+      "metric": "Most recent commit touching candidate directory (metadata changes may account for activity)",
+      "value": "2026-03-13T15:57:57Z",
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins/commits?path=data/skills/explore-data&per_page=1",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "5465c1c2c71c9bb0cb9397530352a9e33a07c8fa3feab66d16ed4ef74d64db53"
+    },
+    {
+      "id": "29a1e12a93e30bd437629824",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed cumulative count, rounded; not unique users)",
+      "value": "12.3K",
+      "url": "https://www.skills.sh/anthropics/knowledge-work-plugins/data-visualization",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "a10a8cad5c9f95fa4b5358b94e45645491f6efec2906c281ec7583c8c0f2ac5a"
+    },
+    {
+      "id": "7fb675f5e226c13f6c468e41",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed cumulative count, rounded where K is shown; not unique users)",
+      "value": "2.6K",
+      "url": "https://www.skills.sh/phuryn/pm-skills/cohort-analysis",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "91be10c893905a4ec06e1ee623a61b4326ffada980dfd926fecd28613bcfc892"
+    },
+    {
+      "id": "13c791fcf36994c601091f82",
+      "kind": "repo-stars",
+      "metric": "GitHub stargazers_count (repository-level, not skill usage)",
+      "value": "26,575",
+      "url": "https://api.github.com/repos/phuryn/pm-skills",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "6e1c230e780e37ceba8b3ea0b8d2d94eedf6693535a78d2ac6cc6219208273da"
+    },
+    {
+      "id": "ca543ade71189f5fd5b84ae5",
+      "kind": "maintenance",
+      "metric": "Repository pushed_at (not individual skill revision)",
+      "value": "2026-09-14T21:15:33Z",
+      "url": "https://api.github.com/repos/phuryn/pm-skills",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "6e1c230e780e37ceba8b3ea0b8d2d94eedf6693535a78d2ac6cc6219208273da"
+    },
+    {
+      "id": "5cacf607c7a839abeac9434a",
+      "kind": "maintenance",
+      "metric": "Most recent commit touching candidate directory (metadata changes may account for activity)",
+      "value": "2026-03-03T07:38:42Z",
+      "url": "https://api.github.com/repos/phuryn/pm-skills/commits?path=pm-data-analytics/skills/cohort-analysis&per_page=1",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "a4ef801e7acef195a534c1e9f716dc22e05a169fb7e6537069828005ec90d163"
+    },
+    {
+      "id": "66313de9b8d9eceb6e02e741",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed cumulative count, rounded where K is shown; not unique users)",
+      "value": "7.0K",
+      "url": "https://www.skills.sh/trailofbits/skills/supply-chain-risk-auditor",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "bc528f0c1532304b9e26039f0499cc578814e7300b75694d9bca217925d58065"
+    },
+    {
+      "id": "eba7d676b7717345bd3cfd03",
+      "kind": "repo-stars",
+      "metric": "GitHub stargazers_count (repository-level, not skill usage)",
+      "value": "7,226",
+      "url": "https://api.github.com/repos/trailofbits/skills",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "039e5ff6c79d383a2a84a40c84168db055ecef770fa4b571093912fc502f84ac"
+    },
+    {
+      "id": "4383bcc9d54816ba20963711",
+      "kind": "maintenance",
+      "metric": "Repository pushed_at (not individual skill revision)",
+      "value": "2026-09-23T16:36:04Z",
+      "url": "https://api.github.com/repos/trailofbits/skills",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "039e5ff6c79d383a2a84a40c84168db055ecef770fa4b571093912fc502f84ac"
+    },
+    {
+      "id": "de0f98bea0e1463958854f3d",
+      "kind": "maintenance",
+      "metric": "Most recent commit touching candidate directory (metadata changes may account for activity)",
+      "value": "2026-09-16T22:05:09Z",
+      "url": "https://api.github.com/repos/trailofbits/skills/commits?path=plugins/supply-chain-risk-auditor&per_page=1",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "0fb741110bab4967a4f3c25316c17714927eb4c9e22e00840c520060ef9d2678"
+    },
+    {
+      "id": "695e9f5df81b8440c5fe9f11",
+      "kind": "maintenance",
+      "metric": "Merged upstream substantive rebuild with bundled evals, tests and reported live checks (maintainer report, not independent benchmark)",
+      "value": "PR227 merged 2026-08-10; author reports live checks on axios, express, fastapi, jupyterhub, alertmanager; 85 offline tests and limited one-run evals",
+      "url": "https://github.com/trailofbits/skills/pull/227",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "61d089f079457455705dd54056abf773ea8ad64ed3c6d084bc76a978655979e7"
+    },
+    {
+      "id": "b4200b384668ab8ccbae9d2a",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh displayed cumulative count, rounded where K is shown; not unique users)",
+      "value": "6.9K",
+      "url": "https://www.skills.sh/trailofbits/skills/differential-review",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "abe0de2f806dc8496e5953db254c334c70af015511254c5fb0f3514dcef65c22"
+    },
+    {
+      "id": "638722b9e2b391569778e0c7",
+      "kind": "maintenance",
+      "metric": "Most recent commit touching candidate directory (metadata changes may account for activity)",
+      "value": "2026-09-16T22:05:09Z",
+      "url": "https://api.github.com/repos/trailofbits/skills/commits?path=plugins/differential-review&per_page=1",
+      "observed_at": "2026-09-24",
+      "original_response_sha256": "0fb741110bab4967a4f3c25316c17714927eb4c9e22e00840c520060ef9d2678"
+    },
+    {
+      "id": "ab864a5eb2adc98e950b7ddb",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh visible label; not unique users)",
+      "value": "2.6K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/pipeline-review",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "27a06ec0afd8efff59ecdac9c8139cdb5c3cea4745b99e20e8b673fb5cc0c891",
+      "structured_count": 2600
+    },
+    {
+      "id": "fe2e7901829b75e6359679b2",
+      "kind": "repo-stars",
+      "metric": "GitHub stargazers_count (repository-wide, not individual-skill use)",
+      "value": 25533,
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "bc70350ad321c6541ae46627c716cb35af94fec486c1db8b68319f5249c3a7c8"
+    },
+    {
+      "id": "a5600b42a48b71d6cc2a0e5b",
+      "kind": "maintenance",
+      "metric": "GitHub pushed_at (repository-level activity, not proof of skill update)",
+      "value": "2026-09-24T07:36:14Z",
+      "url": "https://api.github.com/repos/anthropics/knowledge-work-plugins",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "bc70350ad321c6541ae46627c716cb35af94fec486c1db8b68319f5249c3a7c8"
+    },
+    {
+      "id": "cb6b1d17a684229f869a1ff9",
+      "kind": "maintenance",
+      "metric": "Latest commit touching exact SKILL.md at pinned revision",
+      "value": "2026-09-15T14:44:03Z",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/commit/c66cd2d204d9db2a9a49401f34e0b95d7d05cd46",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "faa2b6c629ce6ec0889106e8e36678ebe4eabbf64b853eca0e6108da75740e9d"
+    },
+    {
+      "id": "fdf1d60493d01f6bf52fb033",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh visible label; not unique users)",
+      "value": "1.1K",
+      "url": "https://skills.sh/jezweb/claude-skills/proposal-writer",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "b17917d0db3819e4027b3eca4f5cb69a77f1caa6072540bce164e12a3fe2137e",
+      "structured_count": 1138
+    },
+    {
+      "id": "2325fd96144183ecc5fa2660",
+      "kind": "repo-stars",
+      "metric": "GitHub stargazers_count (repository-wide, not individual-skill use)",
+      "value": 1025,
+      "url": "https://api.github.com/repos/jezweb/claude-skills",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "b93cb0415231558b0d6dae9f626e9e46e21bf8453dbbcf4d377ea0f6e078ca6c"
+    },
+    {
+      "id": "86e522764b7ecb2fdad059f8",
+      "kind": "maintenance",
+      "metric": "GitHub pushed_at (repository-level activity, not proof of skill update)",
+      "value": "2026-07-02T07:34:37Z",
+      "url": "https://api.github.com/repos/jezweb/claude-skills",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "b93cb0415231558b0d6dae9f626e9e46e21bf8453dbbcf4d377ea0f6e078ca6c"
+    },
+    {
+      "id": "a1297935efee91a595f7dc41",
+      "kind": "maintenance",
+      "metric": "Maintainer public source audit explicitly lists proposal-writer (not independent user adoption)",
+      "value": "Issue #90 records a whole-skill audit and proposal-writer description update.",
+      "url": "https://github.com/jezweb/claude-skills/issues/90",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "15846376a5b89d6fe02497d4975b555d290a8d03744fd683a3d591dd6409cd75"
+    },
+    {
+      "id": "66ebae8a2f53d5c962060591",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh visible label; not unique users)",
+      "value": "643",
+      "url": "https://skills.sh/anthropics/claude-for-legal/nda-review",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "4f91b4f458e3e79d7f9b6df50576b495043b5c4c6524ecdabfd62b5218fbe376",
+      "structured_count": 643
+    },
+    {
+      "id": "57239675de416aa4cfc00795",
+      "kind": "repo-stars",
+      "metric": "GitHub stargazers_count (repository-wide, not individual-skill use)",
+      "value": 9516,
+      "url": "https://api.github.com/repos/anthropics/claude-for-legal",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "fb85ca39aa2de224507e7a36b5b33972dbed6e9aa61ba6efbc7bf087daa1e96c"
+    },
+    {
+      "id": "f208c36cb2bc40bed5e510b4",
+      "kind": "maintenance",
+      "metric": "GitHub pushed_at (repository-level activity, not proof of skill update)",
+      "value": "2026-09-24T11:06:40Z",
+      "url": "https://api.github.com/repos/anthropics/claude-for-legal",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "fb85ca39aa2de224507e7a36b5b33972dbed6e9aa61ba6efbc7bf087daa1e96c"
+    },
+    {
+      "id": "10a57daed8b227f07d3dabfc",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh visible label; not unique users)",
+      "value": "566",
+      "url": "https://skills.sh/anthropics/claude-for-legal/amendment-history",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "e875891ccc5deb615209c93528e62288da23be71607951cbb70a95075820df18",
+      "structured_count": 566
+    },
+    {
+      "id": "f80509b6fa1c7a783de56b59",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh visible label; not unique users)",
+      "value": "3.5K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/interview-prep",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "efee7e81953fc7861695406aebc8194e5f01b19828ac1c74bbd439a561c5efef",
+      "structured_count": 3477
+    },
+    {
+      "id": "86f033dff577128d178e1180",
+      "kind": "maintenance",
+      "metric": "Latest commit touching exact SKILL.md at pinned revision",
+      "value": "2026-02-24T00:08:12Z",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/commit/4fa3cb92e2942d6594200fa8d2c800708e086072",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "b9ea9e7f22764557da262f4d856b48fe269bfad75dac365aa17da9723ac2141a"
+    },
+    {
+      "id": "5f8221924af61dbff6364e26",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh visible label; not unique users)",
+      "value": "2.5K",
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/draft-offer",
+      "observed_at": "2026-09-24T13:55:17.824511+00:00",
+      "original_response_sha256": "2a9c7d8b4bdae4d4c880fc27c06176698d91e1b7ec4bf7422bb5817f4dae8804",
+      "structured_count": 2518
+    },
+    {
+      "id": "b3e5607eee855cc0023509bc",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh listing JSON-LD cumulative userInteractionCount; not unique users)",
+      "value": 2769,
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/recruiting-pipeline",
+      "observed_at": "2026-09-24T14:16:34.514938+00:00",
+      "original_response_sha256": "3e11d9eb87a5144603eea9b6a1caf387c9a077dffc20cc1c19f4c514894cd089"
+    },
+    {
+      "id": "e27e543925b0224e71d19fc9",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh listing JSON-LD cumulative userInteractionCount; not unique users)",
+      "value": 3159,
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/account-research",
+      "observed_at": "2026-09-24T14:16:34.514938+00:00",
+      "original_response_sha256": "e81b0931dc377e787569548f00ddde09e2999ca9b23dff4d791263a4563c7edd"
+    },
+    {
+      "id": "784a67e1d13d561d488c39f2",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh listing JSON-LD cumulative userInteractionCount; not unique users)",
+      "value": 3086,
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/draft-outreach",
+      "observed_at": "2026-09-24T14:16:34.514938+00:00",
+      "original_response_sha256": "6c80cecc60138fe6424b8ea6b1b52a0e571cbdb4c0f276b193374f53c695f1e3"
+    },
+    {
+      "id": "209cc1463b31256729234d02",
+      "kind": "individual-installs",
+      "metric": "Installs (skills.sh listing JSON-LD cumulative userInteractionCount; not unique users)",
+      "value": 2812,
+      "url": "https://skills.sh/anthropics/knowledge-work-plugins/call-prep",
+      "observed_at": "2026-09-24T14:16:34.514938+00:00",
+      "original_response_sha256": "4b370ee08be58f7d5ca375a9f80299bbf1c8c4f80adef88438c28391276066ca"
+    }
+  ]
+}

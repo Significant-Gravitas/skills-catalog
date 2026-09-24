@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "slug": "recruiting-pipeline",
+  "name": "recruiting-pipeline",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/recruiting-pipeline"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/human-resources/skills/recruiting-pipeline/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/recruiting-pipeline",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/LICENSE",
+    "scope": "Inspected controlling LICENSE and repository file inventory; no nested exception in this skill subtree. Root contains the complete Apache-2.0 grant followed by unexplained non-license prose after its appendix; preserve exact bytes and flag upstream. No added commercial restriction was found. Nested clean sales/legal licenses do not govern this subtree.",
+    "obligations": [
+      "Provide a copy of Apache-2.0 to recipients.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE.",
+      "Prominently identify modified files; license grants no general trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "a00b442f701faa6eb65b8ecc8fcf375d5a33ec827b987ba8b04edaef0e90b92f",
+  "assignments": [
+    {
+      "expert": "Harper",
+      "role": "Recruiter",
+      "status": "core",
+      "essential_function": "Track candidates through recruiting stages and summarize hiring funnel progress.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "b3e5607eee855cc0023509bc",
+    "fe2e7901829b75e6359679b2",
+    "a5600b42a48b71d6cc2a0e5b"
+  ],
+  "review": "Compact native recruiting operations framework covering sourcing, screening, interviews, debrief, offer and acceptance, with stage velocity, conversion, source effectiveness, acceptance and time-to-fill metrics. Full 30-line source read. Useful as a light pipeline management skill rather than an ATS implementation, evidence rubric or advanced analytics engine. With ATS connected it can pull candidates and update statuses.",
+  "native_prerequisites": [
+    "Current requisitions/candidate stages and timestamps; pasted data or an ATS connector",
+    "ATS status writes are native behavior when connected; connector permissions must be supported"
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

@@ -1,0 +1,47 @@
+{
+  "notes": [
+    {
+      "repo": "coreyhaines31/marketingskills",
+      "note": "The authored tools directory contains broad service CLIs. Preserve sources but never execute or activate any service from packaging. Tool API accounts and credentials remain runtime prerequisites. The documented sync-partners.mjs is repository maintenance, not a skill runtime dependency; no script is run or needed to read the frozen registry."
+    },
+    {
+      "repo": "coreyhaines31/marketingskills",
+      "note": "References to unselected adjacent marketing skills remain unchanged; do not copy those skills. .agents/product-marketing.md is user-generated project context, not a source file to fabricate."
+    },
+    {
+      "repo": "anthropics/knowledge-work-plugins",
+      "note": "Native CONNECTORS.md, plugin manifests and MCP files describe integrations and omitted sibling skills; copied context does not declare those siblings selected or enabled. User TASKS.md, CLAUDE.md, memory/ and dashboard state are not source artifacts."
+    },
+    {
+      "repo": "anthropics/knowledge-work-plugins",
+      "note": "small-business/shared is complete (15 files) and contains no SKILL.md. Adjacent plan-payroll, cash-flow-snapshot, close-month and build-connector skills remain omitted. Productivity dashboard stays beside the four selected skill folders; ${CLAUDE_PLUGIN_ROOT} must resolve to the native productivity plugin context."
+    },
+    {
+      "repo": "anthropics/claude-for-legal",
+      "note": "nda-review has user-invocable:false and native /commercial-legal:review dispatch is an unselected skill. Do not add review/SKILL.md or invent a wrapper; consumers must support loading this unchanged reference skill with its parent instructions and supply the native configured playbook."
+    },
+    {
+      "repo": "anthropics/claude-for-legal",
+      "note": "commercial-legal/CLAUDE.md refers to references/dashboard-template.md in plugin-root language, while the pinned repository stores references at repository root. Preserve the original root location; this upstream/runtime path ambiguity is not corrected by this packaging plan."
+    },
+    {
+      "repo": "anthropics/claude-for-legal",
+      "note": "Other native legal references (cold-start-interview, vendor-agreement-review, stakeholder-summary, escalation, renewal workflows and parent agents) are not selected and remain omitted. ~/.claude/plugins/config/... playbooks and matter directories are runtime inputs, not catalogue content."
+    },
+    {
+      "repo": "trailofbits/skills",
+      "note": "Supply-chain scripts/, pyproject.toml, uv.lock, tests, assets and agent metadata are already inside the selected folder. No outside runtime scripts are needed. Python>=3.11, uv, external registries and native tools remain prerequisites. Optional issue-writer/audit-context-building skills are omitted."
+    },
+    {
+      "repo": "all",
+      "note": "Only 43 selected SKILL.md files may be copied. No .git directory, symlink target outside a selected support tree, credentials, generated runtime state or unselected SKILL.md is part of this plan. Source hashes are byte-for-byte checks, not runtime tests."
+    }
+  ],
+  "rules": [
+    "Copy all files in each of the 43 selected skill folders byte-for-byte, including hidden files, references, templates, scripts, assets and evaluations.",
+    "Copy only support files enumerated below outside those folders; do not copy any other SKILL.md.",
+    "Preserve controlling licenses in their original repository-relative paths and copy the controlling license byte-for-byte beside each selected SKILL.md.",
+    "Native metadata is retained as source context; its presence is not a claim that a partial upstream plugin is a complete installable native plugin.",
+    "Do not create user-state files, alter instructions, resolve missing optional skill references by adding unselected skills, or invent corrective path mirrors."
+  ]
+}

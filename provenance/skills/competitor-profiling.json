@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "slug": "competitor-profiling",
+  "name": "competitor-profiling",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "path": "skills/competitor-profiling"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/competitor-profiling/SKILL.md",
+  "discovery_url": "https://www.skills.sh/coreyhaines31/marketingskills/competitor-profiling",
+  "author": "Corey Haines / contributors; retain upstream copyright and notices.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/coreyhaines31/marketingskills/skills/competitor-profiling/LICENSE",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
+    "obligations": [
+      "Retain copyright and permission notice in copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "3e775491484a9e6fddce1db4e03415a900a5026d898ef146161f6fea017eafcf",
+  "assignments": [
+    {
+      "expert": "Nadia",
+      "role": "Market Research Analyst",
+      "status": "core",
+      "essential_function": "Build evidence-backed competitor profiles and strategic implications.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "684137b122b16911dc051c4b",
+    "12843469c87c24da1ce965f5",
+    "e12751dc43af8207be6af149",
+    "8b1e2a7e99c0c48f45506c40"
+  ],
+  "review": "Archives raw research, uses consistent comparison metrics and separates source observations from inference before proposing strategic implications. Native quantitative market-research workflow directly supports Nadia.",
+  "native_prerequisites": [
+    "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
+    "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/.",
+    "Firecrawl and DataForSEO tools as documented; service accounts/credits and access to public competitor evidence."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

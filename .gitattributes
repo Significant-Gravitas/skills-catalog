@@ -1,0 +1,3 @@
+# Normalize catalog-owned metadata and tooling, never upstream source/licence bytes.
+* text=auto eol=lf
+skills/** -text -eol

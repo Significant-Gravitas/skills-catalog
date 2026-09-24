@@ -1,196 +1,103 @@
 #!/usr/bin/env python3
-"""Vendor skills listed in catalog.yml from their public GitHub repos.
+"""Replay immutable manifest bytes, without transforming or overwriting sources.
 
-    python tools/vendor.py            # every entry with a GitHub source
-    python tools/vendor.py cold-email # one slug
-
-For each entry whose ``source`` is ``owner/repo/path`` the script downloads
-the skill folder at the repo's current HEAD, drops the upstream's eval
-fixtures and hidden files, copies the repo licence in beside the skill, and
-rewrites the SKILL.md frontmatter so the listing carries where it came from.
-
-Only the stdlib plus PyYAML. Set GITHUB_TOKEN to lift the anonymous API rate
-limit.
+Default / --check: offline verification only.
+--fetch: restore missing files from commit-pinned raw URLs. Existing edits,
+undeclared files and symlinks are errors. Verify every download and the complete
+proposed tree before writing. No HEAD lookup, cleanup or partial-slug operation.
 """
+from __future__ import annotations
 
-import json
+import argparse
 import os
-import re
-import shutil
 import sys
+import tempfile
+import urllib.parse
 import urllib.request
 from pathlib import Path
+from typing import Callable
 
-import yaml
-
-ROOT = Path(__file__).resolve().parent.parent
-CATALOG = ROOT / "catalog.yml"
-SKILLS_DIR = ROOT / "skills"
-
-API = "https://api.github.com"
-RAW = "https://raw.githubusercontent.com"
-
-SKIPPED_DIRS = {"evals", "eval", "tests", "__tests__"}
-LICENSE_NAMES = ("LICENSE", "LICENSE.md", "LICENSE.txt", "LICENCE", "LICENCE.md")
-
-# The platform stores the SKILL.md body in the listing; this mirrors its cap.
-MAX_BODY_CHARS = 50_000
-
-# Upstream sections that only make sense inside the upstream repo: sponsored
-# tool tables and links into sibling folders the vendored copy does not carry.
-DROPPED_SECTIONS = ("## Tool Integrations",)
-DROPPED_LINE_RE = re.compile(r"(\.\./)+tools/")
-
-_FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n?(.*)$", re.DOTALL)
+from check import ROOT, confined_path, validate, verify_bytes
 
 
-def _get(url: str) -> bytes:
-    headers = {"User-Agent": "skills-catalog-vendor"}
-    token = os.environ.get("GITHUB_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    with urllib.request.urlopen(urllib.request.Request(url, headers=headers)) as r:
-        return r.read()
+def raw_url(record: dict) -> str:
+    source = record["source"]
+    path = urllib.parse.quote(source["path"], safe="/")
+    return f"https://raw.githubusercontent.com/{source['repo']}/{source['commit']}/{path}"
 
 
-def _api(path: str) -> dict:
-    return json.loads(_get(f"{API}{path}"))
+def download(url: str) -> bytes:
+    request = urllib.request.Request(url, headers={"User-Agent": "skills-catalog-immutable-replay"})
+    with urllib.request.urlopen(request, timeout=60) as response:
+        return response.read()
 
 
-def _split_source(source: str) -> tuple[str, str, str]:
-    owner, repo, *rest = source.split("/")
-    return owner, repo, "/".join(rest)
+def _publish_missing(root: Path, relative: str, content: bytes, mode: str) -> None:
+    target = confined_path(root, relative)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    confined_path(root, relative)
+    temporary: str | None = None
+    try:
+        with tempfile.NamedTemporaryFile(prefix=".vendor-", dir=target.parent, delete=False) as handle:
+            temporary = handle.name
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.chmod(temporary, 0o755 if mode == "100755" else 0o644)
+        confined_path(root, relative)
+        # Atomic create-if-absent; never overwrite a concurrent user's file.
+        # Both files share a filesystem. Unsupported hard links fail safely.
+        os.link(temporary, target)
+    finally:
+        if temporary is not None:
+            Path(temporary).unlink(missing_ok=True)
 
 
-def _tree(owner: str, repo: str) -> tuple[str, list[dict]]:
-    sha = _api(f"/repos/{owner}/{repo}/commits/HEAD")["sha"]
-    tree = _api(f"/repos/{owner}/{repo}/git/trees/{sha}?recursive=1")
-    if tree.get("truncated"):
-        raise RuntimeError(f"{owner}/{repo} tree is truncated; vendor by hand")
-    return sha, [b for b in tree["tree"] if b["type"] == "blob"]
-
-
-def _wanted(relative: str) -> bool:
-    segments = relative.split("/")
-    if any(s.startswith(".") for s in segments):
-        return False
-    return not any(s in SKIPPED_DIRS for s in segments[:-1])
-
-
-def _find_license(blobs: list[dict], skill_path: str) -> str | None:
-    candidates = [f"{skill_path}/{n}" for n in LICENSE_NAMES] + list(LICENSE_NAMES)
-    paths = {b["path"] for b in blobs}
-    return next((c for c in candidates if c in paths), None)
-
-
-def _clean_markdown(text: str, label: str, *, drop_sections: bool) -> str:
-    kept: list[str] = []
-    dropping = False
-    for line in text.split("\n"):
-        if drop_sections and line.startswith("## "):
-            dropping = line.strip() in DROPPED_SECTIONS
-        if dropping or DROPPED_LINE_RE.search(line):
+def fetch_missing(root: Path = ROOT, *, fetcher: Callable[[str], bytes] = download, expected_count: int | None = None) -> int:
+    root = root.resolve()
+    initial = validate(root, allow_missing=True, expected_count=expected_count)
+    initial.require_valid()  # Fail dirty/unknown files before network access.
+    supplied: dict[str, bytes] = {}
+    cache: dict[str, bytes] = {}
+    for relative, record in sorted(initial.records.items()):
+        if confined_path(root, relative).exists():
             continue
-        kept.append(line)
-    cleaned = "\n".join(kept).rstrip() + "\n"
-    for match in re.finditer(r"\]\((\.\./[^)]+)\)", cleaned):
-        print(f"  warning: {label} still links outside its folder: {match.group(1)}")
-    return cleaned
+        url = raw_url(record)
+        if url not in cache:
+            cache[url] = fetcher(url)
+        content = cache[url]
+        verify_bytes(record, content)
+        supplied[relative] = content
+    validate(root, supplied=supplied, expected_count=expected_count).require_valid()
+    # Final preflight also catches changes to existing sources during download.
+    # Publication is per-file atomic, not a filesystem-wide transaction.
+    for relative, content in supplied.items():
+        _publish_missing(root, relative, content, initial.records[relative]["mode"])
+    validate(root, expected_count=expected_count).require_valid()
+    return len(supplied)
 
 
-def _clean_body(body: str, slug: str) -> str:
-    cleaned = _clean_markdown(body, slug, drop_sections=True)
-    if len(cleaned) > MAX_BODY_CHARS:
-        print(f"  warning: {slug} body is {len(cleaned)} chars, over {MAX_BODY_CHARS}")
-    return cleaned
-
-
-def _rewrite_skill_md(
-    text: str, entry: dict, owner: str, repo: str, path: str, sha: str
-) -> str:
-    match = _FRONTMATTER_RE.match(text)
-    if not match:
-        raise ValueError(f"{entry['slug']}: upstream SKILL.md has no frontmatter")
-    meta = yaml.safe_load(match.group(1)) or {}
-    if meta.get("name") != entry["slug"]:
-        raise ValueError(
-            f"{entry['slug']}: upstream name is '{meta.get('name')}'; the "
-            "catalog slug must match the SKILL.md name"
-        )
-    meta["license"] = entry.get("license") or meta.get("license") or "unknown"
-    metadata = dict(meta.get("metadata") or {})
-    metadata.update(
-        {
-            "source": f"{owner}/{repo}",
-            "source_url": f"https://github.com/{owner}/{repo}/tree/{sha[:12]}/{path}",
-            "upstream_commit": sha,
-        }
-    )
-    meta["metadata"] = metadata
-    frontmatter = yaml.safe_dump(
-        meta, sort_keys=False, allow_unicode=True, width=100_000
-    ).strip()
-    body = _clean_body(match.group(2).lstrip("\n"), entry["slug"])
-    return f"---\n{frontmatter}\n---\n\n{body}"
-
-
-def vendor(entry: dict) -> None:
-    slug = entry["slug"]
-    owner, repo, path = _split_source(entry["source"])
-    print(f"{slug} <- {owner}/{repo}/{path}")
-    sha, blobs = _tree(owner, repo)
-    prefix = f"{path}/"
-    members = [b for b in blobs if b["path"].startswith(prefix)]
-    if not members:
-        raise RuntimeError(f"{slug}: nothing under {path} in {owner}/{repo}")
-
-    target = SKILLS_DIR / slug
-    if target.exists():
-        shutil.rmtree(target)
-    target.mkdir(parents=True)
-
-    for blob in members:
-        relative = blob["path"][len(prefix) :]
-        if not _wanted(relative):
-            continue
-        content = _get(f"{RAW}/{owner}/{repo}/{sha}/{blob['path']}")
-        if relative == "SKILL.md":
-            content = _rewrite_skill_md(
-                content.decode("utf-8"), entry, owner, repo, path, sha
-            ).encode("utf-8")
-        elif relative.endswith(".md"):
-            content = _clean_markdown(
-                content.decode("utf-8"), f"{slug}/{relative}", drop_sections=False
-            ).encode("utf-8")
-        out = target / relative
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_bytes(content)
-        if blob.get("mode") == "100755":
-            out.chmod(0o755)
-
-    license_path = _find_license(blobs, path)
-    if license_path:
-        (target / "LICENSE").write_bytes(
-            _get(f"{RAW}/{owner}/{repo}/{sha}/{license_path}")
-        )
-    else:
-        print(f"  warning: {slug}: no LICENSE file found in {owner}/{repo}")
-
-    count = sum(1 for p in target.rglob("*") if p.is_file())
-    print(f"  {count} files at {sha[:12]}")
-
-
-def main(argv: list[str]) -> int:
-    catalog = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))
-    only = set(argv)
-    for entry in catalog["skills"]:
-        if entry["source"] == "platform":
-            continue
-        if only and entry["slug"] not in only:
-            continue
-        vendor(entry)
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=ROOT)
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument("--check", action="store_true", help="offline verification (default)")
+    modes.add_argument("--fetch", action="store_true", help="restore missing files from immutable URLs")
+    parser.add_argument("--expected-count", type=int)
+    args = parser.parse_args(argv)
+    try:
+        if args.fetch:
+            count = fetch_missing(args.root, expected_count=args.expected_count)
+            print(f"Restored {count} missing files; all manifest bytes verified unchanged.")
+        else:
+            result = validate(args.root, expected_count=args.expected_count)
+            result.require_valid()
+            print(f"Verified {len(result.entries)} skills and {len(result.records)} files offline.")
+    except (OSError, ValueError) as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))
+    sys.exit(main())

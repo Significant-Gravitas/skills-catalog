@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "slug": "explore-data",
+  "name": "explore-data",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "data/skills/explore-data"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/skills/explore-data/SKILL.md",
+  "discovery_url": "https://www.skills.sh/anthropics/knowledge-work-plugins/explore-data",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/data/skills/explore-data/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/LICENSE",
+    "scope": "Root LICENSE and data/LICENSE are Apache-2.0; selected skill directories have no nested override or NOTICE. Preserve copyright/license notices. External Python libraries/warehouse services retain their own terms.",
+    "obligations": [
+      "Include a copy of Apache-2.0.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE (none found in selected plugin subtrees).",
+      "Mark modified files prominently; do not imply publisher endorsement or trademark permission."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "af7590fa616360259da712b5ede5f79b817beb854c47a465f95774354988e8a2",
+  "assignments": [
+    {
+      "expert": "Quinn",
+      "role": "Data Analyst",
+      "status": "core",
+      "essential_function": "Understand a dataset before relying on it: profile its grain, keys, missing values, distributions, date coverage and useful relationships.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "1d0a832c73382189f0ab687b",
+    "eb8864bf57a9db65444a3979",
+    "eeb623c643d57ce5a85ecc71",
+    "7754864b4c260f8b368330e7"
+  ],
+  "review": "Read the complete unchanged skill. It profiles schema, grain, keys, nulls, distributions, time coverage and relationships, then proposes explorations and documents a dataset. Its own Tips explicitly identify the quality flags as heuristic, so fixed null/cardinality thresholds are prompts to investigate rather than correctness verdicts. No source corrections or behavioral overrides are required for this exploratory role. This is static review, not an executed accuracy benchmark.",
+  "native_prerequisites": [
+    "Local reader for CSV/Excel/Parquet/JSON, or connected warehouse MCP and SQL execution.",
+    "Keep data/CONNECTORS.md two directories above the skill; no specific paid warehouse is mandatory.",
+    "For actual profiles an analysis runtime and the underlying data are required."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

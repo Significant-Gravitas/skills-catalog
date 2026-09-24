@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "slug": "differential-review",
+  "name": "differential-review",
+  "source": {
+    "repo": "trailofbits/skills",
+    "commit": "32e34f8173796e3566a51aee877dc96bc5191f64",
+    "path": "plugins/differential-review/skills/differential-review"
+  },
+  "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/plugins/differential-review/skills/differential-review/SKILL.md",
+  "discovery_url": "https://www.skills.sh/trailofbits/skills/differential-review",
+  "author": "Omar Inuwa; published by Trail of Bits",
+  "license": {
+    "spdx": "CC-BY-SA-4.0",
+    "file": "skills/trailofbits/skills/plugins/differential-review/skills/differential-review/LICENSE",
+    "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/LICENSE",
+    "scope": "Root LICENSE is CC-BY-SA-4.0; no nested license override in the complete selected plugin directories. Unchanged skill material can be commercially redistributed with required attribution/license and without extra restrictions. It cannot be relabeled proprietary; unrelated separable AutoGPT platform code is not automatically share-alike.",
+    "obligations": [
+      "Credit Trail of Bits and retained source attributions, link the source and CC-BY-SA-4.0, and indicate modifications.",
+      "Distribute adaptations of the skill material under CC-BY-SA-4.0 or a compatible license; commercial use is permitted but proprietary-only relicensing of adapted material is not.",
+      "Do not impose additional legal/technical restrictions on the licensed material; no endorsement or trademark permission is implied."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "f9af6a8193fc1a9f8ca3c54bb8d19095a5f20c9472ca6d014488bbde50b67da0",
+  "assignments": [
+    {
+      "expert": "Devon",
+      "role": "Application Security Engineer",
+      "status": "core",
+      "essential_function": "Review a proposed code change for weakened safeguards, regressions, affected callers, test gaps and concrete security consequences.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "b4200b384668ab8ccbae9d2a",
+    "eba7d676b7717345bd3cfd03",
+    "4383bcc9d54816ba20963711",
+    "638722b9e2b391569778e0c7"
+  ],
+  "review": "Read unchanged SKILL.md plus methodology, adversarial, reporting and patterns references. Provides a structured security change review: inspect baseline/history, analyze removed safeguards, trace callers, examine test gaps, form attack scenarios and write a report with coverage/confidence. Scope is change review, not a proof of security. File-count/risk thresholds and grep-based caller counts are heuristic; Solidity-heavy examples illustrate scenarios rather than validated real vulnerabilities. The source explicitly permits manual context tracing without audit-context-building and using adversarial.md instead of the optional agent; these are upstream-supported paths, not overrides.",
+  "native_prerequisites": [
+    "A local Git repository with accessible base/head refs, file reading/search, Bash/POSIX shell commands and file writing; gh only for PR metadata.",
+    "Preserve entire differential-review plugin, including methodology.md, adversarial.md, reporting.md, patterns.md and optional agents.",
+    "audit-context-building optional; source documents manual line-by-line fallback.",
+    "Namespaced adversarial-modeler agent optional; source offers direct adversarial.md route.",
+    "issue-writer is an optional follow-on, not verified or supplied as a required executable.",
+    "AutoGPT compatibility with the skill loader and tool interface has not been tested."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

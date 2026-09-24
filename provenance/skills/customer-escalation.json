@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "slug": "customer-escalation",
+  "name": "customer-escalation",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "customer-support/skills/customer-escalation"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/customer-escalation/SKILL.md",
+  "discovery_url": "https://www.skills.sh/anthropics/knowledge-work-plugins/customer-escalation",
+  "author": "Anthropic / upstream contributors; retain Apache-2.0 and applicable notices.",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/LICENSE",
+    "scope": "Clean customer-support/Apache-2.0 LICENSE inspected; no selected-subtree licence override found. Source copied unchanged; external connectors have separate terms.",
+    "obligations": [
+      "Include a copy of Apache-2.0.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE (none found in selected plugin subtrees).",
+      "Mark modified files prominently; do not imply publisher endorsement or trademark permission."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "90c33574a41371e8e116aaf40237141adcd6075ef8bcb9de993de2b543867b3e",
+  "assignments": [
+    {
+      "expert": "Riley",
+      "role": "Customer Success Manager",
+      "status": "core",
+      "essential_function": "Prepare actionable escalations and maintain customer follow-up.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "181f03b5d7b42b1a34790068",
+    "eb8864bf57a9db65444a3979",
+    "eeb623c643d57ce5a85ecc71",
+    "4194a494050999e466f744d9"
+  ],
+  "review": "Builds evidence-rich escalation briefs with customer impact, reproduction steps, prior attempts, accountable teams, deadlines and follow-up. Native routing supports churn threats and blocked customers, extending Riley into practical customer advocacy.",
+  "native_prerequisites": [
+    "Preserve customer-support/CONNECTORS.md and relative layout.",
+    "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

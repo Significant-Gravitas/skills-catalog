@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "slug": "meeting-briefing",
+  "name": "meeting-briefing",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "legal/skills/meeting-briefing"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/legal/skills/meeting-briefing/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/meeting-briefing",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/legal/skills/meeting-briefing/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/legal/LICENSE",
+    "scope": "Clean plugin-level Apache-2.0 license applies; full recursive pinned tree shows no overriding license in selected folder. Original source and controlling license retained. External tools and linked works are not relicensed.",
+    "obligations": [
+      "Include complete controlling Apache2 license and preserve attribution/copyright notices.",
+      "Preserve any applicable NOTICE text. No source changes proposed; Apache2 modification notices would apply only if changed later.",
+      "No trademark rights or third-party service rights are granted."
+    ]
+  },
+  "status": "conditional",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "4d19bc2ddb2138d1b306b150c5d0900ce0a398d5ab690b8eba8101ef33d98baa",
+  "assignments": [
+    {
+      "expert": "Frankie",
+      "status": "conditional",
+      "essential_function": "Prepare legal/contract/vendor/board meeting briefs and action follow-up when Frankie is supporting an in-house legal team.",
+      "native_prerequisites": [
+        "Legal-team role/context,relevant meeting records and source agreements.",
+        "Available calendar/mail/docs/CLM/CRM tools or supplied material; original source flags unavailable inputs."
+      ],
+      "limitations": [
+        "Explicit legal-team persona and legal considerations remain unchanged.",
+        "Do not present as a universal executive meeting-preparation skill.",
+        "Original follow-up may distribute action items,set reminders and update systems; qualified accuracy/completeness review remains intrinsic."
+      ]
+    }
+  ],
+  "evidence_ids": [
+    "d190068557cfeb0de486e3d0",
+    "fc34a1abecd1b9b7de3630e4",
+    "0511389f10803b0fdefbe7bb"
+  ],
+  "review": "Selected unchanged as specialized executive-assistant support for meetings with legal context,including board,vendor,contract and regulatory meetings. Substantial attendee/agenda/document/context/preparation-gap workflow,meeting-type checklists,owner/deadline action table and follow-up. Source explicitly assumes an in-house legal-team assistant and states it gives no legal advice; do not silently recast as a universal meeting assistant. Original follow-up includes distributing actions,setting reminders and updating systems. Accepted as authored when those services are available.2.8K installs; clean legal Apache2.",
+  "native_prerequisites": [
+    "Meeting details,participants,agenda,relevant agreements and legal-team role/context.",
+    "Available calendar,email,chat,document,CLM/CRM connectors or supplied records; source flags unavailable or unverified information.",
+    "Briefings require accuracy/completeness review as upstream instructs; no legal advice is provided."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

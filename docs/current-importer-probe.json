@@ -1,0 +1,226 @@
+{
+  "checked_date": "2026-09-24",
+  "inspected_importer_url": "https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpt_platform/backend/backend/api/features/store/skill_seed.py",
+  "inspected_git_blob_sha1": "05014f04317b1a820a0df6db89c4de515d80f68f",
+  "method": "Executed only the exact AST-extracted load_catalog and _load functions; supplied trivial category/name validation and type placeholders. No platform module import, database, network or skill execution. Parsing/package functions were assertion sentinels and never reached.",
+  "catalog_entries_parsed": 43,
+  "current_flat_path_loads_rejected": 43,
+  "compatibility": "incompatible; schema-v2 importer support required",
+  "results": [
+    {
+      "slug": "product-marketing",
+      "result": "rejected",
+      "reason": "skills/product-marketing/SKILL.md is missing"
+    },
+    {
+      "slug": "copy-editing",
+      "result": "rejected",
+      "reason": "skills/copy-editing/SKILL.md is missing"
+    },
+    {
+      "slug": "social",
+      "result": "rejected",
+      "reason": "skills/social/SKILL.md is missing"
+    },
+    {
+      "slug": "emails",
+      "result": "rejected",
+      "reason": "skills/emails/SKILL.md is missing"
+    },
+    {
+      "slug": "competitor-profiling",
+      "result": "rejected",
+      "reason": "skills/competitor-profiling/SKILL.md is missing"
+    },
+    {
+      "slug": "coreyhaines31-customer-research",
+      "result": "rejected",
+      "reason": "skills/coreyhaines31-customer-research/SKILL.md is missing"
+    },
+    {
+      "slug": "content-strategy",
+      "result": "rejected",
+      "reason": "skills/content-strategy/SKILL.md is missing"
+    },
+    {
+      "slug": "copywriting",
+      "result": "rejected",
+      "reason": "skills/copywriting/SKILL.md is missing"
+    },
+    {
+      "slug": "anthropics-customer-research",
+      "result": "rejected",
+      "reason": "skills/anthropics-customer-research/SKILL.md is missing"
+    },
+    {
+      "slug": "draft-response",
+      "result": "rejected",
+      "reason": "skills/draft-response/SKILL.md is missing"
+    },
+    {
+      "slug": "customer-escalation",
+      "result": "rejected",
+      "reason": "skills/customer-escalation/SKILL.md is missing"
+    },
+    {
+      "slug": "seo-audit",
+      "result": "rejected",
+      "reason": "skills/seo-audit/SKILL.md is missing"
+    },
+    {
+      "slug": "seo-report",
+      "result": "rejected",
+      "reason": "skills/seo-report/SKILL.md is missing"
+    },
+    {
+      "slug": "reconciliation",
+      "result": "rejected",
+      "reason": "skills/reconciliation/SKILL.md is missing"
+    },
+    {
+      "slug": "close-management",
+      "result": "rejected",
+      "reason": "skills/close-management/SKILL.md is missing"
+    },
+    {
+      "slug": "financial-statements",
+      "result": "rejected",
+      "reason": "skills/financial-statements/SKILL.md is missing"
+    },
+    {
+      "slug": "invoice-chase",
+      "result": "rejected",
+      "reason": "skills/invoice-chase/SKILL.md is missing"
+    },
+    {
+      "slug": "vendor-review",
+      "result": "rejected",
+      "reason": "skills/vendor-review/SKILL.md is missing"
+    },
+    {
+      "slug": "vendor-check",
+      "result": "rejected",
+      "reason": "skills/vendor-check/SKILL.md is missing"
+    },
+    {
+      "slug": "board-deck-builder",
+      "result": "rejected",
+      "reason": "skills/board-deck-builder/SKILL.md is missing"
+    },
+    {
+      "slug": "knowledge-synthesis",
+      "result": "rejected",
+      "reason": "skills/knowledge-synthesis/SKILL.md is missing"
+    },
+    {
+      "slug": "status-report",
+      "result": "rejected",
+      "reason": "skills/status-report/SKILL.md is missing"
+    },
+    {
+      "slug": "risk-assessment",
+      "result": "rejected",
+      "reason": "skills/risk-assessment/SKILL.md is missing"
+    },
+    {
+      "slug": "meeting-briefing",
+      "result": "rejected",
+      "reason": "skills/meeting-briefing/SKILL.md is missing"
+    },
+    {
+      "slug": "task-management",
+      "result": "rejected",
+      "reason": "skills/task-management/SKILL.md is missing"
+    },
+    {
+      "slug": "memory-management",
+      "result": "rejected",
+      "reason": "skills/memory-management/SKILL.md is missing"
+    },
+    {
+      "slug": "start",
+      "result": "rejected",
+      "reason": "skills/start/SKILL.md is missing"
+    },
+    {
+      "slug": "update",
+      "result": "rejected",
+      "reason": "skills/update/SKILL.md is missing"
+    },
+    {
+      "slug": "explore-data",
+      "result": "rejected",
+      "reason": "skills/explore-data/SKILL.md is missing"
+    },
+    {
+      "slug": "data-visualization",
+      "result": "rejected",
+      "reason": "skills/data-visualization/SKILL.md is missing"
+    },
+    {
+      "slug": "cohort-analysis",
+      "result": "rejected",
+      "reason": "skills/cohort-analysis/SKILL.md is missing"
+    },
+    {
+      "slug": "supply-chain-risk-auditor",
+      "result": "rejected",
+      "reason": "skills/supply-chain-risk-auditor/SKILL.md is missing"
+    },
+    {
+      "slug": "differential-review",
+      "result": "rejected",
+      "reason": "skills/differential-review/SKILL.md is missing"
+    },
+    {
+      "slug": "pipeline-review",
+      "result": "rejected",
+      "reason": "skills/pipeline-review/SKILL.md is missing"
+    },
+    {
+      "slug": "proposal-writer",
+      "result": "rejected",
+      "reason": "skills/proposal-writer/SKILL.md is missing"
+    },
+    {
+      "slug": "nda-review",
+      "result": "rejected",
+      "reason": "skills/nda-review/SKILL.md is missing"
+    },
+    {
+      "slug": "amendment-history",
+      "result": "rejected",
+      "reason": "skills/amendment-history/SKILL.md is missing"
+    },
+    {
+      "slug": "interview-prep",
+      "result": "rejected",
+      "reason": "skills/interview-prep/SKILL.md is missing"
+    },
+    {
+      "slug": "draft-offer",
+      "result": "rejected",
+      "reason": "skills/draft-offer/SKILL.md is missing"
+    },
+    {
+      "slug": "recruiting-pipeline",
+      "result": "rejected",
+      "reason": "skills/recruiting-pipeline/SKILL.md is missing"
+    },
+    {
+      "slug": "account-research",
+      "result": "rejected",
+      "reason": "skills/account-research/SKILL.md is missing"
+    },
+    {
+      "slug": "draft-outreach",
+      "result": "rejected",
+      "reason": "skills/draft-outreach/SKILL.md is missing"
+    },
+    {
+      "slug": "call-prep",
+      "result": "rejected",
+      "reason": "skills/call-prep/SKILL.md is missing"
+    }
+  ]
+}

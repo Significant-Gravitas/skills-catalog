@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "slug": "data-visualization",
+  "name": "data-visualization",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "data/skills/data-visualization"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/skills/data-visualization/SKILL.md",
+  "discovery_url": "https://www.skills.sh/anthropics/knowledge-work-plugins/data-visualization",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/data/skills/data-visualization/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/LICENSE",
+    "scope": "Root LICENSE and data/LICENSE are Apache-2.0; selected skill directories have no nested override or NOTICE. Preserve copyright/license notices. External Python libraries/warehouse services retain their own terms.",
+    "obligations": [
+      "Include a copy of Apache-2.0.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE (none found in selected plugin subtrees).",
+      "Mark modified files prominently; do not imply publisher endorsement or trademark permission."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "5811e8b3547cda6bc8af118aaf0d7589e8861cdc9facce6372dc78aea99ab87d",
+  "assignments": [
+    {
+      "expert": "Quinn",
+      "role": "Data Analyst",
+      "status": "core",
+      "essential_function": "Turn prepared results into suitable, clearly labeled static or interactive charts with accessible presentation.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "29a1e12a93e30bd437629824",
+    "eb8864bf57a9db65444a3979",
+    "eeb623c643d57ce5a85ecc71"
+  ],
+  "review": "Read complete unchanged SKILL.md, including its Python examples. Covers chart selection, Matplotlib/Seaborn/Plotly examples, scales, labeling, accessible color and data-table alternatives. A practical plotting/design guide, not an analysis or inference engine. Examples expect appropriately prepared data; no scripts were executed and plot-library compatibility has not been empirically tested. Individual path history unavailable because the public GitHub API rate limit was reached; repository activity is recorded separately.",
+  "native_prerequisites": [
+    "Python with matplotlib, seaborn, pandas, numpy; plotly for its interactive-chart examples.",
+    "Prepared tabular input and a runtime that can write/display image or HTML artifacts.",
+    "Preserve frontmatter user-invocable:false: this is background guidance rather than a required slash command."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

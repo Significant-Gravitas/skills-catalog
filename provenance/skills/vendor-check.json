@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "slug": "vendor-check",
+  "name": "vendor-check",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "legal/skills/vendor-check"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/legal/skills/vendor-check/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/vendor-check",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/anthropics/knowledge-work-plugins/legal/skills/vendor-check/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/legal/LICENSE",
+    "scope": "Root Apache-2.0 and, for finance/legal, same-license plugin LICENSE apply. Recursive tree shows no overriding license within selected skill/shared-reference paths. Downloaded selected folders plus relevant CONNECTORS/shared files. External links and integration services are not relicensed.",
+    "obligations": [
+      "Distribute complete Apache-2.0 license.",
+      "Retain relevant copyright, patent, trademark and attribution notices; preserve any applicable NOTICE text.",
+      "State changes prominently in modified files; license supplies no trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "38be57a5e9e959874d2cb78e8493211664bc452e6225cb5bdbb8b12e6f444d2e",
+  "assignments": [
+    {
+      "expert": "Vera",
+      "role": "Procurement Specialist",
+      "status": "core",
+      "essential_function": "Inventory supplier agreements,renewal deadlines and missing contractual coverage.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "8a91282dd4a1d6f864ed9885",
+    "2037c95a6f4dad81eae32594",
+    "9818315323f66d10bfb36581",
+    "d089ddb172d57852310c158c",
+    "4d384707e8d97a0ebff2066a"
+  ],
+  "review": "Selected unchanged for vendor agreement inventory,expiration/autorenewal/notice terms,amendments and missing NDA/MSA/DPA/SOW/SLA/insurance coverage. Original reports checked/unavailable sources,executed-copy locations and upcoming actions, and requires qualified legal verification. It is an agreement-status workflow,not full cybersecurity diligence or contract negotiation. Clean legal child Apache2 grant verified.",
+  "native_prerequisites": [
+    "Original vendor agreements in connected CLM/CRM/email/docs/chat or manually supplied source material.",
+    "legal/CONNECTORS.md; missing-source behavior is authored.",
+    "Qualified legal verification of agreement interpretation is an upstream requirement."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": false
+}

@@ -14,4 +14,5 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pyyaml
-      - run: python tools/check.py
+      - run: python -m unittest discover -s tools -p 'test_*.py' -v
+      - run: python tools/check.py --expected-count 43 --strict-modes
