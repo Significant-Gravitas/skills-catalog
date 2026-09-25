@@ -1,10 +1,14 @@
 # Provenance of the platform-authored expert skills
 
-The skills bundled by the machine-built experts (Robin, Anika, Alex, Daniel, Sofia, Blake, Maya, James, Zara) were produced by the `muse-made-bots` build workflow: ten job-description researchers per role, a reuse hunt over the earlier packages, an adversarial review loop, and a web sweep for current practice. Each skill's build carried a reuse note naming what it adapted and from where. Those notes were dropped when the skills were converted to the platform format; this file keeps them. Where a skill was renamed in conversion, the note is listed under the catalog slug with the name it was built as.
+The skills bundled by the machine-built experts (Robin, Anika, Alex, Daniel, Sofia, Max, Maya, James, Zara) were produced by the `muse-made-bots` build workflow: ten job-description researchers per role, a reuse hunt over the earlier packages, an adversarial review loop, and a web sweep for current practice. Each skill's build carried a reuse note naming what it adapted and from where. Those notes were dropped when the skills were converted to the platform format; this file keeps them. Where a skill was renamed in conversion, the note is listed under the catalog slug with the name it was built as.
 
 ## What this means for licensing
 
-Two kinds of donor appear below. `muse-made-bots/...` and `grok-bots/...` are earlier packages from the same in-house pipeline. Everything else is an external source the builder read for frameworks, benchmarks, or practice — open-source skill repos and public articles.
+Three kinds of donor appear below. `muse-made-bots/...` are earlier packages from the same in-house pipeline. `grok-bots/...` are not in-house: they are 68 third-party bot templates from the xAI Grok Bot marketplace, written by independent creators and published without an open licence. Everything else is an external source the builder read for frameworks, benchmarks, or practice — open-source skill repos and public articles.
+
+### The Grok Bot templates
+
+The build was meant to use the Grok Bot templates as a starting point and write its own text. In places it kept theirs instead, and the reuse notes below do not record every case: `build-the-target-list`, for one, says no reuse was recorded but shared 44% of its 8-word sequences with a template, in runs of up to 43 words. On 2026-09-25 every skill here was scanned against all 1,054 markdown files of the 68 templates. The 31 skills that shared 5% or more of their 8-grams with them, or any run of 12 or more words, were rewritten in our own words and order, keeping the method and the rules: 15 in full or in every flagged passage, and 16 in the one or two sentences that matched. After the rewrite, no skill shares 5% of its 8-grams with the templates (the highest is 3.8%, the mean 0.2%), and no shared run reaches 12 words. The expert identities and routine prompts in the platform repo were rewritten the same way in the same change.
 
 On 2026-09-22 every in-repo skill (320 files) was scanned for shared 8-word sequences against all 27,845 markdown files in the external repos listed here. No skill shares 1% or more of its 8-grams with any donor, and no shared span reaches 12 words; the longest is nine, and those are stock formulas (the MEDDPICC letters, the "for [who], [product] is a [category] that [benefit]" positioning template). The external repos informed structure and framework names; their text was not copied, so no licence notice is owed. They are credited here anyway, and the entries in `catalog.yml` whose build notes cite an external repository carry an `adapted_from` list naming it with its licence. `adapted_from` means "shaped by" — the skill is platform-authored and its text is its own — which is why it is a separate field from `source`/`license`, the platform's slot for a vendored copy that is shown as attribution on the listing.
 
@@ -148,7 +152,7 @@ Public articles and guides the web sweep cited are named inline in the notes bel
 - **`resume-screening`** — No reuse note recorded by the build.
 - **`candidate-sourcing-strategy`** (built as `sourcing-strategy`) — No reuse note recorded by the build.
 
-## Blake — built as `sales-rep-v4`
+## Max — built as `sales-rep-v4`
 
 - **`alliance-co-commercialization`** — No reuse note recorded by the build.
 - **`build-the-target-list`** — No reuse note recorded by the build.
