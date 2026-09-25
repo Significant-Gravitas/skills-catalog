@@ -1,58 +1,55 @@
-# skills-catalog
+# AutoGPT skills catalog
 
-The skills the AutoGPT Platform ships in its Skills marketplace as platform-authored
-listings. The backend seed reads this repo and upserts one listing per entry in
-`catalog.yml`, so publishing a skill is a merge here plus a seed run.
+74 reviewed community skill packages in the established Agent Skills format. This replaces all 171 previous catalog entries. The full seeded roster is accounted for: 32 experts and 321 original assignments. The initial live production inventory contained 15 experts; the larger number describes the code seed.
 
-## Layout
+The exact current importer accepts all 74 packages in isolation. **This remains a draft: runtime integration, expert reassignment and production migration have not been performed.**
 
-```
-catalog.yml            what gets published, with categories and provenance
-skills/<slug>/SKILL.md the skill itself: frontmatter + instructions
-skills/<slug>/...      supporting docs the instructions reference
-skills/<slug>/LICENSE  upstream licence, for vendored skills
-tools/vendor.py        pulls a skill from a public GitHub repo into skills/
-```
+- [Every selected skill, function, author, source and licence](SELECTIONS.md)
+- [Every expert and all 321 original assignments, including gaps](docs/EXPERT_COVERAGE.md)
+- [40 deferred sources and reasons](docs/DEFERRED_SKILLS.md)
+- [Import acceptance and remaining runtime work](docs/IMPORT_COMPATIBILITY.md)
 
-A skill's folder name, its `catalog.yml` slug and the `name` in its frontmatter must
-all match. The SKILL.md format is the one the platform uses everywhere: YAML
-frontmatter with `name`, `description` and optional `triggers`, then markdown.
-
-## Adding a skill we wrote
-
-1. Create `skills/<slug>/SKILL.md`.
-2. Add an entry to `catalog.yml` with `source: platform`.
-3. Open a PR.
-
-## Adding a skill from an open-source repo
-
-1. Check the upstream licence allows redistribution. MIT and Apache-2.0 do.
-2. Add an entry to `catalog.yml` with `source: owner/repo/path/to/skill` and `license`.
-3. Run `GITHUB_TOKEN=$(gh auth token) python tools/vendor.py <slug>`.
-4. Read the result. The script drops upstream eval fixtures, hidden files, sponsored
-   tool tables and links into folders it did not copy, and records the source repo,
-   URL and commit in the frontmatter. Anything else that does not fit our product
-   gets edited by hand.
-5. Open a PR.
-
-Re-running the script on a slug refreshes it from upstream HEAD and overwrites any
-hand edits, so keep those minimal or upstream them.
-
-## Checks
-
-`python tools/check.py` validates the catalog the way the platform seed will:
-slugs match folder and frontmatter names, categories are canonical, package files
-stay within the platform's caps, nothing is hidden, and no markdown links out of
-its skill folder. The `Check catalog` workflow runs it on every PR and push to `main`.
-
-## Publishing
-
-Merging to `main` does not publish by itself. The platform seed pulls this repo and
-writes the listings to the database:
+## Standard packages
 
 ```
-poetry run python -m backend.api.features.store.skill_seed
+skills/<clear-unique-name>/
+  SKILL.md          standard YAML and original instructions
+  LICENSE           exact controlling upstream licence
+  ATTRIBUTION.md    original author and packaging changes
+  references/       required supporting guidance, when used
+  scripts/          unchanged original executable files, when used
+catalog.yml         existing AutoGPT loader format
+provenance/         originals, evidence, hashes and recorded adaptations
 ```
 
-Run it against the environment you want updated. It is idempotent and rewrites each
-listing's live version in place.
+The collection has 64 core and 10 conditional packages; 67 names were clarified. Folders match their declared names. Standard `license` and `metadata` fields carry attribution; the source metadata keys are AutoGPT conventions within the standard extension map. No new skill format, submodule fetch or shared package root is required.
+
+Each package contains its own required local support files. Only dependencies used by selected workflows are included. Scripts, licences and unchanged supporting material retain exact original bytes and executable modes. Counted name/metadata/path adaptations preserve authored advice, gates, commands and body formatting.
+There are 332 installed files. The largest package by file count is `lifecycle-email-marketing`, with 11 supplementary files. Every installed package stays within the inspected platform limits.
+
+## Permanent provenance
+
+`provenance/files.json` binds every installed file to its original repository/path/commit, Git blob, checksums, mode and counted transformations. Exact originals live under `provenance/originals/<sha256>`. `tools/vendor.py --restore` can recreate missing packages offline without executing upstream code.
+
+Dated usage/activity captures are now stored inside this repository under `provenance/evidence-files/<sha256>`, not only in a local ZIP. Evidence is explicitly linked from each selection. Stars are repository-wide and installs are telemetry; neither proves successful outcomes. No skill was executed or benchmarked during curation.
+
+The original authors remain the authors; AutoGPT curates and adapts packaging. Each package carries its full licence and attribution. MIT/Apache notices are retained; Trail of Bits CC-BY-SA-4.0 adaptations retain attribution and share-alike terms. Six selections now use verified clean historical source revisions. Invoice chase remains excluded until its licence is clarified. Authorship does not establish human-only authorship, and no upstream endorsement is claimed.
+
+Deferred sources live under separate content-addressed archives, with exact reasons and licences. They are not discoverable packages. The advertising suite exceeds current limits; prospecting has an unresolved source safety finding. Public-relations, referrals and marketing-plan have contradictory authored guidance; the ideas library is held with its parent. No workflow is rewritten or weakened to pass review.
+
+## Contributing and checking
+
+Read [AGENTS.md](AGENTS.md).
+
+```
+python -m pip install pyyaml
+python -m unittest discover -s tools -p 'test_*.py' -v
+python tools/check.py --expected-count 74
+python tools/check_research.py
+python tools/audit_dependencies.py --check
+python tools/vendor.py --check
+```
+
+Use `--strict-modes` with the package checker on POSIX. Source integrity, complete roster accounting, captured evidence and deferred-source retention are tested independently of import acceptance. See the documented exact importer probe for its source revision and limits.
+
+Merging this catalog does not remove production listings or change expert assignments. A separate migration must preserve users’ installed copies, avoid the starter fallback, retire intended placeholders and assign only the supported kits. Coverage gaps and conditional sources remain explicit.

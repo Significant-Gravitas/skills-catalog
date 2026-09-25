@@ -1,0 +1,82 @@
+{
+  "schema_version": 3,
+  "slug": "market-size-estimation",
+  "name": "market-size-estimation",
+  "original_name": "market-sizing",
+  "source": {
+    "repo": "phuryn/pm-skills",
+    "path": "pm-market-research/skills/market-sizing",
+    "commit": "8607e3b077817f89bf4a9b623246219734ac3be0"
+  },
+  "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-market-research/skills/market-sizing/SKILL.md",
+  "discovery_url": "https://skills.sh/phuryn/pm-skills/market-sizing",
+  "author": "Paweł Huryn",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/LICENSE",
+    "scope": "Selected original skill directories covered by repository MIT license.",
+    "obligations": [
+      "Retain copyright and permission notice."
+    ],
+    "file": "skills/market-size-estimation/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "96d1250ba0ab7e5b64c9be8278f63f9661b510237e423b42ef70ab914184faf8",
+  "packaged_sha256": "2c27ac53895fbf027423e429820ae780d17c49ed1d77ca576f209809af0d9128",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Zara",
+      "role": "GTM Strategist",
+      "status": "core",
+      "essential_function": "Estimate TAM, SAM and SOM using sourced top-down and bottom-up methods, reconcile them, and expose growth assumptions and uncertainty.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "f5f162f1d5392eda4ad46ef2",
+    "51e88e5d0f308f2be0ef49a1",
+    "5e1ca740bc6967c92c2cea96",
+    "5a11e4a0bf075ad56c964f9b"
+  ],
+  "review": "Requires market boundaries, both independent estimation approaches, sources, explicit estimates versus observations, confidence and validation plans.",
+  "essential_function": "Estimate TAM, SAM and SOM using sourced top-down and bottom-up methods, reconcile them, and expose growth assumptions and uncertainty.",
+  "native_prerequisites": [
+    "Product and market context, source documents; browser/web search for current research; writable output destination."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Only exact counted local-path/link adaptations plus standard name/licence/attribution headers and notices are permitted. Original expert guidance, workflow branches, native providers and project-state locations remain intact.",
+      "General related-skills lists are discovery suggestions, not implied bundled workflows.",
+      "No source script is executed or transformed. Retained provider guide CLI links are real transitive dependencies, unlike the optional full tools registry."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "pm-market-research/skills/market-sizing/evals/evals.json",
+        "reason": "Development evaluation fixture, not read/invoked by the selected workflow."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "phuryn/pm-skills",
+    "path": "pm-market-research/skills/market-sizing",
+    "commit": "8607e3b077817f89bf4a9b623246219734ac3be0",
+    "primary_sha256": "96d1250ba0ab7e5b64c9be8278f63f9661b510237e423b42ef70ab914184faf8"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Sizing supports a business case but does not itself produce audited returns, investment diligence or cash-flow models.",
+    "Linked Product Compass readings are optional external publications; their contents are not relicensed or included."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

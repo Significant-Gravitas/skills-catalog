@@ -1,0 +1,142 @@
+{
+  "schema_version": 3,
+  "slug": "product-marketing-context",
+  "name": "product-marketing-context",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "path": "skills/product-marketing"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/product-marketing/SKILL.md",
+  "discovery_url": "https://www.skills.sh/coreyhaines31/marketingskills/product-marketing",
+  "author": "Corey Haines / contributors; retain upstream copyright and notices.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/product-marketing-context/LICENSE",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
+    "obligations": [
+      "Retain copyright and permission notice in copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "6dfd6bd485f62448385844cb9eceefcee0977c843d7a1c9e6077590d4e19d1ec",
+  "assignments": [
+    {
+      "expert": "Maria",
+      "role": "SEO Content Manager",
+      "status": "core",
+      "essential_function": "Establish shared audience, positioning and brand voice.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "Jules",
+      "role": "Social Media Manager",
+      "status": "core",
+      "essential_function": "Keep posts grounded in the brand and audience.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "Nadia",
+      "role": "Market Research Analyst",
+      "status": "core",
+      "essential_function": "Turn research into a reusable audience and positioning record.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "Remy",
+      "role": "Email Marketing Manager",
+      "status": "core",
+      "essential_function": "Supply audience, product, proof and brand context.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "Maya",
+      "role": "Marketing Manager",
+      "status": "core",
+      "essential_function": "Create and maintain a confirmed, versioned product-marketing context covering audience, positioning, differentiation, customer language, brand voice and proof.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Zara",
+      "role": "GTM Strategist",
+      "status": "core",
+      "essential_function": "Create and maintain a confirmed, versioned product-marketing context covering audience, positioning, differentiation, customer language, brand voice and proof.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "5fb04c6b459ae4327a3c9c78",
+    "12843469c87c24da1ce965f5",
+    "e12751dc43af8207be6af149",
+    "8b1e2a7e99c0c48f45506c40",
+    "ba9a7481498e10e36957b4a8",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "6113403e48bfb1c817b690c4",
+    "6c6399316eee192a9817f346",
+    "48190ac73d2a5ff706b3cf18"
+  ],
+  "review": "Captures and maintains reusable audience, positioning, proof and brand-voice context. Its native workflow already asks for missing information, validates with the user and keeps version history. Selected unchanged as shared marketing foundation.",
+  "native_prerequisites": [
+    "Persistent project workspace with write access to the authored product-marketing context file; source workflow asks for missing inputs and user review.",
+    "Company/product materials or owner input; writable project .agents context path."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "product-marketing",
+  "previous_catalog_slug": "product-marketing",
+  "packaged_sha256": "855e09838f1e73a846104238297fadcc075e0799e17468636f835a25ce8e889a",
+  "original_native_prerequisites": [
+    "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
+    "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      {
+        "scope": "shared tools directory",
+        "decision": "exclude entire tools tree",
+        "reason": "Only direct skill/reference file edges create local support requirements. The general registry and related-skills lists are discovery, while external APIs/CLIs require native access rather than copied wrapper code."
+      },
+      {
+        "scope": "evals/evals.json",
+        "decision": "exclude",
+        "reason": "No selected instruction calls or reads the development fixture; source evidence remains in provenance."
+      },
+      {
+        "scope": "project context files",
+        "decision": "runtime state, do not vendor or rename",
+        "reason": "The instructions intentionally exchange persistent project context through .agents/.claude paths; packaging must not turn them into skill assets."
+      }
+    ],
+    "excluded_files": [
+      {
+        "source": "skills/coreyhaines31/marketingskills/skills/product-marketing/evals/evals.json",
+        "reason": "Development evaluation fixture; no runtime or reference edge from this skill. Not needed in an installed package."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/product-marketing",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "6dfd6bd485f62448385844cb9eceefcee0977c843d7a1c9e6077590d4e19d1ec"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "A context and positioning foundation, not data-driven account segmentation, field research or an independent verification of company claims.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

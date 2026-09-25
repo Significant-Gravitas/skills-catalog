@@ -1,0 +1,120 @@
+{
+  "schema_version": 3,
+  "slug": "operational-risk-assessment",
+  "name": "operational-risk-assessment",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/risk-assessment",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/risk-assessment/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/risk-assessment",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/LICENSE",
+    "scope": "Complete original package at historical clean-license commit; no later source mixed with earlier license. Plugin license controls where present; otherwise original root Apache-2.0.",
+    "obligations": [
+      "Include Apache-2.0 license and applicable copyright/attribution notices.",
+      "Retain applicable NOTICE content; do not imply endorsement.",
+      "If later modified, identify modifications; these archived selections are unchanged."
+    ],
+    "file": "skills/operational-risk-assessment/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "82e29810a762c396a56f92bbd5c5afd252f7a07c6be69a246c28f7b82c4086d9",
+  "assignments": [
+    {
+      "expert": "Frankie",
+      "role": "Executive Assistant",
+      "status": "core",
+      "essential_function": "Turn reported issues into an owner-assigned risk and mitigation register.",
+      "optional_new_kit": true
+    },
+    {
+      "expert": "Vera",
+      "role": "Procurement Specialist",
+      "status": "core",
+      "essential_function": "Maintain prioritized supplier/process risks with mitigation owners and status.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "James",
+      "role": "Operations Manager",
+      "status": "core",
+      "essential_function": "Build a prioritized operational risk register using likelihood, impact, mitigation, owner and status.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "347e5184327f25f68ae23494",
+    "fc34a1abecd1b9b7de3630e4",
+    "0511389f10803b0fdefbe7bb",
+    "52a01d66421e6c2847113732",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "55d87198a8a84a1e53706df4"
+  ],
+  "review": "Read complete original: clear qualitative risk matrix and material controllable risks; suitable operational triage, not regulatory adjudication.",
+  "native_prerequisites": [
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "risk-assessment",
+  "previous_catalog_slug": "risk-assessment",
+  "packaged_sha256": "7d8e7fca7f2816011f0f5341698082440f06a329a06d3fd95a09773fb0e36914",
+  "original_native_prerequisites": [
+    "Specific project,vendor,process or decision context and known evidence.",
+    "Human likelihood/impact and mitigation ownership judgments; no external connector required."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Every primary, support and controlling licence file comes from the same clean historical commit. Primary and required support bytes were compared with the previous pin; no current source is paired with an older licence."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "operations/CONNECTORS.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/README.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.mcp.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "essential_function": "Build a prioritized operational risk register using likelihood, impact, mitigation, owner and status.",
+  "prior_source_pin": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/risk-assessment"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/risk-assessment",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "82e29810a762c396a56f92bbd5c5afd252f7a07c6be69a246c28f7b82c4086d9"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not certify compliance, calculate actuarial probabilities or approve phase-gate changes."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

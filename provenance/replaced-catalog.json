@@ -1,0 +1,1493 @@
+{
+  "previous_catalog_commit": "00d9cfbf2c9c01a13dc5626a50e8f4b9c4d2d35d",
+  "previous_entry_count": 171,
+  "entries": [
+    {
+      "slug": "brand-voice-guide",
+      "categories": [
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "outreach-playbook",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [
+        "google"
+      ],
+      "source": "platform"
+    },
+    {
+      "slug": "cold-email",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/cold-email",
+      "license": "MIT"
+    },
+    {
+      "slug": "copywriting",
+      "categories": [
+        "content"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/copywriting",
+      "license": "MIT"
+    },
+    {
+      "slug": "emails",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/emails",
+      "license": "MIT"
+    },
+    {
+      "slug": "onboarding",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/onboarding",
+      "license": "MIT"
+    },
+    {
+      "slug": "prospecting",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/prospecting",
+      "license": "MIT"
+    },
+    {
+      "slug": "sales-enablement",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/sales-enablement",
+      "license": "MIT"
+    },
+    {
+      "slug": "customer-research",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/customer-research",
+      "license": "MIT"
+    },
+    {
+      "slug": "pricing",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/pricing",
+      "license": "MIT"
+    },
+    {
+      "slug": "churn-prevention",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/churn-prevention",
+      "license": "MIT"
+    },
+    {
+      "slug": "public-relations",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/public-relations",
+      "license": "MIT"
+    },
+    {
+      "slug": "social",
+      "categories": [
+        "content"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/social",
+      "license": "MIT"
+    },
+    {
+      "slug": "launch",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "coreyhaines31/marketingskills/skills/launch",
+      "license": "MIT"
+    },
+    {
+      "slug": "mom-test",
+      "categories": [
+        "research"
+      ],
+      "required_providers": [],
+      "source": "wondelai/skills/mom-test",
+      "license": "MIT"
+    },
+    {
+      "slug": "storybrand-messaging",
+      "categories": [
+        "content"
+      ],
+      "required_providers": [],
+      "source": "wondelai/skills/storybrand-messaging",
+      "license": "MIT"
+    },
+    {
+      "slug": "predictable-revenue",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "wondelai/skills/predictable-revenue",
+      "license": "MIT"
+    },
+    {
+      "slug": "negotiation",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "wondelai/skills/negotiation",
+      "license": "MIT"
+    },
+    {
+      "slug": "obviously-awesome",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "wondelai/skills/obviously-awesome",
+      "license": "MIT"
+    },
+    {
+      "slug": "jobs-to-be-done",
+      "categories": [
+        "research"
+      ],
+      "required_providers": [],
+      "source": "wondelai/skills/jobs-to-be-done",
+      "license": "MIT"
+    },
+    {
+      "slug": "seo-content-brief",
+      "categories": [
+        "marketing",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "on-page-seo-audit",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "content-repurposing",
+      "categories": [
+        "marketing",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "competitor-teardown",
+      "categories": [
+        "research",
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "icp-and-positioning",
+      "categories": [
+        "marketing",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "lifecycle-email-map",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "email-deliverability-guardrails",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "bookkeeping-getting-started",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "expense-categorization",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "invoice-drafting-and-issue",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "accounts-receivable-follow-up",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "statement-reconciliation",
+      "categories": [
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "month-end-close-checklist",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "monthly-profit-and-loss-summary",
+      "categories": [
+        "finance",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "bookkeeping-exception-escalation",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "investor-relations-getting-started",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "pitch-deck-review",
+      "categories": [
+        "finance",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "fundraising-data-room-checklist",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "investor-targeting-and-research",
+      "categories": [
+        "finance",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "fundraising-pipeline-review",
+      "categories": [
+        "finance",
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "cap-table-hygiene",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "monthly-investor-update",
+      "categories": [
+        "finance",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "board-and-investor-metrics-brief",
+      "categories": [
+        "finance",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "kpi-analysis-getting-started",
+      "categories": [
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "metric-definition-and-data-quality",
+      "categories": [
+        "research",
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "weekly-kpi-digest",
+      "categories": [
+        "research",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "metric-anomaly-detection",
+      "categories": [
+        "research",
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "metric-movement-analysis",
+      "categories": [
+        "research",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "cohort-and-retention-analysis",
+      "categories": [
+        "research",
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "funnel-conversion-analysis",
+      "categories": [
+        "research",
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "experiment-readout",
+      "categories": [
+        "research",
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "recruiting-getting-started",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "role-intake-and-job-description",
+      "categories": [
+        "operations",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "hiring-rubric-design",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "resume-screening",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "interview-plan-and-scorecard",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "candidate-interview-debrief",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "candidate-rejection-email",
+      "categories": [
+        "operations",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "candidate-offer-draft",
+      "categories": [
+        "operations",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "procurement-getting-started",
+      "categories": [
+        "operations",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "vendor-requirements-brief",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "vendor-quote-comparison",
+      "categories": [
+        "operations",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "vendor-due-diligence",
+      "categories": [
+        "operations",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "procurement-decision-memo",
+      "categories": [
+        "operations",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "contract-renewal-tracker",
+      "categories": [
+        "operations",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "vendor-performance-review",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "spend-anomaly-review",
+      "categories": [
+        "finance",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "contract-ops-getting-started",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "nda-playbook-review",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "msa-playbook-review",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "contract-clause-comparison",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "contract-key-term-extraction",
+      "categories": [
+        "operations",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "contract-deviation-triage",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "contract-obligation-tracker",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "counsel-escalation-brief",
+      "categories": [
+        "operations",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "dependency-security-getting-started",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "dependency-inventory",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "outdated-dependency-review",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "vulnerability-triage",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "cve-stack-relevance",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "dependency-upgrade-plan",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "dependency-upgrade-pr",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "dependency-change-risk-review",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "customer-success-getting-started",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "customer-onboarding-plan",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "customer-health-score",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "churn-risk-review",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "renewal-readiness-review",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "renewal-touchpoint-draft",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "expansion-opportunity-brief",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "customer-success-plan",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "deal-desk-getting-started",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "proposal-draft",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "statement-of-work-draft",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "pipeline-stage-aging-review",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "deal-risk-review",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "renewal-negotiation-brief",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "pricing-and-terms-approval-brief",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "proposal-quality-check",
+      "categories": [
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "support-getting-started",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "ticket-triage",
+      "categories": [
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "support-reply-draft",
+      "categories": [
+        "support",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "support-macro-library",
+      "categories": [
+        "support",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "help-article-from-tickets",
+      "categories": [
+        "support",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "bug-report-handoff",
+      "categories": [
+        "support",
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "refund-and-exception-brief",
+      "categories": [
+        "support",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "weekly-ticket-themes",
+      "categories": [
+        "support",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "product-getting-started",
+      "categories": [
+        "research",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "feedback-synthesis",
+      "categories": [
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "feature-request-triage",
+      "categories": [
+        "research",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "user-interview-guide",
+      "categories": [
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "opportunity-brief",
+      "categories": [
+        "research",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "product-requirements-draft",
+      "categories": [
+        "content",
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "roadmap-prioritisation",
+      "categories": [
+        "operations",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "release-notes-draft",
+      "categories": [
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "paid-ads-getting-started",
+      "categories": [
+        "marketing",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "campaign-structure-plan",
+      "categories": [
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "ad-copy-variants",
+      "categories": [
+        "marketing",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "landing-page-message-match",
+      "categories": [
+        "marketing",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "wasted-spend-audit",
+      "categories": [
+        "marketing",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "budget-pacing-review",
+      "categories": [
+        "marketing",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "creative-test-readout",
+      "categories": [
+        "marketing",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "paid-performance-report",
+      "categories": [
+        "marketing",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "communications-getting-started",
+      "categories": [
+        "marketing",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "news-angle-and-key-messages",
+      "categories": [
+        "marketing",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "press-release-draft",
+      "categories": [
+        "content",
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "media-list-research",
+      "categories": [
+        "research",
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "media-pitch-email",
+      "categories": [
+        "content",
+        "marketing"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "launch-communications-plan",
+      "categories": [
+        "marketing",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "holding-statement-draft",
+      "categories": [
+        "content",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "spokesperson-briefing",
+      "categories": [
+        "content",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "code-quality-getting-started",
+      "categories": [
+        "development",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "pull-request-review",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "test-plan-draft",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "bug-reproduction-report",
+      "categories": [
+        "development",
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "flaky-test-triage",
+      "categories": [
+        "development"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "regression-risk-review",
+      "categories": [
+        "development",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "release-readiness-checklist",
+      "categories": [
+        "development",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "incident-postmortem-draft",
+      "categories": [
+        "development",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "people-ops-getting-started",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "new-hire-onboarding-plan",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "handbook-policy-draft",
+      "categories": [
+        "operations",
+        "content"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "one-to-one-agenda",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "performance-review-prep",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "engagement-survey-readout",
+      "categories": [
+        "operations",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "offboarding-checklist",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "hr-escalation-brief",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "revops-getting-started",
+      "categories": [
+        "sales",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "crm-field-audit",
+      "categories": [
+        "sales",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "crm-duplicate-review",
+      "categories": [
+        "sales",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "pipeline-stage-definitions",
+      "categories": [
+        "sales",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "lead-routing-rules",
+      "categories": [
+        "sales",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "sales-forecast-rollup",
+      "categories": [
+        "sales",
+        "finance"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "lost-deal-analysis",
+      "categories": [
+        "sales",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "crm-hygiene-report",
+      "categories": [
+        "sales",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "compliance-ops-getting-started",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "security-questionnaire-answers",
+      "categories": [
+        "operations",
+        "sales"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "personal-data-map",
+      "categories": [
+        "operations",
+        "research"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "subprocessor-register",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "dpa-checklist-review",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "policy-gap-review",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "data-subject-request-draft",
+      "categories": [
+        "operations",
+        "support"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "compliance-escalation-brief",
+      "categories": [
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "executive-assistant-getting-started",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "inbox-triage",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [
+        "google"
+      ],
+      "source": "platform"
+    },
+    {
+      "slug": "reply-draft-in-your-voice",
+      "categories": [
+        "support",
+        "content"
+      ],
+      "required_providers": [
+        "google"
+      ],
+      "source": "platform"
+    },
+    {
+      "slug": "meeting-prep-brief",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [
+        "google"
+      ],
+      "source": "platform"
+    },
+    {
+      "slug": "meeting-follow-up-draft",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "calendar-conflict-review",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [
+        "google"
+      ],
+      "source": "platform"
+    },
+    {
+      "slug": "travel-plan",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    },
+    {
+      "slug": "weekly-priorities-review",
+      "categories": [
+        "support",
+        "operations"
+      ],
+      "required_providers": [],
+      "source": "platform"
+    }
+  ],
+  "migration_note": "These previous repository registrations are replaced by schema v2. This record does not delist database rows or change expert assignments; platform migration must explicitly plan retirement and reassignment."
+}

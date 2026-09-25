@@ -1,0 +1,101 @@
+{
+  "schema_version": 3,
+  "slug": "sales-enablement-content",
+  "name": "sales-enablement-content",
+  "original_name": "sales-enablement",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/sales-enablement",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/sales-enablement/SKILL.md",
+  "discovery_url": "https://skills.sh/coreyhaines31/marketingskills/sales-enablement",
+  "author": "Corey Haines",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Original repository skill and support files; separately credited reference notices retained where applicable.",
+    "obligations": [
+      "Retain copyright and permission notice with copies or substantial portions.",
+      "Retain authored attribution in supporting references."
+    ],
+    "file": "skills/sales-enablement-content/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "d83c3244dd8e2e64d585f1ff0d760eff181587f06b90ceaf8127a4ce618265dd",
+  "packaged_sha256": "1b95cf52bab01f89fb7220e615d51fcf7c3394636d8960d551bd03d68e8e6099",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Anika",
+      "role": "Partnerships Manager",
+      "status": "core",
+      "essential_function": "Create persona- and deal-stage-specific sales decks, one-pagers, objection responses, demos, proposals and playbooks that sellers or partners can use.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Zara",
+      "role": "GTM Strategist",
+      "status": "core",
+      "essential_function": "Create persona- and deal-stage-specific sales decks, one-pagers, objection responses, demos, proposals and playbooks that sellers or partners can use.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Max",
+      "role": "Sales Development Representative",
+      "status": "core",
+      "essential_function": "Create persona- and deal-stage-specific sales decks, one-pagers, objection responses, demos, proposals and playbooks that sellers or partners can use.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "9262f915ebc281a94eccfd97",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "3cd23bc46f64204d67fd70eb",
+    "48190ac73d2a5ff706b3cf18"
+  ],
+  "review": "Rep input, proof-linked objections, scenario-based collateral and quarterly owner-led refresh provide a useful authoring workflow. Native Introw guide supplies optional partner enablement context.",
+  "essential_function": "Create persona- and deal-stage-specific sales decks, one-pagers, objection responses, demos, proposals and playbooks that sellers or partners can use.",
+  "native_prerequisites": [
+    "Approved product claims, customer proof, personas and sales inputs; optional CRM/Introw data; design tools for finished slides.",
+    "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch.",
+    "The documented provider alternatives are introw. Use only the chosen authored branch, with its real account, credentials, API/MCP/SDK/CLI capability and permissions; these are not all mandatory accounts."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Only exact counted local-path/link adaptations plus standard name/licence/attribution headers and notices are permitted. Original expert guidance, workflow branches, native providers and project-state locations remain intact.",
+      "General related-skills lists are discovery suggestions, not implied bundled workflows.",
+      "No source script is executed or transformed. Retained provider guide CLI links are real transitive dependencies, unlike the optional full tools registry."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "skills/sales-enablement/evals/evals.json",
+        "reason": "Development evaluation fixture, not read/invoked by the selected workflow."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/sales-enablement",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "d83c3244dd8e2e64d585f1ff0d760eff181587f06b90ceaf8127a4ce618265dd"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not operate partner certification academies, enforce readiness, run live deals, or provide legal approval of commercial promises. Sample figures must remain examples.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

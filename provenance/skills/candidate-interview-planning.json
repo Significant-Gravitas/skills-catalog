@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "slug": "candidate-interview-planning",
+  "name": "candidate-interview-planning",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "human-resources/skills/interview-prep",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/interview-prep/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/interview-prep",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/LICENSE",
+    "scope": "Complete original package at historical clean-license commit; no later source mixed with earlier license. Plugin license controls where present; otherwise original root Apache-2.0.",
+    "obligations": [
+      "Include Apache-2.0 license and applicable copyright/attribution notices.",
+      "Retain applicable NOTICE content; do not imply endorsement.",
+      "If later modified, identify modifications; these archived selections are unchanged."
+    ],
+    "file": "skills/candidate-interview-planning/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "c687311babdeccf086aa5f6d86dcbfc3a9d1b8bb7124f072450ffa4315d98c4c",
+  "assignments": [
+    {
+      "expert": "Harper",
+      "role": "Recruiter",
+      "status": "core",
+      "essential_function": "Create consistent competency-based interview questions, panel assignments, scorecards and debrief templates.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "Sofia",
+      "role": "Recruiter",
+      "status": "core",
+      "essential_function": "Build competency-based interview questions, panel assignments, anchored scorecards and a structured debrief template.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "f80509b6fa1c7a783de56b59",
+    "fe2e7901829b75e6359679b2",
+    "a5600b42a48b71d6cc2a0e5b",
+    "86f033dff577128d178e1180",
+    "1358222bf754661fefb67169",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "5353140151d64cda4b252bd3"
+  ],
+  "review": "Read unchanged whole skill: same questions across candidates, behavioral evidence, explicit competency mapping and consistent 1–4 scoring.",
+  "native_prerequisites": [
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "interview-prep",
+  "previous_catalog_slug": "interview-prep",
+  "packaged_sha256": "e2106a80a17804e9948a1a43200915b78b962ac6709e84d4044dbeda17af2540",
+  "original_native_prerequisites": [
+    "Role requirements and desired competencies supplied by the recruiter",
+    "No external connector required"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Every primary, support and controlling licence file comes from the same clean historical commit. Primary and required support bytes were compared with the previous pin; no current source is paired with an older licence."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "human-resources/CONNECTORS.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "human-resources/README.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "human-resources/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "human-resources/.mcp.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "essential_function": "Build competency-based interview questions, panel assignments, anchored scorecards and a structured debrief template.",
+  "prior_source_pin": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/interview-prep"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "human-resources/skills/interview-prep",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "c687311babdeccf086aa5f6d86dcbfc3a9d1b8bb7124f072450ffa4315d98c4c"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not screen resumes, source candidates or schedule interview availability.",
+    "Human hiring decisions remain separate; this source does not reproduce every original AutoGPT per-action approval rule."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

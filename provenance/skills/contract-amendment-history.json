@@ -1,0 +1,82 @@
+{
+  "schema_version": 3,
+  "slug": "contract-amendment-history",
+  "name": "contract-amendment-history",
+  "source": {
+    "repo": "anthropics/claude-for-legal",
+    "commit": "4a6c651889c97cc9140580363c73e0eb17379c2b",
+    "path": "commercial-legal/skills/amendment-history"
+  },
+  "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/commercial-legal/skills/amendment-history/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/claude-for-legal/amendment-history",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/contract-amendment-history/LICENSE",
+    "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/LICENSE",
+    "scope": "Inspected controlling LICENSE and repository file inventory; no nested exception in this skill subtree.",
+    "obligations": [
+      "Provide a copy of Apache-2.0 to recipients.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE.",
+      "Prominently identify modified files; license grants no general trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "99ab56dec5bdb97a2d3f0f1dde2ea46283ec9827a72b8025471acb5be3aa3bf7",
+  "assignments": [
+    {
+      "expert": "Ellis",
+      "role": "Contract Manager",
+      "status": "core",
+      "essential_function": "Trace contract changes and exact clause versions across a base agreement and its amendments.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "10a57daed8b227f07d3dabfc",
+    "57239675de416aa4cfc00795",
+    "f208c36cb2bc40bed5e510b4"
+  ],
+  "review": "Selected unchanged for contract amendment chronology and provision tracing. Full source compares the base agreement and amendments, quotes before/after text with section references, summarizes current language and flags ambiguity or conflicting documents for Legal rather than deciding conflicts. Direct uploads are supported; CLM and repository retrieval are explicitly marked coming soon. This does not extract a comprehensive obligations register.",
+  "native_prerequisites": [
+    "Complete base agreement and all relevant amendments, uploaded or pasted",
+    "Native commercial-legal practice configuration and support instructions; optional matter folder isolation",
+    "Document-reading capability; CLM/repository retrieval must not be advertised as already implemented"
+  ],
+  "evidence_qualification": "Lower-adoption specialist selection: 566 installs. Publisher/repository evidence and substantive source review support selection, but individual uptake is smaller and effectiveness is not independently proven.",
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "amendment-history",
+  "previous_catalog_slug": "amendment-history",
+  "packaged_sha256": "805491d9583b1f53e38d32009d12f333100a6f142cd25e6bc0cea92d6c2976c7",
+  "original_native_prerequisites": [
+    "Complete base agreement and all relevant amendments, uploaded or pasted",
+    "Native commercial-legal practice configuration and support instructions; optional matter folder isolation",
+    "Document-reading capability; CLM/repository retrieval must not be advertised as already implemented"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Leave ~/.claude/plugins/config/... user-state paths unchanged in this recipe. These are runtime configuration locations, not static support paths. Any relocation must be coordinated across both legal skills and retain matter isolation.",
+      "Before substantive use, load references/practice-profile-template.md for the original configuration/guardrail contract. Never use its placeholders as populated practice configuration.",
+      "The company-profile template is provided as a schema reference; do not overwrite existing configured user files."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [
+      "Requires a populated persistent practice/company profile with the original setup and attorney-review gates. Packaging cannot invent legal positions or configured approvers.",
+      "Preserve matter isolation and native setup/dispatch expectations; no hidden config source file is installed by this flat package."
+    ],
+    "preserved_native_fields": {
+      "argument-hint": "[file(s) | [CLM ID (coming soon)] | [repository link (coming soon)]] [--provision <clause name>]"
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  },
+  "original_packaging_notes": [
+    "Native commercial-legal configuration and source-context loading remain required. Parent instructions describe plugin-root references, while the pinned upstream repository stores reference templates at repository root; no corrective mirror is included."
+  ]
+}

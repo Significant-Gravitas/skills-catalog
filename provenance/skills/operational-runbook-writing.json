@@ -1,0 +1,92 @@
+{
+  "schema_version": 3,
+  "slug": "operational-runbook-writing",
+  "name": "operational-runbook-writing",
+  "original_name": "runbook",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/runbook",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/runbook/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/runbook",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/LICENSE",
+    "scope": "Complete original package at historical clean-license commit; no later source mixed with earlier license. Plugin license controls where present; otherwise original root Apache-2.0.",
+    "obligations": [
+      "Include Apache-2.0 license and applicable copyright/attribution notices.",
+      "Retain applicable NOTICE content; do not imply endorsement.",
+      "If later modified, identify modifications; these archived selections are unchanged."
+    ],
+    "file": "skills/operational-runbook-writing/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "c5c3eaa4c22fff96ec7239ce67eb3e100661b20a2818749e2f7ee21787233185",
+  "packaged_sha256": "e6405c8f266393dfd98f9d6d4ba7149cb1b8eea0787bde4b02d92e60d4d55eb1",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "James",
+      "role": "Operations Manager",
+      "status": "core",
+      "essential_function": "Document an operational procedure with prerequisites, exact steps, expected results, failures, verification, rollback and escalation.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "4e327b991c2686b43a213364",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "707f00fe2a5286dda1ad8f59"
+  ],
+  "review": "Read complete original: emphasizes reproducible steps, failure modes and a cold-reader trial.",
+  "essential_function": "Document an operational procedure with prerequisites, exact steps, expected results, failures, verification, rollback and escalation.",
+  "native_prerequisites": [
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Read primary body and all authored file references. No script, sibling skill, local template or asset is called beyond listed connector guidance. Example output templates embedded in SKILL.md remain intact.",
+      "Connected-mode side effects in the original are preserved, including applicable invitations, document publication, task creation or ATS updates. Available connector permissions and actual user authorization must govern these actions; no new advice/approval wrapper is inserted."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "operations/README.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.mcp.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {
+      "argument-hint": "<process or task name>"
+    },
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/runbook",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "c5c3eaa4c22fff96ec7239ce67eb3e100661b20a2818749e2f7ee21787233185"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Can publish to a connected wiki; this is authored behavior, not restricted by an invented approval wrapper."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

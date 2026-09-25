@@ -1,886 +1,480 @@
-# Every entry becomes a platform-authored listing in the AutoGPT Platform
-# Skills marketplace. The seed reads this file plus skills/<slug>/.
-#
-#   slug                the listing slug, the folder name, and the SKILL.md name
-#   categories          marketplace categories shown on the card
-#   required_providers  integrations the instructions assume are connected
-#   source              "platform" for skills written here, or
-#                       owner/repo/path for a skill vendored with tools/vendor.py
-#   license             SPDX id of the upstream licence (vendored skills only)
-
+# Existing AutoGPT import format; deferred sources are excluded.
 skills:
-  - slug: brand-voice-guide
-    categories: [content]
-    required_providers: []
-    source: platform
-
-  - slug: outreach-playbook
-    categories: [sales]
-    required_providers: [google]
-    source: platform
-
-  # coreyhaines31/marketingskills — MIT
-  - slug: cold-email
-    categories: [sales]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/cold-email
-    license: MIT
-
-  - slug: copywriting
-    categories: [content]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/copywriting
-    license: MIT
-
-  - slug: emails
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/emails
-    license: MIT
-
-  - slug: onboarding
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/onboarding
-    license: MIT
-
-  - slug: prospecting
-    categories: [sales]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/prospecting
-    license: MIT
-
-  - slug: sales-enablement
-    categories: [sales]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/sales-enablement
-    license: MIT
-
-  - slug: customer-research
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/customer-research
-    license: MIT
-
-  - slug: pricing
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/pricing
-    license: MIT
-
-  - slug: churn-prevention
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/churn-prevention
-    license: MIT
-
-  - slug: public-relations
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/public-relations
-    license: MIT
-
-  - slug: social
-    categories: [content]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/social
-    license: MIT
-
-  - slug: launch
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/launch
-    license: MIT
-
-  # wondelai/skills — MIT
-  - slug: mom-test
-    categories: [research]
-    required_providers: []
-    source: wondelai/skills/mom-test
-    license: MIT
-
-  - slug: storybrand-messaging
-    categories: [content]
-    required_providers: []
-    source: wondelai/skills/storybrand-messaging
-    license: MIT
-
-  - slug: predictable-revenue
-    categories: [sales]
-    required_providers: []
-    source: wondelai/skills/predictable-revenue
-    license: MIT
-
-  - slug: negotiation
-    categories: [sales]
-    required_providers: []
-    source: wondelai/skills/negotiation
-    license: MIT
-
-  - slug: obviously-awesome
-    categories: [marketing]
-    required_providers: []
-    source: wondelai/skills/obviously-awesome
-    license: MIT
-
-  - slug: jobs-to-be-done
-    categories: [research]
-    required_providers: []
-    source: wondelai/skills/jobs-to-be-done
-    license: MIT
-
-  # Skills the expert roster ships with, moved here from the platform repo
-  - slug: seo-content-brief
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: on-page-seo-audit
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: content-repurposing
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: competitor-teardown
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: icp-and-positioning
-    categories: [marketing, research]
-    required_providers: []
-    source: platform
-
-  - slug: lifecycle-email-map
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: email-deliverability-guardrails
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: bookkeeping-getting-started
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: expense-categorization
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: invoice-drafting-and-issue
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: accounts-receivable-follow-up
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: statement-reconciliation
-    categories: [finance]
-    required_providers: []
-    source: platform
-
-  - slug: month-end-close-checklist
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: monthly-profit-and-loss-summary
-    categories: [finance, research]
-    required_providers: []
-    source: platform
-
-  - slug: bookkeeping-exception-escalation
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: investor-relations-getting-started
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: pitch-deck-review
-    categories: [finance, content]
-    required_providers: []
-    source: platform
-
-  - slug: fundraising-data-room-checklist
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: investor-targeting-and-research
-    categories: [finance, research]
-    required_providers: []
-    source: platform
-
-  - slug: fundraising-pipeline-review
-    categories: [finance, sales]
-    required_providers: []
-    source: platform
-
-  - slug: cap-table-hygiene
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: monthly-investor-update
-    categories: [finance, content]
-    required_providers: []
-    source: platform
-
-  - slug: board-and-investor-metrics-brief
-    categories: [finance, research]
-    required_providers: []
-    source: platform
-
-  - slug: kpi-analysis-getting-started
-    categories: [research]
-    required_providers: []
-    source: platform
-
-  - slug: metric-definition-and-data-quality
-    categories: [research, development]
-    required_providers: []
-    source: platform
-
-  - slug: weekly-kpi-digest
-    categories: [research, finance]
-    required_providers: []
-    source: platform
-
-  - slug: metric-anomaly-detection
-    categories: [research, development]
-    required_providers: []
-    source: platform
-
-  - slug: metric-movement-analysis
-    categories: [research, finance]
-    required_providers: []
-    source: platform
-
-  - slug: cohort-and-retention-analysis
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: funnel-conversion-analysis
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: experiment-readout
-    categories: [research, development]
-    required_providers: []
-    source: platform
-
-  - slug: recruiting-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: role-intake-and-job-description
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: hiring-rubric-design
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: resume-screening
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: interview-plan-and-scorecard
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: candidate-interview-debrief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: candidate-rejection-email
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: candidate-offer-draft
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: procurement-getting-started
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-requirements-brief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-quote-comparison
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-due-diligence
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: procurement-decision-memo
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: contract-renewal-tracker
-    categories: [operations, finance]
-    required_providers: []
-    source: platform
-
-  - slug: vendor-performance-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: spend-anomaly-review
-    categories: [finance, operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-ops-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: nda-playbook-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: msa-playbook-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-clause-comparison
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-key-term-extraction
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: contract-deviation-triage
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: contract-obligation-tracker
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: counsel-escalation-brief
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-security-getting-started
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-inventory
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: outdated-dependency-review
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: vulnerability-triage
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: cve-stack-relevance
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-upgrade-plan
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-upgrade-pr
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: dependency-change-risk-review
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: customer-success-getting-started
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: customer-onboarding-plan
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: customer-health-score
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: churn-risk-review
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: renewal-readiness-review
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: renewal-touchpoint-draft
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: expansion-opportunity-brief
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: customer-success-plan
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: deal-desk-getting-started
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: proposal-draft
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: statement-of-work-draft
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: pipeline-stage-aging-review
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: deal-risk-review
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: renewal-negotiation-brief
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: pricing-and-terms-approval-brief
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: proposal-quality-check
-    categories: [sales]
-    required_providers: []
-    source: platform
-
-  - slug: support-getting-started
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: ticket-triage
-    categories: [support]
-    required_providers: []
-    source: platform
-
-  - slug: support-reply-draft
-    categories: [support, content]
-    required_providers: []
-    source: platform
-
-  - slug: support-macro-library
-    categories: [support, content]
-    required_providers: []
-    source: platform
-
-  - slug: help-article-from-tickets
-    categories: [support, content]
-    required_providers: []
-    source: platform
-
-  - slug: bug-report-handoff
-    categories: [support, development]
-    required_providers: []
-    source: platform
-
-  - slug: refund-and-exception-brief
-    categories: [support, finance]
-    required_providers: []
-    source: platform
-
-  - slug: weekly-ticket-themes
-    categories: [support, research]
-    required_providers: []
-    source: platform
-
-  - slug: product-getting-started
-    categories: [research, operations]
-    required_providers: []
-    source: platform
-
-  - slug: feedback-synthesis
-    categories: [research]
-    required_providers: []
-    source: platform
-
-  - slug: feature-request-triage
-    categories: [research, operations]
-    required_providers: []
-    source: platform
-
-  - slug: user-interview-guide
-    categories: [research]
-    required_providers: []
-    source: platform
-
-  - slug: opportunity-brief
-    categories: [research, content]
-    required_providers: []
-    source: platform
-
-  - slug: product-requirements-draft
-    categories: [content, development]
-    required_providers: []
-    source: platform
-
-  - slug: roadmap-prioritisation
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: release-notes-draft
-    categories: [content]
-    required_providers: []
-    source: platform
-
-  - slug: paid-ads-getting-started
-    categories: [marketing, operations]
-    required_providers: []
-    source: platform
-
-  - slug: campaign-structure-plan
-    categories: [marketing]
-    required_providers: []
-    source: platform
-
-  - slug: ad-copy-variants
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: landing-page-message-match
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: wasted-spend-audit
-    categories: [marketing, finance]
-    required_providers: []
-    source: platform
-
-  - slug: budget-pacing-review
-    categories: [marketing, finance]
-    required_providers: []
-    source: platform
-
-  - slug: creative-test-readout
-    categories: [marketing, research]
-    required_providers: []
-    source: platform
-
-  - slug: paid-performance-report
-    categories: [marketing, research]
-    required_providers: []
-    source: platform
-
-  - slug: communications-getting-started
-    categories: [marketing, operations]
-    required_providers: []
-    source: platform
-
-  - slug: news-angle-and-key-messages
-    categories: [marketing, content]
-    required_providers: []
-    source: platform
-
-  - slug: press-release-draft
-    categories: [content, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: media-list-research
-    categories: [research, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: media-pitch-email
-    categories: [content, marketing]
-    required_providers: []
-    source: platform
-
-  - slug: launch-communications-plan
-    categories: [marketing, operations]
-    required_providers: []
-    source: platform
-
-  - slug: holding-statement-draft
-    categories: [content, operations]
-    required_providers: []
-    source: platform
-
-  - slug: spokesperson-briefing
-    categories: [content, operations]
-    required_providers: []
-    source: platform
-
-  - slug: code-quality-getting-started
-    categories: [development, operations]
-    required_providers: []
-    source: platform
-
-  - slug: pull-request-review
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: test-plan-draft
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: bug-reproduction-report
-    categories: [development, support]
-    required_providers: []
-    source: platform
-
-  - slug: flaky-test-triage
-    categories: [development]
-    required_providers: []
-    source: platform
-
-  - slug: regression-risk-review
-    categories: [development, research]
-    required_providers: []
-    source: platform
-
-  - slug: release-readiness-checklist
-    categories: [development, operations]
-    required_providers: []
-    source: platform
-
-  - slug: incident-postmortem-draft
-    categories: [development, operations]
-    required_providers: []
-    source: platform
-
-  - slug: people-ops-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: new-hire-onboarding-plan
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: handbook-policy-draft
-    categories: [operations, content]
-    required_providers: []
-    source: platform
-
-  - slug: one-to-one-agenda
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: performance-review-prep
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: engagement-survey-readout
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: offboarding-checklist
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: hr-escalation-brief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: revops-getting-started
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: crm-field-audit
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: crm-duplicate-review
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: pipeline-stage-definitions
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: lead-routing-rules
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: sales-forecast-rollup
-    categories: [sales, finance]
-    required_providers: []
-    source: platform
-
-  - slug: lost-deal-analysis
-    categories: [sales, research]
-    required_providers: []
-    source: platform
-
-  - slug: crm-hygiene-report
-    categories: [sales, operations]
-    required_providers: []
-    source: platform
-
-  - slug: compliance-ops-getting-started
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: security-questionnaire-answers
-    categories: [operations, sales]
-    required_providers: []
-    source: platform
-
-  - slug: personal-data-map
-    categories: [operations, research]
-    required_providers: []
-    source: platform
-
-  - slug: subprocessor-register
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: dpa-checklist-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: policy-gap-review
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: data-subject-request-draft
-    categories: [operations, support]
-    required_providers: []
-    source: platform
-
-  - slug: compliance-escalation-brief
-    categories: [operations]
-    required_providers: []
-    source: platform
-
-  - slug: executive-assistant-getting-started
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: inbox-triage
-    categories: [support, operations]
-    required_providers: [google]
-    source: platform
-
-  - slug: reply-draft-in-your-voice
-    categories: [support, content]
-    required_providers: [google]
-    source: platform
-
-  - slug: meeting-prep-brief
-    categories: [support, operations]
-    required_providers: [google]
-    source: platform
-
-  - slug: meeting-follow-up-draft
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: calendar-conflict-review
-    categories: [support, operations]
-    required_providers: [google]
-    source: platform
-
-  - slug: travel-plan
-    categories: [support, operations]
-    required_providers: []
-    source: platform
-
-  - slug: weekly-priorities-review
-    categories: [support, operations]
-    required_providers: []
-    source: platform
+- slug: account-reconciliation
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/reconciliation
+  license: Apache-2.0
+- slug: board-deck-builder
+  categories:
+  - finance
+  - content
+  required_providers: []
+  source: alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder
+  license: MIT
+- slug: business-process-documentation
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/process-doc
+  license: Apache-2.0
+- slug: business-process-optimization
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/process-optimization
+  license: Apache-2.0
+- slug: candidate-interview-planning
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/interview-prep
+  license: Apache-2.0
+- slug: client-proposal-writing
+  categories:
+  - sales
+  - content
+  required_providers: []
+  source: jezweb/claude-skills/plugins/writing/skills/proposal-writer
+  license: MIT
+- slug: code-change-security-review
+  categories:
+  - development
+  required_providers: []
+  source: trailofbits/skills/plugins/differential-review/skills/differential-review
+  license: CC-BY-SA-4.0
+- slug: code-review-quality
+  categories:
+  - development
+  required_providers: []
+  source: wshobson/agents/plugins/developer-essentials/skills/code-review-excellence
+  license: MIT
+- slug: company-policy-lookup
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/policy-lookup
+  license: Apache-2.0
+- slug: competitor-profiling
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/competitor-profiling
+  license: MIT
+- slug: compliance-evidence-tracking
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/compliance-tracking
+  license: Apache-2.0
+- slug: contract-amendment-history
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/claude-for-legal/commercial-legal/skills/amendment-history
+  license: Apache-2.0
+- slug: conversion-rate-optimization
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/cro
+  license: MIT
+- slug: customer-escalation
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation
+  license: Apache-2.0
+- slug: customer-insight-research
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/customer-research
+  license: MIT
+- slug: customer-response-drafting
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/draft-response
+  license: Apache-2.0
+- slug: customer-support-research
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-research
+  license: Apache-2.0
+- slug: data-visualization
+  categories:
+  - research
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/data/skills/data-visualization
+  license: Apache-2.0
+- slug: dataset-exploration
+  categories:
+  - research
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/data/skills/explore-data
+  license: Apache-2.0
+- slug: employee-onboarding-planning
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/onboarding
+  license: Apache-2.0
+- slug: employee-performance-review
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/performance-review
+  license: Apache-2.0
+- slug: employment-offer-drafting
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
+  license: Apache-2.0
+- slug: financial-statement-preparation
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/financial-statements
+  license: Apache-2.0
+- slug: go-to-market-strategy
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: phuryn/pm-skills/pm-go-to-market/skills/gtm-strategy
+  license: MIT
+- slug: knowledge-base-article-writing
+  categories:
+  - support
+  - content
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/kb-article
+  license: Apache-2.0
+- slug: legal-meeting-briefing
+  categories:
+  - operations
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/legal/skills/meeting-briefing
+  license: Apache-2.0
+- slug: legal-response-drafting
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/legal/skills/legal-response
+  license: Apache-2.0
+- slug: lifecycle-email-marketing
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/emails
+  license: MIT
+- slug: market-size-estimation
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: phuryn/pm-skills/pm-market-research/skills/market-sizing
+  license: MIT
+- slug: marketing-content-strategy
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/content-strategy
+  license: MIT
+- slug: marketing-copy-editing
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/copy-editing
+  license: MIT
+- slug: marketing-copywriting
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/copywriting
+  license: MIT
+- slug: month-end-close-management
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/close-management
+  license: Apache-2.0
+- slug: multi-source-research-synthesis
+  categories:
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis
+  license: Apache-2.0
+- slug: nda-risk-review
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/claude-for-legal/commercial-legal/skills/nda-review
+  license: Apache-2.0
+- slug: operational-risk-assessment
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/risk-assessment
+  license: Apache-2.0
+- slug: operational-runbook-writing
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/runbook
+  license: Apache-2.0
+- slug: partner-co-marketing
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/co-marketing
+  license: MIT
+- slug: people-analytics-reporting
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/people-report
+  license: Apache-2.0
+- slug: portfolio-company-performance-review
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring
+  license: Apache-2.0
+- slug: pricing-and-packaging-strategy
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/pricing
+  license: MIT
+- slug: product-experiment-design
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing
+  license: MIT
+- slug: product-launch-marketing
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/launch
+  license: MIT
+- slug: product-marketing-context
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/product-marketing
+  license: MIT
+- slug: product-metrics-dashboard-design
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: phuryn/pm-skills/pm-product-discovery/skills/metrics-dashboard
+  license: MIT
+- slug: product-requirements-writing
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/write-spec
+  license: Apache-2.0
+- slug: product-research-synthesis
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/synthesize-research
+  license: Apache-2.0
+- slug: product-roadmap-planning
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/roadmap-update
+  license: Apache-2.0
+- slug: product-stakeholder-update
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/stakeholder-update
+  license: Apache-2.0
+- slug: product-strategy-canvas
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: phuryn/pm-skills/pm-product-strategy/skills/product-strategy
+  license: MIT
+- slug: productivity-setup
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/start
+  license: Apache-2.0
+- slug: productivity-task-sync
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/update
+  license: Apache-2.0
+- slug: project-status-report
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/status-report
+  license: Apache-2.0
+- slug: recruiting-pipeline
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline
+  license: Apache-2.0
+- slug: sales-account-research
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/account-research
+  license: Apache-2.0
+- slug: sales-call-preparation
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/call-prep
+  license: Apache-2.0
+- slug: sales-enablement-content
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/sales-enablement
+  license: MIT
+- slug: sales-outreach-drafting
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/draft-outreach
+  license: Apache-2.0
+- slug: sales-pipeline-review
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/pipeline-review
+  license: Apache-2.0
+- slug: seo-report-generation
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: every-app/open-seo/plugins/openseo/skills/seo-report
+  license: MIT
+- slug: social-media-management
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/social
+  license: MIT
+- slug: software-debugging
+  categories:
+  - development
+  required_providers: []
+  source: wshobson/agents/plugins/developer-essentials/skills/debugging-strategies
+  license: MIT
+- slug: software-incident-response
+  categories:
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/engineering/skills/incident-response
+  license: Apache-2.0
+- slug: software-test-planning
+  categories:
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/engineering/skills/testing-strategy
+  license: Apache-2.0
+- slug: supply-chain-risk-auditor
+  categories:
+  - development
+  required_providers: []
+  source: trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
+  license: CC-BY-SA-4.0
+- slug: support-ticket-triage
+  categories:
+  - support
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/ticket-triage
+  license: Apache-2.0
+- slug: task-list-management
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/task-management
+  license: Apache-2.0
+- slug: team-capacity-planning
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/capacity-plan
+  license: Apache-2.0
+- slug: user-cohort-analysis
+  categories:
+  - research
+  required_providers: []
+  source: phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis
+  license: MIT
+- slug: vendor-contract-status
+  categories:
+  - operations
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/legal/skills/vendor-check
+  license: Apache-2.0
+- slug: vendor-evaluation
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/vendor-review
+  license: Apache-2.0
+- slug: verification-before-completion
+  categories:
+  - development
+  required_providers: []
+  source: obra/superpowers/skills/verification-before-completion
+  license: MIT
+- slug: website-seo-audit
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: every-app/open-seo/plugins/openseo/skills/seo-audit
+  license: MIT
+- slug: workplace-memory-management
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
+  license: Apache-2.0

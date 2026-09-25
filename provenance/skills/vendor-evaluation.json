@@ -1,0 +1,114 @@
+{
+  "schema_version": 3,
+  "slug": "vendor-evaluation",
+  "name": "vendor-evaluation",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/vendor-review",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/vendor-review/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/vendor-review",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/LICENSE",
+    "scope": "Complete original package at historical clean-license commit; no later source mixed with earlier license. Plugin license controls where present; otherwise original root Apache-2.0.",
+    "obligations": [
+      "Include Apache-2.0 license and applicable copyright/attribution notices.",
+      "Retain applicable NOTICE content; do not imply endorsement.",
+      "If later modified, identify modifications; these archived selections are unchanged."
+    ],
+    "file": "skills/vendor-evaluation/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "c2a959a7ed068e34a83984cf223754062e6819deb0ba1ca33eb747b4cc808d5e",
+  "assignments": [
+    {
+      "expert": "Vera",
+      "role": "Procurement Specialist",
+      "status": "core",
+      "essential_function": "Compare suppliers and renewals using total cost,risk,performance and negotiation options.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "James",
+      "role": "Operations Manager",
+      "status": "core",
+      "essential_function": "Review a vendor’s performance, cost, contract/renewal terms and risk, then prepare a renewal or negotiation recommendation.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "9e22dc431e1554640b050523",
+    "2037c95a6f4dad81eae32594",
+    "9818315323f66d10bfb36581",
+    "f783cc14fb5ca01687d8d78f",
+    "4d384707e8d97a0ebff2066a",
+    "5bfc9a2033809fb66350dd6f",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "c213010e53cc572ec5881cbd"
+  ],
+  "review": "Reused prior full-source review and verified historical identity; supplier decision support ties commercial performance to renewal questions.",
+  "native_prerequisites": [
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "vendor-review",
+  "previous_catalog_slug": "vendor-review",
+  "packaged_sha256": "b434d89d8c51aedb58ee2fd3b53a1a2ac0055aa6b5bdf220af8e8a88afaecd43",
+  "original_native_prerequisites": [
+    "Proposal,contract,pricing and current performance documents.",
+    "operations/CONNECTORS.md; optional procurement or knowledge-base connections for existing policies/contracts/spend.",
+    "User context for purchase,renewal or comparison; source does not supply market data automatically."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Every primary, support and controlling licence file comes from the same clean historical commit. Primary and required support bytes were compared with the previous pin; no current source is paired with an older licence."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "operations/README.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.mcp.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {
+      "argument-hint": "<vendor name or proposal>"
+    },
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "essential_function": "Review a vendor’s performance, cost, contract/renewal terms and risk, then prepare a renewal or negotiation recommendation.",
+  "prior_source_pin": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/vendor-review"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/vendor-review",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "c2a959a7ed068e34a83984cf223754062e6819deb0ba1ca33eb747b4cc808d5e"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not authorize signing, purchases or legal acceptance; does not implement a complete RFx procurement process."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

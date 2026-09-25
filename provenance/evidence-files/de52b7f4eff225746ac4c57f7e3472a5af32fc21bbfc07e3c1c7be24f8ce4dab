@@ -1,0 +1,2133 @@
+{
+  "repo": "AgriciDaniel/claude-ads",
+  "sha": "ac21644933910419529bcf81efb95a9ca71edf81",
+  "url": "https://api.github.com/repos/AgriciDaniel/claude-ads/git/trees/ac21644933910419529bcf81efb95a9ca71edf81?recursive=1",
+  "method": "git ls-tree -rz at immutable commit; raw local Git blobs verified",
+  "verification_git_directory": "work/extra-expert-research/marketing-partnerships/verification/claude-ads.git",
+  "tree": [
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "type": "blob",
+      "sha": "d86472aef6a24557cdcb2d425ec3e7d194112d64",
+      "mode": "100644"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "type": "blob",
+      "sha": "133d3c950806f10a19ee97d14491426d33cc261d",
+      "mode": "100644"
+    },
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "sha": "29cedbaad648931ed6eaade5048beba2db8c7a48",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "type": "blob",
+      "sha": "950255122ccca961d840b7f80d7ebfd7542ae771",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "type": "blob",
+      "sha": "b4715f62e07eda6ffefaa4cc98f603b527d206fa",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "type": "blob",
+      "sha": "fd610078632adf576eabfb01992023d64a9db47f",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "type": "blob",
+      "sha": "da89507a23db8c7f0f5395f2dae2d07117f4a0dd",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "type": "blob",
+      "sha": "8e2480ad49c19ec70a57b0692f9b67c57c3f1897",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "type": "blob",
+      "sha": "f6f3246cb6fb0ea42bdf8db419f4914bbd086739",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/release.yml",
+      "type": "blob",
+      "sha": "35e67e942bf5cf4b576527ba300e7f1c906fc9da",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/requirements-pip-audit.lock",
+      "type": "blob",
+      "sha": "bfbfc8d666a41463879f823a60ec47937e82f26b",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/requirements-schema-tests.in",
+      "type": "blob",
+      "sha": "4be7f987cdaf5e2f8c208402a3bb2a1570aec9e2",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/requirements-schema-tests.lock",
+      "type": "blob",
+      "sha": "b47cd5b709fa18917cefbcf1b0c9b369160028d0",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "sha": "ca25b030b4f06f14f5f0ad45baf920021fc35a18",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "type": "blob",
+      "sha": "baf1fb6f85a495752a7e51f01c78d4d044fe83f8",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/dependabot-automerge.yml",
+      "type": "blob",
+      "sha": "0aed4d98353f89be895d41be5d7b438d5fb9361b",
+      "mode": "100644"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "sha": "e08d48b2b8173e35681a79568e39fcbfb6100d46",
+      "mode": "100644"
+    },
+    {
+      "path": "AGENTS.md",
+      "type": "blob",
+      "sha": "c5602caaabbd7b5c620918c9410c0af6989e5b72",
+      "mode": "100644"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "type": "blob",
+      "sha": "460411f1af9bf0bcdfad9b703b9d0d9534061c97",
+      "mode": "100644"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "sha": "a5bcb963c485afb2ac28d9f966c3249ef5076114",
+      "mode": "100644"
+    },
+    {
+      "path": "CLAUDE.md",
+      "type": "blob",
+      "sha": "098a2c022feb70972c0af4e6994fa28637537c27",
+      "mode": "100644"
+    },
+    {
+      "path": "CODEX.md",
+      "type": "blob",
+      "sha": "4bbb02c86d6f91b091119efd4690b6f1f5de5c96",
+      "mode": "100644"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "type": "blob",
+      "sha": "c5724d8d9ae98f83edcf742a30e3334371252a19",
+      "mode": "100644"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "sha": "34b6ce77c590aeacbd2dc19dd352649d85ac2b88",
+      "mode": "100644"
+    },
+    {
+      "path": "GEMINI.md",
+      "type": "blob",
+      "sha": "4327b2e872d32cc78cf9b995d7b71dfdf3b6b85b",
+      "mode": "100644"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "sha": "94fac7465f1e76414fc59f9fd97cdfd2105e030d",
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "sha": "282ebcf00376677a2b647baefd809181dcbafd4e",
+      "mode": "100644"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "sha": "d2f4931b597228719d151cf7467529e04c7ef131",
+      "mode": "100644"
+    },
+    {
+      "path": "SUPPORT.md",
+      "type": "blob",
+      "sha": "a73b1b1ce9b9915fb9c67ba95711af37b26905a3",
+      "mode": "100644"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "type": "blob",
+      "sha": "6821571f220e515b8b39af5844ba119c177f9cd9",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/SKILL.md",
+      "type": "blob",
+      "sha": "0db1fbe6453c2032d9c148225008216cde8c51ea",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/agents/openai.yaml",
+      "type": "blob",
+      "sha": "e4e705669ab8ed0678f9cdf5ef24556831971673",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/additional-platforms.md",
+      "type": "blob",
+      "sha": "447928e1ada92f4704969f5e2add5bd75d8aaee6",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/amazon-audit.md",
+      "type": "blob",
+      "sha": "fa556a43abfb331b1423c2fb8f5d1b26687ac51a",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/apple-audit.md",
+      "type": "blob",
+      "sha": "6e509d641cc5f6acca2fb053b11ea4021ec93b8f",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/automation-tier-classifier.md",
+      "type": "blob",
+      "sha": "561666c9eb4728e510f76988536713abc1ebeeac",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/benchmarks.md",
+      "type": "blob",
+      "sha": "28423f092e161d2b88ed107d04984ef310960bf8",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/bidding-strategies.md",
+      "type": "blob",
+      "sha": "12fc134b2904cbc58649957b8d8ff0d7905a0652",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/budget-allocation.md",
+      "type": "blob",
+      "sha": "a80ad2f309a812cc5d13484f9bc3fd75f89fdc8f",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/compliance-requirements.md",
+      "type": "blob",
+      "sha": "8c932b727da41dc9993d625cec62b588b116d7da",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/compliance.md",
+      "type": "blob",
+      "sha": "105f6c36141518300a4b9a62e88fae5f6f48208e",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/conversion-tracking.md",
+      "type": "blob",
+      "sha": "2b9f760b909e5f86fbabe7070226637e98c211da",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/copy-frameworks.md",
+      "type": "blob",
+      "sha": "f3ef7745e9ac656dca0f7168ccf26ccacebc2744",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/creative-source-registry.md",
+      "type": "blob",
+      "sha": "fca997da37eaa5353db871f12c6840aff1c8db78",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/gaql-notes.md",
+      "type": "blob",
+      "sha": "3b2e7221da7ba782fb791c86ee12e53f1eea2ed0",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/google-audit.md",
+      "type": "blob",
+      "sha": "cf2d2a4b6068006cbad57fe637df6a6320d31998",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/google-creative-specs.md",
+      "type": "blob",
+      "sha": "1b77edc2fe8a0e4feb32fd304407c2e6e44bd511",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/image-providers.md",
+      "type": "blob",
+      "sha": "8dea89a8b2601ee512a7b9d7d9f0f7e006cc58a8",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/linkedin-audit.md",
+      "type": "blob",
+      "sha": "4a0b9a3b83e0f8c04378160891e22865b466fbae",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/linkedin-creative-specs.md",
+      "type": "blob",
+      "sha": "787aacbe3c42631fdf03790ff14282fa59004bb3",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/mcp-integration.md",
+      "type": "blob",
+      "sha": "03fab7baaa58b070995a4ea4a8465586bf04c070",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/meta-ai-stack.md",
+      "type": "blob",
+      "sha": "f48617233c4374bd232ebe0371ae94d66d1075b1",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/meta-audit.md",
+      "type": "blob",
+      "sha": "87d8a4750d315b9f21cad2d220101b49e854860b",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/meta-creative-specs.md",
+      "type": "blob",
+      "sha": "cee5e5119ca81610a7112cb5a84f6b1e1b59f1fc",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/microsoft-audit.md",
+      "type": "blob",
+      "sha": "9f9ef8eaf316f4784949629098b69c5071a5d46c",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/microsoft-creative-specs.md",
+      "type": "blob",
+      "sha": "c9a822cd753067e54f670a487ffa09c3086f2924",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/pinterest-audit.md",
+      "type": "blob",
+      "sha": "2d607e8a64355d5b9234f95c3c7be05e1ab89804",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/platform-specs.md",
+      "type": "blob",
+      "sha": "8bca67bc0a28a80cf8a8d77fc27d1849c05e529f",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/prompt-patterns.md",
+      "type": "blob",
+      "sha": "965b6d980498a59fe4e07f8976656a43ef078a16",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/reddit-audit.md",
+      "type": "blob",
+      "sha": "ac3624d67faa4560353d8bdcd5b6c3dbb57b5bda",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/scoring-system.md",
+      "type": "blob",
+      "sha": "f8312e5e7b17cc778365da29ec2f222c8de5a448",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/snapchat-audit.md",
+      "type": "blob",
+      "sha": "c9c25e61a6df735024e1f7a52c2b8ad5ea9e42ed",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/status-contract.md",
+      "type": "blob",
+      "sha": "9d076baa1b4a0e00a2c92f32e4e17914aa336ac8",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/thinking-framework.md",
+      "type": "blob",
+      "sha": "650cac6adfba41a7dac90290d5b21dc3a1c6d4eb",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/tiktok-audit.md",
+      "type": "blob",
+      "sha": "068f80aa6a861b3e5aa5d59f59cf12ba61ab55bc",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/tiktok-creative-specs.md",
+      "type": "blob",
+      "sha": "3c0276007c3d2174b7ab31db4276e0427112b0ac",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/voice-to-style.md",
+      "type": "blob",
+      "sha": "cd37e0b8cc41d09924b66fc7c046deab5dc45ba3",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/x-audit.md",
+      "type": "blob",
+      "sha": "54629fa0395fb8e28bf5775d75e47da3a4da285d",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/youtube-audit.md",
+      "type": "blob",
+      "sha": "bbdf3298bdd575d84ad86a1398bd5babe9d06009",
+      "mode": "100644"
+    },
+    {
+      "path": "ads/references/youtube-creative-specs.md",
+      "type": "blob",
+      "sha": "800accb4f09a5eec7f3f043e47a74ece57cc4436",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-amazon.md",
+      "type": "blob",
+      "sha": "b5438716c40c8ef43655e27182310bdfd99f3102",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-apple.md",
+      "type": "blob",
+      "sha": "dced74bdced0944386683524539539fdf3546259",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-budget.md",
+      "type": "blob",
+      "sha": "aa122812763e1f8b714209da70c852556383a49e",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-creative.md",
+      "type": "blob",
+      "sha": "7423c7f987c2c63264f1423c9efeed5b5cc44fc6",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-google.md",
+      "type": "blob",
+      "sha": "47bc5ed3b121af9498461d6fd05ab9442f6949e7",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-linkedin.md",
+      "type": "blob",
+      "sha": "a56481e671e162b3936fbc7daeacd268a1aa804f",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-meta.md",
+      "type": "blob",
+      "sha": "94d84b465db6b4053895b1da3421bbaa86799ec7",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-microsoft.md",
+      "type": "blob",
+      "sha": "b1d668132be777993150d382f9cae1e327fde000",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-pinterest.md",
+      "type": "blob",
+      "sha": "b933d7feb694cbbab4cb5b8efc915be498a9b899",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-policy-compliance.md",
+      "type": "blob",
+      "sha": "983049bb5e0926fecbaab446061a481d8eeb7a53",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-reddit.md",
+      "type": "blob",
+      "sha": "3ff863a7b2393f0468a1379af45997f4738c0100",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-regulatory-compliance.md",
+      "type": "blob",
+      "sha": "adf819c7a1e401c8566cf8caa230492d28f3d8f5",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-snapchat.md",
+      "type": "blob",
+      "sha": "0e4d9fd620dd9fb1015516fe3be3cee704824251",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-tiktok.md",
+      "type": "blob",
+      "sha": "64b9192ddf5ab478478a5970a936262896b84cb5",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-tracking.md",
+      "type": "blob",
+      "sha": "7ca0037f4fe9b553f31ebd18eb78a3d2f80df1c3",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-x.md",
+      "type": "blob",
+      "sha": "9f825411978a3f59779a16f890e87b91691d4fe5",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/audit-youtube.md",
+      "type": "blob",
+      "sha": "c8c513072a64827eaa6cb6c7b8f30d95adc1d300",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/copy-writer.md",
+      "type": "blob",
+      "sha": "d052bcd37d87fd423422c062c8ec7e8dbb98de59",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/creative-strategist.md",
+      "type": "blob",
+      "sha": "19d0f1b0da6b6617f6269bf12ca01b8d6a6b0d2f",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/format-adapter.md",
+      "type": "blob",
+      "sha": "54fba1a45c5a75150dd4bdd6c948ce434b9ff141",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/release-verifier.md",
+      "type": "blob",
+      "sha": "3a26b55009dc21836b7f8bf3cf74ef5f6edbc927",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/research-worker.md",
+      "type": "blob",
+      "sha": "6c5ed745000bf54590bbb1e51786d1f17c5923ad",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/skill-reviewer.md",
+      "type": "blob",
+      "sha": "81fc791d189778056f7e3c797aaa2e2bb744ba0b",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/source-verifier.md",
+      "type": "blob",
+      "sha": "36616c8e91c53fa556bb348e7c72e612455ac08d",
+      "mode": "100644"
+    },
+    {
+      "path": "agents/visual-designer.md",
+      "type": "blob",
+      "sha": "5abec701fd1517b27f1725af778b93e7fa276b21",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/banner.svg",
+      "type": "blob",
+      "sha": "effe116db8945ec8c938b17ef2dd913c4d4f5d10",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/demo.gif",
+      "type": "blob",
+      "sha": "5ba38fc2fe131452a3914e6a04cc8b292218320c",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/diagrams/ads-health-score.svg",
+      "type": "blob",
+      "sha": "a0a51c693fbc83ff70c29b6aafc62766f01c02e6",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/diagrams/architecture.svg",
+      "type": "blob",
+      "sha": "68e7aa3755246e15c7de90c237a472773dce8758",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/diagrams/how-it-works.svg",
+      "type": "blob",
+      "sha": "a1b2720f44fb35f940698a451206fd880980bb0a",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/diagrams/platform-coverage.svg",
+      "type": "blob",
+      "sha": "19ca41c0fcd1187d377273b9068b6a32503c969e",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/__init__.py",
+      "type": "blob",
+      "sha": "3a69abfc3b29dab43d7729d8e5bd08551fe2c572",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/__main__.py",
+      "type": "blob",
+      "sha": "eb53e2f31b2f703ad32ef64b8a41faa3e7d18e08",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/adapters/__init__.py",
+      "type": "blob",
+      "sha": "cff3d83bd0c5c84644f4c31f6a8c47d625ec8d0a",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/adapters/base.py",
+      "type": "blob",
+      "sha": "03dde2612491295e777349df8b6686a0732a07b4",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/adapters/csv_export.py",
+      "type": "blob",
+      "sha": "4ca7adb0ea788f5df74d1a8d46fc80440efdad72",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/adapters/mappings_v1.py",
+      "type": "blob",
+      "sha": "05e0c401b55f12c284287a784cebdca4a2b2af6e",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/adapters/native_export.py",
+      "type": "blob",
+      "sha": "a27b6015fb4d9efeab12bc20492e056487a9af18",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/cli.py",
+      "type": "blob",
+      "sha": "77f45f5bc4b43565485c47f795533aba7b40129d",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/contracts.py",
+      "type": "blob",
+      "sha": "d78c2025b8cf6c41710b3bee0f1e9f39c682af5c",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/control_registry.py",
+      "type": "blob",
+      "sha": "b4eca5174b5283cd03aafa04b1fe8adefab124a1",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/models.py",
+      "type": "blob",
+      "sha": "cd78309443fc45926a140cc7e2074633f76d6477",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/orchestration.py",
+      "type": "blob",
+      "sha": "368c3058ec1e2d51e7a4c02d2209a7f3d5ec391b",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/product_status.py",
+      "type": "blob",
+      "sha": "07694359bcb622bc1b5fcf5ebf2570d6955fd18f",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/reporting.py",
+      "type": "blob",
+      "sha": "949a9aa3b18e28cb267223a95c7205031fd6ebcf",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/account-snapshot.schema.json",
+      "type": "blob",
+      "sha": "149674e02ff633381b8005acde11f154b382affd",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/brand-profile.schema.json",
+      "type": "blob",
+      "sha": "fa6ce64f828264f11272444939bc0b2313c8880f",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/control-definition.schema.json",
+      "type": "blob",
+      "sha": "0b27bb3d3d2f1e1972804f0dde259fc730676d56",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/creative-brief.schema.json",
+      "type": "blob",
+      "sha": "eb3597aff213a67eb90da2b5e8ebc9f655f4f6d3",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/data-lifecycle.schema.json",
+      "type": "blob",
+      "sha": "2a851e4b648ae5b050010e729831bf040b765cc6",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/experiment-artifact.schema.json",
+      "type": "blob",
+      "sha": "ef1e8c18a643fbbb721f1c0c25480a0fd33e283b",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/finding.schema.json",
+      "type": "blob",
+      "sha": "f084eaa4c3e4c97cad6a335167a239aa429e9ce4",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/generation-manifest.schema.json",
+      "type": "blob",
+      "sha": "3418fa68b1c962473bbcf76910920f918ac6bb5d",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/media-plan.schema.json",
+      "type": "blob",
+      "sha": "f70ccf40a0d87a70766dbdac632788a45c8fd99b",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/monitoring-bundle.schema.json",
+      "type": "blob",
+      "sha": "10c827cc2119bc9dd6a9ca1df623bb2a24078df8",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/mutation-plan.schema.json",
+      "type": "blob",
+      "sha": "76bb0c3db78077c0d9708c099f2030901ed5c882",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/orchestration-gate.schema.json",
+      "type": "blob",
+      "sha": "fc2c382b3519783c99b1a190a612e2072bbac5a0",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/orchestration-result.schema.json",
+      "type": "blob",
+      "sha": "be7c6cc20b0370b49be62781dd70d2cd6f5d6115",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/orchestration-run.schema.json",
+      "type": "blob",
+      "sha": "28e11234dbf90a0c2aa3f723223154efa4ffafe4",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/orchestration-task.schema.json",
+      "type": "blob",
+      "sha": "613c4be002151fe3129acd922d69035e195b9e4c",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/report-bundle.schema.json",
+      "type": "blob",
+      "sha": "53b4d58a8e31281eac68576bc50018d669708168",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/run-manifest.schema.json",
+      "type": "blob",
+      "sha": "20deebc85111771aff6999efa78206ae5b25ff56",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/setup-profile.schema.json",
+      "type": "blob",
+      "sha": "3f21974d0cfe39e1cbb60842d5f27cab052ef136",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/schemas/v1/workflow-common.schema.json",
+      "type": "blob",
+      "sha": "cc9d433c983c7bf08ce69cbce2e14aa231f55007",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/scoring.py",
+      "type": "blob",
+      "sha": "022c2f61b0c1a55cd8a4e1c886329847ea066288",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/workflow_contracts.py",
+      "type": "blob",
+      "sha": "37cf0e79ea5b4e2eff2a3b657a4065e4b1b0cee0",
+      "mode": "100644"
+    },
+    {
+      "path": "claude_ads_core/workflow_models.py",
+      "type": "blob",
+      "sha": "3fcb14d5237adbf3e7ced9dbbc5d938af6e51310",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/PRODUCT_BOUNDARIES.md",
+      "type": "blob",
+      "sha": "815d0a0cf57ce69c8890a53dab22bc47b64bfc89",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/PUBLISHING_POLICY.md",
+      "type": "blob",
+      "sha": "b60621524802b4bba32465bdf2371d9a22a79ecf",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/README.md",
+      "type": "blob",
+      "sha": "0a3738a324efa5420aaa7b85b20f4cd12e03d67e",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/RELEASE_REQUIREMENTS.md",
+      "type": "blob",
+      "sha": "79dd1f41cd4b650c0f3b454760d8fd49cbd0daf0",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/REQUIREMENT_INDEX.md",
+      "type": "blob",
+      "sha": "3837fb2be8e949a52f083c9eb5b4de26bab6d8cd",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-linux-cp311.json",
+      "type": "blob",
+      "sha": "323eaade39abe7fa3638ead60de044fc872b1c20",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-linux-cp312.json",
+      "type": "blob",
+      "sha": "3d07ce20edaeb0c9dd823d28e5727d3897e651dc",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-macos-arm-cp311.json",
+      "type": "blob",
+      "sha": "dda940873e0f73c4479253cc958d224e762faf5e",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-macos-arm-cp312.json",
+      "type": "blob",
+      "sha": "f98045a1a3df370a3ef5256f9ae841c7da858935",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-macos-x86-cp311.json",
+      "type": "blob",
+      "sha": "9f068ea0fb9e985be7cf5d7607e97bce51b02439",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-macos-x86-cp312.json",
+      "type": "blob",
+      "sha": "9dcef0dbcb226577e174cfbe4f2517f0d2797ca8",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-windows-cp311.json",
+      "type": "blob",
+      "sha": "a1f1c8ede15f3f196e7f853319e8afcb9c2556b9",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/development-windows-cp312.json",
+      "type": "blob",
+      "sha": "7ffdbeb8eb2c54fca9b99bfe5755ca3a37b050f3",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-linux-cp311.json",
+      "type": "blob",
+      "sha": "da743ca3138017a9e3a9ea24db5e472d2de14d63",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-linux-cp312.json",
+      "type": "blob",
+      "sha": "3671a0ab81d171d1db8a8e9244a469e2c8a3e80a",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-macos-arm-cp311.json",
+      "type": "blob",
+      "sha": "9eadc5fd43a7c76e55b7aa46ba55d93f5525a6c9",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-macos-arm-cp312.json",
+      "type": "blob",
+      "sha": "06d65c4d86cf8f97424a340f6d0dfab64bbb3bf4",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-macos-x86-cp311.json",
+      "type": "blob",
+      "sha": "cdf251e1b6773daf122f32057dbdccc13f49435e",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-macos-x86-cp312.json",
+      "type": "blob",
+      "sha": "86acfc0d25513862f69833262937d1669da448fd",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-windows-cp311.json",
+      "type": "blob",
+      "sha": "bf6ca24c4fe4c724cd6d4c0cd54cd7910e0e77a4",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/dependency-evidence/runtime-windows-cp312.json",
+      "type": "blob",
+      "sha": "8aeed338bd565f5b320c49321b7b8e5fecaab219",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/capability-manifest.json",
+      "type": "blob",
+      "sha": "83621064a9b5d25af3211f8938704ddb9ccdca6b",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/claim-ledger.json",
+      "type": "blob",
+      "sha": "d57bf03e918f7aacade998b6457008c04fa9147e",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/control-registry.json",
+      "type": "blob",
+      "sha": "d491b1d67adea9a8e03867e065a4a171aeaf57bf",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/data-lifecycle-policy.json",
+      "type": "blob",
+      "sha": "9e068f824f2ca35a9b6674722d5ce897c973ff69",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/dependency-inventory.json",
+      "type": "blob",
+      "sha": "688f3a8ed029f31f399e1a5b7fa6a81deb5869f6",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/ecosystem-dispositions.json",
+      "type": "blob",
+      "sha": "18135bb3070a02abbc02dc48e98f156621a69375",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/external-runtime-dependencies.json",
+      "type": "blob",
+      "sha": "015662ea4ebed8afea18ac74605cb3b652eb2a55",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/maturity-status.json",
+      "type": "blob",
+      "sha": "151ddd56ba34c474280496626e4ff7d83241cb33",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/orchestration-policy.json",
+      "type": "blob",
+      "sha": "46e6bd35dd244f020d9743c870e14fb687e4b420",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/product-manifest.json",
+      "type": "blob",
+      "sha": "af46ad3baf885c1fa382fa23c8149af4e429ee65",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/repository-review-ledger.json",
+      "type": "blob",
+      "sha": "03e4e168a2c324e6334d8a787b5233526d88ad8f",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/review-policy.json",
+      "type": "blob",
+      "sha": "721e73bd778b7e91209785fe2e791f01698006a4",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/reviews/code.review.template.json",
+      "type": "blob",
+      "sha": "c642514dfd6e3c40126d6f7fd799a1ad1824bf72",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/reviews/evidence.review.template.json",
+      "type": "blob",
+      "sha": "80e5046d679541e33b07e3cea7b2715e78bd9302",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/reviews/licensing.review.template.json",
+      "type": "blob",
+      "sha": "d33f846d8efb12148a80a7ac4ea7862f3255dbd4",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/reviews/privacy.review.template.json",
+      "type": "blob",
+      "sha": "084d6bbbfd6d894af35d9011a1f8da0ca85f22ea",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/reviews/security.review.template.json",
+      "type": "blob",
+      "sha": "c8f4c6b47dff252240069df3722e22758447363b",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/safety-policy.json",
+      "type": "blob",
+      "sha": "21ae24fb44fff7bb882be9f50d5c8913646fd94b",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/scoring-profiles.json",
+      "type": "blob",
+      "sha": "5168b2fe3ab57adfc1f1a5566dccd1e8554bea34",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/source-ledger.json",
+      "type": "blob",
+      "sha": "266d9ad28636cec84d510ac5fe6235535cc2cf4b",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/manifests/vulnerability-exceptions.json",
+      "type": "blob",
+      "sha": "6570478f9618ca96704b2b00344eedd80164762d",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/migrations/control-schemas-v1-to-v2.md",
+      "type": "blob",
+      "sha": "af8de3b0157bd02cc2e15e60705faca5922f13a9",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/browser-capture-receipt.schema.json",
+      "type": "blob",
+      "sha": "8bb18a5eef10df9b12c9b329956d8d53dc4390ff",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/capability-manifest.schema.json",
+      "type": "blob",
+      "sha": "80ba852feac8cc979b0ef7107504d3973c0c910c",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/claim-ledger.schema.json",
+      "type": "blob",
+      "sha": "ccd9b38d418499cf5a36f12aa9d774c679a13507",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/control-registry.schema.json",
+      "type": "blob",
+      "sha": "1d154161655fadb5361b288a2557e04450b401c5",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/creative-worker-result.schema.json",
+      "type": "blob",
+      "sha": "e4e3101c721a9b3f0101fbd1bb38d8716dda7cc1",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/data-lifecycle-policy.schema.json",
+      "type": "blob",
+      "sha": "d03a3d1bc3058d94315f0ba59262173a4978245f",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/dependency-inventory.schema.json",
+      "type": "blob",
+      "sha": "093aed79b5351a1ac5958e575995c6820189ae96",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/ecosystem-dispositions.schema.json",
+      "type": "blob",
+      "sha": "d692483581c92116c4f793e43bf7e10b03f7dd9c",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/ecosystem-dispositions.v1.schema.json",
+      "type": "blob",
+      "sha": "f6ada65ad64d60136911163f2ee9f6988fc5f966",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/egress-sandbox-attestation.schema.json",
+      "type": "blob",
+      "sha": "2753bfea7e8c1b67045edc2a089598d7c6a6d5ee",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/independent-review-evidence.schema.json",
+      "type": "blob",
+      "sha": "468f0bf0ac78d75c28cbd9579a46e6dd8f1aae58",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/maturity-status.schema.json",
+      "type": "blob",
+      "sha": "cf88000a6e6f5b70f0f933330af22d8a7fb8009f",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/orchestration-packet.schema.json",
+      "type": "blob",
+      "sha": "fbf66fbd0f76422863a43bb37b7b9c596a5ce263",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/product-status.schema.json",
+      "type": "blob",
+      "sha": "0da830e8407c3ea61f3ba2333b29d0163404f22c",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/release-gate-report.schema.json",
+      "type": "blob",
+      "sha": "18d4d60143763fd4c264e9a9096c6db2148e53c8",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/release-gate-report.v1.schema.json",
+      "type": "blob",
+      "sha": "c9fd5e8dc5dfb7e7397a79519ffbaf0e701c4a29",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/repository-review-ledger.schema.json",
+      "type": "blob",
+      "sha": "32334e6d6935023c6d8e30ee4357f082405e595e",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/review-policy.schema.json",
+      "type": "blob",
+      "sha": "cb7a1f731f7b81c3cced947e79d7a6a9bd358c59",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/review-trust-bundle.schema.json",
+      "type": "blob",
+      "sha": "ead674c2a6d69ecd1e328cadaaf37d917537adb1",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/safety-policy.schema.json",
+      "type": "blob",
+      "sha": "8311cb7ae7b3762ffd200f21b9d1c4b73b4c91f4",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/scoring-profiles.schema.json",
+      "type": "blob",
+      "sha": "6a3187208ed4ae0a867b662dd1ca10f4223cd47a",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/source-ledger.schema.json",
+      "type": "blob",
+      "sha": "dc1d6c2da57080454242c4d6927a5f9c47fa8362",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/target-evidence.schema.json",
+      "type": "blob",
+      "sha": "0c90892ea43928017349742784132741cd8168a0",
+      "mode": "100644"
+    },
+    {
+      "path": "control-plane/schemas/vulnerability-exceptions.schema.json",
+      "type": "blob",
+      "sha": "404734568e94ddbd50ca91f1f827e7029f63489b",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/creative-evals.json",
+      "type": "blob",
+      "sha": "c7601a5d96d8ced2b045f674fbe52b56ebe5a7c6",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/model-eval-contract.json",
+      "type": "blob",
+      "sha": "cabc58f8bf2ddde75e7f849af39b00b023819560",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/model_eval_gate.py",
+      "type": "blob",
+      "sha": "f58fe3bcccba89e659a6d75cde80ada5ae2128aa",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/model_evidence_auth.py",
+      "type": "blob",
+      "sha": "d932d12ea8571e7177614f1510e120cca293ac5d",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/platform-workflow-routing.json",
+      "type": "blob",
+      "sha": "bddac36f2ae840d4ff62f576cb10a1a68bb3dfeb",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/results/2026-07-11-codex-forward.json",
+      "type": "blob",
+      "sha": "1a24b78c8198d81079ed3c1f9454d9f27b5fd366",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/schemas/model-eval-trust-bundle.v1.schema.json",
+      "type": "blob",
+      "sha": "d901b97b27b2964d36314b14002a8143922c9c1c",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/schemas/model-gate-report.v2.schema.json",
+      "type": "blob",
+      "sha": "f2838c5137df4d2509add584defeaffda4104f9a",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/schemas/model-run-evidence.v2.schema.json",
+      "type": "blob",
+      "sha": "d983507495e41e147650ee662ffd60ea44a5d54f",
+      "mode": "100644"
+    },
+    {
+      "path": "evals/v2-behavior-evals.json",
+      "type": "blob",
+      "sha": "6bef086608f65630e21793885b7e644da357f61e",
+      "mode": "100644"
+    },
+    {
+      "path": "install.ps1",
+      "type": "blob",
+      "sha": "7147bf2bc8000b429b0971f61af160c5a5a50354",
+      "mode": "100644"
+    },
+    {
+      "path": "install.sh",
+      "type": "blob",
+      "sha": "4a0ef810d6af823ffb4acea165b830fabe30ee57",
+      "mode": "100755"
+    },
+    {
+      "path": "pyproject.toml",
+      "type": "blob",
+      "sha": "45134143e64c6f96ecc93f58a1513064d48b549d",
+      "mode": "100644"
+    },
+    {
+      "path": "requirements-dev.lock",
+      "type": "blob",
+      "sha": "3c4b70f6484d5d2daf29dc3c03b2e5e0a2925309",
+      "mode": "100644"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "type": "blob",
+      "sha": "50f208f401335040236426e82fd2f4aef549c0e3",
+      "mode": "100644"
+    },
+    {
+      "path": "requirements.lock",
+      "type": "blob",
+      "sha": "17f5f6e774fda20706002b96273a40fd759b0e1e",
+      "mode": "100644"
+    },
+    {
+      "path": "requirements.txt",
+      "type": "blob",
+      "sha": "b4801c747d95971671f793fb5fcb097fc3df6b17",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/analyze_landing.py",
+      "type": "blob",
+      "sha": "25562e90f010b394cb2c6f49ec07f12a8d7f5a64",
+      "mode": "100755"
+    },
+    {
+      "path": "scripts/audit_dependencies.py",
+      "type": "blob",
+      "sha": "14dac6529477a2eb8ced81189619f8b3ca4db82f",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/audit_ecosystem_live.py",
+      "type": "blob",
+      "sha": "8a322e36a4ec089f4204ead99437c01d399d8dbd",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/build_control_registry.py",
+      "type": "blob",
+      "sha": "3e398da5baac49cddc4e5ef917230cc2caca6856",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/capture_screenshot.py",
+      "type": "blob",
+      "sha": "e70014c54f53f933ac4f8afc1fad29b8f6ff2357",
+      "mode": "100755"
+    },
+    {
+      "path": "scripts/fetch_page.py",
+      "type": "blob",
+      "sha": "ff3fa5d73ca68a687d14842458352c5def50b932",
+      "mode": "100755"
+    },
+    {
+      "path": "scripts/generate_image.py",
+      "type": "blob",
+      "sha": "37f3801ec05f614abf3dc056d86252ce2edcb4c7",
+      "mode": "100755"
+    },
+    {
+      "path": "scripts/generate_report.py",
+      "type": "blob",
+      "sha": "12c07140b5982532c1abbf91d4fb9254029545ad",
+      "mode": "100755"
+    },
+    {
+      "path": "scripts/release.py",
+      "type": "blob",
+      "sha": "3c1b90671499b053028a131b33e361c0a0e0e478",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/review_evidence.py",
+      "type": "blob",
+      "sha": "f8bdb2a3ab9349b207821300ba476d23aa7d0544",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/url_utils.py",
+      "type": "blob",
+      "sha": "5dc367a7bc768895ba76cf2ce761851893b83b02",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/verify_managed_install.py",
+      "type": "blob",
+      "sha": "2ed4a142b48206cb42e6768f5e22ea51d7657933",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/verify_target_lock.py",
+      "type": "blob",
+      "sha": "98026f069332b89e01fce02d464ef97de34c74ad",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/write_install_receipt.py",
+      "type": "blob",
+      "sha": "f5c9cefac09ad557556df9f8cebb5c30adbf64ad",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-amazon/SKILL.md",
+      "type": "blob",
+      "sha": "c3fb2469a63bc15c57c59105b5a683ad7ca378eb",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-apple/SKILL.md",
+      "type": "blob",
+      "sha": "c6ca564c24f452deb0a04f8c5ec58423f24d34a2",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-attribution/SKILL.md",
+      "type": "blob",
+      "sha": "50886b15f1b66f7c3fb1389c03eb8559e628d8e7",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-audit/SKILL.md",
+      "type": "blob",
+      "sha": "ee50e66f42a5db84279a2d687885eabac6bd7937",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-budget/SKILL.md",
+      "type": "blob",
+      "sha": "139efa1d5c3d9c1660b3c9a21626c7f11ad875e5",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-competitor/SKILL.md",
+      "type": "blob",
+      "sha": "cbf0d156162781be4fd905fb9799eab37837b11e",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-create/SKILL.md",
+      "type": "blob",
+      "sha": "584d4ad347059720099125dd1c04d141f039870f",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-creative/SKILL.md",
+      "type": "blob",
+      "sha": "a1e47e7628f66e2357e3a4c0108b4cfab88d4094",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-dna/SKILL.md",
+      "type": "blob",
+      "sha": "44537fe4b521f87000d009a1688d49f8b39c72e5",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-generate/SKILL.md",
+      "type": "blob",
+      "sha": "0c68098595aa86e68882f7086c8933f60e127032",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-google/SKILL.md",
+      "type": "blob",
+      "sha": "2b146a73652b78cc06bc7805bf891b6c16cfe928",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-landing/SKILL.md",
+      "type": "blob",
+      "sha": "a0b1f492db5f67e7471e6e0b4433395bd5a6e178",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-launch/SKILL.md",
+      "type": "blob",
+      "sha": "59d8b74aa2c131ce47c9204e54cc10f911c4b92a",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-linkedin/SKILL.md",
+      "type": "blob",
+      "sha": "9fce0ea912055873a3c1a5c3c0f4d2b37a2086a7",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-math/SKILL.md",
+      "type": "blob",
+      "sha": "e196b7674615992240ec22f7de4eb51050795987",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-meta/SKILL.md",
+      "type": "blob",
+      "sha": "c7fea7c32b486bf67b0fd1f8cc3e5c8206eadde2",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-microsoft/SKILL.md",
+      "type": "blob",
+      "sha": "8efcc9d4c5db24709de063ae4580a6eec09adece",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-monitor/SKILL.md",
+      "type": "blob",
+      "sha": "4e3d3dcf78384a99a229f23a8cc65631a25b0535",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-optimize/SKILL.md",
+      "type": "blob",
+      "sha": "997d2ebcc74f4fe5122eebef174e039c08595e40",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-photoshoot/SKILL.md",
+      "type": "blob",
+      "sha": "6022860b8793776a10776f8591d9aed1812e8c99",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-pinterest/SKILL.md",
+      "type": "blob",
+      "sha": "80b51f37e01772269aeef7ac03b62ee5ba7e24fd",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/SKILL.md",
+      "type": "blob",
+      "sha": "dee88dcac31edfff6dba345ee2218f483f08ff02",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/agency.md",
+      "type": "blob",
+      "sha": "726d497bd0dc6f286b14f3e4ddae9e011dcc1ade",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/b2b-enterprise.md",
+      "type": "blob",
+      "sha": "8f04eefd22321643c1a5ce90b62a8253c75c2048",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/ecommerce-creative.md",
+      "type": "blob",
+      "sha": "11787b33e1962dd4789d48409e50649705bc945f",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/ecommerce.md",
+      "type": "blob",
+      "sha": "e58f750901e4b884093e1cbd44c1f29422828fff",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/finance.md",
+      "type": "blob",
+      "sha": "4b29a7ee5ad204da84b22f49a27ad3f2db72e934",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/generic.md",
+      "type": "blob",
+      "sha": "f90897ee563f2431f57cbebdabacb4ed57f46fcf",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/healthcare.md",
+      "type": "blob",
+      "sha": "62ad2c55872306a22126ed810be5174912e080df",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/info-products.md",
+      "type": "blob",
+      "sha": "29c37d5233ac1a7da28a1cdfbb500626e632ff21",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/local-service.md",
+      "type": "blob",
+      "sha": "26dc9876c6471c35e45567b72761d163d482d158",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/mobile-app.md",
+      "type": "blob",
+      "sha": "af3dfffae6ddf5fc27d7d33b7f3845d44546dd4b",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/real-estate.md",
+      "type": "blob",
+      "sha": "b15f792e2cea49d6a896e103884c67de90c02049",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-plan/assets/saas.md",
+      "type": "blob",
+      "sha": "c7251ce0db640d821cc44a6089aa338fb9194f8c",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-reddit/SKILL.md",
+      "type": "blob",
+      "sha": "17f2a224f5cd5df96d3314d64ef55778727dd022",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-report/SKILL.md",
+      "type": "blob",
+      "sha": "034b6824b716544f3ea959ccc3913d27955ff0f8",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-research/SKILL.md",
+      "type": "blob",
+      "sha": "0745a6033f68f03c5bab2a1e5862ca6edce56d3b",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-server-side-tracking/SKILL.md",
+      "type": "blob",
+      "sha": "25e575c6a351137b7f75779a1c475307502afa34",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-setup/SKILL.md",
+      "type": "blob",
+      "sha": "6110e2af06cb996e9ec34287fd2ef97d6e376d59",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-snapchat/SKILL.md",
+      "type": "blob",
+      "sha": "f473fda04681e2e6687cab312359c79941c8f833",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-test/SKILL.md",
+      "type": "blob",
+      "sha": "0489ed6fcf16475c8ab073cb271c2a306c22059d",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-tiktok/SKILL.md",
+      "type": "blob",
+      "sha": "d70751b3d4ac0a1284446ab71e541f5628174bc3",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-validate/SKILL.md",
+      "type": "blob",
+      "sha": "28bb659c8defa9bf0fe8048413bc6cfee0f6df86",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-x/SKILL.md",
+      "type": "blob",
+      "sha": "3b99d4b29e866867d2df244b059f7ca441c8303f",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/ads-youtube/SKILL.md",
+      "type": "blob",
+      "sha": "ab1200201abb49479d80e5d2e57f58f5314a9882",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/audit/__init__.py",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/audit/test_check_coverage.py",
+      "type": "blob",
+      "sha": "52592856277f6e92bd855b6a48814fcb6ecd55d7",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/audit/test_legacy_creative_surfaces.py",
+      "type": "blob",
+      "sha": "37ef97e9f44eb2a0f062f6f43216deffb7336698",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/audit/test_remaining_reference_safety.py",
+      "type": "blob",
+      "sha": "075e90f93a8fed79258990f27008f98ed1b34078",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/audit/test_repository_review_ledger.py",
+      "type": "blob",
+      "sha": "eb0af552429e93d1500b3a4073c91448ff941218",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/audit/test_scoring_math.py",
+      "type": "blob",
+      "sha": "737f2cdb8f126911bfd921901cfe059da6eb0e8c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/audit/test_source_grounding.py",
+      "type": "blob",
+      "sha": "480bb713adce2815dffa30fc2d4d88b067058a2b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/conftest.py",
+      "type": "blob",
+      "sha": "1a7b3a9db623a032845f02a62bfd26cf2890b5ab",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/__init__.py",
+      "type": "blob",
+      "sha": "a6b47dd2f3d4b407f462e8510696b329e56dcb67",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_adapters.py",
+      "type": "blob",
+      "sha": "2c76e28da75ef6cb9889e9bae48722aa62c46d75",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_cli.py",
+      "type": "blob",
+      "sha": "d5b8361b379c27ab87af7ce1ef3d4fad9e22004b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_contracts.py",
+      "type": "blob",
+      "sha": "8737074be0a7868aae5b49715be4558b6d8cfe93",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_control_registry.py",
+      "type": "blob",
+      "sha": "c3f6845ae1f820e861611d97b83cfea4a9f4eb40",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_data_lifecycle_policy.py",
+      "type": "blob",
+      "sha": "51faab7fedf5e0b8da73fb6df0022362f03d2234",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_native_exports.py",
+      "type": "blob",
+      "sha": "cf0763824b6e93e763fe91e038e9c9404ac4ce6f",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_platform_report_contracts.py",
+      "type": "blob",
+      "sha": "b30b6fe66e08a0464a5c0ac6312b4b3876575194",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_product_status.py",
+      "type": "blob",
+      "sha": "fff5a83b73bdd09fe27ec8bafe230d7f3915dee8",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_reporting.py",
+      "type": "blob",
+      "sha": "2066fd82e7ad20f77ec24aa3cb1124834768fdd6",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_scoring_engine.py",
+      "type": "blob",
+      "sha": "54330d65e3326f09f12f8a5c80d8e21330bc6326",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/core/test_workflow_contracts.py",
+      "type": "blob",
+      "sha": "e6be560a9406f8bc383cb688a21665a560eacb57",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/check-catalog.yaml",
+      "type": "blob",
+      "sha": "cc00a32cfeaa3355393960b44e8f8dc1a8c6def1",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/amazon.csv",
+      "type": "blob",
+      "sha": "711f3416244a66b5e423caeadf48a5dda3f55be9",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/apple.csv",
+      "type": "blob",
+      "sha": "209f4a5c632084721a1f65e0e29ab7a377ad66d7",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/google.csv",
+      "type": "blob",
+      "sha": "df98b843408e3389f97a19874cabb17bb8d5a351",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/linkedin.csv",
+      "type": "blob",
+      "sha": "6f0c8d90ec9f4319f3cfcbb09197ebda787a6ffd",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/meta.csv",
+      "type": "blob",
+      "sha": "c89e6c9b34d313746ab4da00c1752ee9e3f8d76c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/microsoft.csv",
+      "type": "blob",
+      "sha": "bada40a6f6eb7b4683477a85ca6fbcccf8c6d215",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/pinterest.csv",
+      "type": "blob",
+      "sha": "e434bd6d7f3253c79f78ae4c2a12bd3feb0791fb",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/reddit.csv",
+      "type": "blob",
+      "sha": "5d1c8dd7244dc653c2acb6095f9f32f193bd8b75",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/snapchat.csv",
+      "type": "blob",
+      "sha": "3f210e5fd7910ea15d7e3e9793eb06ac64c65768",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/tiktok.csv",
+      "type": "blob",
+      "sha": "77d065f5b67ce6848039aa3381172fab6a00587e",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/x.csv",
+      "type": "blob",
+      "sha": "fc68e0f825c19f62b9c47a1b851cebd6d8ba8ea6",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/exports/youtube.csv",
+      "type": "blob",
+      "sha": "53389d50ee257736710bb72acb25d03e3ce7e052",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/amazon.csv",
+      "type": "blob",
+      "sha": "4823f0ab04adc8eff666eed59fee0f765ebf9594",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/apple.csv",
+      "type": "blob",
+      "sha": "04b44615aac43f2fa69d53daec377ae2c9feef22",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/google.csv",
+      "type": "blob",
+      "sha": "7eef79a7e4ccdfde20ddb1e23dbb9b84e380e6f4",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/linkedin.csv",
+      "type": "blob",
+      "sha": "eba5274e8e2eebbb42cf5807eb0b9fb15b2d7912",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/meta.csv",
+      "type": "blob",
+      "sha": "44ebb3b558fa8b3af4b5c0c3da0c0dbd47a96a56",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/microsoft.csv",
+      "type": "blob",
+      "sha": "6f8628531d9fae8905381ec9e7dd310309898286",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/pinterest.csv",
+      "type": "blob",
+      "sha": "14ff878a9000fd59571a21889b6b882cb4518403",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/reddit.csv",
+      "type": "blob",
+      "sha": "b202ca0980cf103474a3ba6c3a4aad4edec2b538",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/snapchat.csv",
+      "type": "blob",
+      "sha": "823387ce1d54825dc0ffac9aa84e840129495b9b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/tiktok.csv",
+      "type": "blob",
+      "sha": "b0ad48e107b0452fce9f989231a093c4cb9b5bdc",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/x.csv",
+      "type": "blob",
+      "sha": "a1756021b78cfebf8bb203dfcca6870dd9b5776f",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/native_exports/youtube.csv",
+      "type": "blob",
+      "sha": "5bbcf2926a8c689088c630673168af5a4747846c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/reports/sanitized-report-bundle.json",
+      "type": "blob",
+      "sha": "eeb5dce5a5b6c908d654f9e0bdb5edfe99aa4b1f",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/reports/sanitized-report.html",
+      "type": "blob",
+      "sha": "0865e3e307c765119e0ddb0979712e6c98194c70",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/reports/sanitized-report.md",
+      "type": "blob",
+      "sha": "0bf4f9409135f5f4d0629d23dfac9272b9f3fda8",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/fixtures/workflows/valid-artifacts.json",
+      "type": "blob",
+      "sha": "3fe4603a83a7b09b562a3d9082cd597894642d92",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/references/__init__.py",
+      "type": "blob",
+      "sha": "7ed86edee682a75a192b565096d7e36aba207fb5",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/references/test_cross_platform_references.py",
+      "type": "blob",
+      "sha": "5bbfc1caf322af608fde93bcbe50d0639fa50524",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release/__init__.py",
+      "type": "blob",
+      "sha": "c724b54b88f38953cd0ef78e584c8d4a4621c69f",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release/test_ecosystem_live.py",
+      "type": "blob",
+      "sha": "71e3a5154323be298d556ada086dfb57f4f244f6",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release/test_release.py",
+      "type": "blob",
+      "sha": "80ef1de6c3b3530a886164d2ae002a3667d0b270",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release/test_repository_review_release_gate.py",
+      "type": "blob",
+      "sha": "b4abda444d4c9e57fddc8283476ab2565796b42e",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release/test_review_contracts.py",
+      "type": "blob",
+      "sha": "add470b0e4dbaf7bb378d29243ceafc672b8e002",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release/test_target_lock_verifier.py",
+      "type": "blob",
+      "sha": "e3a67ce2669e0cd25b23da7b82462893b6fa85e5",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/routing/__init__.py",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/routing/test_behavior_eval_contract.py",
+      "type": "blob",
+      "sha": "c89045c52d05a8e6ceaf200c340afc1ac189df6c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/routing/test_canonical_behavior_surfaces.py",
+      "type": "blob",
+      "sha": "6c9d2ddf2bed7c7650b3bc29cac176517a708bd4",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/routing/test_creative_routing.py",
+      "type": "blob",
+      "sha": "2aac888f59dd5143ba60efcf3d9501afa074c5d8",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/routing/test_forward_eval_summary.py",
+      "type": "blob",
+      "sha": "c453ed6e8880df02d095f565216e47815b479bfc",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/routing/test_model_eval_gate.py",
+      "type": "blob",
+      "sha": "fe604f4a1da3460771ee54e5cd663b8bf627f804",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/routing/test_platform_workflow_routing.py",
+      "type": "blob",
+      "sha": "d796ef3c99397b7df5d7ff6e662417cb3012bf78",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/__init__.py",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/test_analyze_landing.py",
+      "type": "blob",
+      "sha": "577f86d945034bf0128a44d174b2bcc80330b2e5",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/test_audit_dependencies.py",
+      "type": "blob",
+      "sha": "50665ff7dbf81f67d0fc16c62d698e118640447c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/test_generate_image_provider_selection.py",
+      "type": "blob",
+      "sha": "eb79bbadaa93b14ae04df8a81cb30a7333ee03d8",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/test_generate_report.py",
+      "type": "blob",
+      "sha": "1d1cdea7f8624703c60395a4c9b4710537d09092",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/test_installer_security.py",
+      "type": "blob",
+      "sha": "2eb3204ef903ae92c2551195965a9fb13e661db3",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/test_privacy_outputs.py",
+      "type": "blob",
+      "sha": "cb45c4cc56a72a0e92b70067ac71a80403c78011",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scripts/test_url_utils.py",
+      "type": "blob",
+      "sha": "58ac2df3c47aefc3e997b571ca0363f6d413f02b",
+      "mode": "100644"
+    },
+    {
+      "path": "uninstall.ps1",
+      "type": "blob",
+      "sha": "f48ebae88aab643f6e0b49af2e4cf142ac368ed1",
+      "mode": "100644"
+    },
+    {
+      "path": "uninstall.sh",
+      "type": "blob",
+      "sha": "41892c14b35ffe6a9892517a4db68bb2318f4f7a",
+      "mode": "100755"
+    }
+  ]
+}

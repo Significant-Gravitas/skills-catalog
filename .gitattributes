@@ -1,0 +1,7 @@
+# Normalize catalog-owned text; preserve packaged and archived bytes.
+* text=auto eol=lf
+skills/** -text -eol
+provenance/originals/** -text -eol
+
+provenance/evidence-files/** -text -eol
+provenance/deferred-originals/** -text -eol
