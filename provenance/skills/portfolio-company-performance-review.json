@@ -1,0 +1,88 @@
+{
+  "schema_version": 3,
+  "slug": "portfolio-company-performance-review",
+  "name": "portfolio-company-performance-review",
+  "original_name": "portfolio-monitoring",
+  "source": {
+    "repo": "anthropics/financial-services",
+    "path": "plugins/vertical-plugins/private-equity/skills/portfolio-monitoring",
+    "commit": "574ed3624aebd0418c7e96cd101262f30210ab26"
+  },
+  "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/financial-services/portfolio-monitoring",
+  "author": "Anthropic FSI",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/LICENSE",
+    "scope": "Unmodified original package and its support files under repository license; referenced external works/services retain their own terms.",
+    "obligations": [
+      "Preserve the full license and applicable original copyright/attribution notices."
+    ],
+    "file": "skills/portfolio-company-performance-review/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "7a3b7bbd66109e334b39d7c154d2f6375b7501671c06fccab206bb2bcd345640",
+  "packaged_sha256": "1e95115c585e2b9e7b6573b83540ee2d009d85cbd24e554b70e9e1f99968ec47",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Daniel",
+      "role": "Financial Analyst",
+      "status": "core",
+      "essential_function": "Review a portfolio company’s periodic financial package against budget and prior periods, flag material variances and summarize KPIs/covenants for management.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "8c0778815ec0ea91e930b30d",
+    "1e63dbc0a7c9393643d5c3ef",
+    "8d1fd9dec64f3194bfebf1f4"
+  ],
+  "review": "Read complete source: requests the actual budget, sector metrics and credit-agreement thresholds rather than inventing them; concise useful finance monitoring workflow.",
+  "essential_function": "Review a portfolio company’s periodic financial package against budget and prior periods, flag material variances and summarize KPIs/covenants for management.",
+  "native_prerequisites": [
+    "Readable Excel/PDF/CSV package, approved plan, company-specific KPIs and actual debt covenant definitions; spreadsheet/PDF reader."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Read primary body and all authored file references. No script, sibling skill, local template or asset is called beyond listed connector guidance. Example output templates embedded in SKILL.md remain intact.",
+      "Author attribution is exactly Anthropic FSI from the pinned private-equity plugin manifest. The model-building/recalc.py skill was rejected and is not a dependency of this independent monitoring workflow."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "README.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "plugins/vertical-plugins/private-equity/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "plugins/vertical-plugins/private-equity/.mcp.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/financial-services",
+    "path": "plugins/vertical-plugins/private-equity/skills/portfolio-monitoring",
+    "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+    "primary_sha256": "7a3b7bbd66109e334b39d7c154d2f6375b7501671c06fccab206bb2bcd345640"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Uses authored 5%/15% traffic-light thresholds; these are generic management-reporting conventions, not calibrated forecasts.",
+    "Not a driver-based reforecast, 13-week treasury model, SaaS unit-economics model or investment valuation."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

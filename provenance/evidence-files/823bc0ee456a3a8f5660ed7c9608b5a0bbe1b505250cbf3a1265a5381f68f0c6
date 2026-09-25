@@ -1,0 +1,246 @@
+[
+  {
+    "name": "financial-statements",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "finance/skills/financial-statements/SKILL.md",
+    "historical_sha256": "1a9ba1cc85495eef32fa250b8a4c05e4854430af574a290b855f919dbb557dfc",
+    "current_sha256": "1a9ba1cc85495eef32fa250b8a4c05e4854430af574a290b855f919dbb557dfc",
+    "identical": true
+  },
+  {
+    "name": "reconciliation",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "finance/skills/reconciliation/SKILL.md",
+    "historical_sha256": "aa17e90539f4d4d84130c910c7f527236bfaa71977c4c03493c8e8e515ddeea6",
+    "current_sha256": "aa17e90539f4d4d84130c910c7f527236bfaa71977c4c03493c8e8e515ddeea6",
+    "identical": true
+  },
+  {
+    "name": "close-management",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "finance/skills/close-management/SKILL.md",
+    "historical_sha256": "6c2df93bcd15eddf65017445fa44f3eb0b16a755711a5e0602d73ca595e73732",
+    "current_sha256": "6c2df93bcd15eddf65017445fa44f3eb0b16a755711a5e0602d73ca595e73732",
+    "identical": true
+  },
+  {
+    "name": "interview-prep",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/interview-prep/SKILL.md",
+    "historical_sha256": "c687311babdeccf086aa5f6d86dcbfc3a9d1b8bb7124f072450ffa4315d98c4c",
+    "current_sha256": "c687311babdeccf086aa5f6d86dcbfc3a9d1b8bb7124f072450ffa4315d98c4c",
+    "identical": true
+  },
+  {
+    "name": "recruiting-pipeline",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/recruiting-pipeline/SKILL.md",
+    "historical_sha256": "a00b442f701faa6eb65b8ecc8fcf375d5a33ec827b987ba8b04edaef0e90b92f",
+    "current_sha256": "a00b442f701faa6eb65b8ecc8fcf375d5a33ec827b987ba8b04edaef0e90b92f",
+    "identical": true
+  },
+  {
+    "name": "draft-offer",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/draft-offer/SKILL.md",
+    "historical_sha256": "b50f677f4c8fb769b9cd0be51cd250e0e21a4530d579d5f400b7d7b1b1a63ea9",
+    "current_sha256": "b50f677f4c8fb769b9cd0be51cd250e0e21a4530d579d5f400b7d7b1b1a63ea9",
+    "identical": true
+  },
+  {
+    "name": "onboarding",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/onboarding/SKILL.md",
+    "historical_sha256": "c9210cdd00f8c2998a01c6d1310a8742aafa82a5861fb7c1c18686b72a56da97",
+    "current_sha256": "c9210cdd00f8c2998a01c6d1310a8742aafa82a5861fb7c1c18686b72a56da97",
+    "identical": true
+  },
+  {
+    "name": "performance-review",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/performance-review/SKILL.md",
+    "historical_sha256": "a34e3f49e7c8619f07fd218cb2b6a6d57572dd7a0a78c72977dcd1739578e588",
+    "current_sha256": "a34e3f49e7c8619f07fd218cb2b6a6d57572dd7a0a78c72977dcd1739578e588",
+    "identical": true
+  },
+  {
+    "name": "policy-lookup",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/policy-lookup/SKILL.md",
+    "historical_sha256": "5fc79b5e81922431b5665d33552dcce7de499e2680b4a81720cb4e2a68015edf",
+    "current_sha256": "5fc79b5e81922431b5665d33552dcce7de499e2680b4a81720cb4e2a68015edf",
+    "identical": true
+  },
+  {
+    "name": "people-report",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "human-resources/skills/people-report/SKILL.md",
+    "historical_sha256": "e68d00be15a681da288e6023df095a952add099db2c14873c47a69e3ab3634b8",
+    "current_sha256": "e68d00be15a681da288e6023df095a952add099db2c14873c47a69e3ab3634b8",
+    "identical": true
+  },
+  {
+    "name": "process-doc",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/process-doc/SKILL.md",
+    "historical_sha256": "fceeeddb363e813ba831f9f2de1adb4c7e45ad179366bbb9ea9e40377abe96a9",
+    "current_sha256": "fceeeddb363e813ba831f9f2de1adb4c7e45ad179366bbb9ea9e40377abe96a9",
+    "identical": true
+  },
+  {
+    "name": "process-optimization",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/process-optimization/SKILL.md",
+    "historical_sha256": "14099838fdbfca24057e934fc22ed17f94629c5e9c9cec470f32e3063d0575f9",
+    "current_sha256": "14099838fdbfca24057e934fc22ed17f94629c5e9c9cec470f32e3063d0575f9",
+    "identical": true
+  },
+  {
+    "name": "capacity-plan",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/capacity-plan/SKILL.md",
+    "historical_sha256": "3b8f1379471eae19e5be26c750681ad0c6054f4c8cdbf79c94309fcf46957ea8",
+    "current_sha256": "3b8f1379471eae19e5be26c750681ad0c6054f4c8cdbf79c94309fcf46957ea8",
+    "identical": true
+  },
+  {
+    "name": "status-report",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/status-report/SKILL.md",
+    "historical_sha256": "8c3a21075294a5c5b7a1a7930613e53f0afbdbc12cf9e05d4bd08e6950c0a0d9",
+    "current_sha256": "8c3a21075294a5c5b7a1a7930613e53f0afbdbc12cf9e05d4bd08e6950c0a0d9",
+    "identical": true
+  },
+  {
+    "name": "risk-assessment",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/risk-assessment/SKILL.md",
+    "historical_sha256": "82e29810a762c396a56f92bbd5c5afd252f7a07c6be69a246c28f7b82c4086d9",
+    "current_sha256": "82e29810a762c396a56f92bbd5c5afd252f7a07c6be69a246c28f7b82c4086d9",
+    "identical": true
+  },
+  {
+    "name": "vendor-review",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/vendor-review/SKILL.md",
+    "historical_sha256": "c2a959a7ed068e34a83984cf223754062e6819deb0ba1ca33eb747b4cc808d5e",
+    "current_sha256": "c2a959a7ed068e34a83984cf223754062e6819deb0ba1ca33eb747b4cc808d5e",
+    "identical": true
+  },
+  {
+    "name": "runbook",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/runbook/SKILL.md",
+    "historical_sha256": "c5c3eaa4c22fff96ec7239ce67eb3e100661b20a2818749e2f7ee21787233185",
+    "current_sha256": "c5c3eaa4c22fff96ec7239ce67eb3e100661b20a2818749e2f7ee21787233185",
+    "identical": true
+  },
+  {
+    "name": "compliance-tracking",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "operations/skills/compliance-tracking/SKILL.md",
+    "historical_sha256": "644d393abdfddc8c37f7a7804f601e7bbd476e95571e6dcb4d916e478ba8ebd5",
+    "current_sha256": "644d393abdfddc8c37f7a7804f601e7bbd476e95571e6dcb4d916e478ba8ebd5",
+    "identical": true
+  },
+  {
+    "name": "explore-data",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "data/skills/explore-data/SKILL.md",
+    "historical_sha256": "af7590fa616360259da712b5ede5f79b817beb854c47a465f95774354988e8a2",
+    "current_sha256": "af7590fa616360259da712b5ede5f79b817beb854c47a465f95774354988e8a2",
+    "identical": true
+  },
+  {
+    "name": "pipeline-review",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "sales/skills/pipeline-review/SKILL.md",
+    "historical_sha256": "43b396b8292b5e11d1797fd3a549d7ebadf09b79c1a4d20a5e1cbea31032f4ab",
+    "current_sha256": "8172970f71ca4d508e359404e8ba7de1d24ccbdd7533e23bc87c645801985ad7",
+    "identical": false,
+    "decision": "Select current pinned sales package under clean sales/LICENSE, not the older workflow."
+  },
+  {
+    "name": "vendor-check",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "legal/skills/vendor-check/SKILL.md",
+    "historical_sha256": "38be57a5e9e959874d2cb78e8493211664bc452e6225cb5bdbb8b12e6f444d2e",
+    "current_sha256": "38be57a5e9e959874d2cb78e8493211664bc452e6225cb5bdbb8b12e6f444d2e",
+    "identical": true
+  },
+  {
+    "name": "legal-response",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "legal/skills/legal-response/SKILL.md",
+    "historical_sha256": "b3a0585ee00a53ccb159fbf5b7dd4d4b45c39e5e65cc8f4f39cbb134fef493db",
+    "current_sha256": "b3a0585ee00a53ccb159fbf5b7dd4d4b45c39e5e65cc8f4f39cbb134fef493db",
+    "identical": true
+  },
+  {
+    "name": "knowledge-synthesis",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "enterprise-search/skills/knowledge-synthesis/SKILL.md",
+    "historical_sha256": "8dc66c66ef0004010bbf2d569251163e90a6675b982e0cb99ef26b4dd1c5a0f6",
+    "current_sha256": "8dc66c66ef0004010bbf2d569251163e90a6675b982e0cb99ef26b4dd1c5a0f6",
+    "identical": true
+  },
+  {
+    "name": "task-management",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "productivity/skills/task-management/SKILL.md",
+    "historical_sha256": "db1320873d68caab09cdbc1788e78d81e3b9b7cc6b499e2c4b975f25e873049f",
+    "current_sha256": "db1320873d68caab09cdbc1788e78d81e3b9b7cc6b499e2c4b975f25e873049f",
+    "identical": true
+  },
+  {
+    "name": "memory-management",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "productivity/skills/memory-management/SKILL.md",
+    "historical_sha256": "ad42fd09cbab585b8ae8fcce54e711d37105d5d5b7d9ceaf9b29bf6441f7a88d",
+    "current_sha256": "ad42fd09cbab585b8ae8fcce54e711d37105d5d5b7d9ceaf9b29bf6441f7a88d",
+    "identical": true
+  },
+  {
+    "name": "start",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "productivity/skills/start/SKILL.md",
+    "historical_sha256": "def467be29ec60f1567c9fa92dc4b1ca9a6d3ed85f964f338a02502a44779208",
+    "current_sha256": "def467be29ec60f1567c9fa92dc4b1ca9a6d3ed85f964f338a02502a44779208",
+    "identical": true
+  },
+  {
+    "name": "update",
+    "historical_commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "current_commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "productivity/skills/update/SKILL.md",
+    "historical_sha256": "27dbb2c732a9140ea3f01da6cdf7e533df5e75e9614c80e7e356c8f39c959799",
+    "current_sha256": "27dbb2c732a9140ea3f01da6cdf7e533df5e75e9614c80e7e356c8f39c959799",
+    "identical": true
+  }
+]

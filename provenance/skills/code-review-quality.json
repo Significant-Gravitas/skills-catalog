@@ -1,0 +1,79 @@
+{
+  "schema_version": 3,
+  "slug": "code-review-quality",
+  "name": "code-review-quality",
+  "original_name": "code-review-excellence",
+  "source": {
+    "repo": "wshobson/agents",
+    "path": "plugins/developer-essentials/skills/code-review-excellence",
+    "commit": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620"
+  },
+  "source_url": "https://github.com/wshobson/agents/blob/4236bb91f8395b0435f1d8b8baf9e8e4c69a8620/plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+  "discovery_url": "https://www.skills.sh/wshobson/agents/code-review-excellence",
+  "author": "Seth Hobson",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/wshobson/agents/blob/4236bb91f8395b0435f1d8b8baf9e8e4c69a8620/LICENSE",
+    "scope": "Complete clean root licence at the same immutable commit as this package.",
+    "obligations": [
+      "Retain original copyright/attribution and license text."
+    ],
+    "file": "skills/code-review-quality/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "014fff1c8db75807106484d5b16451607f0dde266ae50182a2753d68ad3449ed",
+  "packaged_sha256": "b3f8b4df69aa8ba1c9bc5649ca6b30b7d96b9318a3699171fc48beb8181c18cb",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Casey",
+      "role": "QA Engineer",
+      "status": "core",
+      "essential_function": "Review a pull request for correctness, security, performance, test quality and maintainability, then give prioritized, constructive feedback.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "2e9676c258f64aa2ff0f811b",
+    "cbe7d54bda90b0b37a2cb3cf",
+    "4efb405f4f25e3cca4d6918d",
+    "cd8a988de4e295d0b8269c15",
+    "f42d4f58c533ff79ee9f3527"
+  ],
+  "review": "Begins with business/PR context and CI, progresses through architecture and code, separates blocking defects from suggestions, and checks behavioral tests and common language mistakes. Templates support actionable review.",
+  "essential_function": "Review a pull request for correctness, security, performance, test quality and maintainability, then give prioritized, constructive feedback.",
+  "native_prerequisites": [
+    "Diff, surrounding code, requirement and test/CI evidence; repository access appropriate to the review."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Preserve original guidance and all branches; apply only the counted local-path edits, standard header metadata/name, and prominent packaging modification notice.",
+      "Preserve slash-command identifiers and $ARGUMENTS examples; changing the installed name does not create native command dispatch. Ordinary direct invocation with supplied task context remains possible where authored.",
+      "Record the upstream revision, Git blob SHA-1, SHA-256 and original bytes in provenance; generated ATTRIBUTION.md is curator packaging documentation, not upstream-authored advice.",
+      "The full primary contains its required guidance and examples; it names no required local supporting file or sibling skill. Do not add unrelated repository content."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "wshobson/agents",
+    "path": "plugins/developer-essentials/skills/code-review-excellence",
+    "commit": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620",
+    "primary_sha256": "014fff1c8db75807106484d5b16451607f0dde266ae50182a2753d68ad3449ed"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "A checklist and examples do not prove absence of vulnerabilities or regressions.",
+    "Original source includes approve/comment/request-changes as review outcomes; use only the authority supplied by the adopting workflow."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

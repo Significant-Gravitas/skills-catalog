@@ -31,17 +31,38 @@
       "status": "core",
       "essential_function": "Draft account updates and sensitive customer replies.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Robin",
+      "role": "Customer Support Specialist",
+      "status": "core",
+      "essential_function": "Draft a customer response that fits the issue, relationship, channel and stakeholder, with internal verification notes and next steps.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Sasha",
+      "role": "Support Specialist",
+      "status": "core",
+      "essential_function": "Draft a customer response that fits the issue, relationship, channel and stakeholder, with internal verification notes and next steps.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
     "08bc1eaeadcefd77f64c9984",
     "eb8864bf57a9db65444a3979",
     "eeb623c643d57ce5a85ecc71",
-    "4194a494050999e466f744d9"
+    "4194a494050999e466f744d9",
+    "a751bc94846c49da2ab49d26",
+    "d2ba4833b0e8ac98550e060c",
+    "9b1fa05e773323c51517c7fb",
+    "1642130cfd50279a768aeca1",
+    "f965a4db28a21ee72dcb2eea"
   ],
   "review": "Drafts customer communications using account context and prior commitments; its native quality check prohibits commitments beyond authorization and provides internal verification notes. Covers updates, issues, requests and sensitive conversations without requiring a custom policy overlay.",
   "native_prerequisites": [
-    "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required."
+    "Use the author-defined tool categories for connected CRM/support/knowledge/email/chat sources; supply accessible records and actual account context. No placeholder text replacement is required.",
+    "Customer thread, confirmed policy/account facts and authorized commitments.",
+    "Optional CRM/support/email/chat/knowledge connectors; supplied context is sufficient for drafting."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
@@ -66,5 +87,18 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "customer-support/skills/draft-response",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "primary_sha256": "1a201228b75a98fc3b5d45090cb7443d50df204b2ee748bfc8970790a64f0026"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Example templates contain completed-action statements; they are usable only when those actions actually occurred, consistent with its own accuracy checks.",
+    "It drafts communications; it does not supply billing, fraud, legal or medical decision rules.",
+    "Cadence examples are native defaults, not proof that a particular desk SLA will be met."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

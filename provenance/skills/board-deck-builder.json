@@ -29,6 +29,13 @@
       "status": "core",
       "essential_function": "Build investor and board update decks with metrics,risks,forecasts and specific asks.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Daniel",
+      "role": "Financial Analyst",
+      "status": "core",
+      "essential_function": "Build a board/investor update from sourced performance, financials, runway, risks, forecasts and explicit decision requests.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
@@ -36,13 +43,21 @@
     "d3d312abfeaedd9937101657",
     "564fc33b2e581dbfde46c77f",
     "881493ff05ad154cc947ebd8",
-    "6cfad844a8322da111e381be"
+    "6cfad844a8322da111e381be",
+    "1f95e80860383b0bf312bbdc",
+    "c0ee364a3695900483da5e54",
+    "64471219a4524fc38958b138",
+    "a24694836e25b7a97be118bc",
+    "a439a74997bd69a72a564b2a",
+    "54206b282cb5d562aa92e6ba",
+    "adb766b69098e78fad7665ed"
   ],
   "review": "Selected unchanged for venture-backed company board/investor reporting:11section pack,owned inputs,metrics with targets,financials,cash/runway,risks,forecasts and concrete asks; monthly and fundraising variants included. Explicitly uses placeholders rather than invented numbers. All bundled references/template reviewed; ARR waterfall and NRR example reconcile. Benchmarks and narrative advice are prescriptive SaaS guidance,not universal standards.603 displayed installs is meaningful niche adoption but much smaller than official Anthropic candidates; repository stars and c-level issue report are broader signals,not proof of this skill outcome quality. No source rewrite or corrective wrapper proposed.",
   "native_prerequisites": [
     "Verified company metrics and section-owner inputs; stage and meeting cadence.",
     "Best fit is venture-backed SaaS boards; supplied company context chooses relevant metrics as upstream permits.",
-    "Deck content/template generation works directly; native slide rendering is a separate tool capability,not a bundled licensed dependency."
+    "Deck content/template generation works directly; native slide rendering is a separate tool capability,not a bundled licensed dependency.",
+    "Verified company metrics, section-owner inputs and optional slide-generation runtime."
   ],
   "evidence_qualification": "Lower-adoption specialist selection: 603 installs. Publisher/repository evidence and substantive source review support selection, but individual uptake is smaller and effectiveness is not independently proven.",
   "runtime_verified": false,
@@ -67,5 +82,17 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "alirezarezvani/claude-skills",
+    "path": "c-level-advisor/skills/board-deck-builder",
+    "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+    "primary_sha256": "73ca16546887edd28fe97e9c40647034f4b09dae692530d738d24b7d5bfc60a0"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Best suited to venture-backed SaaS boards; prescriptive benchmarks are contextual advice.",
+    "Produces content and templates; native slide rendering and financial source verification remain separate."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

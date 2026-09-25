@@ -98,12 +98,6 @@
       "installed_name": "financial-statement-preparation"
     },
     {
-      "previous_catalog_slug": "invoice-chase",
-      "original_name": "invoice-chase",
-      "source": "anthropics/knowledge-work-plugins/small-business/skills/invoice-chase",
-      "installed_name": "overdue-invoice-follow-up"
-    },
-    {
       "previous_catalog_slug": "vendor-review",
       "original_name": "vendor-review",
       "source": "anthropics/knowledge-work-plugins/operations/skills/vendor-review",
@@ -258,6 +252,166 @@
       "original_name": "call-prep",
       "source": "anthropics/knowledge-work-plugins/sales/skills/call-prep",
       "installed_name": "sales-call-preparation"
+    },
+    {
+      "original_name": "kb-article",
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/kb-article",
+      "installed_name": "knowledge-base-article-writing"
+    },
+    {
+      "original_name": "ticket-triage",
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/ticket-triage",
+      "installed_name": "support-ticket-triage"
+    },
+    {
+      "original_name": "synthesize-research",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/synthesize-research",
+      "installed_name": "product-research-synthesis"
+    },
+    {
+      "original_name": "write-spec",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/write-spec",
+      "installed_name": "product-requirements-writing"
+    },
+    {
+      "original_name": "roadmap-update",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/roadmap-update",
+      "installed_name": "product-roadmap-planning"
+    },
+    {
+      "original_name": "stakeholder-update",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/stakeholder-update",
+      "installed_name": "product-stakeholder-update"
+    },
+    {
+      "original_name": "metrics-dashboard",
+      "source": "phuryn/pm-skills/pm-product-discovery/skills/metrics-dashboard",
+      "installed_name": "product-metrics-dashboard-design"
+    },
+    {
+      "original_name": "product-strategy",
+      "source": "phuryn/pm-skills/pm-product-strategy/skills/product-strategy",
+      "installed_name": "product-strategy-canvas"
+    },
+    {
+      "original_name": "brainstorm-experiments-existing",
+      "source": "phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing",
+      "installed_name": "product-experiment-design"
+    },
+    {
+      "original_name": "code-review-excellence",
+      "source": "wshobson/agents/plugins/developer-essentials/skills/code-review-excellence",
+      "installed_name": "code-review-quality"
+    },
+    {
+      "original_name": "debugging-strategies",
+      "source": "wshobson/agents/plugins/developer-essentials/skills/debugging-strategies",
+      "installed_name": "software-debugging"
+    },
+    {
+      "original_name": "testing-strategy",
+      "source": "anthropics/knowledge-work-plugins/engineering/skills/testing-strategy",
+      "installed_name": "software-test-planning"
+    },
+    {
+      "original_name": "verification-before-completion",
+      "source": "obra/superpowers/skills/verification-before-completion",
+      "installed_name": "verification-before-completion"
+    },
+    {
+      "original_name": "incident-response",
+      "source": "anthropics/knowledge-work-plugins/engineering/skills/incident-response",
+      "installed_name": "software-incident-response"
+    },
+    {
+      "original_name": "onboarding",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/onboarding",
+      "installed_name": "employee-onboarding-planning"
+    },
+    {
+      "original_name": "performance-review",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/performance-review",
+      "installed_name": "employee-performance-review"
+    },
+    {
+      "original_name": "policy-lookup",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/policy-lookup",
+      "installed_name": "company-policy-lookup"
+    },
+    {
+      "original_name": "people-report",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/people-report",
+      "installed_name": "people-analytics-reporting"
+    },
+    {
+      "original_name": "process-doc",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/process-doc",
+      "installed_name": "business-process-documentation"
+    },
+    {
+      "original_name": "process-optimization",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/process-optimization",
+      "installed_name": "business-process-optimization"
+    },
+    {
+      "original_name": "capacity-plan",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/capacity-plan",
+      "installed_name": "team-capacity-planning"
+    },
+    {
+      "original_name": "runbook",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/runbook",
+      "installed_name": "operational-runbook-writing"
+    },
+    {
+      "original_name": "compliance-tracking",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/compliance-tracking",
+      "installed_name": "compliance-evidence-tracking"
+    },
+    {
+      "original_name": "legal-response",
+      "source": "anthropics/knowledge-work-plugins/legal/skills/legal-response",
+      "installed_name": "legal-response-drafting"
+    },
+    {
+      "original_name": "portfolio-monitoring",
+      "source": "anthropics/financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring",
+      "installed_name": "portfolio-company-performance-review"
+    },
+    {
+      "original_name": "co-marketing",
+      "source": "coreyhaines31/marketingskills/skills/co-marketing",
+      "installed_name": "partner-co-marketing"
+    },
+    {
+      "original_name": "sales-enablement",
+      "source": "coreyhaines31/marketingskills/skills/sales-enablement",
+      "installed_name": "sales-enablement-content"
+    },
+    {
+      "original_name": "pricing",
+      "source": "coreyhaines31/marketingskills/skills/pricing",
+      "installed_name": "pricing-and-packaging-strategy"
+    },
+    {
+      "original_name": "launch",
+      "source": "coreyhaines31/marketingskills/skills/launch",
+      "installed_name": "product-launch-marketing"
+    },
+    {
+      "original_name": "cro",
+      "source": "coreyhaines31/marketingskills/skills/cro",
+      "installed_name": "conversion-rate-optimization"
+    },
+    {
+      "original_name": "gtm-strategy",
+      "source": "phuryn/pm-skills/pm-go-to-market/skills/gtm-strategy",
+      "installed_name": "go-to-market-strategy"
+    },
+    {
+      "original_name": "market-sizing",
+      "source": "phuryn/pm-skills/pm-market-research/skills/market-sizing",
+      "installed_name": "market-size-estimation"
     }
   ]
 }

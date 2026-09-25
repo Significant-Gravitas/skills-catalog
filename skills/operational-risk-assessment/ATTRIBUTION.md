@@ -1,54 +1,23 @@
 # Attribution: operational-risk-assessment
 
 Original skill: `risk-assessment`.
-Original author: Anthropic and upstream contributors
-Source: https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/operations/skills/risk-assessment/SKILL.md
-Pinned commit: `1c7187c4fc17feefa6cde39517f12dae1249e6c4`.
-Licence: Apache-2.0; see LICENSE. Existing copyright and notice terms remain applicable.
+Original author: Anthropic
+Source: https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/risk-assessment/SKILL.md
+Pinned commit: `8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c`.
+Licence: Apache-2.0; see LICENSE and any bundled notices.
 
-AutoGPT adapted the packaging on 2026-09-25. AutoGPT did not author the original expert guidance. All original bytes, hashes and exact edits are retained in the catalog repository provenance records.
+AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.
 
-## Recorded changes
+## Files and recorded changes
 
-- `SKILL.md` from `anthropics/knowledge-work-plugins/operations/skills/risk-assessment/SKILL.md`: Use the clear installed name, standard licence and string-valued attribution metadata; preserve all other upstream fields and body. Normalize equivalent tool-list separators where required.; Identify adapted files while retaining upstream authorship and licence.
-- `LICENSE` from `anthropics/knowledge-work-plugins/LICENSE`: Copied unchanged.
+- `SKILL.md`: Previously approved clear package name and standard licence/source metadata; preserve all other authored fields and instructions.; Identify packaging modifications without claiming upstream authorship. Original: anthropics/knowledge-work-plugins/operations/skills/risk-assessment/SKILL.md
+- `LICENSE`: Copied unchanged. Original: anthropics/knowledge-work-plugins/LICENSE
 
 ## Runtime requirements
 
-- Specific project,vendor,process or decision context and known evidence.
-- Human likelihood/impact and mitigation ownership judgments; no external connector required.
+- Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities.
 
-## Installed names
+## Remaining integration requirements
 
-References to original skill names can be resolved using this table. Native API/command identifiers and persistent project-state filenames remain unchanged.
 
-| Original source and name | Installed name |
-| --- | --- |
-| anthropics/knowledge-work-plugins/customer-support/skills/customer-research | `customer-support-research` |
-| anthropics/knowledge-work-plugins/customer-support/skills/draft-response | `customer-response-drafting` |
-| anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation | `customer-escalation` |
-| anthropics/knowledge-work-plugins/finance/skills/reconciliation | `account-reconciliation` |
-| anthropics/knowledge-work-plugins/finance/skills/close-management | `month-end-close-management` |
-| anthropics/knowledge-work-plugins/finance/skills/financial-statements | `financial-statement-preparation` |
-| anthropics/knowledge-work-plugins/small-business/skills/invoice-chase | `overdue-invoice-follow-up` |
-| anthropics/knowledge-work-plugins/operations/skills/vendor-review | `vendor-evaluation` |
-| anthropics/knowledge-work-plugins/legal/skills/vendor-check | `vendor-contract-status` |
-| anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis | `multi-source-research-synthesis` |
-| anthropics/knowledge-work-plugins/operations/skills/status-report | `project-status-report` |
-| anthropics/knowledge-work-plugins/operations/skills/risk-assessment | `operational-risk-assessment` |
-| anthropics/knowledge-work-plugins/legal/skills/meeting-briefing | `legal-meeting-briefing` |
-| anthropics/knowledge-work-plugins/productivity/skills/task-management | `task-list-management` |
-| anthropics/knowledge-work-plugins/productivity/skills/memory-management | `workplace-memory-management` |
-| anthropics/knowledge-work-plugins/productivity/skills/start | `productivity-setup` |
-| anthropics/knowledge-work-plugins/productivity/skills/update | `productivity-task-sync` |
-| anthropics/knowledge-work-plugins/data/skills/explore-data | `dataset-exploration` |
-| anthropics/knowledge-work-plugins/data/skills/data-visualization | `data-visualization` |
-| anthropics/knowledge-work-plugins/sales/skills/pipeline-review | `sales-pipeline-review` |
-| anthropics/knowledge-work-plugins/human-resources/skills/interview-prep | `candidate-interview-planning` |
-| anthropics/knowledge-work-plugins/human-resources/skills/draft-offer | `employment-offer-drafting` |
-| anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline | `recruiting-pipeline` |
-| anthropics/knowledge-work-plugins/sales/skills/account-research | `sales-account-research` |
-| anthropics/knowledge-work-plugins/sales/skills/draft-outreach | `sales-outreach-drafting` |
-| anthropics/knowledge-work-plugins/sales/skills/call-prep | `sales-call-preparation` |
-
-This package has not been executed or benchmarked. Static package validation does not provision accounts, tools, native dispatch or persistent storage.
+Not executed or benchmarked. Import acceptance does not establish runtime behavior.

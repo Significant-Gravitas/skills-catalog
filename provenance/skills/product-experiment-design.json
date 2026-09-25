@@ -1,0 +1,80 @@
+{
+  "schema_version": 3,
+  "slug": "product-experiment-design",
+  "name": "product-experiment-design",
+  "original_name": "brainstorm-experiments-existing",
+  "source": {
+    "repo": "phuryn/pm-skills",
+    "path": "pm-product-discovery/skills/brainstorm-experiments-existing",
+    "commit": "8607e3b077817f89bf4a9b623246219734ac3be0"
+  },
+  "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
+  "discovery_url": "https://www.skills.sh/phuryn/pm-skills/brainstorm-experiments-existing",
+  "author": "Pawel Huryn",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/LICENSE",
+    "scope": "Complete clean root licence at the same immutable commit as this package.",
+    "obligations": [
+      "Retain original copyright/attribution and license text."
+    ],
+    "file": "skills/product-experiment-design/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "d72da1f4f08d5514662d7bad37dfc3ed4ef11fcc5b5ddec6ca5a8ac0e47f45c5",
+  "packaged_sha256": "d9bd143617feaf7853fb8ac2d9aa57cc15d3b9abc8ff3627ff57e7172019824d",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Alex",
+      "role": "Product Manager",
+      "status": "core",
+      "essential_function": "Design inexpensive behavioral experiments to test assumptions about an existing product before full implementation.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "db7aa57324a1c0d7887fe65c",
+    "5d059e7bc8bb798d1faf0d9e",
+    "fa5073b7b646c795ddb4524f",
+    "fdb11a03359715ca21e623fb",
+    "aae102cf1f655f082f7a9c97"
+  ],
+  "review": "Maps each assumption to an experiment, metric and success threshold; considers prototypes, fake doors, technical spikes and production A/B tests, explicitly requiring responsible testing and production risk mitigation.",
+  "essential_function": "Design inexpensive behavioral experiments to test assumptions about an existing product before full implementation.",
+  "native_prerequisites": [
+    "Existing product, feature idea, explicit assumptions, constraints and risk context."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Preserve original guidance and all branches; apply only the counted local-path edits, standard header metadata/name, and prominent packaging modification notice.",
+      "Preserve slash-command identifiers and $ARGUMENTS examples; changing the installed name does not create native command dispatch. Ordinary direct invocation with supplied task context remains possible where authored.",
+      "Record the upstream revision, Git blob SHA-1, SHA-256 and original bytes in provenance; generated ATTRIBUTION.md is curator packaging documentation, not upstream-authored advice.",
+      "The full primary contains its required guidance and examples; it names no required local supporting file or sibling skill. Do not add unrelated repository content.",
+      "External further-reading articles, video courses and optional presentation template remain authored links. The full working method and output structure are in the primary; do not copy external copyrighted content into the package."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "phuryn/pm-skills",
+    "path": "pm-product-discovery/skills/brainstorm-experiments-existing",
+    "commit": "8607e3b077817f89bf4a9b623246219734ac3be0",
+    "primary_sha256": "d72da1f4f08d5514662d7bad37dfc3ed4ef11fcc5b5ddec6ca5a8ac0e47f45c5"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not compute power/sample size, run a test, detect sample-ratio mismatch or supply a full statistical readout.",
+    "Further-reading resources are optional references, not bundled licensed source."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

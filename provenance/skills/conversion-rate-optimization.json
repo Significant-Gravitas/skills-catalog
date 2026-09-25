@@ -1,0 +1,86 @@
+{
+  "schema_version": 3,
+  "slug": "conversion-rate-optimization",
+  "name": "conversion-rate-optimization",
+  "original_name": "cro",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/cro",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/cro/SKILL.md",
+  "discovery_url": "https://skills.sh/coreyhaines31/marketingskills/cro",
+  "author": "Corey Haines",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Original repository skill and support files; separately credited reference notices retained where applicable.",
+    "obligations": [
+      "Retain copyright and permission notice with copies or substantial portions.",
+      "Retain authored attribution in supporting references."
+    ],
+    "file": "skills/conversion-rate-optimization/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "199016bec3b44bc6a7507b111b6028f6550cc852cd54c7d0df789f15d6f814c4",
+  "packaged_sha256": "7f700390a9f76964d5cf6c48e9d3622cbc3038c73c4beabb1557807bd13cad41",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Marco",
+      "role": "Performance Marketer",
+      "status": "core",
+      "essential_function": "Review landing pages and forms for message match, clear value, calls to action, credible proof and friction, then prioritize improvements and tests.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "fefcca48dabe37e5d3df54c8",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "5012d222ab5fe155df5b53b5",
+    "48190ac73d2a5ff706b3cf18"
+  ],
+  "review": "Ordered page assessment includes traffic-source headline match, mobile/load/form friction, objection handling and alternatives. Recommendations distinguish test ideas from direct copy changes.",
+  "essential_function": "Review landing pages and forms for message match, clear value, calls to action, credible proof and friction, then prioritize improvements and tests.",
+  "native_prerequisites": [
+    "Page or rendered content, traffic source, conversion objective and available user/analytics evidence.",
+    "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Only exact counted local-path/link adaptations plus standard name/licence/attribution headers and notices are permitted. Original expert guidance, workflow branches, native providers and project-state locations remain intact.",
+      "General related-skills lists are discovery suggestions, not implied bundled workflows.",
+      "No source script is executed or transformed. Retained provider guide CLI links are real transitive dependencies, unlike the optional full tools registry."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "skills/cro/evals/evals.json",
+        "reason": "Development evaluation fixture, not read/invoked by the selected workflow."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/cro",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "199016bec3b44bc6a7507b111b6028f6550cc852cd54c7d0df789f15d6f814c4"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Qualitative conversion diagnosis, not proof of causal lift or statistical experiment analysis. Related ab-testing is discovery context and is not approved in this kit.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

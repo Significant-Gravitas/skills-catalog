@@ -1,111 +1,55 @@
 # AutoGPT skills catalog
 
-43 selected community skills in ordinary, self-contained Agent Skills packages.
-This replaces all 171 previous catalog entries. The original authors retain
-authorship; AutoGPT curates and adapts packaging, names and attribution metadata.
+74 reviewed community skill packages in the established Agent Skills format. This replaces all 171 previous catalog entries. The full seeded roster is accounted for: 32 experts and 321 original assignments. The initial live production inventory contained 15 experts; the larger number describes the code seed.
 
-The existing AutoGPT loader accepts all 43 packages in an isolated check using
-the inspected parser and package validators. **This is still a draft collection:
-runtime integration and production migration have not been performed.** See
-[import and runtime status](docs/IMPORT_COMPATIBILITY.md).
+The exact current importer accepts all 74 packages in isolation. **This remains a draft: runtime integration, expert reassignment and production migration have not been performed.**
 
-## Skills and format
+- [Every selected skill, function, author, source and licence](SELECTIONS.md)
+- [Every expert and all 321 original assignments, including gaps](docs/EXPERT_COVERAGE.md)
+- [40 deferred sources and reasons](docs/DEFERRED_SKILLS.md)
+- [Import acceptance and remaining runtime work](docs/IMPORT_COMPATIBILITY.md)
 
-[SELECTIONS.md](SELECTIONS.md) lists every skill, essential function, source,
-licence and proposed expert assignment. The collection contains 36 core and seven
-conditional selections: 45 core and seven conditional expert assignments.
-
-The package format follows [Agent Skills](https://agentskills.io/specification):
+## Standard packages
 
 ```
 skills/<clear-unique-name>/
-  SKILL.md                 name, description, licence, metadata and instructions
-  LICENSE                  exact controlling upstream licence
-  ATTRIBUTION.md           original author, source, adaptations and requirements
-  references/              required local guidance, when used
-  scripts/                 required executable code, when used
-  assets/                  required templates/resources, when used
-catalog.yml                existing AutoGPT catalog format
-provenance/                 source archives, hashes, changes and research evidence
+  SKILL.md          standard YAML and original instructions
+  LICENSE           exact controlling upstream licence
+  ATTRIBUTION.md    original author and packaging changes
+  references/       required supporting guidance, when used
+  scripts/          unchanged original executable files, when used
+catalog.yml         existing AutoGPT loader format
+provenance/         originals, evidence, hashes and recorded adaptations
 ```
 
-`name` matches the individual folder. Thirty-seven names have been clarified,
-including the two different upstream `customer-research` skills, now
-`customer-insight-research` and `customer-support-research`. The full mapping is
-in [provenance/name-mapping.json](provenance/name-mapping.json).
+The collection has 64 core and 10 conditional packages; 67 names were clarified. Folders match their declared names. Standard `license` and `metadata` fields carry attribution; the source metadata keys are AutoGPT conventions within the standard extension map. No new skill format, submodule fetch or shared package root is required.
 
-Standard `license` and `metadata` fields carry the original licence and
-attribution. `metadata.source` and `metadata.source_url` are conventions understood
-by AutoGPT inside the standard extension map. Upstream native extension fields
-remain present; their runtime behavior is a separate compatibility requirement.
-There is no new platform import schema or shared-package-root requirement.
+Each package contains its own required local support files. Only dependencies used by selected workflows are included. Scripts, licences and unchanged supporting material retain exact original bytes and executable modes. Counted name/metadata/path adaptations preserve authored advice, gates, commands and body formatting.
+There are 332 installed files. The largest package by file count is `lifecycle-email-marketing`, with 11 supplementary files. Every installed package stays within the inspected platform limits.
 
-## Dependency packaging
+## Permanent provenance
 
-Only selected skills and the supporting files their workflows use are installed.
-Each package carries its own required local references. References have been
-updated when files moved. Optional upstream discovery links point to immutable
-source revisions; project-state files and external API identifiers keep their
-authored names.
+`provenance/files.json` binds every installed file to its original repository/path/commit, Git blob, checksums, mode and counted transformations. Exact originals live under `provenance/originals/<sha256>`. `tools/vendor.py --restore` can recreate missing packages offline without executing upstream code.
 
-The marketing packages need ten shared tool guides, not the complete 164-file
-tool collection. Unused development fixtures and unrelated tools are excluded.
-The full collection has 221 installed files, including 43 licences and 43
-attribution files; the largest package has 17 supplementary files and is under
-180 KiB. No complete upstream repository or hidden plugin install is bundled.
+Dated usage/activity captures are now stored inside this repository under `provenance/evidence-files/<sha256>`, not only in a local ZIP. Evidence is explicitly linked from each selection. Stars are repository-wide and installs are telemetry; neither proves successful outcomes. No skill was executed or benchmarked during curation.
 
-Automated checks verify definite local Markdown links and report literal paths,
-Python imports and dynamic/native references for review. Prose and optional
-provider branches are ambiguous: a scan alone cannot determine every dependency.
-The reviewed inclusion/exclusion decisions and unresolved runtime needs are
-recorded in `provenance/dependency-review.json` and each skill's provenance.
+The original authors remain the authors; AutoGPT curates and adapts packaging. Each package carries its full licence and attribution. MIT/Apache notices are retained; Trail of Bits CC-BY-SA-4.0 adaptations retain attribution and share-alike terms. Six selections now use verified clean historical source revisions. Invoice chase remains excluded until its licence is clarified. Authorship does not establish human-only authorship, and no upstream endorsement is claimed.
 
-## Provenance, authorship and changes
-
-`provenance/files.json` records each installed file's upstream repository, path,
-immutable commit, Git blob, original SHA-256, packaged SHA-256 and executable
-mode. Exact original bytes are stored under `provenance/originals/<sha256>`;
-these archives are outside the install tree and are not additional skills.
-Identical source bytes are stored once. Recorded, counted transformations can
-recreate every adapted package offline; modified files identify the adaptation.
-
-Instructions and approval gates are retained. Adaptations cover clear names,
-accurate metadata, required local paths and explicit references to original
-plugin guidance. YAML headers are normalized; authored body formatting is not
-globally reformatted. Licences and unchanged support files retain exact bytes.
-
-Research evidence was captured on 2026-09-24. Per-skill provenance retains
-adoption/activity observations, source URLs and response hashes. Counts are
-installation telemetry, not unique users or evidence of successful outcomes.
-The complete local research archive's checksum is recorded in the evidence file.
-No source has been executed or benchmarked during curation/packaging.
-
-Retain MIT/Apache copyright/licence notices. The Trail of Bits adaptations retain
-CC-BY-SA-4.0 attribution and share-alike terms. Seven selections inherit an
-Anthropic Apache licence with unexplained appended text; preserve the exact
-licence and resolve that recorded ambiguity before commercial release. See the
-individual provenance records. Original authorship does not establish human-only
-authorship, and no upstream endorsement is claimed.
+Deferred sources live under separate content-addressed archives, with exact reasons and licences. They are not discoverable packages. The advertising suite exceeds current limits; prospecting has an unresolved source safety finding. Public-relations, referrals and marketing-plan have contradictory authored guidance; the ideas library is held with its parent. No workflow is rewritten or weakened to pass review.
 
 ## Contributing and checking
 
-Read [AGENTS.md](AGENTS.md) for mandatory naming, dependency, formatting,
-attribution and publication rules.
+Read [AGENTS.md](AGENTS.md).
 
 ```
 python -m pip install pyyaml
 python -m unittest discover -s tools -p 'test_*.py' -v
-python tools/check.py --expected-count 43
+python tools/check.py --expected-count 74
+python tools/check_research.py
 python tools/audit_dependencies.py --check
 python tools/vendor.py --check
 ```
 
-On POSIX use `--strict-modes` with the checker. `tools/vendor.py --restore`
-recreates missing package files from the local source archives and recorded
-transformations. It does not fetch upstream HEAD, overwrite edited files or
-execute third-party code. The exact source-specific importer probe and its
-limitations are documented in [IMPORT_COMPATIBILITY.md](docs/IMPORT_COMPATIBILITY.md).
+Use `--strict-modes` with the package checker on POSIX. Source integrity, complete roster accounting, captured evidence and deferred-source retention are tested independently of import acceptance. See the documented exact importer probe for its source revision and limits.
 
-Merging this repository does not retire production listings or reassign experts.
-Publication requires the documented runtime decisions, migration and end-to-end
-verification; it is not implied by passing the packaging checks.
+Merging this catalog does not remove production listings or change expert assignments. A separate migration must preserve users’ installed copies, avoid the starter fallback, retire intended placeholders and assign only the supported kits. Coverage gaps and conditional sources remain explicit.

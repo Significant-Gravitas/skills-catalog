@@ -1,0 +1,530 @@
+{
+  "commit": "dc3aeb32d3bc70dcf5c9f5d5b601528b482f36d2",
+  "expected_experts": 32,
+  "expected_assignments": 321,
+  "experts": [
+    {
+      "name": "Maria",
+      "job_title": "SEO Content Manager",
+      "bundled_skills": [
+        "brand-voice-guide",
+        "seo-content-brief",
+        "on-page-seo-audit"
+      ]
+    },
+    {
+      "name": "Jules",
+      "job_title": "Social Media Manager",
+      "bundled_skills": [
+        "brand-voice-guide",
+        "content-repurposing"
+      ]
+    },
+    {
+      "name": "Nadia",
+      "job_title": "Market Research Analyst",
+      "bundled_skills": [
+        "competitor-teardown",
+        "icp-and-positioning"
+      ]
+    },
+    {
+      "name": "Remy",
+      "job_title": "Email Marketing Manager",
+      "bundled_skills": [
+        "lifecycle-email-map",
+        "email-deliverability-guardrails"
+      ]
+    },
+    {
+      "name": "Mina",
+      "job_title": "Bookkeeper",
+      "bundled_skills": [
+        "bookkeeping-getting-started",
+        "expense-categorization",
+        "invoice-drafting-and-issue",
+        "accounts-receivable-follow-up",
+        "statement-reconciliation",
+        "month-end-close-checklist",
+        "monthly-profit-and-loss-summary",
+        "bookkeeping-exception-escalation"
+      ]
+    },
+    {
+      "name": "Theo",
+      "job_title": "Investor Relations Manager",
+      "bundled_skills": [
+        "investor-relations-getting-started",
+        "pitch-deck-review",
+        "fundraising-data-room-checklist",
+        "investor-targeting-and-research",
+        "fundraising-pipeline-review",
+        "cap-table-hygiene",
+        "monthly-investor-update",
+        "board-and-investor-metrics-brief"
+      ]
+    },
+    {
+      "name": "Quinn",
+      "job_title": "Data Analyst",
+      "bundled_skills": [
+        "kpi-analysis-getting-started",
+        "metric-definition-and-data-quality",
+        "weekly-kpi-digest",
+        "metric-anomaly-detection",
+        "metric-movement-analysis",
+        "cohort-and-retention-analysis",
+        "funnel-conversion-analysis",
+        "experiment-readout"
+      ]
+    },
+    {
+      "name": "Max",
+      "job_title": "Account Executive",
+      "bundled_skills": [
+        "max-getting-started",
+        "build-the-target-list",
+        "research-an-account",
+        "find-the-decision-makers",
+        "draft-a-first-touch",
+        "draft-a-follow-up",
+        "handle-a-reply",
+        "discovery-and-qualification",
+        "objection-and-negotiation",
+        "next-step-and-handoff",
+        "multithread-and-stakeholder-maps",
+        "business-case-and-roi-selling",
+        "quarterback-the-deal-team",
+        "enterprise-deal-desk-close-plans",
+        "rfp-and-competitive-bid-response",
+        "pipeline-review-and-forecast",
+        "territory-and-account-planning",
+        "renewal-expansion-and-qbr",
+        "signature-to-launch-and-account-ops",
+        "exec-engagement-and-sponsorship",
+        "sales-team-leadership",
+        "sales-ops-coverage-and-quota",
+        "enablement-playbooks-certification",
+        "regional-category-gtm-strategy",
+        "partner-and-channel-co-sell",
+        "alliance-co-commercialization",
+        "voice-of-customer-loop",
+        "compliance-gated-deal-execution",
+        "cloud-commit-and-marketplace-selling",
+        "marketplace-partner-revenue-growth",
+        "credit-term-sheet-structuring",
+        "industrial-pursuit-tender-handover",
+        "media-plan-measure-optimize",
+        "regulated-access-and-clinical-selling",
+        "retail-jbp-trade-and-sellout",
+        "showroom-fi-and-internet-bdc",
+        "field-call-route-discipline"
+      ]
+    },
+    {
+      "name": "Devon",
+      "job_title": "Application Security Engineer",
+      "bundled_skills": [
+        "dependency-security-getting-started",
+        "dependency-inventory",
+        "outdated-dependency-review",
+        "vulnerability-triage",
+        "cve-stack-relevance",
+        "dependency-upgrade-plan",
+        "dependency-upgrade-pr",
+        "dependency-change-risk-review"
+      ]
+    },
+    {
+      "name": "Riley",
+      "job_title": "Customer Success Manager",
+      "bundled_skills": [
+        "customer-success-getting-started",
+        "customer-onboarding-plan",
+        "customer-health-score",
+        "churn-risk-review",
+        "renewal-readiness-review",
+        "renewal-touchpoint-draft",
+        "expansion-opportunity-brief",
+        "customer-success-plan"
+      ]
+    },
+    {
+      "name": "Jordan",
+      "job_title": "Deal Desk Manager",
+      "bundled_skills": [
+        "deal-desk-getting-started",
+        "proposal-draft",
+        "statement-of-work-draft",
+        "pipeline-stage-aging-review",
+        "deal-risk-review",
+        "renewal-negotiation-brief",
+        "pricing-and-terms-approval-brief",
+        "proposal-quality-check"
+      ]
+    },
+    {
+      "name": "Frankie",
+      "job_title": "Executive Assistant",
+      "bundled_skills": []
+    },
+    {
+      "name": "Harper",
+      "job_title": "Recruiter",
+      "bundled_skills": [
+        "recruiting-getting-started",
+        "role-intake-and-job-description",
+        "hiring-rubric-design",
+        "resume-screening",
+        "interview-plan-and-scorecard",
+        "candidate-interview-debrief",
+        "candidate-rejection-email",
+        "candidate-offer-draft"
+      ]
+    },
+    {
+      "name": "Vera",
+      "job_title": "Procurement Specialist",
+      "bundled_skills": [
+        "procurement-getting-started",
+        "vendor-requirements-brief",
+        "vendor-quote-comparison",
+        "vendor-due-diligence",
+        "procurement-decision-memo",
+        "contract-renewal-tracker",
+        "vendor-performance-review",
+        "spend-anomaly-review"
+      ]
+    },
+    {
+      "name": "Ellis",
+      "job_title": "Contract Manager",
+      "bundled_skills": [
+        "contract-ops-getting-started",
+        "nda-playbook-review",
+        "msa-playbook-review",
+        "contract-clause-comparison",
+        "contract-key-term-extraction",
+        "contract-deviation-triage",
+        "contract-obligation-tracker",
+        "counsel-escalation-brief"
+      ]
+    },
+    {
+      "name": "Robin",
+      "job_title": "Customer Support Specialist",
+      "bundled_skills": [
+        "robin-getting-started",
+        "triage-and-prioritize",
+        "draft-the-reply",
+        "troubleshoot-and-resolve",
+        "own-to-closure",
+        "help-center-answers-and-kb",
+        "billing-refunds-and-exceptions",
+        "escalations-and-incidents",
+        "orders-returns-and-warranty",
+        "live-channel-queue-operations",
+        "voice-and-phone-support",
+        "technical-diagnostics-with-tools",
+        "service-recovery-and-goodwill",
+        "onboarding-and-adoption",
+        "vip-and-white-glove-care",
+        "social-and-community-support",
+        "knowledge-centered-service",
+        "voice-of-customer-and-feedback",
+        "quality-csat-and-coaching",
+        "sensitive-data-safe-handling",
+        "fraud-and-chargeback-defense",
+        "trust-and-safety-escalations",
+        "compliance-and-regulated-support",
+        "enterprise-identity-sso-support",
+        "upsell-and-retention-offers",
+        "account-health-and-qbrs",
+        "support-ops-improvement-program",
+        "workforce-and-capacity-planning",
+        "bpo-vendor-quality-ops",
+        "mass-recovery-and-bulk-comms",
+        "marketplace-two-sided-mediation",
+        "travel-disruption-and-rebooking",
+        "logistics-shipment-and-customs",
+        "member-benefits-and-claims"
+      ]
+    },
+    {
+      "name": "Anika",
+      "job_title": "Partnerships Manager",
+      "bundled_skills": [
+        "anika-getting-started",
+        "define-the-partner-icp",
+        "source-and-qualify-partners",
+        "partner-first-touch-outreach",
+        "structure-the-partner-agreement",
+        "onboard-and-enable-partners",
+        "run-the-partner-co-sell-cadence",
+        "track-partner-pipeline",
+        "prep-the-partner-qbr",
+        "handle-partner-conflict-and-churn",
+        "design-the-partner-program",
+        "map-the-partner-ecosystem",
+        "plan-the-multi-year-partnership",
+        "govern-the-strategic-alliance",
+        "model-the-partnership-commercials",
+        "scope-the-tech-partnership",
+        "run-the-partner-marketing-engine",
+        "scale-the-partner-channel",
+        "run-hyperscaler-marketplace-co-sell",
+        "run-partner-strategy-and-operations",
+        "assure-partner-led-delivery",
+        "manage-partner-renewals-and-exits",
+        "build-partner-academies-at-scale",
+        "orchestrate-multi-party-partner-bids",
+        "run-regulated-partnership-motions",
+        "source-partners-via-investor-ecosystems",
+        "build-data-and-r-d-alliances",
+        "run-creator-and-affiliate-partner-programs",
+        "run-brand-oem-and-supply-partnerships",
+        "set-board-level-alliance-strategy",
+        "own-the-alliance-pnl",
+        "run-global-partner-executive-councils",
+        "drive-alliance-ma-and-strategic-investments",
+        "build-partner-led-category-creation"
+      ]
+    },
+    {
+      "name": "Alex",
+      "job_title": "Product Manager",
+      "bundled_skills": [
+        "alex-getting-started",
+        "product-roadmap-and-prioritization",
+        "product-prd-and-acceptance-criteria",
+        "product-discovery-and-user-research",
+        "product-metrics-and-instrumentation",
+        "product-strategy-and-bets",
+        "product-experiment-design",
+        "product-ai-feature-scoping-and-evals",
+        "product-launch-plan",
+        "product-market-and-competitor-read",
+        "product-exec-briefing"
+      ]
+    },
+    {
+      "name": "Daniel",
+      "job_title": "Financial Analyst",
+      "bundled_skills": [
+        "daniel-getting-started",
+        "budget-vs-actuals-and-reforecast",
+        "variance-and-flux-analysis",
+        "cash-treasury-and-fx",
+        "close-controls-and-accounting",
+        "unit-economics-and-roi",
+        "saas-gtm-finance",
+        "deal-economics-and-pricing-guardrails",
+        "finance-board-and-investor-reporting",
+        "automate-finance-reporting"
+      ]
+    },
+    {
+      "name": "Sofia",
+      "job_title": "Recruiter",
+      "bundled_skills": [
+        "sofia-getting-started",
+        "role-intake-and-scorecard",
+        "job-description-drafting",
+        "candidate-sourcing-strategy",
+        "passive-candidate-outreach",
+        "resume-screening",
+        "interview-kit-design",
+        "interview-coordination",
+        "hiring-debrief-and-decision",
+        "job-offer-and-close-plan",
+        "hiring-pipeline-analytics"
+      ]
+    },
+    {
+      "name": "Maya",
+      "job_title": "Marketing Manager",
+      "bundled_skills": [
+        "maya-getting-started",
+        "messaging-and-tone-matrix",
+        "campaign-brief-and-asset-plan",
+        "content-brief-writer-handoff",
+        "editorial-calendar-ops",
+        "channel-draft-shapes",
+        "nurture-sequence-build-and-readout",
+        "weekly-marketing-read"
+      ]
+    },
+    {
+      "name": "James",
+      "job_title": "Operations Manager",
+      "bundled_skills": [
+        "james-getting-started",
+        "ops-run-the-operating-rhythm",
+        "ops-scorecard-and-kpis",
+        "ops-write-an-sop",
+        "ops-map-and-improve-a-process",
+        "ops-automate-a-workflow",
+        "ops-vendor-and-procurement",
+        "ops-capacity-and-headcount-plan",
+        "ops-controls-and-escalations",
+        "ops-govern-a-program"
+      ]
+    },
+    {
+      "name": "Zara",
+      "job_title": "GTM Strategist",
+      "bundled_skills": [
+        "zara-getting-started",
+        "positioning-and-messaging",
+        "icp-and-segmentation",
+        "pricing-and-packaging",
+        "commercial-launch-strategy",
+        "competitive-intelligence",
+        "gtm-performance-diagnostics",
+        "gtm-planning-and-market-entry",
+        "opportunity-sizing-and-business-case",
+        "sales-marketing-alignment-and-sla",
+        "field-enablement-content",
+        "vertical-industry-plays",
+        "developer-and-api-motion"
+      ]
+    },
+    {
+      "name": "Sasha",
+      "job_title": "Support Specialist",
+      "bundled_skills": [
+        "support-getting-started",
+        "ticket-triage",
+        "support-reply-draft",
+        "support-macro-library",
+        "help-article-from-tickets",
+        "bug-report-handoff",
+        "refund-and-exception-brief",
+        "weekly-ticket-themes"
+      ]
+    },
+    {
+      "name": "Priya",
+      "job_title": "Product Manager",
+      "bundled_skills": [
+        "product-getting-started",
+        "feedback-synthesis",
+        "feature-request-triage",
+        "user-interview-guide",
+        "opportunity-brief",
+        "product-requirements-draft",
+        "roadmap-prioritisation",
+        "release-notes-draft"
+      ]
+    },
+    {
+      "name": "Marco",
+      "job_title": "Performance Marketer",
+      "bundled_skills": [
+        "paid-ads-getting-started",
+        "campaign-structure-plan",
+        "ad-copy-variants",
+        "landing-page-message-match",
+        "wasted-spend-audit",
+        "budget-pacing-review",
+        "creative-test-readout",
+        "paid-performance-report"
+      ]
+    },
+    {
+      "name": "Noor",
+      "job_title": "Communications Manager",
+      "bundled_skills": [
+        "communications-getting-started",
+        "news-angle-and-key-messages",
+        "press-release-draft",
+        "media-list-research",
+        "media-pitch-email",
+        "launch-communications-plan",
+        "holding-statement-draft",
+        "spokesperson-briefing"
+      ]
+    },
+    {
+      "name": "Casey",
+      "job_title": "QA Engineer",
+      "bundled_skills": [
+        "code-quality-getting-started",
+        "pull-request-review",
+        "test-plan-draft",
+        "bug-reproduction-report",
+        "flaky-test-triage",
+        "regression-risk-review",
+        "release-readiness-checklist",
+        "incident-postmortem-draft"
+      ]
+    },
+    {
+      "name": "Ines",
+      "job_title": "People Operations Specialist",
+      "bundled_skills": [
+        "people-ops-getting-started",
+        "new-hire-onboarding-plan",
+        "handbook-policy-draft",
+        "one-to-one-agenda",
+        "performance-review-prep",
+        "engagement-survey-readout",
+        "offboarding-checklist",
+        "hr-escalation-brief"
+      ]
+    },
+    {
+      "name": "Omar",
+      "job_title": "Revenue Operations Analyst",
+      "bundled_skills": [
+        "revops-getting-started",
+        "crm-field-audit",
+        "crm-duplicate-review",
+        "pipeline-stage-definitions",
+        "lead-routing-rules",
+        "sales-forecast-rollup",
+        "lost-deal-analysis",
+        "crm-hygiene-report"
+      ]
+    },
+    {
+      "name": "Lena",
+      "job_title": "Compliance Operations Analyst",
+      "bundled_skills": [
+        "compliance-ops-getting-started",
+        "security-questionnaire-answers",
+        "personal-data-map",
+        "subprocessor-register",
+        "dpa-checklist-review",
+        "policy-gap-review",
+        "data-subject-request-draft",
+        "compliance-escalation-brief"
+      ]
+    },
+    {
+      "name": "Kai",
+      "job_title": "Executive Assistant",
+      "bundled_skills": [
+        "executive-assistant-getting-started",
+        "inbox-triage",
+        "reply-draft-in-your-voice",
+        "meeting-prep-brief",
+        "meeting-follow-up-draft",
+        "calendar-conflict-review",
+        "travel-plan",
+        "weekly-priorities-review"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/blob/dc3aeb32d3bc70dcf5c9f5d5b601528b482f36d2/autogpt_platform/backend/backend/api/features/experts/seed.py",
+      "sha256": "074796d864925dc2a723df470bea25f84d72dc5f3e333038998f66bb44b2c8a9"
+    },
+    {
+      "url": "https://github.com/Significant-Gravitas/AutoGPT/blob/dc3aeb32d3bc70dcf5c9f5d5b601528b482f36d2/autogpt_platform/backend/backend/api/features/experts/roster_wave_three.py",
+      "sha256": "4dbb06bb6630eb3d87b99b85f5c6f148fc6b84e9b09d0dd1dacefa892df61306"
+    }
+  ],
+  "scope": "Pinned full code roster, not an assertion that all 32 experts are currently in production. The initial production capture had 15 experts; Max had no installed skills there but has 37 in this seed."
+}

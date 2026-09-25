@@ -29,18 +29,32 @@
       "status": "core",
       "essential_function": "Plan evidence-led topics, content clusters and distribution.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Maya",
+      "role": "Marketing Manager",
+      "status": "core",
+      "essential_function": "Prioritize content pillars and topics from audience questions, search demand and competitor gaps, then plan formats, editorial mix and distribution.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
     "7167402a6419c32c8817ba8e",
     "12843469c87c24da1ce965f5",
     "e12751dc43af8207be6af149",
-    "8b1e2a7e99c0c48f45506c40"
+    "8b1e2a7e99c0c48f45506c40",
+    "8331bb762c4610feb9172be0",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "f84bfd09b581289a0c050587",
+    "d487101103fa31c646f2a993",
+    "48190ac73d2a5ff706b3cf18"
   ],
   "review": "Plans content pillars, topic clusters, editorial priorities and distribution from customer evidence and keyword exports. Native deliverable is a content programme; it is no longer forced into the old single-article brief format.",
   "native_prerequisites": [
     "Supplied business/audience/content evidence and optional analytics/search/customer-research sources.",
-    "Sanity, Contentful and Strapi are alternative CMS implementation paths. The kept guides use external service accounts, APIs and their official CLIs/SDKs, not repository wrappers."
+    "Sanity, Contentful and Strapi are alternative CMS implementation paths. The kept guides use external service accounts, APIs and their official CLIs/SDKs, not repository wrappers.",
+    "Audience and product context, existing content and resource constraints; optional keyword exports, research and a team CMS."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
@@ -85,5 +99,18 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/content-strategy",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "0ad572d607884c561668810f77cd21bbe3e0508c64090f2997661a728360f946"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not itself maintain every calendar row or execute a recurring status monitor. Published content-performance numbers are source-specific directional observations.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

@@ -86,7 +86,7 @@
 
 ## Verification and publication
 
-- Run the unit tests, `python tools/check.py --expected-count 43`, and the
+- Run the unit tests, `python tools/check.py --expected-count 74`, and the
   dependency audit. On POSIX also use `--strict-modes`. Update the expected count
   intentionally when changing the reviewed selection. Verify that the archived
   originals and every generated package match their manifests.
@@ -106,3 +106,10 @@
 
 References: https://agentskills.io/specification and
 https://github.com/vercel-labs/skills .
+
+## Complete roster and deferred sources
+
+- Keep `provenance/roster-baseline.json` and `provenance/expert-coverage.json` exhaustive for the reviewed pinned seed (currently 32 experts and 321 assignments). Keep live-production inventory separate from code-seed scope. State partial matches and gaps; a broad role kit is not proof of one-to-one coverage.
+- Run `python tools/check_research.py`. Store full dated adoption/activity responses in `provenance/evidence-files/<sha256>` and bind them to selections. Distinguish skill installs from repository-wide popularity and dependency-only evidence.
+- Exclude unresolved licence, mandatory dependency, native-suite size or source-safety holdouts from both `catalog.yml` and `skills/`. Preserve their original files, licences/notices, source identity and explicit reason in `provenance/deferred-skills.json` and `provenance/deferred-originals/<sha256>`. Never patch authored advice, remove a required branch or attach an older licence to later files to clear a holdout.
+- A clean historical replacement must use the entire selected source revision and its controlling licence. Check every used support file against that revision; record the previous pin. Keep only used or conditionally required archived dependencies, with inclusion reasons.

@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "slug": "product-launch-marketing",
+  "name": "product-launch-marketing",
+  "original_name": "launch",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/launch",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/launch/SKILL.md",
+  "discovery_url": "https://skills.sh/coreyhaines31/marketingskills/launch",
+  "author": "Corey Haines",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Original repository skill and support files; separately credited reference notices retained where applicable.",
+    "obligations": [
+      "Retain copyright and permission notice with copies or substantial portions.",
+      "Retain authored attribution in supporting references."
+    ],
+    "file": "skills/product-launch-marketing/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "1d5f5e6a4caaa5b62604a8df324b060eb99da567e65e9fc5a69b9999c61325b2",
+  "packaged_sha256": "e7c24535417feafd913c3fb00ee7c284f0edef08999119b0fea33eab69634dc0",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Noor",
+      "role": "Communications Manager",
+      "status": "core",
+      "essential_function": "Plan phased product or feature launches across owned, rented and partner audiences, with readiness checks, coordinated assets and post-launch momentum.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Zara",
+      "role": "GTM Strategist",
+      "status": "core",
+      "essential_function": "Plan phased product or feature launches across owned, rented and partner audiences, with readiness checks, coordinated assets and post-launch momentum.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "d06027e9b5b98ce6b2e3a61b",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "4b9cd27476e6845a983f59de",
+    "3ad97c0ccdbc1e2e3f4eef34",
+    "48190ac73d2a5ff706b3cf18"
+  ],
+  "review": "Five launch phases, audience/channel framework, release significance tiers and concrete pre-launch/day/post-launch checklists. Useful shared planning layer for GTM and communications.",
+  "essential_function": "Plan phased product or feature launches across owned, rented and partner audiences, with readiness checks, coordinated assets and post-launch momentum.",
+  "native_prerequisites": [
+    "Confirmed product/release scope, audience/channel context and launch ownership; optional publishing and partner tools.",
+    "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch.",
+    "The documented provider alternatives are introw. Use only the chosen authored branch, with its real account, credentials, API/MCP/SDK/CLI capability and permissions; these are not all mandatory accounts."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Only exact counted local-path/link adaptations plus standard name/licence/attribution headers and notices are permitted. Original expert guidance, workflow branches, native providers and project-state locations remain intact.",
+      "General related-skills lists are discovery suggestions, not implied bundled workflows.",
+      "No source script is executed or transformed. Retained provider guide CLI links are real transitive dependencies, unlike the optional full tools registry."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "skills/launch/evals/evals.json",
+        "reason": "Development evaluation fixture, not read/invoked by the selected workflow."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/launch",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "1d5f5e6a4caaa5b62604a8df324b060eb99da567e65e9fc5a69b9999c61325b2"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not provide crisis communications, a legally binding embargo process or a full commercial approval matrix. Case-study outcomes are examples, not forecast guarantees.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

@@ -31,18 +31,39 @@
       "status": "core",
       "essential_function": "Find stale, slipping and stuck deals, show pipeline coverage and prioritize follow-up.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Omar",
+      "role": "Revenue Operations Analyst",
+      "status": "core",
+      "essential_function": "Read CRM or exported opportunity data to report stage coverage, aging, conversion baselines, hygiene flags and at-risk deals.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Max",
+      "role": "Sales Development Representative",
+      "status": "core",
+      "essential_function": "Find stale, slipping and stuck deals, show pipeline coverage and prioritize follow-up.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
     "ab864a5eb2adc98e950b7ddb",
     "fe2e7901829b75e6359679b2",
     "a5600b42a48b71d6cc2a0e5b",
-    "cb6b1d17a684229f869a1ff9"
+    "cb6b1d17a684229f869a1ff9",
+    "22a9805922777f8c59d45ce8",
+    "e4040b72e5afeea535291dcc",
+    "afe5b1b4b8534fceb53fa533",
+    "a15e9b9d40204f02d90119d2",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18"
   ],
   "review": "Selected as an unchanged read-only pipeline-health workflow. Full source grounds live CRM fields, uses uploaded exports when connectors are absent, distinguishes real stage-entry age from created-date fallback, flags stale/slipping/stuck deals, and exposes coverage heuristics. Native context intake permits team cycle thresholds. Heuristics are prioritization aids, not validated forecasts.",
   "native_prerequisites": [
     "CRM or uploaded pipeline export; history needed for genuine stage aging and slippage",
-    "Native team context supplies stages, scope, quota and cycle length; no skill edit required"
+    "Native team context supplies stages, scope, quota and cycle length; no skill edit required",
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
@@ -67,5 +88,18 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "sales/skills/pipeline-review",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "primary_sha256": "8172970f71ca4d508e359404e8ba7de1d24ccbdd7533e23bc87c645801985ad7"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Aging/coverage thresholds are explicitly heuristics, not validated close probabilities.",
+    "Read-only review hands requested fixes to other skills; update-opportunity is optional and not installed by this recommendation.",
+    "Current individual usage refers to this named current listing, not the older historical workflow."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

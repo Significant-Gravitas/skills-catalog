@@ -3,147 +3,11 @@
   "seed_git_blob": "05014f04317b1a820a0df6db89c4de515d80f68f",
   "skills_git_blob": "0425ccea6aeea1e805d9874e0e3f2c08f41a5497",
   "method": "Executed only exact AST-selected load_catalog, _load, _package_files, parsing/rendering, attribution helpers, package/content/path validators and their types/constants. Used actual pydantic models. Category validation uses the documented eight-category allowlist; built-in-name lookup supplies agent_building_guide. No database, platform services, networking or upstream skill execution.",
-  "accepted": 43,
+  "accepted": 74,
   "rejected": 0,
   "runtime_verified": false,
   "limitation": "Import acceptance does not test database persistence, installation, metadata enforcement, native plugin dispatch, service accounts or execution. The seed stores a subset of parsed fields; parser round-trip preservation does not establish database preservation.",
   "results": [
-    {
-      "slug": "product-marketing-context",
-      "result": "accepted",
-      "supplementary_files": 2,
-      "package_bytes": 13491,
-      "source": "coreyhaines31/marketingskills/skills/product-marketing",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/product-marketing/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "marketing-copy-editing",
-      "result": "accepted",
-      "supplementary_files": 5,
-      "package_bytes": 32118,
-      "source": "coreyhaines31/marketingskills/skills/copy-editing",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/copy-editing/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "social-media-management",
-      "result": "accepted",
-      "supplementary_files": 10,
-      "package_bytes": 70679,
-      "source": "coreyhaines31/marketingskills/skills/social",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/social/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "lifecycle-email-marketing",
-      "result": "accepted",
-      "supplementary_files": 11,
-      "package_bytes": 54436,
-      "source": "coreyhaines31/marketingskills/skills/emails",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/emails/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "competitor-profiling",
-      "result": "accepted",
-      "supplementary_files": 4,
-      "package_bytes": 30846,
-      "source": "coreyhaines31/marketingskills/skills/competitor-profiling",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/competitor-profiling/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "customer-insight-research",
-      "result": "accepted",
-      "supplementary_files": 5,
-      "package_bytes": 49940,
-      "source": "coreyhaines31/marketingskills/skills/customer-research",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/customer-research/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "marketing-content-strategy",
-      "result": "accepted",
-      "supplementary_files": 7,
-      "package_bytes": 50516,
-      "source": "coreyhaines31/marketingskills/skills/content-strategy",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/content-strategy/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "marketing-copywriting",
-      "result": "accepted",
-      "supplementary_files": 4,
-      "package_bytes": 33347,
-      "source": "coreyhaines31/marketingskills/skills/copywriting",
-      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/copywriting/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "customer-support-research",
-      "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 28667,
-      "source": "anthropics/knowledge-work-plugins/customer-support/skills/customer-research",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/customer-research/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "argument-hint"
-      ]
-    },
-    {
-      "slug": "customer-response-drafting",
-      "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 33007,
-      "source": "anthropics/knowledge-work-plugins/customer-support/skills/draft-response",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/draft-response/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "argument-hint"
-      ]
-    },
-    {
-      "slug": "customer-escalation",
-      "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 29650,
-      "source": "anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/customer-escalation/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "argument-hint"
-      ]
-    },
-    {
-      "slug": "website-seo-audit",
-      "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 39549,
-      "source": "every-app/open-seo/plugins/openseo/skills/seo-audit",
-      "source_url": "https://github.com/every-app/open-seo/blob/0ffff93101043aad7600a3b6a499a0cd2887ef49/plugins/openseo/skills/seo-audit/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "seo-report-generation",
-      "result": "accepted",
-      "supplementary_files": 2,
-      "package_bytes": 24103,
-      "source": "every-app/open-seo/plugins/openseo/skills/seo-report",
-      "source_url": "https://github.com/every-app/open-seo/blob/0ffff93101043aad7600a3b6a499a0cd2887ef49/plugins/openseo/skills/seo-report/SKILL.md",
-      "license": "MIT",
-      "native_fields_dropped_by_parser_renderer": []
-    },
     {
       "slug": "account-reconciliation",
       "result": "accepted",
@@ -151,64 +15,6 @@
       "package_bytes": 24570,
       "source": "anthropics/knowledge-work-plugins/finance/skills/reconciliation",
       "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/skills/reconciliation/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "argument-hint"
-      ]
-    },
-    {
-      "slug": "month-end-close-management",
-      "result": "accepted",
-      "supplementary_files": 2,
-      "package_bytes": 27056,
-      "source": "anthropics/knowledge-work-plugins/finance/skills/close-management",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/skills/close-management/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "user-invocable"
-      ]
-    },
-    {
-      "slug": "financial-statement-preparation",
-      "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 33202,
-      "source": "anthropics/knowledge-work-plugins/finance/skills/financial-statements",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/skills/financial-statements/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "argument-hint"
-      ]
-    },
-    {
-      "slug": "overdue-invoice-follow-up",
-      "result": "accepted",
-      "supplementary_files": 17,
-      "package_bytes": 118749,
-      "source": "anthropics/knowledge-work-plugins/small-business/skills/invoice-chase",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/small-business/skills/invoice-chase/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "vendor-evaluation",
-      "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 21879,
-      "source": "anthropics/knowledge-work-plugins/operations/skills/vendor-review",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/operations/skills/vendor-review/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "argument-hint"
-      ]
-    },
-    {
-      "slug": "vendor-contract-status",
-      "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 23974,
-      "source": "anthropics/knowledge-work-plugins/legal/skills/vendor-check",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/legal/skills/vendor-check/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": [
         "argument-hint"
@@ -225,38 +31,260 @@
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "multi-source-research-synthesis",
+      "slug": "business-process-documentation",
       "result": "accepted",
       "supplementary_files": 3,
-      "package_bytes": 27367,
-      "source": "anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/enterprise-search/skills/knowledge-synthesis/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "user-invocable"
-      ]
-    },
-    {
-      "slug": "project-status-report",
-      "result": "accepted",
-      "supplementary_files": 4,
-      "package_bytes": 23184,
-      "source": "anthropics/knowledge-work-plugins/operations/skills/status-report",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/operations/skills/status-report/SKILL.md",
+      "package_bytes": 17736,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/process-doc",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/process-doc/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": [
         "argument-hint"
       ]
     },
     {
-      "slug": "operational-risk-assessment",
+      "slug": "business-process-optimization",
       "result": "accepted",
       "supplementary_files": 2,
-      "package_bytes": 18175,
-      "source": "anthropics/knowledge-work-plugins/operations/skills/risk-assessment",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/operations/skills/risk-assessment/SKILL.md",
+      "package_bytes": 14614,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/process-optimization",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/process-optimization/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "candidate-interview-planning",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 14750,
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/interview-prep",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/interview-prep/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "client-proposal-writing",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 14989,
+      "source": "jezweb/claude-skills/plugins/writing/skills/proposal-writer",
+      "source_url": "https://github.com/jezweb/claude-skills/blob/e875a6bfff809e5d42c584104031e36e1f014f18/plugins/writing/skills/proposal-writer/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "code-change-security-review",
+      "result": "accepted",
+      "supplementary_files": 6,
+      "package_bytes": 56990,
+      "source": "trailofbits/skills/plugins/differential-review/skills/differential-review",
+      "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/plugins/differential-review/skills/differential-review/SKILL.md",
+      "license": "CC-BY-SA-4.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "code-review-quality",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 16195,
+      "source": "wshobson/agents/plugins/developer-essentials/skills/code-review-excellence",
+      "source_url": "https://github.com/wshobson/agents/blob/4236bb91f8395b0435f1d8b8baf9e8e4c69a8620/plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "company-policy-lookup",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 19301,
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/policy-lookup",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/policy-lookup/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "competitor-profiling",
+      "result": "accepted",
+      "supplementary_files": 4,
+      "package_bytes": 30846,
+      "source": "coreyhaines31/marketingskills/skills/competitor-profiling",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/competitor-profiling/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "compliance-evidence-tracking",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 14911,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/compliance-tracking",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/compliance-tracking/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "contract-amendment-history",
+      "result": "accepted",
+      "supplementary_files": 5,
+      "package_bytes": 76515,
+      "source": "anthropics/claude-for-legal/commercial-legal/skills/amendment-history",
+      "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/commercial-legal/skills/amendment-history/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "conversion-rate-optimization",
+      "result": "accepted",
+      "supplementary_files": 4,
+      "package_bytes": 27519,
+      "source": "coreyhaines31/marketingskills/skills/cro",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/cro/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "customer-escalation",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 29650,
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/customer-escalation/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "customer-insight-research",
+      "result": "accepted",
+      "supplementary_files": 5,
+      "package_bytes": 49940,
+      "source": "coreyhaines31/marketingskills/skills/customer-research",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/customer-research/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "customer-response-drafting",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 33007,
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/draft-response",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/draft-response/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "customer-support-research",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 28667,
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/customer-research",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/customer-research/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "data-visualization",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 27636,
+      "source": "anthropics/knowledge-work-plugins/data/skills/data-visualization",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/skills/data-visualization/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "user-invocable"
+      ]
+    },
+    {
+      "slug": "dataset-exploration",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 29609,
+      "source": "anthropics/knowledge-work-plugins/data/skills/explore-data",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/skills/explore-data/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "employee-onboarding-planning",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 18296,
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/onboarding",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/onboarding/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "employee-performance-review",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 20049,
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/performance-review",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/performance-review/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "employment-offer-drafting",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 17434,
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/draft-offer",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/draft-offer/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "financial-statement-preparation",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 33202,
+      "source": "anthropics/knowledge-work-plugins/finance/skills/financial-statements",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/skills/financial-statements/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "go-to-market-strategy",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 6937,
+      "source": "phuryn/pm-skills/pm-go-to-market/skills/gtm-strategy",
+      "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-go-to-market/skills/gtm-strategy/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "knowledge-base-article-writing",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 27548,
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/kb-article",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/kb-article/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
     },
     {
       "slug": "legal-meeting-briefing",
@@ -269,28 +297,264 @@
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "task-list-management",
+      "slug": "legal-response-drafting",
       "result": "accepted",
-      "supplementary_files": 6,
-      "package_bytes": 131857,
-      "source": "anthropics/knowledge-work-plugins/productivity/skills/task-management",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/productivity/skills/task-management/SKILL.md",
+      "supplementary_files": 3,
+      "package_bytes": 31479,
+      "source": "anthropics/knowledge-work-plugins/legal/skills/legal-response",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/legal/skills/legal-response/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "lifecycle-email-marketing",
+      "result": "accepted",
+      "supplementary_files": 11,
+      "package_bytes": 54436,
+      "source": "coreyhaines31/marketingskills/skills/emails",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/emails/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "market-size-estimation",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 7333,
+      "source": "phuryn/pm-skills/pm-market-research/skills/market-sizing",
+      "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-market-research/skills/market-sizing/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "marketing-content-strategy",
+      "result": "accepted",
+      "supplementary_files": 7,
+      "package_bytes": 50516,
+      "source": "coreyhaines31/marketingskills/skills/content-strategy",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/content-strategy/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "marketing-copy-editing",
+      "result": "accepted",
+      "supplementary_files": 5,
+      "package_bytes": 32118,
+      "source": "coreyhaines31/marketingskills/skills/copy-editing",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/copy-editing/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "marketing-copywriting",
+      "result": "accepted",
+      "supplementary_files": 4,
+      "package_bytes": 33347,
+      "source": "coreyhaines31/marketingskills/skills/copywriting",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/copywriting/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "month-end-close-management",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 27056,
+      "source": "anthropics/knowledge-work-plugins/finance/skills/close-management",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/finance/skills/close-management/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": [
         "user-invocable"
       ]
     },
     {
-      "slug": "workplace-memory-management",
+      "slug": "multi-source-research-synthesis",
       "result": "accepted",
-      "supplementary_files": 7,
-      "package_bytes": 141082,
-      "source": "anthropics/knowledge-work-plugins/productivity/skills/memory-management",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/productivity/skills/memory-management/SKILL.md",
+      "supplementary_files": 3,
+      "package_bytes": 27367,
+      "source": "anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/enterprise-search/skills/knowledge-synthesis/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": [
         "user-invocable"
       ]
+    },
+    {
+      "slug": "nda-risk-review",
+      "result": "accepted",
+      "supplementary_files": 5,
+      "package_bytes": 85828,
+      "source": "anthropics/claude-for-legal/commercial-legal/skills/nda-review",
+      "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/commercial-legal/skills/nda-review/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "user-invocable"
+      ]
+    },
+    {
+      "slug": "operational-risk-assessment",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 14927,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/risk-assessment",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/risk-assessment/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "operational-runbook-writing",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 17726,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/runbook",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/runbook/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "partner-co-marketing",
+      "result": "accepted",
+      "supplementary_files": 8,
+      "package_bytes": 55844,
+      "source": "coreyhaines31/marketingskills/skills/co-marketing",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/co-marketing/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "people-analytics-reporting",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 17894,
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/people-report",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/people-report/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "portfolio-company-performance-review",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 15756,
+      "source": "anthropics/financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring",
+      "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "pricing-and-packaging-strategy",
+      "result": "accepted",
+      "supplementary_files": 6,
+      "package_bytes": 40655,
+      "source": "coreyhaines31/marketingskills/skills/pricing",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/pricing/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-experiment-design",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 5387,
+      "source": "phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing",
+      "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-launch-marketing",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 23465,
+      "source": "coreyhaines31/marketingskills/skills/launch",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/launch/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-marketing-context",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 13491,
+      "source": "coreyhaines31/marketingskills/skills/product-marketing",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/product-marketing/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-metrics-dashboard-design",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 8687,
+      "source": "phuryn/pm-skills/pm-product-discovery/skills/metrics-dashboard",
+      "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/metrics-dashboard/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-requirements-writing",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 27928,
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/write-spec",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/product-management/skills/write-spec/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "product-research-synthesis",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 31762,
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/synthesize-research",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/product-management/skills/synthesize-research/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "product-roadmap-planning",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 27969,
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/roadmap-update",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/product-management/skills/roadmap-update/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "product-stakeholder-update",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 30276,
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/stakeholder-update",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/product-management/skills/stakeholder-update/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "product-strategy-canvas",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 7744,
+      "source": "phuryn/pm-skills/pm-product-strategy/skills/product-strategy",
+      "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-strategy/skills/product-strategy/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
     },
     {
       "slug": "productivity-setup",
@@ -315,57 +579,65 @@
       ]
     },
     {
-      "slug": "dataset-exploration",
+      "slug": "project-status-report",
       "result": "accepted",
-      "supplementary_files": 3,
-      "package_bytes": 29609,
-      "source": "anthropics/knowledge-work-plugins/data/skills/explore-data",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/skills/explore-data/SKILL.md",
+      "supplementary_files": 4,
+      "package_bytes": 19688,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/status-report",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/status-report/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": [
         "argument-hint"
       ]
     },
     {
-      "slug": "data-visualization",
+      "slug": "recruiting-pipeline",
       "result": "accepted",
       "supplementary_files": 2,
-      "package_bytes": 27636,
-      "source": "anthropics/knowledge-work-plugins/data/skills/data-visualization",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/data/skills/data-visualization/SKILL.md",
+      "package_bytes": 14534,
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/recruiting-pipeline/SKILL.md",
       "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "user-invocable"
-      ]
+      "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "user-cohort-analysis",
+      "slug": "sales-account-research",
       "result": "accepted",
       "supplementary_files": 2,
-      "package_bytes": 8528,
-      "source": "phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis",
-      "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-data-analytics/skills/cohort-analysis/SKILL.md",
+      "package_bytes": 24181,
+      "source": "anthropics/knowledge-work-plugins/sales/skills/account-research",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/account-research/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "sales-call-preparation",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 25753,
+      "source": "anthropics/knowledge-work-plugins/sales/skills/call-prep",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/call-prep/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "sales-enablement-content",
+      "result": "accepted",
+      "supplementary_files": 7,
+      "package_bytes": 62554,
+      "source": "coreyhaines31/marketingskills/skills/sales-enablement",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/sales-enablement/SKILL.md",
       "license": "MIT",
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "supply-chain-risk-auditor",
+      "slug": "sales-outreach-drafting",
       "result": "accepted",
-      "supplementary_files": 6,
-      "package_bytes": 179208,
-      "source": "trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor",
-      "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/SKILL.md",
-      "license": "CC-BY-SA-4.0",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "code-change-security-review",
-      "result": "accepted",
-      "supplementary_files": 6,
-      "package_bytes": 56990,
-      "source": "trailofbits/skills/plugins/differential-review/skills/differential-review",
-      "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/plugins/differential-review/skills/differential-review/SKILL.md",
-      "license": "CC-BY-SA-4.0",
+      "supplementary_files": 2,
+      "package_bytes": 26111,
+      "source": "anthropics/knowledge-work-plugins/sales/skills/draft-outreach",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/draft-outreach/SKILL.md",
+      "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": []
     },
     {
@@ -381,100 +653,168 @@
       ]
     },
     {
-      "slug": "client-proposal-writing",
+      "slug": "seo-report-generation",
       "result": "accepted",
       "supplementary_files": 2,
-      "package_bytes": 14989,
-      "source": "jezweb/claude-skills/plugins/writing/skills/proposal-writer",
-      "source_url": "https://github.com/jezweb/claude-skills/blob/e875a6bfff809e5d42c584104031e36e1f014f18/plugins/writing/skills/proposal-writer/SKILL.md",
+      "package_bytes": 24103,
+      "source": "every-app/open-seo/plugins/openseo/skills/seo-report",
+      "source_url": "https://github.com/every-app/open-seo/blob/0ffff93101043aad7600a3b6a499a0cd2887ef49/plugins/openseo/skills/seo-report/SKILL.md",
       "license": "MIT",
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "nda-risk-review",
+      "slug": "social-media-management",
       "result": "accepted",
-      "supplementary_files": 5,
-      "package_bytes": 85828,
-      "source": "anthropics/claude-for-legal/commercial-legal/skills/nda-review",
-      "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/commercial-legal/skills/nda-review/SKILL.md",
+      "supplementary_files": 10,
+      "package_bytes": 70679,
+      "source": "coreyhaines31/marketingskills/skills/social",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/social/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "software-debugging",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 14942,
+      "source": "wshobson/agents/plugins/developer-essentials/skills/debugging-strategies",
+      "source_url": "https://github.com/wshobson/agents/blob/4236bb91f8395b0435f1d8b8baf9e8e4c69a8620/plugins/developer-essentials/skills/debugging-strategies/SKILL.md",
+      "license": "MIT",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "software-incident-response",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 21349,
+      "source": "anthropics/knowledge-work-plugins/engineering/skills/incident-response",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/engineering/skills/incident-response/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "software-test-planning",
+      "result": "accepted",
+      "supplementary_files": 2,
+      "package_bytes": 14531,
+      "source": "anthropics/knowledge-work-plugins/engineering/skills/testing-strategy",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/engineering/skills/testing-strategy/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "supply-chain-risk-auditor",
+      "result": "accepted",
+      "supplementary_files": 6,
+      "package_bytes": 179208,
+      "source": "trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor",
+      "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/SKILL.md",
+      "license": "CC-BY-SA-4.0",
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "support-ticket-triage",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 26792,
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/ticket-triage",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/ticket-triage/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "task-list-management",
+      "result": "accepted",
+      "supplementary_files": 6,
+      "package_bytes": 131857,
+      "source": "anthropics/knowledge-work-plugins/productivity/skills/task-management",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/productivity/skills/task-management/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": [
         "user-invocable"
       ]
     },
     {
-      "slug": "contract-amendment-history",
-      "result": "accepted",
-      "supplementary_files": 5,
-      "package_bytes": 76515,
-      "source": "anthropics/claude-for-legal/commercial-legal/skills/amendment-history",
-      "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/commercial-legal/skills/amendment-history/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": [
-        "argument-hint"
-      ]
-    },
-    {
-      "slug": "candidate-interview-planning",
-      "result": "accepted",
-      "supplementary_files": 2,
-      "package_bytes": 17934,
-      "source": "anthropics/knowledge-work-plugins/human-resources/skills/interview-prep",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/human-resources/skills/interview-prep/SKILL.md",
-      "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": []
-    },
-    {
-      "slug": "employment-offer-drafting",
+      "slug": "team-capacity-planning",
       "result": "accepted",
       "supplementary_files": 3,
-      "package_bytes": 20973,
-      "source": "anthropics/knowledge-work-plugins/human-resources/skills/draft-offer",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/human-resources/skills/draft-offer/SKILL.md",
+      "package_bytes": 18714,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/capacity-plan",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/capacity-plan/SKILL.md",
       "license": "Apache-2.0",
       "native_fields_dropped_by_parser_renderer": [
         "argument-hint"
       ]
     },
     {
-      "slug": "recruiting-pipeline",
+      "slug": "user-cohort-analysis",
       "result": "accepted",
       "supplementary_files": 2,
-      "package_bytes": 17798,
-      "source": "anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/human-resources/skills/recruiting-pipeline/SKILL.md",
-      "license": "Apache-2.0",
+      "package_bytes": 8528,
+      "source": "phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis",
+      "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-data-analytics/skills/cohort-analysis/SKILL.md",
+      "license": "MIT",
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "sales-account-research",
+      "slug": "vendor-contract-status",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 23974,
+      "source": "anthropics/knowledge-work-plugins/legal/skills/vendor-check",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/legal/skills/vendor-check/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "vendor-evaluation",
+      "result": "accepted",
+      "supplementary_files": 3,
+      "package_bytes": 18362,
+      "source": "anthropics/knowledge-work-plugins/operations/skills/vendor-review",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/vendor-review/SKILL.md",
+      "license": "Apache-2.0",
+      "native_fields_dropped_by_parser_renderer": [
+        "argument-hint"
+      ]
+    },
+    {
+      "slug": "verification-before-completion",
       "result": "accepted",
       "supplementary_files": 2,
-      "package_bytes": 24181,
-      "source": "anthropics/knowledge-work-plugins/sales/skills/account-research",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/account-research/SKILL.md",
-      "license": "Apache-2.0",
+      "package_bytes": 6585,
+      "source": "obra/superpowers/skills/verification-before-completion",
+      "source_url": "https://github.com/obra/superpowers/blob/5bf4e78011075bcfc0dc295f0724994cd123ee71/skills/verification-before-completion/SKILL.md",
+      "license": "MIT",
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "sales-outreach-drafting",
+      "slug": "website-seo-audit",
       "result": "accepted",
-      "supplementary_files": 2,
-      "package_bytes": 26111,
-      "source": "anthropics/knowledge-work-plugins/sales/skills/draft-outreach",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/draft-outreach/SKILL.md",
-      "license": "Apache-2.0",
+      "supplementary_files": 3,
+      "package_bytes": 39549,
+      "source": "every-app/open-seo/plugins/openseo/skills/seo-audit",
+      "source_url": "https://github.com/every-app/open-seo/blob/0ffff93101043aad7600a3b6a499a0cd2887ef49/plugins/openseo/skills/seo-audit/SKILL.md",
+      "license": "MIT",
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "sales-call-preparation",
+      "slug": "workplace-memory-management",
       "result": "accepted",
-      "supplementary_files": 2,
-      "package_bytes": 25753,
-      "source": "anthropics/knowledge-work-plugins/sales/skills/call-prep",
-      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/call-prep/SKILL.md",
+      "supplementary_files": 7,
+      "package_bytes": 141082,
+      "source": "anthropics/knowledge-work-plugins/productivity/skills/memory-management",
+      "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/productivity/skills/memory-management/SKILL.md",
       "license": "Apache-2.0",
-      "native_fields_dropped_by_parser_renderer": []
+      "native_fields_dropped_by_parser_renderer": [
+        "user-invocable"
+      ]
     }
   ]
 }

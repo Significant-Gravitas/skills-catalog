@@ -31,6 +31,13 @@
       "status": "core",
       "essential_function": "Reconcile bank and ledger balances,explain differences and track unresolved items.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Daniel",
+      "role": "Financial Analyst",
+      "status": "core",
+      "essential_function": "Reconcile general-ledger balances to bank, subledger or counterparty records, investigate differences, and document reconciling items.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
@@ -38,12 +45,21 @@
     "2037c95a6f4dad81eae32594",
     "9818315323f66d10bfb36581",
     "b07f32879041fc0a81b92153",
-    "4d384707e8d97a0ebff2066a"
+    "4d384707e8d97a0ebff2066a",
+    "88a17e52e7cb96a5149adc95",
+    "38c6db3d84ddbe849e7fc571",
+    "87933e5dfe184e677514cc9b",
+    "91b06b73bd25da7b665cb592",
+    "afa64affcb0db92220c03187",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "2192cb20a1731c7a31bc86a6"
   ],
   "review": "Selected unchanged for bank,GL/subledger and intercompany reconciliation. Substantive adjusted-balance process, timing/adjustment/investigation categories, aging, evidence, reviewer and escalation controls. Source explicitly allows organization-specific materiality inputs and includes adjusting-entry preparation; this broader authored scope is accepted. No corrective wrapper or no-posting rewrite is assumed. Qualified accounting review is part of the original skill. Static inspection only.",
   "native_prerequisites": [
     "Bank statements and GL/subledger balances with source detail.",
-    "Organization-specific materiality and retention policy are ordinary inputs requested by the upstream skill."
+    "Organization-specific materiality and retention policy are ordinary inputs requested by the upstream skill.",
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
@@ -69,5 +85,14 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "finance/skills/reconciliation",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "aa17e90539f4d4d84130c910c7f527236bfaa71977c4c03493c8e8e515ddeea6"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

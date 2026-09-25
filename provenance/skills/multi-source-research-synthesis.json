@@ -38,18 +38,33 @@
       "status": "core",
       "essential_function": "Prepare concise,attributed briefings from documents,email,chat and meeting results.",
       "optional_new_kit": true
+    },
+    {
+      "expert": "Kai",
+      "role": "Executive Assistant",
+      "status": "core",
+      "essential_function": "Combine information from multiple workplace sources into a deduplicated, attributed answer that preserves conflicts and uncertainty.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
     "f3e7fb0a19f9f47869edbe09",
     "fc34a1abecd1b9b7de3630e4",
-    "0511389f10803b0fdefbe7bb"
+    "0511389f10803b0fdefbe7bb",
+    "b1d1db76b61141a8f25fe3a7",
+    "caa6a6b6b7b4cc9eb088e039",
+    "72c23f418a8449f9c2952d4a",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "f4bdad0a8867628bf7458ec9"
   ],
   "review": "Selected unchanged for source-attributed briefing from multiple raw results/documents. Detailed deduplication,authority/freshness/confidence assessment,conflict handling and size-aware summaries. Every claim must have attribution and disagreements remain visible. Portable synthesis instructions have no mandatory native command dispatch or executable dependency. This is last-mile synthesis; retrieval/access must be provided.6.1K installs plus repository evidence support adoption; human authorship is not established.",
   "native_prerequisites": [
     "Raw source results or supplied documents with dates,authors,locations and titles.",
     "Optional chat/email/docs/project-tracker retrieval; enterprise-search/CONNECTORS.md explains dynamic categories.",
-    "No independent ability to retrieve inaccessible sources or guarantee that input set is complete."
+    "No independent ability to retrieve inaccessible sources or guarantee that input set is complete.",
+    "Search results or readable source material; connected enterprise sources only when actually available.",
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
@@ -78,5 +93,16 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "enterprise-search/skills/knowledge-synthesis",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "8dc66c66ef0004010bbf2d569251163e90a6675b982e0cb99ef26b4dd1c5a0f6"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not retrieve unavailable private sources itself or provide a dedicated calendar-conflict/travel-booking workflow."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

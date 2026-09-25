@@ -50,17 +50,38 @@
       "status": "core",
       "essential_function": "Supply audience, product, proof and brand context.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Maya",
+      "role": "Marketing Manager",
+      "status": "core",
+      "essential_function": "Create and maintain a confirmed, versioned product-marketing context covering audience, positioning, differentiation, customer language, brand voice and proof.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Zara",
+      "role": "GTM Strategist",
+      "status": "core",
+      "essential_function": "Create and maintain a confirmed, versioned product-marketing context covering audience, positioning, differentiation, customer language, brand voice and proof.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
     "5fb04c6b459ae4327a3c9c78",
     "12843469c87c24da1ce965f5",
     "e12751dc43af8207be6af149",
-    "8b1e2a7e99c0c48f45506c40"
+    "8b1e2a7e99c0c48f45506c40",
+    "ba9a7481498e10e36957b4a8",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "6113403e48bfb1c817b690c4",
+    "6c6399316eee192a9817f346",
+    "48190ac73d2a5ff706b3cf18"
   ],
   "review": "Captures and maintains reusable audience, positioning, proof and brand-voice context. Its native workflow already asks for missing information, validates with the user and keeps version history. Selected unchanged as shared marketing foundation.",
   "native_prerequisites": [
-    "Persistent project workspace with write access to the authored product-marketing context file; source workflow asks for missing inputs and user review."
+    "Persistent project workspace with write access to the authored product-marketing context file; source workflow asks for missing inputs and user review.",
+    "Company/product materials or owner input; writable project .agents context path."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
@@ -104,5 +125,18 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/product-marketing",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "6dfd6bd485f62448385844cb9eceefcee0977c843d7a1c9e6077590d4e19d1ec"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "A context and positioning foundation, not data-driven account segmentation, field research or an independent verification of company claims.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

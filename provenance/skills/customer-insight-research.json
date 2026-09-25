@@ -36,19 +36,48 @@
       "status": "core",
       "essential_function": "Identify recurring customer needs, complaints and churn themes across feedback.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Alex",
+      "role": "Product Manager",
+      "status": "core",
+      "essential_function": "Plan customer interviews and surveys, mine existing customer evidence, and synthesize jobs, pains, triggers and language into grounded research.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Priya",
+      "role": "Product Manager",
+      "status": "core",
+      "essential_function": "Plan customer interviews and surveys, mine existing customer evidence, and synthesize jobs, pains, triggers and language into grounded research.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Max",
+      "role": "Sales Development Representative",
+      "status": "core",
+      "essential_function": "Turn interviews, support tickets, surveys and public reviews into sourced customer insights.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
     "c1d895b1cdb71b6e02ef580a",
     "12843469c87c24da1ce965f5",
     "e12751dc43af8207be6af149",
-    "8b1e2a7e99c0c48f45506c40"
+    "8b1e2a7e99c0c48f45506c40",
+    "b1bdd7a8d937fe662f8f9840",
+    "3558ae0a55953372abe789a3",
+    "8e574bf84775ce97d9181df9",
+    "87c42b562cf804c228f68d0b",
+    "f570594a7a5995532bb35947"
   ],
   "review": "Synthesizes interviews, surveys, reviews and support conversations into themes, source quotes, customer language, provisional personas and research gaps. Explicit sample-bias and confidence guidance makes this useful unchanged for market research and customer feedback.",
   "native_prerequisites": [
     "Supplied research assets or access to chosen public/customer sources; primary interviews/surveys require the author-requested recruiting context and human participation.",
     "SparkToro is an optional browser/account research path. The retained guide has no API/MCP/CLI dependency.",
-    "Interview/survey/source files remain local. Relevant-skills suggestions are not executable dependencies."
+    "Interview/survey/source files remain local. Relevant-skills suggestions are not executable dependencies.",
+    "Research question, product context and real customer material or access to research sources.",
+    "Preserve its reference files; read interviews-and-surveys.md before planning primary research.",
+    "Any optional public-source tools or CRM/recruiting access must be supplied normally."
   ],
   "evidence_qualification": null,
   "runtime_verified": false,
@@ -93,5 +122,17 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/customer-research",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "ae4769147f63dd5aea1308a0fddd85473601164893f58111dce738738226317e"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "It has a marketing/customer lens; it is not a clinical or formal statistical research protocol.",
+    "Optional related skills are handoffs to separate activities, not dependencies required for its research workflow."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
 }

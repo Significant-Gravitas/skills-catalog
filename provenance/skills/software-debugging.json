@@ -1,0 +1,89 @@
+{
+  "schema_version": 3,
+  "slug": "software-debugging",
+  "name": "software-debugging",
+  "original_name": "debugging-strategies",
+  "source": {
+    "repo": "wshobson/agents",
+    "path": "plugins/developer-essentials/skills/debugging-strategies",
+    "commit": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620"
+  },
+  "source_url": "https://github.com/wshobson/agents/blob/4236bb91f8395b0435f1d8b8baf9e8e4c69a8620/plugins/developer-essentials/skills/debugging-strategies/SKILL.md",
+  "discovery_url": "https://www.skills.sh/wshobson/agents/debugging-strategies",
+  "author": "Seth Hobson",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/wshobson/agents/blob/4236bb91f8395b0435f1d8b8baf9e8e4c69a8620/LICENSE",
+    "scope": "Complete clean root licence at the same immutable commit as this package.",
+    "obligations": [
+      "Retain original copyright/attribution and license text."
+    ],
+    "file": "skills/software-debugging/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "f7361b6e479a148fa609aa2b0c377fd09ed254985aa5763f509be38f7e7e9c0d",
+  "packaged_sha256": "4e23d987cdad229d59e9cffe2edac29cef174dc45fb0661564f1b81fd1b27a7a",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Casey",
+      "role": "QA Engineer",
+      "status": "core",
+      "essential_function": "Investigate a bug through reproducibility, evidence collection, a testable hypothesis, isolation and verification of the fix.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Robin",
+      "role": "Customer Support Specialist",
+      "status": "core",
+      "essential_function": "Investigate a bug through reproducibility, evidence collection, a testable hypothesis, isolation and verification of the fix.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "5a827547cf4e1c66a11b3065",
+    "cbe7d54bda90b0b37a2cb3cf",
+    "4efb405f4f25e3cca4d6918d",
+    "a14f551fecda272de598e0d9",
+    "f42d4f58c533ff79ee9f3527"
+  ],
+  "review": "Scientific method, minimal repro, environment/change comparison, binary search, profiling and intermittent-failure strategies. Explicitly calls for staging and anonymized production data rather than untested production changes.",
+  "essential_function": "Investigate a bug through reproducibility, evidence collection, a testable hypothesis, isolation and verification of the fix.",
+  "native_prerequisites": [
+    "Reproducible issue or logs, code/environment details and a runnable development/test environment for experiments.",
+    "Debuggers/profilers are optional technology-specific tools appropriate to the target stack."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Preserve original guidance and all branches; apply only the counted local-path edits, standard header metadata/name, and prominent packaging modification notice.",
+      "Preserve slash-command identifiers and $ARGUMENTS examples; changing the installed name does not create native command dispatch. Ordinary direct invocation with supplied task context remains possible where authored.",
+      "Record the upstream revision, Git blob SHA-1, SHA-256 and original bytes in provenance; generated ATTRIBUTION.md is curator packaging documentation, not upstream-authored advice.",
+      "The full primary contains its required guidance and examples; it names no required local supporting file or sibling skill. Do not add unrelated repository content.",
+      "The .vscode/launch.json and tsconfig.json references occur in illustrative project debugger configuration, not required packaged files. Preserve them unchanged as project/environment examples."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "wshobson/agents",
+    "path": "plugins/developer-essentials/skills/debugging-strategies",
+    "commit": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620",
+    "primary_sha256": "f7361b6e479a148fa609aa2b0c377fd09ed254985aa5763f509be38f7e7e9c0d"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Broader implementation/debugging workflow, not a report-only QA guardrail.",
+    "Run-history aggregation, flaky-test quarantine policy and release governance are not fully supplied.",
+    "Provide sanitized diagnostic material; generic examples are not a sensitive-data handling program."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

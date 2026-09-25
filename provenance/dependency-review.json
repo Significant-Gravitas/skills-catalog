@@ -260,47 +260,6 @@
       "changes": 2
     },
     {
-      "slug": "overdue-invoice-follow-up",
-      "original_name": "invoice-chase",
-      "source": "anthropics/knowledge-work-plugins/small-business/skills/invoice-chase",
-      "native_prerequisites": [
-        "AR aging and payment history or original CSV upload/manual-send fallback.",
-        "Optional supported ledger,processor,mail connectors and output artifact capability; context/voice/output preferences supplied normally.",
-        "Upstream optional adjacent-skill offers (plan-payroll,cash-flow-snapshot,close-month,build-connector) are not part of this curated kit; those separate functions remain unavailable unless supplied unchanged and independently assessed.",
-        "Native persistent business profile/shared state and artifact delivery; upstream owner approval applies to draft queues as well as actual sends.",
-        "Persistent owner Business context and voice profile; updates must survive sessions and package re-materialization.",
-        "Actual mail/ledger/payment connectors only for connected actions; owner approval for queued drafts and sends remains unchanged.",
-        "The authored visual-artifact/publishing or user-selected output delivery capability."
-      ],
-      "runtime_blockers": [],
-      "preserved_native_fields": {
-        "version": "0.3.0",
-        "allowed-tools": "Read, WebFetch"
-      },
-      "package_files": 18,
-      "supplementary_files": 17,
-      "package_bytes": 118749,
-      "changes": 7
-    },
-    {
-      "slug": "vendor-evaluation",
-      "original_name": "vendor-review",
-      "source": "anthropics/knowledge-work-plugins/operations/skills/vendor-review",
-      "native_prerequisites": [
-        "Proposal,contract,pricing and current performance documents.",
-        "operations/CONNECTORS.md; optional procurement or knowledge-base connections for existing policies/contracts/spend.",
-        "User context for purchase,renewal or comparison; source does not supply market data automatically."
-      ],
-      "runtime_blockers": [],
-      "preserved_native_fields": {
-        "argument-hint": "<vendor name or proposal>"
-      },
-      "package_files": 4,
-      "supplementary_files": 3,
-      "package_bytes": 21879,
-      "changes": 2
-    },
-    {
       "slug": "vendor-contract-status",
       "original_name": "vendor-check",
       "source": "anthropics/knowledge-work-plugins/legal/skills/vendor-check",
@@ -353,38 +312,6 @@
       "supplementary_files": 3,
       "package_bytes": 27367,
       "changes": 2
-    },
-    {
-      "slug": "project-status-report",
-      "original_name": "status-report",
-      "source": "anthropics/knowledge-work-plugins/operations/skills/status-report",
-      "native_prerequisites": [
-        "Project/team reporting period,actual status,KPIs and action owners supplied directly or through optional tracker/chat/calendar connectors.",
-        "Posting to chat is optional authored functionality and requires available connector capabilities."
-      ],
-      "runtime_blockers": [],
-      "preserved_native_fields": {
-        "argument-hint": "[weekly | monthly | quarterly] [project or team]"
-      },
-      "package_files": 5,
-      "supplementary_files": 4,
-      "package_bytes": 23184,
-      "changes": 2
-    },
-    {
-      "slug": "operational-risk-assessment",
-      "original_name": "risk-assessment",
-      "source": "anthropics/knowledge-work-plugins/operations/skills/risk-assessment",
-      "native_prerequisites": [
-        "Specific project,vendor,process or decision context and known evidence.",
-        "Human likelihood/impact and mitigation ownership judgments; no external connector required."
-      ],
-      "runtime_blockers": [],
-      "preserved_native_fields": {},
-      "package_files": 3,
-      "supplementary_files": 2,
-      "package_bytes": 18175,
-      "changes": 1
     },
     {
       "slug": "legal-meeting-briefing",
@@ -660,54 +587,6 @@
       "changes": 2
     },
     {
-      "slug": "candidate-interview-planning",
-      "original_name": "interview-prep",
-      "source": "anthropics/knowledge-work-plugins/human-resources/skills/interview-prep",
-      "native_prerequisites": [
-        "Role requirements and desired competencies supplied by the recruiter",
-        "No external connector required"
-      ],
-      "runtime_blockers": [],
-      "preserved_native_fields": {},
-      "package_files": 3,
-      "supplementary_files": 2,
-      "package_bytes": 17934,
-      "changes": 1
-    },
-    {
-      "slug": "employment-offer-drafting",
-      "original_name": "draft-offer",
-      "source": "anthropics/knowledge-work-plugins/human-resources/skills/draft-offer",
-      "native_prerequisites": [
-        "Actual compensation, employment classification, benefits, start date and manager from the company",
-        "human-resources/CONNECTORS.md; optional HRIS for bands/headcount and optional ATS for candidate/status",
-        "If ATS is connected, its native workflow may update offer status; connector permissions must be supported"
-      ],
-      "runtime_blockers": [],
-      "preserved_native_fields": {
-        "argument-hint": "<role and level>"
-      },
-      "package_files": 4,
-      "supplementary_files": 3,
-      "package_bytes": 20973,
-      "changes": 2
-    },
-    {
-      "slug": "recruiting-pipeline",
-      "original_name": "recruiting-pipeline",
-      "source": "anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline",
-      "native_prerequisites": [
-        "Current requisitions/candidate stages and timestamps; pasted data or an ATS connector",
-        "ATS status writes are native behavior when connected; connector permissions must be supported"
-      ],
-      "runtime_blockers": [],
-      "preserved_native_fields": {},
-      "package_files": 3,
-      "supplementary_files": 2,
-      "package_bytes": 17798,
-      "changes": 1
-    },
-    {
       "slug": "sales-account-research",
       "original_name": "account-research",
       "source": "anthropics/knowledge-work-plugins/sales/skills/account-research",
@@ -754,6 +633,484 @@
       "supplementary_files": 2,
       "package_bytes": 25753,
       "changes": 1
+    },
+    {
+      "slug": "business-process-documentation",
+      "original_name": "process-doc",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/process-doc",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 17736
+    },
+    {
+      "slug": "business-process-optimization",
+      "original_name": "process-optimization",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/process-optimization",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14614
+    },
+    {
+      "slug": "candidate-interview-planning",
+      "original_name": "interview-prep",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/interview-prep",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14750
+    },
+    {
+      "slug": "code-review-quality",
+      "original_name": "code-review-excellence",
+      "source": "wshobson/agents/plugins/developer-essentials/skills/code-review-excellence",
+      "native_prerequisites": [
+        "Diff, surrounding code, requirement and test/CI evidence; repository access appropriate to the review."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 16195
+    },
+    {
+      "slug": "company-policy-lookup",
+      "original_name": "policy-lookup",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/policy-lookup",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 19301
+    },
+    {
+      "slug": "compliance-evidence-tracking",
+      "original_name": "compliance-tracking",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/compliance-tracking",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14911
+    },
+    {
+      "slug": "conversion-rate-optimization",
+      "original_name": "cro",
+      "source": "coreyhaines31/marketingskills/skills/cro",
+      "native_prerequisites": [
+        "Page or rendered content, traffic source, conversion objective and available user/analytics evidence.",
+        "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch."
+      ],
+      "runtime_blockers": [],
+      "package_files": 5,
+      "supplementary_files": 4,
+      "package_bytes": 27519
+    },
+    {
+      "slug": "employee-onboarding-planning",
+      "original_name": "onboarding",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/onboarding",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 18296
+    },
+    {
+      "slug": "employee-performance-review",
+      "original_name": "performance-review",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/performance-review",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 20049
+    },
+    {
+      "slug": "employment-offer-drafting",
+      "original_name": "draft-offer",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/draft-offer",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 17434
+    },
+    {
+      "slug": "go-to-market-strategy",
+      "original_name": "gtm-strategy",
+      "source": "phuryn/pm-skills/pm-go-to-market/skills/gtm-strategy",
+      "native_prerequisites": [
+        "Product and market context, source documents; browser/web search for current research; writable output destination."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 6937
+    },
+    {
+      "slug": "knowledge-base-article-writing",
+      "original_name": "kb-article",
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/kb-article",
+      "native_prerequisites": [
+        "A resolved issue or verified product procedure, audience and product/version scope.",
+        "Existing KB or supplied documents for overlap and accuracy checks; connector optional."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 27548
+    },
+    {
+      "slug": "legal-response-drafting",
+      "original_name": "legal-response",
+      "source": "anthropics/knowledge-work-plugins/legal/skills/legal-response",
+      "native_prerequisites": [
+        "Company legal settings/templates and qualified legal reviewers; preserve legal.local.md configuration workflow.",
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 31479
+    },
+    {
+      "slug": "market-size-estimation",
+      "original_name": "market-sizing",
+      "source": "phuryn/pm-skills/pm-market-research/skills/market-sizing",
+      "native_prerequisites": [
+        "Product and market context, source documents; browser/web search for current research; writable output destination."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 7333
+    },
+    {
+      "slug": "operational-risk-assessment",
+      "original_name": "risk-assessment",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/risk-assessment",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14927
+    },
+    {
+      "slug": "operational-runbook-writing",
+      "original_name": "runbook",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/runbook",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 17726
+    },
+    {
+      "slug": "partner-co-marketing",
+      "original_name": "co-marketing",
+      "source": "coreyhaines31/marketingskills/skills/co-marketing",
+      "native_prerequisites": [
+        "Shared product/audience context; browser research; optional Crossbeam, Introw or PartnerStack access for operational data.",
+        "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch.",
+        "The documented provider alternatives are crossbeam, introw, partnerstack. Use only the chosen authored branch, with its real account, credentials, API/MCP/SDK/CLI capability and permissions; these are not all mandatory accounts.",
+        "Bundled JavaScript CLIs need Node.js with global fetch (Node18+), network access and their named provider environment variables. Resolve tools/... paths against this installed skill directory before invocation; keep user input/output paths anchored to the intended working project. No CLI was executed during packaging."
+      ],
+      "runtime_blockers": [],
+      "package_files": 9,
+      "supplementary_files": 8,
+      "package_bytes": 55844
+    },
+    {
+      "slug": "people-analytics-reporting",
+      "original_name": "people-report",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/people-report",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 17894
+    },
+    {
+      "slug": "portfolio-company-performance-review",
+      "original_name": "portfolio-monitoring",
+      "source": "anthropics/financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring",
+      "native_prerequisites": [
+        "Readable Excel/PDF/CSV package, approved plan, company-specific KPIs and actual debt covenant definitions; spreadsheet/PDF reader."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 15756
+    },
+    {
+      "slug": "pricing-and-packaging-strategy",
+      "original_name": "pricing",
+      "source": "coreyhaines31/marketingskills/skills/pricing",
+      "native_prerequisites": [
+        "Current product/pricing/customer evidence and authorized research data; decision owner for commercial changes.",
+        "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch."
+      ],
+      "runtime_blockers": [],
+      "package_files": 7,
+      "supplementary_files": 6,
+      "package_bytes": 40655
+    },
+    {
+      "slug": "product-experiment-design",
+      "original_name": "brainstorm-experiments-existing",
+      "source": "phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing",
+      "native_prerequisites": [
+        "Existing product, feature idea, explicit assumptions, constraints and risk context."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 5387
+    },
+    {
+      "slug": "product-launch-marketing",
+      "original_name": "launch",
+      "source": "coreyhaines31/marketingskills/skills/launch",
+      "native_prerequisites": [
+        "Confirmed product/release scope, audience/channel context and launch ownership; optional publishing and partner tools.",
+        "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch.",
+        "The documented provider alternatives are introw. Use only the chosen authored branch, with its real account, credentials, API/MCP/SDK/CLI capability and permissions; these are not all mandatory accounts."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 23465
+    },
+    {
+      "slug": "product-metrics-dashboard-design",
+      "original_name": "metrics-dashboard",
+      "source": "phuryn/pm-skills/pm-product-discovery/skills/metrics-dashboard",
+      "native_prerequisites": [
+        "Product goals, user behavior, available data sources, baseline context and monitoring owners."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 8687
+    },
+    {
+      "slug": "product-requirements-writing",
+      "original_name": "write-spec",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/write-spec",
+      "native_prerequisites": [
+        "Product problem, affected users, available evidence and constraints; missing items become questions.",
+        "Optional tracker, KB and design connections; pasted descriptions are supported."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 27928
+    },
+    {
+      "slug": "product-research-synthesis",
+      "original_name": "synthesize-research",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/synthesize-research",
+      "native_prerequisites": [
+        "Actual research/ticket material, study question and context; accepts pasted/uploaded material.",
+        "Optional feedback, transcription, knowledge and analytics connectors."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 31762
+    },
+    {
+      "slug": "product-roadmap-planning",
+      "original_name": "roadmap-update",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/roadmap-update",
+      "native_prerequisites": [
+        "Current roadmap or candidate initiatives, goals, estimates, owners and real capacity.",
+        "Optional tracker; explicitly accepts a pasted/uploaded roadmap in any format."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 27969
+    },
+    {
+      "slug": "product-stakeholder-update",
+      "original_name": "stakeholder-update",
+      "source": "anthropics/knowledge-work-plugins/product-management/skills/stakeholder-update",
+      "native_prerequisites": [
+        "Audience, verified progress/ship state, metrics, risks and decisions; can use supplied material.",
+        "Optional tracker/chat/meeting/KB connectors."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 30276
+    },
+    {
+      "slug": "product-strategy-canvas",
+      "original_name": "product-strategy",
+      "source": "phuryn/pm-skills/pm-product-strategy/skills/product-strategy",
+      "native_prerequisites": [
+        "Product and market description, customer evidence, competitors, company resources and constraints."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 7744
+    },
+    {
+      "slug": "project-status-report",
+      "original_name": "status-report",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/status-report",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 5,
+      "supplementary_files": 4,
+      "package_bytes": 19688
+    },
+    {
+      "slug": "recruiting-pipeline",
+      "original_name": "recruiting-pipeline",
+      "source": "anthropics/knowledge-work-plugins/human-resources/skills/recruiting-pipeline",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14534
+    },
+    {
+      "slug": "sales-enablement-content",
+      "original_name": "sales-enablement",
+      "source": "coreyhaines31/marketingskills/skills/sales-enablement",
+      "native_prerequisites": [
+        "Approved product claims, customer proof, personas and sales inputs; optional CRM/Introw data; design tools for finished slides.",
+        "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch.",
+        "The documented provider alternatives are introw. Use only the chosen authored branch, with its real account, credentials, API/MCP/SDK/CLI capability and permissions; these are not all mandatory accounts."
+      ],
+      "runtime_blockers": [],
+      "package_files": 8,
+      "supplementary_files": 7,
+      "package_bytes": 62554
+    },
+    {
+      "slug": "software-debugging",
+      "original_name": "debugging-strategies",
+      "source": "wshobson/agents/plugins/developer-essentials/skills/debugging-strategies",
+      "native_prerequisites": [
+        "Reproducible issue or logs, code/environment details and a runnable development/test environment for experiments.",
+        "Debuggers/profilers are optional technology-specific tools appropriate to the target stack."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14942
+    },
+    {
+      "slug": "software-incident-response",
+      "original_name": "incident-response",
+      "source": "anthropics/knowledge-work-plugins/engineering/skills/incident-response",
+      "native_prerequisites": [
+        "For Casey, use its authored postmortem mode with incident evidence and owner review.",
+        "Full live-incident mode requires organization acceptance of native SEV1-4 response targets and properly authorized monitoring/incident/chat connectors."
+      ],
+      "runtime_blockers": [
+        "Live incident modes require an organization-compatible original severity/response model, authorized monitoring/incident/chat connectors and responders. The original manual incident/postmortem drafting modes remain present. Packaging neither provisions those tools nor removes the live modes."
+      ],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 21349
+    },
+    {
+      "slug": "software-test-planning",
+      "original_name": "testing-strategy",
+      "source": "anthropics/knowledge-work-plugins/engineering/skills/testing-strategy",
+      "native_prerequisites": [
+        "Feature/change scope, component architecture, existing tests and project risk context."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 14531
+    },
+    {
+      "slug": "support-ticket-triage",
+      "original_name": "ticket-triage",
+      "source": "anthropics/knowledge-work-plugins/customer-support/skills/ticket-triage",
+      "native_prerequisites": [
+        "Approved desk SLA rules must already match the source P1-P4 timing model, including P1 one-hour and P2 four-hour initial responses.",
+        "Ticket, account and known-issue context; optional support/CRM/KB/tracker connectors."
+      ],
+      "runtime_blockers": [
+        "Deploy only where the original P1-P4 priority and response-time model fits the support desk. Packaging leaves the authored one-hour/four-hour/etc. targets unchanged and cannot make them universal."
+      ],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 26792
+    },
+    {
+      "slug": "team-capacity-planning",
+      "original_name": "capacity-plan",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/capacity-plan",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 18714
+    },
+    {
+      "slug": "vendor-evaluation",
+      "original_name": "vendor-review",
+      "source": "anthropics/knowledge-work-plugins/operations/skills/vendor-review",
+      "native_prerequisites": [
+        "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+      ],
+      "runtime_blockers": [],
+      "package_files": 4,
+      "supplementary_files": 3,
+      "package_bytes": 18362
+    },
+    {
+      "slug": "verification-before-completion",
+      "original_name": "verification-before-completion",
+      "source": "obra/superpowers/skills/verification-before-completion",
+      "native_prerequisites": [
+        "Permission and environment to run the project's actual verification commands, and access to complete output/diffs."
+      ],
+      "runtime_blockers": [],
+      "package_files": 3,
+      "supplementary_files": 2,
+      "package_bytes": 6585
     }
   ],
   "marketing_review": {},

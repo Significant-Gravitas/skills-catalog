@@ -29,6 +29,13 @@
       "status": "core",
       "essential_function": "Turn discovery notes, scope, pricing and timelines into a clear client proposal or service SOW draft.",
       "optional_new_kit": false
+    },
+    {
+      "expert": "Max",
+      "role": "Sales Development Representative",
+      "status": "core",
+      "essential_function": "Turn discovery notes, scope, pricing and timelines into a clear client proposal or service SOW draft.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [

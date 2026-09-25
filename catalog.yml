@@ -1,133 +1,10 @@
-# Existing AutoGPT catalog format. Provenance and build rules are separate.
+# Existing AutoGPT import format; deferred sources are excluded.
 skills:
-- slug: product-marketing-context
-  categories:
-  - research
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/product-marketing
-  license: MIT
-- slug: marketing-copy-editing
-  categories:
-  - content
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/copy-editing
-  license: MIT
-- slug: social-media-management
-  categories:
-  - content
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/social
-  license: MIT
-- slug: lifecycle-email-marketing
-  categories:
-  - content
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/emails
-  license: MIT
-- slug: competitor-profiling
-  categories:
-  - research
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/competitor-profiling
-  license: MIT
-- slug: customer-insight-research
-  categories:
-  - research
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/customer-research
-  license: MIT
-- slug: marketing-content-strategy
-  categories:
-  - content
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/content-strategy
-  license: MIT
-- slug: marketing-copywriting
-  categories:
-  - content
-  - marketing
-  required_providers: []
-  source: coreyhaines31/marketingskills/skills/copywriting
-  license: MIT
-- slug: customer-support-research
-  categories:
-  - support
-  - research
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-research
-  license: Apache-2.0
-- slug: customer-response-drafting
-  categories:
-  - support
-  - research
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/customer-support/skills/draft-response
-  license: Apache-2.0
-- slug: customer-escalation
-  categories:
-  - support
-  - research
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation
-  license: Apache-2.0
-- slug: website-seo-audit
-  categories:
-  - marketing
-  - research
-  required_providers: []
-  source: every-app/open-seo/plugins/openseo/skills/seo-audit
-  license: MIT
-- slug: seo-report-generation
-  categories:
-  - marketing
-  - research
-  required_providers: []
-  source: every-app/open-seo/plugins/openseo/skills/seo-report
-  license: MIT
 - slug: account-reconciliation
   categories:
   - finance
   required_providers: []
   source: anthropics/knowledge-work-plugins/finance/skills/reconciliation
-  license: Apache-2.0
-- slug: month-end-close-management
-  categories:
-  - finance
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/finance/skills/close-management
-  license: Apache-2.0
-- slug: financial-statement-preparation
-  categories:
-  - finance
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/finance/skills/financial-statements
-  license: Apache-2.0
-- slug: overdue-invoice-follow-up
-  categories:
-  - finance
-  - operations
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/small-business/skills/invoice-chase
-  license: Apache-2.0
-- slug: vendor-evaluation
-  categories:
-  - operations
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/operations/skills/vendor-review
-  license: Apache-2.0
-- slug: vendor-contract-status
-  categories:
-  - operations
-  - research
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/legal/skills/vendor-check
   license: Apache-2.0
 - slug: board-deck-builder
   categories:
@@ -136,23 +13,154 @@ skills:
   required_providers: []
   source: alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder
   license: MIT
-- slug: multi-source-research-synthesis
+- slug: business-process-documentation
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/process-doc
+  license: Apache-2.0
+- slug: business-process-optimization
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/process-optimization
+  license: Apache-2.0
+- slug: candidate-interview-planning
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/interview-prep
+  license: Apache-2.0
+- slug: client-proposal-writing
+  categories:
+  - sales
+  - content
+  required_providers: []
+  source: jezweb/claude-skills/plugins/writing/skills/proposal-writer
+  license: MIT
+- slug: code-change-security-review
+  categories:
+  - development
+  required_providers: []
+  source: trailofbits/skills/plugins/differential-review/skills/differential-review
+  license: CC-BY-SA-4.0
+- slug: code-review-quality
+  categories:
+  - development
+  required_providers: []
+  source: wshobson/agents/plugins/developer-essentials/skills/code-review-excellence
+  license: MIT
+- slug: company-policy-lookup
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/policy-lookup
+  license: Apache-2.0
+- slug: competitor-profiling
   categories:
   - research
+  - marketing
   required_providers: []
-  source: anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis
-  license: Apache-2.0
-- slug: project-status-report
+  source: coreyhaines31/marketingskills/skills/competitor-profiling
+  license: MIT
+- slug: compliance-evidence-tracking
   categories:
   - operations
   required_providers: []
-  source: anthropics/knowledge-work-plugins/operations/skills/status-report
+  source: anthropics/knowledge-work-plugins/operations/skills/compliance-tracking
   license: Apache-2.0
-- slug: operational-risk-assessment
+- slug: contract-amendment-history
   categories:
   - operations
   required_providers: []
-  source: anthropics/knowledge-work-plugins/operations/skills/risk-assessment
+  source: anthropics/claude-for-legal/commercial-legal/skills/amendment-history
+  license: Apache-2.0
+- slug: conversion-rate-optimization
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/cro
+  license: MIT
+- slug: customer-escalation
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-escalation
+  license: Apache-2.0
+- slug: customer-insight-research
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/customer-research
+  license: MIT
+- slug: customer-response-drafting
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/draft-response
+  license: Apache-2.0
+- slug: customer-support-research
+  categories:
+  - support
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/customer-research
+  license: Apache-2.0
+- slug: data-visualization
+  categories:
+  - research
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/data/skills/data-visualization
+  license: Apache-2.0
+- slug: dataset-exploration
+  categories:
+  - research
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/data/skills/explore-data
+  license: Apache-2.0
+- slug: employee-onboarding-planning
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/onboarding
+  license: Apache-2.0
+- slug: employee-performance-review
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/performance-review
+  license: Apache-2.0
+- slug: employment-offer-drafting
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
+  license: Apache-2.0
+- slug: financial-statement-preparation
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/financial-statements
+  license: Apache-2.0
+- slug: go-to-market-strategy
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: phuryn/pm-skills/pm-go-to-market/skills/gtm-strategy
+  license: MIT
+- slug: knowledge-base-article-writing
+  categories:
+  - support
+  - content
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/kb-article
   license: Apache-2.0
 - slug: legal-meeting-briefing
   categories:
@@ -161,18 +169,166 @@ skills:
   required_providers: []
   source: anthropics/knowledge-work-plugins/legal/skills/meeting-briefing
   license: Apache-2.0
-- slug: task-list-management
+- slug: legal-response-drafting
   categories:
   - operations
   required_providers: []
-  source: anthropics/knowledge-work-plugins/productivity/skills/task-management
+  source: anthropics/knowledge-work-plugins/legal/skills/legal-response
   license: Apache-2.0
-- slug: workplace-memory-management
+- slug: lifecycle-email-marketing
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/emails
+  license: MIT
+- slug: market-size-estimation
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: phuryn/pm-skills/pm-market-research/skills/market-sizing
+  license: MIT
+- slug: marketing-content-strategy
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/content-strategy
+  license: MIT
+- slug: marketing-copy-editing
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/copy-editing
+  license: MIT
+- slug: marketing-copywriting
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/copywriting
+  license: MIT
+- slug: month-end-close-management
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/finance/skills/close-management
+  license: Apache-2.0
+- slug: multi-source-research-synthesis
+  categories:
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis
+  license: Apache-2.0
+- slug: nda-risk-review
   categories:
   - operations
   required_providers: []
-  source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
+  source: anthropics/claude-for-legal/commercial-legal/skills/nda-review
   license: Apache-2.0
+- slug: operational-risk-assessment
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/risk-assessment
+  license: Apache-2.0
+- slug: operational-runbook-writing
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/runbook
+  license: Apache-2.0
+- slug: partner-co-marketing
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/co-marketing
+  license: MIT
+- slug: people-analytics-reporting
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/human-resources/skills/people-report
+  license: Apache-2.0
+- slug: portfolio-company-performance-review
+  categories:
+  - finance
+  required_providers: []
+  source: anthropics/financial-services/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring
+  license: Apache-2.0
+- slug: pricing-and-packaging-strategy
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/pricing
+  license: MIT
+- slug: product-experiment-design
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing
+  license: MIT
+- slug: product-launch-marketing
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/launch
+  license: MIT
+- slug: product-marketing-context
+  categories:
+  - research
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/product-marketing
+  license: MIT
+- slug: product-metrics-dashboard-design
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: phuryn/pm-skills/pm-product-discovery/skills/metrics-dashboard
+  license: MIT
+- slug: product-requirements-writing
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/write-spec
+  license: Apache-2.0
+- slug: product-research-synthesis
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/synthesize-research
+  license: Apache-2.0
+- slug: product-roadmap-planning
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/roadmap-update
+  license: Apache-2.0
+- slug: product-stakeholder-update
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/product-management/skills/stakeholder-update
+  license: Apache-2.0
+- slug: product-strategy-canvas
+  categories:
+  - research
+  - operations
+  required_providers: []
+  source: phuryn/pm-skills/pm-product-strategy/skills/product-strategy
+  license: MIT
 - slug: productivity-setup
   categories:
   - operations
@@ -185,74 +341,11 @@ skills:
   required_providers: []
   source: anthropics/knowledge-work-plugins/productivity/skills/update
   license: Apache-2.0
-- slug: dataset-exploration
-  categories:
-  - research
-  - development
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/data/skills/explore-data
-  license: Apache-2.0
-- slug: data-visualization
-  categories:
-  - research
-  - development
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/data/skills/data-visualization
-  license: Apache-2.0
-- slug: user-cohort-analysis
-  categories:
-  - research
-  required_providers: []
-  source: phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis
-  license: MIT
-- slug: supply-chain-risk-auditor
-  categories:
-  - development
-  required_providers: []
-  source: trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
-  license: CC-BY-SA-4.0
-- slug: code-change-security-review
-  categories:
-  - development
-  required_providers: []
-  source: trailofbits/skills/plugins/differential-review/skills/differential-review
-  license: CC-BY-SA-4.0
-- slug: sales-pipeline-review
-  categories:
-  - sales
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/sales/skills/pipeline-review
-  license: Apache-2.0
-- slug: client-proposal-writing
-  categories:
-  - sales
-  - content
-  required_providers: []
-  source: jezweb/claude-skills/plugins/writing/skills/proposal-writer
-  license: MIT
-- slug: nda-risk-review
+- slug: project-status-report
   categories:
   - operations
   required_providers: []
-  source: anthropics/claude-for-legal/commercial-legal/skills/nda-review
-  license: Apache-2.0
-- slug: contract-amendment-history
-  categories:
-  - operations
-  required_providers: []
-  source: anthropics/claude-for-legal/commercial-legal/skills/amendment-history
-  license: Apache-2.0
-- slug: candidate-interview-planning
-  categories:
-  - operations
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/human-resources/skills/interview-prep
-  license: Apache-2.0
-- slug: employment-offer-drafting
-  categories:
-  - operations
-  required_providers: []
-  source: anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
+  source: anthropics/knowledge-work-plugins/operations/skills/status-report
   license: Apache-2.0
 - slug: recruiting-pipeline
   categories:
@@ -266,15 +359,122 @@ skills:
   required_providers: []
   source: anthropics/knowledge-work-plugins/sales/skills/account-research
   license: Apache-2.0
+- slug: sales-call-preparation
+  categories:
+  - sales
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/sales/skills/call-prep
+  license: Apache-2.0
+- slug: sales-enablement-content
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/sales-enablement
+  license: MIT
 - slug: sales-outreach-drafting
   categories:
   - sales
   required_providers: []
   source: anthropics/knowledge-work-plugins/sales/skills/draft-outreach
   license: Apache-2.0
-- slug: sales-call-preparation
+- slug: sales-pipeline-review
   categories:
   - sales
   required_providers: []
-  source: anthropics/knowledge-work-plugins/sales/skills/call-prep
+  source: anthropics/knowledge-work-plugins/sales/skills/pipeline-review
+  license: Apache-2.0
+- slug: seo-report-generation
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: every-app/open-seo/plugins/openseo/skills/seo-report
+  license: MIT
+- slug: social-media-management
+  categories:
+  - content
+  - marketing
+  required_providers: []
+  source: coreyhaines31/marketingskills/skills/social
+  license: MIT
+- slug: software-debugging
+  categories:
+  - development
+  required_providers: []
+  source: wshobson/agents/plugins/developer-essentials/skills/debugging-strategies
+  license: MIT
+- slug: software-incident-response
+  categories:
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/engineering/skills/incident-response
+  license: Apache-2.0
+- slug: software-test-planning
+  categories:
+  - development
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/engineering/skills/testing-strategy
+  license: Apache-2.0
+- slug: supply-chain-risk-auditor
+  categories:
+  - development
+  required_providers: []
+  source: trailofbits/skills/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor
+  license: CC-BY-SA-4.0
+- slug: support-ticket-triage
+  categories:
+  - support
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/customer-support/skills/ticket-triage
+  license: Apache-2.0
+- slug: task-list-management
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/task-management
+  license: Apache-2.0
+- slug: team-capacity-planning
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/capacity-plan
+  license: Apache-2.0
+- slug: user-cohort-analysis
+  categories:
+  - research
+  required_providers: []
+  source: phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis
+  license: MIT
+- slug: vendor-contract-status
+  categories:
+  - operations
+  - research
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/legal/skills/vendor-check
+  license: Apache-2.0
+- slug: vendor-evaluation
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/operations/skills/vendor-review
+  license: Apache-2.0
+- slug: verification-before-completion
+  categories:
+  - development
+  required_providers: []
+  source: obra/superpowers/skills/verification-before-completion
+  license: MIT
+- slug: website-seo-audit
+  categories:
+  - marketing
+  - research
+  required_providers: []
+  source: every-app/open-seo/plugins/openseo/skills/seo-audit
+  license: MIT
+- slug: workplace-memory-management
+  categories:
+  - operations
+  required_providers: []
+  source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
   license: Apache-2.0

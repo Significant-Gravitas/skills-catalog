@@ -4,16 +4,16 @@ description: Draft an offer letter with comp details and terms. Use when a candi
 argument-hint: <role and level>
 license: Apache-2.0
 metadata:
-  author: Anthropic and upstream contributors
+  author: Anthropic
   source: anthropics/knowledge-work-plugins/human-resources/skills/draft-offer
-  source_url: https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/human-resources/skills/draft-offer/SKILL.md
-  upstream-commit: 1c7187c4fc17feefa6cde39517f12dae1249e6c4
+  source_url: https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/draft-offer/SKILL.md
+  upstream-commit: 8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c
   original-name: draft-offer
   packaged-by: AutoGPT
   packaged-on: '2026-09-25'
 ---
 
-> Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and file references; see ATTRIBUTION.md in this skill package.
+> Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and local references; see ATTRIBUTION.md in this package.
 
 
 # /draft-offer

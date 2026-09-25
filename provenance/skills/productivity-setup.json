@@ -38,14 +38,27 @@
         "Current production AutoGPT support for these exact native prerequisites was not verified.",
         "Kept outside main expert skills lists; do not present it as ready to install on AutoGPT."
       ]
+    },
+    {
+      "expert": "Kai",
+      "role": "Executive Assistant",
+      "status": "conditional",
+      "essential_function": "Initialize the productivity task/memory workspace and dashboard, then interactively learn workplace shorthand.",
+      "coverage_review": "provenance/expert-coverage.json"
     }
   ],
   "evidence_ids": [
     "14c18e5e70dcca70b242b162",
     "fc34a1abecd1b9b7de3630e4",
-    "0511389f10803b0fdefbe7bb"
+    "0511389f10803b0fdefbe7bb",
+    "a46c0a5f0685c070a0917a87",
+    "caa6a6b6b7b4cc9eb088e039",
+    "72c23f418a8449f9c2952d4a",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "d4067854d0d94a368ec85589"
   ],
-  "review": "Conditional unchanged native productivity initialization. Creates task/memory/dashboard structure,interactive shorthand decoding and optional broad source scan with user choice. Authored Cowork opening instructions and productivity command dispatch are host-specific; source is preserved rather than translated.4.7K installs.",
+  "review": "The authored task/memory workflow is retained with bundled sibling guidance and a local dashboard asset. It requires shared persistent TASKS.md, CLAUDE.md and memory/ state, a browser with File System Access APIs, and native productivity command dispatch. Packaging does not register commands or verify runtime behavior. Original source-layout observations are retained separately as historical research.",
   "native_prerequisites": [
     "Writable persistent TASKS.md,CLAUDE.md,memory folder; user can open dashboard in a browser supporting File System Access APIs.",
     "Original optional connectors for tracker/chat/email/calendar/docs; normal provisioning only,no dispatch wrappers or instruction overrides.",
@@ -80,5 +93,22 @@
     "catalog_import_format": "existing flat skills/<slug> layout",
     "manifest": "provenance/files.json",
     "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
-  }
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "productivity/skills/start",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "def467be29ec60f1567c9fa92dc4b1ca9a6d3ed85f964f338a02502a44779208"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Original Claude/Cowork command dispatch, plugin-root path and local file semantics must be available; no replacement runtime is claimed.",
+    "Does not provide a full inbox-priority, travel or calendar-rescheduling service."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately.",
+  "historical_research_prerequisites": [
+    "Original productivity plugin layout, ${CLAUDE_PLUGIN_ROOT}, dashboard.html, TASKS.md, CLAUDE.md and memory/; compatible command dispatch and filesystem.",
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+  ],
+  "historical_source_review": "Conditional unchanged native productivity initialization. Creates task/memory/dashboard structure,interactive shorthand decoding and optional broad source scan with user choice. Authored Cowork opening instructions and productivity command dispatch are host-specific; source is preserved rather than translated.4.7K installs."
 }

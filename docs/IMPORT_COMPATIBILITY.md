@@ -2,7 +2,7 @@
 
 The catalog uses the existing `catalog.yml` structure and
 `skills/<slug>/SKILL.md` paths. Each declared name matches its folder and slug.
-All 43 packages pass the inspected platform's exact file-loading, content and
+All 74 packages pass the inspected platform's exact file-loading, content and
 package validators in the isolated probe. The earlier custom version-two import
 layout has been removed. No platform support for that custom layout is needed.
 
@@ -14,7 +14,7 @@ layout has been removed. No platform support for that custom layout is needed.
 | Shared supporting files | Required references, scripts and templates are bundled inside each individual package; local paths are updated. |
 | Source and licence labels | Standard frontmatter contains `license`, `metadata.source` and `metadata.source_url`, which the existing seed reads. Original authors are identified in metadata and ATTRIBUTION.md. |
 | Licence files | Every package carries its exact controlling LICENSE. This is already supported as an ordinary supplementary file. |
-| Package limits | All 43 fit the inspected limits; the largest contains 17 supplementary files. Hidden plugin config files are not packaged as if the runtime could load them. |
+| Package limits | All 74 fit the inspected limits; the largest contains 11 supplementary files. Hidden plugin config files are not packaged as if the runtime could load them. |
 | Source preservation | Original bytes remain in the provenance archive. Installed files are explicitly labelled adaptations and reproducible from recorded edits. Exact original formatting is not a runtime requirement. |
 
 ## What packaging cannot provide
@@ -22,16 +22,8 @@ layout has been removed. No platform support for that custom layout is needed.
 **Keep this PR in draft until the required runtime decisions and publication
 checks are complete. Import acceptance is not execution or deployment.**
 
-- The seed stores selected parsed fields in the database. It does not preserve
-  every field from the file. The parser/renderer drops `argument-hint` in 13
-  packages and `user-invocable: false` in six. These fields remain in this repo;
-  the six background/reference workflows still need a platform behavior decision.
-  The seed also does not persist every extra field that the parser can carry,
-  including tool restrictions. Rendering a parsed skill is not a database test.
-- The six affected background/reference packages are
-  `month-end-close-management`, `multi-source-research-synthesis`,
-  `task-list-management`, `workplace-memory-management`, `data-visualization`
-  and `nda-risk-review`. Do not silently make them user-invocable to pass a test.
+- The seed stores selected parsed fields, not every original field. The exact parser/renderer drops `argument-hint` in 28 packages and `user-invocable` in 6. Native fields remain in this repo. The seed also omits some extra parsed fields, including tool restrictions; parser rendering is not a database persistence test.
+- Packages with `user-invocable: false` are `data-visualization`, `month-end-close-management`, `multi-source-research-synthesis`, `nda-risk-review`, `task-list-management`, `workplace-memory-management`. Their background/reference behavior needs a platform decision; do not silently make them user-invocable.
 - OpenSEO needs its actual service connection, credits, live research tools and
   report persistence. Both selected workflows/guidance are packaged, but files
   cannot create an authenticated service. Its API identifiers remain unchanged.
@@ -86,7 +78,7 @@ and their data models/constants. Category validation uses the documented eight
 canonical categories; the builtin lookup supplies `agent_building_guide`.
 It never imports platform services, writes a database, installs a skill or
 executes upstream skill scripts. [current-importer-probe.json](current-importer-probe.json)
-records the 43 acceptances, source hashes and the fields lost by parser rendering.
+records the 74 acceptances, source hashes and the fields lost by parser rendering.
 The repository checker separately validates original and adapted file hashes,
 transformation replay, evidence binding, licence files and package limits.
 
@@ -95,3 +87,13 @@ references/imports, and records unresolved dynamic/native cases. It cannot prove
 all dependencies in natural-language instructions, conditional branches or APIs.
 Those decisions require documented source review; it must never silently prune
 a required dependency just because a scanner did not find it.
+
+## Expanded roster and deferred sources
+
+The pinned seed defines 32 experts and 321 assignments. The initial live capture had 15 experts; Max had no installed skills there but has 37 seed-only skills. The [complete coverage ledger](EXPERT_COVERAGE.md) distinguishes reviewed coverage, partial matches, gaps, onboarding and initial broader role kits. A listed research match is not automatically an enabled production capability.
+
+The 34-skill advertising suite exceeds the supplementary-file cap before its full native validation dependencies are included. Prospecting awaits a fix for its unchanged CSV exporter. Invoice chase awaits licence clarification. All 40 remain outside the installable catalog with their originals and evidence retained. Six other packages now use complete clean historical pins; no old licence is attached to later source files.
+
+The incident-response workflow includes a crisis-escalation guardrail template. Triage, competitor research and other conditional workflows retain their actual service, configuration and data-source requirements. Packaging the template does not configure or authorize production incident actions.
+
+Public-relations, referrals and marketing-plan are also deferred because their required references contain contradictory scoring or unresolved numerical assumptions. Marketing-ideas remains with its deferred parent; parent-level usage does not qualify it independently. These originals and all applicable third-party notices are retained without corrective edits.
