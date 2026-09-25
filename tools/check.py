@@ -31,6 +31,13 @@ MAX_PACKAGE_FILES = 100  # Siblings only; the root SKILL.md is separate.
 MAX_PACKAGE_FILE_BYTES = 2 * 1024 * 1024
 MAX_PACKAGE_BYTES = 20 * 1024 * 1024  # Includes root SKILL.md.
 MAX_PACKAGE_PATH_DEPTH = 8
+PR2_SOURCE = {
+    "repo": "Significant-Gravitas/skills-catalog",
+    "base_commit": "00d9cfbf2c9c01a13dc5626a50e8f4b9c4d2d35d",
+    "commit": "c0237abc5a3503b1bb62d3422704132176305847",
+    "pull_request": 2,
+}
+PR2_PENDING_SLUG = "product-experiment-design"
 
 
 class ValidationError(ValueError):
@@ -122,6 +129,11 @@ class Result:
     errors: list[str] = field(default_factory=list)
     provenance: dict[str, dict] = field(default_factory=dict)
     rendered: dict[str, bytes] = field(default_factory=dict)
+    # Carried platform packages retain their existing bytes/metadata; they do
+    # not acquire the upstream licence or adaptation evidence of the 74 imports.
+    carryforward: dict[str, dict] = field(default_factory=dict)
+    carryforward_files: dict[str, dict] = field(default_factory=dict)
+    unresolved: set[str] = field(default_factory=set)
 
     def require_valid(self) -> None:
         if self.errors:
@@ -197,6 +209,79 @@ def _transforms(record: dict) -> None:
         raise ValidationError("controlling license bytes may not be transformed")
 
 
+def _load_carryforward(result: Result) -> None:
+    """Load the explicitly pinned PR 2 preservation policy, when present.
+
+    The sole unresolved same-name proposal remains in ordinary import provenance.
+    This manifest is evidence of carry-forward, not a new licence assessment.
+    """
+    relative = "provenance/pr2-carryforward.json"
+    if not confined_path(result.root, relative).exists():
+        return
+    manifest = _read_document(result.root, relative)
+    if not isinstance(manifest, dict) or manifest.get("schema_version") != 1:
+        raise ValidationError(f"{relative}: schema_version must be 1")
+    if manifest.get("source") != PR2_SOURCE:
+        raise ValidationError(f"{relative}: immutable PR 2 source identity differs")
+    added = _strings(manifest.get("added_slugs"), "PR 2 added_slugs", nonempty=True)
+    if len(added) != 167:
+        raise ValidationError("PR 2 protection must account for all 167 added slugs")
+    seen, paths = set(), set()
+    for category, expected in (("retained", 166), ("unresolved", 1)):
+        rows = manifest.get(category)
+        if not isinstance(rows, list) or len(rows) != expected:
+            raise ValidationError(f"PR 2 {category}: exactly {expected} records required")
+        for row in rows:
+            if not isinstance(row, dict):
+                raise ValidationError(f"PR 2 {category}: record must be a mapping")
+            slug = row.get("slug")
+            if not isinstance(slug, str) or not REGISTRY_ID.fullmatch(slug) or slug in seen:
+                raise ValidationError("PR 2 record has an invalid or duplicate slug")
+            seen.add(slug)
+            entry = row.get("catalog_entry")
+            if not isinstance(entry, dict) or entry.get("slug") != slug or entry.get("source") != "platform":
+                raise ValidationError(f"{slug}: original platform catalog entry required")
+            if category == "unresolved":
+                if slug != PR2_PENDING_SLUG:
+                    raise ValidationError("only product-experiment-design is an unresolved PR 2 name decision")
+                _text(row.get("reason"), f"{slug} unresolved decision reason")
+                result.unresolved.add(slug)
+            else:
+                if slug == PR2_PENDING_SLUG:
+                    raise ValidationError("product-experiment-design must retain its unresolved decision")
+                result.carryforward[slug] = row
+            files = row.get("files")
+            if not isinstance(files, list) or not files:
+                raise ValidationError(f"{slug}: original PR 2 file inventory required")
+            members = set()
+            for record in files:
+                if not isinstance(record, dict):
+                    raise ValidationError(f"{slug}: file record must be a mapping")
+                path = relative_path(record.get("path"))
+                confined_path(result.root, path)
+                prefix = f"skills/{slug}/"
+                if not path.startswith(prefix):
+                    raise ValidationError(f"{path}: PR 2 file must belong to its declared package")
+                segments = path[len(prefix):].split("/")
+                if len(segments) > MAX_PACKAGE_PATH_DEPTH or any(not PACKAGE_SEGMENT.fullmatch(p) for p in segments):
+                    raise ValidationError(f"{path}: unsafe package segment or depth")
+                if path.casefold() in paths:
+                    raise ValidationError(f"{path}: duplicate/case-colliding PR 2 path")
+                paths.add(path.casefold())
+                members.add(path)
+                _digest_fields(record, path)
+                if record.get("mode") not in {"100644", "100755"}:
+                    raise ValidationError(f"{path}: unsupported PR 2 file mode")
+                if not isinstance(record.get("blob_sha1"), str) or not SHA1.fullmatch(record["blob_sha1"]):
+                    raise ValidationError(f"{path}: original PR 2 Git blob SHA-1 required")
+                if category == "retained":
+                    result.carryforward_files[path] = record
+            if f"skills/{slug}/SKILL.md" not in members:
+                raise ValidationError(f"{slug}: PR 2 primary SKILL.md missing from inventory")
+    if set(added) != seen:
+        raise ValidationError("PR 2 added_slugs must equal retained plus unresolved slugs")
+
+
 def _load_plan(root: Path) -> Result:
     result = Result(root)
     try:
@@ -211,6 +296,7 @@ def _load_plan(root: Path) -> Result:
             raise ValidationError("provenance/files.json: schema-v3 nonempty files list required")
         if not isinstance(evidence, dict) or evidence.get("schema_version") not in {2, 3} or not isinstance(evidence.get("observations"), list):
             raise ValidationError("provenance/evidence.json: observations list required")
+        _load_carryforward(result)
         evidence_ids = set()
         for observation in evidence["observations"]:
             identity = _text(observation.get("id"), "evidence ID")
@@ -233,11 +319,16 @@ def _load_plan(root: Path) -> Result:
             seen_ids.add(slug)
             if any(key in entry for key in ("path", "package_root", "upstream_commit", "name", "provenance")):
                 raise ValidationError(f"{slug}: obsolete nested-layout catalog fields")
-            repo, upstream = _source(entry.get("source"))
             categories = _strings(entry.get("categories"), f"{slug} categories", nonempty=True)
             if set(categories) - CATEGORIES:
                 raise ValidationError(f"{slug}: unknown category")
             _strings(entry.get("required_providers"), f"{slug} required_providers")
+            if slug in result.carryforward:
+                if entry != result.carryforward[slug]["catalog_entry"]:
+                    raise ValidationError(f"{slug}: catalog metadata differs from protected PR 2 entry")
+                result.entries.append(entry)
+                continue
+            repo, upstream = _source(entry.get("source"))
             _text(entry.get("license"), f"{slug} license identifier")
             proof = _read_document(root, f"provenance/skills/{slug}.json")
             if not isinstance(proof, dict) or proof.get("schema_version") != 3 or proof.get("slug") != slug or proof.get("name") != slug:
@@ -261,6 +352,11 @@ def _load_plan(root: Path) -> Result:
             result.provenance[slug] = proof
         except (OSError, ValueError, TypeError, yaml.YAMLError) as exc:
             result.errors.append(f"catalog entry {index + 1}: {exc}")
+    missing = (set(result.carryforward) | result.unresolved) - seen_ids
+    if missing:
+        result.errors.append("protected PR 2 catalog entries are missing: " + ", ".join(sorted(missing)))
+    if result.unresolved - set(result.provenance):
+        result.errors.append("unresolved PR 2 name must retain its separately reviewed import proposal")
     paths = set()
     for index, record in enumerate(manifest["files"]):
         try:
@@ -351,8 +447,7 @@ def frontmatter(content: bytes, label: str) -> tuple[dict, str]:
     return metadata, match.group(2).lstrip("\n")
 
 
-def _skill_content(content: bytes, entry: dict, proof: dict) -> None:
-    slug = entry["slug"]
+def _skill_shape(content: bytes, slug: str) -> dict:
     metadata, body = frontmatter(content, slug)
     if metadata["name"] != slug:
         raise ValidationError(f"{slug}: frontmatter name differs from folder/catalog slug")
@@ -369,6 +464,12 @@ def _skill_content(content: bytes, entry: dict, proof: dict) -> None:
     triggers = [str(t).strip() for t in triggers if str(t).strip()]
     if len(triggers) > 10 or any(len(t) > 64 for t in triggers):
         raise ValidationError(f"{slug}: triggers exceed 10 entries or 64 characters")
+    return metadata
+
+
+def _skill_content(content: bytes, entry: dict, proof: dict) -> None:
+    slug = entry["slug"]
+    metadata = _skill_shape(content, slug)
     if metadata.get("license") != entry["license"]:
         raise ValidationError(f"{slug}: frontmatter license differs")
     attribution = metadata.get("metadata")
@@ -391,18 +492,43 @@ def validate(root: Path = ROOT, *, expected_count: int | None = None, allow_miss
     if expected_count is not None and len(result.entries) != expected_count:
         result.errors.append(f"expected {expected_count} skills, catalog declares {len(result.entries)}")
     actual = _inventory(root, "skills", result.errors)
-    for path in sorted(actual - set(result.records)):
-        result.errors.append(f"{path}: output file is not tracked by provenance/files.json")
+    declared = set(result.records) | set(result.carryforward_files)
+    for path in sorted(actual - declared):
+        result.errors.append(f"{path}: output file is not tracked by provenance/files.json or PR 2 carry-forward")
     effective = actual | set(supplied)
     if not allow_missing:
         for path in sorted(set(result.records) - effective):
             result.errors.append(f"{path}: manifest file is missing")
-    expected_proofs = {f"provenance/skills/{e['slug']}.json" for e in result.entries}
+    expected_proofs = {f"provenance/skills/{slug}.json" for slug in result.provenance}
     if _inventory(root, "provenance/skills", result.errors) != expected_proofs:
         result.errors.append("per-skill provenance inventory differs from catalog")
     originals = {r["source"]["archive"] for r in result.records.values() if r.get("source")}
     if _inventory(root, "provenance/originals", result.errors) != originals:
         result.errors.append("original archive inventory differs: missing or unreferenced archive")
+    for path, record in result.carryforward_files.items():
+        try:
+            # These files have no replay archive and must remain present even in
+            # --restore mode. They are never regenerated from imported sources.
+            content = confined_path(root, path).read_bytes()
+            verify_original(record, content)
+            if strict_modes and os.name != "nt":
+                executable = bool(confined_path(root, path).stat().st_mode & 0o111)
+                if executable != (record["mode"] == "100755"):
+                    raise ValidationError(f"{path}: executable mode differs from protected PR 2 file")
+        except (OSError, ValueError, TypeError, KeyError) as exc:
+            result.errors.append(f"{path}: protected PR 2 file: {exc}")
+    for slug, row in result.carryforward.items():
+        members = row["files"]
+        if len(members) - 1 > MAX_PACKAGE_FILES:
+            result.errors.append(f"{slug}: package exceeds 100 sibling files")
+        if any(r["size"] > MAX_PACKAGE_FILE_BYTES for r in members if r["path"] != f"skills/{slug}/SKILL.md"):
+            result.errors.append(f"{slug}: package file exceeds 2 MiB")
+        if sum(r["size"] for r in members) > MAX_PACKAGE_BYTES:
+            result.errors.append(f"{slug}: package exceeds 20 MiB")
+        try:
+            _skill_shape(confined_path(root, f"skills/{slug}/SKILL.md").read_bytes(), slug)
+        except (OSError, ValueError, TypeError, KeyError, yaml.YAMLError) as exc:
+            result.errors.append(f"{slug}: {exc}")
     from package import render_file  # Renderer owns only the declared mechanical changes.
     for path, record in result.records.items():
         try:
@@ -425,6 +551,8 @@ def validate(root: Path = ROOT, *, expected_count: int | None = None, allow_miss
             result.errors.append(f"{path}: {exc}")
     for entry in result.entries:
         slug = entry["slug"]
+        if slug in result.carryforward:
+            continue
         prefix = f"skills/{slug}/"
         members = {p: r for p, r in result.records.items() if p.startswith(prefix)}
         primary = members.get(prefix + "SKILL.md")
@@ -488,7 +616,9 @@ def main(argv: list[str] | None = None) -> int:
     result = validate(args.root, expected_count=args.expected_count, strict_modes=args.strict_modes)
     for error in result.errors:
         print(f"error: {error}", file=sys.stderr)
-    print(f"Checked {len(result.entries)} skills, {len(result.records)} packaged files: {len(result.errors)} error(s).")
+    print(f"Checked {len(result.entries)} skills ({len(result.provenance)} reviewed imports, "
+          f"{len(result.carryforward)} unchanged PR 2 packages), "
+          f"{len(result.records) + len(result.carryforward_files)} packaged files: {len(result.errors)} error(s).")
     return 1 if result.errors else 0
 
 

@@ -1,5 +1,12 @@
 # Complete expert coverage
 
+This is the original research ledger for PR 4's 74 imported proposals, not a
+final assignment or deletion plan. Nick's 166 noncolliding PR 2 additions are
+now retained separately; their omission from a proposed kit below does not
+authorize their removal. Exact-name and purpose-overlap choices remain open.
+See [the retention rule](PR2_RETENTION.md). The production capture below is the
+initial historical capture, not a statement of today's production inventory.
+
 Pinned roster: 32 experts, 321 original skill assignments. Production capture: 15 experts. Max contributes 37 seed-only assignments that were absent from the original live inventory.
 
 All assignments are listed below. “Role-kit” records the initial broader role redesign; it does not claim an exact replacement for each original. “Covered” reflects source review, not measured output quality. “Partial” retains a stated gap. Onboarding stays a platform concern. Deferred skills appear for traceability but are excluded from the installable catalog.

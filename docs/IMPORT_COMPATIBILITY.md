@@ -2,19 +2,24 @@
 
 The catalog uses the existing `catalog.yml` structure and
 `skills/<slug>/SKILL.md` paths. Each declared name matches its folder and slug.
-All 74 packages pass the inspected platform's exact file-loading, content and
+All 240 packages (74 imported proposals and 166 retained PR 2 additions) pass
+the inspected platform's exact file-loading, content and
 package validators in the isolated probe. The earlier custom version-two import
 layout has been removed. No platform support for that custom layout is needed.
 
 ## What packaging now solves
+
+The source/licence adaptations below describe the 74 imported proposals.
+Retained PR 2 packages preserve their original files and catalog metadata under
+[the separate retention rule](PR2_RETENTION.md), without new licence claims.
 
 | Concern | Current catalog behavior |
 | --- | --- |
 | Paths and names | Flat, unique, descriptive skill directories match the existing importer. |
 | Shared supporting files | Required references, scripts and templates are bundled inside each individual package; local paths are updated. |
 | Source and licence labels | Standard frontmatter contains `license`, `metadata.source` and `metadata.source_url`, which the existing seed reads. Original authors are identified in metadata and ATTRIBUTION.md. |
-| Licence files | Every package carries its exact controlling LICENSE. This is already supported as an ordinary supplementary file. |
-| Package limits | All 74 fit the inspected limits; the largest contains 11 supplementary files. Hidden plugin config files are not packaged as if the runtime could load them. |
+| Licence files | Every imported proposal carries its exact controlling LICENSE. This is already supported as an ordinary supplementary file. |
+| Package limits | All 240 fit the inspected limits; the largest contains 11 supplementary files. Hidden plugin config files are not packaged as if the runtime could load them. |
 | Source preservation | Original bytes remain in the provenance archive. Installed files are explicitly labelled adaptations and reproducible from recorded edits. Exact original formatting is not a runtime requirement. |
 
 ## What packaging cannot provide
@@ -53,6 +58,8 @@ still does not retire old listings. A separate migration must replace/retire
 the intended placeholder listings and update expert assignments. Existing users'
 installed copies must not be deleted as a side effect. The original 171-entry
 catalog is recorded in `provenance/replaced-catalog.json` for that migration.
+It predates PR 2. Newly added PR 2 skills are outside that blanket removal scope;
+the exact-name choice and purpose-overlap decisions remain open.
 
 ## Verification record and reproducibility
 
@@ -78,7 +85,7 @@ and their data models/constants. Category validation uses the documented eight
 canonical categories; the builtin lookup supplies `agent_building_guide`.
 It never imports platform services, writes a database, installs a skill or
 executes upstream skill scripts. [current-importer-probe.json](current-importer-probe.json)
-records the 74 acceptances, source hashes and the fields lost by parser rendering.
+records the 240 acceptances, source hashes and the fields lost by parser rendering.
 The repository checker separately validates original and adapted file hashes,
 transformation replay, evidence binding, licence files and package limits.
 
@@ -90,7 +97,7 @@ a required dependency just because a scanner did not find it.
 
 ## Expanded roster and deferred sources
 
-The pinned seed defines 32 experts and 321 assignments. The initial live capture had 15 experts; Max had no installed skills there but has 37 seed-only skills. The [complete coverage ledger](EXPERT_COVERAGE.md) distinguishes reviewed coverage, partial matches, gaps, onboarding and initial broader role kits. A listed research match is not automatically an enabled production capability.
+The pinned seed defines 32 experts and 321 assignments. The initial historical live capture had 15 experts; Max had no installed skills in that capture but has 37 seed assignments. That capture is not a statement of today's production inventory. The [complete coverage ledger](EXPERT_COVERAGE.md) distinguishes reviewed coverage, partial matches, gaps, onboarding and initial broader role kits. A listed research match is not automatically an enabled production capability or a decision to remove a retained PR 2 skill.
 
 The 34-skill advertising suite exceeds the supplementary-file cap before its full native validation dependencies are included. Prospecting awaits a fix for its unchanged CSV exporter. Invoice chase awaits licence clarification. All 40 remain outside the installable catalog with their originals and evidence retained. Six other packages now use complete clean historical pins; no old licence is attached to later source files.
 

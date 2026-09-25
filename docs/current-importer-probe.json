@@ -3,7 +3,7 @@
   "seed_git_blob": "05014f04317b1a820a0df6db89c4de515d80f68f",
   "skills_git_blob": "0425ccea6aeea1e805d9874e0e3f2c08f41a5497",
   "method": "Executed only exact AST-selected load_catalog, _load, _package_files, parsing/rendering, attribution helpers, package/content/path validators and their types/constants. Used actual pydantic models. Category validation uses the documented eight-category allowlist; built-in-name lookup supplies agent_building_guide. No database, platform services, networking or upstream skill execution.",
-  "accepted": 74,
+  "accepted": 240,
   "rejected": 0,
   "runtime_verified": false,
   "limitation": "Import acceptance does not test database persistence, installation, metadata enforcement, native plugin dispatch, service accounts or execution. The seed stores a subset of parsed fields; parser round-trip preservation does not establish database preservation.",
@@ -815,6 +815,1666 @@
       "native_fields_dropped_by_parser_renderer": [
         "user-invocable"
       ]
+    },
+    {
+      "slug": "account-health-and-qbrs",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2152,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "alex-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 4892,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "alliance-co-commercialization",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2359,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "anika-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 5912,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "assure-partner-led-delivery",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2333,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "automate-finance-reporting",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2591,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "billing-refunds-and-exceptions",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2202,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "bpo-vendor-quality-ops",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2210,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "budget-vs-actuals-and-reforecast",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3405,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "build-data-and-r-d-alliances",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2093,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "build-partner-academies-at-scale",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2321,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "build-partner-led-category-creation",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3193,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "build-the-target-list",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3591,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "business-case-and-roi-selling",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3012,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "campaign-brief-and-asset-plan",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2938,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "candidate-sourcing-strategy",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 5622,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "cash-treasury-and-fx",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3605,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "channel-draft-shapes",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3984,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "close-controls-and-accounting",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3403,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "cloud-commit-and-marketplace-selling",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 5238,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "commercial-launch-strategy",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3998,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "competitive-intelligence",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3038,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "compliance-and-regulated-support",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2080,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "compliance-gated-deal-execution",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2471,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "content-brief-writer-handoff",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3441,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "credit-term-sheet-structuring",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2730,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "daniel-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 4799,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "deal-economics-and-pricing-guardrails",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2490,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "define-the-partner-icp",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2804,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "design-the-partner-program",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 4116,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "developer-and-api-motion",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2088,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "discovery-and-qualification",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3516,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "draft-a-first-touch",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2419,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "draft-a-follow-up",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2164,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "draft-the-reply",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2510,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "drive-alliance-ma-and-strategic-investments",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3790,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "editorial-calendar-ops",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2900,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "enablement-playbooks-certification",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2242,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "enterprise-deal-desk-close-plans",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3308,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "enterprise-identity-sso-support",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2306,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "escalations-and-incidents",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2375,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "exec-engagement-and-sponsorship",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3339,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "field-call-route-discipline",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2508,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "field-enablement-content",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2310,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "finance-board-and-investor-reporting",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3775,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "find-the-decision-makers",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2017,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "fraud-and-chargeback-defense",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2433,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "govern-the-strategic-alliance",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2527,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "gtm-performance-diagnostics",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3944,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "gtm-planning-and-market-entry",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2271,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "handle-a-reply",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 1648,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "handle-partner-conflict-and-churn",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2311,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "help-center-answers-and-kb",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2137,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "hiring-debrief-and-decision",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3674,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "hiring-pipeline-analytics",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2743,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "icp-and-segmentation",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2850,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "industrial-pursuit-tender-handover",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2402,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "interview-coordination",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 6266,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "interview-kit-design",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 4966,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "james-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 6399,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "job-description-drafting",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2578,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "job-offer-and-close-plan",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3603,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "knowledge-centered-service",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2904,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "live-channel-queue-operations",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3095,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "logistics-shipment-and-customs",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 1947,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "manage-partner-renewals-and-exits",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2224,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "map-the-partner-ecosystem",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 1941,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "marketplace-partner-revenue-growth",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2187,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "marketplace-two-sided-mediation",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2569,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "mass-recovery-and-bulk-comms",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2071,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "max-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 5659,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "maya-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 5484,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "media-plan-measure-optimize",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2866,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "member-benefits-and-claims",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2055,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "messaging-and-tone-matrix",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3442,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "model-the-partnership-commercials",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 1997,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "multithread-and-stakeholder-maps",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2716,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "next-step-and-handoff",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2448,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "nurture-sequence-build-and-readout",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3088,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "objection-and-negotiation",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2380,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "onboard-and-enable-partners",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3145,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "onboarding-and-adoption",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2115,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "opportunity-sizing-and-business-case",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2459,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-automate-a-workflow",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2121,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-capacity-and-headcount-plan",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2962,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-controls-and-escalations",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2052,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-govern-a-program",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2351,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-map-and-improve-a-process",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2513,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-run-the-operating-rhythm",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3067,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-scorecard-and-kpis",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2657,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-vendor-and-procurement",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3455,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "ops-write-an-sop",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2754,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "orchestrate-multi-party-partner-bids",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2264,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "orders-returns-and-warranty",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3186,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "own-the-alliance-pnl",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3231,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "own-to-closure",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2141,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "partner-and-channel-co-sell",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 1912,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "partner-first-touch-outreach",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2172,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "passive-candidate-outreach",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3636,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "pipeline-review-and-forecast",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2079,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "plan-the-multi-year-partnership",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2588,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "positioning-and-messaging",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2614,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "prep-the-partner-qbr",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2466,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "pricing-and-packaging",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3038,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-ai-feature-scoping-and-evals",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2625,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-discovery-and-user-research",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3344,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-exec-briefing",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2119,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-launch-plan",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3082,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-market-and-competitor-read",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3184,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-metrics-and-instrumentation",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2541,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-prd-and-acceptance-criteria",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2910,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-roadmap-and-prioritization",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3922,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-strategy-and-bets",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2561,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "quality-csat-and-coaching",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2553,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "quarterback-the-deal-team",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2745,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "regional-category-gtm-strategy",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2094,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "regulated-access-and-clinical-selling",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3077,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "renewal-expansion-and-qbr",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2430,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "research-an-account",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 1991,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "retail-jbp-trade-and-sellout",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3517,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "rfp-and-competitive-bid-response",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2276,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "robin-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 4702,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "role-intake-and-scorecard",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 4409,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-brand-oem-and-supply-partnerships",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2020,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-creator-and-affiliate-partner-programs",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2690,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-global-partner-executive-councils",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3020,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-hyperscaler-marketplace-co-sell",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3077,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-partner-strategy-and-operations",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3356,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-regulated-partnership-motions",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2132,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-the-partner-co-sell-cadence",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3270,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "run-the-partner-marketing-engine",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2677,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "saas-gtm-finance",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3528,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "sales-marketing-alignment-and-sla",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3157,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "sales-ops-coverage-and-quota",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 4233,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "sales-team-leadership",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3145,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "scale-the-partner-channel",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2713,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "scope-the-tech-partnership",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2257,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "sensitive-data-safe-handling",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3115,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "service-recovery-and-goodwill",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2646,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "set-board-level-alliance-strategy",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3306,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "showroom-fi-and-internet-bdc",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2574,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "signature-to-launch-and-account-ops",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3079,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "social-and-community-support",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2734,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "sofia-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 6423,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "source-and-qualify-partners",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2686,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "source-partners-via-investor-ecosystems",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2024,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "structure-the-partner-agreement",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2858,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "support-ops-improvement-program",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2758,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "technical-diagnostics-with-tools",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2290,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "territory-and-account-planning",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2756,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "track-partner-pipeline",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2636,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "travel-disruption-and-rebooking",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2804,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "triage-and-prioritize",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2366,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "troubleshoot-and-resolve",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2139,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "trust-and-safety-escalations",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2218,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "unit-economics-and-roi",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2820,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "upsell-and-retention-offers",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2370,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "variance-and-flux-analysis",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3054,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "vertical-industry-plays",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2172,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "vip-and-white-glove-care",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2225,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "voice-and-phone-support",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 3724,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "voice-of-customer-and-feedback",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2088,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "voice-of-customer-loop",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2257,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "weekly-marketing-read",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 5160,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "workforce-and-capacity-planning",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2810,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "zara-getting-started",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 6632,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
     }
   ]
 }

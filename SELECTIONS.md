@@ -1,5 +1,10 @@
 # Installed selections
 
+This document reviews the 74 replacement packages proposed in PR 4. The catalog
+also retains 166 unchanged additions from Nick's PR 2, bringing the draft to
+240 entries. Those retained packages are not new upstream selections. The
+shared-name choice remains open; see [the retention rule](docs/PR2_RETENTION.md).
+
 74 unique skill packages; original authors retain authorship. Clear names, source metadata and necessary local reference changes are packaging adaptations only. Every package has an exact upstream licence and attribution.
 
 Status: 10 conditional, 64 core. Conditional packages require the recorded services/native behavior before enabling them. All packages remain untested at runtime.

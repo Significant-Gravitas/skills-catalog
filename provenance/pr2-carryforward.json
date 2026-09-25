@@ -1,0 +1,3844 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repo": "Significant-Gravitas/skills-catalog",
+    "base_commit": "00d9cfbf2c9c01a13dc5626a50e8f4b9c4d2d35d",
+    "commit": "c0237abc5a3503b1bb62d3422704132176305847",
+    "pull_request": 2
+  },
+  "added_slugs": [
+    "account-health-and-qbrs",
+    "alex-getting-started",
+    "alliance-co-commercialization",
+    "anika-getting-started",
+    "assure-partner-led-delivery",
+    "automate-finance-reporting",
+    "billing-refunds-and-exceptions",
+    "bpo-vendor-quality-ops",
+    "budget-vs-actuals-and-reforecast",
+    "build-data-and-r-d-alliances",
+    "build-partner-academies-at-scale",
+    "build-partner-led-category-creation",
+    "build-the-target-list",
+    "business-case-and-roi-selling",
+    "campaign-brief-and-asset-plan",
+    "candidate-sourcing-strategy",
+    "cash-treasury-and-fx",
+    "channel-draft-shapes",
+    "close-controls-and-accounting",
+    "cloud-commit-and-marketplace-selling",
+    "commercial-launch-strategy",
+    "competitive-intelligence",
+    "compliance-and-regulated-support",
+    "compliance-gated-deal-execution",
+    "content-brief-writer-handoff",
+    "credit-term-sheet-structuring",
+    "daniel-getting-started",
+    "deal-economics-and-pricing-guardrails",
+    "define-the-partner-icp",
+    "design-the-partner-program",
+    "developer-and-api-motion",
+    "discovery-and-qualification",
+    "draft-a-first-touch",
+    "draft-a-follow-up",
+    "draft-the-reply",
+    "drive-alliance-ma-and-strategic-investments",
+    "editorial-calendar-ops",
+    "enablement-playbooks-certification",
+    "enterprise-deal-desk-close-plans",
+    "enterprise-identity-sso-support",
+    "escalations-and-incidents",
+    "exec-engagement-and-sponsorship",
+    "field-call-route-discipline",
+    "field-enablement-content",
+    "finance-board-and-investor-reporting",
+    "find-the-decision-makers",
+    "fraud-and-chargeback-defense",
+    "govern-the-strategic-alliance",
+    "gtm-performance-diagnostics",
+    "gtm-planning-and-market-entry",
+    "handle-a-reply",
+    "handle-partner-conflict-and-churn",
+    "help-center-answers-and-kb",
+    "hiring-debrief-and-decision",
+    "hiring-pipeline-analytics",
+    "icp-and-segmentation",
+    "industrial-pursuit-tender-handover",
+    "interview-coordination",
+    "interview-kit-design",
+    "james-getting-started",
+    "job-description-drafting",
+    "job-offer-and-close-plan",
+    "knowledge-centered-service",
+    "live-channel-queue-operations",
+    "logistics-shipment-and-customs",
+    "manage-partner-renewals-and-exits",
+    "map-the-partner-ecosystem",
+    "marketplace-partner-revenue-growth",
+    "marketplace-two-sided-mediation",
+    "mass-recovery-and-bulk-comms",
+    "max-getting-started",
+    "maya-getting-started",
+    "media-plan-measure-optimize",
+    "member-benefits-and-claims",
+    "messaging-and-tone-matrix",
+    "model-the-partnership-commercials",
+    "multithread-and-stakeholder-maps",
+    "next-step-and-handoff",
+    "nurture-sequence-build-and-readout",
+    "objection-and-negotiation",
+    "onboard-and-enable-partners",
+    "onboarding-and-adoption",
+    "opportunity-sizing-and-business-case",
+    "ops-automate-a-workflow",
+    "ops-capacity-and-headcount-plan",
+    "ops-controls-and-escalations",
+    "ops-govern-a-program",
+    "ops-map-and-improve-a-process",
+    "ops-run-the-operating-rhythm",
+    "ops-scorecard-and-kpis",
+    "ops-vendor-and-procurement",
+    "ops-write-an-sop",
+    "orchestrate-multi-party-partner-bids",
+    "orders-returns-and-warranty",
+    "own-the-alliance-pnl",
+    "own-to-closure",
+    "partner-and-channel-co-sell",
+    "partner-first-touch-outreach",
+    "passive-candidate-outreach",
+    "pipeline-review-and-forecast",
+    "plan-the-multi-year-partnership",
+    "positioning-and-messaging",
+    "prep-the-partner-qbr",
+    "pricing-and-packaging",
+    "product-ai-feature-scoping-and-evals",
+    "product-discovery-and-user-research",
+    "product-exec-briefing",
+    "product-experiment-design",
+    "product-launch-plan",
+    "product-market-and-competitor-read",
+    "product-metrics-and-instrumentation",
+    "product-prd-and-acceptance-criteria",
+    "product-roadmap-and-prioritization",
+    "product-strategy-and-bets",
+    "quality-csat-and-coaching",
+    "quarterback-the-deal-team",
+    "regional-category-gtm-strategy",
+    "regulated-access-and-clinical-selling",
+    "renewal-expansion-and-qbr",
+    "research-an-account",
+    "retail-jbp-trade-and-sellout",
+    "rfp-and-competitive-bid-response",
+    "robin-getting-started",
+    "role-intake-and-scorecard",
+    "run-brand-oem-and-supply-partnerships",
+    "run-creator-and-affiliate-partner-programs",
+    "run-global-partner-executive-councils",
+    "run-hyperscaler-marketplace-co-sell",
+    "run-partner-strategy-and-operations",
+    "run-regulated-partnership-motions",
+    "run-the-partner-co-sell-cadence",
+    "run-the-partner-marketing-engine",
+    "saas-gtm-finance",
+    "sales-marketing-alignment-and-sla",
+    "sales-ops-coverage-and-quota",
+    "sales-team-leadership",
+    "scale-the-partner-channel",
+    "scope-the-tech-partnership",
+    "sensitive-data-safe-handling",
+    "service-recovery-and-goodwill",
+    "set-board-level-alliance-strategy",
+    "showroom-fi-and-internet-bdc",
+    "signature-to-launch-and-account-ops",
+    "social-and-community-support",
+    "sofia-getting-started",
+    "source-and-qualify-partners",
+    "source-partners-via-investor-ecosystems",
+    "structure-the-partner-agreement",
+    "support-ops-improvement-program",
+    "technical-diagnostics-with-tools",
+    "territory-and-account-planning",
+    "track-partner-pipeline",
+    "travel-disruption-and-rebooking",
+    "triage-and-prioritize",
+    "troubleshoot-and-resolve",
+    "trust-and-safety-escalations",
+    "unit-economics-and-roi",
+    "upsell-and-retention-offers",
+    "variance-and-flux-analysis",
+    "vertical-industry-plays",
+    "vip-and-white-glove-care",
+    "voice-and-phone-support",
+    "voice-of-customer-and-feedback",
+    "voice-of-customer-loop",
+    "weekly-marketing-read",
+    "workforce-and-capacity-planning",
+    "zara-getting-started"
+  ],
+  "retained": [
+    {
+      "slug": "account-health-and-qbrs",
+      "catalog_entry": {
+        "slug": "account-health-and-qbrs",
+        "categories": [
+          "support",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/account-health-and-qbrs/SKILL.md",
+          "mode": "100644",
+          "size": 2152,
+          "sha256": "4b917ad3b98d8d9c07cb4d155a25817a79385fb982099f067a4bc2db35764dac",
+          "blob_sha1": "a7493bf50489e2e32b8878ad64610ae90e5c8426"
+        }
+      ]
+    },
+    {
+      "slug": "alex-getting-started",
+      "catalog_entry": {
+        "slug": "alex-getting-started",
+        "categories": [
+          "development",
+          "research"
+        ],
+        "required_providers": [
+          "github",
+          "google",
+          "mcp_linear",
+          "notion",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/alex-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 4892,
+          "sha256": "6f47a7a4f45ca95f7f2a8aac87e4a99b6e488ac23f158b7b63655da79978002d",
+          "blob_sha1": "9707b09eab1ca8deced843c019a8ff8efd8b4ae0"
+        }
+      ]
+    },
+    {
+      "slug": "alliance-co-commercialization",
+      "catalog_entry": {
+        "slug": "alliance-co-commercialization",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/alliance-co-commercialization/SKILL.md",
+          "mode": "100644",
+          "size": 2359,
+          "sha256": "86968b81af2362a68a63b9c808ee1cf123b51e8ec19a86cde86a9e9747cb6552",
+          "blob_sha1": "d8cdb7813395fcf2e2b3f5868ab61b1c802d7aee"
+        }
+      ]
+    },
+    {
+      "slug": "anika-getting-started",
+      "catalog_entry": {
+        "slug": "anika-getting-started",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [
+          "google",
+          "hubspot",
+          "mcp_granola",
+          "notion",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/anika-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 5912,
+          "sha256": "8ffba34e98bdd698fa307d04abde0fcddeaa983f35a01a656fbfebe5883f325a",
+          "blob_sha1": "246338db9e5b39abd7931fb0f29449be4e7e2fcf"
+        }
+      ]
+    },
+    {
+      "slug": "assure-partner-led-delivery",
+      "catalog_entry": {
+        "slug": "assure-partner-led-delivery",
+        "categories": [
+          "operations",
+          "support"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/assure-partner-led-delivery/SKILL.md",
+          "mode": "100644",
+          "size": 2333,
+          "sha256": "d9cfda2da5e1873f12c5199ada130dda25aacdd0f31d03a2c87673c787df59c9",
+          "blob_sha1": "1497c797fe0756c2334feb2092b553b4710ce670"
+        }
+      ]
+    },
+    {
+      "slug": "automate-finance-reporting",
+      "catalog_entry": {
+        "slug": "automate-finance-reporting",
+        "categories": [
+          "finance",
+          "operations"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/automate-finance-reporting/SKILL.md",
+          "mode": "100644",
+          "size": 2591,
+          "sha256": "aab9849f8b22015b763a874bd24e0b4a9891a16cb775cf9a6e1161f2167d578a",
+          "blob_sha1": "d9f5f159ca791f7a2c9402dc69829a4523b6f424"
+        }
+      ]
+    },
+    {
+      "slug": "billing-refunds-and-exceptions",
+      "catalog_entry": {
+        "slug": "billing-refunds-and-exceptions",
+        "categories": [
+          "support",
+          "finance"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/billing-refunds-and-exceptions/SKILL.md",
+          "mode": "100644",
+          "size": 2202,
+          "sha256": "14b440d75478a17bd218a47654c557048cb5deb718639568f4872037a488441a",
+          "blob_sha1": "bc3cf8b5f4b9cfd3596717e892ff5052af8a83cc"
+        }
+      ]
+    },
+    {
+      "slug": "bpo-vendor-quality-ops",
+      "catalog_entry": {
+        "slug": "bpo-vendor-quality-ops",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/bpo-vendor-quality-ops/SKILL.md",
+          "mode": "100644",
+          "size": 2210,
+          "sha256": "0a109873b11589362a311ebbc0fe168b0fafcab2d1c7ba752e8b88954849cdd0",
+          "blob_sha1": "45a5e6b7021d89ba36c52de3fcdbe283fc947c41"
+        }
+      ]
+    },
+    {
+      "slug": "budget-vs-actuals-and-reforecast",
+      "catalog_entry": {
+        "slug": "budget-vs-actuals-and-reforecast",
+        "categories": [
+          "finance"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/budget-vs-actuals-and-reforecast/SKILL.md",
+          "mode": "100644",
+          "size": 3405,
+          "sha256": "16df1e30143aacda4eb645097c0a81d54aaa83117e2d793ee52b30196f7d8472",
+          "blob_sha1": "fa28e432d018196bbac5427be4e4b5c378b1b22e"
+        }
+      ]
+    },
+    {
+      "slug": "build-data-and-r-d-alliances",
+      "catalog_entry": {
+        "slug": "build-data-and-r-d-alliances",
+        "categories": [
+          "research",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/build-data-and-r-d-alliances/SKILL.md",
+          "mode": "100644",
+          "size": 2093,
+          "sha256": "9291201dc1cdc144eb2b1c7abdc8c2b34f04f2befd5babab0b43c83140b899a9",
+          "blob_sha1": "817e705813cff6361b951c78be85f7d3ab9b603c"
+        }
+      ]
+    },
+    {
+      "slug": "build-partner-academies-at-scale",
+      "catalog_entry": {
+        "slug": "build-partner-academies-at-scale",
+        "categories": [
+          "operations",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/build-partner-academies-at-scale/SKILL.md",
+          "mode": "100644",
+          "size": 2321,
+          "sha256": "2a6810a291a7e96baaf1342f067b763585d0c8d6517f3ddeb43c4607116aa346",
+          "blob_sha1": "4031a7f8d8f31eb136a07d704d9f5bd45a135374"
+        }
+      ]
+    },
+    {
+      "slug": "build-partner-led-category-creation",
+      "catalog_entry": {
+        "slug": "build-partner-led-category-creation",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/build-partner-led-category-creation/SKILL.md",
+          "mode": "100644",
+          "size": 3193,
+          "sha256": "a42d9f7e656360326a334a05bf264c70f70d420070817564f05d59dbaa50297e",
+          "blob_sha1": "834689e5843814aa92e11d9d3060bcf8439bfdb9"
+        }
+      ]
+    },
+    {
+      "slug": "build-the-target-list",
+      "catalog_entry": {
+        "slug": "build-the-target-list",
+        "categories": [
+          "sales",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/build-the-target-list/SKILL.md",
+          "mode": "100644",
+          "size": 3591,
+          "sha256": "d14c2915f3f5616de9d4f155aeb67b6925ce3108dec714e1c2f71846b2cf5472",
+          "blob_sha1": "e8b096e0d971c5401d1a97b21ac226c996358ab1"
+        }
+      ]
+    },
+    {
+      "slug": "business-case-and-roi-selling",
+      "catalog_entry": {
+        "slug": "business-case-and-roi-selling",
+        "categories": [
+          "sales",
+          "finance"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/business-case-and-roi-selling/SKILL.md",
+          "mode": "100644",
+          "size": 3012,
+          "sha256": "4324fdee7e527e1f281b7566018916d8db747ed5e46974467e079d86eefd308d",
+          "blob_sha1": "f3fcae3f898c241f392e8f652cb6440c2004b102"
+        }
+      ]
+    },
+    {
+      "slug": "campaign-brief-and-asset-plan",
+      "catalog_entry": {
+        "slug": "campaign-brief-and-asset-plan",
+        "categories": [
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/campaign-brief-and-asset-plan/SKILL.md",
+          "mode": "100644",
+          "size": 2938,
+          "sha256": "5dee6b6e7bfd4b078e3d5f31139f70f49f0b31f6c002b9f58d5efd01c9ab7c61",
+          "blob_sha1": "6fe56e2af6b132b8bc952bde316bf10a4aa9a165"
+        }
+      ]
+    },
+    {
+      "slug": "candidate-sourcing-strategy",
+      "catalog_entry": {
+        "slug": "candidate-sourcing-strategy",
+        "categories": [
+          "operations",
+          "research"
+        ],
+        "required_providers": [
+          "github"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/candidate-sourcing-strategy/SKILL.md",
+          "mode": "100644",
+          "size": 5622,
+          "sha256": "71eef8482b29e92fef9b9dbb9079242144b560b53a6abc1921e70c5975a05e2c",
+          "blob_sha1": "43a3bb43a20dc1597c802ff3268a37c952711b50"
+        }
+      ]
+    },
+    {
+      "slug": "cash-treasury-and-fx",
+      "catalog_entry": {
+        "slug": "cash-treasury-and-fx",
+        "categories": [
+          "finance"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/cash-treasury-and-fx/SKILL.md",
+          "mode": "100644",
+          "size": 3605,
+          "sha256": "bd838cb7a4fcfb4c5346ff8076dd30884ccd4c9f095501d1dda601405ef8c008",
+          "blob_sha1": "d87a2b08f7a8007c289d1fa75824f6d73e643ffe"
+        }
+      ]
+    },
+    {
+      "slug": "channel-draft-shapes",
+      "catalog_entry": {
+        "slug": "channel-draft-shapes",
+        "categories": [
+          "content",
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/channel-draft-shapes/SKILL.md",
+          "mode": "100644",
+          "size": 3984,
+          "sha256": "9ee0aeab4ec65b333c2d3e3d83a42395cc0b36d720b57f10492285a9fbee5e09",
+          "blob_sha1": "f8cdb91803369aab2ede5d9723723aa2d8772177"
+        }
+      ]
+    },
+    {
+      "slug": "close-controls-and-accounting",
+      "catalog_entry": {
+        "slug": "close-controls-and-accounting",
+        "categories": [
+          "finance",
+          "operations"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/close-controls-and-accounting/SKILL.md",
+          "mode": "100644",
+          "size": 3403,
+          "sha256": "baf2b125b4bf9f3486bf757a74b31fa54ec7ad5189e280ba4294ce87615a41ec",
+          "blob_sha1": "149f49a7d00edc52b5aaa1de6391b98998d87772"
+        }
+      ]
+    },
+    {
+      "slug": "cloud-commit-and-marketplace-selling",
+      "catalog_entry": {
+        "slug": "cloud-commit-and-marketplace-selling",
+        "categories": [
+          "sales",
+          "finance"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/cloud-commit-and-marketplace-selling/SKILL.md",
+          "mode": "100644",
+          "size": 5238,
+          "sha256": "1b427b1e815049259df948e48f30cd2a88e8e1737b6364171c9b2c9bef80a85e",
+          "blob_sha1": "1b878d7693d1922471be833074c92fdbf01c68ad"
+        }
+      ]
+    },
+    {
+      "slug": "commercial-launch-strategy",
+      "catalog_entry": {
+        "slug": "commercial-launch-strategy",
+        "categories": [
+          "marketing"
+        ],
+        "required_providers": [
+          "google",
+          "mcp_linear"
+        ],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "hah23255/pm-claude-skills",
+            "license": "MIT"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/commercial-launch-strategy/SKILL.md",
+          "mode": "100644",
+          "size": 3998,
+          "sha256": "61b6845c46fdb8ffe4d545fb2951c2dd0894f0a9647f6fd7bb51a56829d5cf64",
+          "blob_sha1": "0ff4f8f992a6be41611fdbd0b4cb9404a3c7f6f0"
+        }
+      ]
+    },
+    {
+      "slug": "competitive-intelligence",
+      "catalog_entry": {
+        "slug": "competitive-intelligence",
+        "categories": [
+          "marketing",
+          "research"
+        ],
+        "required_providers": [
+          "google",
+          "mcp_gong"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/competitive-intelligence/SKILL.md",
+          "mode": "100644",
+          "size": 3038,
+          "sha256": "2d72d2fb0c68e65551928572f25ba721c2c75278dbbb86adbb96c67e621c9ec4",
+          "blob_sha1": "5bd746eef8a7d718c241d2c4417cc17abe3851c5"
+        }
+      ]
+    },
+    {
+      "slug": "compliance-and-regulated-support",
+      "catalog_entry": {
+        "slug": "compliance-and-regulated-support",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/compliance-and-regulated-support/SKILL.md",
+          "mode": "100644",
+          "size": 2080,
+          "sha256": "251ebbd990d3ef1e32a460c0dd61e6ecfa48f3dc18a6c0a331b60102483fc568",
+          "blob_sha1": "d75a19a8a9280a03dadd1322dfe07467e5f9bd0f"
+        }
+      ]
+    },
+    {
+      "slug": "compliance-gated-deal-execution",
+      "catalog_entry": {
+        "slug": "compliance-gated-deal-execution",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/compliance-gated-deal-execution/SKILL.md",
+          "mode": "100644",
+          "size": 2471,
+          "sha256": "57f2a4f8fe4f54cf6af1b325ecb671d4ceb248c83b86ca8c0bdfe41bc56eea26",
+          "blob_sha1": "5ee1d957b6847499c1ea0ceca0f0e841fed04632"
+        }
+      ]
+    },
+    {
+      "slug": "content-brief-writer-handoff",
+      "catalog_entry": {
+        "slug": "content-brief-writer-handoff",
+        "categories": [
+          "marketing",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/content-brief-writer-handoff/SKILL.md",
+          "mode": "100644",
+          "size": 3441,
+          "sha256": "c0013671220c252be9bc12cf38da7996c385103b01f1f73c5b7f3a52dde0a474",
+          "blob_sha1": "d55d3f2c80994555ffd34fb8636233a36ac564f1"
+        }
+      ]
+    },
+    {
+      "slug": "credit-term-sheet-structuring",
+      "catalog_entry": {
+        "slug": "credit-term-sheet-structuring",
+        "categories": [
+          "sales",
+          "finance"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/credit-term-sheet-structuring/SKILL.md",
+          "mode": "100644",
+          "size": 2730,
+          "sha256": "e139c12f77ede95eb224e089992e7942c2b8f22080d5335453676da27ce7f330",
+          "blob_sha1": "b8891cf944f8c9c92911c7ec108b0822046f8cd3"
+        }
+      ]
+    },
+    {
+      "slug": "daniel-getting-started",
+      "catalog_entry": {
+        "slug": "daniel-getting-started",
+        "categories": [
+          "finance",
+          "operations"
+        ],
+        "required_providers": [
+          "google",
+          "hubspot",
+          "notion",
+          "slack",
+          "stripe"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/daniel-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 4799,
+          "sha256": "424ee6aca81781b7e8bf5171fbcff7c1e2ea410fc313410a2766457a039c64b1",
+          "blob_sha1": "f54189f780b471cb2fa97661358366b7641c30fa"
+        }
+      ]
+    },
+    {
+      "slug": "deal-economics-and-pricing-guardrails",
+      "catalog_entry": {
+        "slug": "deal-economics-and-pricing-guardrails",
+        "categories": [
+          "finance",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/deal-economics-and-pricing-guardrails/SKILL.md",
+          "mode": "100644",
+          "size": 2490,
+          "sha256": "59561234eb6b45f9427844fee5dd7fc2e638a12eb74f148f281fffd833c56e5f",
+          "blob_sha1": "70daa40ae193b9557821b43d98398ca9b2668e4d"
+        }
+      ]
+    },
+    {
+      "slug": "define-the-partner-icp",
+      "catalog_entry": {
+        "slug": "define-the-partner-icp",
+        "categories": [
+          "sales",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/define-the-partner-icp/SKILL.md",
+          "mode": "100644",
+          "size": 2804,
+          "sha256": "22081584dcae9a09a332b68d6ebeec26544378b03ac991029d611edd1a1e630b",
+          "blob_sha1": "e4c4a63a00ee791c1d3754aaea4818ce796709e5"
+        }
+      ]
+    },
+    {
+      "slug": "design-the-partner-program",
+      "catalog_entry": {
+        "slug": "design-the-partner-program",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/design-the-partner-program/SKILL.md",
+          "mode": "100644",
+          "size": 4116,
+          "sha256": "e5299afff4727b1642123700dd3a846f0f66833c6a017c64b112f18203aee530",
+          "blob_sha1": "59c5e0e8ccabc6afe73ddba3a38f082893587bb3"
+        }
+      ]
+    },
+    {
+      "slug": "developer-and-api-motion",
+      "catalog_entry": {
+        "slug": "developer-and-api-motion",
+        "categories": [
+          "marketing",
+          "development"
+        ],
+        "required_providers": [
+          "mcp_amplitude"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/developer-and-api-motion/SKILL.md",
+          "mode": "100644",
+          "size": 2088,
+          "sha256": "be0423a544999ccc99986704a10bb6e4feaf6cdebfc1bc4316237041b2ab7300",
+          "blob_sha1": "3407c048f024eb914db82c01d554ad340da6c61e"
+        }
+      ]
+    },
+    {
+      "slug": "discovery-and-qualification",
+      "catalog_entry": {
+        "slug": "discovery-and-qualification",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/discovery-and-qualification/SKILL.md",
+          "mode": "100644",
+          "size": 3516,
+          "sha256": "8df4aa23257d9df031eac6c0a6af1df813e73ca569b4e63c936e625854fa843d",
+          "blob_sha1": "9564a51bd48b22b360a963ca0071826bc1ea92b1"
+        }
+      ]
+    },
+    {
+      "slug": "draft-a-first-touch",
+      "catalog_entry": {
+        "slug": "draft-a-first-touch",
+        "categories": [
+          "content",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/draft-a-first-touch/SKILL.md",
+          "mode": "100644",
+          "size": 2419,
+          "sha256": "bcba93baa5518d6405aee8f686091dc84cff13f23cf651c0d58d73a0dc2599e0",
+          "blob_sha1": "9de8a7e2ecbfee21919ab2acf940fe1c0bb9ee7a"
+        }
+      ]
+    },
+    {
+      "slug": "draft-a-follow-up",
+      "catalog_entry": {
+        "slug": "draft-a-follow-up",
+        "categories": [
+          "sales",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/draft-a-follow-up/SKILL.md",
+          "mode": "100644",
+          "size": 2164,
+          "sha256": "fb88cdd031ed4f1d46206daa61836cd1bcf311381ba2735dc2705940ca87d83b",
+          "blob_sha1": "05d173ad3bd4622d7eacddbc2a15b339026fa6ea"
+        }
+      ]
+    },
+    {
+      "slug": "draft-the-reply",
+      "catalog_entry": {
+        "slug": "draft-the-reply",
+        "categories": [
+          "support",
+          "content"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/draft-the-reply/SKILL.md",
+          "mode": "100644",
+          "size": 2510,
+          "sha256": "cc73e0f49a92719dc81425949adeec79cf54e13e55cbc4d2a31d400651850de5",
+          "blob_sha1": "30e16f7c58311605340f23e372c1473abd080426"
+        }
+      ]
+    },
+    {
+      "slug": "drive-alliance-ma-and-strategic-investments",
+      "catalog_entry": {
+        "slug": "drive-alliance-ma-and-strategic-investments",
+        "categories": [
+          "finance",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/drive-alliance-ma-and-strategic-investments/SKILL.md",
+          "mode": "100644",
+          "size": 3790,
+          "sha256": "9f97b4401ab0251af196eb3b7a59fba47fd0aa036148fe84be8aacb37f451e7e",
+          "blob_sha1": "ad5b67e319bc65113b54d159a78b6b62158b6219"
+        }
+      ]
+    },
+    {
+      "slug": "editorial-calendar-ops",
+      "catalog_entry": {
+        "slug": "editorial-calendar-ops",
+        "categories": [
+          "marketing",
+          "content"
+        ],
+        "required_providers": [
+          "google",
+          "notion"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/editorial-calendar-ops/SKILL.md",
+          "mode": "100644",
+          "size": 2900,
+          "sha256": "113c61a749b24da1ae27d4e5f0ed97545739e82bea05e6076be50424a0aa16d6",
+          "blob_sha1": "a1a2bb49f337ca890594c1cb52890ab5661f093a"
+        }
+      ]
+    },
+    {
+      "slug": "enablement-playbooks-certification",
+      "catalog_entry": {
+        "slug": "enablement-playbooks-certification",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/enablement-playbooks-certification/SKILL.md",
+          "mode": "100644",
+          "size": 2242,
+          "sha256": "ed9050259bcbb43776c26a0e205e043cad64ee77ec5e316812517ba79302ab1a",
+          "blob_sha1": "209923be6d1ea2ac149c25ec559ef48c0aa2df25"
+        }
+      ]
+    },
+    {
+      "slug": "enterprise-deal-desk-close-plans",
+      "catalog_entry": {
+        "slug": "enterprise-deal-desk-close-plans",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/enterprise-deal-desk-close-plans/SKILL.md",
+          "mode": "100644",
+          "size": 3308,
+          "sha256": "b8429310618420c630e07e78bb095237cb41b17345ce1b0c501232f4ce7f2ed0",
+          "blob_sha1": "47c41d57c61e8e114dd2ac13344931896b364bbb"
+        }
+      ]
+    },
+    {
+      "slug": "enterprise-identity-sso-support",
+      "catalog_entry": {
+        "slug": "enterprise-identity-sso-support",
+        "categories": [
+          "support",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/enterprise-identity-sso-support/SKILL.md",
+          "mode": "100644",
+          "size": 2306,
+          "sha256": "3d9572cd6e44a6294f3bd22a99e00d043dc6cce34b4b32905cb30f303ddd0a93",
+          "blob_sha1": "26413a1aaacec9844ad3778fd9ef3a7bf12a178a"
+        }
+      ]
+    },
+    {
+      "slug": "escalations-and-incidents",
+      "catalog_entry": {
+        "slug": "escalations-and-incidents",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [
+          "mcp_linear",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/escalations-and-incidents/SKILL.md",
+          "mode": "100644",
+          "size": 2375,
+          "sha256": "7b01ca8e181dc1635cc57e42e137b7cab7c6c69f1b398d57640306c7648914de",
+          "blob_sha1": "c7ec6f6471a835fd0dd8ef9a04c1616b482e6390"
+        }
+      ]
+    },
+    {
+      "slug": "exec-engagement-and-sponsorship",
+      "catalog_entry": {
+        "slug": "exec-engagement-and-sponsorship",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/exec-engagement-and-sponsorship/SKILL.md",
+          "mode": "100644",
+          "size": 3339,
+          "sha256": "d8334370fe4d719458d917573b3af2a3728d5e858630b8de274918f2b275af77",
+          "blob_sha1": "12745ddf01bff71d8a5dd0d131cee9d4c734921a"
+        }
+      ]
+    },
+    {
+      "slug": "field-call-route-discipline",
+      "catalog_entry": {
+        "slug": "field-call-route-discipline",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/field-call-route-discipline/SKILL.md",
+          "mode": "100644",
+          "size": 2508,
+          "sha256": "fcdbb87d9c6c8ad4447b9754c15cec3de334d8c2a6ad8496a5909bd8b507c2c9",
+          "blob_sha1": "16da28042f930095bd9cf558fb69ab9c50a8c41a"
+        }
+      ]
+    },
+    {
+      "slug": "field-enablement-content",
+      "catalog_entry": {
+        "slug": "field-enablement-content",
+        "categories": [
+          "sales",
+          "marketing"
+        ],
+        "required_providers": [
+          "google",
+          "mcp_gong"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/field-enablement-content/SKILL.md",
+          "mode": "100644",
+          "size": 2310,
+          "sha256": "cce95b91246d8ebd0ef9debcfb59f4af896e1e2cd89d132f29803bebb627f647",
+          "blob_sha1": "5a567e8619c20af7eba9b6a7622b6a6bb89c0b83"
+        }
+      ]
+    },
+    {
+      "slug": "finance-board-and-investor-reporting",
+      "catalog_entry": {
+        "slug": "finance-board-and-investor-reporting",
+        "categories": [
+          "finance",
+          "content"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/finance-board-and-investor-reporting/SKILL.md",
+          "mode": "100644",
+          "size": 3775,
+          "sha256": "5d832ad1f22f3308b26313125316767dde616b9abf75832e6c26fbf4a994f23c",
+          "blob_sha1": "c3e27a75139b7744454835d11c7971198ac5cb29"
+        }
+      ]
+    },
+    {
+      "slug": "find-the-decision-makers",
+      "catalog_entry": {
+        "slug": "find-the-decision-makers",
+        "categories": [
+          "sales",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/find-the-decision-makers/SKILL.md",
+          "mode": "100644",
+          "size": 2017,
+          "sha256": "ce72e2a1301ef4074ec362729b23d3bb2f63d06c3a98fa07fc6329df4479883c",
+          "blob_sha1": "e8128f7e2dc348a99c05cc88211ec61b5c7c633a"
+        }
+      ]
+    },
+    {
+      "slug": "fraud-and-chargeback-defense",
+      "catalog_entry": {
+        "slug": "fraud-and-chargeback-defense",
+        "categories": [
+          "support",
+          "finance",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/fraud-and-chargeback-defense/SKILL.md",
+          "mode": "100644",
+          "size": 2433,
+          "sha256": "0cfd37686b53289f73fcca385a473462d8490b6e8cbdae5975db93e2200d1cb4",
+          "blob_sha1": "47ffb44022803b837cb492521c2c8c1d0a994393"
+        }
+      ]
+    },
+    {
+      "slug": "govern-the-strategic-alliance",
+      "catalog_entry": {
+        "slug": "govern-the-strategic-alliance",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/govern-the-strategic-alliance/SKILL.md",
+          "mode": "100644",
+          "size": 2527,
+          "sha256": "4ab9a214fbb9e9f2e35cb73f594aea30bfb4e9ca5e2db644f76b49adc63efde8",
+          "blob_sha1": "b2527bb5d12d8aa0e76f53e6053153d37e2d7447"
+        }
+      ]
+    },
+    {
+      "slug": "gtm-performance-diagnostics",
+      "catalog_entry": {
+        "slug": "gtm-performance-diagnostics",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [
+          "google",
+          "hubspot",
+          "mcp_amplitude"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/gtm-performance-diagnostics/SKILL.md",
+          "mode": "100644",
+          "size": 3944,
+          "sha256": "6ff8e7b02937ad709b139bc19fcc53891dfd9353215979994bb5757a8e6c213e",
+          "blob_sha1": "b0f6f88ca406926ad2bcf21913d27e7db68cf22c"
+        }
+      ]
+    },
+    {
+      "slug": "gtm-planning-and-market-entry",
+      "catalog_entry": {
+        "slug": "gtm-planning-and-market-entry",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/gtm-planning-and-market-entry/SKILL.md",
+          "mode": "100644",
+          "size": 2271,
+          "sha256": "f46f7b138ff1a3326acd60689271d3bfb280eac8288d09ab2700914b15e12f00",
+          "blob_sha1": "be24bdccfa0055e1089802b3f2e43dbe7c43bfd6"
+        }
+      ]
+    },
+    {
+      "slug": "handle-a-reply",
+      "catalog_entry": {
+        "slug": "handle-a-reply",
+        "categories": [
+          "sales",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/handle-a-reply/SKILL.md",
+          "mode": "100644",
+          "size": 1648,
+          "sha256": "57804a2022e1914340a739a00878d361245b8af5d0fbc423fcf268bce02958b7",
+          "blob_sha1": "8933b723114acc5f8375c8cd6322d07abff1727b"
+        }
+      ]
+    },
+    {
+      "slug": "handle-partner-conflict-and-churn",
+      "catalog_entry": {
+        "slug": "handle-partner-conflict-and-churn",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/handle-partner-conflict-and-churn/SKILL.md",
+          "mode": "100644",
+          "size": 2311,
+          "sha256": "159c4b2f77b9e658cd941a9462aa5ab7db23e3ebf18cd7f3a50c721994732416",
+          "blob_sha1": "c482710634245dd5604d28f2a7bf033e90f39326"
+        }
+      ]
+    },
+    {
+      "slug": "help-center-answers-and-kb",
+      "catalog_entry": {
+        "slug": "help-center-answers-and-kb",
+        "categories": [
+          "support",
+          "content"
+        ],
+        "required_providers": [
+          "google",
+          "notion"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/help-center-answers-and-kb/SKILL.md",
+          "mode": "100644",
+          "size": 2137,
+          "sha256": "5c96b8b13137c4ec28c7f49b99a6e8819b1e2841a9475d78aba257ac3df622d9",
+          "blob_sha1": "acdd6fe170c32194deb48b2a56e196667741a770"
+        }
+      ]
+    },
+    {
+      "slug": "hiring-debrief-and-decision",
+      "catalog_entry": {
+        "slug": "hiring-debrief-and-decision",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/hiring-debrief-and-decision/SKILL.md",
+          "mode": "100644",
+          "size": 3674,
+          "sha256": "eadb59f89d459c7bfdefe9df5966315aa751a36bf3583d09ec02a01c0a4fea23",
+          "blob_sha1": "df994c578e5766c170283baff87d4a48ee8b30f8"
+        }
+      ]
+    },
+    {
+      "slug": "hiring-pipeline-analytics",
+      "catalog_entry": {
+        "slug": "hiring-pipeline-analytics",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/hiring-pipeline-analytics/SKILL.md",
+          "mode": "100644",
+          "size": 2743,
+          "sha256": "bc9d79eafd3138b275dac2eb3c5d5b84b6b68ad29177256e2aabf7c901bf8204",
+          "blob_sha1": "04aea6bb711e3ec3ee0294db60c7b396601cbadc"
+        }
+      ]
+    },
+    {
+      "slug": "icp-and-segmentation",
+      "catalog_entry": {
+        "slug": "icp-and-segmentation",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [
+          "apollo",
+          "hubspot"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/icp-and-segmentation/SKILL.md",
+          "mode": "100644",
+          "size": 2850,
+          "sha256": "3a35abc7f9aea4d5742d6799ad661e08f00fb3c137e1f25c5416869ce30067a0",
+          "blob_sha1": "455d585f5a8a0b8792da9943cdbdda57ebb924c1"
+        }
+      ]
+    },
+    {
+      "slug": "industrial-pursuit-tender-handover",
+      "catalog_entry": {
+        "slug": "industrial-pursuit-tender-handover",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/industrial-pursuit-tender-handover/SKILL.md",
+          "mode": "100644",
+          "size": 2402,
+          "sha256": "736703d420f0fe16c15dbc4bf5dbb52c1080b57e6067a029682ee90300f16b60",
+          "blob_sha1": "a049576d437fa59751fcd43e43697f79984201a7"
+        }
+      ]
+    },
+    {
+      "slug": "interview-coordination",
+      "catalog_entry": {
+        "slug": "interview-coordination",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/interview-coordination/SKILL.md",
+          "mode": "100644",
+          "size": 6266,
+          "sha256": "d4df36262027d2affcb34339c73e956d9a436f52a160c53e9197ad70927ed7d0",
+          "blob_sha1": "f5b82987769e4e50cfe1eea76415470cd6a886e2"
+        }
+      ]
+    },
+    {
+      "slug": "interview-kit-design",
+      "catalog_entry": {
+        "slug": "interview-kit-design",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/interview-kit-design/SKILL.md",
+          "mode": "100644",
+          "size": 4966,
+          "sha256": "403d28f291dda99e4bff10b3b0a4e84741c908d16827eb246a2685542f7ebab0",
+          "blob_sha1": "d969f36787984854914c0b605a5fcd519761fb72"
+        }
+      ]
+    },
+    {
+      "slug": "james-getting-started",
+      "catalog_entry": {
+        "slug": "james-getting-started",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [
+          "google",
+          "mcp_linear",
+          "notion",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/james-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 6399,
+          "sha256": "f9e9487a05aca4bebe443a3c81151baeeb952e4744759a6ec2aef5f7f681ddd0",
+          "blob_sha1": "03c0cf256bf118789b87cf1d96a0c1435b806e78"
+        }
+      ]
+    },
+    {
+      "slug": "job-description-drafting",
+      "catalog_entry": {
+        "slug": "job-description-drafting",
+        "categories": [
+          "operations",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/job-description-drafting/SKILL.md",
+          "mode": "100644",
+          "size": 2578,
+          "sha256": "336ce25e93ab34927deed4e391ab4665360f9819619c77520a3d23e3f0e5ea45",
+          "blob_sha1": "f960177c839969c405f4e4d52b24dfe5dfc642eb"
+        }
+      ]
+    },
+    {
+      "slug": "job-offer-and-close-plan",
+      "catalog_entry": {
+        "slug": "job-offer-and-close-plan",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/job-offer-and-close-plan/SKILL.md",
+          "mode": "100644",
+          "size": 3603,
+          "sha256": "c6f117ce54ebce8728ea9cffeecb872bd68aa6bcf6db782d02afea21da3f68c7",
+          "blob_sha1": "1ef6ff00c6c745a53d492df24a335c1d77a720e5"
+        }
+      ]
+    },
+    {
+      "slug": "knowledge-centered-service",
+      "catalog_entry": {
+        "slug": "knowledge-centered-service",
+        "categories": [
+          "support",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/knowledge-centered-service/SKILL.md",
+          "mode": "100644",
+          "size": 2904,
+          "sha256": "8968a62d6db00b25e6e1a10d03ec35ea8a4ca7ac95c9069b380fbd0715d42448",
+          "blob_sha1": "c12c45497de5c6fd146e25ff7920e1ae3ba368f2"
+        }
+      ]
+    },
+    {
+      "slug": "live-channel-queue-operations",
+      "catalog_entry": {
+        "slug": "live-channel-queue-operations",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/live-channel-queue-operations/SKILL.md",
+          "mode": "100644",
+          "size": 3095,
+          "sha256": "59706fa18b3f5fada1aebf0715abeb4e821d567829b813a3ae966a2a63a3c202",
+          "blob_sha1": "9b9941b87da9996a112eb2d372b0361a311ceb73"
+        }
+      ]
+    },
+    {
+      "slug": "logistics-shipment-and-customs",
+      "catalog_entry": {
+        "slug": "logistics-shipment-and-customs",
+        "categories": [
+          "operations",
+          "support"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/logistics-shipment-and-customs/SKILL.md",
+          "mode": "100644",
+          "size": 1947,
+          "sha256": "cc2792822ac6ac98be05dc43fcdfc2f5d20954f490deeef1a48240ca99e33a5d",
+          "blob_sha1": "968ca962e54a74ce697a422ed577739d0abc8f2a"
+        }
+      ]
+    },
+    {
+      "slug": "manage-partner-renewals-and-exits",
+      "catalog_entry": {
+        "slug": "manage-partner-renewals-and-exits",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/manage-partner-renewals-and-exits/SKILL.md",
+          "mode": "100644",
+          "size": 2224,
+          "sha256": "e7b153e9fd5c3868c07756fc731d66cd62db97f7f6a0bdf35729c7444020f1fd",
+          "blob_sha1": "9c96b6f790763611ef20797ee1e57f2dfea8e94d"
+        }
+      ]
+    },
+    {
+      "slug": "map-the-partner-ecosystem",
+      "catalog_entry": {
+        "slug": "map-the-partner-ecosystem",
+        "categories": [
+          "research",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/map-the-partner-ecosystem/SKILL.md",
+          "mode": "100644",
+          "size": 1941,
+          "sha256": "6d7e8bd56d60157c4715fc252b3d25ee9fa98de5d8726a598a885396f5ba9439",
+          "blob_sha1": "39794903be9bde2f3025290739db3eadf332c54c"
+        }
+      ]
+    },
+    {
+      "slug": "marketplace-partner-revenue-growth",
+      "catalog_entry": {
+        "slug": "marketplace-partner-revenue-growth",
+        "categories": [
+          "sales",
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/marketplace-partner-revenue-growth/SKILL.md",
+          "mode": "100644",
+          "size": 2187,
+          "sha256": "be3c158e6b69b333d7d46e1106c3be188348f5fdf33e31e5c2e99bfa21563be9",
+          "blob_sha1": "0ae6da7c1a18539fb6f1eb1159260ca0ea8305ce"
+        }
+      ]
+    },
+    {
+      "slug": "marketplace-two-sided-mediation",
+      "catalog_entry": {
+        "slug": "marketplace-two-sided-mediation",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/marketplace-two-sided-mediation/SKILL.md",
+          "mode": "100644",
+          "size": 2569,
+          "sha256": "ac11ac4ccce3c6417c8e081d02e28e8b08aaae41315636b18ee91005ee2f4d32",
+          "blob_sha1": "ca8da651782e0be905667ed893355348e511dd27"
+        }
+      ]
+    },
+    {
+      "slug": "mass-recovery-and-bulk-comms",
+      "catalog_entry": {
+        "slug": "mass-recovery-and-bulk-comms",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/mass-recovery-and-bulk-comms/SKILL.md",
+          "mode": "100644",
+          "size": 2071,
+          "sha256": "2664deacdc5b5d1672f1959a4f526998386c64ffa887cddef1fde855f5d7f6d3",
+          "blob_sha1": "6553842199587805323512eb474bfa84ecfac3f0"
+        }
+      ]
+    },
+    {
+      "slug": "max-getting-started",
+      "catalog_entry": {
+        "slug": "max-getting-started",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [
+          "google",
+          "hubspot",
+          "mcp_gong",
+          "mcp_granola",
+          "notion",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/max-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 5659,
+          "sha256": "b65b465f4af30285793cda8fba459b07ba23a81d54532a46cdc0d9aa1c5ae285",
+          "blob_sha1": "1f20e418b496336b9fe81572932271e1d9470c57"
+        }
+      ]
+    },
+    {
+      "slug": "maya-getting-started",
+      "catalog_entry": {
+        "slug": "maya-getting-started",
+        "categories": [
+          "marketing",
+          "content"
+        ],
+        "required_providers": [
+          "google",
+          "notion",
+          "slack",
+          "hubspot"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/maya-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 5484,
+          "sha256": "85f84ecd5386a887016bfb588412e7c005f893a524b136223ba1cea5ff77c1da",
+          "blob_sha1": "f6e5b5bc015699584cf5fe65f7660927bd9f5cc7"
+        }
+      ]
+    },
+    {
+      "slug": "media-plan-measure-optimize",
+      "catalog_entry": {
+        "slug": "media-plan-measure-optimize",
+        "categories": [
+          "sales",
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/media-plan-measure-optimize/SKILL.md",
+          "mode": "100644",
+          "size": 2866,
+          "sha256": "07ccdc19e2e37d1386dfccaed7a97d4e56e165e6186e26fa3102281ce49827d9",
+          "blob_sha1": "a2f1e9c75e7b4491eb1fbffbfdeee57e19a95f40"
+        }
+      ]
+    },
+    {
+      "slug": "member-benefits-and-claims",
+      "catalog_entry": {
+        "slug": "member-benefits-and-claims",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/member-benefits-and-claims/SKILL.md",
+          "mode": "100644",
+          "size": 2055,
+          "sha256": "7d14e7c5803d87c98315baeb0312eb1689569f45ccd7d4646ec557e9187ae075",
+          "blob_sha1": "7c07cee3b46ec0dd14890dd0940d62ddfb4d7770"
+        }
+      ]
+    },
+    {
+      "slug": "messaging-and-tone-matrix",
+      "catalog_entry": {
+        "slug": "messaging-and-tone-matrix",
+        "categories": [
+          "marketing",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/messaging-and-tone-matrix/SKILL.md",
+          "mode": "100644",
+          "size": 3442,
+          "sha256": "a78a9794e65c080c8a927b3bb9faf747f3fb45ad5c548cf0611fdb06a27efdd1",
+          "blob_sha1": "74d850f0002fe33df20ab465245a5ef3b4e7e005"
+        }
+      ]
+    },
+    {
+      "slug": "model-the-partnership-commercials",
+      "catalog_entry": {
+        "slug": "model-the-partnership-commercials",
+        "categories": [
+          "sales",
+          "finance"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/model-the-partnership-commercials/SKILL.md",
+          "mode": "100644",
+          "size": 1997,
+          "sha256": "632e70f24399882551e574a8d138d9ae67378a505d240a105fd28f9e0522d8c0",
+          "blob_sha1": "a88097eaccf7b94b5ea1d09d69889b37f5005b72"
+        }
+      ]
+    },
+    {
+      "slug": "multithread-and-stakeholder-maps",
+      "catalog_entry": {
+        "slug": "multithread-and-stakeholder-maps",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/multithread-and-stakeholder-maps/SKILL.md",
+          "mode": "100644",
+          "size": 2716,
+          "sha256": "494e223cc0ba0b0baf39baff4696d0f3ceeec46aabc62a4c5b94ad89a29a739f",
+          "blob_sha1": "11826f7a726bae2ff484ed6f26f3a4a49bba4ef0"
+        }
+      ]
+    },
+    {
+      "slug": "next-step-and-handoff",
+      "catalog_entry": {
+        "slug": "next-step-and-handoff",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/next-step-and-handoff/SKILL.md",
+          "mode": "100644",
+          "size": 2448,
+          "sha256": "ff16bc6689a73c019f68e3a74ceef59f6721cd1a803c5f65a796d834be410d72",
+          "blob_sha1": "596fab24aba2ef0db77e50d226d2349014dc9fae"
+        }
+      ]
+    },
+    {
+      "slug": "nurture-sequence-build-and-readout",
+      "catalog_entry": {
+        "slug": "nurture-sequence-build-and-readout",
+        "categories": [
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/nurture-sequence-build-and-readout/SKILL.md",
+          "mode": "100644",
+          "size": 3088,
+          "sha256": "c655875ad16760f86a780535127a3e323e3147a262935e2232943bde5446e11c",
+          "blob_sha1": "470ff55ae7945fddd313696dace4ef60890ecb34"
+        }
+      ]
+    },
+    {
+      "slug": "objection-and-negotiation",
+      "catalog_entry": {
+        "slug": "objection-and-negotiation",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/objection-and-negotiation/SKILL.md",
+          "mode": "100644",
+          "size": 2380,
+          "sha256": "a863e426f0309dc79e74a4d9f4b936aacc9a7690571498d5fdd13d8731c6d046",
+          "blob_sha1": "2aba27b775b97c526d3ccfb217787d2a6830c0f0"
+        }
+      ]
+    },
+    {
+      "slug": "onboard-and-enable-partners",
+      "catalog_entry": {
+        "slug": "onboard-and-enable-partners",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/onboard-and-enable-partners/SKILL.md",
+          "mode": "100644",
+          "size": 3145,
+          "sha256": "a47afdf4a9fc8ca35a3ff159f435ff69e8eaa84ebdca2a6b14052315eb6a2702",
+          "blob_sha1": "222317bf915fd90d59c779caed672193bb0c6018"
+        }
+      ]
+    },
+    {
+      "slug": "onboarding-and-adoption",
+      "catalog_entry": {
+        "slug": "onboarding-and-adoption",
+        "categories": [
+          "support",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/onboarding-and-adoption/SKILL.md",
+          "mode": "100644",
+          "size": 2115,
+          "sha256": "351ecbf957aea03230c11ee2f7e4aa3dc0b8ca68b4608c8b91d9cb16bd157c41",
+          "blob_sha1": "da97462851f6d410d7c339847c40d3374585fafa"
+        }
+      ]
+    },
+    {
+      "slug": "opportunity-sizing-and-business-case",
+      "catalog_entry": {
+        "slug": "opportunity-sizing-and-business-case",
+        "categories": [
+          "marketing",
+          "finance"
+        ],
+        "required_providers": [
+          "apollo",
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/opportunity-sizing-and-business-case/SKILL.md",
+          "mode": "100644",
+          "size": 2459,
+          "sha256": "24ccee7b2318a46c034dc12c3d9a6ad0f3b75ee34377a042efcb318527a1ac80",
+          "blob_sha1": "f7dc5ea410aa513c990547ea4416ca2465d4c47a"
+        }
+      ]
+    },
+    {
+      "slug": "ops-automate-a-workflow",
+      "catalog_entry": {
+        "slug": "ops-automate-a-workflow",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-automate-a-workflow/SKILL.md",
+          "mode": "100644",
+          "size": 2121,
+          "sha256": "ec3eb49bae2f9daa57dfbecfdeca68ef21f5f1e64612580e09fc6ce2466b20af",
+          "blob_sha1": "0ed019853cd91f206b4e4e826e9e3b277efe970f"
+        }
+      ]
+    },
+    {
+      "slug": "ops-capacity-and-headcount-plan",
+      "catalog_entry": {
+        "slug": "ops-capacity-and-headcount-plan",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-capacity-and-headcount-plan/SKILL.md",
+          "mode": "100644",
+          "size": 2962,
+          "sha256": "76310f4c3f5a257bbebd91e5c633950d20b135cd762edcf102ef4a2736455b59",
+          "blob_sha1": "1f1b8988a1818e423611a11d8cf2257fdc8bd1a8"
+        }
+      ]
+    },
+    {
+      "slug": "ops-controls-and-escalations",
+      "catalog_entry": {
+        "slug": "ops-controls-and-escalations",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-controls-and-escalations/SKILL.md",
+          "mode": "100644",
+          "size": 2052,
+          "sha256": "fa5163433b85cd4226ceb5fc30cc9429f669c615ad512f47c4e9b50dd66bcecd",
+          "blob_sha1": "fd27ba282f678d6a1a08ebd16c70d0b238a53de1"
+        }
+      ]
+    },
+    {
+      "slug": "ops-govern-a-program",
+      "catalog_entry": {
+        "slug": "ops-govern-a-program",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-govern-a-program/SKILL.md",
+          "mode": "100644",
+          "size": 2351,
+          "sha256": "1b64bb6bcb33a9669f59f16c2e94228c5c1e35e5cb7485cbc1e951eba1adbef7",
+          "blob_sha1": "f8a2801304a15bdad90f74a57ee9f3083c6160c0"
+        }
+      ]
+    },
+    {
+      "slug": "ops-map-and-improve-a-process",
+      "catalog_entry": {
+        "slug": "ops-map-and-improve-a-process",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-map-and-improve-a-process/SKILL.md",
+          "mode": "100644",
+          "size": 2513,
+          "sha256": "27fb5dd4392f217142fa320dea9313640cbc460bd4e1cf16cabd3fa55c85fcfb",
+          "blob_sha1": "f99046667365ebe57f1bc5e594e921428beccb2f"
+        }
+      ]
+    },
+    {
+      "slug": "ops-run-the-operating-rhythm",
+      "catalog_entry": {
+        "slug": "ops-run-the-operating-rhythm",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-run-the-operating-rhythm/SKILL.md",
+          "mode": "100644",
+          "size": 3067,
+          "sha256": "4e03ba93009745e059ca3b49ff28a4ff72afcd32e37878df075d54c5303ee664",
+          "blob_sha1": "7e7805a8291570c42d0a01626c27122a3389a5b2"
+        }
+      ]
+    },
+    {
+      "slug": "ops-scorecard-and-kpis",
+      "catalog_entry": {
+        "slug": "ops-scorecard-and-kpis",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-scorecard-and-kpis/SKILL.md",
+          "mode": "100644",
+          "size": 2657,
+          "sha256": "a974ecdb1ea508a30b46d0477cbbe55e24e83d0d52ec8fed886e325a3ec5bc1d",
+          "blob_sha1": "0dc58767ba91673566bcb3d52213cedcffcdef87"
+        }
+      ]
+    },
+    {
+      "slug": "ops-vendor-and-procurement",
+      "catalog_entry": {
+        "slug": "ops-vendor-and-procurement",
+        "categories": [
+          "operations",
+          "finance"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-vendor-and-procurement/SKILL.md",
+          "mode": "100644",
+          "size": 3455,
+          "sha256": "ad59a45d53bfc6f5001a795369804373113b04c394c28dec713f617b6ba98216",
+          "blob_sha1": "37ec4e6f99cc6176d13334c44ee59654119c9ba3"
+        }
+      ]
+    },
+    {
+      "slug": "ops-write-an-sop",
+      "catalog_entry": {
+        "slug": "ops-write-an-sop",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [
+          "notion"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/ops-write-an-sop/SKILL.md",
+          "mode": "100644",
+          "size": 2754,
+          "sha256": "cdeddd04b939c0c79f6b5614cda1f7440b59446a1ea13d2234aaf050471df3db",
+          "blob_sha1": "5ceccb777ffe2e027ff787749ba5d7a118a07b43"
+        }
+      ]
+    },
+    {
+      "slug": "orchestrate-multi-party-partner-bids",
+      "catalog_entry": {
+        "slug": "orchestrate-multi-party-partner-bids",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/orchestrate-multi-party-partner-bids/SKILL.md",
+          "mode": "100644",
+          "size": 2264,
+          "sha256": "4875c750eae56212642e8a2906fc60e9ced187e8a8cdb5196f39ec5f191315c7",
+          "blob_sha1": "90c3b4ab098e472b7c812b01e8a1db1d44162417"
+        }
+      ]
+    },
+    {
+      "slug": "orders-returns-and-warranty",
+      "catalog_entry": {
+        "slug": "orders-returns-and-warranty",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/orders-returns-and-warranty/SKILL.md",
+          "mode": "100644",
+          "size": 3186,
+          "sha256": "e2afef350164aecf062f12c622ee8344ae40350aa632ffb8ad8e13c5567bdaeb",
+          "blob_sha1": "7529bf69362e8c121accedf3008904489d72d39c"
+        }
+      ]
+    },
+    {
+      "slug": "own-the-alliance-pnl",
+      "catalog_entry": {
+        "slug": "own-the-alliance-pnl",
+        "categories": [
+          "finance",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/own-the-alliance-pnl/SKILL.md",
+          "mode": "100644",
+          "size": 3231,
+          "sha256": "0b38dd6a1496bae8b9f4dc6644bcfe0a69294b730ce7a3fb7d85e9e684ec02d3",
+          "blob_sha1": "4785baf4b80fbbc7c7fb70cc7e5facb6b85378f8"
+        }
+      ]
+    },
+    {
+      "slug": "own-to-closure",
+      "catalog_entry": {
+        "slug": "own-to-closure",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/own-to-closure/SKILL.md",
+          "mode": "100644",
+          "size": 2141,
+          "sha256": "f76fa8954bd4cc516217d34e5e0881bab501f6ebb832c1ddd78e8a71e8a79429",
+          "blob_sha1": "e2dd387215270565b2bb394f2af8e77da03cb619"
+        }
+      ]
+    },
+    {
+      "slug": "partner-and-channel-co-sell",
+      "catalog_entry": {
+        "slug": "partner-and-channel-co-sell",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/partner-and-channel-co-sell/SKILL.md",
+          "mode": "100644",
+          "size": 1912,
+          "sha256": "10810c66c32aa159ebbc458ed3b626cba80121ad7426e5fda717f44a0a0cfd2d",
+          "blob_sha1": "7cdf16ad91bd9615ed44604164b6d085ae201381"
+        }
+      ]
+    },
+    {
+      "slug": "partner-first-touch-outreach",
+      "catalog_entry": {
+        "slug": "partner-first-touch-outreach",
+        "categories": [
+          "sales",
+          "content"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/partner-first-touch-outreach/SKILL.md",
+          "mode": "100644",
+          "size": 2172,
+          "sha256": "bc01b8393907eb6e9b7f6401205ced27a38b2d69b13c4e7f9347fbfcdcefea2f",
+          "blob_sha1": "1ede7f204aabd003eb2b942045c793dba384f055"
+        }
+      ]
+    },
+    {
+      "slug": "passive-candidate-outreach",
+      "catalog_entry": {
+        "slug": "passive-candidate-outreach",
+        "categories": [
+          "operations",
+          "content"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/passive-candidate-outreach/SKILL.md",
+          "mode": "100644",
+          "size": 3636,
+          "sha256": "3e7eb2514c7fbf30815e67824c9b8bb0565454e9b091b88a636b6a455798571f",
+          "blob_sha1": "5f1c38fa92d275cd9f74a185ed068217cd919002"
+        }
+      ]
+    },
+    {
+      "slug": "pipeline-review-and-forecast",
+      "catalog_entry": {
+        "slug": "pipeline-review-and-forecast",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/pipeline-review-and-forecast/SKILL.md",
+          "mode": "100644",
+          "size": 2079,
+          "sha256": "86b1ba33b40c7cc7fd7aa8c2bc7c7fa0eb094f343ea73a3e58caf0f98c41a671",
+          "blob_sha1": "9d9973d49d0c3b9bd312d3232746207cec10580e"
+        }
+      ]
+    },
+    {
+      "slug": "plan-the-multi-year-partnership",
+      "catalog_entry": {
+        "slug": "plan-the-multi-year-partnership",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/plan-the-multi-year-partnership/SKILL.md",
+          "mode": "100644",
+          "size": 2588,
+          "sha256": "8e944c78c77aabb3a80abc11cc7dc9f4e72dea27138089f4df5d735713626014",
+          "blob_sha1": "208d8826a8c5121470adde913efc3e61024fb57c"
+        }
+      ]
+    },
+    {
+      "slug": "positioning-and-messaging",
+      "catalog_entry": {
+        "slug": "positioning-and-messaging",
+        "categories": [
+          "marketing"
+        ],
+        "required_providers": [
+          "google",
+          "mcp_gong"
+        ],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "LeadMagic/gtm-skills",
+            "license": "MIT"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/positioning-and-messaging/SKILL.md",
+          "mode": "100644",
+          "size": 2614,
+          "sha256": "5fb73f4f0b7b8945f0b36bfdd36628a4efcd8ac11c998923e29d024423d0b000",
+          "blob_sha1": "959d98881deac537b2ae778a5256c4926e6c976f"
+        }
+      ]
+    },
+    {
+      "slug": "prep-the-partner-qbr",
+      "catalog_entry": {
+        "slug": "prep-the-partner-qbr",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/prep-the-partner-qbr/SKILL.md",
+          "mode": "100644",
+          "size": 2466,
+          "sha256": "d54754761e3105c07b76246f5e47edd9e0bbdb3c92b8bc3699f69236622dad7d",
+          "blob_sha1": "586a71e1a037ef754e0b519384b650ed5d364828"
+        }
+      ]
+    },
+    {
+      "slug": "pricing-and-packaging",
+      "catalog_entry": {
+        "slug": "pricing-and-packaging",
+        "categories": [
+          "marketing",
+          "finance"
+        ],
+        "required_providers": [
+          "google",
+          "stripe"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/pricing-and-packaging/SKILL.md",
+          "mode": "100644",
+          "size": 3038,
+          "sha256": "be0cc4b1ceb7d41e3a63436209f0dc28d5b580c61b42e82ab7625b245e0b80bc",
+          "blob_sha1": "d35f8d2dd822b6783cb9d46f905a973aa5037d33"
+        }
+      ]
+    },
+    {
+      "slug": "product-ai-feature-scoping-and-evals",
+      "catalog_entry": {
+        "slug": "product-ai-feature-scoping-and-evals",
+        "categories": [
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/product-ai-feature-scoping-and-evals/SKILL.md",
+          "mode": "100644",
+          "size": 2625,
+          "sha256": "90a7a2d15592d55951781b488fe50ab9f60ec94826d4b889b23fab85f67c2bac",
+          "blob_sha1": "c135c11d1d8858fdb59c40e9b34038f6915833d5"
+        }
+      ]
+    },
+    {
+      "slug": "product-discovery-and-user-research",
+      "catalog_entry": {
+        "slug": "product-discovery-and-user-research",
+        "categories": [
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "hah23255/pm-claude-skills",
+            "license": "MIT"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/product-discovery-and-user-research/SKILL.md",
+          "mode": "100644",
+          "size": 3344,
+          "sha256": "38bddc96ba303b00b5c08999ffe6acdb7481e69f5d27317e573422016fcca707",
+          "blob_sha1": "19422d57313c9ac8d0eb525a1459973a53b007c9"
+        }
+      ]
+    },
+    {
+      "slug": "product-exec-briefing",
+      "catalog_entry": {
+        "slug": "product-exec-briefing",
+        "categories": [
+          "operations",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/product-exec-briefing/SKILL.md",
+          "mode": "100644",
+          "size": 2119,
+          "sha256": "dd555b3274196cf7131846e2c9d822f674dc7dd271e40c1abbef969eb155f512",
+          "blob_sha1": "062979c81a20ba26950e8dde4e5bf788f100503e"
+        }
+      ]
+    },
+    {
+      "slug": "product-launch-plan",
+      "catalog_entry": {
+        "slug": "product-launch-plan",
+        "categories": [
+          "marketing",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/product-launch-plan/SKILL.md",
+          "mode": "100644",
+          "size": 3082,
+          "sha256": "39cfb9baad8a10b28ab546883de3427968c0261e7226f972b088e8da702c6574",
+          "blob_sha1": "abb2fe5a316ad9605e7c9af5f1d1bd3f170d6d6c"
+        }
+      ]
+    },
+    {
+      "slug": "product-market-and-competitor-read",
+      "catalog_entry": {
+        "slug": "product-market-and-competitor-read",
+        "categories": [
+          "research",
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/product-market-and-competitor-read/SKILL.md",
+          "mode": "100644",
+          "size": 3184,
+          "sha256": "a0e82ecb50b4a2d6af01f1a02dfab9a0bd782cc950e76104788ae84d37b2cfd0",
+          "blob_sha1": "dadc0bed6d67dd28fcaa33e596cfbe02223dc80d"
+        }
+      ]
+    },
+    {
+      "slug": "product-metrics-and-instrumentation",
+      "catalog_entry": {
+        "slug": "product-metrics-and-instrumentation",
+        "categories": [
+          "research",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/product-metrics-and-instrumentation/SKILL.md",
+          "mode": "100644",
+          "size": 2541,
+          "sha256": "c64589a35ff44536ebc1ce8ee64002e144d09bc4fb75b1ed100d47c01745f530",
+          "blob_sha1": "f0e7e86d68ef22d5c73b022f72c68c0e40f3552b"
+        }
+      ]
+    },
+    {
+      "slug": "product-prd-and-acceptance-criteria",
+      "catalog_entry": {
+        "slug": "product-prd-and-acceptance-criteria",
+        "categories": [
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/product-prd-and-acceptance-criteria/SKILL.md",
+          "mode": "100644",
+          "size": 2910,
+          "sha256": "308f310fb409c26b47fb99280576a6a10b68147ee1e302f15150c86fef86481c",
+          "blob_sha1": "bad42e1f4f17457db64c6fceed7c09787d52322e"
+        }
+      ]
+    },
+    {
+      "slug": "product-roadmap-and-prioritization",
+      "catalog_entry": {
+        "slug": "product-roadmap-and-prioritization",
+        "categories": [
+          "development",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "menkesu/awesome-pm-skills",
+            "license": "MIT"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/product-roadmap-and-prioritization/SKILL.md",
+          "mode": "100644",
+          "size": 3922,
+          "sha256": "e25e5b278af0158baefbaf2d68b7ca940e3536dd12b2519e6f51146c478bd1ba",
+          "blob_sha1": "e15243e911eb9ed1349178fc6d906180374f77de"
+        }
+      ]
+    },
+    {
+      "slug": "product-strategy-and-bets",
+      "catalog_entry": {
+        "slug": "product-strategy-and-bets",
+        "categories": [
+          "research",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "menkesu/awesome-pm-skills",
+            "license": "MIT"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/product-strategy-and-bets/SKILL.md",
+          "mode": "100644",
+          "size": 2561,
+          "sha256": "a69eaeaf06542e5e08d8847fcd12d8f88f2933eff76ef6ee07dd3fc3b1b4ff8f",
+          "blob_sha1": "a430c9b1e01c7c742d6fa9a91c60e6549a32b3cd"
+        }
+      ]
+    },
+    {
+      "slug": "quality-csat-and-coaching",
+      "catalog_entry": {
+        "slug": "quality-csat-and-coaching",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/quality-csat-and-coaching/SKILL.md",
+          "mode": "100644",
+          "size": 2553,
+          "sha256": "f669e97c76bc00be2271fc25c31bea2477f49e57392b307a7ffb8e6984314942",
+          "blob_sha1": "1e2d9e67202a83349a1288b2e6a1f006738d8fae"
+        }
+      ]
+    },
+    {
+      "slug": "quarterback-the-deal-team",
+      "catalog_entry": {
+        "slug": "quarterback-the-deal-team",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/quarterback-the-deal-team/SKILL.md",
+          "mode": "100644",
+          "size": 2745,
+          "sha256": "bed095bcb8a5fbb8ec9661207e46e0d31b52fa5c67894a1b6b721344c096bf1a",
+          "blob_sha1": "44415137449e9509677f8199020cde2d43dced4b"
+        }
+      ]
+    },
+    {
+      "slug": "regional-category-gtm-strategy",
+      "catalog_entry": {
+        "slug": "regional-category-gtm-strategy",
+        "categories": [
+          "sales",
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/regional-category-gtm-strategy/SKILL.md",
+          "mode": "100644",
+          "size": 2094,
+          "sha256": "519fde93a5783281a21f4620a4d2ebca741181d4c9f51f26852c0cf50ca3b5cc",
+          "blob_sha1": "a536c4ca2a673de254b225476974a0f6f454de66"
+        }
+      ]
+    },
+    {
+      "slug": "regulated-access-and-clinical-selling",
+      "catalog_entry": {
+        "slug": "regulated-access-and-clinical-selling",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/regulated-access-and-clinical-selling/SKILL.md",
+          "mode": "100644",
+          "size": 3077,
+          "sha256": "83e34f15605040c1772eba2c2a07ff5a2325d9e9373306b86775279e0feaefe4",
+          "blob_sha1": "61f42bcd4963e71fbb78e58f312668631d0ef3bb"
+        }
+      ]
+    },
+    {
+      "slug": "renewal-expansion-and-qbr",
+      "catalog_entry": {
+        "slug": "renewal-expansion-and-qbr",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/renewal-expansion-and-qbr/SKILL.md",
+          "mode": "100644",
+          "size": 2430,
+          "sha256": "b5350a36937fa98ecf4073f1cee61aac3b1a66621e11c60a9907b92a57b742c3",
+          "blob_sha1": "04f40ad909085f20b154af54a7fbd5ef0f98a1f7"
+        }
+      ]
+    },
+    {
+      "slug": "research-an-account",
+      "catalog_entry": {
+        "slug": "research-an-account",
+        "categories": [
+          "sales",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/research-an-account/SKILL.md",
+          "mode": "100644",
+          "size": 1991,
+          "sha256": "0a5d0666d791bbd7e87a0c646885c304b816a5cc0f0adb617ce9cbff4fe9cad4",
+          "blob_sha1": "de89c670a119fbb483a0f2a20881316d2b71d90e"
+        }
+      ]
+    },
+    {
+      "slug": "retail-jbp-trade-and-sellout",
+      "catalog_entry": {
+        "slug": "retail-jbp-trade-and-sellout",
+        "categories": [
+          "finance",
+          "operations",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/retail-jbp-trade-and-sellout/SKILL.md",
+          "mode": "100644",
+          "size": 3517,
+          "sha256": "47f03e7dca4a8d988b89c3e7a83802acfc836a2a31f238bef408da6078d39ec6",
+          "blob_sha1": "275584283c9e921160c81cda4b3f06a26f9d464c"
+        }
+      ]
+    },
+    {
+      "slug": "rfp-and-competitive-bid-response",
+      "catalog_entry": {
+        "slug": "rfp-and-competitive-bid-response",
+        "categories": [
+          "sales",
+          "content"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/rfp-and-competitive-bid-response/SKILL.md",
+          "mode": "100644",
+          "size": 2276,
+          "sha256": "f625589c9bb006d9381f485e054119bb7c02a14c00c3487eacf328f23f72ab8f",
+          "blob_sha1": "f64ed5f6b6e119079f5dcb914c27df478aab8580"
+        }
+      ]
+    },
+    {
+      "slug": "robin-getting-started",
+      "catalog_entry": {
+        "slug": "robin-getting-started",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [
+          "google",
+          "mcp_gong",
+          "mcp_granola",
+          "mcp_linear",
+          "notion",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/robin-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 4702,
+          "sha256": "209028e21a6776c2dd322c20d951067cae785c17571b233f2a9b42f7a3254ac5",
+          "blob_sha1": "88cc659bb88ad1ecdf612880bccda7f89f42d25b"
+        }
+      ]
+    },
+    {
+      "slug": "role-intake-and-scorecard",
+      "catalog_entry": {
+        "slug": "role-intake-and-scorecard",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/role-intake-and-scorecard/SKILL.md",
+          "mode": "100644",
+          "size": 4409,
+          "sha256": "67a7c3d86beb6b57a3940d7ea2728a6c70ab66037a6d450307e8cee466492499",
+          "blob_sha1": "52afdaf8bca63858e102511fb89b4ddad30be724"
+        }
+      ]
+    },
+    {
+      "slug": "run-brand-oem-and-supply-partnerships",
+      "catalog_entry": {
+        "slug": "run-brand-oem-and-supply-partnerships",
+        "categories": [
+          "marketing",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-brand-oem-and-supply-partnerships/SKILL.md",
+          "mode": "100644",
+          "size": 2020,
+          "sha256": "c5763fe361847c7bd305635f6377b0fcea6ab4f0eb3338bfeb1151ee5a09d2c4",
+          "blob_sha1": "d5c0388f53c8d9dadfeec5b0d81bb2cea28a0d97"
+        }
+      ]
+    },
+    {
+      "slug": "run-creator-and-affiliate-partner-programs",
+      "catalog_entry": {
+        "slug": "run-creator-and-affiliate-partner-programs",
+        "categories": [
+          "marketing",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-creator-and-affiliate-partner-programs/SKILL.md",
+          "mode": "100644",
+          "size": 2690,
+          "sha256": "e8fc6993231c7c36aed5b043df264a7364f3e37482fa05e303db36b80e9431f2",
+          "blob_sha1": "8e373e5f47ac1e899919934435810bee05d91d44"
+        }
+      ]
+    },
+    {
+      "slug": "run-global-partner-executive-councils",
+      "catalog_entry": {
+        "slug": "run-global-partner-executive-councils",
+        "categories": [
+          "operations",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-global-partner-executive-councils/SKILL.md",
+          "mode": "100644",
+          "size": 3020,
+          "sha256": "c110de24088c8c23f6eb83d8c0a31c73d7dd4d6f7b430c5a0fa51c6d2d3ebbe8",
+          "blob_sha1": "1a8ce8fa295ba6a99dfcb2ca56ee3fe4a3e35a55"
+        }
+      ]
+    },
+    {
+      "slug": "run-hyperscaler-marketplace-co-sell",
+      "catalog_entry": {
+        "slug": "run-hyperscaler-marketplace-co-sell",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-hyperscaler-marketplace-co-sell/SKILL.md",
+          "mode": "100644",
+          "size": 3077,
+          "sha256": "785f33de30d755286102b85e61f26dc34d51eb3904c49c04981f0c9abe9d5c59",
+          "blob_sha1": "9b843369ced9775b34e0f44f2a6ef68971d0f379"
+        }
+      ]
+    },
+    {
+      "slug": "run-partner-strategy-and-operations",
+      "catalog_entry": {
+        "slug": "run-partner-strategy-and-operations",
+        "categories": [
+          "operations",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-partner-strategy-and-operations/SKILL.md",
+          "mode": "100644",
+          "size": 3356,
+          "sha256": "fd6f3f4901e252b724d66b53b90f3f469864e32b212af33e4073937a22435e15",
+          "blob_sha1": "d7d644c78f8a424c4db0a6afd31b50c32e4f47a1"
+        }
+      ]
+    },
+    {
+      "slug": "run-regulated-partnership-motions",
+      "catalog_entry": {
+        "slug": "run-regulated-partnership-motions",
+        "categories": [
+          "operations",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-regulated-partnership-motions/SKILL.md",
+          "mode": "100644",
+          "size": 2132,
+          "sha256": "43cca91367fce51a66019a91b50d91ce39ffd02834c36bae2d4b9880819fbc3f",
+          "blob_sha1": "4557703dd87e35458b9b0a36c65d018dfb85cd9b"
+        }
+      ]
+    },
+    {
+      "slug": "run-the-partner-co-sell-cadence",
+      "catalog_entry": {
+        "slug": "run-the-partner-co-sell-cadence",
+        "categories": [
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-the-partner-co-sell-cadence/SKILL.md",
+          "mode": "100644",
+          "size": 3270,
+          "sha256": "df8a162797f7377c0f2bdf86a92e6acd8b4e471bb5d9a5a947b1bfceb5617109",
+          "blob_sha1": "047a3b2685799226c48d0be81e5c0681deb76355"
+        }
+      ]
+    },
+    {
+      "slug": "run-the-partner-marketing-engine",
+      "catalog_entry": {
+        "slug": "run-the-partner-marketing-engine",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/run-the-partner-marketing-engine/SKILL.md",
+          "mode": "100644",
+          "size": 2677,
+          "sha256": "5c5c3dd8642613c6ad062b66fa2d3fc587318411efe7f105f99dca1059d1d246",
+          "blob_sha1": "511a009fc87c98ab5c975cd33fadcbf8a0212363"
+        }
+      ]
+    },
+    {
+      "slug": "saas-gtm-finance",
+      "catalog_entry": {
+        "slug": "saas-gtm-finance",
+        "categories": [
+          "finance",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/saas-gtm-finance/SKILL.md",
+          "mode": "100644",
+          "size": 3528,
+          "sha256": "dc962d10e5b4907b39bbc92fb96151e8b7eaf31b4c3eab29d74e55ab1ff5b1bc",
+          "blob_sha1": "1c786210f90cc35bc819a3135481c1f834e84931"
+        }
+      ]
+    },
+    {
+      "slug": "sales-marketing-alignment-and-sla",
+      "catalog_entry": {
+        "slug": "sales-marketing-alignment-and-sla",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [
+          "hubspot"
+        ],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "LeadMagic/gtm-skills",
+            "license": "MIT"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/sales-marketing-alignment-and-sla/SKILL.md",
+          "mode": "100644",
+          "size": 3157,
+          "sha256": "d4e423b9b11dc2ce0086262d30c5cbf25fc42e08b002f2dc6e5f7caa91d0a69b",
+          "blob_sha1": "f2ee40e7388f6dc1e618878f4f48aa08ee02f927"
+        }
+      ]
+    },
+    {
+      "slug": "sales-ops-coverage-and-quota",
+      "catalog_entry": {
+        "slug": "sales-ops-coverage-and-quota",
+        "categories": [
+          "sales",
+          "operations",
+          "finance"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/sales-ops-coverage-and-quota/SKILL.md",
+          "mode": "100644",
+          "size": 4233,
+          "sha256": "edc4fb0f6dfdb8bf9b58cc2a15059d57fff2a903983da1ac0f37f743feafd551",
+          "blob_sha1": "f4aca98e4bd751510cfd508c5e2270871495821f"
+        }
+      ]
+    },
+    {
+      "slug": "sales-team-leadership",
+      "catalog_entry": {
+        "slug": "sales-team-leadership",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/sales-team-leadership/SKILL.md",
+          "mode": "100644",
+          "size": 3145,
+          "sha256": "a077565e808362cdf74332c520ec8218925db92544349998d22bdc6484c3cdf4",
+          "blob_sha1": "341fabe34d7026f6f36581a4d8f0e5a879ee9769"
+        }
+      ]
+    },
+    {
+      "slug": "scale-the-partner-channel",
+      "catalog_entry": {
+        "slug": "scale-the-partner-channel",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/scale-the-partner-channel/SKILL.md",
+          "mode": "100644",
+          "size": 2713,
+          "sha256": "61dd71d26b49e96978a84997e0644602c3174d1c01133e3bbf2bf4334fcae4c4",
+          "blob_sha1": "f53e4f691602c5e62d6e64b1a7d5a3cc60b14839"
+        }
+      ]
+    },
+    {
+      "slug": "scope-the-tech-partnership",
+      "catalog_entry": {
+        "slug": "scope-the-tech-partnership",
+        "categories": [
+          "sales",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/scope-the-tech-partnership/SKILL.md",
+          "mode": "100644",
+          "size": 2257,
+          "sha256": "0ed6e868072aaccf3ca19629bbda9c0a9b26eac31d6a9d70eaa2d4279687ffc9",
+          "blob_sha1": "509bd3443668456037445964711812b99d2cda75"
+        }
+      ]
+    },
+    {
+      "slug": "sensitive-data-safe-handling",
+      "catalog_entry": {
+        "slug": "sensitive-data-safe-handling",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/sensitive-data-safe-handling/SKILL.md",
+          "mode": "100644",
+          "size": 3115,
+          "sha256": "36d1d17e9baf64f0a97aef4da8c82118c8f28ab35ac2ce695b87930a88797337",
+          "blob_sha1": "3fc0e147536a9eb989cc250a9eec54b74d970587"
+        }
+      ]
+    },
+    {
+      "slug": "service-recovery-and-goodwill",
+      "catalog_entry": {
+        "slug": "service-recovery-and-goodwill",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/service-recovery-and-goodwill/SKILL.md",
+          "mode": "100644",
+          "size": 2646,
+          "sha256": "8044084b0db48f7d893ab0f27bfa68bae6956c025c28aba4cdd7f15133fe57d5",
+          "blob_sha1": "24bf9ea9151af39029daf3d8d1fdedc0e25610a3"
+        }
+      ]
+    },
+    {
+      "slug": "set-board-level-alliance-strategy",
+      "catalog_entry": {
+        "slug": "set-board-level-alliance-strategy",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/set-board-level-alliance-strategy/SKILL.md",
+          "mode": "100644",
+          "size": 3306,
+          "sha256": "9053f8fc263aa18ab7fb493d121724e26be668652356dcfef4a0c6a2985c4813",
+          "blob_sha1": "1d42f95ecaba57c0528f575c43fd18d50b1dda2d"
+        }
+      ]
+    },
+    {
+      "slug": "showroom-fi-and-internet-bdc",
+      "catalog_entry": {
+        "slug": "showroom-fi-and-internet-bdc",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/showroom-fi-and-internet-bdc/SKILL.md",
+          "mode": "100644",
+          "size": 2574,
+          "sha256": "6bfd13e7c1673aa36e0a9f679d08650cce86dc30d7fbbb84bfd71687795c2155",
+          "blob_sha1": "451d66fe34babf49c10673fc604ca327a4743d2f"
+        }
+      ]
+    },
+    {
+      "slug": "signature-to-launch-and-account-ops",
+      "catalog_entry": {
+        "slug": "signature-to-launch-and-account-ops",
+        "categories": [
+          "sales",
+          "operations",
+          "support"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/signature-to-launch-and-account-ops/SKILL.md",
+          "mode": "100644",
+          "size": 3079,
+          "sha256": "0b2e69df33e7a48772b87379069b015fabd22a5a87da5fe2658c1a6fa78ff6c0",
+          "blob_sha1": "41d8befd54de3a3465f234233caf2b7e100ff7c7"
+        }
+      ]
+    },
+    {
+      "slug": "social-and-community-support",
+      "catalog_entry": {
+        "slug": "social-and-community-support",
+        "categories": [
+          "support",
+          "marketing"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/social-and-community-support/SKILL.md",
+          "mode": "100644",
+          "size": 2734,
+          "sha256": "39c3babc101ed4c135d565ac7af1f08850265d6ef95b5d39185ba50848cf6f86",
+          "blob_sha1": "18c7e6bac8912a2ae78b375d5cdf45c7adddb8e1"
+        }
+      ]
+    },
+    {
+      "slug": "sofia-getting-started",
+      "catalog_entry": {
+        "slug": "sofia-getting-started",
+        "categories": [
+          "operations"
+        ],
+        "required_providers": [
+          "google",
+          "mcp_granola",
+          "mcp_linear",
+          "notion",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/sofia-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 6423,
+          "sha256": "d907d41827ee1410ee9de4e9a61557ba0de83db2e662e99d9c7ee91a64d53234",
+          "blob_sha1": "079ff2868d51972775052d5f6af426c6974d042f"
+        }
+      ]
+    },
+    {
+      "slug": "source-and-qualify-partners",
+      "catalog_entry": {
+        "slug": "source-and-qualify-partners",
+        "categories": [
+          "sales",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/source-and-qualify-partners/SKILL.md",
+          "mode": "100644",
+          "size": 2686,
+          "sha256": "49174065345feee5de148b249fe8828604d25c2eb81bd61ede3e0d79a44af363",
+          "blob_sha1": "3fa6f8937a2d4b456e4d62c391754ed3b2d9b6b2"
+        }
+      ]
+    },
+    {
+      "slug": "source-partners-via-investor-ecosystems",
+      "catalog_entry": {
+        "slug": "source-partners-via-investor-ecosystems",
+        "categories": [
+          "sales",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/source-partners-via-investor-ecosystems/SKILL.md",
+          "mode": "100644",
+          "size": 2024,
+          "sha256": "54d8c64fed894064dfd1c7633c830825a64cf5699049acb249548ab9aa6f720f",
+          "blob_sha1": "d9d45988e243c23921717236e2e7854bfdb33303"
+        }
+      ]
+    },
+    {
+      "slug": "structure-the-partner-agreement",
+      "catalog_entry": {
+        "slug": "structure-the-partner-agreement",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/structure-the-partner-agreement/SKILL.md",
+          "mode": "100644",
+          "size": 2858,
+          "sha256": "bc6828371f62c1d9be8b4aa43793ebcf1d6fc457e29b2af92918102d08983462",
+          "blob_sha1": "654d73359294a50fb123d98fe3edc7c7b6d2d59c"
+        }
+      ]
+    },
+    {
+      "slug": "support-ops-improvement-program",
+      "catalog_entry": {
+        "slug": "support-ops-improvement-program",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/support-ops-improvement-program/SKILL.md",
+          "mode": "100644",
+          "size": 2758,
+          "sha256": "0b97fad4549b7c60b8222be2fe48eaa2f9ded71f21b0aee2dd78734873c5dece",
+          "blob_sha1": "5a9457efd29c0ad502e1b528aa9fc5275da662cd"
+        }
+      ]
+    },
+    {
+      "slug": "technical-diagnostics-with-tools",
+      "catalog_entry": {
+        "slug": "technical-diagnostics-with-tools",
+        "categories": [
+          "support",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/technical-diagnostics-with-tools/SKILL.md",
+          "mode": "100644",
+          "size": 2290,
+          "sha256": "1f01a87003abce7377b3df0ad0797de2e0df2d83e8987cc37633bcaebaa879f0",
+          "blob_sha1": "64b500e4544dfe21d5b912faf7849031b711ba47"
+        }
+      ]
+    },
+    {
+      "slug": "territory-and-account-planning",
+      "catalog_entry": {
+        "slug": "territory-and-account-planning",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/territory-and-account-planning/SKILL.md",
+          "mode": "100644",
+          "size": 2756,
+          "sha256": "2f6f84bb8fdb98fa60e2ae9a05f8130dcc0c765e77368fa6a3959c81d54bdce5",
+          "blob_sha1": "5a3e03346345b02c0aba303da63137ae6ae1c424"
+        }
+      ]
+    },
+    {
+      "slug": "track-partner-pipeline",
+      "catalog_entry": {
+        "slug": "track-partner-pipeline",
+        "categories": [
+          "sales",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/track-partner-pipeline/SKILL.md",
+          "mode": "100644",
+          "size": 2636,
+          "sha256": "72da2c506d9358ff0c540994a10633464ab9cf807f7e6d576e89af1cb77073a5",
+          "blob_sha1": "7c3f26aaefb149126bb2a04ea43e8bcfe311c561"
+        }
+      ]
+    },
+    {
+      "slug": "travel-disruption-and-rebooking",
+      "catalog_entry": {
+        "slug": "travel-disruption-and-rebooking",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/travel-disruption-and-rebooking/SKILL.md",
+          "mode": "100644",
+          "size": 2804,
+          "sha256": "91ff696b926ffbe880b74f72d58c9108080c799358fb30fb0dc587c19312d00f",
+          "blob_sha1": "f6bf4548f0266fafe8768712b6dc4088fe2f167d"
+        }
+      ]
+    },
+    {
+      "slug": "triage-and-prioritize",
+      "catalog_entry": {
+        "slug": "triage-and-prioritize",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [
+          "google",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/triage-and-prioritize/SKILL.md",
+          "mode": "100644",
+          "size": 2366,
+          "sha256": "23f73c8b5549840b2dfbb86b1f2a46c58a5cbf03ccac631dbfd1086598625041",
+          "blob_sha1": "397cb224fa2bb4a8860b87c678936c1ca287e720"
+        }
+      ]
+    },
+    {
+      "slug": "troubleshoot-and-resolve",
+      "catalog_entry": {
+        "slug": "troubleshoot-and-resolve",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [
+          "google",
+          "slack"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/troubleshoot-and-resolve/SKILL.md",
+          "mode": "100644",
+          "size": 2139,
+          "sha256": "294b55d0517038068aae5a79d24d660bec6363bb2b05b8a47357f1b03b6e2853",
+          "blob_sha1": "55644442cc9225de7933cacae8cbe1620dfb2886"
+        }
+      ]
+    },
+    {
+      "slug": "trust-and-safety-escalations",
+      "catalog_entry": {
+        "slug": "trust-and-safety-escalations",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/trust-and-safety-escalations/SKILL.md",
+          "mode": "100644",
+          "size": 2218,
+          "sha256": "cc3e39fc66c007af6b62373144426ff58e4e2742b7849ba156584fc9343d5efa",
+          "blob_sha1": "17fdd0f823f345073dc61b4df2b3709fccc4e682"
+        }
+      ]
+    },
+    {
+      "slug": "unit-economics-and-roi",
+      "catalog_entry": {
+        "slug": "unit-economics-and-roi",
+        "categories": [
+          "finance",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/unit-economics-and-roi/SKILL.md",
+          "mode": "100644",
+          "size": 2820,
+          "sha256": "ece25c92ecbc1722b968f1a1ffb3fa638f30ad3f8a9396e1894c6c94ad35c0aa",
+          "blob_sha1": "57dc8d72803e245ed47df0fad2057199a6b7794d"
+        }
+      ]
+    },
+    {
+      "slug": "upsell-and-retention-offers",
+      "catalog_entry": {
+        "slug": "upsell-and-retention-offers",
+        "categories": [
+          "sales",
+          "support"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/upsell-and-retention-offers/SKILL.md",
+          "mode": "100644",
+          "size": 2370,
+          "sha256": "9564f2ad0deaecee6b0802214b30526f4c7b028e06a240be5ac67a78241c42ce",
+          "blob_sha1": "35b4e631391d6c6a1dd4a0626a5f2427b410dde6"
+        }
+      ]
+    },
+    {
+      "slug": "variance-and-flux-analysis",
+      "catalog_entry": {
+        "slug": "variance-and-flux-analysis",
+        "categories": [
+          "finance",
+          "research"
+        ],
+        "required_providers": [
+          "google"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/variance-and-flux-analysis/SKILL.md",
+          "mode": "100644",
+          "size": 3054,
+          "sha256": "4613ed587fbd259102324d3b045e9b40adfd14a5afa7ae07179fdfcb47dc8aac",
+          "blob_sha1": "154b3a8039dd70f4d5bdf1a386b150c527143767"
+        }
+      ]
+    },
+    {
+      "slug": "vertical-industry-plays",
+      "catalog_entry": {
+        "slug": "vertical-industry-plays",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/vertical-industry-plays/SKILL.md",
+          "mode": "100644",
+          "size": 2172,
+          "sha256": "3ce631ecd023a2fa03adc38204ea19b7650c6e2a0089a4dee4218d9580dbcb4e",
+          "blob_sha1": "698ef249541cad770da84aa0444d542926275ccd"
+        }
+      ]
+    },
+    {
+      "slug": "vip-and-white-glove-care",
+      "catalog_entry": {
+        "slug": "vip-and-white-glove-care",
+        "categories": [
+          "support",
+          "sales"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/vip-and-white-glove-care/SKILL.md",
+          "mode": "100644",
+          "size": 2225,
+          "sha256": "8eaa45012d5565fd3ff9febff53b576082a80d3db291e6850717bec824dc218e",
+          "blob_sha1": "1ea6b4a19ecac81916d1d4731bbd95278c4a52c3"
+        }
+      ]
+    },
+    {
+      "slug": "voice-and-phone-support",
+      "catalog_entry": {
+        "slug": "voice-and-phone-support",
+        "categories": [
+          "support",
+          "operations"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/voice-and-phone-support/SKILL.md",
+          "mode": "100644",
+          "size": 3724,
+          "sha256": "420d95ae0f15415a57c1c40255b8e14ae43ef0ece098d13cd83926259eb922f7",
+          "blob_sha1": "889b3d090024352e69d1faec3047bc654a95d711"
+        }
+      ]
+    },
+    {
+      "slug": "voice-of-customer-and-feedback",
+      "catalog_entry": {
+        "slug": "voice-of-customer-and-feedback",
+        "categories": [
+          "support",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/voice-of-customer-and-feedback/SKILL.md",
+          "mode": "100644",
+          "size": 2088,
+          "sha256": "bf893040ed58a5b90bc572dd64d14a5167c8fac24f1dfbe744d2b96c59fd76ce",
+          "blob_sha1": "609fc254bd1c7aeba1a6249c6e7502595f5874aa"
+        }
+      ]
+    },
+    {
+      "slug": "voice-of-customer-loop",
+      "catalog_entry": {
+        "slug": "voice-of-customer-loop",
+        "categories": [
+          "sales",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/voice-of-customer-loop/SKILL.md",
+          "mode": "100644",
+          "size": 2257,
+          "sha256": "ee0ca635024a671e5175bf4b4279a9f7bec8d55375da533200e131ff7664de48",
+          "blob_sha1": "d854ce9dac8e413ad387cb2611a1542790807b19"
+        }
+      ]
+    },
+    {
+      "slug": "weekly-marketing-read",
+      "catalog_entry": {
+        "slug": "weekly-marketing-read",
+        "categories": [
+          "marketing",
+          "research"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/weekly-marketing-read/SKILL.md",
+          "mode": "100644",
+          "size": 5160,
+          "sha256": "8642d84b913680b1e9a1fcef9a16a5462f10e4ed449626deac203a8af0342af3",
+          "blob_sha1": "5db8c46dcf015bb8ec358747a2a872e9aaa64998"
+        }
+      ]
+    },
+    {
+      "slug": "workforce-and-capacity-planning",
+      "catalog_entry": {
+        "slug": "workforce-and-capacity-planning",
+        "categories": [
+          "operations",
+          "support"
+        ],
+        "required_providers": [],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/workforce-and-capacity-planning/SKILL.md",
+          "mode": "100644",
+          "size": 2810,
+          "sha256": "f29a8e22ae1f02408d5c668f9bada4fd8405e54666e10c57c5c30afd279079de",
+          "blob_sha1": "03175c2430503a8a36d490696fa5cd3e883c1eb9"
+        }
+      ]
+    },
+    {
+      "slug": "zara-getting-started",
+      "catalog_entry": {
+        "slug": "zara-getting-started",
+        "categories": [
+          "marketing",
+          "sales"
+        ],
+        "required_providers": [
+          "apollo",
+          "google",
+          "hubspot",
+          "mcp_amplitude",
+          "mcp_gong",
+          "mcp_linear",
+          "slack",
+          "stripe"
+        ],
+        "source": "platform"
+      },
+      "files": [
+        {
+          "path": "skills/zara-getting-started/SKILL.md",
+          "mode": "100644",
+          "size": 6632,
+          "sha256": "2bd93285c93539b7de1b2fd793801d8b5dd464b133be8c44b21c689df4247cb2",
+          "blob_sha1": "91726699ca14a01b53762758341b60c2c2a53a2a"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "slug": "product-experiment-design",
+      "catalog_entry": {
+        "slug": "product-experiment-design",
+        "categories": [
+          "research",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "robotijn/ctoc",
+            "license": "PolyForm-Shield-1.0.0"
+          },
+          {
+            "repo": "ZiDuNet/clawith-claude",
+            "license": "Apache-2.0"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/product-experiment-design/SKILL.md",
+          "mode": "100644",
+          "size": 2627,
+          "sha256": "b3c9022c8711e002305df529b77647a29a37f6894e0a1b67e0c8f97b77528a3f",
+          "blob_sha1": "51993226d9adb6afcc2212759dce8f58036314c6"
+        }
+      ],
+      "reason": "Exact-name conflict remains for the user: Nick's PR 2 experiment lifecycle versus Pawel Huryn's assumption-validation package proposed by PR 4. The existing PR 4 proposal is unchanged; no winner has been selected."
+    }
+  ]
+}

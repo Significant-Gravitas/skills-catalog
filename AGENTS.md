@@ -1,5 +1,18 @@
 # Skill catalog contribution rules
 
+## Preserve PR 2 additions
+
+- Blanket replacement/removal applies only to the 171 catalog entries present
+  before PR 2. Preserve the 166 noncolliding additions from PR 2 byte-for-byte,
+  including catalog metadata, using `provenance/pr2-carryforward.json`.
+- The 167th addition, `product-experiment-design`, remains an explicit content
+  choice. Do not silently resolve it or any purpose overlap. See
+  `docs/PR2_RETENTION.md` for the pinned sources and decision boundary.
+- The upstream licence, attribution and archived-original requirements below
+  apply to the 74 imported proposals and future upstream imports. Retained PR 2
+  packages keep their existing bytes and metadata with their separate pinned
+  provenance; do not invent new licences or authorship for them.
+
 ## Packages and names
 
 - Use the established Agent Skills format: `skills/<name>/SKILL.md` with YAML
@@ -86,7 +99,7 @@
 
 ## Verification and publication
 
-- Run the unit tests, `python tools/check.py --expected-count 74`, and the
+- Run the unit tests, `python tools/check.py --expected-count 240`, and the
   dependency audit. On POSIX also use `--strict-modes`. Update the expected count
   intentionally when changing the reviewed selection. Verify that the archived
   originals and every generated package match their manifests.

@@ -49,7 +49,9 @@ def restore_missing(root: Path = ROOT, *, expected_count: int | None = None) -> 
         supplied[relative] = initial.rendered[relative]
     final = validate(root, supplied=supplied, expected_count=expected_count)
     final.require_valid()
-    if final.records != initial.records or final.provenance != initial.provenance or final.entries != initial.entries:
+    if (final.records != initial.records or final.provenance != initial.provenance
+            or final.entries != initial.entries or final.carryforward != initial.carryforward
+            or final.unresolved != initial.unresolved):
         raise ValidationError("catalog/provenance changed during restoration preflight")
     # Final preflight also catches changes to existing sources during preparation.
     # Publication is per-file atomic, not a filesystem-wide transaction.
@@ -77,7 +79,7 @@ def main(argv: list[str] | None = None) -> int:
         else:
             result = validate(args.root, expected_count=args.expected_count)
             result.require_valid()
-            print(f"Verified {len(result.entries)} skills and {len(result.records)} files offline.")
+            print(f"Verified {len(result.entries)} skills and {len(result.records) + len(result.carryforward_files)} files offline.")
     except (OSError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

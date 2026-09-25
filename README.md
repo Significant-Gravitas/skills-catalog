@@ -1,15 +1,19 @@
 # AutoGPT skills catalog
 
-74 reviewed community skill packages in the established Agent Skills format. This replaces all 171 previous catalog entries. The full seeded roster is accounted for: 32 experts and 321 original assignments. The initial live production inventory contained 15 experts; the larger number describes the code seed.
+240 catalog entries in the established Agent Skills format: 74 proposed replacement packages and 166 unchanged skills newly added by Nick in PR 2. Blanket replacement/removal applies only to the 171 entries present before PR 2. The shared name `product-experiment-design` remains an unresolved choice between the PR 2 and PR 4 implementations; this draft retains the existing PR 4 proposal without selecting a winner.
 
-The exact current importer accepts all 74 packages in isolation. **This remains a draft: runtime integration, expert reassignment and production migration have not been performed.**
+The full pinned roster is accounted for: 32 experts and 321 original assignments. The coverage ledger retains its initial 15-expert production capture as historical research. **This remains a draft: the remaining content choices, runtime integration, expert reassignment and production migration have not been completed.**
 
 - [Every selected skill, function, author, source and licence](SELECTIONS.md)
 - [Every expert and all 321 original assignments, including gaps](docs/EXPERT_COVERAGE.md)
 - [40 deferred sources and reasons](docs/DEFERRED_SKILLS.md)
 - [Import acceptance and remaining runtime work](docs/IMPORT_COMPATIBILITY.md)
+- [PR 2 retention rule and the remaining exact-name choice](docs/PR2_RETENTION.md)
+- [Nick's unchanged PR 2 provenance notes](PROVENANCE.md)
 
 ## Standard packages
+
+The 74 imported proposals use the layout below. The 166 retained PR 2 packages preserve their original files and metadata; this change does not manufacture new licence or authorship claims for them.
 
 ```
 skills/<clear-unique-name>/
@@ -22,18 +26,18 @@ catalog.yml         existing AutoGPT loader format
 provenance/         originals, evidence, hashes and recorded adaptations
 ```
 
-The collection has 64 core and 10 conditional packages; 67 names were clarified. Folders match their declared names. Standard `license` and `metadata` fields carry attribution; the source metadata keys are AutoGPT conventions within the standard extension map. No new skill format, submodule fetch or shared package root is required.
+The 74 imported proposals have 64 core and 10 conditional packages; 67 names were clarified. Folders match their declared names. Their standard `license` and `metadata` fields carry attribution; the source metadata keys are AutoGPT conventions within the standard extension map. No new skill format, submodule fetch or shared package root is required.
 
 Each package contains its own required local support files. Only dependencies used by selected workflows are included. Scripts, licences and unchanged supporting material retain exact original bytes and executable modes. Counted name/metadata/path adaptations preserve authored advice, gates, commands and body formatting.
-There are 332 installed files. The largest package by file count is `lifecycle-email-marketing`, with 11 supplementary files. Every installed package stays within the inspected platform limits.
+There are 498 package files: 332 in the imported proposals and 166 in the retained PR 2 packages. The largest package by file count is `lifecycle-email-marketing`, with 11 supplementary files. Every package stays within the inspected platform limits.
 
 ## Permanent provenance
 
-`provenance/files.json` binds every installed file to its original repository/path/commit, Git blob, checksums, mode and counted transformations. Exact originals live under `provenance/originals/<sha256>`. `tools/vendor.py --restore` can recreate missing packages offline without executing upstream code.
+`provenance/files.json` binds the 332 imported files to their original repository/path/commit, Git blob, checksums, mode and counted transformations. Exact originals live under `provenance/originals/<sha256>`. `tools/vendor.py --restore` can recreate these imported files offline without executing upstream code. Retained PR 2 packages are separately bound to exact Git blobs and catalog metadata by `provenance/pr2-carryforward.json`; missing or modified retained files fail validation and must be restored from the pinned PR 2 source. That manifest also records Nick's unresolved `product-experiment-design` version.
 
 Dated usage/activity captures are now stored inside this repository under `provenance/evidence-files/<sha256>`, not only in a local ZIP. Evidence is explicitly linked from each selection. Stars are repository-wide and installs are telemetry; neither proves successful outcomes. No skill was executed or benchmarked during curation.
 
-The original authors remain the authors; AutoGPT curates and adapts packaging. Each package carries its full licence and attribution. MIT/Apache notices are retained; Trail of Bits CC-BY-SA-4.0 adaptations retain attribution and share-alike terms. Six selections now use verified clean historical source revisions. Invoice chase remains excluded until its licence is clarified. Authorship does not establish human-only authorship, and no upstream endorsement is claimed.
+The original authors remain the authors; AutoGPT curates and adapts packaging. Each of the 74 imported proposals carries its full licence and attribution. MIT/Apache notices are retained; Trail of Bits CC-BY-SA-4.0 adaptations retain attribution and share-alike terms. Six selections now use verified clean historical source revisions. Invoice chase remains excluded until its licence is clarified. Authorship does not establish human-only authorship, and no upstream endorsement is claimed.
 
 Deferred sources live under separate content-addressed archives, with exact reasons and licences. They are not discoverable packages. The advertising suite exceeds current limits; prospecting has an unresolved source safety finding. Public-relations, referrals and marketing-plan have contradictory authored guidance; the ideas library is held with its parent. No workflow is rewritten or weakened to pass review.
 
@@ -44,7 +48,7 @@ Read [AGENTS.md](AGENTS.md).
 ```
 python -m pip install pyyaml
 python -m unittest discover -s tools -p 'test_*.py' -v
-python tools/check.py --expected-count 74
+python tools/check.py --expected-count 240
 python tools/check_research.py
 python tools/audit_dependencies.py --check
 python tools/vendor.py --check
