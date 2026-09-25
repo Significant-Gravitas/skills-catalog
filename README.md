@@ -1,17 +1,20 @@
 # skills-catalog
 
-The skills the AutoGPT Platform ships in its Skills marketplace as platform-authored
-listings. The backend seed reads this repo and upserts one listing per entry in
-`catalog.yml`, so publishing a skill is a merge here plus a seed run.
+The complete skill packages the AutoGPT Platform publishes as platform-authored
+marketplace listings. `catalog.yml` describes each package; `release.json` binds
+their exact contents to the ordered skill assignments for marketplace experts.
+The database is the serving copy of a published release.
 
 ## Layout
 
 ```
 catalog.yml            what gets published, with categories and provenance
+release.json           exact package hashes, ordered expert skills and retirements
 skills/<slug>/SKILL.md the skill itself: frontmatter + instructions
 skills/<slug>/...      supporting docs the instructions reference
 skills/<slug>/LICENSE  upstream licence, for vendored skills
 tools/vendor.py        pulls a skill from a public GitHub repo into skills/
+tools/release.py       checks or refreshes a release's content hashes
 ```
 
 A skill's folder name, its `catalog.yml` slug and the `name` in its frontmatter must
@@ -22,7 +25,8 @@ frontmatter with `name`, `description` and optional `triggers`, then markdown.
 
 1. Create `skills/<slug>/SKILL.md`.
 2. Add an entry to `catalog.yml` with `source: platform`.
-3. Open a PR.
+3. Add the skill to the appropriate expert in `release.json`, if applicable.
+4. Stage the new package files, run `python tools/release.py refresh`, and open a PR.
 
 ## Adding a skill from an open-source repo
 
@@ -33,7 +37,8 @@ frontmatter with `name`, `description` and optional `triggers`, then markdown.
    tool tables and links into folders it did not copy, and records the source repo,
    URL and commit in the frontmatter. Anything else that does not fit our product
    gets edited by hand.
-5. Open a PR.
+5. Add any intended expert assignment in `release.json`, stage the package files,
+   run `python tools/release.py refresh`, and open a PR.
 
 Re-running the script on a slug refreshes it from upstream HEAD and overwrites any
 hand edits, so keep those minimal or upstream them.
@@ -45,14 +50,27 @@ slugs match folder and frontmatter names, categories are canonical, package file
 stay within the platform's caps, nothing is hidden, and no markdown links out of
 its skill folder. The `Check catalog` workflow runs it on every PR and push to `main`.
 
+`python tools/release.py check` also checks every package byte, file path and Git
+executable mode, catalogue metadata, unique expert keys and ordered skill references.
+`python -m unittest discover -s tools -p test_release.py` tests rejection of modified
+packages, unsafe paths, inconsistent assignments and unintended retirements.
+
+The release hash binds exact bytes. Text files are checked out with LF endings;
+do not build an upload by converting line endings. Stage new files and executable
+mode changes before refreshing the hashes.
+
 ## Publishing
 
-Merging to `main` does not publish by itself. The platform seed pulls this repo and
-writes the listings to the database:
+Merging this baseline does not publish by itself. The new AutoGPT publisher is a
+separate coordinated change: it validates a pinned catalogue revision, previews
+only the adopted marketplace records, and activates the same reviewed release in
+development and then production. The previous in-place seed command is not this
+release process.
 
-```
-poetry run python -m backend.api.features.store.skill_seed
-```
+This first manifest preserves all 338 existing packages and all 321 ordered
+assignments across 32 marketplace experts. It retires nothing. It contains no user
+or organisation IDs and no personal skill data. Database ownership checks and
+environment-specific record adoption belong to the publisher, not this catalogue.
 
-Run it against the environment you want updated. It is idempotent and rewrites each
-listing's live version in place.
+See [the release contract](RELEASE.md) for the exact format, baseline provenance
+and the remaining integration boundary.
