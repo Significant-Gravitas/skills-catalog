@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "slug": "product-experiment-design",
-  "name": "product-experiment-design",
+  "slug": "product-assumption-testing",
+  "name": "product-assumption-testing",
   "original_name": "brainstorm-experiments-existing",
   "source": {
     "repo": "phuryn/pm-skills",
@@ -18,12 +18,12 @@
     "obligations": [
       "Retain original copyright/attribution and license text."
     ],
-    "file": "skills/product-experiment-design/LICENSE"
+    "file": "skills/product-assumption-testing/LICENSE"
   },
   "status": "core",
   "assessed_at": "2026-09-25",
   "primary_sha256": "d72da1f4f08d5514662d7bad37dfc3ed4ef11fcc5b5ddec6ca5a8ac0e47f45c5",
-  "packaged_sha256": "d9bd143617feaf7853fb8ac2d9aa57cc15d3b9abc8ff3627ff57e7172019824d",
+  "packaged_sha256": "2f3549748a27e2efdaea524f6fe96c49823f310a19cd973a557e1bc74e3b9616",
   "source_modified": true,
   "runtime_verified": false,
   "assignments": [

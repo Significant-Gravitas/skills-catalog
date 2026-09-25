@@ -2520,6 +2520,37 @@
       ]
     },
     {
+      "slug": "product-experiment-design",
+      "catalog_entry": {
+        "slug": "product-experiment-design",
+        "categories": [
+          "research",
+          "development"
+        ],
+        "required_providers": [],
+        "source": "platform",
+        "adapted_from": [
+          {
+            "repo": "robotijn/ctoc",
+            "license": "PolyForm-Shield-1.0.0"
+          },
+          {
+            "repo": "ZiDuNet/clawith-claude",
+            "license": "Apache-2.0"
+          }
+        ]
+      },
+      "files": [
+        {
+          "path": "skills/product-experiment-design/SKILL.md",
+          "mode": "100644",
+          "size": 2627,
+          "sha256": "b3c9022c8711e002305df529b77647a29a37f6894e0a1b67e0c8f97b77528a3f",
+          "blob_sha1": "51993226d9adb6afcc2212759dce8f58036314c6"
+        }
+      ]
+    },
+    {
       "slug": "product-launch-plan",
       "catalog_entry": {
         "slug": "product-launch-plan",
@@ -3807,38 +3838,5 @@
       ]
     }
   ],
-  "unresolved": [
-    {
-      "slug": "product-experiment-design",
-      "catalog_entry": {
-        "slug": "product-experiment-design",
-        "categories": [
-          "research",
-          "development"
-        ],
-        "required_providers": [],
-        "source": "platform",
-        "adapted_from": [
-          {
-            "repo": "robotijn/ctoc",
-            "license": "PolyForm-Shield-1.0.0"
-          },
-          {
-            "repo": "ZiDuNet/clawith-claude",
-            "license": "Apache-2.0"
-          }
-        ]
-      },
-      "files": [
-        {
-          "path": "skills/product-experiment-design/SKILL.md",
-          "mode": "100644",
-          "size": 2627,
-          "sha256": "b3c9022c8711e002305df529b77647a29a37f6894e0a1b67e0c8f97b77528a3f",
-          "blob_sha1": "51993226d9adb6afcc2212759dce8f58036314c6"
-        }
-      ],
-      "reason": "Exact-name conflict remains for the user: Nick's PR 2 experiment lifecycle versus Pawel Huryn's assumption-validation package proposed by PR 4. The existing PR 4 proposal is unchanged; no winner has been selected."
-    }
-  ]
+  "unresolved": []
 }

@@ -882,7 +882,7 @@
       "package_bytes": 40655
     },
     {
-      "slug": "product-experiment-design",
+      "slug": "product-assumption-testing",
       "original_name": "brainstorm-experiments-existing",
       "source": "phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing",
       "native_prerequisites": [
@@ -891,7 +891,7 @@
       "runtime_blockers": [],
       "package_files": 3,
       "supplementary_files": 2,
-      "package_bytes": 5387
+      "package_bytes": 5445
     },
     {
       "slug": "product-launch-marketing",

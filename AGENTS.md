@@ -3,11 +3,12 @@
 ## Preserve PR 2 additions
 
 - Blanket replacement/removal applies only to the 171 catalog entries present
-  before PR 2. Preserve the 166 noncolliding additions from PR 2 byte-for-byte,
+  before PR 2. Preserve all 167 additions from PR 2 byte-for-byte,
   including catalog metadata, using `provenance/pr2-carryforward.json`.
-- The 167th addition, `product-experiment-design`, remains an explicit content
-  choice. Do not silently resolve it or any purpose overlap. See
-  `docs/PR2_RETENTION.md` for the pinned sources and decision boundary.
+- Keep Nick's `product-experiment-design` under its original name. The incoming
+  Pawel Huryn package is named `product-assumption-testing`, so both can ship.
+  Purpose overlaps are accepted for release; rank them in a review report after
+  shipping. See `docs/PR2_RETENTION.md` for pinned sources and the decision.
 - The upstream licence, attribution and archived-original requirements below
   apply to the 74 imported proposals and future upstream imports. Retained PR 2
   packages keep their existing bytes and metadata with their separate pinned
@@ -99,7 +100,7 @@
 
 ## Verification and publication
 
-- Run the unit tests, `python tools/check.py --expected-count 240`, and the
+- Run the unit tests, `python tools/check.py --expected-count 241`, and the
   dependency audit. On POSIX also use `--strict-modes`. Update the expected count
   intentionally when changing the reviewed selection. Verify that the archived
   originals and every generated package match their manifests.

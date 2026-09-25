@@ -1,4 +1,4 @@
-# Attribution: product-experiment-design
+# Attribution: product-assumption-testing
 
 Original skill: `brainstorm-experiments-existing`.
 Original author: Pawel Huryn
@@ -10,7 +10,7 @@ AutoGPT curates and adapts packaging. The original author wrote the skill instru
 
 ## Files and recorded changes
 
-- `SKILL.md`: Previously approved clear package name and standard licence/source metadata; preserve all other authored fields and instructions.; Identify packaging modifications without claiming upstream authorship. Original: phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md
+- `SKILL.md`: Distinct name approved to preserve Nick's PR 2 product-experiment-design unchanged; standard licence/source metadata retained, with all other authored fields and instructions preserved.; Identify packaging modifications without claiming upstream authorship. Original: phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md
 - `LICENSE`: Copied unchanged. Original: phuryn/pm-skills/LICENSE
 
 ## Runtime requirements

@@ -13,8 +13,8 @@
   ],
   "check_policy": "Only findings with status=error (definite missing/escaping Markdown file links) fail --check. Review inventory is not an execution verdict.",
   "counts": {
-    "packages": 74,
-    "files_scanned": 332,
+    "packages": 241,
+    "files_scanned": 499,
     "references": 842,
     "definite_errors": 0,
     "review_items": 285,
@@ -35,14 +35,84 @@
   },
   "packages": [
     {
+      "package": "account-health-and-qbrs",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "account-reconciliation",
       "files_scanned": 3,
       "references": 2
     },
     {
+      "package": "alex-getting-started",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "alliance-co-commercialization",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "anika-getting-started",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "assure-partner-led-delivery",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "automate-finance-reporting",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "billing-refunds-and-exceptions",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "board-deck-builder",
       "files_scanned": 5,
       "references": 9
+    },
+    {
+      "package": "bpo-vendor-quality-ops",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "budget-vs-actuals-and-reforecast",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "build-data-and-r-d-alliances",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "build-partner-academies-at-scale",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "build-partner-led-category-creation",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "build-the-target-list",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "business-case-and-roi-selling",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "business-process-documentation",
@@ -55,14 +125,44 @@
       "references": 1
     },
     {
+      "package": "campaign-brief-and-asset-plan",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "candidate-interview-planning",
       "files_scanned": 3,
       "references": 1
     },
     {
+      "package": "candidate-sourcing-strategy",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "cash-treasury-and-fx",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "channel-draft-shapes",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "client-proposal-writing",
       "files_scanned": 3,
       "references": 2
+    },
+    {
+      "package": "close-controls-and-accounting",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "cloud-commit-and-marketplace-selling",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "code-change-security-review",
@@ -75,9 +175,19 @@
       "references": 1
     },
     {
+      "package": "commercial-launch-strategy",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "company-policy-lookup",
       "files_scanned": 4,
       "references": 4
+    },
+    {
+      "package": "competitive-intelligence",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "competitor-profiling",
@@ -85,9 +195,24 @@
       "references": 22
     },
     {
+      "package": "compliance-and-regulated-support",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "compliance-evidence-tracking",
       "files_scanned": 3,
       "references": 1
+    },
+    {
+      "package": "compliance-gated-deal-execution",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "content-brief-writer-handoff",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "contract-amendment-history",
@@ -98,6 +223,11 @@
       "package": "conversion-rate-optimization",
       "files_scanned": 5,
       "references": 10
+    },
+    {
+      "package": "credit-term-sheet-structuring",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "customer-escalation",
@@ -120,6 +250,11 @@
       "references": 6
     },
     {
+      "package": "daniel-getting-started",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "data-visualization",
       "files_scanned": 3,
       "references": 2
@@ -128,6 +263,56 @@
       "package": "dataset-exploration",
       "files_scanned": 4,
       "references": 6
+    },
+    {
+      "package": "deal-economics-and-pricing-guardrails",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "define-the-partner-icp",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "design-the-partner-program",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "developer-and-api-motion",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "discovery-and-qualification",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "draft-a-first-touch",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "draft-a-follow-up",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "draft-the-reply",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "drive-alliance-ma-and-strategic-investments",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "editorial-calendar-ops",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "employee-onboarding-planning",
@@ -145,9 +330,59 @@
       "references": 4
     },
     {
+      "package": "enablement-playbooks-certification",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "enterprise-deal-desk-close-plans",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "enterprise-identity-sso-support",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "escalations-and-incidents",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "exec-engagement-and-sponsorship",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "field-call-route-discipline",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "field-enablement-content",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "finance-board-and-investor-reporting",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "financial-statement-preparation",
       "files_scanned": 4,
       "references": 6
+    },
+    {
+      "package": "find-the-decision-makers",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "fraud-and-chargeback-defense",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "go-to-market-strategy",
@@ -155,9 +390,89 @@
       "references": 6
     },
     {
+      "package": "govern-the-strategic-alliance",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "gtm-performance-diagnostics",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "gtm-planning-and-market-entry",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "handle-a-reply",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "handle-partner-conflict-and-churn",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "help-center-answers-and-kb",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "hiring-debrief-and-decision",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "hiring-pipeline-analytics",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "icp-and-segmentation",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "industrial-pursuit-tender-handover",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "interview-coordination",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "interview-kit-design",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "james-getting-started",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "job-description-drafting",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "job-offer-and-close-plan",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "knowledge-base-article-writing",
       "files_scanned": 4,
       "references": 4
+    },
+    {
+      "package": "knowledge-centered-service",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "legal-meeting-briefing",
@@ -173,6 +488,26 @@
       "package": "lifecycle-email-marketing",
       "files_scanned": 12,
       "references": 33
+    },
+    {
+      "package": "live-channel-queue-operations",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "logistics-shipment-and-customs",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "manage-partner-renewals-and-exits",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "map-the-partner-ecosystem",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "market-size-estimation",
@@ -195,6 +530,51 @@
       "references": 15
     },
     {
+      "package": "marketplace-partner-revenue-growth",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "marketplace-two-sided-mediation",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "mass-recovery-and-bulk-comms",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "max-getting-started",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "maya-getting-started",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "media-plan-measure-optimize",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "member-benefits-and-claims",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "messaging-and-tone-matrix",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "model-the-partnership-commercials",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "month-end-close-management",
       "files_scanned": 3,
       "references": 2
@@ -205,9 +585,39 @@
       "references": 5
     },
     {
+      "package": "multithread-and-stakeholder-maps",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "nda-risk-review",
       "files_scanned": 6,
       "references": 54
+    },
+    {
+      "package": "next-step-and-handoff",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "nurture-sequence-build-and-readout",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "objection-and-negotiation",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "onboard-and-enable-partners",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "onboarding-and-adoption",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "operational-risk-assessment",
@@ -220,9 +630,94 @@
       "references": 4
     },
     {
+      "package": "opportunity-sizing-and-business-case",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-automate-a-workflow",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-capacity-and-headcount-plan",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-controls-and-escalations",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-govern-a-program",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-map-and-improve-a-process",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-run-the-operating-rhythm",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-scorecard-and-kpis",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-vendor-and-procurement",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "ops-write-an-sop",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "orchestrate-multi-party-partner-bids",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "orders-returns-and-warranty",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "own-the-alliance-pnl",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "own-to-closure",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "partner-and-channel-co-sell",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "partner-co-marketing",
       "files_scanned": 9,
       "references": 18
+    },
+    {
+      "package": "partner-first-touch-outreach",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "passive-candidate-outreach",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "people-analytics-reporting",
@@ -230,9 +725,34 @@
       "references": 4
     },
     {
+      "package": "pipeline-review-and-forecast",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "plan-the-multi-year-partnership",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "portfolio-company-performance-review",
       "files_scanned": 3,
       "references": 1
+    },
+    {
+      "package": "positioning-and-messaging",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "prep-the-partner-qbr",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "pricing-and-packaging",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "pricing-and-packaging-strategy",
@@ -240,9 +760,29 @@
       "references": 19
     },
     {
-      "package": "product-experiment-design",
+      "package": "product-ai-feature-scoping-and-evals",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "product-assumption-testing",
       "files_scanned": 3,
       "references": 5
+    },
+    {
+      "package": "product-discovery-and-user-research",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "product-exec-briefing",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "product-experiment-design",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "product-launch-marketing",
@@ -250,14 +790,34 @@
       "references": 6
     },
     {
+      "package": "product-launch-plan",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "product-market-and-competitor-read",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "product-marketing-context",
       "files_scanned": 3,
       "references": 12
     },
     {
+      "package": "product-metrics-and-instrumentation",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "product-metrics-dashboard-design",
       "files_scanned": 3,
       "references": 10
+    },
+    {
+      "package": "product-prd-and-acceptance-criteria",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "product-requirements-writing",
@@ -270,6 +830,11 @@
       "references": 4
     },
     {
+      "package": "product-roadmap-and-prioritization",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "product-roadmap-planning",
       "files_scanned": 4,
       "references": 4
@@ -278,6 +843,11 @@
       "package": "product-stakeholder-update",
       "files_scanned": 4,
       "references": 4
+    },
+    {
+      "package": "product-strategy-and-bets",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "product-strategy-canvas",
@@ -300,9 +870,104 @@
       "references": 6
     },
     {
+      "package": "quality-csat-and-coaching",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "quarterback-the-deal-team",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "recruiting-pipeline",
       "files_scanned": 3,
       "references": 1
+    },
+    {
+      "package": "regional-category-gtm-strategy",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "regulated-access-and-clinical-selling",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "renewal-expansion-and-qbr",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "research-an-account",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "retail-jbp-trade-and-sellout",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "rfp-and-competitive-bid-response",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "robin-getting-started",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "role-intake-and-scorecard",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-brand-oem-and-supply-partnerships",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-creator-and-affiliate-partner-programs",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-global-partner-executive-councils",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-hyperscaler-marketplace-co-sell",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-partner-strategy-and-operations",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-regulated-partnership-motions",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-the-partner-co-sell-cadence",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "run-the-partner-marketing-engine",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "saas-gtm-finance",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "sales-account-research",
@@ -320,6 +985,16 @@
       "references": 15
     },
     {
+      "package": "sales-marketing-alignment-and-sla",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "sales-ops-coverage-and-quota",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "sales-outreach-drafting",
       "files_scanned": 3,
       "references": 2
@@ -330,14 +1005,64 @@
       "references": 2
     },
     {
+      "package": "sales-team-leadership",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "scale-the-partner-channel",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "scope-the-tech-partnership",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "sensitive-data-safe-handling",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "seo-report-generation",
       "files_scanned": 3,
       "references": 16
     },
     {
+      "package": "service-recovery-and-goodwill",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "set-board-level-alliance-strategy",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "showroom-fi-and-internet-bdc",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "signature-to-launch-and-account-ops",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "social-and-community-support",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "social-media-management",
       "files_scanned": 11,
       "references": 49
+    },
+    {
+      "package": "sofia-getting-started",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "software-debugging",
@@ -355,9 +1080,29 @@
       "references": 1
     },
     {
+      "package": "source-and-qualify-partners",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "source-partners-via-investor-ecosystems",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "structure-the-partner-agreement",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "supply-chain-risk-auditor",
       "files_scanned": 7,
       "references": 62
+    },
+    {
+      "package": "support-ops-improvement-program",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "support-ticket-triage",
@@ -375,9 +1120,59 @@
       "references": 4
     },
     {
+      "package": "technical-diagnostics-with-tools",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "territory-and-account-planning",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "track-partner-pipeline",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "travel-disruption-and-rebooking",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "triage-and-prioritize",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "troubleshoot-and-resolve",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "trust-and-safety-escalations",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "unit-economics-and-roi",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "upsell-and-retention-offers",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "user-cohort-analysis",
       "files_scanned": 3,
       "references": 5
+    },
+    {
+      "package": "variance-and-flux-analysis",
+      "files_scanned": 1,
+      "references": 0
     },
     {
       "package": "vendor-contract-status",
@@ -395,14 +1190,54 @@
       "references": 1
     },
     {
+      "package": "vertical-industry-plays",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "vip-and-white-glove-care",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "voice-and-phone-support",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "voice-of-customer-and-feedback",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "voice-of-customer-loop",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "website-seo-audit",
       "files_scanned": 4,
       "references": 22
     },
     {
+      "package": "weekly-marketing-read",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
+      "package": "workforce-and-capacity-planning",
+      "files_scanned": 1,
+      "references": 0
+    },
+    {
       "package": "workplace-memory-management",
       "files_scanned": 8,
       "references": 52
+    },
+    {
+      "package": "zara-getting-started",
+      "files_scanned": 1,
+      "references": 0
     }
   ],
   "findings": [
@@ -4363,7 +5198,7 @@
       "status": "review"
     },
     {
-      "package": "product-experiment-design",
+      "package": "product-assumption-testing",
       "file": "ATTRIBUTION.md",
       "line": 13,
       "kind": "literal-reference",
@@ -4374,7 +5209,7 @@
       "anchor_checked": null
     },
     {
-      "package": "product-experiment-design",
+      "package": "product-assumption-testing",
       "file": "SKILL.md",
       "line": 60,
       "kind": "markdown-link",
@@ -4383,7 +5218,7 @@
       "status": "unverified"
     },
     {
-      "package": "product-experiment-design",
+      "package": "product-assumption-testing",
       "file": "SKILL.md",
       "line": 61,
       "kind": "markdown-link",
@@ -4392,7 +5227,7 @@
       "status": "unverified"
     },
     {
-      "package": "product-experiment-design",
+      "package": "product-assumption-testing",
       "file": "SKILL.md",
       "line": 62,
       "kind": "markdown-link",
@@ -4401,7 +5236,7 @@
       "status": "unverified"
     },
     {
-      "package": "product-experiment-design",
+      "package": "product-assumption-testing",
       "file": "SKILL.md",
       "line": 63,
       "kind": "markdown-link",

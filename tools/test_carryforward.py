@@ -10,6 +10,9 @@ import check
 import test_catalog as fixtures
 import vendor
 
+ORIGINAL_SLUG = "product-experiment-design"
+IMPORTED_SLUG = "product-assumption-testing"
+
 
 class CarryforwardTests(unittest.TestCase):
     def setUp(self):
@@ -18,9 +21,9 @@ class CarryforwardTests(unittest.TestCase):
         self.addCleanup(self.fixture.doCleanups)
         fixture = self.fixture
         self.root = fixture.root
-        # Give the pending same-name proposal normal, fully checked import
-        # provenance. Its installed bytes intentionally differ from PR 2.
-        slug = check.PR2_PENDING_SLUG
+        # Give the renamed import its own fully checked provenance. Both it and
+        # the unchanged PR 2 package must remain independently installable.
+        slug = IMPORTED_SLUG
         entry = copy.deepcopy(fixture.entries[0])
         entry["slug"] = slug
         fixture.entries.append(entry)
@@ -43,7 +46,7 @@ class CarryforwardTests(unittest.TestCase):
         self.manifest = dict(schema_version=1, source=copy.deepcopy(check.PR2_SOURCE),
                              added_slugs=[], retained=[], unresolved=[])
         for n in range(167):
-            name = f"pr2-skill-{n:03d}" if n < 166 else slug
+            name = f"pr2-skill-{n:03d}" if n < 166 else ORIGINAL_SLUG
             metadata = dict(slug=name, source="platform", categories=["operations"], required_providers=[])
             content = f"---\nname: {name}\ndescription: Existing PR 2 skill.\n---\nKeep these existing instructions.\n".encode()
             path = f"skills/{name}/SKILL.md"
@@ -51,15 +54,11 @@ class CarryforwardTests(unittest.TestCase):
                           sha256=hashlib.sha256(content).hexdigest(), blob_sha1=check.git_blob_sha1(content))
             row = dict(slug=name, catalog_entry=metadata, files=[record])
             self.manifest["added_slugs"].append(name)
-            if n < 166:
-                self.manifest["retained"].append(row)
-                fixture.entries.append(copy.deepcopy(metadata))
-                destination = self.root / path
-                destination.parent.mkdir(parents=True)
-                destination.write_bytes(content)
-            else:
-                row["reason"] = "Exact-name choice is pending; imported package remains the proposal."
-                self.manifest["unresolved"].append(row)
+            self.manifest["retained"].append(row)
+            fixture.entries.append(copy.deepcopy(metadata))
+            destination = self.root / path
+            destination.parent.mkdir(parents=True)
+            destination.write_bytes(content)
         self.save()
 
     def save(self):
@@ -70,11 +69,12 @@ class CarryforwardTests(unittest.TestCase):
         return "\n".join(check.validate(self.root).errors)
 
     def test_retains_original_platform_bytes_without_inventing_upstream_licenses(self):
-        result = check.validate(self.root, expected_count=169)
+        result = check.validate(self.root, expected_count=170)
         self.assertEqual(result.errors, [])
         self.assertEqual(len(result.provenance), 3)
-        self.assertEqual(len(result.carryforward), 166)
-        self.assertEqual(result.unresolved, {check.PR2_PENDING_SLUG})
+        self.assertEqual(len(result.carryforward), 167)
+        self.assertIn(ORIGINAL_SLUG, result.carryforward)
+        self.assertIn(IMPORTED_SLUG, result.provenance)
         self.assertFalse((self.root / "skills/pr2-skill-000/LICENSE").exists())
         self.assertFalse((self.root / "provenance/skills/pr2-skill-000.json").exists())
 
@@ -107,17 +107,27 @@ class CarryforwardTests(unittest.TestCase):
         self.save()
         self.assertIn("all 167 added slugs", self.errors())
 
-    def test_only_explicit_pending_name_exception_is_allowed(self):
-        self.manifest["unresolved"][0]["slug"] = "some-other-decision"
-        self.manifest["unresolved"][0]["catalog_entry"]["slug"] = "some-other-decision"
+    def test_no_unresolved_name_exception_is_allowed(self):
+        self.manifest["unresolved"].append(copy.deepcopy(self.manifest["retained"][-1]))
         self.save()
-        self.assertIn("only product-experiment-design", self.errors())
+        self.assertIn("unresolved: exactly 0 records required", self.errors())
 
-    def test_pending_proposal_still_requires_full_import_provenance(self):
-        proof = self.fixture.proofs[check.PR2_PENDING_SLUG]
+    def test_renamed_import_still_requires_full_import_provenance(self):
+        proof = self.fixture.proofs[IMPORTED_SLUG]
         proof["license"]["spdx"] = "invented-license"
         self.save()
         self.assertIn("per-skill license identity differs", self.errors())
+
+    def test_original_name_cannot_be_replaced_by_renamed_import_bytes(self):
+        original = self.root / f"skills/{ORIGINAL_SLUG}/SKILL.md"
+        imported = self.root / f"skills/{IMPORTED_SLUG}/SKILL.md"
+        original.write_bytes(imported.read_bytes())
+        self.assertIn(f"skills/{ORIGINAL_SLUG}/SKILL.md: protected PR 2 file", self.errors())
+
+    def test_retained_inventory_must_match_complete_added_set(self):
+        self.manifest["added_slugs"][-1] = "unreviewed-substitute"
+        self.save()
+        self.assertIn("added_slugs must equal all retained slugs", self.errors())
 
     def test_extra_protected_package_file_is_rejected(self):
         (self.root / "skills/pr2-skill-000/extra.py").write_text("do_not_execute()", encoding="utf-8")

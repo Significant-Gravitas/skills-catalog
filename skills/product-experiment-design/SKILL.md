@@ -1,63 +1,50 @@
 ---
-name: product-experiment-design
-description: Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments.
-license: MIT
-metadata:
-  author: Pawel Huryn
-  source: phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing
-  source_url: https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md
-  upstream-commit: 8607e3b077817f89bf4a9b623246219734ac3be0
-  original-name: brainstorm-experiments-existing
-  packaged-by: AutoGPT
-  packaged-on: '2026-09-25'
+name: "product-experiment-design"
+description: "Use when the user names an A/B test, an experiment, a growth bet, or a before-and-after read: the plan with one primary metric, guardrails, a computed sample size, precommitted interpretation bands, then the scale-extend-or-kill readout."
+triggers: ["design an A/B test", "experiment plan", "minimum detectable effect", "how long should the test run", "scale or kill", "experiment readout", "guardrail metrics", "precommit the bands"]
+version: "1"
 ---
 
-> Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and local references; see ATTRIBUTION.md in this package.
+# Product experiment design
 
+Use this when the user names an A/B test, an experiment, a growth bet, or a
+before-and-after read. The output is a plan whose verdict is decided before the
+data arrives, and then the readout against it.
 
-## Design Experiments (Existing Product)
+## What you need first
 
-Design low-effort experiments to test product assumptions before committing to full implementation.
+The belief under test, the decision it informs, and the traffic or users
+available. No traffic numbers means you size with bands and name the minimum
+sample before launch. No belief stated means you name the bottleneck belief
+first and get a yes on it.
 
-### Context
+## Design it
 
-You are helping a product team design experiments for **$ARGUMENTS**. The team has a feature idea and assumptions that need validation.
+1. Name the one bottleneck belief the test exists to move. A test that tries to
+   prove three things proves none.
+2. List two to four candidate tests and compare them on information gain, cost,
+   time, and reversibility. Pick one and say in a line why it won.
+3. Write the design: control and variant; ONE primary success metric;
+   guardrail metrics that catch harm elsewhere; the minimum sample computed
+   from the baseline plus the minimum detectable effect at 95% significance
+   and 80% power; a duration of at least one to two full weeks; pre-declared
+   segments; the business-meaningful threshold stated beside the p-value; and
+   the flag configuration. Guardrails are not optional.
+4. Precommit the interpretation bands with observable numbers: the upgrade band
+   where you scale, the ambiguous band where you extend or rethink, and the
+   downgrade band where you kill. No vague words like "several" or "good".
+5. State plainly what the test cannot establish, then launch only on a yes.
+6. Read it out: the band it landed in, the guardrail check, the sample-ratio
+   mismatch check, and the call — scale, extend, or kill.
 
-If the user provides files (PRDs, assumption lists, designs), read them first.
+## Output
 
-### Instructions
+The dated experiment plan and, after the run, the dated readout with the call
+and the follow-up offered on a yes.
 
-The user will describe their idea and assumptions. Work through these steps:
+## When the traffic is not there
 
-1. **Clarify the idea and assumptions**: Confirm what the team wants to build and what they need to validate.
-
-2. **Suggest experiments** for each assumption. Consider methods like:
-   - First-click testing or task completion with a prototype
-   - Feature stubs or fake door tests
-   - Technical spikes
-   - A/B tests on production (with risk mitigation)
-   - Wizard of Oz approaches
-   - Survey-based validation (behavioral, not opinion-based)
-
-3. **Key principles to follow**:
-   - Measure actual behavior, not users' opinions
-   - Test responsibly — don't put users or the business at risk
-   - For production tests (e.g., A/B tests), explain risk mitigation strategies
-   - Aim for maximum validated learning with minimal effort
-
-4. **For each experiment**, specify:
-   - **Assumption**: What do we believe?
-   - **Experiment**: What exactly will we do to validate it?
-   - **Metric**: What will be measured?
-   - **Success threshold**: The expected value if we are right
-
-Think step by step. Present experiments in a clear table or structured format. Save as markdown if substantial.
-
----
-
-### Further Reading
-
-- [Testing Product Ideas: The Ultimate Validation Experiments Library](https://www.productcompass.pm/p/the-ultimate-experiments-library)
-- [Assumption Prioritization Canvas: How to Identify And Test The Right Assumptions](https://www.productcompass.pm/p/assumption-prioritization-canvas)
-- [What Is Product Discovery? The Ultimate Guide Step-by-Step](https://www.productcompass.pm/p/what-exactly-is-product-discovery)
-- [Continuous Product Discovery Masterclass (CPDM)](https://www.productcompass.pm/p/cpdm) (video course)
+Say the sample will not reach the minimum and propose the alternative — a
+longer run, a bigger effect to look for, a painted-door test, or a qualitative
+read instead. Never move the bands after seeing the data, and never call a
+test before one to two full weeks and the precomputed sample size.

@@ -37,7 +37,6 @@ PR2_SOURCE = {
     "commit": "c0237abc5a3503b1bb62d3422704132176305847",
     "pull_request": 2,
 }
-PR2_PENDING_SLUG = "product-experiment-design"
 
 
 class ValidationError(ValueError):
@@ -133,7 +132,6 @@ class Result:
     # not acquire the upstream licence or adaptation evidence of the 74 imports.
     carryforward: dict[str, dict] = field(default_factory=dict)
     carryforward_files: dict[str, dict] = field(default_factory=dict)
-    unresolved: set[str] = field(default_factory=set)
 
     def require_valid(self) -> None:
         if self.errors:
@@ -212,7 +210,7 @@ def _transforms(record: dict) -> None:
 def _load_carryforward(result: Result) -> None:
     """Load the explicitly pinned PR 2 preservation policy, when present.
 
-    The sole unresolved same-name proposal remains in ordinary import provenance.
+    All PR 2 additions are protected; imported proposals use distinct names.
     This manifest is evidence of carry-forward, not a new licence assessment.
     """
     relative = "provenance/pr2-carryforward.json"
@@ -227,7 +225,7 @@ def _load_carryforward(result: Result) -> None:
     if len(added) != 167:
         raise ValidationError("PR 2 protection must account for all 167 added slugs")
     seen, paths = set(), set()
-    for category, expected in (("retained", 166), ("unresolved", 1)):
+    for category, expected in (("retained", 167), ("unresolved", 0)):
         rows = manifest.get(category)
         if not isinstance(rows, list) or len(rows) != expected:
             raise ValidationError(f"PR 2 {category}: exactly {expected} records required")
@@ -241,15 +239,7 @@ def _load_carryforward(result: Result) -> None:
             entry = row.get("catalog_entry")
             if not isinstance(entry, dict) or entry.get("slug") != slug or entry.get("source") != "platform":
                 raise ValidationError(f"{slug}: original platform catalog entry required")
-            if category == "unresolved":
-                if slug != PR2_PENDING_SLUG:
-                    raise ValidationError("only product-experiment-design is an unresolved PR 2 name decision")
-                _text(row.get("reason"), f"{slug} unresolved decision reason")
-                result.unresolved.add(slug)
-            else:
-                if slug == PR2_PENDING_SLUG:
-                    raise ValidationError("product-experiment-design must retain its unresolved decision")
-                result.carryforward[slug] = row
+            result.carryforward[slug] = row
             files = row.get("files")
             if not isinstance(files, list) or not files:
                 raise ValidationError(f"{slug}: original PR 2 file inventory required")
@@ -274,12 +264,11 @@ def _load_carryforward(result: Result) -> None:
                     raise ValidationError(f"{path}: unsupported PR 2 file mode")
                 if not isinstance(record.get("blob_sha1"), str) or not SHA1.fullmatch(record["blob_sha1"]):
                     raise ValidationError(f"{path}: original PR 2 Git blob SHA-1 required")
-                if category == "retained":
-                    result.carryforward_files[path] = record
+                result.carryforward_files[path] = record
             if f"skills/{slug}/SKILL.md" not in members:
                 raise ValidationError(f"{slug}: PR 2 primary SKILL.md missing from inventory")
     if set(added) != seen:
-        raise ValidationError("PR 2 added_slugs must equal retained plus unresolved slugs")
+        raise ValidationError("PR 2 added_slugs must equal all retained slugs")
 
 
 def _load_plan(root: Path) -> Result:
@@ -352,11 +341,9 @@ def _load_plan(root: Path) -> Result:
             result.provenance[slug] = proof
         except (OSError, ValueError, TypeError, yaml.YAMLError) as exc:
             result.errors.append(f"catalog entry {index + 1}: {exc}")
-    missing = (set(result.carryforward) | result.unresolved) - seen_ids
+    missing = set(result.carryforward) - seen_ids
     if missing:
         result.errors.append("protected PR 2 catalog entries are missing: " + ", ".join(sorted(missing)))
-    if result.unresolved - set(result.provenance):
-        result.errors.append("unresolved PR 2 name must retain its separately reviewed import proposal")
     paths = set()
     for index, record in enumerate(manifest["files"]):
         try:

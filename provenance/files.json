@@ -4648,18 +4648,18 @@
       "size": 7199
     },
     {
-      "path": "skills/product-experiment-design/ATTRIBUTION.md",
+      "path": "skills/product-assumption-testing/ATTRIBUTION.md",
       "source": null,
       "mode": "100644",
       "role": "attribution",
       "reason": "Original attribution and explicit packaging/runtime record retained with installation.",
       "transformations": [],
-      "content": "# Attribution: product-experiment-design\n\nOriginal skill: `brainstorm-experiments-existing`.\nOriginal author: Pawel Huryn\nSource: https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md\nPinned commit: `8607e3b077817f89bf4a9b623246219734ac3be0`.\nLicence: MIT; see LICENSE and any bundled notices.\n\nAutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.\n\n## Files and recorded changes\n\n- `SKILL.md`: Previously approved clear package name and standard licence/source metadata; preserve all other authored fields and instructions.; Identify packaging modifications without claiming upstream authorship. Original: phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md\n- `LICENSE`: Copied unchanged. Original: phuryn/pm-skills/LICENSE\n\n## Runtime requirements\n\n- Existing product, feature idea, explicit assumptions, constraints and risk context.\n\n## Remaining integration requirements\n\n\nNot executed or benchmarked. Import acceptance does not establish runtime behavior.\n",
-      "sha256": "284b250f441d271c8a290fa47a1b57cb07c954b5bbef5cf7c14dd5c0ef8e1bc6",
-      "size": 1258
+      "content": "# Attribution: product-assumption-testing\n\nOriginal skill: `brainstorm-experiments-existing`.\nOriginal author: Pawel Huryn\nSource: https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md\nPinned commit: `8607e3b077817f89bf4a9b623246219734ac3be0`.\nLicence: MIT; see LICENSE and any bundled notices.\n\nAutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.\n\n## Files and recorded changes\n\n- `SKILL.md`: Distinct name approved to preserve Nick's PR 2 product-experiment-design unchanged; standard licence/source metadata retained, with all other authored fields and instructions preserved.; Identify packaging modifications without claiming upstream authorship. Original: phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md\n- `LICENSE`: Copied unchanged. Original: phuryn/pm-skills/LICENSE\n\n## Runtime requirements\n\n- Existing product, feature idea, explicit assumptions, constraints and risk context.\n\n## Remaining integration requirements\n\n\nNot executed or benchmarked. Import acceptance does not establish runtime behavior.\n",
+      "sha256": "029efa23e6c65fbd76ea13fda2c62ffee484a8d7ecacc42999a24e940d0c5f89",
+      "size": 1315
     },
     {
-      "path": "skills/product-experiment-design/LICENSE",
+      "path": "skills/product-assumption-testing/LICENSE",
       "source": {
         "repo": "phuryn/pm-skills",
         "path": "LICENSE",
@@ -4678,7 +4678,7 @@
       "size": 1068
     },
     {
-      "path": "skills/product-experiment-design/SKILL.md",
+      "path": "skills/product-assumption-testing/SKILL.md",
       "source": {
         "repo": "phuryn/pm-skills",
         "path": "pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
@@ -4696,7 +4696,7 @@
         {
           "kind": "frontmatter",
           "updates": {
-            "name": "product-experiment-design",
+            "name": "product-assumption-testing",
             "license": "MIT",
             "metadata": {
               "author": "Pawel Huryn",
@@ -4708,7 +4708,7 @@
               "packaged-on": "2026-09-25"
             }
           },
-          "reason": "Previously approved clear package name and standard licence/source metadata; preserve all other authored fields and instructions."
+          "reason": "Distinct name approved to preserve Nick's PR 2 product-experiment-design unchanged; standard licence/source metadata retained, with all other authored fields and instructions preserved."
         },
         {
           "kind": "notice",
@@ -4716,8 +4716,8 @@
           "reason": "Identify packaging modifications without claiming upstream authorship."
         }
       ],
-      "sha256": "d9bd143617feaf7853fb8ac2d9aa57cc15d3b9abc8ff3627ff57e7172019824d",
-      "size": 3061
+      "sha256": "2f3549748a27e2efdaea524f6fe96c49823f310a19cd973a557e1bc74e3b9616",
+      "size": 3062
     },
     {
       "path": "skills/product-launch-marketing/ATTRIBUTION.md",

@@ -2,7 +2,7 @@
 
 The catalog uses the existing `catalog.yml` structure and
 `skills/<slug>/SKILL.md` paths. Each declared name matches its folder and slug.
-All 240 packages (74 imported proposals and 166 retained PR 2 additions) pass
+All 241 packages (74 imported proposals and 167 retained PR 2 additions) pass
 the inspected platform's exact file-loading, content and
 package validators in the isolated probe. The earlier custom version-two import
 layout has been removed. No platform support for that custom layout is needed.
@@ -19,7 +19,7 @@ Retained PR 2 packages preserve their original files and catalog metadata under
 | Shared supporting files | Required references, scripts and templates are bundled inside each individual package; local paths are updated. |
 | Source and licence labels | Standard frontmatter contains `license`, `metadata.source` and `metadata.source_url`, which the existing seed reads. Original authors are identified in metadata and ATTRIBUTION.md. |
 | Licence files | Every imported proposal carries its exact controlling LICENSE. This is already supported as an ordinary supplementary file. |
-| Package limits | All 240 fit the inspected limits; the largest contains 11 supplementary files. Hidden plugin config files are not packaged as if the runtime could load them. |
+| Package limits | All 241 fit the inspected limits; the largest contains 11 supplementary files. Hidden plugin config files are not packaged as if the runtime could load them. |
 | Source preservation | Original bytes remain in the provenance archive. Installed files are explicitly labelled adaptations and reproducible from recorded edits. Exact original formatting is not a runtime requirement. |
 
 ## What packaging cannot provide
@@ -59,7 +59,9 @@ the intended placeholder listings and update expert assignments. Existing users'
 installed copies must not be deleted as a side effect. The original 171-entry
 catalog is recorded in `provenance/replaced-catalog.json` for that migration.
 It predates PR 2. Newly added PR 2 skills are outside that blanket removal scope;
-the exact-name choice and purpose-overlap decisions remain open.
+the incoming name is now distinct and all purpose overlaps are accepted for
+release. A ranked overlap review follows shipping, using the actual released
+expert assignments. These choices do not replace the runtime checks above.
 
 ## Verification record and reproducibility
 
@@ -85,7 +87,7 @@ and their data models/constants. Category validation uses the documented eight
 canonical categories; the builtin lookup supplies `agent_building_guide`.
 It never imports platform services, writes a database, installs a skill or
 executes upstream skill scripts. [current-importer-probe.json](current-importer-probe.json)
-records the 240 acceptances, source hashes and the fields lost by parser rendering.
+records the 241 acceptances, source hashes and the fields lost by parser rendering.
 The repository checker separately validates original and adapted file hashes,
 transformation replay, evidence binding, licence files and package limits.
 

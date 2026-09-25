@@ -266,7 +266,7 @@ skills:
   required_providers: []
   source: coreyhaines31/marketingskills/skills/pricing
   license: MIT
-- slug: product-experiment-design
+- slug: product-assumption-testing
   categories:
   - research
   - operations
@@ -479,7 +479,7 @@ skills:
   source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
   license: Apache-2.0
 
-# Preserve PR 2 additions; exact-name product-experiment-design choice remains open.
+# Preserve all 167 PR 2 additions; the incoming overlapping name is distinct.
 - slug: account-health-and-qbrs
   categories:
   - support
@@ -1560,3 +1560,10 @@ skills:
   - slack
   - stripe
   source: platform
+- slug: product-experiment-design
+  categories: [research, development]
+  required_providers: []
+  source: platform
+  adapted_from:
+    - {repo: robotijn/ctoc, license: PolyForm-Shield-1.0.0}
+    - {repo: ZiDuNet/clawith-claude, license: Apache-2.0}

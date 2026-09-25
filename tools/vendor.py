@@ -50,8 +50,7 @@ def restore_missing(root: Path = ROOT, *, expected_count: int | None = None) -> 
     final = validate(root, supplied=supplied, expected_count=expected_count)
     final.require_valid()
     if (final.records != initial.records or final.provenance != initial.provenance
-            or final.entries != initial.entries or final.carryforward != initial.carryforward
-            or final.unresolved != initial.unresolved):
+            or final.entries != initial.entries or final.carryforward != initial.carryforward):
         raise ValidationError("catalog/provenance changed during restoration preflight")
     # Final preflight also catches changes to existing sources during preparation.
     # Publication is per-file atomic, not a filesystem-wide transaction.

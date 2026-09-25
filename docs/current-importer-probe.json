@@ -3,7 +3,7 @@
   "seed_git_blob": "05014f04317b1a820a0df6db89c4de515d80f68f",
   "skills_git_blob": "0425ccea6aeea1e805d9874e0e3f2c08f41a5497",
   "method": "Executed only exact AST-selected load_catalog, _load, _package_files, parsing/rendering, attribution helpers, package/content/path validators and their types/constants. Used actual pydantic models. Category validation uses the documented eight-category allowlist; built-in-name lookup supplies agent_building_guide. No database, platform services, networking or upstream skill execution.",
-  "accepted": 240,
+  "accepted": 241,
   "rejected": 0,
   "runtime_verified": false,
   "limitation": "Import acceptance does not test database persistence, installation, metadata enforcement, native plugin dispatch, service accounts or execution. The seed stores a subset of parsed fields; parser round-trip preservation does not establish database preservation.",
@@ -459,10 +459,10 @@
       "native_fields_dropped_by_parser_renderer": []
     },
     {
-      "slug": "product-experiment-design",
+      "slug": "product-assumption-testing",
       "result": "accepted",
       "supplementary_files": 2,
-      "package_bytes": 5387,
+      "package_bytes": 5445,
       "source": "phuryn/pm-skills/pm-product-discovery/skills/brainstorm-experiments-existing",
       "source_url": "https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
       "license": "MIT",
@@ -2471,6 +2471,16 @@
       "result": "accepted",
       "supplementary_files": 0,
       "package_bytes": 6632,
+      "source": null,
+      "source_url": null,
+      "license": null,
+      "native_fields_dropped_by_parser_renderer": []
+    },
+    {
+      "slug": "product-experiment-design",
+      "result": "accepted",
+      "supplementary_files": 0,
+      "package_bytes": 2627,
       "source": null,
       "source_url": null,
       "license": null,

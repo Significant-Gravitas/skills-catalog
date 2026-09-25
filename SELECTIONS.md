@@ -1,9 +1,10 @@
 # Installed selections
 
 This document reviews the 74 replacement packages proposed in PR 4. The catalog
-also retains 166 unchanged additions from Nick's PR 2, bringing the draft to
-240 entries. Those retained packages are not new upstream selections. The
-shared-name choice remains open; see [the retention rule](docs/PR2_RETENTION.md).
+also retains all 167 unchanged additions from Nick's PR 2, bringing the draft to
+241 entries. Those retained packages are not new upstream selections. The
+incoming name is distinct and purpose overlaps are accepted for release; see
+[the retention rule](docs/PR2_RETENTION.md).
 
 74 unique skill packages; original authors retain authorship. Clear names, source metadata and necessary local reference changes are packaging adaptations only. Every package has an exact upstream licence and attribution.
 
@@ -426,15 +427,15 @@ Evaluate value metrics, tier packaging, willingness-to-pay research and price-ch
 - Evidence: individual-installs: 64.7K all-time installs displayed; repo-stars: 51420; maintenance: Current pinned repository commit 5b2c0007766c6a1cf1d53fd8fc73e979e0821022 dated 2026-09-05T04:48:02Z; maintenance: Latest primary-file commit b6605e4ed2a776388910ea95bc486ef2eb68d133 at 2026-08-23T21:23:50Z
 - [Source, usage evidence, requirements and recorded review](provenance/skills/pricing-and-packaging-strategy.json).
 
-## product-experiment-design
+## product-assumption-testing
 
 Design inexpensive behavioral experiments to test assumptions about an existing product before full implementation.
 
 - Original: **brainstorm-experiments-existing**, by **Pawel Huryn**. [Pinned source](https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md) · [discovery](https://www.skills.sh/phuryn/pm-skills/brainstorm-experiments-existing).
-- Licence: MIT; [full text](skills/product-experiment-design/LICENSE). Status: core.
+- Licence: MIT; [full text](skills/product-assumption-testing/LICENSE). Status: core.
 - Experts: Alex.
 - Evidence: individual-installs: 2.6K installs displayed; repo-stars: 26581; maintenance: Latest repository commit observed: 8607e3b077817f89bf4a9b623246219734ac3be0 at 2026-09-14T21:15:01Z; Merge origin/main (v2.1.0) into the code-review skill branch; maintenance: Selected path latest change on or before pin: a372bee16dc2275e26078ca70a2eb7614ea316f7 at 2026-03-03T07:38:42Z; Improve skill discoverability
-- [Source, usage evidence, requirements and recorded review](provenance/skills/product-experiment-design.json).
+- [Source, usage evidence, requirements and recorded review](provenance/skills/product-assumption-testing.json).
 
 ## product-launch-marketing
 
