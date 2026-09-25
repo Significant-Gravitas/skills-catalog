@@ -1,0 +1,4703 @@
+{
+  "schema_version": 1,
+  "release_key": "catalogue-baseline-2026-09-25",
+  "provenance": {
+    "catalogue_repository": "Significant-Gravitas/skills-catalog",
+    "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
+    "assignment_source": {
+      "kind": "verified-marketplace-snapshot",
+      "observed_at": "2026-09-25T16:38:17.985323Z",
+      "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
+    }
+  },
+  "catalog_sha256": "b6729ae58d63589b29ec7f740ccb2ad1c53c4c60928bd382fd75b0fb98f42aed",
+  "packages": [
+    {
+      "slug": "account-health-and-qbrs",
+      "tree_sha256": "0a78d29769bb107e0f67874c447a3eb80be29786fddfa2b396d8c0c80bc87f07",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4b917ad3b98d8d9c07cb4d155a25817a79385fb982099f067a4bc2db35764dac",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "accounts-receivable-follow-up",
+      "tree_sha256": "7b12c9f2b68d19603ca2f99fcb9a21efa9f005fd72af0eee2d55331aea1a1a87",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7b2c73d9760fa10da0b73e0ae8e6ae049d2a2072c04b5513651d1cace1dc3e14",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ad-copy-variants",
+      "tree_sha256": "0c544e7ee07c328edfcdde4f5bae1b58a5b83b9be26a4deb6dbd8ce4abe92049",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "539dd75a8f0df9d7ac321f94fbcc37ce0a186930da95c10fb86468c7799de07c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "alex-getting-started",
+      "tree_sha256": "9fd18a42bc0f925666d3d1b68e8ea58ae8c2386668d28b14ff9026bd72c3e84d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6f47a7a4f45ca95f7f2a8aac87e4a99b6e488ac23f158b7b63655da79978002d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "alliance-co-commercialization",
+      "tree_sha256": "a360c70a1138284b00e0fc02e3ff0dba37e0f51aa37d810992eff0a22251d7a9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "86968b81af2362a68a63b9c808ee1cf123b51e8ec19a86cde86a9e9747cb6552",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "anika-getting-started",
+      "tree_sha256": "1d724597957ae1e47f40d62db0138195caad8fbf2388e62a408c64726d9dbe22",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8ffba34e98bdd698fa307d04abde0fcddeaa983f35a01a656fbfebe5883f325a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "assure-partner-led-delivery",
+      "tree_sha256": "34d194b34abc207fb85023dcc626b50e827d8dd3ccd99ada2d2a8d53c18d540a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d9cfda2da5e1873f12c5199ada130dda25aacdd0f31d03a2c87673c787df59c9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "automate-finance-reporting",
+      "tree_sha256": "1c7892d50a02ab9a1c55b72e683c24cc5549a3b1bc2aea02de90a63c0b831882",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "aab9849f8b22015b763a874bd24e0b4a9891a16cb775cf9a6e1161f2167d578a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "billing-refunds-and-exceptions",
+      "tree_sha256": "988c2865b8cfdc320c84fcae5880beba0dca370c742f4f2a59c648bb841c5aba",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "14b440d75478a17bd218a47654c557048cb5deb718639568f4872037a488441a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "board-and-investor-metrics-brief",
+      "tree_sha256": "fbb9e4d23bc36d030f38d7d2d6323539a7cf521650c9db32fb6856813fda36a1",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f8a4d5214594cea3bf43d448d40872ffa5e1a5e5c047c68e784f6f6148c8d03c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping-exception-escalation",
+      "tree_sha256": "754858e6bfd9352e910bc15eb7d39d5a0635845ca5e1e9138e8b18f51ca8c4d8",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a7a541dd84ba3f572730fc181cb1bff4ccfb5033ebdf15653cfdf4f8d6f51fb5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping-getting-started",
+      "tree_sha256": "dbd104ceaf64955a893f31fc6e729c31aa38f69a653dad59453c1824e8053934",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6c46c766a7cf80a5e8e8abcdc6900e91bd64ce8fa09e5c4b727a1acfbb9fa57c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "bpo-vendor-quality-ops",
+      "tree_sha256": "f457d9f54d3685ad91b14dec3f0ebe26684539cad4bb56935062ca9de786cc86",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0a109873b11589362a311ebbc0fe168b0fafcab2d1c7ba752e8b88954849cdd0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "brand-voice-guide",
+      "tree_sha256": "bbdbd7f9696f35f8d22ce0a443ce94aa8846dc017bd47a49828018e5d4ae4068",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c9eb567685548149a7f89207e16502f3d524aa72ae55c55aa9efa8c4d770f837",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "budget-pacing-review",
+      "tree_sha256": "cdd96a61e20d42ad785cc0a6a380a30933ef1d176d9daa139897845b7d89c85a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d62d03fcb254bbc86b6a44d4d2ce89fa8a903c0513c1a05918c798ead79409e3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "budget-vs-actuals-and-reforecast",
+      "tree_sha256": "f23d62c7e4c184580c2570e991ba011faa2da66bcdb8cb2557f79aea0e6c88d4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "16df1e30143aacda4eb645097c0a81d54aaa83117e2d793ee52b30196f7d8472",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "bug-report-handoff",
+      "tree_sha256": "6740f0a1852c29be7fa0b311eb68ff23fa50cfa465d99519244792d17c812c36",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7708c54e3bca5e6b6f32096e867d8677afbf78e0029fd4cf8a5fa8958942cfd5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "bug-reproduction-report",
+      "tree_sha256": "b765152b4c07dc6144d15b064c5574d7b0f5cf54ea3b1042b026d07f7ffb16db",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "43b8484552c2a27f1a7ebe4f856bc61f03694e2d0867bcd7615b07fc5c774991",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "build-data-and-r-d-alliances",
+      "tree_sha256": "dc17c44871966268ed7028df4fb5a50af119e68756b1e31832d4a75aafa1b69e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9291201dc1cdc144eb2b1c7abdc8c2b34f04f2befd5babab0b43c83140b899a9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "build-partner-academies-at-scale",
+      "tree_sha256": "9b55773a34c9808063e93be55ebf3c2b65081e67b697ec7b2e365131ffc7eecb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2a6810a291a7e96baaf1342f067b763585d0c8d6517f3ddeb43c4607116aa346",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "build-partner-led-category-creation",
+      "tree_sha256": "5b04c31bb7d16b4e9b079cfb54c0ee686fe85f911d8bb269f59fe109a7b0c6b5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a42d9f7e656360326a334a05bf264c70f70d420070817564f05d59dbaa50297e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "build-the-target-list",
+      "tree_sha256": "b900863296593c9e12d6a287918cdc5b04e625d0c7844107720bb763ddb3569f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d14c2915f3f5616de9d4f155aeb67b6925ce3108dec714e1c2f71846b2cf5472",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "business-case-and-roi-selling",
+      "tree_sha256": "b34fdf2456772d1d68673ada352dc7e687f7357a8eeea9f68fbf3b462c2bfd6f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4324fdee7e527e1f281b7566018916d8db747ed5e46974467e079d86eefd308d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "calendar-conflict-review",
+      "tree_sha256": "90a3115ba4e1c5d554aa104d1bf9e7ea60d6af37661d7a789125997831fcf4ed",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7e3a0c9581538804587d2b563fba20516317b189a053dba7b4fdf4229acbc929",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "campaign-brief-and-asset-plan",
+      "tree_sha256": "b6576f766abc08404eb736e945dc9ecf1a0979b915f95779e23e7c1f6510acc7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5dee6b6e7bfd4b078e3d5f31139f70f49f0b31f6c002b9f58d5efd01c9ab7c61",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "campaign-structure-plan",
+      "tree_sha256": "f1fa0f6dcae10acc8844597ad2d244c721a407420f1ff9339e8609ebaf65ada6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6e93087c89acc6d5153bb86cb759c438d48df0db0dc4aaf7dac1f15bfa04bfd7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "candidate-interview-debrief",
+      "tree_sha256": "73834a4a54767eede2726a85805ce205f98e68947448f3f6b5648131239c6e80",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c1a37c0f9d5fbe08dfd53792aa1e2328d9b19d764e51cdc3e8c9ca71c5da786b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "candidate-offer-draft",
+      "tree_sha256": "5155ab20a0782be7ca13feb06d8f08ef4f7a8335834545c5478c5b56b69fdc69",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "77a5403c21d5b5109a864f26d63a7f4fca08c4d9cfe73aee0988e4f4ca92b76e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "candidate-rejection-email",
+      "tree_sha256": "16b02bb5bdd98be3267c8444e6b284773e4324314819c413915c6846506f5c01",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "05e57b17f939dcd572e54aee7449f159ed36e9e4f90bce62bbedbfa1532cd807",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "candidate-sourcing-strategy",
+      "tree_sha256": "332313eac4152338280534a6c1f2bb111b5dfb9c93bba1ad9b1bb97cc025c094",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "71eef8482b29e92fef9b9dbb9079242144b560b53a6abc1921e70c5975a05e2c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "cap-table-hygiene",
+      "tree_sha256": "196cb1a25a3ae5c255ecb4ea725a62fff11d51e697de23e298b8f82e4eb5de5f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8869235dda6ba203e606ae3d368f3f570fd79d6b6614353e15e310307c6dc434",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "cash-treasury-and-fx",
+      "tree_sha256": "198254be4067830055ef25b2f9d7738a7b79fce954cd26578166c9d4fee7935e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bd838cb7a4fcfb4c5346ff8076dd30884ccd4c9f095501d1dda601405ef8c008",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "channel-draft-shapes",
+      "tree_sha256": "ca7967faf551bac7dd459dfb51f04d7f3aad6e79617f6c8bd0d056ef144d3a66",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9ee0aeab4ec65b333c2d3e3d83a42395cc0b36d720b57f10492285a9fbee5e09",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "churn-prevention",
+      "tree_sha256": "a360970fff5f2b95cfe44bb686bb2836d7e1b404d7a030f6b0ce4d9c97e31951",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "3b47e175b750ee039ae6a50a41a28b3ae4e0d1551857e59f490fe48f82dc1d3f",
+          "executable": false
+        },
+        {
+          "path": "references/cancel-flow-patterns.md",
+          "sha256": "d64b9282b956da6831ec97a1fffda5841c5c43a71721b512b66b04bde104c139",
+          "executable": false
+        },
+        {
+          "path": "references/dunning-playbook.md",
+          "sha256": "95afe21035cb81769ef0024de08806fec31073eb507a806f05b6b18b70e259a1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "churn-risk-review",
+      "tree_sha256": "7b05cbd8b5998bdf05dd324f31f5bda58bae776087971853596a902652c940bd",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "52832c68ccca9aa683c93449c2feb92b8749fb2bade5b42170b77dc2639a9890",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "close-controls-and-accounting",
+      "tree_sha256": "5acb5d3250c9cdb7540cfd976604c9285c5c0d21d1531ef4d4ad38dffe27bb2c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "baf2b125b4bf9f3486bf757a74b31fa54ec7ad5189e280ba4294ce87615a41ec",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "cloud-commit-and-marketplace-selling",
+      "tree_sha256": "b222a38bc9cfb8dbed06b427585949132051f490e79619b60ad2d3ad7eabca71",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "1b427b1e815049259df948e48f30cd2a88e8e1737b6364171c9b2c9bef80a85e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "code-quality-getting-started",
+      "tree_sha256": "3489f04c625388fcea3bead151907f7dada11c733c9a79903495384cc3c13eee",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d10aeeb9a183c232ebd915db3b9292440d2273c27c78bc84d891bbfed389574e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "cohort-and-retention-analysis",
+      "tree_sha256": "fb97441fa070c0cb7cb31a8840227ce3d970ad3a0afae090470c04e3ec774f09",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8329cea0138e99d14b029451740ff8143f7a4bb24ad9efca8d56bee96f8b61d8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "cold-email",
+      "tree_sha256": "211b4fb77449b97a22bdbe199cae8fe9f679d87096600f069e4d77cf6d36e82a",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "71a930da1b112dbe2c0d395e14cb9e8b30ab9645ccb788d2d1d4a8843b12c915",
+          "executable": false
+        },
+        {
+          "path": "references/benchmarks.md",
+          "sha256": "3dc1d38a2d1f4fbb2706be7ca3d40156b66a3d7078c183a930ff373c3bb04c09",
+          "executable": false
+        },
+        {
+          "path": "references/follow-up-sequences.md",
+          "sha256": "87e14749104b0c5bcd865e55d33513a161edb8e6773b2a2d9802b5460f2f7369",
+          "executable": false
+        },
+        {
+          "path": "references/frameworks.md",
+          "sha256": "b29fb89922f96ae1c6911675a7e173a8f7c6a40999c9a18b14ac7f357b5f5a03",
+          "executable": false
+        },
+        {
+          "path": "references/personalization.md",
+          "sha256": "08f18652938e14143402786fbdb8e1a6269650bb5eef9106898f1cdf31e47e36",
+          "executable": false
+        },
+        {
+          "path": "references/subject-lines.md",
+          "sha256": "f71f31b1151d972bb19ff03791ffb9d24941a8ccea8b913e5a5c7aca439b45ce",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "commercial-launch-strategy",
+      "tree_sha256": "20243db50409c9d1829e5e708d23b46731641dbf819b634504add7ef2a6e4766",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "61b6845c46fdb8ffe4d545fb2951c2dd0894f0a9647f6fd7bb51a56829d5cf64",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "communications-getting-started",
+      "tree_sha256": "45346a19794a9b33861b9fbb25c3187f58214407e3fab3050a3c2c44ec2e4b28",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "25e46ab1f06af89c2a2547633df0380ce827e726a68f477406e1c8b1ef0ce4bd",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "competitive-intelligence",
+      "tree_sha256": "40f624135258ad3eedc4609e83e382a4bcd8a1f722608cba88f9cafca0ccef3d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2d72d2fb0c68e65551928572f25ba721c2c75278dbbb86adbb96c67e621c9ec4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "competitor-teardown",
+      "tree_sha256": "a4a468e59ae4f21350822825e1d895f5eb186438bfc75b6bfa63cd522eeba6ae",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d3fc41a6c36ddbe7c45c8b26735bfe21a8ccc795876a97dd49d08b857a4d8415",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "compliance-and-regulated-support",
+      "tree_sha256": "49f9f94615aef63f492b33517ce9c2cfa9f2f0c909246d0f64d7ec87c63db3df",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "251ebbd990d3ef1e32a460c0dd61e6ecfa48f3dc18a6c0a331b60102483fc568",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "compliance-escalation-brief",
+      "tree_sha256": "bd4e8dd06e534d3c5187fb3701a5787515a93c93bcac393bcf05ad6d71e42830",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "844c5ecb5a15d37c94659d4631f4719f87b1e99dd4d7afdf95e44c687b693d0d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "compliance-gated-deal-execution",
+      "tree_sha256": "eb51886d4189a4afaba91a134985c3b990e44e93a70fa3c775844e3b02abd340",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "57f2a4f8fe4f54cf6af1b325ecb671d4ceb248c83b86ca8c0bdfe41bc56eea26",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "compliance-ops-getting-started",
+      "tree_sha256": "cce96efeafd75e506909a3772f4a9f1e64f933952277a1099465000c9772c0d4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ed04ab6a8383384791feb6a7194b0cd1347429f796a47aeade37968f2b67ad13",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "content-brief-writer-handoff",
+      "tree_sha256": "1696ef5b9cc85f72a30a32478c3512e2ac307429590aa4d896daed1d24fe003e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c0013671220c252be9bc12cf38da7996c385103b01f1f73c5b7f3a52dde0a474",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "content-repurposing",
+      "tree_sha256": "5b2fdd2f66d525c1556141e36c86925a6cd48be128215603c00cd128f4c05cff",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f887fd75aa9de774a05b74583d3ae8cdf16428b582019c72edc73245964251e3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "contract-clause-comparison",
+      "tree_sha256": "34e905f6d3b825547799388f8f6a102acb7e59cb1824d973ef586134854d22c9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "136014cc85871dd1bf4a5f0b9b04a5dba3895824db757f556d1bbed06d22de1c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "contract-deviation-triage",
+      "tree_sha256": "74ed57332c5a2274963a41b819cb611177668a941cd675058afabbff23f06632",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "63b49312c85969e28436afd98860ba258b72b763d22cba5e1cd15c13829f7fd5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "contract-key-term-extraction",
+      "tree_sha256": "d4ecd55e343411d8220c7a2abb9f9a377797cbe74e61d466f3590c20ea5bfdcd",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e5dd7b3c836b06f6d7d941f42c39bea48e997b2f96e5ebc6e4510f29b1c270b1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "contract-obligation-tracker",
+      "tree_sha256": "9c88e6b2fa8fa188daddfe415e75c500dfb7093d432b3de22fcfeaddea5aafce",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "aa00719e6bebe50dd69c4c4397f459cf713fb5045a8efa396bb3961a53decdc6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "contract-ops-getting-started",
+      "tree_sha256": "bd74b4dbff9cd2a8acdf87acf2f4313af2132ba25c5535a7f6e531b7155746ce",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5de8398feb60ec0ed7e715aace74e0a8ce59344dadde53801e4b384cac13cee6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "contract-renewal-tracker",
+      "tree_sha256": "8928e7f9ee16488cadc9658b4eb7b53c450b6cb91bca41d5d0f93857eefceda9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c067b2905d0348eba91e0b2d78c402efedc19ce489dcf8a091b5c0e206daf18b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "copywriting",
+      "tree_sha256": "1343284871aa72c4a350191fc6602b0faffc5643413a47a3960eeaf9bb6d8ad6",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c50b19a7c68624eb57d412f6ad4eb909e229c2bccaee0db7c0869fe782034ebd",
+          "executable": false
+        },
+        {
+          "path": "references/copy-frameworks.md",
+          "sha256": "d98818886525908bf17dd6412d0b72731b313d6eef3e1ab6b365828a3a342779",
+          "executable": false
+        },
+        {
+          "path": "references/natural-transitions.md",
+          "sha256": "4ff23f8943af2f65b072f26f1c53ce55f19cc26d7be211c11cae8e34b43e859f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "counsel-escalation-brief",
+      "tree_sha256": "e5af4cdc41272b66f05500d81730a7b7de0b6ee92a2e0df7642e119f04bea6f1",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "899517bc103a09436791e52b8a3fa7065aab64acd43339820f70acf0824788c5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "creative-test-readout",
+      "tree_sha256": "a005772a7ea22e5a6bb6e6b0cd092f1516c57fe92582a3451d7ae152f6460d09",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "521fd6fe6dbda348a9da649e530cfdc75a602a206330d79c7040fec7e50c1c12",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "credit-term-sheet-structuring",
+      "tree_sha256": "fa95daa63a8faa2c0f45e12c08830ec9cde733a06a027b26e4ad79a3c16c6ea5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e139c12f77ede95eb224e089992e7942c2b8f22080d5335453676da27ce7f330",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "crm-duplicate-review",
+      "tree_sha256": "346a618700a79326e1943d4f19f3a5f94f8f37d08f829a1908704ffc3d2e954b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c675b8f81c68409b7ae7dc737fb7110639191a5b7bdcf8d0dd88730f4f1cdb8c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "crm-field-audit",
+      "tree_sha256": "e22474932eb015167005e02c62869b73bdded5781c0276c073bb66b10032a5f6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "03e470759313f93f67b3d7020fa5e0a3682d9c6414c2995366cd20f5e6ab87ff",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "crm-hygiene-report",
+      "tree_sha256": "609f747a55448f045da10b3c1f865419164e50fb622f92ea4d71fa84c3075cac",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "85780ba10933f17aabf70ad9d43e591de264d78719716c71650f31f42107d0c4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "customer-health-score",
+      "tree_sha256": "8cf1e2d028e8a264a2dbaac4455ebe489ae3a64885ccd60f73f79b83b985aa98",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "27ddfdf38aa0d4d8ce6a51af1b3c0b950b4df5d9aa0d0ad878b9512fe8c79a94",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "customer-onboarding-plan",
+      "tree_sha256": "56a22ae398a43b3df7ca6d150075e3ac4224525900e817263dfc7d17817e8942",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5d37efd4f9e9f58a9af89deb5040d686f50c3a8e50424d3f40938f7e002fbbf7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "customer-research",
+      "tree_sha256": "525f5d314a25066fd1683fbea2c88dcecd0d95c089e1cad9ac4cdc607ff278c1",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "016432cc612bc86c817c59db6e2357b9233f8e8aaf019af64d24caa5f0ebd591",
+          "executable": false
+        },
+        {
+          "path": "references/interviews-and-surveys.md",
+          "sha256": "56adecdc40af1242464937100349fc1a161627394909551720494bc5ee537076",
+          "executable": false
+        },
+        {
+          "path": "references/source-guides.md",
+          "sha256": "9cb18103092fe9f479c41c928072f3875100d006c87876a89cc7fd7cf342f937",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "customer-success-getting-started",
+      "tree_sha256": "5c7aa23e06436dbc6a4983bd68e03ea5d71e83908a853e2e54aa8e0da1d19a83",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0ef0d88b4f3fb81b8c679e600e4ad5ec6d23c87bb14d9b6c395dbca988509dc4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "customer-success-plan",
+      "tree_sha256": "8d11f914fc0a550cfa232b9182b7392e4578b8dc4dcc452b4eee350db3577bb8",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c9240206f1ca5bc8c55636ac3e6287c64419ab24f0716d2ece2c141e31c123d0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "cve-stack-relevance",
+      "tree_sha256": "c2aedaa585a47d81ef4a9e1fbc7b3efc5f3e5f2261758ab3904756ebbea28118",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b0e353e950a36ee15dbed806ac4de14f232b490214d5619fc36245fbcc1855ed",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "daniel-getting-started",
+      "tree_sha256": "470caf7031a20066e452afb0b783598e34f5139cbf59fa1f4e6bedb24442a019",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "424ee6aca81781b7e8bf5171fbcff7c1e2ea410fc313410a2766457a039c64b1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "data-subject-request-draft",
+      "tree_sha256": "0dfa6a2cb21c917f575428fa81372b592f294d64d6920a5b5b656c8c68573676",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6395973266f77a24331f9e7d31539ab2afdc2fc1178f66a1ef1b42daec9ede7c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "deal-desk-getting-started",
+      "tree_sha256": "346b30617dacfc52ccdb835df5d194a916dcaefacc900ef2ac25aeef84d853ef",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7720e550f43a86fa724d58e35801aeac439b5732749c95e1414dbaf736fa6526",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "deal-economics-and-pricing-guardrails",
+      "tree_sha256": "80d1dab453095386c9d988b50c68b7c867dd4ff291254a04055d9701a9ac035b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "59561234eb6b45f9427844fee5dd7fc2e638a12eb74f148f281fffd833c56e5f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "deal-risk-review",
+      "tree_sha256": "00c88fa7d2c86954e4222dd16351d5c9d1e62b196ef05dd52f216b33a47ce963",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "78e848d41d21f79739afcc1365b575aa04e6b128f1625b9a3a8abb9981af11fb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "define-the-partner-icp",
+      "tree_sha256": "7b369a179c5f5568948f3b6f033ac5bb540aea38fd6209556600ffecd9acbb31",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "22081584dcae9a09a332b68d6ebeec26544378b03ac991029d611edd1a1e630b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "dependency-change-risk-review",
+      "tree_sha256": "890251cef214619133142f0d3758413713c52c869d15920070a3018c49eb5dd2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "56e020e823f3678ae28000425f6a3495e4ac42324d2559db3fdca49347f75d4c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "dependency-inventory",
+      "tree_sha256": "6bc8b9678c1314ad17d93ee5d4452054ecb891a8aa842e57471d9baf876e3e38",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6f1f52d34cffba1d8506b835f24fb75a8d2f0c8e199a498ac5c511684d2a2aa2",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "dependency-security-getting-started",
+      "tree_sha256": "ab8d2b2fac7843864646ee24831cb54dcbe7cd4a6db5891156bd608f6af2048f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7f00a761edba25391009cf0f4ee965a060777f02f158c3c349f097fd7a276883",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "dependency-upgrade-plan",
+      "tree_sha256": "1b4bf1d6702f23ae0aa2850a860d6b6f9ebc66fc502404e44dcc5507297fff63",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c71ff512a664aa12c3efec231406bb24fc4101180f60880d89b83989c95953b3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "dependency-upgrade-pr",
+      "tree_sha256": "85c511cb693f4610ca0d7f569dc3bcf6ce5a140b43399498bad46d2a0b775401",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2b4e42535354f4490a84e4c69392d5374eeb3823c2d6b8ec1689cc2a238e086e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "design-the-partner-program",
+      "tree_sha256": "8900c5a1b47a10c46419b2f91c1834788439a568217719b43836f48dd2c5b2b3",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e5299afff4727b1642123700dd3a846f0f66833c6a017c64b112f18203aee530",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "developer-and-api-motion",
+      "tree_sha256": "0e4f790c5bb0ceb4ca90d1527c07b4ef5fefd94d345825acc61f2574eeab5bb5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "be0423a544999ccc99986704a10bb6e4feaf6cdebfc1bc4316237041b2ab7300",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "discovery-and-qualification",
+      "tree_sha256": "c3ba3227921f4be50c08a8826f616d07b205c05e780f06f6ea87f3251b026937",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8df4aa23257d9df031eac6c0a6af1df813e73ca569b4e63c936e625854fa843d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "dpa-checklist-review",
+      "tree_sha256": "a18c96897983479f9b6744c33fb43f93ad9be82dae99fb3e63c9487abbcd6970",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "3f50a053903572ffee29cac7baeb7155991085e58f863eb5be4f31f4eb8c8a16",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "draft-a-first-touch",
+      "tree_sha256": "5e2377aae36eb6ed87c2745d9c4796363845fbea003d4f8de379b2a57f92228e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bcba93baa5518d6405aee8f686091dc84cff13f23cf651c0d58d73a0dc2599e0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "draft-a-follow-up",
+      "tree_sha256": "73a743346da19cd6aa83f978e108b5ba4dde24e8a9123d1f34a6d73959e4a17e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fb88cdd031ed4f1d46206daa61836cd1bcf311381ba2735dc2705940ca87d83b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "draft-the-reply",
+      "tree_sha256": "590b68033dce9b6b9929d67d6bf51476a99e45dc69bccb5927fcc30e14460201",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "cc73e0f49a92719dc81425949adeec79cf54e13e55cbc4d2a31d400651850de5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "drive-alliance-ma-and-strategic-investments",
+      "tree_sha256": "29bb112523c75c8d2d52ccf92f24d3d0f6c85eb87bf3bd154fd46b06efa66cad",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9f97b4401ab0251af196eb3b7a59fba47fd0aa036148fe84be8aacb37f451e7e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "editorial-calendar-ops",
+      "tree_sha256": "811b0728979af7f7024c44bfe8f94826b9e3b538258719dc8a293657c29b2642",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "113c61a749b24da1ae27d4e5f0ed97545739e82bea05e6076be50424a0aa16d6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "email-deliverability-guardrails",
+      "tree_sha256": "c06729d118a07f5ab038e11c2fc99fd11ee6089fa45e9960d8ea6ab13f27a1a9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fa2f9ba20239941a8d44221582c9b71db683fc586c34209a9309d73d5e0e7ef5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "emails",
+      "tree_sha256": "d73e090cfe72eb0018f30ad226a1e8ff81e714040d1a34b1a5e822d9471a1455",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "400015191b63c4e483bb05a285ac4b5da0d435f991c0586757ed335bde88036a",
+          "executable": false
+        },
+        {
+          "path": "references/copy-guidelines.md",
+          "sha256": "02f08897e4aa99ecc4ec1893d61d0c26d0c5e62e09af26f175087455e9b68e01",
+          "executable": false
+        },
+        {
+          "path": "references/email-types.md",
+          "sha256": "a5dd4f0555a7b21d2ff426948d15657825b9d16265652563f5e272d2e1879bfd",
+          "executable": false
+        },
+        {
+          "path": "references/sequence-templates.md",
+          "sha256": "d47b12e263ad52b72ab741c490bbc98d8bf8034d61faccc50b7dbb2650a9fba0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "enablement-playbooks-certification",
+      "tree_sha256": "3c4fb2b243f299619120de096a93055e0cda3f19b66b77ed69d8cd9ac8728937",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ed9050259bcbb43776c26a0e205e043cad64ee77ec5e316812517ba79302ab1a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "engagement-survey-readout",
+      "tree_sha256": "66f7d9f2f24d9c118f9452e8b2949be62b44e3d82a6004782f49890978ef453c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4a4f19b1cf0eb3269efea6d188aafddbb998b2a498afd5362bbbc9090cd0ab23",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "enterprise-deal-desk-close-plans",
+      "tree_sha256": "7decb57d5705cbf78c27cb4780ceb4b517cb5cb720e2bbfc3c1848f142dcbef3",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b8429310618420c630e07e78bb095237cb41b17345ce1b0c501232f4ce7f2ed0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "enterprise-identity-sso-support",
+      "tree_sha256": "e15bda344dce6dc5921298dd20efb1bb235baba178bb629a6a2b40417dfd2b5d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "3d9572cd6e44a6294f3bd22a99e00d043dc6cce34b4b32905cb30f303ddd0a93",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "escalations-and-incidents",
+      "tree_sha256": "8fa570e916ee895854e27416d949eac37e7d9b1a058ad709df5f2e48ca669b2e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7b01ca8e181dc1635cc57e42e137b7cab7c6c69f1b398d57640306c7648914de",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "exec-engagement-and-sponsorship",
+      "tree_sha256": "01b7a656e2c21df45bc7b638830d5ac7409e217e3dd27179c7cac3c58686349f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d8334370fe4d719458d917573b3af2a3728d5e858630b8de274918f2b275af77",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "executive-assistant-getting-started",
+      "tree_sha256": "c85d1959b88f555dbaca906b5eee0ea7297464444ed2f2b7f6bc78dc00162197",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a4de83e8a5ab431d604c86780d12aea4ef64c585414487580bb2a6854fd2a37e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "expansion-opportunity-brief",
+      "tree_sha256": "f8c3a3fb3c06925f741a3dfd7869e4991fed0e0ad99fd9d48a179d78a9739ac2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0f7b74760c1136570ed3b9abe430eb923a2944cbee3d051b7bfa14b9ab68413c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "expense-categorization",
+      "tree_sha256": "47318c7d7b7b5f1e4aace754512853cf8e668a63da89cbd04119d77eebd36a11",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a486a389fd2ecc220051cbb81c7a3cf3836b591e59d773877704de73ff2b3be0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "experiment-readout",
+      "tree_sha256": "0247a7e692b7895a5f12beaf334518982c8fc1b9c74b0c3ef89c0534c6839bb7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c53a441478123e3f9a0b196ab72d1af0bf73ab06180f7e4f4ff7e6bb4fd56df3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "feature-request-triage",
+      "tree_sha256": "d391ce670b4dcf85d28ca1a85df9ccde072552d8bafcaf490d67377c02c59208",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "58f261cde8b81f96bf15f56d6d17a2289a8a8947d7558f565a8ca242e9add994",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "feedback-synthesis",
+      "tree_sha256": "2a492eb85b5be9286282dbd8a62d4127051817475302ef71204628941e923b3d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7e07d60fcbba8db9f25eb14fdeae23d1769a99bf903de737e22ac2befcd9dcb7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "field-call-route-discipline",
+      "tree_sha256": "c626f3513ad99537e7711fec0043779431c4d3cc0020a414d08f408b072a20bc",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fcdbb87d9c6c8ad4447b9754c15cec3de334d8c2a6ad8496a5909bd8b507c2c9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "field-enablement-content",
+      "tree_sha256": "e185e3ff80e641c6018c7b3d3bc6af46555bfd6d1455b25b9bb23061f8e48b16",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "cce95b91246d8ebd0ef9debcfb59f4af896e1e2cd89d132f29803bebb627f647",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "finance-board-and-investor-reporting",
+      "tree_sha256": "f0192fad5dd79078191ed756beceaf23d003ab87cbf36ba60afd375cc2bff131",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5d832ad1f22f3308b26313125316767dde616b9abf75832e6c26fbf4a994f23c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "find-the-decision-makers",
+      "tree_sha256": "6329f04e4d5b67b0e46d65d8bad192424b4e11beb7bcad42341b29b172cce25c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ce72e2a1301ef4074ec362729b23d3bb2f63d06c3a98fa07fc6329df4479883c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "flaky-test-triage",
+      "tree_sha256": "2945a027d84de28ca07290cc56d42c8334aade6237e380c55b101c0b8c99125f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d52897981f4fdf00ab509545cd80c01466e142a4d0ba757428c3c14cafb29c02",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "fraud-and-chargeback-defense",
+      "tree_sha256": "50701143b33dc10ad700e8865c2d30fc4141f494a1f3eef5c4e1a8d1d690496f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0cfd37686b53289f73fcca385a473462d8490b6e8cbdae5975db93e2200d1cb4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "fundraising-data-room-checklist",
+      "tree_sha256": "97aae99b530905105f94fed16a60467308e4a54ce04e9093e17d6a6e2628eb4d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0b8c45c4747d6b53b62daf68c7169780ac4ff40ac76e5a481082956994fa7f44",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "fundraising-pipeline-review",
+      "tree_sha256": "60f8d28136f8af2512a14988053aeca7f12cf32a61cb295f96d4664bc7485f48",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "60a26e772f43af44dfef605861bfcd7850c56c77218276fe037e515019dc8524",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "funnel-conversion-analysis",
+      "tree_sha256": "37b697d7e2f03c976382216c0dda1b5d7730ad2a11d9eca1d1d2633552dbcda6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b4241788d36a15143e003655d9b0a72c14f4d76aaec9da887ad87a3e46d1f98d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "govern-the-strategic-alliance",
+      "tree_sha256": "8933b76cdd9b6edf1dbfa0bb186a24223eae489767033aa2f41ceda7a83a5b00",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4ab9a214fbb9e9f2e35cb73f594aea30bfb4e9ca5e2db644f76b49adc63efde8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "gtm-performance-diagnostics",
+      "tree_sha256": "93772c74e881449f785d52c57593341484b7d161a7fd4cb39331f05a018c655d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6ff8e7b02937ad709b139bc19fcc53891dfd9353215979994bb5757a8e6c213e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "gtm-planning-and-market-entry",
+      "tree_sha256": "ffb09dd60ec79646c103f954ab235fc8e7605d15e95ba01c2a2eaf2eae4fa789",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f46f7b138ff1a3326acd60689271d3bfb280eac8288d09ab2700914b15e12f00",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "handbook-policy-draft",
+      "tree_sha256": "e4ba4f88142bae07e8781a8a486897723de1c2dd075ffca6f20b6952def6c1c4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a82cc67c14a5e8bf5ae0939a695e79128bb1b2878abb5ef30edbd19e8cf677c7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "handle-a-reply",
+      "tree_sha256": "5348576513aec7630e3c1be392bd9a424701d2c316dc1d2ccbe55a3ba6f3dba5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "57804a2022e1914340a739a00878d361245b8af5d0fbc423fcf268bce02958b7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "handle-partner-conflict-and-churn",
+      "tree_sha256": "2de99c2d05088f6a71baa2a9462bda117e2d672549f3f527afc85b27e34bbac4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "159c4b2f77b9e658cd941a9462aa5ab7db23e3ebf18cd7f3a50c721994732416",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "help-article-from-tickets",
+      "tree_sha256": "0f331178ff5b8fb67e697539b037b9d1fc77a8f2285ecc424ffee305505935b9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "91f6af5b1a9b95858d392f559018564a365bc4b82eafa0473f8231ec787f50a1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "help-center-answers-and-kb",
+      "tree_sha256": "ec5e6e7ea13052e5a5065ac343d0ff3fff7da23c04144e0325d460cbef7dbafd",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5c96b8b13137c4ec28c7f49b99a6e8819b1e2841a9475d78aba257ac3df622d9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "hiring-debrief-and-decision",
+      "tree_sha256": "ed67557438edddf5e5fa66934e1d1c6237ade5378785066c1a29685fa377f953",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "eadb59f89d459c7bfdefe9df5966315aa751a36bf3583d09ec02a01c0a4fea23",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "hiring-pipeline-analytics",
+      "tree_sha256": "2a284674ea3635d7f1681adef09540478075cba72021d2a497f0e4f616b03bc5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bc9d79eafd3138b275dac2eb3c5d5b84b6b68ad29177256e2aabf7c901bf8204",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "hiring-rubric-design",
+      "tree_sha256": "97379a2a222b3fa2265c7628a76786470f53d439eeb313b178234d4ff8f61276",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a2d32d697d2be192d810ac659999aa0f0329991d2de71aa89dcb2ae6b90a505c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "holding-statement-draft",
+      "tree_sha256": "9085fa711c6931df33fee8f9577b6568cb55c0137410a25126c36e0c0e6a2bd3",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "046b31cff0d68de0f6ff7783e67cba0d5509009bf4ccdfe638698729e1fd2daa",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "hr-escalation-brief",
+      "tree_sha256": "672efe6beaeec267d070eee932c04ae25ff3d2db5142620c24dfdf488b923eb0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6475a560ae5aea91588a4d100ed129e57744b2d9ca007f953d5d0dd8a4e1ccf4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "icp-and-positioning",
+      "tree_sha256": "4e8ab108fee01ef50a7b0ef154bcad52ccf717e1da7703af78e0564603abb11b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c50cb07c5dbbf57eb1598054d8993525eaf3c4c3118d3f8af018964440252abe",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "icp-and-segmentation",
+      "tree_sha256": "37d6f635eceff70825b45d61d5fdf0463b98bfa2155085cbb04d03411d8f21c9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "3a35abc7f9aea4d5742d6799ad661e08f00fb3c137e1f25c5416869ce30067a0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "inbox-triage",
+      "tree_sha256": "2a5735c4413a29cdc7aeb75b5bd2fcc0507414c7a430ed5ffc1be0485db27552",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7ab20886d33dccea6224472cc2ccf434db3869f496e0f99910ef9607559f56fd",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "incident-postmortem-draft",
+      "tree_sha256": "909e0d18fdd8c12569b0575dcd91d85aecf6471d7a6d04720edf42ed88f5ed59",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "41e90dcc595f462b1111409b7ca800ea1a0487b184aaf113c3d347bf4c048b42",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "industrial-pursuit-tender-handover",
+      "tree_sha256": "8bdd3bdb43066fffcbe635e8399b848a9320c319e4f9d9776f14c082f4a84ce4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "736703d420f0fe16c15dbc4bf5dbb52c1080b57e6067a029682ee90300f16b60",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "interview-coordination",
+      "tree_sha256": "e1acc6f59d720115a94d18a3907f7ed698dfb1b604efeafa9c9f7e77f676ab16",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d4df36262027d2affcb34339c73e956d9a436f52a160c53e9197ad70927ed7d0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "interview-kit-design",
+      "tree_sha256": "66febeca7c90c3c065e4386051e0822c5997ada449b3f8e5008ae729df4238ac",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "403d28f291dda99e4bff10b3b0a4e84741c908d16827eb246a2685542f7ebab0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "interview-plan-and-scorecard",
+      "tree_sha256": "a35c901ffa25edc4d01028ef4ee191f40eab9a468c1a82f2f0a57fbef1eae95b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d37e1aa76d885a009c97bcc3cc7d79e211350ead073e2259288f6ef3af9d1c69",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "investor-relations-getting-started",
+      "tree_sha256": "55aee437923bbae206aae1da9250cc631bc461c3421d6e344149a44b78acb282",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "26b930cec281f8187312c3caa9be6323fbacc35115c4acb7029bbc083e6ad862",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "investor-targeting-and-research",
+      "tree_sha256": "ec2d7bb739887ad5bab7e6e52c9144297abe85fe3b161c7a15fcce0e6ac5cdd0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9c1d9e55c2a2af3687fc120488a5715b8112aad2f96d7f7d392e1095c01ac262",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "invoice-drafting-and-issue",
+      "tree_sha256": "66f97b9888e872ce0d5802c03ffbc7e7a2ce4aae3662f5605e12437302f5b472",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6705252de55e622782362c8f0b220417f1aa724ac1a6cae19f9eb1ba5f47f1e0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "james-getting-started",
+      "tree_sha256": "6e6bc5eb284e2da8ec95e70fe53780e6242db67cfe8e4ca45c4519da2c35d818",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f9e9487a05aca4bebe443a3c81151baeeb952e4744759a6ec2aef5f7f681ddd0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "job-description-drafting",
+      "tree_sha256": "0db4c746f6ce39148a9231606a5e85935555012e3115da84d7e511ced99efedb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "336ce25e93ab34927deed4e391ab4665360f9819619c77520a3d23e3f0e5ea45",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "job-offer-and-close-plan",
+      "tree_sha256": "28ed8565befb410c679bea31f3bb038775914fa0866fc1dc086f44937647c3cd",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c6f117ce54ebce8728ea9cffeecb872bd68aa6bcf6db782d02afea21da3f68c7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "jobs-to-be-done",
+      "tree_sha256": "f310c865674a377404111d42809b29400a9e7bb2aadc9335e5525a2379e3078c",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "87c3c90f9e673a76b8ca81049b8fe30996b910a7a80140c3ed57a2ee922d2579",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "1b7e7dce0a2aa80c9781734c280d5294baaa5fa1ffe351ec6f5d0a312a15a67f",
+          "executable": false
+        },
+        {
+          "path": "references/case-studies.md",
+          "sha256": "8b84a8d21c76550b5aed97dbf3fe6014b68e4ee01aa40c4a43098cce65defd9f",
+          "executable": false
+        },
+        {
+          "path": "references/competitive-strategy.md",
+          "sha256": "434e063dd6351e8e6e206e4e1279ffc0795e11e930cf722d5800fb40d64c4d9b",
+          "executable": false
+        },
+        {
+          "path": "references/diagnostics.md",
+          "sha256": "8fd67851b62ac990b3c756454499e7fb11cc08b0c45f571ce88a0cf99b696f2c",
+          "executable": false
+        },
+        {
+          "path": "references/innovation-process.md",
+          "sha256": "af7e840888aa3430218d002ecdc5f421204af34afef6e25260e40b5444f40eae",
+          "executable": false
+        },
+        {
+          "path": "references/organizational-change.md",
+          "sha256": "ac3723d26ca21e1be002c2d7081b319bb8d33df53373b9dba570f05e2676f9ba",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "knowledge-centered-service",
+      "tree_sha256": "a42eff3ee5ef3e9f82104826a292c400ef77db5adb34120d3b2cc23c6cf40e7c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8968a62d6db00b25e6e1a10d03ec35ea8a4ca7ac95c9069b380fbd0715d42448",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "kpi-analysis-getting-started",
+      "tree_sha256": "1b0a86adf6076456b94d52399fc60f3fa0ea31fc6acf4ba75e8418a9775cdaf7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2e66e547e71b454daac93f93462b57fc5bde10b6450f695479d754505a1ad41f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "landing-page-message-match",
+      "tree_sha256": "fe735f5ce1ede9cb9aaa3531638bb536e240879d0129932eacc1d53bca3e5848",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e7b92c4ccaea9c9ebf6df2e2965adb16eaae2bee2648e1dd9acb80ec000d6473",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "launch",
+      "tree_sha256": "713514092ba5d404be2143f75a11647e78acacec74be737b0ac58c0c8252a72a",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "292b73a63bd44dd44df30c9e7347aa32b237fe59b6dc701c9a0370b986047c7e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "launch-communications-plan",
+      "tree_sha256": "e01703c19e5b4443617be0bc6bda88f401a60b5662ef99d1c5b66c9a0569305a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dc4d30043b69698d29f1eb8336264794ff361b1722b43a78e2f9a2bae0c8e44e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "lead-routing-rules",
+      "tree_sha256": "7691314545edd082ecea720d619dc1f72b830170e68d1cfa1faef579972f5f09",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dfbd902aaa9d678f0c48831df96246e037f9daa740e6430c7d9362e90cfb91e6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "lifecycle-email-map",
+      "tree_sha256": "60207f470a432c22826e71c372be70406437908e252247e4763ee8c3592dad60",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "990d737707a15859c1194697478502c104247503ac70ba36b906cb0b29ac4975",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "live-channel-queue-operations",
+      "tree_sha256": "339112beee1e4e41782bafb11a5a9358c858fe604b081d5090539e60d006d49d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "59706fa18b3f5fada1aebf0715abeb4e821d567829b813a3ae966a2a63a3c202",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "logistics-shipment-and-customs",
+      "tree_sha256": "1bfa9aaf45a3b5eb34d4e6be1687c256182151c6093483b185105aa757461af6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "cc2792822ac6ac98be05dc43fcdfc2f5d20954f490deeef1a48240ca99e33a5d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "lost-deal-analysis",
+      "tree_sha256": "cde2b5d854c3e23fc9d75566ea04d2f9fb9b44128691afc9f5896eefccc830f9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2c71743487a9f6cc8d09b12bb277ba4627dc0e13fee746d5b457796b8afbd0e8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "manage-partner-renewals-and-exits",
+      "tree_sha256": "826a6b27479dbb470a5c22b6532ea74298313b24ca5f1307796047a047cda8a2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e7b153e9fd5c3868c07756fc731d66cd62db97f7f6a0bdf35729c7444020f1fd",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "map-the-partner-ecosystem",
+      "tree_sha256": "5bf1ca30a10ecbbaae5a85a6cc3196e599f43e9a35c2a5b3a46344c0923c35ea",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6d7e8bd56d60157c4715fc252b3d25ee9fa98de5d8726a598a885396f5ba9439",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "marketplace-partner-revenue-growth",
+      "tree_sha256": "12871e6f760eebdc64dc97e3357933e053eadcf2b17d7de47eab66fbfc313a88",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "be3c158e6b69b333d7d46e1106c3be188348f5fdf33e31e5c2e99bfa21563be9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "marketplace-two-sided-mediation",
+      "tree_sha256": "40fd203e5a00cbe49461be0e8608325e7e5212b12ab539320f525273a611aa76",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ac11ac4ccce3c6417c8e081d02e28e8b08aaae41315636b18ee91005ee2f4d32",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "mass-recovery-and-bulk-comms",
+      "tree_sha256": "212d7940aa1a99af94abd620c940153649a534d4141bc84d83671a430097d1fa",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2664deacdc5b5d1672f1959a4f526998386c64ffa887cddef1fde855f5d7f6d3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "max-getting-started",
+      "tree_sha256": "0e1a4882fdeab030fa78c3202c7d44282af391c8d0e232c0df46901b0febbf00",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b65b465f4af30285793cda8fba459b07ba23a81d54532a46cdc0d9aa1c5ae285",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "maya-getting-started",
+      "tree_sha256": "c907e86208881b83dbf6bc8546911e645138ddcbe0fd33abce3c8a37331a3489",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "85f84ecd5386a887016bfb588412e7c005f893a524b136223ba1cea5ff77c1da",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "media-list-research",
+      "tree_sha256": "3018d752d4e32078668d5fa9b67010cbcee94bf55c41afaafa6d2c6f7269bc5b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d63223884c5d9d0fb4f5a383500fdf5a10485316354df7731d1c3dd9a2627d0b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "media-pitch-email",
+      "tree_sha256": "14c53851663d874ebc24aae2d2e8fd75aae6af286ea4a5c1fa31166c6679584c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ec79ffd705e7cc9bef3d9604bf7027902233f2a9d9ddc383401cc3db7d7ab4c9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "media-plan-measure-optimize",
+      "tree_sha256": "f0b25f4f64124687b295ebe4b8baa7be2d5e0030ec3be74de78077bf40aa62b6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "07ccdc19e2e37d1386dfccaed7a97d4e56e165e6186e26fa3102281ce49827d9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "meeting-follow-up-draft",
+      "tree_sha256": "74f7601f6ac3999a87c0626d3b51c5eca85054943fb80e0aad4574d974792fb9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5b5de935b7a4066bd1ab0cc34189c2ac7e7ade86aff5ed6bb765733feb12994e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "meeting-prep-brief",
+      "tree_sha256": "47aebafdf11f3ec08a4664cfb36a94c5835fafeef12afc5f224ca7c75a5ad9e5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6d2c3902cc6bbe2e59f5acfd67154c8499dfec00cc898ed50f0dc90eea46f20e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "member-benefits-and-claims",
+      "tree_sha256": "2c3bc9e199cae202e61a9cca772c323a8a8520c325609661b685b7d36a17077b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7d14e7c5803d87c98315baeb0312eb1689569f45ccd7d4646ec557e9187ae075",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "messaging-and-tone-matrix",
+      "tree_sha256": "910de74244ad35e107caef3965b14de5692453f4c143c0dbabe5820143f47554",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a78a9794e65c080c8a927b3bb9faf747f3fb45ad5c548cf0611fdb06a27efdd1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "metric-anomaly-detection",
+      "tree_sha256": "a3fb3013b5b3beff64625bad4fcad1eae9937a124cd26bfff279ea97c2ad7b0e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ddc74419d1057850fe12d99002f41bf2ee5dd954dfb67b9cf2d1b1eaa345b289",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "metric-definition-and-data-quality",
+      "tree_sha256": "4a68b55e884122240afc1f33bf393d6b65ea8cbc22313f188b4854508767a896",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "be29f8680ce99251d95eb13de537116e610cc05b404b8f6554c5aef04e3ba5d9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "metric-movement-analysis",
+      "tree_sha256": "451246c2094b84e555d966b05e25164d98dd23665383c43b7afbd2d5eb3ce915",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b696ef79713eb051e9e1fc282a91a4f587ddb2fc1184c6ad329aed7e790efe92",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "model-the-partnership-commercials",
+      "tree_sha256": "09d72c644938cd2fd9271b86b467018b98355b2af5a41673698109587bd19c45",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "632e70f24399882551e574a8d138d9ae67378a505d240a105fd28f9e0522d8c0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "mom-test",
+      "tree_sha256": "69c758f8936e6cc669270f7d83dd80253b08e76583c37f4ba94e0c0799a2e306",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "87c3c90f9e673a76b8ca81049b8fe30996b910a7a80140c3ed57a2ee922d2579",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "0aee2760180b31d75f0563bf3b9b41b5a3230a3a27e2ecf6c9f754d7d1d5e484",
+          "executable": false
+        },
+        {
+          "path": "references/avoiding-bad-data.md",
+          "sha256": "492fca0a7b8dcbaf957b6ebbb59c659fc61b056c9a3a8c4c12db45960b19b00f",
+          "executable": false
+        },
+        {
+          "path": "references/case-studies.md",
+          "sha256": "6dcf83432fe3200d35621fe71c94948d909a0ea7fbe01cf72bd51d16b4afc65b",
+          "executable": false
+        },
+        {
+          "path": "references/commitment-advancement.md",
+          "sha256": "5ccdc2f2a23ef277cb24db064a6707b8508199ae27e40421e831ad7579ffae8c",
+          "executable": false
+        },
+        {
+          "path": "references/finding-conversations.md",
+          "sha256": "c92135a7eee5ad8e8770eb7ad51442395ad53b1fb33ef267df83918c7b088912",
+          "executable": false
+        },
+        {
+          "path": "references/processing-learning.md",
+          "sha256": "2d1d764128cd088e49e87134d842703bf708dae04a3ef2a1ded19596cd70d901",
+          "executable": false
+        },
+        {
+          "path": "references/question-patterns.md",
+          "sha256": "fedda8d801d493c5f6df50a26124f1da748b1b92044282bbef5d64f209c68744",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "month-end-close-checklist",
+      "tree_sha256": "6d3918f2f732f67c5af9ed683794fe15d3361a0de26dde5354e5c96feb5180f0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "94bf32eb0c0b88b8abbfc604d5418bfcb323c94bed7a96c64ec177249183c575",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "monthly-investor-update",
+      "tree_sha256": "529de004c6de9d44a32ed7f63cd4b5a4c7d864194568510d0e7f1f7e6f8dcb75",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d44a4e29d1dc7d6e95a6f42d376f951c0312160e5cccf1e09b6b8917397b01d5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "monthly-profit-and-loss-summary",
+      "tree_sha256": "4c726c4f44c89aed920854092a882484e37cc5da6f2fe4e1d34b91ed2bed13bc",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a1383985283895304ab1e309c7024e2a0fed26bdc1de88041a1bbc6403acbc14",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "msa-playbook-review",
+      "tree_sha256": "2382835a2bd90ad3e210544c2dba461235992f9d36b8ca8806a729a479a95c02",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dbb0dccec3e79ab0bf65c9844bab703295bf685ff739d75a94013f9df1b9cda8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "multithread-and-stakeholder-maps",
+      "tree_sha256": "a8207ac73ed78601385233548a8786d1d82658d1d94598712341700050f83d5f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "494e223cc0ba0b0baf39baff4696d0f3ceeec46aabc62a4c5b94ad89a29a739f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "nda-playbook-review",
+      "tree_sha256": "a30f383e888661d3dace07b9d9522b76e610099ebcd34ad6844eb0818895364e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5e27d8e057673d20de4651a228d189ea8c3579c659ec3b321d0f014afbc7c0f1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "negotiation",
+      "tree_sha256": "01c2c4df9258f929f985c5df57f30f2c187adad511ddf3505414ddca835feb39",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "87c3c90f9e673a76b8ca81049b8fe30996b910a7a80140c3ed57a2ee922d2579",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "bc8fcf08ad418a6e4e02c26010202db45327c6e2b9e4c131cf0f2cd12d2de38c",
+          "executable": false
+        },
+        {
+          "path": "references/techniques.md",
+          "sha256": "f2f51aea33a31bf8fdd4e577d08cad0874a7c1cdaee2021100a237626181f184",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "new-hire-onboarding-plan",
+      "tree_sha256": "2bd934333dab034f3177cf363343d01dbba742698b9988b4cfb834093cc1c9c2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f6f5f0ec286343824338c502b8ad3a5c4b92919319bca78a828764b64f3bc5e0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "news-angle-and-key-messages",
+      "tree_sha256": "83a17879b860bee9a940b9938c549d3fd315238b1c7320a65d25a6abefbcd2e5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b007786ad8e7b9b0a0f02223fa017de05a788511d47f2c27f9ff91e821aafccf",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "next-step-and-handoff",
+      "tree_sha256": "366b9df62106935fe1984ed1046b97fcd0af7a4c5ba52b564b022dd5e860fba9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ff16bc6689a73c019f68e3a74ceef59f6721cd1a803c5f65a796d834be410d72",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "nurture-sequence-build-and-readout",
+      "tree_sha256": "6eda7d6c013e7c7338e157b251a2b9427c00c3e6d5975a49dfc1c8f9bd6d2018",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c655875ad16760f86a780535127a3e323e3147a262935e2232943bde5446e11c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "objection-and-negotiation",
+      "tree_sha256": "82959849e748ce9d256fcae9a9a638be76886f339fd37e7d6af6d61cf08db7e2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a863e426f0309dc79e74a4d9f4b936aacc9a7690571498d5fdd13d8731c6d046",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "obviously-awesome",
+      "tree_sha256": "b6b60fb288052953375c85232c7f00c9e689ca5d127a56aa1623abe3f77542b3",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "87c3c90f9e673a76b8ca81049b8fe30996b910a7a80140c3ed57a2ee922d2579",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "4a16d43a47f276eedf6116d792e3affccd645bf768bdc60fe974eefbd6566c29",
+          "executable": false
+        },
+        {
+          "path": "references/case-studies.md",
+          "sha256": "bd2bdbd85a817290768af707d89b751787f5332e4747375072d6747140b4a3d5",
+          "executable": false
+        },
+        {
+          "path": "references/competitive-alternatives.md",
+          "sha256": "28c61a953431d472b2b134b8096bcb3e3f971b6caeff4b5083f6d58f98ae43a5",
+          "executable": false
+        },
+        {
+          "path": "references/market-category.md",
+          "sha256": "ee3e78f685984a534417640aae6cc3d8704ba03bedf1d79316176928e797dc6f",
+          "executable": false
+        },
+        {
+          "path": "references/positioning-canvas.md",
+          "sha256": "d60a4c0e02f371d6f75348c027cfeed5cb3fd498a4e8b9949e395c780b8f7f4f",
+          "executable": false
+        },
+        {
+          "path": "references/target-customers.md",
+          "sha256": "9d78e65e4d5fb6f503cfcef780e0ce167422952b5b0890610c4447c544c2975a",
+          "executable": false
+        },
+        {
+          "path": "references/team-exercise.md",
+          "sha256": "69bb96a7bdcfbea668e14211f55f16eacadfb21a092927ed5e04d725c54c1549",
+          "executable": false
+        },
+        {
+          "path": "references/unique-attributes.md",
+          "sha256": "a322fee51821a2dc99f616a1b03bdb71d7eb8266465b4e3a50621fa7dafc5d66",
+          "executable": false
+        },
+        {
+          "path": "references/value-mapping.md",
+          "sha256": "16f8253b999ccedc20cac2d0790114339ec47fa6f84b9a3078b9a3387deea7e7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "offboarding-checklist",
+      "tree_sha256": "4779843b0fe92c9819c58612c6ead253a06217fa2fba487cf372d87b0d074ad5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b890b9e994f42cf8c0738786df98cd252cb138011140d24886f2e4d0b6a402e3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "on-page-seo-audit",
+      "tree_sha256": "6ea4716bff6ecf929c01578fc3ae608f33f0f583a32210487f94077a1d7a99bb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f5bc433b65443ed906d5e54f30e3a8f922dec8b8809f20622c506070e243acd1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "onboard-and-enable-partners",
+      "tree_sha256": "8aa7c92ca047cb13630b9127d5dd133e03abfd40d2870c41c16787d032c2710c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a47afdf4a9fc8ca35a3ff159f435ff69e8eaa84ebdca2a6b14052315eb6a2702",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "onboarding",
+      "tree_sha256": "72eccf24af1261e06d4caa623492edff368ccf27f0f073e9585a5df43764b9cd",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "f4dddfff4c4017c63d0299d5f94c04360eac6f256538f1be13d616aa5292df13",
+          "executable": false
+        },
+        {
+          "path": "references/activation-models.md",
+          "sha256": "a13e82d8e3ebf810a0f0fb51fe91bbe349d8175baee5a97a85934fa20f63a8f7",
+          "executable": false
+        },
+        {
+          "path": "references/experiments.md",
+          "sha256": "b4caad0b50ca9483a6a79846d0b24a7bab62850b45a3f2232d73f78629468932",
+          "executable": false
+        },
+        {
+          "path": "references/minimum-path-to-value.md",
+          "sha256": "c2b7c71b8436a1456888a26b9c8892c33cd9e1b1bf758f6fd7282c00f87dcdc3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "onboarding-and-adoption",
+      "tree_sha256": "661668de7ce6b131f2871cb2194a9efcdf688c9ae3a2d2a3a53e16ca3b6eb9a8",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "351ecbf957aea03230c11ee2f7e4aa3dc0b8ca68b4608c8b91d9cb16bd157c41",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "one-to-one-agenda",
+      "tree_sha256": "78bf21232698c472020acc853346b0797324fa9d168d24a82e56aab47c6e7921",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "839887586b1a955cebda5c422e851e8f4f81b9278d60a9b1d83e2c809a1a10cd",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "opportunity-brief",
+      "tree_sha256": "416b53ee82e24222b16bf8b59901e1ed406f16a57c9d50a8b89e886ae7a70dfb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "def6d69f0a8f59b9f28e1504673ecfb3e356cb14fbd94645f51d3cc870903a63",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "opportunity-sizing-and-business-case",
+      "tree_sha256": "9b5eb0070230ea25d4e37fc51623afb92e0ff8e60448f44d0a3e86e45ba3ec6e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "24ccee7b2318a46c034dc12c3d9a6ad0f3b75ee34377a042efcb318527a1ac80",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-automate-a-workflow",
+      "tree_sha256": "142a593141e165a455f960f1fd0983b0fe2b96f7aec8752d2708bbeb6a66f2a4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ec3eb49bae2f9daa57dfbecfdeca68ef21f5f1e64612580e09fc6ce2466b20af",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-capacity-and-headcount-plan",
+      "tree_sha256": "4ac4b698d2cdf124227947428a5f9efb6727d6d944f4eb704b29abbff0b46041",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "76310f4c3f5a257bbebd91e5c633950d20b135cd762edcf102ef4a2736455b59",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-controls-and-escalations",
+      "tree_sha256": "70e67bab6ee4b8d8ee562bc9191523bc178710a9d608085e6162d95acb2a3058",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fa5163433b85cd4226ceb5fc30cc9429f669c615ad512f47c4e9b50dd66bcecd",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-govern-a-program",
+      "tree_sha256": "30af5a076fc12703e8f14ea8f5999b0838f2f796d3def3c7c8b17d8d0fee7ccc",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "1b64bb6bcb33a9669f59f16c2e94228c5c1e35e5cb7485cbc1e951eba1adbef7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-map-and-improve-a-process",
+      "tree_sha256": "68bea2a20dd21e6a3f297e826935bdbb01f9eaf07a9922433e34998a85f81773",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "27fb5dd4392f217142fa320dea9313640cbc460bd4e1cf16cabd3fa55c85fcfb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-run-the-operating-rhythm",
+      "tree_sha256": "8408c4ffe11db8611e6b1425ea0fd087071c0a611baac917d2733034e98a6bcf",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4e03ba93009745e059ca3b49ff28a4ff72afcd32e37878df075d54c5303ee664",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-scorecard-and-kpis",
+      "tree_sha256": "6a75c53bc1b2231cd3ccec1a4778f26d8e4f5ffba108997b1291bd907b22e90e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a974ecdb1ea508a30b46d0477cbbe55e24e83d0d52ec8fed886e325a3ec5bc1d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-vendor-and-procurement",
+      "tree_sha256": "93734c977a000222502b224489836b0522e15bf3415d7d0d8d7cb87d8bb2ed9f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ad59a45d53bfc6f5001a795369804373113b04c394c28dec713f617b6ba98216",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ops-write-an-sop",
+      "tree_sha256": "3eb1ad1ae9135535ed1f64399823c9176e3b22bec34c984ede805a97ef20485d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "cdeddd04b939c0c79f6b5614cda1f7440b59446a1ea13d2234aaf050471df3db",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "orchestrate-multi-party-partner-bids",
+      "tree_sha256": "c9df902a4f2f7120d4b2bff8e2d708a8a6371ae8e09b2a8ad007c834ba2eac26",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4875c750eae56212642e8a2906fc60e9ced187e8a8cdb5196f39ec5f191315c7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "orders-returns-and-warranty",
+      "tree_sha256": "70ad9a78b1b5f9e164842d5723b230de6033d41ca64d6fc87bf0cbce00cd20ba",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e2afef350164aecf062f12c622ee8344ae40350aa632ffb8ad8e13c5567bdaeb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "outdated-dependency-review",
+      "tree_sha256": "ffb49fd571459b122ebcda233434a3003a0d198bc21d5f4470c9db1093cc96c4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "64d05a0bf205d43d7e450bd42be42b9fa149ef53f5c929d206aa5db4dc7ce4d6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "outreach-playbook",
+      "tree_sha256": "06982c3c524144e7aa65ae2ffecfbbdfdf998213fa746636c13dc5b3a1f55d50",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8abe90d3b9554fc84f3d870bb534c4142159bd98cb42417093019262f5992c22",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "own-the-alliance-pnl",
+      "tree_sha256": "b117790096c683b457a1062ad38470f0998306f3995238e6577eabc24e70acec",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0b38dd6a1496bae8b9f4dc6644bcfe0a69294b730ce7a3fb7d85e9e684ec02d3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "own-to-closure",
+      "tree_sha256": "fcf3939954d57b5a7a57c31c0ccf4e283fe7e74f0d1579ccf9aab1f39fbf15a6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f76fa8954bd4cc516217d34e5e0881bab501f6ebb832c1ddd78e8a71e8a79429",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "paid-ads-getting-started",
+      "tree_sha256": "7df3c27b00d7ad3ed8d68211f6cd1712f5bab4124d38258716f81a56ac26d573",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b0e9b0960372fe7b2ed2549af5e15c0bbbe100f334c1536e9daa38fb807d6d03",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "paid-performance-report",
+      "tree_sha256": "31c8fc368e482d8ab5a9b3ab7f99fa2330e576c446da3c508cc9037ab400314d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0f97f7faea1e531b5c6c5ba9ad0597922963bb909a0a4d141ce525e880ddd5ae",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "partner-and-channel-co-sell",
+      "tree_sha256": "9799fc950f6b0f99cb38a51648a642b0eb9da996e1470234635aa35a77c2dfab",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "10810c66c32aa159ebbc458ed3b626cba80121ad7426e5fda717f44a0a0cfd2d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "partner-first-touch-outreach",
+      "tree_sha256": "b0131988ff68083bf701779c859a405b5d912fef6e51efa75dd57f7fc27b61a7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bc01b8393907eb6e9b7f6401205ced27a38b2d69b13c4e7f9347fbfcdcefea2f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "passive-candidate-outreach",
+      "tree_sha256": "74ba2f895b9a9332e2bbb06fcbf58fbc7c19c7c52361a9cdf8c27253f1b2bd48",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "3e7eb2514c7fbf30815e67824c9b8bb0565454e9b091b88a636b6a455798571f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "people-ops-getting-started",
+      "tree_sha256": "518e1c3d516b44b3fcaf67a09e0741dcc537a76db02dae0767104ce4156dabf7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ae99f15787d626ee32ae2b1e93d46133a5100bbab95f3732ccf7b0bc69df8297",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "performance-review-prep",
+      "tree_sha256": "ea6695bb4e4d43a179cf7bb859059aa39bf3afc30e9e60e73a1be06b2eecc1f9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7dab6cc197a169e10368d8d24c05672c9fda79ed39275711966493d4a4af3e3b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "personal-data-map",
+      "tree_sha256": "106432623f6b996586c6022b193fc7a2df366746404bd8956b3b445770dc2ebe",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "50fc368f5251e654fbaf134e066ccab2700e8ce729cc817f41f910a4ac657b10",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pipeline-review-and-forecast",
+      "tree_sha256": "43980a450e3b4cb29a38397f601a714847f6fa4bc46bbfddbb642b461f32a41a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "86b1ba33b40c7cc7fd7aa8c2bc7c7fa0eb094f343ea73a3e58caf0f98c41a671",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pipeline-stage-aging-review",
+      "tree_sha256": "bba8316cb54a12a9a72ad5a3a2d37efe9bb24969bacc2dee7483bf40c5ea02d7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8a9a0c4bd33b1f8211e327f3396ab21c70d3a69a3d7d704d8f7dfc84efaaae8a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pipeline-stage-definitions",
+      "tree_sha256": "1ce2f35425b355fd6f90763c186794f932f4b45a878a010efd51362f52399470",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "937441503909cabd53be62bfac7be65c2f8f2971424a85313acc2e4380b5270a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pitch-deck-review",
+      "tree_sha256": "9f4d2798674846628592111454ded7b5a186e30006aaffb3db609a797bf1c81f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8f6f3d4426797dd2486631038b73cb59e415365bed1297ed8f983fad74319062",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "plan-the-multi-year-partnership",
+      "tree_sha256": "83146c2a9505b84290e964276c1a792bfef907459bbcb1d4841cce0549ccd77d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8e944c78c77aabb3a80abc11cc7dc9f4e72dea27138089f4df5d735713626014",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "policy-gap-review",
+      "tree_sha256": "e4644f1ea0c8e9d4b0bddb2d894350430d606df800fab116031d51c3434b1c71",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "275468ca700636a16d053125b17644327e20cb196fcedeb285cf3fcf88d445ec",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "positioning-and-messaging",
+      "tree_sha256": "65cc1ab60130ea49e1f45bb660e417804d204dac19d5406a0d4059919ec48e1f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5fb73f4f0b7b8945f0b36bfdd36628a4efcd8ac11c998923e29d024423d0b000",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "predictable-revenue",
+      "tree_sha256": "58babdf01905ab68147a4b8708b0cc813ba010468431694ee534a060bd065f42",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "87c3c90f9e673a76b8ca81049b8fe30996b910a7a80140c3ed57a2ee922d2579",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "02f20eb086c828443a5f4c72d41ec0bbe5e8d1e36e0932b3205f924bf0afa5a4",
+          "executable": false
+        },
+        {
+          "path": "references/case-studies.md",
+          "sha256": "bbc885afca11c23266e8f012efe7ab842b81badd0935f8b979f9a89ab81c326f",
+          "executable": false
+        },
+        {
+          "path": "references/cold-calling-2.md",
+          "sha256": "39232d1af56a000d5c793def5b0f3203b1e480dc000d345c8dbb67d208d2deec",
+          "executable": false
+        },
+        {
+          "path": "references/lead-types.md",
+          "sha256": "30bbbd18164e4fd5fe323adf2c218777ccd1c3823212ab8c42175a992462ed8c",
+          "executable": false
+        },
+        {
+          "path": "references/metrics.md",
+          "sha256": "a5f1183c9e284c86795c048d681d4027a69aae5b5f112d0bf75b0b98fee791dc",
+          "executable": false
+        },
+        {
+          "path": "references/pipeline-math.md",
+          "sha256": "2a5e31c6d3e2016406c54ffed9bae019ae319f1c30cdc1d3b75a48b8b4b3aab2",
+          "executable": false
+        },
+        {
+          "path": "references/qualification.md",
+          "sha256": "c202b8842f7ed1132d8ed21fb5fab502a71427108b3c4e7a8fa0988b6b513593",
+          "executable": false
+        },
+        {
+          "path": "references/roles.md",
+          "sha256": "097402e8f8a4f96a439a966b061c268d1de5115c1dbbf25f37773acaa459affb",
+          "executable": false
+        },
+        {
+          "path": "references/team-building.md",
+          "sha256": "5beed9de93da975722c0da7d685a1019803c557415ab617bca7ebb0785e780a6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "prep-the-partner-qbr",
+      "tree_sha256": "0a82e4bb915364e532441321accf3194ce31a630ac97bc8493607f348efbd099",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d54754761e3105c07b76246f5e47edd9e0bbdb3c92b8bc3699f69236622dad7d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "press-release-draft",
+      "tree_sha256": "6065d4e044d655f0913f6a313f22b989daa8adc8225e1ba55d9c07480c40504f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9cf18bb4fa55d21e363a9ff61423c88d2e37788ea264864f3bf098644ead8ec9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pricing",
+      "tree_sha256": "a4ceb488f25f74dee578a7473d5ac40a0e399329602dc976766a5373f1afbde4",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c086ea1a66dc200b672cec01acda8625f20a47afaf9846070407bdfa7a0db69d",
+          "executable": false
+        },
+        {
+          "path": "references/pricing-models.md",
+          "sha256": "2cdb900b74f56a796c0331725e73eff4ecd84f8021b42efbb0a5b4903d1d9b16",
+          "executable": false
+        },
+        {
+          "path": "references/pricing-page-teardown.md",
+          "sha256": "850b018a6b224bc9bd4149edb3f1cbae41991ba6ef1d9efb616dba9328790c4b",
+          "executable": false
+        },
+        {
+          "path": "references/research-methods.md",
+          "sha256": "b6aab09860dbab2f11d69cc9c179cc7f6e1a100ede28e5c49b59070a2caaeb15",
+          "executable": false
+        },
+        {
+          "path": "references/tier-structure.md",
+          "sha256": "b59910d37cceb74484f28b065963daa60f5c4fb1ffc36a0584d0f3cad11f3e30",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pricing-and-packaging",
+      "tree_sha256": "b20df47757830b85dd7c2b889a4d5779b88a20e1a5a3d599db84963ac03b679e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "be0cc4b1ceb7d41e3a63436209f0dc28d5b580c61b42e82ab7625b245e0b80bc",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pricing-and-terms-approval-brief",
+      "tree_sha256": "4cd2961d9fdc9e68fa5432d92d5f089da9eb68e65581d1aba9ec598416d4d5c4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a7b9be507d9f22e1b9f98f9f82768ab7127069e05b575c3fa2bc7b014706902f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "procurement-decision-memo",
+      "tree_sha256": "dad3923c4791b5dca4131b1ce67e01b4af1ce4a3ff67f6593fb160b1be600154",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "7f64c280d768490ffb75a13f36e49f39a5cc342d63d15ea1d94f847f7ef4a167",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "procurement-getting-started",
+      "tree_sha256": "5ef449b99db289f74d66b78db09e54ddc753e973c931b13b518e6f6d49e2de63",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "effd15cd2a6d3c073839e208c08a213bc007aa08839967c760ba22403aa9247b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-ai-feature-scoping-and-evals",
+      "tree_sha256": "135a08ac61d3ec1b2ab45ba11479bacf9514a06df5d4179bb890a61d9a7bd690",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "90a7a2d15592d55951781b488fe50ab9f60ec94826d4b889b23fab85f67c2bac",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-discovery-and-user-research",
+      "tree_sha256": "d3fab93576bcb04521a59cca4a7591ace14b50a9c37e1aa616da6b4b52fe2cd3",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "38bddc96ba303b00b5c08999ffe6acdb7481e69f5d27317e573422016fcca707",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-exec-briefing",
+      "tree_sha256": "ddf624169764fe7b12b7124e36d7713742e1bdf3f1d180de06dd1635d63fae8e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dd555b3274196cf7131846e2c9d822f674dc7dd271e40c1abbef969eb155f512",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-experiment-design",
+      "tree_sha256": "39bc009b4ba497618af9609bd6260702a3ade73d6186d06aa36ed054faa4d8e0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b3c9022c8711e002305df529b77647a29a37f6894e0a1b67e0c8f97b77528a3f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-getting-started",
+      "tree_sha256": "9c13ccc17e679738843c79968bfdd77e3be1a3aeb577b23ba6f3062e3a2399ee",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2606aec5a0ce457f1a92bdfbe93673606523cb49ff6957b534e9e7649df789eb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-launch-plan",
+      "tree_sha256": "fb9fb3196c61103e46ce89dea5b851af52d9ff8e8bcbe0130ad045b9ee590a64",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "39cfb9baad8a10b28ab546883de3427968c0261e7226f972b088e8da702c6574",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-market-and-competitor-read",
+      "tree_sha256": "7fd8b0b0e7eeef282bd87a28a5e87afa662911a1a1ba27858475817d11240407",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a0e82ecb50b4a2d6af01f1a02dfab9a0bd782cc950e76104788ae84d37b2cfd0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-metrics-and-instrumentation",
+      "tree_sha256": "8bcfea261f265c76b25d81e0488a9f6983d02d87eac93f6c55d9af968012f758",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c64589a35ff44536ebc1ce8ee64002e144d09bc4fb75b1ed100d47c01745f530",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-prd-and-acceptance-criteria",
+      "tree_sha256": "d675bab5755037f14041124fb35188b45b66ca024abab9e676eb67618fc7108a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "308f310fb409c26b47fb99280576a6a10b68147ee1e302f15150c86fef86481c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-requirements-draft",
+      "tree_sha256": "cb813604fa176e4bf5162256f91936ef737af74061ddad211e14966a8991a012",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2aaee06dd94686e0f10cd4d338a2a0b78f0fbf52b513c7f37ab9b0f3d9485d52",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-roadmap-and-prioritization",
+      "tree_sha256": "fa61ba509ad42c4f9f31c2eca4fed64f39a2de92ec81b870e3626f94e6ad0ab7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e25e5b278af0158baefbaf2d68b7ca940e3536dd12b2519e6f51146c478bd1ba",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-strategy-and-bets",
+      "tree_sha256": "30eb46acbfc05f5c6c239c726f37d18bd52bcc12f4250c402ad00b1186e7b74e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a69eaeaf06542e5e08d8847fcd12d8f88f2933eff76ef6ee07dd3fc3b1b4ff8f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "proposal-draft",
+      "tree_sha256": "249f26a4a027f7cb2673d7b6c29da73d88b8f0cda7f38597fbc8115bce089999",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d08bdd078a90a03aae422b905eac34b736f72ac784cc7792f81aa2af79f956aa",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "proposal-quality-check",
+      "tree_sha256": "d580ea0c1ac49a8768712f2977522f7d64e0ea7a47fcdec304066798fc427fdb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "10e5aebaa48293daf6c023c98b6eff573c0c19f1268d972824060edc707d6b96",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "prospecting",
+      "tree_sha256": "e9b608d5d9e85f57c498d4bed08973c86ca5c6876703117b90f964bf2cfd4502",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a0f9e16c9d6fc202f411ca3588567034659e4fe6234f9b068e55dbcd2061e3ff",
+          "executable": false
+        },
+        {
+          "path": "references/b2b-prospecting.md",
+          "sha256": "abb7e697bc357856a585bcb7896b75895be06c4629b33558f67e418f6abc45ca",
+          "executable": false
+        },
+        {
+          "path": "references/compliance.md",
+          "sha256": "e39f980e026f28767d66addd9c28014b3968667e11d776d0480df4d569c6e4b3",
+          "executable": false
+        },
+        {
+          "path": "references/data-sources.md",
+          "sha256": "d739f4ba7f7d4b7c2d82b9871e5e8fe289a726fbac150afdccbe070d2f6147b0",
+          "executable": false
+        },
+        {
+          "path": "references/demand-signals.md",
+          "sha256": "0ddd5e309499ca28d50505fbf277f36ec339034bbbfdfd731b02dcb5dc45d8f7",
+          "executable": false
+        },
+        {
+          "path": "references/local-prospecting.md",
+          "sha256": "1dd71471a3413d5b0a9d230b1e42ca95469c617285bf7e2abdfa463428367fc3",
+          "executable": false
+        },
+        {
+          "path": "references/saas-prospecting.md",
+          "sha256": "24a42d2b770a9727d5e88ca01352c80f350822304855818a468f72a3df8a1f3d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "public-relations",
+      "tree_sha256": "26822aef34c3e207f7c8f833415652620d6a875eb38b158ae9729595ae184eeb",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c4cfbca4a77e6810f36d6c69fea597fc415bb8a92f67bb218c08f765cdc549ca",
+          "executable": false
+        },
+        {
+          "path": "references/journalist-pitching.md",
+          "sha256": "ba0b853771cbf6eb29540694b0dee72a393cd79b46d7fd2d9b70c8bbcf85c663",
+          "executable": false
+        },
+        {
+          "path": "references/media-outlets.md",
+          "sha256": "49c727db10a86d0d227275b970a131d677961ef7cf16e0fc8ced588688133899",
+          "executable": false
+        },
+        {
+          "path": "references/newsjacking.md",
+          "sha256": "257b85f668db57b3a0294409920538f85a56c3a0414fb1e5841e71d1234a9892",
+          "executable": false
+        },
+        {
+          "path": "references/podcast-guest-prep.md",
+          "sha256": "cd6dba9a9961a74777a0c7e7df1e7132264aa7e04f93375f092fb826ec720b19",
+          "executable": false
+        },
+        {
+          "path": "references/press-platforms.md",
+          "sha256": "e999335222a30df0954e324e6d35ea269c5d9228c609c0f33bc1d2bb528fb244",
+          "executable": false
+        },
+        {
+          "path": "references/story-angles.md",
+          "sha256": "2fc3597707d8eab35dc021e2e0e79af82b56283cb8bc024011e78b995e56db07",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "pull-request-review",
+      "tree_sha256": "e1256af243790d7e7a5e75dec1652bb9990322ec99659f5a7786f1b725d44929",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c85bd603ed3dc9c38a39f409c8bd7eb76766d7d9b75bd246c24cd3378c6a7713",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "quality-csat-and-coaching",
+      "tree_sha256": "f480a2e62bf92584e8e554cd63164195238a377f960b5afbe7887ebe45db9de5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f669e97c76bc00be2271fc25c31bea2477f49e57392b307a7ffb8e6984314942",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "quarterback-the-deal-team",
+      "tree_sha256": "d82496cdd1c8d9c4ca533936cfa8e19d74fbaa9b3944aabd029c1445e19ef626",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bed095bcb8a5fbb8ec9661207e46e0d31b52fa5c67894a1b6b721344c096bf1a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "recruiting-getting-started",
+      "tree_sha256": "eac6bb0497b159eae032593fed380e3515dfda07d87e5b1e34a67f162ae9c03e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b24e28327ff6dc3143874d629398715771b011f8783264930a5fac9651d56ca8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "refund-and-exception-brief",
+      "tree_sha256": "1c2475eb98dc4b87b36afc573fc54517f3f1f2d7f6b85915cfa1c4e7b8882784",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4b604b4d1f20a2a400e321cbc8a798310ea41bcc9e0648fe3b328c0052918bca",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "regional-category-gtm-strategy",
+      "tree_sha256": "29d63df0fadc70835170b4c8341fd4fcdf7a2aba0456432625bc117bf4a7e5a5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "519fde93a5783281a21f4620a4d2ebca741181d4c9f51f26852c0cf50ca3b5cc",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "regression-risk-review",
+      "tree_sha256": "942478ec02fbfb1b33120ca036d20bbcf779d454bea760177ce30564bcccc9d8",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "3f2ee07440f0b670d23cb666bfca77fc5c6dbbe2753e64b19ead95f280a0667d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "regulated-access-and-clinical-selling",
+      "tree_sha256": "99684add32db99902d566dc46d21ee8df43c36ee9b0e17000db942dec5d4f531",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "83e34f15605040c1772eba2c2a07ff5a2325d9e9373306b86775279e0feaefe4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "release-notes-draft",
+      "tree_sha256": "f6817ab455d015f0bbfa34e03ba41b8cb1ee353e63dcd38a333517667d561f59",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6c32821e99c29d99b60e8de65af08c2f5586b750f6393add6be8098218a5ca20",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "release-readiness-checklist",
+      "tree_sha256": "d2ad5bf02438f6d854927e37540f14f479e6a75d8c98bd7b93ac2a6433b5032d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fb36bc67f93bdc84cd043b156e755cb8674d30183c1e07b3ed2f4c7c0fba3d97",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "renewal-expansion-and-qbr",
+      "tree_sha256": "bec3c5083035de1e9594d5080a2b46505848c6898b350e6ccac33e935830f975",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b5350a36937fa98ecf4073f1cee61aac3b1a66621e11c60a9907b92a57b742c3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "renewal-negotiation-brief",
+      "tree_sha256": "0a4edbe9a0624d7fd2d9b9e7ca0c2ac5b4e8fd6fb6c25572c0246a748e1f6a61",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "76b72e32694f32860576d02d900e4ae550dc23a0f70eea8089f6f588cb602555",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "renewal-readiness-review",
+      "tree_sha256": "381c87fc4ddd9687eabb59a8310af6f7dcc561917a25f68125fe63d90ff4dfe8",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a9a55631b09933153b0ee9e6274844ddebc99e6078397d2a9d16c9aebd7cec09",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "renewal-touchpoint-draft",
+      "tree_sha256": "7bd1b77cf9f841e0d70fa9f972a63d8d3db1e498cf44e0406f66c0f9347aa4ee",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "eb954ac650a6742882078e70ac5ea12231a9f974eaa3d84377a9da0fc93a4602",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "reply-draft-in-your-voice",
+      "tree_sha256": "cd4bef177484b5ad3703b3737d192666e71dfc5d8bac51772244e9ea5418f6b2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e0d2160ff6bebac53411efae9920a9094194602ec18797ed2f0915f248ec4aeb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "research-an-account",
+      "tree_sha256": "858c6675f785da3de23b56653ceed65bc872ee23bcba29fd63dc09c934d8660d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0a5d0666d791bbd7e87a0c646885c304b816a5cc0f0adb617ce9cbff4fe9cad4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "resume-screening",
+      "tree_sha256": "be7c73397d83cf566b253b97c61c3e5d78cc2409a17f2b361ecb588a353837f9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "502298074eb751472fbdb9995a6f117d20c79d8af5e99cdc3d23de7861ba6b31",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "retail-jbp-trade-and-sellout",
+      "tree_sha256": "bd629c45cf20dc360d8d284a2ab6528583ff415b0e03c793afca94912b086ba7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "47f03e7dca4a8d988b89c3e7a83802acfc836a2a31f238bef408da6078d39ec6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "revops-getting-started",
+      "tree_sha256": "6630b7b66e6a46fb70c3c1b57b6f5468319d265917b89f3cc738a424e171f2b7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bd2af6cbe2b0dc68276d2a5d63ccbdc1169842f64d44456609ed8352511625be",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "rfp-and-competitive-bid-response",
+      "tree_sha256": "6d868740e2dce9d8de58cf0fcbc3452db82675461cf43448a32f363e3e8377a2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f625589c9bb006d9381f485e054119bb7c02a14c00c3487eacf328f23f72ab8f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "roadmap-prioritisation",
+      "tree_sha256": "78e6bc0b4144d341b8b6e16d2d8db360ba321918f587c631db5f1fdbb29b2aeb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b850c0aae7a33c6c95a16e9fb3575623ecaa5e18850c026a63faecb7f140bd0a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "robin-getting-started",
+      "tree_sha256": "d6f0780ca935eab3274c192e9291a6e3b4453ae759b69c1f5a3eb135c23ff070",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "209028e21a6776c2dd322c20d951067cae785c17571b233f2a9b42f7a3254ac5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "role-intake-and-job-description",
+      "tree_sha256": "2c21c266ff3322aa4d14f80ad1be82839a7b6b2f0892be5bb409653610cd4034",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5dd6f90975cc56ff54ec663de0a3ec8d7dce484e83c398e107e842f90dc66816",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "role-intake-and-scorecard",
+      "tree_sha256": "89efff7d50ed091201ea883ce4c7df3d8edc86b56d11eb4b2b592b4df21e510e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "67a7c3d86beb6b57a3940d7ea2728a6c70ab66037a6d450307e8cee466492499",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-brand-oem-and-supply-partnerships",
+      "tree_sha256": "db57758bd14afbdd724d314b949a642101f1b5416c232cc3b521d3fc381af5ff",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c5763fe361847c7bd305635f6377b0fcea6ab4f0eb3338bfeb1151ee5a09d2c4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-creator-and-affiliate-partner-programs",
+      "tree_sha256": "9cd993bfbee37b6668b46edecea76d1936b8b8c99432f7970c94ff8e43230f77",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e8fc6993231c7c36aed5b043df264a7364f3e37482fa05e303db36b80e9431f2",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-global-partner-executive-councils",
+      "tree_sha256": "c1befdbe6b5585bd9c42ac12b7a97693eea61312775a6e7653a2ed2521c2ec0d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c110de24088c8c23f6eb83d8c0a31c73d7dd4d6f7b430c5a0fa51c6d2d3ebbe8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-hyperscaler-marketplace-co-sell",
+      "tree_sha256": "8dd46abacdd4b31861da049454e2994419b3505d9a7aee995a51ad1c0030d998",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "785f33de30d755286102b85e61f26dc34d51eb3904c49c04981f0c9abe9d5c59",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-partner-strategy-and-operations",
+      "tree_sha256": "9b73508e9e0806d1a918a6cfa4107fcfdf001161ce3e7d6e8807b507e198b195",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fd6f3f4901e252b724d66b53b90f3f469864e32b212af33e4073937a22435e15",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-regulated-partnership-motions",
+      "tree_sha256": "efc9c82b2a9389f5509cb4d64c5f37d2fb1436e6bc06c3791ff5c6458a444b48",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "43cca91367fce51a66019a91b50d91ce39ffd02834c36bae2d4b9880819fbc3f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-the-partner-co-sell-cadence",
+      "tree_sha256": "8315e512c06969d139e4b08959ed2133174450092e2695d90c0cf408e4e0fbd5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "df8a162797f7377c0f2bdf86a92e6acd8b4e471bb5d9a5a947b1bfceb5617109",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "run-the-partner-marketing-engine",
+      "tree_sha256": "272c979cf4370c53d6805376b3c288892453527eadd5bf435b8ded173074ebdc",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5c5c3dd8642613c6ad062b66fa2d3fc587318411efe7f105f99dca1059d1d246",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "saas-gtm-finance",
+      "tree_sha256": "fce4b1de611002e3e10d536f878ad0e1a1d74517b6657e1a0112cccec58b4be3",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dc962d10e5b4907b39bbc92fb96151e8b7eaf31b4c3eab29d74e55ab1ff5b1bc",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-enablement",
+      "tree_sha256": "c791ed05dae9fa9c35447e5d6ef26f03be21426f0daec8a341c1aaa2c52b3c73",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "320173716f406b2ddc8c44142b252073c957d87419734818ed6771d72ab7790d",
+          "executable": false
+        },
+        {
+          "path": "references/deck-frameworks.md",
+          "sha256": "265eea6c1b358d10f2dd22fd987789a9d115c14d30bf77a9086734ac60659336",
+          "executable": false
+        },
+        {
+          "path": "references/demo-scripts.md",
+          "sha256": "505616ebf73d30fe84a844540727ab8f3aeae29ebcda8c8ace28a18ada003da3",
+          "executable": false
+        },
+        {
+          "path": "references/objection-library.md",
+          "sha256": "e0cdfeffc41afbdbe2c014bcd9b3c024318eac9bd23159e871ec796aba29e0b2",
+          "executable": false
+        },
+        {
+          "path": "references/one-pager-templates.md",
+          "sha256": "2197326faff4ede03fb40e332e9c80a4e084d8efd48c74df8720d70817ac5ded",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-forecast-rollup",
+      "tree_sha256": "7968a4b8b2eb95de6446f61fbf011e60904c8f0264d0813d8b4e49740ad2a832",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a16f63a71c2a9d58564d0a9b638c2b8b7eac298d27a8bbf02d34fd45914e68ee",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-marketing-alignment-and-sla",
+      "tree_sha256": "32103f11d456c6bfbf11f60275bb06071e13ed93aaf22fc9daab39fe0e9cce28",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d4e423b9b11dc2ce0086262d30c5cbf25fc42e08b002f2dc6e5f7caa91d0a69b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-ops-coverage-and-quota",
+      "tree_sha256": "46e06e52d320181fcf1a35fff83e6d184bad7f5e8ea3133f484419aec6f56efc",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "edc4fb0f6dfdb8bf9b58cc2a15059d57fff2a903983da1ac0f37f743feafd551",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-team-leadership",
+      "tree_sha256": "31ffd4d536c42b5d8c1a8ab3852f38d7750f7a765ff15b71a7775a3032c358aa",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a077565e808362cdf74332c520ec8218925db92544349998d22bdc6484c3cdf4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "scale-the-partner-channel",
+      "tree_sha256": "f5b5dec240474cf932c5abdc3ea9c8c3065cdf4684b4516a4531276b12fea60e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "61dd71d26b49e96978a84997e0644602c3174d1c01133e3bbf2bf4334fcae4c4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "scope-the-tech-partnership",
+      "tree_sha256": "31f3cf3be34402a49057e644149cd7b899e8bb18ae5c3f153664cbca12ce3777",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0ed6e868072aaccf3ca19629bbda9c0a9b26eac31d6a9d70eaa2d4279687ffc9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "security-questionnaire-answers",
+      "tree_sha256": "d4ec35060a412fbbfe0e0ffa78f1b199d16a56d0b71b7c472a4c448472cabbf2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "284d79eeedb9c1d7dfd247c8dd25877bf43e1e04d72ba7f2e790cbd1dee4474a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sensitive-data-safe-handling",
+      "tree_sha256": "587487ed6a157a41a40cca2a162ae7237164a86e843791a11fe3946662a8177d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "36d1d17e9baf64f0a97aef4da8c82118c8f28ab35ac2ce695b87930a88797337",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "seo-content-brief",
+      "tree_sha256": "96af4c08ad4e144b6dd843492031e5b3b4c0c24e45e68483477b2f2c449a94ab",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d856585428c51c88f69b8c55e74c57983979701f4900beb9c748dd5b4a28bd27",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "service-recovery-and-goodwill",
+      "tree_sha256": "a78383672c70457bdf85e2c81baa452787da708c803688e102d71f67cbc406b6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8044084b0db48f7d893ab0f27bfa68bae6956c025c28aba4cdd7f15133fe57d5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "set-board-level-alliance-strategy",
+      "tree_sha256": "367ae9062bf4d2be298ec741517e1f2bb1542ae1a4bbb5a09097ae75cf8be1f7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9053f8fc263aa18ab7fb493d121724e26be668652356dcfef4a0c6a2985c4813",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "showroom-fi-and-internet-bdc",
+      "tree_sha256": "df580d8da0196db073868073258a32271b5ff14780e3bb92c378dd16b820343e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6bfd13e7c1673aa36e0a9f679d08650cce86dc30d7fbbb84bfd71687795c2155",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "signature-to-launch-and-account-ops",
+      "tree_sha256": "24f3c8bf0fb0013979b9af7de7087b9ca35bfcd389291bacb45a3b673373a502",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0b2e69df33e7a48772b87379069b015fabd22a5a87da5fe2658c1a6fa78ff6c0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "social",
+      "tree_sha256": "87f2a462c0b9291c238460d03c6e823cfcf559e326d69b3f34cc0320cd0ef77a",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "cc2a3e1c9dd6af94bb0686e569efaebf633554c78ac4670506526e45bd680a3d",
+          "executable": false
+        },
+        {
+          "path": "references/carousel-frameworks.md",
+          "sha256": "e7d56048a38de90f1f26f3cac8880f3d263a8bdd5fc0c9460d50aef135654768",
+          "executable": false
+        },
+        {
+          "path": "references/listening-sources-template.md",
+          "sha256": "c68bc6f57b0a48c432b1ce72c9324d41a04d0e7784d0bab91afb4a6065a43e38",
+          "executable": false
+        },
+        {
+          "path": "references/listening.md",
+          "sha256": "a1049663d7ed37864bcd58e15ae5e8f03c8edcaca37d8de4f7e38896d94fbf93",
+          "executable": false
+        },
+        {
+          "path": "references/platform-limits.md",
+          "sha256": "6ecc6b40ff82b95c48906341f7d3c58337671d4d94f624c858764f1ed5a77c3c",
+          "executable": false
+        },
+        {
+          "path": "references/platforms.md",
+          "sha256": "3c4e1b15717a3bcd4ed0cf29dc167dac28aa88bbf01723fde53815122396090f",
+          "executable": false
+        },
+        {
+          "path": "references/post-templates.md",
+          "sha256": "febd0aca9557e6575188379f012b019b36839926bdf7924661f125f900b24d0f",
+          "executable": false
+        },
+        {
+          "path": "references/reverse-engineering.md",
+          "sha256": "c27bef59d463b3b11331c1770f4a23e9e6bbce7d7c8db1e7f7f4f14ba206243f",
+          "executable": false
+        },
+        {
+          "path": "references/short-form-video.md",
+          "sha256": "38e7de4049f39d116b815a8d07f5e45777501e9f506e3a5fe005c5d204d32ee7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "social-and-community-support",
+      "tree_sha256": "aa896aab2d88ed600afed1ebe47b1e8cb5ac7a2346803181b5362266b315ac37",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "39c3babc101ed4c135d565ac7af1f08850265d6ef95b5d39185ba50848cf6f86",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sofia-getting-started",
+      "tree_sha256": "89ee5f9b3547ced3194b8b139f30a6c7f8641528f369b6137bbb52423fd0654e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d907d41827ee1410ee9de4e9a61557ba0de83db2e662e99d9c7ee91a64d53234",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "source-and-qualify-partners",
+      "tree_sha256": "97c7aef152c0b96b98c616091843c2e3c62afffb0131e6e876d4ded2dfb21266",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "49174065345feee5de148b249fe8828604d25c2eb81bd61ede3e0d79a44af363",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "source-partners-via-investor-ecosystems",
+      "tree_sha256": "fc097c9c9806bb6e9248122d66940ce39c7e4943b4bed9e77083945f8bba43a2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "54d8c64fed894064dfd1c7633c830825a64cf5699049acb249548ab9aa6f720f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "spend-anomaly-review",
+      "tree_sha256": "afe90d5a4a60a8defde64bddb8655901adef7251734d5c27ce3208009a26aec7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5aabcc3a9c98a1206ebb303f0587d71903b93335132b437cc5fd9f4fdb649727",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "spokesperson-briefing",
+      "tree_sha256": "932c7024847c56cade5b06b640a047814f37f3685cd4234c736a2dcb0c8d9980",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "67f68fe8eec5ab2587bd416b0941e3f0f2d037a04cf8954bba7e2dc3d5e83926",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "statement-of-work-draft",
+      "tree_sha256": "7686bac10796dba46553d230a0844cedf7e3714bc7b31d51c8c39fd1e36cf0b5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "73d2a25edb1f0d0d9d88b43a94f72c85616cac09bd193dad0276731fe638f930",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "statement-reconciliation",
+      "tree_sha256": "dedf887921684b134c925a621d9b09caa5103838313c9dc07e5cf3b5473dca27",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dbeedc94a4660462de91870b607a12b2acfbf5579d5b460f430acdc82d6475cc",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "storybrand-messaging",
+      "tree_sha256": "50f442009d91da35b335b3885c6a8ce01aecc8eba59591b3cb804a1010935431",
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "87c3c90f9e673a76b8ca81049b8fe30996b910a7a80140c3ed57a2ee922d2579",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "1deac67ed77029c246c586a1dc36c4b2259269fe389360329ca7c9df2750b9b3",
+          "executable": false
+        },
+        {
+          "path": "references/brand-script.md",
+          "sha256": "0ea0a36b9939de5b0c3038b0bef8ff2f7d72f0bbab30a607ae91cf4554f05865",
+          "executable": false
+        },
+        {
+          "path": "references/email-sequences.md",
+          "sha256": "5388fc29f29847db97ebe556df38193457bbe7b33d2263006e532df1d4c16662",
+          "executable": false
+        },
+        {
+          "path": "references/multi-channel-consistency.md",
+          "sha256": "74ec25080e726bb9338b3a188726ba7bffbb3f616fb2f8186a518b417da07dc3",
+          "executable": false
+        },
+        {
+          "path": "references/one-liners.md",
+          "sha256": "3c52ccda8cbac62747016f394206a4ff5f9d928ca31ae93d8dbb24b5b643af2d",
+          "executable": false
+        },
+        {
+          "path": "references/sales-conversations.md",
+          "sha256": "5250588770737f0a6d9b8228bece51b73ccb6be7618ab4866d38bc35f0bd9bb9",
+          "executable": false
+        },
+        {
+          "path": "references/website-wireframe.md",
+          "sha256": "3a3d1a0a28f316ff210f6e23be0a17d9799dbf3389d2e580cafe5f42d3947d0b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "structure-the-partner-agreement",
+      "tree_sha256": "c63e467d8a3989658c361b18ce84e2e8e4e99268f4deb7a8cede47905dcd3386",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bc6828371f62c1d9be8b4aa43793ebcf1d6fc457e29b2af92918102d08983462",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "subprocessor-register",
+      "tree_sha256": "4801a40ca6091220865ee9ac64d21d48bcb099e0dced9245c77250ead25d3340",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "be6f879258222cad52de4c94cdf6df5b519fb036c12718556093951d4bce6f52",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "support-getting-started",
+      "tree_sha256": "a5658f0219a91033c64d82d27c6bef3165d40594d705e1b601f99e2f7d87774d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8a7fe2e5adf550e8591820f6d71cfddbe4dd2908c896a75e18b7e17fb6fb14a4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "support-macro-library",
+      "tree_sha256": "077fab03a7090c2321400e397b37720b604a6bcd9e9c28a0bb7451787bfc36e5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6e90b6c89c543f33edb34857d0e727105390a04d5ff5a20f28c30c2128fa97c4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "support-ops-improvement-program",
+      "tree_sha256": "c1801e2379c86fc7b3baf0a340abcf400604d885554791b63015e85a7c062422",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0b97fad4549b7c60b8222be2fe48eaa2f9ded71f21b0aee2dd78734873c5dece",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "support-reply-draft",
+      "tree_sha256": "0366f873b27f9d49bde7b882c0c89a4e1b81e499425a7ec8f8579ace4cce44f7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f6525bbb9df8b2647721d65e5aaba7f155e9d49cc4d5b68ba8906cbd240d5b02",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "technical-diagnostics-with-tools",
+      "tree_sha256": "5c550c6d7133672491d8877c7d701dc9fdc790330bf3011c6e8d866627273730",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "1f01a87003abce7377b3df0ad0797de2e0df2d83e8987cc37633bcaebaa879f0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "territory-and-account-planning",
+      "tree_sha256": "d170abde5c218747f9cf66e175d6fe029ce269be5add0c2b48ff7c49232c0cb4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2f6f84bb8fdb98fa60e2ae9a05f8130dcc0c765e77368fa6a3959c81d54bdce5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "test-plan-draft",
+      "tree_sha256": "093bfed72744130348b68ad91c9c434eacf68524df02aa7d18176bf038c04ff1",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a7f07a10fe4d8ad011521d681d4dbc55c4204e66ce9dc37e53af71975d9341fb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "ticket-triage",
+      "tree_sha256": "5e8a0f126e9d5e42114b16c609176f1560c4e478a625983e3a9a936e06df7bf0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "22d699973274718b9aaba111e0356c64d652e32683b1b31a2ad6b4ddfd223a47",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "track-partner-pipeline",
+      "tree_sha256": "e2399aa87c4b56e1ca8ac83134e5d4a81c4b23f8a405452fbbb8a73fcd75b31a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "72da2c506d9358ff0c540994a10633464ab9cf807f7e6d576e89af1cb77073a5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "travel-disruption-and-rebooking",
+      "tree_sha256": "ffc6da06d4d9b5d8b3e61161ce610e1b49795cc8e3934821aaee394124beb570",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "91ff696b926ffbe880b74f72d58c9108080c799358fb30fb0dc587c19312d00f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "travel-plan",
+      "tree_sha256": "1b1de2cacc3855b07b6a41df7cb479ae3b67ef9020f6b8da7cad6fa8d06d679d",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4e4e8630c7ced887ee25ba0801904b876268b546af34662c873e058ad5776ca0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "triage-and-prioritize",
+      "tree_sha256": "3835aeddf92c1a0f7f7af04f53fc77c14e546a7e9ca3ac129eeb007ab8376901",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "23f73c8b5549840b2dfbb86b1f2a46c58a5cbf03ccac631dbfd1086598625041",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "troubleshoot-and-resolve",
+      "tree_sha256": "683fdd2c2b49d286edaa1b0d318b496deff58e94862a9900541c2c31476497a4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "294b55d0517038068aae5a79d24d660bec6363bb2b05b8a47357f1b03b6e2853",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "trust-and-safety-escalations",
+      "tree_sha256": "79faa81ca8956bb62b31b6ea637fdbd6d1d8dcd17efeba12bf0bac3c0ef1c362",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "cc3e39fc66c007af6b62373144426ff58e4e2742b7849ba156584fc9343d5efa",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "unit-economics-and-roi",
+      "tree_sha256": "b8bd9975f07305605bde89645caab08b64db8133ff84e46ee441524347c7a37a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ece25c92ecbc1722b968f1a1ffb3fa638f30ad3f8a9396e1894c6c94ad35c0aa",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "upsell-and-retention-offers",
+      "tree_sha256": "d9061d7f565c1a104635f2845dc919ef31f88761c12d30c49b8e79b6b13a7a7e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9564f2ad0deaecee6b0802214b30526f4c7b028e06a240be5ac67a78241c42ce",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "user-interview-guide",
+      "tree_sha256": "209798dde4be1128525f03a239f2f68b504ef6375acceb0a6aab8da74c9fbbcd",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "215697b8b5da6e68fbe62d388740343cfd019c214572c415d5d11f2bb0bc79bf",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "variance-and-flux-analysis",
+      "tree_sha256": "5b04010cc56123e5de8ec29a576f6317b48d220be5658a06cb96f6cf63d58f33",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4613ed587fbd259102324d3b045e9b40adfd14a5afa7ae07179fdfcb47dc8aac",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vendor-due-diligence",
+      "tree_sha256": "de72e416e0d18c2a97fe9dc1f235f5af6ae08a9f3a2aeacc12c373ff080cd7df",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e5adcfef2f4537875ccb7148fc5cf541aee7f91d3ba250ded3c88d14cfff00fe",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vendor-performance-review",
+      "tree_sha256": "d8d4eacca97cc832c9c7e69365aa4a680b30c3019ae4c16b35441c37b4aecfa0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "51955aa1b299024538b703c2ceb493b2e39e0a21608934437396e362e77956d8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vendor-quote-comparison",
+      "tree_sha256": "ed9c80816ed0b364a4c898e8db2d42d21511d06c2091a87bfbe0b1162c302cfb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f609a8684c13e8767b8be9b4433f0822e09f02d43cbd85311084e7e3fe94f652",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vendor-requirements-brief",
+      "tree_sha256": "4de7fde9b616b5a9f14b0225139600767d66ccb2e4a80d11d26f488dd92a973b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f963a400a54ad22c5b185cc3c1eef05903c8a4c7196dabecf50f3b248c9e3464",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vertical-industry-plays",
+      "tree_sha256": "87ada2f35bc6c1c8801d89de7862ee56fa1331ceb75d45b8410b1547cf26db45",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "3ce631ecd023a2fa03adc38204ea19b7650c6e2a0089a4dee4218d9580dbcb4e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vip-and-white-glove-care",
+      "tree_sha256": "29ae7e87bce1d5d64816ea4446d8e59aba7152c883dc7724832609ecfdb2381f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8eaa45012d5565fd3ff9febff53b576082a80d3db291e6850717bec824dc218e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "voice-and-phone-support",
+      "tree_sha256": "1c598e6271fb1ce60b4d451978ff1b568abba1cce5dbf92eb3744aa8b7b80b11",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "420d95ae0f15415a57c1c40255b8e14ae43ef0ece098d13cd83926259eb922f7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "voice-of-customer-and-feedback",
+      "tree_sha256": "8cfbb9e7e2f68748e34d6fe8cb748bd6b894f093fac452c5558e892c90d86ace",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bf893040ed58a5b90bc572dd64d14a5167c8fac24f1dfbe744d2b96c59fd76ce",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "voice-of-customer-loop",
+      "tree_sha256": "d89b95029c4e3a5b3a8a9ec959a62eac550dc5e06bfbc10afa4732f394a6b18e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ee0ca635024a671e5175bf4b4279a9f7bec8d55375da533200e131ff7664de48",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vulnerability-triage",
+      "tree_sha256": "0969e7949d55e6f62e6a66bfb487329a32cad04ad5ac794ed5d35092b69e28b8",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2981001e2303feaee9c946faf376f84ecf6da4ec9467f57c1824d3778789bcb5",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "wasted-spend-audit",
+      "tree_sha256": "677d2ed3370defcf06fa83cedda95e24f81a1a22d399f1dc5842d1458fba48da",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bfeb30b69580f98399c30d389e565af0840fd024ea8b0b5f5841562140eb21c4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "weekly-kpi-digest",
+      "tree_sha256": "c8cd031b34bddd686bed0402543c43fd8c245f76bcc010bcd4885a7b56b6f216",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e5fbc49e1c61e16b27417511d8d8ea1673f61c0a0ba679274f5ecb1c79d5e2ce",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "weekly-marketing-read",
+      "tree_sha256": "68df496f47f95aa692de43e3897e7fc3f707730faae2f4494ed48a64e31742c1",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8642d84b913680b1e9a1fcef9a16a5462f10e4ed449626deac203a8af0342af3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "weekly-priorities-review",
+      "tree_sha256": "1b5ffa63742a308de4bde035fed4ae895643898dbd1dd0ba52bae2aa864540eb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "45991695cab7b217156f55a418b6d9340f2fccb8b97b1faf6cc32fc6b8873bf7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "weekly-ticket-themes",
+      "tree_sha256": "63d15568dfbd1d3416f1e02d241f3a3e21b0249f70619515664ab0c58afa9fce",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "118fa3850007290ef80c67e55bf0acf163b68f66a41361fe9df982d553fa0ae3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "workforce-and-capacity-planning",
+      "tree_sha256": "d225f0e0b55a88a0ac5d4479d83bb8754470aea4096664d2161ae92b64278c41",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f29a8e22ae1f02408d5c668f9bada4fd8405e54666e10c57c5c30afd279079de",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "zara-getting-started",
+      "tree_sha256": "5b85fd5b7bc7bb2de9f56544a07370435c02bfb892ac1196d0cab63adf6fcf84",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2bd93285c93539b7de1b2fd793801d8b5dd464b133be8c44b21c689df4247cb2",
+          "executable": false
+        }
+      ]
+    }
+  ],
+  "experts": [
+    {
+      "key": "alex",
+      "skills": [
+        "alex-getting-started",
+        "product-roadmap-and-prioritization",
+        "product-prd-and-acceptance-criteria",
+        "product-discovery-and-user-research",
+        "product-metrics-and-instrumentation",
+        "product-strategy-and-bets",
+        "product-experiment-design",
+        "product-ai-feature-scoping-and-evals",
+        "product-launch-plan",
+        "product-market-and-competitor-read",
+        "product-exec-briefing"
+      ]
+    },
+    {
+      "key": "anika",
+      "skills": [
+        "anika-getting-started",
+        "define-the-partner-icp",
+        "source-and-qualify-partners",
+        "partner-first-touch-outreach",
+        "structure-the-partner-agreement",
+        "onboard-and-enable-partners",
+        "run-the-partner-co-sell-cadence",
+        "track-partner-pipeline",
+        "prep-the-partner-qbr",
+        "handle-partner-conflict-and-churn",
+        "design-the-partner-program",
+        "map-the-partner-ecosystem",
+        "plan-the-multi-year-partnership",
+        "govern-the-strategic-alliance",
+        "model-the-partnership-commercials",
+        "scope-the-tech-partnership",
+        "run-the-partner-marketing-engine",
+        "scale-the-partner-channel",
+        "run-hyperscaler-marketplace-co-sell",
+        "run-partner-strategy-and-operations",
+        "assure-partner-led-delivery",
+        "manage-partner-renewals-and-exits",
+        "build-partner-academies-at-scale",
+        "orchestrate-multi-party-partner-bids",
+        "run-regulated-partnership-motions",
+        "source-partners-via-investor-ecosystems",
+        "build-data-and-r-d-alliances",
+        "run-creator-and-affiliate-partner-programs",
+        "run-brand-oem-and-supply-partnerships",
+        "set-board-level-alliance-strategy",
+        "own-the-alliance-pnl",
+        "run-global-partner-executive-councils",
+        "drive-alliance-ma-and-strategic-investments",
+        "build-partner-led-category-creation"
+      ]
+    },
+    {
+      "key": "casey",
+      "skills": [
+        "code-quality-getting-started",
+        "pull-request-review",
+        "test-plan-draft",
+        "bug-reproduction-report",
+        "flaky-test-triage",
+        "regression-risk-review",
+        "release-readiness-checklist",
+        "incident-postmortem-draft"
+      ]
+    },
+    {
+      "key": "daniel",
+      "skills": [
+        "daniel-getting-started",
+        "budget-vs-actuals-and-reforecast",
+        "variance-and-flux-analysis",
+        "cash-treasury-and-fx",
+        "close-controls-and-accounting",
+        "unit-economics-and-roi",
+        "saas-gtm-finance",
+        "deal-economics-and-pricing-guardrails",
+        "finance-board-and-investor-reporting",
+        "automate-finance-reporting"
+      ]
+    },
+    {
+      "key": "devon",
+      "skills": [
+        "dependency-security-getting-started",
+        "dependency-inventory",
+        "outdated-dependency-review",
+        "vulnerability-triage",
+        "cve-stack-relevance",
+        "dependency-upgrade-plan",
+        "dependency-upgrade-pr",
+        "dependency-change-risk-review"
+      ]
+    },
+    {
+      "key": "ellis",
+      "skills": [
+        "contract-ops-getting-started",
+        "nda-playbook-review",
+        "msa-playbook-review",
+        "contract-clause-comparison",
+        "contract-key-term-extraction",
+        "contract-deviation-triage",
+        "contract-obligation-tracker",
+        "counsel-escalation-brief"
+      ]
+    },
+    {
+      "key": "frankie",
+      "skills": []
+    },
+    {
+      "key": "harper",
+      "skills": [
+        "recruiting-getting-started",
+        "role-intake-and-job-description",
+        "hiring-rubric-design",
+        "resume-screening",
+        "interview-plan-and-scorecard",
+        "candidate-interview-debrief",
+        "candidate-rejection-email",
+        "candidate-offer-draft"
+      ]
+    },
+    {
+      "key": "ines",
+      "skills": [
+        "people-ops-getting-started",
+        "new-hire-onboarding-plan",
+        "handbook-policy-draft",
+        "one-to-one-agenda",
+        "performance-review-prep",
+        "engagement-survey-readout",
+        "offboarding-checklist",
+        "hr-escalation-brief"
+      ]
+    },
+    {
+      "key": "james",
+      "skills": [
+        "james-getting-started",
+        "ops-run-the-operating-rhythm",
+        "ops-scorecard-and-kpis",
+        "ops-write-an-sop",
+        "ops-map-and-improve-a-process",
+        "ops-automate-a-workflow",
+        "ops-vendor-and-procurement",
+        "ops-capacity-and-headcount-plan",
+        "ops-controls-and-escalations",
+        "ops-govern-a-program"
+      ]
+    },
+    {
+      "key": "jordan",
+      "skills": [
+        "deal-desk-getting-started",
+        "proposal-draft",
+        "statement-of-work-draft",
+        "pipeline-stage-aging-review",
+        "deal-risk-review",
+        "renewal-negotiation-brief",
+        "pricing-and-terms-approval-brief",
+        "proposal-quality-check"
+      ]
+    },
+    {
+      "key": "jules",
+      "skills": [
+        "brand-voice-guide",
+        "content-repurposing"
+      ]
+    },
+    {
+      "key": "kai",
+      "skills": [
+        "executive-assistant-getting-started",
+        "inbox-triage",
+        "reply-draft-in-your-voice",
+        "meeting-prep-brief",
+        "meeting-follow-up-draft",
+        "calendar-conflict-review",
+        "travel-plan",
+        "weekly-priorities-review"
+      ]
+    },
+    {
+      "key": "lena",
+      "skills": [
+        "compliance-ops-getting-started",
+        "security-questionnaire-answers",
+        "personal-data-map",
+        "subprocessor-register",
+        "dpa-checklist-review",
+        "policy-gap-review",
+        "data-subject-request-draft",
+        "compliance-escalation-brief"
+      ]
+    },
+    {
+      "key": "marco",
+      "skills": [
+        "paid-ads-getting-started",
+        "campaign-structure-plan",
+        "ad-copy-variants",
+        "landing-page-message-match",
+        "wasted-spend-audit",
+        "budget-pacing-review",
+        "creative-test-readout",
+        "paid-performance-report"
+      ]
+    },
+    {
+      "key": "maria",
+      "skills": [
+        "brand-voice-guide",
+        "seo-content-brief",
+        "on-page-seo-audit"
+      ]
+    },
+    {
+      "key": "max",
+      "skills": [
+        "max-getting-started",
+        "build-the-target-list",
+        "research-an-account",
+        "find-the-decision-makers",
+        "draft-a-first-touch",
+        "draft-a-follow-up",
+        "handle-a-reply",
+        "discovery-and-qualification",
+        "objection-and-negotiation",
+        "next-step-and-handoff",
+        "multithread-and-stakeholder-maps",
+        "business-case-and-roi-selling",
+        "quarterback-the-deal-team",
+        "enterprise-deal-desk-close-plans",
+        "rfp-and-competitive-bid-response",
+        "pipeline-review-and-forecast",
+        "territory-and-account-planning",
+        "renewal-expansion-and-qbr",
+        "signature-to-launch-and-account-ops",
+        "exec-engagement-and-sponsorship",
+        "sales-team-leadership",
+        "sales-ops-coverage-and-quota",
+        "enablement-playbooks-certification",
+        "regional-category-gtm-strategy",
+        "partner-and-channel-co-sell",
+        "alliance-co-commercialization",
+        "voice-of-customer-loop",
+        "compliance-gated-deal-execution",
+        "cloud-commit-and-marketplace-selling",
+        "marketplace-partner-revenue-growth",
+        "credit-term-sheet-structuring",
+        "industrial-pursuit-tender-handover",
+        "media-plan-measure-optimize",
+        "regulated-access-and-clinical-selling",
+        "retail-jbp-trade-and-sellout",
+        "showroom-fi-and-internet-bdc",
+        "field-call-route-discipline"
+      ]
+    },
+    {
+      "key": "maya",
+      "skills": [
+        "maya-getting-started",
+        "messaging-and-tone-matrix",
+        "campaign-brief-and-asset-plan",
+        "content-brief-writer-handoff",
+        "editorial-calendar-ops",
+        "channel-draft-shapes",
+        "nurture-sequence-build-and-readout",
+        "weekly-marketing-read"
+      ]
+    },
+    {
+      "key": "mina",
+      "skills": [
+        "bookkeeping-getting-started",
+        "expense-categorization",
+        "invoice-drafting-and-issue",
+        "accounts-receivable-follow-up",
+        "statement-reconciliation",
+        "month-end-close-checklist",
+        "monthly-profit-and-loss-summary",
+        "bookkeeping-exception-escalation"
+      ]
+    },
+    {
+      "key": "nadia",
+      "skills": [
+        "competitor-teardown",
+        "icp-and-positioning"
+      ]
+    },
+    {
+      "key": "noor",
+      "skills": [
+        "communications-getting-started",
+        "news-angle-and-key-messages",
+        "press-release-draft",
+        "media-list-research",
+        "media-pitch-email",
+        "launch-communications-plan",
+        "holding-statement-draft",
+        "spokesperson-briefing"
+      ]
+    },
+    {
+      "key": "omar",
+      "skills": [
+        "revops-getting-started",
+        "crm-field-audit",
+        "crm-duplicate-review",
+        "pipeline-stage-definitions",
+        "lead-routing-rules",
+        "sales-forecast-rollup",
+        "lost-deal-analysis",
+        "crm-hygiene-report"
+      ]
+    },
+    {
+      "key": "priya",
+      "skills": [
+        "product-getting-started",
+        "feedback-synthesis",
+        "feature-request-triage",
+        "user-interview-guide",
+        "opportunity-brief",
+        "product-requirements-draft",
+        "roadmap-prioritisation",
+        "release-notes-draft"
+      ]
+    },
+    {
+      "key": "quinn",
+      "skills": [
+        "kpi-analysis-getting-started",
+        "metric-definition-and-data-quality",
+        "weekly-kpi-digest",
+        "metric-anomaly-detection",
+        "metric-movement-analysis",
+        "cohort-and-retention-analysis",
+        "funnel-conversion-analysis",
+        "experiment-readout"
+      ]
+    },
+    {
+      "key": "remy",
+      "skills": [
+        "lifecycle-email-map",
+        "email-deliverability-guardrails"
+      ]
+    },
+    {
+      "key": "riley",
+      "skills": [
+        "customer-success-getting-started",
+        "customer-onboarding-plan",
+        "customer-health-score",
+        "churn-risk-review",
+        "renewal-readiness-review",
+        "renewal-touchpoint-draft",
+        "expansion-opportunity-brief",
+        "customer-success-plan"
+      ]
+    },
+    {
+      "key": "robin",
+      "skills": [
+        "robin-getting-started",
+        "triage-and-prioritize",
+        "draft-the-reply",
+        "troubleshoot-and-resolve",
+        "own-to-closure",
+        "help-center-answers-and-kb",
+        "billing-refunds-and-exceptions",
+        "escalations-and-incidents",
+        "orders-returns-and-warranty",
+        "live-channel-queue-operations",
+        "voice-and-phone-support",
+        "technical-diagnostics-with-tools",
+        "service-recovery-and-goodwill",
+        "onboarding-and-adoption",
+        "vip-and-white-glove-care",
+        "social-and-community-support",
+        "knowledge-centered-service",
+        "voice-of-customer-and-feedback",
+        "quality-csat-and-coaching",
+        "sensitive-data-safe-handling",
+        "fraud-and-chargeback-defense",
+        "trust-and-safety-escalations",
+        "compliance-and-regulated-support",
+        "enterprise-identity-sso-support",
+        "upsell-and-retention-offers",
+        "account-health-and-qbrs",
+        "support-ops-improvement-program",
+        "workforce-and-capacity-planning",
+        "bpo-vendor-quality-ops",
+        "mass-recovery-and-bulk-comms",
+        "marketplace-two-sided-mediation",
+        "travel-disruption-and-rebooking",
+        "logistics-shipment-and-customs",
+        "member-benefits-and-claims"
+      ]
+    },
+    {
+      "key": "sasha",
+      "skills": [
+        "support-getting-started",
+        "ticket-triage",
+        "support-reply-draft",
+        "support-macro-library",
+        "help-article-from-tickets",
+        "bug-report-handoff",
+        "refund-and-exception-brief",
+        "weekly-ticket-themes"
+      ]
+    },
+    {
+      "key": "sofia",
+      "skills": [
+        "sofia-getting-started",
+        "role-intake-and-scorecard",
+        "job-description-drafting",
+        "candidate-sourcing-strategy",
+        "passive-candidate-outreach",
+        "resume-screening",
+        "interview-kit-design",
+        "interview-coordination",
+        "hiring-debrief-and-decision",
+        "job-offer-and-close-plan",
+        "hiring-pipeline-analytics"
+      ]
+    },
+    {
+      "key": "theo",
+      "skills": [
+        "investor-relations-getting-started",
+        "pitch-deck-review",
+        "fundraising-data-room-checklist",
+        "investor-targeting-and-research",
+        "fundraising-pipeline-review",
+        "cap-table-hygiene",
+        "monthly-investor-update",
+        "board-and-investor-metrics-brief"
+      ]
+    },
+    {
+      "key": "vera",
+      "skills": [
+        "procurement-getting-started",
+        "vendor-requirements-brief",
+        "vendor-quote-comparison",
+        "vendor-due-diligence",
+        "procurement-decision-memo",
+        "contract-renewal-tracker",
+        "vendor-performance-review",
+        "spend-anomaly-review"
+      ]
+    },
+    {
+      "key": "zara",
+      "skills": [
+        "zara-getting-started",
+        "positioning-and-messaging",
+        "icp-and-segmentation",
+        "pricing-and-packaging",
+        "commercial-launch-strategy",
+        "competitive-intelligence",
+        "gtm-performance-diagnostics",
+        "gtm-planning-and-market-entry",
+        "opportunity-sizing-and-business-case",
+        "sales-marketing-alignment-and-sla",
+        "field-enablement-content",
+        "vertical-industry-plays",
+        "developer-and-api-motion"
+      ]
+    }
+  ],
+  "retirements": [],
+  "system_packages": []
+}
