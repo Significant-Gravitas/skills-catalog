@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the catalog the way the platform seed will.
+"""Validate the catalog and expert roster the way the platform seed will.
 
     python tools/check.py
 
@@ -18,6 +18,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "catalog.yml"
 SKILLS_DIR = ROOT / "skills"
+EXPERTS_DIR = ROOT / "experts"
 
 CATEGORIES = {
     "marketing",
@@ -39,10 +40,22 @@ MAX_PACKAGE_FILES = 100
 MAX_PACKAGE_FILE_BYTES = 2 * 1024 * 1024
 MAX_PACKAGE_BYTES = 20 * 1024 * 1024
 MAX_PACKAGE_PATH_DEPTH = 8
+MAX_DAY_ONE = 3
+MAX_DAY_ONE_TITLE_CHARS = 80
+MAX_DAY_ONE_DESCRIPTION_CHARS = 240
+MAX_DAY_ONE_TIMING_CHARS = 40
+SESSION_MODES = {"THREAD", "FRESH"}
+EXPERT_FIELDS = {
+    "key", "name", "role", "job_title", "tagline", "avatar_url", "categories",
+    "bio", "identity", "voice_preferences", "voice_samples", "boundaries",
+    "day_one", "preloads", "routines", "skills",
+}
+ROUTINE_FIELDS = {"key", "title", "prompt", "crons", "asks", "session_mode"}
 
 _FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n?(.*)$", re.DOTALL)
 _SEGMENT_RE = re.compile(r"^[A-Za-z0-9_-][A-Za-z0-9._-]*$")
 _NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
+_KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 _OUTSIDE_LINK_RE = re.compile(r"\]\((\.\./[^)]+)\)")
 
 
@@ -55,9 +68,10 @@ def main() -> int:
     for directory in sorted(p for p in SKILLS_DIR.iterdir() if p.is_dir()):
         if directory.name not in listed:
             errors.append(f"skills/{directory.name}: not listed in catalog.yml")
+    experts = _check_experts(listed, errors)
     for error in errors:
         print(f"error: {error}")
-    print(f"{len(entries)} skills checked, {len(errors)} errors")
+    print(f"{len(entries)} skills and {experts} experts checked, {len(errors)} errors")
     return 1 if errors else 0
 
 
@@ -179,6 +193,177 @@ def _path_error(path: str) -> str | None:
         if not _SEGMENT_RE.match(segment):
             return f"segment '{segment}' must be letters, digits, '.', '_' or '-' and not hidden"
     return None
+
+
+def _check_experts(slugs: set[str], errors: list[str]) -> int:
+    """Validate every experts/<key>.yml against the release schema 2 roster."""
+    if not EXPERTS_DIR.is_dir():
+        errors.append("experts/: directory is missing")
+        return 0
+    names: dict[str, str] = {}
+    count = 0
+    for path in sorted(EXPERTS_DIR.iterdir()):
+        label = f"experts/{path.name}"
+        if not path.is_file() or path.suffix != ".yml":
+            errors.append(f"{label}: only <key>.yml files belong in experts/")
+            continue
+        count += 1
+        try:
+            data = yaml.safe_load(path.read_text(encoding="utf-8"))
+        except yaml.YAMLError as exc:
+            errors.append(f"{label}: not valid YAML: {exc}")
+            continue
+        if not isinstance(data, dict):
+            errors.append(f"{label}: must be a mapping")
+            continue
+        _check_expert(label, path.stem, data, slugs, errors)
+        name = data.get("name")
+        if isinstance(name, str) and name.strip():
+            folded = name.strip().casefold()
+            if folded in names:
+                errors.append(f"{label}: display name '{name}' is already used by {names[folded]}")
+            else:
+                names[folded] = label
+    return count
+
+
+def _check_expert(
+    label: str, stem: str, data: dict, slugs: set[str], errors: list[str]
+) -> None:
+    missing = sorted(EXPERT_FIELDS - set(data))
+    extra = sorted(str(k) for k in set(data) - EXPERT_FIELDS)
+    if missing:
+        errors.append(f"{label}: missing fields {missing}")
+    if extra:
+        errors.append(f"{label}: unknown fields {extra}")
+
+    key = data.get("key")
+    if not isinstance(key, str) or not _KEY_RE.match(key):
+        errors.append(f"{label}: key must be lowercase kebab-case, ≤64")
+    elif key != stem:
+        errors.append(f"{label}: key '{key}' must match the file name")
+
+    for field in ("name", "role", "job_title", "tagline", "bio", "identity"):
+        if field in data and not _nonempty(data[field]):
+            errors.append(f"{label}: {field} must be a non-empty string")
+    for field in ("voice_preferences", "boundaries"):
+        if field in data and not isinstance(data[field], str):
+            errors.append(f"{label}: {field} must be a string")
+    if "avatar_url" in data and not (
+        data["avatar_url"] is None or isinstance(data["avatar_url"], str)
+    ):
+        errors.append(f"{label}: avatar_url must be a string or null")
+
+    if "categories" in data:
+        categories = data["categories"]
+        if not isinstance(categories, list) or not categories or not all(
+            isinstance(c, str) and c in CATEGORIES for c in categories
+        ):
+            errors.append(
+                f"{label}: categories must be one or more of "
+                f"{sorted(CATEGORIES)}, got {categories}"
+            )
+
+    if "voice_samples" in data:
+        samples = data["voice_samples"]
+        if not isinstance(samples, list):
+            errors.append(f"{label}: voice_samples must be a list")
+        else:
+            for i, sample in enumerate(samples):
+                if not _exact(sample, {"label", "text"}) or not all(
+                    isinstance(sample[f], str) for f in ("label", "text")
+                ):
+                    errors.append(f"{label}: voice_samples[{i}] must be label and text strings")
+
+    if "day_one" in data:
+        _check_day_one(label, data["day_one"], errors)
+    if "preloads" in data:
+        _check_preloads(label, data["preloads"], errors)
+    if "routines" in data:
+        _check_routines(label, data["routines"], errors)
+
+    if "skills" in data:
+        skills = data["skills"]
+        if not isinstance(skills, list) or not all(isinstance(s, str) for s in skills):
+            errors.append(f"{label}: skills must be a list of catalog slugs")
+        else:
+            if len(skills) != len(set(skills)):
+                errors.append(f"{label}: skills lists a slug twice")
+            for slug in skills:
+                if slug not in slugs:
+                    errors.append(f"{label}: skill '{slug}' is not in catalog.yml")
+
+
+def _check_day_one(label: str, rows: object, errors: list[str]) -> None:
+    if not isinstance(rows, list):
+        errors.append(f"{label}: day_one must be a list")
+        return
+    if len(rows) > MAX_DAY_ONE:
+        errors.append(f"{label}: day_one has {len(rows)} items, limit {MAX_DAY_ONE}")
+    for i, row in enumerate(rows):
+        fields = ("title", "description", "timing")
+        if not _exact(row, set(fields)) or not all(isinstance(row[f], str) for f in fields):
+            errors.append(f"{label}: day_one[{i}] must be title, description and timing strings")
+            continue
+        if not 1 <= len(row["title"]) <= MAX_DAY_ONE_TITLE_CHARS:
+            errors.append(f"{label}: day_one[{i}] title must be 1-{MAX_DAY_ONE_TITLE_CHARS} chars")
+        if len(row["description"]) > MAX_DAY_ONE_DESCRIPTION_CHARS:
+            errors.append(f"{label}: day_one[{i}] description is over {MAX_DAY_ONE_DESCRIPTION_CHARS} chars")
+        if len(row["timing"]) > MAX_DAY_ONE_TIMING_CHARS:
+            errors.append(f"{label}: day_one[{i}] timing is over {MAX_DAY_ONE_TIMING_CHARS} chars")
+
+
+def _check_preloads(label: str, rows: object, errors: list[str]) -> None:
+    if not isinstance(rows, list):
+        errors.append(f"{label}: preloads must be a list")
+        return
+    seen: set[str] = set()
+    for i, row in enumerate(rows):
+        if (
+            not _exact(row, {"slug", "cron"})
+            or not _nonempty(row["slug"])
+            or not (row["cron"] is None or isinstance(row["cron"], str))
+        ):
+            errors.append(f"{label}: preloads[{i}] must be a slug with a cron string or null")
+            continue
+        if row["slug"] in seen:
+            errors.append(f"{label}: preload '{row['slug']}' is listed twice")
+        seen.add(row["slug"])
+
+
+def _check_routines(label: str, rows: object, errors: list[str]) -> None:
+    if not isinstance(rows, list):
+        errors.append(f"{label}: routines must be a list")
+        return
+    seen: set[str] = set()
+    for i, row in enumerate(rows):
+        where = f"{label}: routines[{i}]"
+        if not _exact(row, ROUTINE_FIELDS):
+            errors.append(f"{where} must have exactly {sorted(ROUTINE_FIELDS)}")
+            continue
+        key = row["key"]
+        if not isinstance(key, str) or not _KEY_RE.match(key):
+            errors.append(f"{where}: key must be lowercase kebab-case, ≤64")
+        elif key in seen:
+            errors.append(f"{where}: routine key '{key}' is used twice")
+        else:
+            seen.add(key)
+        for field in ("title", "prompt"):
+            if not _nonempty(row[field]):
+                errors.append(f"{where}: {field} must be a non-empty string")
+        for field in ("crons", "asks"):
+            if not isinstance(row[field], list) or not all(isinstance(v, str) for v in row[field]):
+                errors.append(f"{where}: {field} must be a list of strings")
+        if row["session_mode"] not in SESSION_MODES:
+            errors.append(f"{where}: session_mode must be one of {sorted(SESSION_MODES)}")
+
+
+def _nonempty(value: object) -> bool:
+    return isinstance(value, str) and bool(value.strip())
+
+
+def _exact(value: object, fields: set[str]) -> bool:
+    return isinstance(value, dict) and set(value) == fields
 
 
 if __name__ == "__main__":

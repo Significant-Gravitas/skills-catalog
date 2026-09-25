@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bind the complete catalogue and ordered expert assignments to one release.
+"""Bind the complete catalogue and the expert roster to one release.
 
 Check without changing files: ``python tools/release.py check``.
 After an intentional content edit: ``python tools/release.py refresh``.
@@ -18,6 +18,11 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 NAME = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 HEX256 = re.compile(r"^[a-f0-9]{64}$")
+SCHEMA_VERSION = 2
+TOP_LEVEL_KEYS = (
+    "schema_version", "release_key", "provenance", "catalog_sha256", "packages",
+    "experts", "retirements", "retired_experts", "system_packages",
+)
 PATH_SEGMENT = re.compile(r"^[A-Za-z0-9_-][A-Za-z0-9._-]*$")
 
 
@@ -114,13 +119,38 @@ def inventory(root: Path) -> tuple[str, list[dict]]:
     return sha256(catalog_bytes), packages
 
 
+def expert_inventory(root: Path, active: set[str]) -> list[dict]:
+    """One entry per experts/<key>.yml: its key, exact-byte hash and bundled skills."""
+    directory = root / "experts"
+    _require(not directory.is_symlink(), "experts must not be a symlink")
+    _require(directory.is_dir(), "experts/ directory is missing")
+    experts = []
+    for path in sorted(directory.iterdir()):
+        _require(not path.is_symlink(), f"experts/{path.name}: symlink is forbidden")
+        _require(path.is_file() and path.suffix == ".yml", f"experts/{path.name}: only <key>.yml files are allowed")
+        key = _name(path.stem, f"expert file name experts/{path.name}")
+        data = path.read_bytes()
+        try:
+            document = yaml.safe_load(data)
+        except yaml.YAMLError as exc:
+            raise ReleaseError(f"experts/{path.name}: not valid YAML: {exc}") from exc
+        _require(isinstance(document, dict), f"experts/{path.name} must contain an object")
+        _require(document.get("key") == key, f"experts/{path.name}: key must equal the file name")
+        skills = document.get("skills")
+        _require(isinstance(skills, list), f"{key}: skills must be an array")
+        for slug in skills:
+            _name(slug, f"{key} bundled skill")
+        _require(len(skills) == len(set(skills)), f"{key}: duplicate bundled skill")
+        missing = [slug for slug in skills if slug not in active]
+        _require(not missing, f"{key}: bundled skill is not an active package: {', '.join(missing)}")
+        experts.append({"key": key, "sha256": sha256(data), "skills": list(skills)})
+    return experts
+
+
 def validate_manifest(manifest: object) -> None:
     """Validate references before any publisher considers database writes."""
-    value = _keys(manifest, {
-        "schema_version", "release_key", "provenance", "catalog_sha256", "packages",
-        "experts", "retirements", "system_packages",
-    }, "release")
-    _require(type(value["schema_version"]) is int and value["schema_version"] == 1, "unsupported schema_version")
+    value = _keys(manifest, set(TOP_LEVEL_KEYS), "release")
+    _require(type(value["schema_version"]) is int and value["schema_version"] == SCHEMA_VERSION, "unsupported schema_version")
     _name(value["release_key"], "release_key")
     _require(isinstance(value["provenance"], dict) and bool(value["provenance"]), "provenance must be a nonempty object")
     _hash(value["catalog_sha256"], "catalog_sha256")
@@ -153,10 +183,11 @@ def validate_manifest(manifest: object) -> None:
     _require(isinstance(experts, list), "experts must be an array")
     keys = set()
     for expert in experts:
-        expert = _keys(expert, {"key", "skills"}, "expert")
+        expert = _keys(expert, {"key", "sha256", "skills"}, "expert")
         key = _name(expert["key"], "expert key")
         _require(key not in keys, f"duplicate expert key: {key}")
         keys.add(key)
+        _hash(expert["sha256"], f"{key} expert hash")
         assignments = expert["skills"]
         _require(isinstance(assignments, list), f"{key}: skills must be an array")
         for slug in assignments:
@@ -171,6 +202,13 @@ def validate_manifest(manifest: object) -> None:
     _require(len(retirements) == len(set(retirements)), "duplicate retirement")
     _require(not (set(retirements) & active), "an active package cannot be retired")
     _require(retirements == sorted(retirements), "retirements must be sorted")
+    retired_experts = value["retired_experts"]
+    _require(isinstance(retired_experts, list), "retired_experts must be an array of expert keys")
+    for key in retired_experts:
+        _name(key, "retired expert key")
+    _require(len(retired_experts) == len(set(retired_experts)), "duplicate retired expert")
+    _require(not (set(retired_experts) & keys), "an active expert cannot be retired")
+    _require(retired_experts == sorted(retired_experts), "retired_experts must be sorted")
 
 
 def check(root: Path, manifest: dict) -> None:
@@ -178,6 +216,27 @@ def check(root: Path, manifest: dict) -> None:
     catalog_hash, packages = inventory(root)
     _require(manifest["catalog_sha256"] == catalog_hash, "catalog.yml hash mismatch; review changes and refresh the release")
     _require(manifest["packages"] == packages, "package bytes, paths or modes differ from release.json")
+    experts = expert_inventory(root, {p["slug"] for p in packages})
+    listed = {e["key"] for e in manifest["experts"]}
+    found = {e["key"] for e in experts}
+    _require(not (found - listed), f"expert files not listed in release.json: {', '.join(sorted(found - listed))}")
+    _require(not (listed - found), f"experts listed in release.json have no file: {', '.join(sorted(listed - found))}")
+    for entry, actual in zip(manifest["experts"], experts):
+        _require(entry["skills"] == actual["skills"], f"{entry['key']}: skills differ from experts/{entry['key']}.yml")
+        _require(entry["sha256"] == actual["sha256"], f"{entry['key']}: expert file bytes differ from release.json; review changes and refresh the release")
+
+
+def refreshed(root: Path, manifest: dict) -> dict:
+    """Regenerate every derived field; keep the authored ones as they are."""
+    catalog_hash, packages = inventory(root)
+    derived = {
+        "schema_version": SCHEMA_VERSION,
+        "catalog_sha256": catalog_hash,
+        "packages": packages,
+        "experts": expert_inventory(root, {p["slug"] for p in packages}),
+    }
+    authored = {"retired_experts": [], **manifest}
+    return {key: derived[key] if key in derived else authored.get(key) for key in TOP_LEVEL_KEYS}
 
 
 def main() -> int:
@@ -188,12 +247,17 @@ def main() -> int:
         path = ROOT / "release.json"
         manifest = json.loads(path.read_text(encoding="utf-8"))
         if args.command == "refresh":
-            manifest["catalog_sha256"], manifest["packages"] = inventory(ROOT)
+            manifest = refreshed(ROOT, manifest)
             validate_manifest(manifest)
             path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
         check(ROOT, manifest)
         assignments = sum(len(e["skills"]) for e in manifest["experts"])
-        print(f"{manifest['release_key']}: {len(manifest['packages'])} packages, {len(manifest['experts'])} experts, {assignments} ordered assignments verified")
+        print(
+            f"{manifest['release_key']} (schema {manifest['schema_version']}): "
+            f"{len(manifest['packages'])} packages, {len(manifest['experts'])} expert files, "
+            f"{assignments} ordered skills, {len(manifest['retirements'])} retired packages, "
+            f"{len(manifest['retired_experts'])} retired experts verified"
+        )
         return 0
     except (ReleaseError, OSError, ValueError, yaml.YAMLError) as exc:
         print(f"error: {exc}")
