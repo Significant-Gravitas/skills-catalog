@@ -7,6 +7,8 @@
 #   source              "platform" for skills written here, or
 #                       owner/repo/path for a skill vendored with tools/vendor.py
 #   license             SPDX id of the upstream licence (vendored skills only)
+#   adapted_from        repos whose frameworks shaped a platform-written skill,
+#                       each with its licence; not a copy (see PROVENANCE.md)
 
 skills:
   - slug: brand-voice-guide
@@ -884,3 +886,855 @@ skills:
     categories: [support, operations]
     required_providers: []
     source: platform
+
+  # Roster skills for the generalist experts (AutoGPT PR #14636).
+
+  - slug: account-health-and-qbrs
+    categories: [support, sales]
+    required_providers: []
+    source: platform
+
+  - slug: alex-getting-started
+    categories: [development, research]
+    required_providers: [github, google, mcp_linear, notion, slack]
+    source: platform
+
+  - slug: alliance-co-commercialization
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: anika-getting-started
+    categories: [sales, operations]
+    required_providers: [google, hubspot, mcp_granola, notion, slack]
+    source: platform
+
+  - slug: assure-partner-led-delivery
+    categories: [operations, support]
+    required_providers: []
+    source: platform
+
+  - slug: automate-finance-reporting
+    categories: [finance, operations]
+    required_providers: [google]
+    source: platform
+
+  - slug: billing-refunds-and-exceptions
+    categories: [support, finance]
+    required_providers: []
+    source: platform
+
+  - slug: bpo-vendor-quality-ops
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: budget-vs-actuals-and-reforecast
+    categories: [finance]
+    required_providers: [google]
+    source: platform
+
+  - slug: build-data-and-r-d-alliances
+    categories: [research, operations]
+    required_providers: []
+    source: platform
+
+  - slug: build-partner-academies-at-scale
+    categories: [operations, content]
+    required_providers: []
+    source: platform
+
+  - slug: build-partner-led-category-creation
+    categories: [marketing, sales]
+    required_providers: []
+    source: platform
+
+  - slug: build-the-target-list
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
+  - slug: business-case-and-roi-selling
+    categories: [sales, finance]
+    required_providers: []
+    source: platform
+
+  - slug: campaign-brief-and-asset-plan
+    categories: [marketing]
+    required_providers: []
+    source: platform
+
+  - slug: candidate-sourcing-strategy
+    categories: [operations, research]
+    required_providers: [github]
+    source: platform
+
+  - slug: cash-treasury-and-fx
+    categories: [finance]
+    required_providers: [google]
+    source: platform
+
+  - slug: channel-draft-shapes
+    categories: [content, marketing]
+    required_providers: []
+    source: platform
+
+  - slug: close-controls-and-accounting
+    categories: [finance, operations]
+    required_providers: [google]
+    source: platform
+
+  - slug: cloud-commit-and-marketplace-selling
+    categories: [sales, finance]
+    required_providers: []
+    source: platform
+
+  - slug: competitive-intelligence
+    categories: [marketing, research]
+    required_providers: [google, mcp_gong]
+    source: platform
+
+  - slug: commercial-launch-strategy
+    categories: [marketing]
+    required_providers: [google, mcp_linear]
+    source: platform
+    adapted_from:
+      - {repo: hah23255/pm-claude-skills, license: MIT}
+
+  - slug: compliance-and-regulated-support
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: compliance-gated-deal-execution
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: content-brief-writer-handoff
+    categories: [marketing, content]
+    required_providers: []
+    source: platform
+
+  - slug: credit-term-sheet-structuring
+    categories: [sales, finance]
+    required_providers: []
+    source: platform
+
+  - slug: daniel-getting-started
+    categories: [finance, operations]
+    required_providers: [google, hubspot, notion, slack, stripe]
+    source: platform
+
+  - slug: deal-economics-and-pricing-guardrails
+    categories: [finance, sales]
+    required_providers: []
+    source: platform
+
+  - slug: define-the-partner-icp
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
+  - slug: design-the-partner-program
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: developer-and-api-motion
+    categories: [marketing, development]
+    required_providers: [mcp_amplitude]
+    source: platform
+
+  - slug: discovery-and-qualification
+    categories: [sales]
+    required_providers: []
+    source: platform
+
+  - slug: draft-a-first-touch
+    categories: [content, sales]
+    required_providers: []
+    source: platform
+
+  - slug: draft-a-follow-up
+    categories: [sales, content]
+    required_providers: []
+    source: platform
+
+  - slug: draft-the-reply
+    categories: [support, content]
+    required_providers: [google]
+    source: platform
+
+  - slug: drive-alliance-ma-and-strategic-investments
+    categories: [finance, research]
+    required_providers: []
+    source: platform
+
+  - slug: editorial-calendar-ops
+    categories: [marketing, content]
+    required_providers: [google, notion]
+    source: platform
+
+  - slug: enablement-playbooks-certification
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: enterprise-deal-desk-close-plans
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: enterprise-identity-sso-support
+    categories: [support, development]
+    required_providers: []
+    source: platform
+
+  - slug: escalations-and-incidents
+    categories: [support, operations]
+    required_providers: [mcp_linear, slack]
+    source: platform
+
+  - slug: exec-engagement-and-sponsorship
+    categories: [sales]
+    required_providers: []
+    source: platform
+
+  - slug: field-call-route-discipline
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: field-enablement-content
+    categories: [sales, marketing]
+    required_providers: [google, mcp_gong]
+    source: platform
+
+  - slug: finance-board-and-investor-reporting
+    categories: [finance, content]
+    required_providers: [google]
+    source: platform
+
+  - slug: find-the-decision-makers
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
+  - slug: fraud-and-chargeback-defense
+    categories: [support, finance, operations]
+    required_providers: []
+    source: platform
+
+  - slug: govern-the-strategic-alliance
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: gtm-planning-and-market-entry
+    categories: [marketing, sales]
+    required_providers: [google]
+    source: platform
+
+  - slug: gtm-performance-diagnostics
+    categories: [marketing, sales]
+    required_providers: [google, hubspot, mcp_amplitude]
+    source: platform
+
+  - slug: handle-a-reply
+    categories: [sales, content]
+    required_providers: []
+    source: platform
+
+  - slug: handle-partner-conflict-and-churn
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: help-center-answers-and-kb
+    categories: [support, content]
+    required_providers: [google, notion]
+    source: platform
+
+  - slug: hiring-debrief-and-decision
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: hiring-pipeline-analytics
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: icp-and-segmentation
+    categories: [marketing, sales]
+    required_providers: [apollo, hubspot]
+    source: platform
+
+  - slug: industrial-pursuit-tender-handover
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: interview-coordination
+    categories: [operations]
+    required_providers: [google]
+    source: platform
+
+  - slug: interview-kit-design
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: james-getting-started
+    categories: [operations]
+    required_providers: [google, mcp_linear, notion, slack]
+    source: platform
+
+  - slug: job-description-drafting
+    categories: [operations, content]
+    required_providers: []
+    source: platform
+
+  - slug: job-offer-and-close-plan
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: knowledge-centered-service
+    categories: [support, content]
+    required_providers: []
+    source: platform
+
+  - slug: live-channel-queue-operations
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: logistics-shipment-and-customs
+    categories: [operations, support]
+    required_providers: []
+    source: platform
+
+  - slug: manage-partner-renewals-and-exits
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: map-the-partner-ecosystem
+    categories: [research, sales]
+    required_providers: []
+    source: platform
+
+  - slug: marketplace-partner-revenue-growth
+    categories: [sales, marketing]
+    required_providers: []
+    source: platform
+
+  - slug: marketplace-two-sided-mediation
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: mass-recovery-and-bulk-comms
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: max-getting-started
+    categories: [sales]
+    required_providers: [google, hubspot, mcp_gong, mcp_granola, notion, slack]
+    source: platform
+
+  - slug: maya-getting-started
+    categories: [marketing, content]
+    required_providers: [google, notion, slack, hubspot]
+    source: platform
+
+  - slug: media-plan-measure-optimize
+    categories: [sales, marketing]
+    required_providers: []
+    source: platform
+
+  - slug: member-benefits-and-claims
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: messaging-and-tone-matrix
+    categories: [marketing, content]
+    required_providers: []
+    source: platform
+
+  - slug: model-the-partnership-commercials
+    categories: [sales, finance]
+    required_providers: []
+    source: platform
+
+  - slug: multithread-and-stakeholder-maps
+    categories: [sales]
+    required_providers: []
+    source: platform
+
+  - slug: next-step-and-handoff
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: nurture-sequence-build-and-readout
+    categories: [marketing]
+    required_providers: []
+    source: platform
+
+  - slug: objection-and-negotiation
+    categories: [sales]
+    required_providers: []
+    source: platform
+
+  - slug: onboard-and-enable-partners
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: onboarding-and-adoption
+    categories: [support, sales]
+    required_providers: []
+    source: platform
+
+  - slug: opportunity-sizing-and-business-case
+    categories: [marketing, finance]
+    required_providers: [apollo, google]
+    source: platform
+
+  - slug: ops-automate-a-workflow
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: ops-capacity-and-headcount-plan
+    categories: [operations]
+    required_providers: [google]
+    source: platform
+
+  - slug: ops-controls-and-escalations
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: ops-govern-a-program
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: ops-map-and-improve-a-process
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: ops-run-the-operating-rhythm
+    categories: [operations]
+    required_providers: [google]
+    source: platform
+
+  - slug: ops-scorecard-and-kpis
+    categories: [operations]
+    required_providers: [google]
+    source: platform
+
+  - slug: ops-vendor-and-procurement
+    categories: [operations, finance]
+    required_providers: [google]
+    source: platform
+
+  - slug: ops-write-an-sop
+    categories: [operations]
+    required_providers: [notion]
+    source: platform
+
+  - slug: orchestrate-multi-party-partner-bids
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: orders-returns-and-warranty
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: own-the-alliance-pnl
+    categories: [finance, operations]
+    required_providers: []
+    source: platform
+
+  - slug: own-to-closure
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: partner-and-channel-co-sell
+    categories: [sales]
+    required_providers: []
+    source: platform
+
+  - slug: partner-first-touch-outreach
+    categories: [sales, content]
+    required_providers: [google]
+    source: platform
+
+  - slug: passive-candidate-outreach
+    categories: [operations, content]
+    required_providers: [google]
+    source: platform
+
+  - slug: pipeline-review-and-forecast
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: plan-the-multi-year-partnership
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: positioning-and-messaging
+    categories: [marketing]
+    required_providers: [google, mcp_gong]
+    source: platform
+    adapted_from:
+      - {repo: LeadMagic/gtm-skills, license: MIT}
+
+  - slug: prep-the-partner-qbr
+    categories: [sales, operations]
+    required_providers: [google]
+    source: platform
+
+  - slug: pricing-and-packaging
+    categories: [marketing, finance]
+    required_providers: [google, stripe]
+    source: platform
+
+  - slug: product-ai-feature-scoping-and-evals
+    categories: [development]
+    required_providers: []
+    source: platform
+
+  - slug: product-discovery-and-user-research
+    categories: [research]
+    required_providers: []
+    source: platform
+    adapted_from:
+      - {repo: hah23255/pm-claude-skills, license: MIT}
+
+  - slug: product-exec-briefing
+    categories: [operations, development]
+    required_providers: []
+    source: platform
+
+  - slug: product-experiment-design
+    categories: [research, development]
+    required_providers: []
+    source: platform
+    adapted_from:
+      - {repo: robotijn/ctoc, license: PolyForm-Shield-1.0.0}
+      - {repo: ZiDuNet/clawith-claude, license: Apache-2.0}
+
+  - slug: product-launch-plan
+    categories: [marketing, operations]
+    required_providers: []
+    source: platform
+
+  - slug: product-market-and-competitor-read
+    categories: [research, marketing]
+    required_providers: []
+    source: platform
+
+  - slug: product-metrics-and-instrumentation
+    categories: [research, development]
+    required_providers: []
+    source: platform
+
+  - slug: product-prd-and-acceptance-criteria
+    categories: [development]
+    required_providers: []
+    source: platform
+
+  - slug: product-roadmap-and-prioritization
+    categories: [development, operations]
+    required_providers: []
+    source: platform
+    adapted_from:
+      - {repo: menkesu/awesome-pm-skills, license: MIT}
+
+  - slug: product-strategy-and-bets
+    categories: [research, development]
+    required_providers: []
+    source: platform
+    adapted_from:
+      - {repo: menkesu/awesome-pm-skills, license: MIT}
+
+  - slug: quality-csat-and-coaching
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: quarterback-the-deal-team
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: regional-category-gtm-strategy
+    categories: [sales, marketing]
+    required_providers: []
+    source: platform
+
+  - slug: regulated-access-and-clinical-selling
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: renewal-expansion-and-qbr
+    categories: [sales]
+    required_providers: []
+    source: platform
+
+  - slug: research-an-account
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
+  - slug: retail-jbp-trade-and-sellout
+    categories: [finance, operations, sales]
+    required_providers: []
+    source: platform
+
+  - slug: rfp-and-competitive-bid-response
+    categories: [sales, content]
+    required_providers: []
+    source: platform
+
+  - slug: robin-getting-started
+    categories: [support, operations]
+    required_providers: [google, mcp_gong, mcp_granola, mcp_linear, notion, slack]
+    source: platform
+
+  - slug: role-intake-and-scorecard
+    categories: [operations]
+    required_providers: []
+    source: platform
+
+  - slug: run-brand-oem-and-supply-partnerships
+    categories: [marketing, operations]
+    required_providers: []
+    source: platform
+
+  - slug: run-creator-and-affiliate-partner-programs
+    categories: [marketing, operations]
+    required_providers: []
+    source: platform
+
+  - slug: run-global-partner-executive-councils
+    categories: [operations, sales]
+    required_providers: []
+    source: platform
+
+  - slug: run-hyperscaler-marketplace-co-sell
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: run-partner-strategy-and-operations
+    categories: [operations, sales]
+    required_providers: []
+    source: platform
+
+  - slug: run-regulated-partnership-motions
+    categories: [operations, sales]
+    required_providers: []
+    source: platform
+
+  - slug: run-the-partner-co-sell-cadence
+    categories: [sales]
+    required_providers: []
+    source: platform
+
+  - slug: run-the-partner-marketing-engine
+    categories: [marketing, sales]
+    required_providers: []
+    source: platform
+
+  - slug: saas-gtm-finance
+    categories: [finance, sales]
+    required_providers: []
+    source: platform
+
+  - slug: sales-marketing-alignment-and-sla
+    categories: [marketing, sales]
+    required_providers: [hubspot]
+    source: platform
+    adapted_from:
+      - {repo: LeadMagic/gtm-skills, license: MIT}
+
+  - slug: sales-ops-coverage-and-quota
+    categories: [sales, operations, finance]
+    required_providers: []
+    source: platform
+
+  - slug: sales-team-leadership
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: scale-the-partner-channel
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: scope-the-tech-partnership
+    categories: [sales, development]
+    required_providers: []
+    source: platform
+
+  - slug: sensitive-data-safe-handling
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: service-recovery-and-goodwill
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: set-board-level-alliance-strategy
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: showroom-fi-and-internet-bdc
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: signature-to-launch-and-account-ops
+    categories: [sales, operations, support]
+    required_providers: []
+    source: platform
+
+  - slug: social-and-community-support
+    categories: [support, marketing]
+    required_providers: []
+    source: platform
+
+  - slug: sofia-getting-started
+    categories: [operations]
+    required_providers: [google, mcp_granola, mcp_linear, notion, slack]
+    source: platform
+
+  - slug: source-and-qualify-partners
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
+  - slug: source-partners-via-investor-ecosystems
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
+  - slug: structure-the-partner-agreement
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: support-ops-improvement-program
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: technical-diagnostics-with-tools
+    categories: [support, development]
+    required_providers: []
+    source: platform
+
+  - slug: territory-and-account-planning
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: track-partner-pipeline
+    categories: [sales, operations]
+    required_providers: []
+    source: platform
+
+  - slug: travel-disruption-and-rebooking
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: triage-and-prioritize
+    categories: [support, operations]
+    required_providers: [google, slack]
+    source: platform
+
+  - slug: troubleshoot-and-resolve
+    categories: [support, operations]
+    required_providers: [google, slack]
+    source: platform
+
+  - slug: trust-and-safety-escalations
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: unit-economics-and-roi
+    categories: [finance, research]
+    required_providers: []
+    source: platform
+
+  - slug: upsell-and-retention-offers
+    categories: [sales, support]
+    required_providers: []
+    source: platform
+
+  - slug: variance-and-flux-analysis
+    categories: [finance, research]
+    required_providers: [google]
+    source: platform
+
+  - slug: vertical-industry-plays
+    categories: [marketing, sales]
+    required_providers: []
+    source: platform
+
+  - slug: vip-and-white-glove-care
+    categories: [support, sales]
+    required_providers: []
+    source: platform
+
+  - slug: voice-and-phone-support
+    categories: [support, operations]
+    required_providers: []
+    source: platform
+
+  - slug: voice-of-customer-and-feedback
+    categories: [support, research]
+    required_providers: []
+    source: platform
+
+  - slug: voice-of-customer-loop
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
+  - slug: weekly-marketing-read
+    categories: [marketing, research]
+    required_providers: []
+    source: platform
+
+  - slug: workforce-and-capacity-planning
+    categories: [operations, support]
+    required_providers: []
+    source: platform
+  - slug: zara-getting-started
+    categories: [marketing, sales]
+    required_providers: [apollo, google, hubspot, mcp_amplitude, mcp_gong, mcp_linear, slack, stripe]
+    source: platform
+
