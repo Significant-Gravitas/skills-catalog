@@ -1,0 +1,91 @@
+{
+  "schema_version": 3,
+  "slug": "company-policy-lookup",
+  "name": "company-policy-lookup",
+  "original_name": "policy-lookup",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "human-resources/skills/policy-lookup",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/human-resources/skills/policy-lookup/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/policy-lookup",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/LICENSE",
+    "scope": "Complete original package at historical clean-license commit; no later source mixed with earlier license. Plugin license controls where present; otherwise original root Apache-2.0.",
+    "obligations": [
+      "Include Apache-2.0 license and applicable copyright/attribution notices.",
+      "Retain applicable NOTICE content; do not imply endorsement.",
+      "If later modified, identify modifications; these archived selections are unchanged."
+    ],
+    "file": "skills/company-policy-lookup/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "5fc79b5e81922431b5665d33552dcce7de499e2680b4a81720cb4e2a68015edf",
+  "packaged_sha256": "95f27d9ddbb19faa2e70bcc5ec46f3c812f884eee49078a027632b157019c1c7",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Ines",
+      "role": "People Operations Specialist",
+      "status": "core",
+      "essential_function": "Find and explain the relevant company HR policy with citations, examples and escalation for unclear or exceptional cases.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "e4cf433af95ed33d8f7879f8",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "9139b581f4972061457ed591"
+  ],
+  "review": "Read complete original: source actual handbook/company policy, cite the applicable passage, ask when information is missing and escalate uncertainty.",
+  "essential_function": "Find and explain the relevant company HR policy with citations, examples and escalation for unclear or exceptional cases.",
+  "native_prerequisites": [
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Read primary body and all authored file references. No script, sibling skill, local template or asset is called beyond listed connector guidance. Example output templates embedded in SKILL.md remain intact."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "human-resources/README.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "human-resources/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "human-resources/.mcp.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {
+      "argument-hint": "<policy topic — PTO, benefits, travel, expenses, etc.>"
+    },
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "human-resources/skills/policy-lookup",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "5fc79b5e81922431b5665d33552dcce7de499e2680b4a81720cb4e2a68015edf"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Retrieves/explains existing policy; does not author a jurisdiction-validated handbook."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

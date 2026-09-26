@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "slug": "support-ticket-triage",
+  "name": "support-ticket-triage",
+  "original_name": "ticket-triage",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "customer-support/skills/ticket-triage",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/skills/ticket-triage/SKILL.md",
+  "discovery_url": "https://www.skills.sh/anthropics/knowledge-work-plugins/ticket-triage",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/customer-support/LICENSE",
+    "scope": "Clean plugin-specific Apache-2.0 covering the selected skill and plugin support.",
+    "obligations": [
+      "Retain original copyright/attribution and license text.",
+      "Retain applicable NOTICE text; changes would require prominent modification notices (none are made).",
+      "No trademark endorsement is granted."
+    ],
+    "file": "skills/support-ticket-triage/LICENSE"
+  },
+  "status": "conditional",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "d0e5e95443e358ad2a74811b196071d10807ca95aa20351ab5760feeecee1294",
+  "packaged_sha256": "2b00cdc0c2b8dc40713d2e7573aa095672bb4b8b3ef381ba45de4930e00e346b",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Robin",
+      "role": "Customer Support Specialist",
+      "status": "conditional",
+      "essential_function": "Classify a support ticket, assess priority and impact, search for duplicates, route it, and prepare an initial response.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Sasha",
+      "role": "Support Specialist",
+      "status": "conditional",
+      "essential_function": "Classify a support ticket, assess priority and impact, search for duplicates, route it, and prepare an initial response.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "0ce5d3f76c87a5ce69fe6aad",
+    "d2ba4833b0e8ac98550e060c",
+    "9b1fa05e773323c51517c7fb",
+    "7fef07fdf702d2d2fbbc1e79",
+    "b7a6a0729149c8add6df0ce8"
+  ],
+  "review": "Detailed issue taxonomy, priority ladder and routing table, with duplicate search across support, KB and tracker. Conditional because response/update timing is explicitly prescribed rather than derived from each company policy.",
+  "essential_function": "Classify a support ticket, assess priority and impact, search for duplicates, route it, and prepare an initial response.",
+  "native_prerequisites": [
+    "Approved desk SLA rules must already match the source P1-P4 timing model, including P1 one-hour and P2 four-hour initial responses.",
+    "Ticket, account and known-issue context; optional support/CRM/KB/tracker connectors."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Preserve original guidance and all branches; apply only the counted local-path edits, standard header metadata/name, and prominent packaging modification notice.",
+      "Preserve slash-command identifiers and $ARGUMENTS examples; changing the installed name does not create native command dispatch. Ordinary direct invocation with supplied task context remains possible where authored.",
+      "Record the upstream revision, Git blob SHA-1, SHA-256 and original bytes in provenance; generated ATTRIBUTION.md is curator packaging documentation, not upstream-authored advice.",
+      "Include the explicitly referenced CONNECTORS.md. Native MCP and plugin manifests describe optional environment setup and are not required read-only skill support; retain their original bytes in research evidence and link the exact configuration revision."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "customer-support/.claude-plugin/plugin.json",
+        "source_local_path": "work/as-is-research/shared-originals/anthropics-knowledge-work-plugins-1c7187c/customer-support/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin setup or discovery evidence; not used as required local read-only material by this selected workflow."
+      },
+      {
+        "source_path": "customer-support/.mcp.json",
+        "source_local_path": "work/as-is-research/shared-originals/anthropics-knowledge-work-plugins-1c7187c/customer-support/.mcp.json",
+        "reason": "Repository/plugin setup or discovery evidence; not used as required local read-only material by this selected workflow."
+      },
+      {
+        "source_path": "customer-support/README.md",
+        "source_local_path": "work/as-is-research/shared-originals/anthropics-knowledge-work-plugins-1c7187c/customer-support/README.md",
+        "reason": "Repository/plugin setup or discovery evidence; not used as required local read-only material by this selected workflow."
+      }
+    ],
+    "runtime_blockers": [
+      "Deploy only where the original P1-P4 priority and response-time model fits the support desk. Packaging leaves the authored one-hour/four-hour/etc. targets unchanged and cannot make them universal."
+    ],
+    "preserved_native_fields": {
+      "argument-hint": "<ticket or issue description>"
+    },
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "customer-support/skills/ticket-triage",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "primary_sha256": "d0e5e95443e358ad2a74811b196071d10807ca95aa20351ab5760feeecee1294"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Not a general replacement for configurable per-channel, contractual or VIP SLAs.",
+    "Duplicate linking/notifications and response drafts must reflect actual state and authorized operations.",
+    "If native policies do not match, omit this skill; do not edit or override it."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

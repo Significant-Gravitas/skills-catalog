@@ -1,0 +1,90 @@
+{
+  "schema_version": 3,
+  "slug": "social-media-management",
+  "name": "social-media-management",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "path": "skills/social"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/social/SKILL.md",
+  "discovery_url": "https://www.skills.sh/coreyhaines31/marketingskills/social",
+  "author": "Corey Haines / contributors; retain upstream copyright and notices.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/social-media-management/LICENSE",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
+    "obligations": [
+      "Retain copyright and permission notice in copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "8cc93d9b361622cdb640e87969747b85603bed2d268e923179f8dfb4799ec8c7",
+  "assignments": [
+    {
+      "expert": "Jules",
+      "role": "Social Media Manager",
+      "status": "core",
+      "essential_function": "Plan, repurpose and schedule platform-specific content and review engagement.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "2ddd7110ec5b75122c982688",
+    "12843469c87c24da1ce965f5",
+    "e12751dc43af8207be6af149",
+    "8b1e2a7e99c0c48f45506c40"
+  ],
+  "review": "Native asset-to-content-atoms workflow, platform-specific formats, standalone captions, calendars and listening guidance. This now supplies the full social-manager workflow rather than a constrained placeholder output. Platform and engagement heuristics are author guidance, not independently validated performance guarantees.",
+  "native_prerequisites": [
+    "Persistent project context/source list and supplied social content/performance data.",
+    "The listening reference optionally uses curl, jq and xmllint, public Reddit/Hacker News/Bluesky/RSS endpoints, or authenticated browser sessions for LinkedIn/X. These are external tools and accounts, not vendored source dependencies.",
+    "Native saved searches/hashtag follows remain the authored alternative for Instagram/TikTok. Authored privacy/platform/reply rules remain intact."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "social",
+  "previous_catalog_slug": "social",
+  "packaged_sha256": "740cf3843e89d5d4739f93c78fc75d1526fc12477264b2c69136f7881de38c57",
+  "original_native_prerequisites": [
+    "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
+    "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/.",
+    "Source asset/transcript. Media clipping/transcription tools only for media tasks; publishing connectors only for actual scheduling."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      {
+        "scope": "shared tools directory",
+        "decision": "exclude entire tools tree",
+        "reason": "Only direct skill/reference file edges create local support requirements. The general registry and related-skills lists are discovery, while external APIs/CLIs require native access rather than copied wrapper code."
+      },
+      {
+        "scope": "evals/evals.json",
+        "decision": "exclude",
+        "reason": "No selected instruction calls or reads the development fixture; source evidence remains in provenance."
+      },
+      {
+        "scope": "project context files",
+        "decision": "runtime state, do not vendor or rename",
+        "reason": "The instructions intentionally exchange persistent project context through .agents/.claude paths; packaging must not turn them into skill assets."
+      }
+    ],
+    "excluded_files": [
+      {
+        "source": "skills/coreyhaines31/marketingskills/skills/social/evals/evals.json",
+        "reason": "Development evaluation fixture; no runtime or reference edge from this skill. Not needed in an installed package."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 3,
+  "slug": "business-process-optimization",
+  "name": "business-process-optimization",
+  "original_name": "process-optimization",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/process-optimization",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/operations/skills/process-optimization/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/process-optimization",
+  "author": "Anthropic",
+  "license": {
+    "spdx": "Apache-2.0",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c/LICENSE",
+    "scope": "Complete original package at historical clean-license commit; no later source mixed with earlier license. Plugin license controls where present; otherwise original root Apache-2.0.",
+    "obligations": [
+      "Include Apache-2.0 license and applicable copyright/attribution notices.",
+      "Retain applicable NOTICE content; do not imply endorsement.",
+      "If later modified, identify modifications; these archived selections are unchanged."
+    ],
+    "file": "skills/business-process-optimization/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "14099838fdbfca24057e934fc22ed17f94629c5e9c9cec470f32e3063d0575f9",
+  "packaged_sha256": "8fb8ee8a04411f56d5cf5bb6a3bfd6a567c84489e76589d77dd3af045d5ebaeb",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "James",
+      "role": "Operations Manager",
+      "status": "core",
+      "essential_function": "Map current work, locate delay/rework/manual handoffs, propose a simpler future state and track before-and-after improvements.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "82fcf7327f1b720955a27ed4",
+    "b6a298669712e055a4550285",
+    "34fe57c4d59ffdccc27b5f18",
+    "e7acd1adddcda223f26ac595"
+  ],
+  "review": "Read complete original: eliminates waste before automation, orders improvements by impact and effort, and identifies measures of improvement.",
+  "essential_function": "Map current work, locate delay/rework/manual handoffs, propose a simpler future state and track before-and-after improvements.",
+  "native_prerequisites": [
+    "Original plugin directory and any CONNECTORS.md preserved; optional connected modes require the actual named service capabilities."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Read primary body and all authored file references. No script, sibling skill, local template or asset is called beyond listed connector guidance. Example output templates embedded in SKILL.md remain intact."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "operations/CONNECTORS.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/README.md",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.claude-plugin/plugin.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      },
+      {
+        "source_path": "operations/.mcp.json",
+        "reason": "Repository/plugin context or redundant ancestor licence; not read/called by this selected workflow. Preserved separately in immutable research evidence where relevant."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "path": "operations/skills/process-optimization",
+    "commit": "8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c",
+    "primary_sha256": "14099838fdbfca24057e934fc22ed17f94629c5e9c9cec470f32e3063d0575f9"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Does not implement, test or deploy a deterministic integration or provide an experimental causal guarantee."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

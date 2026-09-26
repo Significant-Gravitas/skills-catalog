@@ -56,7 +56,11 @@ _FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n?(.*)$", re.DOTALL)
 _SEGMENT_RE = re.compile(r"^[A-Za-z0-9_-][A-Za-z0-9._-]*$")
 _NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 _KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
-_OUTSIDE_LINK_RE = re.compile(r"\]\((\.\./[^)]+)\)")
+# A markdown link that climbs out of the directory it is written in. Fine
+# when it lands on another file of the same package (upstream layouts put
+# references/ beside tools/ and link across), an error when it leaves the
+# package or points at nothing: the platform copies the package alone.
+_RELATIVE_LINK_RE = re.compile(r"\]\((\.\./[^)#?]+)[^)]*\)")
 
 
 def main() -> int:
@@ -122,9 +126,20 @@ def _check_skill(entry: dict, errors: list[str]) -> None:
     _check_skill_md(slug, text, errors)
     _check_package(slug, directory, len(text.encode("utf-8")), errors)
     for path in sorted(directory.rglob("*.md")):
-        for match in _OUTSIDE_LINK_RE.finditer(path.read_text(encoding="utf-8")):
-            rel = path.relative_to(directory).as_posix()
-            errors.append(f"{slug}: {rel} links outside the skill: {match.group(1)}")
+        rel = path.relative_to(directory).as_posix()
+        for match in _RELATIVE_LINK_RE.finditer(path.read_text(encoding="utf-8")):
+            problem = _relative_link_problem(directory, rel, match.group(1))
+            if problem:
+                errors.append(f"{slug}: {rel} {problem}: {match.group(1)}")
+
+
+def _relative_link_problem(directory: Path, source: str, link: str) -> str | None:
+    target = posixpath.normpath(posixpath.join(posixpath.dirname(source), link))
+    if target.startswith(".."):
+        return "links outside the skill"
+    if not (directory / target).is_file():
+        return "links to a missing file"
+    return None
 
 
 def _check_skill_md(slug: str, text: str, errors: list[str]) -> None:

@@ -1,0 +1,70 @@
+{
+  "schema_version": 3,
+  "slug": "sales-account-research",
+  "name": "sales-account-research",
+  "source": {
+    "repo": "anthropics/knowledge-work-plugins",
+    "commit": "1c7187c4fc17feefa6cde39517f12dae1249e6c4",
+    "path": "sales/skills/account-research"
+  },
+  "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/skills/account-research/SKILL.md",
+  "discovery_url": "https://skills.sh/anthropics/knowledge-work-plugins/account-research",
+  "author": "Anthropic and upstream contributors",
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "skills/sales-account-research/LICENSE",
+    "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/1c7187c4fc17feefa6cde39517f12dae1249e6c4/sales/LICENSE",
+    "scope": "Inspected controlling sales/LICENSE and repository file inventory; no nested exception in this skill subtree.",
+    "obligations": [
+      "Provide a copy of Apache-2.0 to recipients.",
+      "Retain applicable copyright, patent, trademark and attribution notices; preserve any applicable NOTICE.",
+      "Prominently identify modified files; license grants no general trademark rights."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "97e1e9884149f7801cfc60c3e9119f37a66c53b30f730ab7b4a2862eedabdb05",
+  "assignments": [
+    {
+      "expert": "Max",
+      "role": "Sales Development Rep",
+      "status": "core",
+      "essential_function": "Research prospect accounts and contacts, check existing ownership, assess ICP fit and identify sourced outreach hooks.",
+      "optional_new_kit": true
+    }
+  ],
+  "evidence_ids": [
+    "e27e543925b0224e71d19fc9",
+    "fe2e7901829b75e6359679b2",
+    "a5600b42a48b71d6cc2a0e5b"
+  ],
+  "review": "Full source provides company/contact research, CRM ownership/deduplication check, dated public signals, evidence-backed ICP fit and sourced outreach hooks. It labels inferred priorities and unverified dimensions and works from uploads when enrichment is absent. Read-only research; no contact creation or messages. Qualitative fit is a prospecting judgment, not an objective purchase-propensity score.",
+  "native_prerequisites": [
+    "Target company/domain and the seller's ICP, value proposition and proof points",
+    "Web search or enrichment for current public facts; CRM or uploaded account book for ownership/deduplication",
+    "Native sales context and optional CONNECTORS.md category bindings; no prompt edit required"
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "account-research",
+  "previous_catalog_slug": "account-research",
+  "packaged_sha256": "58f9a408fa34a6b637ac20c51a05fe22c8793fea82eb68e0cdaeb9ca8765c512",
+  "original_native_prerequisites": [
+    "Target company/domain and the seller's ICP, value proposition and proof points",
+    "Web search or enrichment for current public facts; CRM or uploaded account book for ownership/deduplication",
+    "Native sales context and optional CONNECTORS.md category bindings; no prompt edit required"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}

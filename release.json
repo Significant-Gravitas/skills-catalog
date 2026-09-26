@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-experts-2026-09-26",
+  "release_key": "catalogue-upstream-packages-2026-09-26",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "b6729ae58d63589b29ec7f740ccb2ad1c53c4c60928bd382fd75b0fb98f42aed",
+  "catalog_sha256": "79c658ceb52a0a18e7b67e0dcb326f1c4b39a3c7ec99a4aad43880224db27af6",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -19,6 +19,27 @@
         {
           "path": "SKILL.md",
           "sha256": "4b917ad3b98d8d9c07cb4d155a25817a79385fb982099f067a4bc2db35764dac",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "account-reconciliation",
+      "tree_sha256": "413f518844b47d09edfff66ff0b5ace087930434f51e9e115fe266e8d43a35d1",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "4681298e7008cbe7a027d8893f05217b0a8dd8acbdb96a65ec2a51ec6ad34fd1",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "8a61beb98e2a3c707f43f6cfd1b0edd9b6ee6d96902addf079a238b775e6f6f7",
           "executable": false
         }
       ]
@@ -118,6 +139,37 @@
         {
           "path": "SKILL.md",
           "sha256": "f8a4d5214594cea3bf43d448d40872ffa5e1a5e5c047c68e784f6f6148c8d03c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "board-deck-builder",
+      "tree_sha256": "384de2330f4a7fc87d1f0caad64305574dd86f7cd642d3261f121dae2338ecf7",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "1e92fe2d6c729f954c3c84e2b776a6805d8b0241ff91d525b7e37db45edbfdd9",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a20126646f93d32a8989c3cf4772d59194f405034f7babe7daebeac22b8ab151",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ab494649e63107b39e0cb9841e01ddc6881d41095f34239aee250c636d24e102",
+          "executable": false
+        },
+        {
+          "path": "references/deck-frameworks.md",
+          "sha256": "b823760b183e37ff7fbff3886aea5a5f4df0594c522cd8509ea608b612efcab1",
+          "executable": false
+        },
+        {
+          "path": "templates/board-deck-template.md",
+          "sha256": "1df40f597f402f016b75d1eaf8ac3c7b05a7c5e7ba76412d294f1804347d1d49",
           "executable": false
         }
       ]
@@ -266,6 +318,53 @@
       ]
     },
     {
+      "slug": "business-process-documentation",
+      "tree_sha256": "5fbd37b03b4dd9f97a70c50f0abeb4ef69c109038e1f6901333cff0f7ad1a636",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "59a4dc9891b7ddb5dbb94d09285ecda1909909ce5d83d2ee6125106b664994a0",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "88960081cff177e07836f97c082792e0b717d7097152cd96251dec8be58b1528",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "83eec7fe46793517fe2154687452f31612c5c8b39f6cd4e71ac67f07352ada9f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "business-process-optimization",
+      "tree_sha256": "42c4e6f5566c8b83cd2c3eb320157eddd0ce7d6ebcd9b5d5878fc77ba60396cb",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "ee2596e62205de4e6be75de24acd2e811090ff6eaa5a05a6ee3688aeed18f3a5",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "8fb8ee8a04411f56d5cf5bb6a3bfd6a567c84489e76589d77dd3af045d5ebaeb",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "calendar-conflict-review",
       "tree_sha256": "90a3115ba4e1c5d554aa104d1bf9e7ea60d6af37661d7a789125997831fcf4ed",
       "files": [
@@ -305,6 +404,27 @@
         {
           "path": "SKILL.md",
           "sha256": "c1a37c0f9d5fbe08dfd53792aa1e2328d9b19d764e51cdc3e8c9ca71c5da786b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "candidate-interview-planning",
+      "tree_sha256": "3962920c589c572023491dab15df02070599854be5d8874fe1f6dfbc679feffb",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "10ea2a37b77cc0a3fafb3e1c59c87d9fe631ee473e6575f7ee70243ebf2f0f1b",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e2106a80a17804e9948a1a43200915b78b962ac6709e84d4044dbeda17af2540",
           "executable": false
         }
       ]
@@ -413,6 +533,27 @@
       ]
     },
     {
+      "slug": "client-proposal-writing",
+      "tree_sha256": "994f9883c4bfe29cd963ab2de91e336e8fc0d7441a736d0674a55b3c016f16c6",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "279813defe59a4285733bb0844c14e73768a15216920a6dda361bf22b68ec657",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "4530f92f44fe545e18773c7bbe0c312b0f04b78c161bdb784ff24f0ace9a5592",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e8694182b033c671c12e98a1fd7837e7a2724b834c94cf8598c8f6bbe72e6c9d",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "close-controls-and-accounting",
       "tree_sha256": "5acb5d3250c9cdb7540cfd976604c9285c5c0d21d1531ef4d4ad38dffe27bb2c",
       "files": [
@@ -435,12 +576,74 @@
       ]
     },
     {
+      "slug": "code-change-security-review",
+      "tree_sha256": "5bb5a5942cedb7f75879e39e32195e2a8357674e2cfd5851c0ab0f3b60f41844",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "74f75ab15353877518d43b151251949c41d24415ac2d8f5107b469391aaf41a5",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "9903ac72f297eddf500b045781030063f94a914d71bb9e7e25ae603c0032eecd",
+          "executable": false
+        },
+        {
+          "path": "adversarial.md",
+          "sha256": "3cb823f38c6e551cbcf5f72325d2bb219dacdad774072519c31d50d92db19800",
+          "executable": false
+        },
+        {
+          "path": "methodology.md",
+          "sha256": "16b335d24cf2145e3dc4a37f50056550d29db2efa20e6df78fec95ec1e6fb0b4",
+          "executable": false
+        },
+        {
+          "path": "patterns.md",
+          "sha256": "52abb18abbc73502a3d3b2f36a7a035adc1db40fd812d1d5424cf065036a06e9",
+          "executable": false
+        },
+        {
+          "path": "reporting.md",
+          "sha256": "0016876dc6f158e926448bff1b6f634796757c7afe09dff177cfe30250724fc4",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "code-quality-getting-started",
       "tree_sha256": "3489f04c625388fcea3bead151907f7dada11c733c9a79903495384cc3c13eee",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "d10aeeb9a183c232ebd915db3b9292440d2273c27c78bc84d891bbfed389574e",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "code-review-quality",
+      "tree_sha256": "4a17741ea46f41f6d5516032fda3a833bb5eb4b1d5997b00e0a4087f4b791b7c",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "1fe4c333ae955d30ef97c82e950db961337efadbb478617c6f6b97b5088e2bf7",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "b3f8b4df69aa8ba1c9bc5649ca6b30b7d96b9318a3699171fc48beb8181c18cb",
           "executable": false
         }
       ]
@@ -520,12 +723,69 @@
       ]
     },
     {
+      "slug": "company-policy-lookup",
+      "tree_sha256": "c25e7cedcaa67fd8acf3fcacc764063ae7ca2b8c0ce8e052de388cd6645a49be",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "77c26d5d51ce718bd39066f59fcdf30c534d3d37ae29f45f53d6eb15b213e87b",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "95f27d9ddbb19faa2e70bcc5ec46f3c812f884eee49078a027632b157019c1c7",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "95e010b067d54a0989ac5f4676df7d1f9ab8ca5c762d8de2de3f301cd4b30c68",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "competitive-intelligence",
       "tree_sha256": "40f624135258ad3eedc4609e83e382a4bcd8a1f722608cba88f9cafca0ccef3d",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "2d72d2fb0c68e65551928572f25ba721c2c75278dbbb86adbb96c67e621c9ec4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "competitor-profiling",
+      "tree_sha256": "d8cbcdb87aa2f6f1dcb1c44a454aa8ca9653392571e885864dbf42ebc02c00cf",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "494d8d80be514ec8c97d29fb7920840f3811f422b57747e396b3c38cfca17841",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e59cbf76a02534686e7a4475131abdf4c70927821aad99dad53577c04f2529fd",
+          "executable": false
+        },
+        {
+          "path": "references/templates.md",
+          "sha256": "710d78cb519012eb7e39f63643e22d7b9026c91c569262b44c45535c10717a91",
+          "executable": false
+        },
+        {
+          "path": "references/tool-reference.md",
+          "sha256": "37defe4f29d15a74b10e9b0c17d798f62effaa025e2ff8fece377171adbb658a",
           "executable": false
         }
       ]
@@ -559,6 +819,27 @@
         {
           "path": "SKILL.md",
           "sha256": "844c5ecb5a15d37c94659d4631f4719f87b1e99dd4d7afdf95e44c687b693d0d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "compliance-evidence-tracking",
+      "tree_sha256": "8646a6c4fca17e0eade8bfcb543173072e2fe4b36795567c7135e51c996f3f7c",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "448cb57b891f378c47e5218526f28cdb8b0af47a1507cdc8d772e8c39356db6d",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c0eeee128897a2bc2466beb9ca3b81d458b7b181660cd3519fbf96c9f4b5c5ba",
           "executable": false
         }
       ]
@@ -603,6 +884,42 @@
         {
           "path": "SKILL.md",
           "sha256": "f887fd75aa9de774a05b74583d3ae8cdf16428b582019c72edc73245964251e3",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "contract-amendment-history",
+      "tree_sha256": "a8898c5efc6799c0f06cc9521750b0cc28469797100709e5e9a820ba1891c253",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "052434cadc5a5637eb36d0447334338b0b9a5775aa7e35b96266d2a2134fd77b",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "805491d9583b1f53e38d32009d12f333100a6f142cd25e6bc0cea92d6c2976c7",
+          "executable": false
+        },
+        {
+          "path": "references/company-profile-template.md",
+          "sha256": "b2ce0c7950c7853abf9532e8f74003f920d57f16446649269c8460bdad0aafb9",
+          "executable": false
+        },
+        {
+          "path": "references/dashboard-template.md",
+          "sha256": "d5f939998070b91ef8c4f039233ad16349801c058ccdb190e824b15c2d0d5864",
+          "executable": false
+        },
+        {
+          "path": "references/practice-profile-template.md",
+          "sha256": "8c5844f7b88aa8574e74613966090bb69e21bb96768049f34454a52066bc6596",
           "executable": false
         }
       ]
@@ -669,6 +986,37 @@
         {
           "path": "SKILL.md",
           "sha256": "c067b2905d0348eba91e0b2d78c402efedc19ce489dcf8a091b5c0e206daf18b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "conversion-rate-optimization",
+      "tree_sha256": "25933c3670a747a9045f030b75145ab8eb5dc943d5f9b91a9a6f3759b3bb6641",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "01d274358970c9ae4a57916f10507c2ecc9065dee40fed62d7a1ad59d56d0bf6",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "7f700390a9f76964d5cf6c48e9d3622cbc3038c73c4beabb1557807bd13cad41",
+          "executable": false
+        },
+        {
+          "path": "references/experiments.md",
+          "sha256": "bbcc356c0af36cfaa4556bf9e929deac30c65cafb37f909d7c51d4777fe254ca",
+          "executable": false
+        },
+        {
+          "path": "references/form.md",
+          "sha256": "e3115b0fdfb3968915b8e3acdc32a6e5f1d2c6a335ebbed25bee9b601ec573d7",
           "executable": false
         }
       ]
@@ -766,12 +1114,74 @@
       ]
     },
     {
+      "slug": "customer-escalation",
+      "tree_sha256": "b477f3a3fd2cd3846f5ed8c5537748fce99fcf267bdd0b270baf6525831818ca",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "4f114e486043486967da4038161838694d43b35e8f9755c8b18e1f11f7221f82",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "318c180990ceff12e86a29883f132def955a73129329e2f93d81047ddd55f69b",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "b24546cf6965432130b6755762fe18576be24044c12bdba3d809bf4766b7a7e3",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "customer-health-score",
       "tree_sha256": "8cf1e2d028e8a264a2dbaac4455ebe489ae3a64885ccd60f73f79b83b985aa98",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "27ddfdf38aa0d4d8ce6a51af1b3c0b950b4df5d9aa0d0ad878b9512fe8c79a94",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "customer-insight-research",
+      "tree_sha256": "3db91b6b4bdc233fd28b00e2c660cf3f4bb3dbb90041226998f36405183cec23",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "f0d5c135de702a2a0d77234ac75961ca0648043356e4f34bee30a9720c8dac2a",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "cf150f4a864408fdf7c0387f43e4ba1de4a9c389713d63994129aa534b78b94f",
+          "executable": false
+        },
+        {
+          "path": "references/interviews-and-surveys.md",
+          "sha256": "6161b0938ddde139889148eb4ca89fad902afd922c11dce5367a0708edfb2174",
+          "executable": false
+        },
+        {
+          "path": "references/source-guides.md",
+          "sha256": "a474a936063f64ab57a414410ab28782b3e922308e7a8e465570ad6c560dae54",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/sparktoro.md",
+          "sha256": "00961feb89821d20b61ecc0a7bef196669190eac8bb2bbe8029fd596c5fd6118",
           "executable": false
         }
       ]
@@ -814,6 +1224,32 @@
       ]
     },
     {
+      "slug": "customer-response-drafting",
+      "tree_sha256": "df22b6297385ae464c00dc2cd01aaddcfbf8172fdb008bcbf0d49a5440d3793f",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "3af4d4f470d23358d4e030d552f68c0d54cac69f40728f80b9368ff8501ac659",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "4aef491e7cd95032a7759a088980fe4fb574d274511cc9f147bf185aeb651197",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "b24546cf6965432130b6755762fe18576be24044c12bdba3d809bf4766b7a7e3",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "customer-success-getting-started",
       "tree_sha256": "5c7aa23e06436dbc6a4983bd68e03ea5d71e83908a853e2e54aa8e0da1d19a83",
       "files": [
@@ -831,6 +1267,32 @@
         {
           "path": "SKILL.md",
           "sha256": "c9240206f1ca5bc8c55636ac3e6287c64419ab24f0716d2ece2c141e31c123d0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "customer-support-research",
+      "tree_sha256": "2e705ed4ff8a7b21a50cfd6615cc56c5c721a85a5a37ff6918ab8d2ac2a5f658",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "a11831b86f71ac3d5525e3aa58b61fd171514f49abd7acb2983abf412b23bce2",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ea08a139131a589537fa7c2c123cc7bdad455f47d1b28d322b15d597475a325a",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "b24546cf6965432130b6755762fe18576be24044c12bdba3d809bf4766b7a7e3",
           "executable": false
         }
       ]
@@ -864,6 +1326,53 @@
         {
           "path": "SKILL.md",
           "sha256": "6395973266f77a24331f9e7d31539ab2afdc2fc1178f66a1ef1b42daec9ede7c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "data-visualization",
+      "tree_sha256": "bc680212a64b904129371212c98c6cddc903f4ebf846243be1e5e2219f99b7fb",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "b040679d39025eadf3a298392bcf809c56aecfc73b288a3cb5015fa5a0a20c2f",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ed4847a1e7af46a7758f8d8d7a6558deb2c0c057a90e694b971733f38c641acd",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "dataset-exploration",
+      "tree_sha256": "16054cea60e2a30555711246136b829ace317434385c449cd3d54d41eea78d97",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "6f7bfe5a506fc1380e7ea3b809cdeb8353c8d4e3c75a025559ed206d39d89c0a",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "897c75d2d1074591768a20a825f3a211c4f6a658dba520cce31e2d64a7c432bb",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "d2ac5338dc469ba23abf175db7f54566416e881363756748bf6f3581462ee9e2",
           "executable": false
         }
       ]
@@ -1109,6 +1618,84 @@
       ]
     },
     {
+      "slug": "employee-onboarding-planning",
+      "tree_sha256": "6bce8c25fd0ce23b39b92dcd641c9ecacf00cc6e42e8c43c0ffc7f704d3a80ca",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "d014f42dfec5aaf6c4e236d36c87e7a83b7e1cc1aff5bfc4904ff9c432cf2c02",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "bc9cf5484ce55d34cb1fe82086f901a86b40d1b2088893a185f4be4e7192f95c",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "95e010b067d54a0989ac5f4676df7d1f9ab8ca5c762d8de2de3f301cd4b30c68",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "employee-performance-review",
+      "tree_sha256": "358d04ec0f58d51d6c2cff80673f6fda018a8404fbd2a3955c650ceb7b74a3c2",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "99e02ffe0ee1fe367bc76107e26b2f7674ff75cee4b50edef5515baee4514bec",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "f477fef4ad283c588acb513ef191360d6da082c65b30542af04a92c2c4cf0306",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "95e010b067d54a0989ac5f4676df7d1f9ab8ca5c762d8de2de3f301cd4b30c68",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "employment-offer-drafting",
+      "tree_sha256": "3eba76f598af513fd81a1c836878bcf020337f38ab269e0d69a178ddc6c295cf",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "2c8fe591e06cc49af57bb167002e1f52f920eab18a537b7e60ad82a76e0a298e",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "06897d2f3364d134ef6483f6711723f3beada4e2d3ce67716afb4e12ccdb584b",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "95e010b067d54a0989ac5f4676df7d1f9ab8ca5c762d8de2de3f301cd4b30c68",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "enablement-playbooks-certification",
       "tree_sha256": "3c4fb2b243f299619120de096a93055e0cda3f19b66b77ed69d8cd9ac8728937",
       "files": [
@@ -1274,6 +1861,32 @@
       ]
     },
     {
+      "slug": "financial-statement-preparation",
+      "tree_sha256": "760e67af415a1af7dfa22bfec5880544828e1b2e8e8e66f39a44b7e9794a3e7b",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "f8a32033bb5b8ae1949ad70bfc6c464800d74dbebeaefef00747ca00d3eb062e",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "619c9c6fa1b28b6a15607d5657f7ecf8b5d0583ab87f76d58bd5e31b6597bf6e",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "8b7f689b3894714036c8d2ecca0d2d4afae5ec53d21831666058e68e08cad266",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "find-the-decision-makers",
       "tree_sha256": "6329f04e4d5b67b0e46d65d8bad192424b4e11beb7bcad42341b29b172cce25c",
       "files": [
@@ -1335,6 +1948,27 @@
         {
           "path": "SKILL.md",
           "sha256": "b4241788d36a15143e003655d9b0a72c14f4d76aaec9da887ad87a3e46d1f98d",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "go-to-market-strategy",
+      "tree_sha256": "bb317a717f36690f74b546817117759cde4eaa89646652d654a46d585f30e87c",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "5ea09542e2f2e57f4fe308b5f72fff8c281502165bfc4878c42f712a2bb898ee",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "beb54dfb40a58d8f4e81d5f50232290ec25b14dc243d3793792d6edb51ab337d",
           "executable": false
         }
       ]
@@ -1678,6 +2312,32 @@
       ]
     },
     {
+      "slug": "knowledge-base-article-writing",
+      "tree_sha256": "bc6dd0e18af716f6085a182bad34248d6eef8b256c7f4ba2b8561d25da6e914d",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "b591a916f9aba99714b77924bd0ba78a4b0c1c3fe67df6142678a3cbd9901364",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "bd3c5d69c95419a1b5fc1e1539cc77cd76d9bddad2d8147a6bbc126d1e67b7e2",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "4a1fd39837a96068f2c04fa62508a001a0f6dc407be7ff1ae32537101ff1afa8",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "knowledge-centered-service",
       "tree_sha256": "a42eff3ee5ef3e9f82104826a292c400ef77db5adb34120d3b2cc23c6cf40e7c",
       "files": [
@@ -1749,12 +2409,125 @@
       ]
     },
     {
+      "slug": "legal-meeting-briefing",
+      "tree_sha256": "c2ee52bb6d6b1262e80236145b3827f035c8fdd0a89d860743fa0ea35cdfc3b0",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "fc60f6c5942634c2a85a2ee3a9972dcbc52b204b5a19c4f4f06b0a0a53ebb48f",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "17fd7775b1cce81800b30b1af5881af368c0855793bb4ae032e611ef1b229cca",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "legal-response-drafting",
+      "tree_sha256": "4962fbd60556b03faa06e4984fac25df9fc8c23206ddba6666ee108a2b7af673",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "3081c8f56f8f5d7f585cbca1fb52465d0ef71b569a96b05064c50c15b111f0a7",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "259e634ff1741f2271bed1723aaa21b880fef6c468d8df18df2527e69bd5ae9a",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "de052ca5cc7075213afafbe88c28249ff0fc76a37aed44c6b5c5e3f1d1f6cb3c",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "lifecycle-email-map",
       "tree_sha256": "60207f470a432c22826e71c372be70406437908e252247e4763ee8c3592dad60",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "990d737707a15859c1194697478502c104247503ac70ba36b906cb0b29ac4975",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "lifecycle-email-marketing",
+      "tree_sha256": "e6831b67c58db5e8266bbfff5bb3c6207d866ce459e6ababbe12090ebdd61642",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "9f842f538260e0947e37c2190522f889893a230c03ff9c6d2475ba0252d7bd34",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "6ab72bffa44a8842d0e2ba7ab8da7100b0bdea630e32d5d723a2583684f38b03",
+          "executable": false
+        },
+        {
+          "path": "references/copy-guidelines.md",
+          "sha256": "02f08897e4aa99ecc4ec1893d61d0c26d0c5e62e09af26f175087455e9b68e01",
+          "executable": false
+        },
+        {
+          "path": "references/email-types.md",
+          "sha256": "a5dd4f0555a7b21d2ff426948d15657825b9d16265652563f5e272d2e1879bfd",
+          "executable": false
+        },
+        {
+          "path": "references/sequence-templates.md",
+          "sha256": "d47b12e263ad52b72ab741c490bbc98d8bf8034d61faccc50b7dbb2650a9fba0",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/customer-io.md",
+          "sha256": "43bee99a2659ffa8c96834a27f8a64e7bc7798c3962828db42f4112720516056",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/kit.md",
+          "sha256": "5f5496507e63cfed76993c4ceab561a513aba1379ea78a74e57d7887bb3015da",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/mailchimp.md",
+          "sha256": "518afcf295289e6bf6483b584e2675195449eea6ebf5328de5721bbc3812d74e",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/nitrosend.md",
+          "sha256": "147c415815703b228e876624358e6e9d2fc67f7b49cafbca2016916ae61754bd",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/resend.md",
+          "sha256": "4dd1329c84a7b4730e831fe687270f8bfed410730bc15ed3334e3dddd543d6dc",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/sendgrid.md",
+          "sha256": "ab3178b4c49b8ac6c9964d4fb03d4c80828d8f71584735bf2a220ea1ae1d14e5",
           "executable": false
         }
       ]
@@ -1810,6 +2583,140 @@
         {
           "path": "SKILL.md",
           "sha256": "6d7e8bd56d60157c4715fc252b3d25ee9fa98de5d8726a598a885396f5ba9439",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "market-size-estimation",
+      "tree_sha256": "a60ad1c85a0b6b47ef30b40a6b0e39712560f78815e7fbd605240f4b9d4e6b85",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "86cf782197b5ece5bcc9ad44eb450c0ca443f92386cfec4959009b0534584ffc",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "2c27ac53895fbf027423e429820ae780d17c49ed1d77ca576f209809af0d9128",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "marketing-content-strategy",
+      "tree_sha256": "392ddf6b2d324995e784162b5ef2137741cc73fdd9777b92da11db0948b0d114",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "dfcdb1c8357ac5194f50c52a92a0f02bb8caa2a97b3b15fe26db50bc55bc7cf9",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "5864f81c6a0eb2f2bf860a38aa9c2f773abb8237a8b67e4bb25332bbdba01b23",
+          "executable": false
+        },
+        {
+          "path": "references/content-distribution.md",
+          "sha256": "1861a1aab0627ab29c279000879a9889242da1ba85e677acdc759c66a6241778",
+          "executable": false
+        },
+        {
+          "path": "references/headless-cms.md",
+          "sha256": "28eff6cba6f4c9da323fe1142e70838f36ffcb563f1cd4d1de5776294bce4907",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/contentful.md",
+          "sha256": "17526825260159bc60b3c8ba6e644acd30a7126397da1dc2b633f214037a1686",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/sanity.md",
+          "sha256": "f084bbd1d7d38f142c67c7877e4d57fc46f0452c145741eeee293b90fd34467a",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/strapi.md",
+          "sha256": "e78e9898f0aa05c8ef1d435a28c0c87467c8e00bfbfb9b9d7be11ff796bd654b",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "marketing-copy-editing",
+      "tree_sha256": "929e1d4f376d50e4cf11b781bfb8be232cae528b885d37245a6fb3201f98c1b6",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "8030d54a675ed7b0fb8d2a40f227c6d2cb059ddd3ec2af8601d422d397904e2c",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "55cd950e1f3604510b763d40e90e9bfcf6fb8f7eab926298e00dc8fec0414722",
+          "executable": false
+        },
+        {
+          "path": "references/checklist.md",
+          "sha256": "d8f7b07d60f64a6b7623d3467b5d986729c8b2ccfda45f79ae4083a3a3ac5142",
+          "executable": false
+        },
+        {
+          "path": "references/content-refresh.md",
+          "sha256": "8a3a2d301bb2b8b2a780f5bef43093ab42295041b2fea2a9caeca2421ef3c79b",
+          "executable": false
+        },
+        {
+          "path": "references/plain-english-alternatives.md",
+          "sha256": "df4f820d4c63ae8a517c64a243c101658352cd07d002355bf3c97de0a00f3775",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "marketing-copywriting",
+      "tree_sha256": "9c541aa8e39d4b1902f1409b4b30a51137f6d59a57fc60b9a73d1cb9b23a17a0",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "01008ccabbecf31071a9052a7e56ebed1c13b18d7b4db78c08830298bb2c8b61",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "1565ef8d089df7e66f479abda91704b92c251bfe644c64aae53326fc49edb141",
+          "executable": false
+        },
+        {
+          "path": "references/copy-frameworks.md",
+          "sha256": "d98818886525908bf17dd6412d0b72731b313d6eef3e1ab6b365828a3a342779",
+          "executable": false
+        },
+        {
+          "path": "references/natural-transitions.md",
+          "sha256": "b794f18aaed0b10da6bc5b57e9a90f251d92027026913223869419ab049652ba",
           "executable": false
         }
       ]
@@ -2048,6 +2955,27 @@
       ]
     },
     {
+      "slug": "month-end-close-management",
+      "tree_sha256": "60a6bcaddf0ab35e6eb6d6e7a21428315105dc01f01242b9635182ce2246d111",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "c2cc4c4d7ed46686498eb23060c379107ef4fd5cec7e279d00d0b812e9c8f087",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "6ed3b7c2fec254e64f6820ed497fa41b827b6f303d41eb5b91b7e284fd48fbf3",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "monthly-investor-update",
       "tree_sha256": "529de004c6de9d44a32ed7f63cd4b5a4c7d864194568510d0e7f1f7e6f8dcb75",
       "files": [
@@ -2081,6 +3009,32 @@
       ]
     },
     {
+      "slug": "multi-source-research-synthesis",
+      "tree_sha256": "0b69d9a3cb51dbc57bda69b9197df51b890b8fc3b5cb65137de60d6cb2621c16",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "99e58d4e1276405ff9465e60783d7d99e8e8ed3068cf72e249d7b46410d7dc74",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e27ac616e74bc5eb1753299f4e8b29b93c818c45ebcb62255ade3429bcc30189",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "1b4b33a9c9d13ac80b1cf552f4e5c91a0488d08ec6c3bc2448734912da5480c0",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "multithread-and-stakeholder-maps",
       "tree_sha256": "a8207ac73ed78601385233548a8786d1d82658d1d94598712341700050f83d5f",
       "files": [
@@ -2098,6 +3052,42 @@
         {
           "path": "SKILL.md",
           "sha256": "5e27d8e057673d20de4651a228d189ea8c3579c659ec3b321d0f014afbc7c0f1",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "nda-risk-review",
+      "tree_sha256": "8e45dd96f6d1c10d784f8a3cb424faaee9c1b8100e76c9494b7172f7af7561c5",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "57ebc56602211242ba3dec0fe263a7ee8225be89b2331dc520bad07d615fff1d",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "25c07c5b924838885d717f9caa734a6a43e47f7fe10d4ffbb66dcbe27a1d5034",
+          "executable": false
+        },
+        {
+          "path": "references/company-profile-template.md",
+          "sha256": "b2ce0c7950c7853abf9532e8f74003f920d57f16446649269c8460bdad0aafb9",
+          "executable": false
+        },
+        {
+          "path": "references/dashboard-template.md",
+          "sha256": "d5f939998070b91ef8c4f039233ad16349801c058ccdb190e824b15c2d0d5864",
+          "executable": false
+        },
+        {
+          "path": "references/practice-profile-template.md",
+          "sha256": "8c5844f7b88aa8574e74613966090bb69e21bb96768049f34454a52066bc6596",
           "executable": false
         }
       ]
@@ -2316,6 +3306,53 @@
         {
           "path": "SKILL.md",
           "sha256": "839887586b1a955cebda5c422e851e8f4f81b9278d60a9b1d83e2c809a1a10cd",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "operational-risk-assessment",
+      "tree_sha256": "033ef881406bbe9bea7641a673a23c137c5bfec8ea036a67b419e3adf4a54335",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "30cd38b67f253dffe48085dd513be8f73e38bc86be66b16a8ac436b125ecf28d",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "7d8e7fca7f2816011f0f5341698082440f06a329a06d3fd95a09773fb0e36914",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "operational-runbook-writing",
+      "tree_sha256": "b5a12c3b83cdcd6052b8b9c5d25e014e94004b6c133deddb1c19d6a9b620fa5b",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "1441d876c15ef0f722ec6a7174c6b8174eb9a08aa68a60ac0469518b5ea17dd0",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e6405c8f266393dfd98f9d6d4ba7149cb1b8eea0787bde4b02d92e60d4d55eb1",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "83eec7fe46793517fe2154687452f31612c5c8b39f6cd4e71ac67f07352ada9f",
           "executable": false
         }
       ]
@@ -2541,6 +3578,57 @@
       ]
     },
     {
+      "slug": "partner-co-marketing",
+      "tree_sha256": "6999ac04a548bbea083fb925f580d75ca4430c415733b7eae943e11408621e2c",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "d7d1b31f8f9f804a04b11892b08486b122046c535394d77eeb7152fb48bd209d",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ea0b7992a31fbac085a52d03b6a6d9c2d7b34ef102d79b1a930e724a7a691aab",
+          "executable": false
+        },
+        {
+          "path": "references/partnership-types.md",
+          "sha256": "58f73473ab3a903c5c74a963b11e9b2d0710b856b5644ca914ecb88ad67030aa",
+          "executable": false
+        },
+        {
+          "path": "tools/clis/crossbeam.js",
+          "sha256": "7de4adb7962689e270783a9234188293a77e10aa6008b47ab2c4bf52f9700736",
+          "executable": true
+        },
+        {
+          "path": "tools/clis/partnerstack.js",
+          "sha256": "f5222506be36650cefdf96cda805298abb739834ca45be70f131d72ccd02fe89",
+          "executable": true
+        },
+        {
+          "path": "tools/integrations/crossbeam.md",
+          "sha256": "0721600e99da5a54ee5abc7bcc71739b42fe8aec9129973cdd9101cdf9c5bb8d",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/introw.md",
+          "sha256": "5b893d2e95993fe8da7383801989d7e791aab732c5a306632a69d9bc7d4f47ae",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/partnerstack.md",
+          "sha256": "0245f1c76582e244f0c8aed7882604d55c441d5781d9e27339b6c6e861222fb1",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "partner-first-touch-outreach",
       "tree_sha256": "b0131988ff68083bf701779c859a405b5d912fef6e51efa75dd57f7fc27b61a7",
       "files": [
@@ -2558,6 +3646,32 @@
         {
           "path": "SKILL.md",
           "sha256": "3e7eb2514c7fbf30815e67824c9b8bb0565454e9b091b88a636b6a455798571f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "people-analytics-reporting",
+      "tree_sha256": "471ebcafff6a8db0dd1a58fa2fdab11541a14618fea0c1f0cf651f27b06fb54d",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "eb1e84381d20aa4cf0691a60a44819af6c5e729d7f48ca04228fb8eddeb76946",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "cd4765f0612a1b9aa7547f70aa879b588d9518b41227805462b6f316306fc0c6",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "95e010b067d54a0989ac5f4676df7d1f9ab8ca5c762d8de2de3f301cd4b30c68",
           "executable": false
         }
       ]
@@ -2657,6 +3771,27 @@
         {
           "path": "SKILL.md",
           "sha256": "275468ca700636a16d053125b17644327e20cb196fcedeb285cf3fcf88d445ec",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "portfolio-company-performance-review",
+      "tree_sha256": "f908ea633427fd75345a448107d638b7e098750ff884887706a71d7109e1e42a",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "3b7a915b299ea8ed09d52c4aba26afe0e0c23c839dfa82f5bf9648c4cafd87c6",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "1e95115c585e2b9e7b6573b83540ee2d009d85cbd24e554b70e9e1f99968ec47",
           "executable": false
         }
       ]
@@ -2798,6 +3933,47 @@
       ]
     },
     {
+      "slug": "pricing-and-packaging-strategy",
+      "tree_sha256": "d3fe97bc1012e81334eed5d740d46a1faac9e886c203b36e6de9e8a568160f34",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "fea15f6d019250feaf307657044de4feeaa2d0f815831978c5e64031d8048676",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "a81bf2ad4bcf23fd42c5488307f297202ea69b1ecf69d6d3d95dbe906b905144",
+          "executable": false
+        },
+        {
+          "path": "references/pricing-models.md",
+          "sha256": "2cdb900b74f56a796c0331725e73eff4ecd84f8021b42efbb0a5b4903d1d9b16",
+          "executable": false
+        },
+        {
+          "path": "references/pricing-page-teardown.md",
+          "sha256": "850b018a6b224bc9bd4149edb3f1cbae41991ba6ef1d9efb616dba9328790c4b",
+          "executable": false
+        },
+        {
+          "path": "references/research-methods.md",
+          "sha256": "b6aab09860dbab2f11d69cc9c179cc7f6e1a100ede28e5c49b59070a2caaeb15",
+          "executable": false
+        },
+        {
+          "path": "references/tier-structure.md",
+          "sha256": "b59910d37cceb74484f28b065963daa60f5c4fb1ffc36a0584d0f3cad11f3e30",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "pricing-and-terms-approval-brief",
       "tree_sha256": "4cd2961d9fdc9e68fa5432d92d5f089da9eb68e65581d1aba9ec598416d4d5c4",
       "files": [
@@ -2837,6 +4013,27 @@
         {
           "path": "SKILL.md",
           "sha256": "90a7a2d15592d55951781b488fe50ab9f60ec94826d4b889b23fab85f67c2bac",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-assumption-testing",
+      "tree_sha256": "21468650adc4b2491d88f7ab10ca774d5930d88a56e1c3bc9f0e45cec172410b",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "029efa23e6c65fbd76ea13fda2c62ffee484a8d7ecacc42999a24e940d0c5f89",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "2f3549748a27e2efdaea524f6fe96c49823f310a19cd973a557e1bc74e3b9616",
           "executable": false
         }
       ]
@@ -2886,6 +4083,32 @@
       ]
     },
     {
+      "slug": "product-launch-marketing",
+      "tree_sha256": "643360d4cf8fe963596885d7749361692feae368f5c3a1eadb70f3e0d4952ac6",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "af5a8f8149cb7e3e8c81f2f9a80f45a888a4595977e96e04013ed5dc1cc80776",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e7c24535417feafd913c3fb00ee7c284f0edef08999119b0fea33eab69634dc0",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/introw.md",
+          "sha256": "5b893d2e95993fe8da7383801989d7e791aab732c5a306632a69d9bc7d4f47ae",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "product-launch-plan",
       "tree_sha256": "fb9fb3196c61103e46ce89dea5b851af52d9ff8e8bcbe0130ad045b9ee590a64",
       "files": [
@@ -2908,12 +4131,54 @@
       ]
     },
     {
+      "slug": "product-marketing-context",
+      "tree_sha256": "ad38d8fd3360250eb7c1bd93e7e22d3d5383a397883859940f7457de0404f545",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "e2e0b04e68872f19a1067169da7422a7e7a854478a46c4d820ab9dea9ca61326",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "855e09838f1e73a846104238297fadcc075e0799e17468636f835a25ce8e889a",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "product-metrics-and-instrumentation",
       "tree_sha256": "8bcfea261f265c76b25d81e0488a9f6983d02d87eac93f6c55d9af968012f758",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "c64589a35ff44536ebc1ce8ee64002e144d09bc4fb75b1ed100d47c01745f530",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-metrics-dashboard-design",
+      "tree_sha256": "cc944259e79e0d0acc0412f6b714865e3338816529406d3dbe7f5487dc2c6470",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "f100fa816689078511d682d9cf97bfdef13c1de29e56495e229d47697e876066",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "bbc07f16187d525ddcfc1037738a3ed8552984a869e55ceb45fcf6be7fad5775",
           "executable": false
         }
       ]
@@ -2941,6 +4206,58 @@
       ]
     },
     {
+      "slug": "product-requirements-writing",
+      "tree_sha256": "2321ae900a99b5136acf3069945b688adbad306beb0521bc3a8a8e284a284205",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "7c842254b66a945082233a47b20d9acf8e10601e65f8259f535964fe02a8e68e",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "4b7b736606945bce80536edd0ed3acd92fbdd472f27a77d436226f979d80de50",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "97ecf841410adc57225a464970a51d7f7308dd4ca77adad57087d97f642e64ba",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-research-synthesis",
+      "tree_sha256": "f879f062bcb92c3908c3c8e3a1a982d0c1b914b8fa64bdd8cca3a020ef093ead",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "40f0ba96d439f9d48700f8701aa6a0a30659e79895b8d08ee1a5acb7ca81d824",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "45fb4200f449da90552d6d2c45be82b657e68163671369f30af6bae7d9df6f21",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "97ecf841410adc57225a464970a51d7f7308dd4ca77adad57087d97f642e64ba",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "product-roadmap-and-prioritization",
       "tree_sha256": "fa61ba509ad42c4f9f31c2eca4fed64f39a2de92ec81b870e3626f94e6ad0ab7",
       "files": [
@@ -2952,12 +4269,198 @@
       ]
     },
     {
+      "slug": "product-roadmap-planning",
+      "tree_sha256": "9b7c61200ff6fdfce493f7311a192b7c075d580bb4399f88fbfcfeb0d0c89713",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "764604070d431a70b42fb03681796e3c6e4712d0393d79630f20498fb33467a8",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "56d6461296b41795e123909247fe64c06d9cd697eb51a2b5553a4a1291f8c67b",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "97ecf841410adc57225a464970a51d7f7308dd4ca77adad57087d97f642e64ba",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-stakeholder-update",
+      "tree_sha256": "e70230f1d0d3f85fb54169dc25b0691f9311c1a75ca93b8b8ea5896ac8740a7a",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "4cda119f0c31e40990e996073924396e944d9d6bedd94f71e3e5ce42c0cf83db",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "25331457338e07bfaa7a52150769b3aa3c7bb9dd65ded88af8587852a86cf0e3",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "97ecf841410adc57225a464970a51d7f7308dd4ca77adad57087d97f642e64ba",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "product-strategy-and-bets",
       "tree_sha256": "30eb46acbfc05f5c6c239c726f37d18bd52bcc12f4250c402ad00b1186e7b74e",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "a69eaeaf06542e5e08d8847fcd12d8f88f2933eff76ef6ee07dd3fc3b1b4ff8f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "product-strategy-canvas",
+      "tree_sha256": "1cfb27afe515050b28dbebc467c2b9df4e4cc95f945d4c3071795168e0616817",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "efbd9d5c53bbc72aa2db6d636cb913ea6d4ba782de24674e5c6c9ba258ba1110",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "118340b1354c63cdbb646a3d2749a3c9026c18a1ae8a70452564b148bbbe3dc7",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "productivity-setup",
+      "tree_sha256": "7fb485e95b295fd61d701dc436ecfb0ae0ce04497b39a55a476b63167718c8a1",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "416efbd207053902e1a1f7a13e10e2f5b6db45b64c5dbcf4ef724f498ba37c84",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "0f984e2030dbcb1696060fb22e942f7ca996dd4cc0696f560faba89a9ac73caf",
+          "executable": false
+        },
+        {
+          "path": "assets/dashboard.html",
+          "sha256": "742286836fb80daea7e593fad4c7b7397fb768fea2c5761a069011f1b795ea1c",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "ce358f3e913082e4170e6fd52bb1cbf2d78c10744d2324ff128e1078b6c10183",
+          "executable": false
+        },
+        {
+          "path": "references/task-management.md",
+          "sha256": "d1390c54776d86a4e9987caad1e6b89ec21175ef9cc911689a0c08f854788973",
+          "executable": false
+        },
+        {
+          "path": "references/update.md",
+          "sha256": "0156e0486a8ab5647ec6883dc8dd6705b45e8670f13664bc7b7ede755c89c1d9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "productivity-task-sync",
+      "tree_sha256": "2247180149fd04dde44634dbcae2c2655c949f1901f0fbf0c0e51a046e68ae46",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "3451b3f174cd7704dd33f2e4bce791c47c6c4e3a01a03fc46a0007193061c533",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e6030e1f4cb86cf2fbd26a2991a4c6bbafbdfe0468a4ddc7681900bbfd6f32b4",
+          "executable": false
+        },
+        {
+          "path": "assets/dashboard.html",
+          "sha256": "742286836fb80daea7e593fad4c7b7397fb768fea2c5761a069011f1b795ea1c",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "ce358f3e913082e4170e6fd52bb1cbf2d78c10744d2324ff128e1078b6c10183",
+          "executable": false
+        },
+        {
+          "path": "references/start.md",
+          "sha256": "3c9eccfc5ac622ebc0733298fde4642e567ead9651d5a4471f835e0b71ade24b",
+          "executable": false
+        },
+        {
+          "path": "references/task-management.md",
+          "sha256": "d1390c54776d86a4e9987caad1e6b89ec21175ef9cc911689a0c08f854788973",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "project-status-report",
+      "tree_sha256": "5fd96c0dd478442f7f9ec8126f9f13acb755f51cc2c0cb27b936d057a837d7b4",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "cc9eb35f5d88beacc81429c71e9ed30257358dd4b8fbeb5918eeedc067ecc805",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "34b6238c4f6959962ca3dde8ffc1e34f71f0de75f92bf824c62465fe8c80489a",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "83eec7fe46793517fe2154687452f31612c5c8b39f6cd4e71ac67f07352ada9f",
+          "executable": false
+        },
+        {
+          "path": "references/risk-assessment.md",
+          "sha256": "82e29810a762c396a56f92bbd5c5afd252f7a07c6be69a246c28f7b82c4086d9",
           "executable": false
         }
       ]
@@ -3116,6 +4619,27 @@
         {
           "path": "SKILL.md",
           "sha256": "b24e28327ff6dc3143874d629398715771b011f8783264930a5fac9651d56ca8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "recruiting-pipeline",
+      "tree_sha256": "2192be9e11529c9cd321ad267c86a9dab412d62f912bfc9fcaa303c716fc3d39",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "c4a4ffcba5f98cc7ad3feadf831641ddbc5bf0d69e991573d2465a352ce8498c",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "bf6955bc268281667c9ba1b498aa2dcd326524dd29d8a4b4b8653cb9d3a607b5",
           "executable": false
         }
       ]
@@ -3440,6 +4964,48 @@
       ]
     },
     {
+      "slug": "sales-account-research",
+      "tree_sha256": "d1c12a881a8be882f2d2e38b43e4177dcd34f68a16c84a4013a2d81754da1ee7",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "bdbaef33628b60aaa1def87c0d619587715280b099db6bdd388d81b2b9487751",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "58f9a408fa34a6b637ac20c51a05fe22c8793fea82eb68e0cdaeb9ca8765c512",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-call-preparation",
+      "tree_sha256": "f94eb95d83e9d3cee9c223e6944f5e177f55b3e7141f9c70f684ad10c0df4764",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "55390312da7eea3175e1975ba6d06243c8ece09188dd0e9208db190ecb41c5ae",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "51bd1bfa0f63555c25e5e7baf9df0da8657dc1f5116650873af33e1f39c84037",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "sales-enablement",
       "tree_sha256": "c791ed05dae9fa9c35447e5d6ef26f03be21426f0daec8a341c1aaa2c52b3c73",
       "files": [
@@ -3476,6 +5042,52 @@
       ]
     },
     {
+      "slug": "sales-enablement-content",
+      "tree_sha256": "59ee3a66b78aa49a589a76367b3bc1403df5241ea617b0bfb4e975afa2a8f4d1",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "10f8b4511bf1fe75b9f91440720b376b63205b574d5b36b11724cf093a4f2bbd",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "1b95cf52bab01f89fb7220e615d51fcf7c3394636d8960d551bd03d68e8e6099",
+          "executable": false
+        },
+        {
+          "path": "references/deck-frameworks.md",
+          "sha256": "265eea6c1b358d10f2dd22fd987789a9d115c14d30bf77a9086734ac60659336",
+          "executable": false
+        },
+        {
+          "path": "references/demo-scripts.md",
+          "sha256": "505616ebf73d30fe84a844540727ab8f3aeae29ebcda8c8ace28a18ada003da3",
+          "executable": false
+        },
+        {
+          "path": "references/objection-library.md",
+          "sha256": "e0cdfeffc41afbdbe2c014bcd9b3c024318eac9bd23159e871ec796aba29e0b2",
+          "executable": false
+        },
+        {
+          "path": "references/one-pager-templates.md",
+          "sha256": "2197326faff4ede03fb40e332e9c80a4e084d8efd48c74df8720d70817ac5ded",
+          "executable": false
+        },
+        {
+          "path": "tools/integrations/introw.md",
+          "sha256": "5b893d2e95993fe8da7383801989d7e791aab732c5a306632a69d9bc7d4f47ae",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "sales-forecast-rollup",
       "tree_sha256": "7968a4b8b2eb95de6446f61fbf011e60904c8f0264d0813d8b4e49740ad2a832",
       "files": [
@@ -3504,6 +5116,48 @@
         {
           "path": "SKILL.md",
           "sha256": "edc4fb0f6dfdb8bf9b58cc2a15059d57fff2a903983da1ac0f37f743feafd551",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-outreach-drafting",
+      "tree_sha256": "6f95e3aebb5ef9189eadd023e696610e05dfaae35ce34f90cdd1c380d6bb5f6b",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "6251492d06d15e0054ecce8c95ae4ea8596d46834e0f083a41b7d1221a8c372b",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "d29e45358d95a0988daaa722e9897bd82c8e716b1febf6d93e470e4ec10bdf96",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "sales-pipeline-review",
+      "tree_sha256": "471f180b3f081b32e1a46451e1dc71920f48f37ae5be077368a5dd8d136fbd39",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "f188972ef7c0402c5faf068e0e7864ef0a05a137c4c032d7e42099b145f7fc48",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "094251ad7b5c88cfe667a17178fe244121110c179181ee9225c564e2b897b5f3",
           "executable": false
         }
       ]
@@ -3570,6 +5224,27 @@
         {
           "path": "SKILL.md",
           "sha256": "d856585428c51c88f69b8c55e74c57983979701f4900beb9c748dd5b4a28bd27",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "seo-report-generation",
+      "tree_sha256": "354ac782f66cddcf085d087915a234edf4a3ae686a45f94a7f0aed97020469fa",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "bff3f2dc409af70531179d66ee5304a8dc33bfe99d1eb392f188d841627ed701",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "c23e0aa0cdc924726993ffc8eb96e5283a7e8aaa7e068f1200277eb6df0f0f06",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ea229601e3205e86a59498ed4cc3892f91c88bab748c0f11ec726afe3df0b28a",
           "executable": false
         }
       ]
@@ -3686,12 +5361,141 @@
       ]
     },
     {
+      "slug": "social-media-management",
+      "tree_sha256": "01adc81d07dcdce27edc80615a2f47f5d4ba132850c341b793ac01a70838dd20",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "297e05316b0d42fa20586132b3fd556ef52387e7b6d838d768999251a4937b2d",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "740cf3843e89d5d4739f93c78fc75d1526fc12477264b2c69136f7881de38c57",
+          "executable": false
+        },
+        {
+          "path": "references/carousel-frameworks.md",
+          "sha256": "e7d56048a38de90f1f26f3cac8880f3d263a8bdd5fc0c9460d50aef135654768",
+          "executable": false
+        },
+        {
+          "path": "references/listening-sources-template.md",
+          "sha256": "c68bc6f57b0a48c432b1ce72c9324d41a04d0e7784d0bab91afb4a6065a43e38",
+          "executable": false
+        },
+        {
+          "path": "references/listening.md",
+          "sha256": "ed1177fe8e5cffbc5f318b5a8c37631776bce35b5668431173e60f06ef1fd251",
+          "executable": false
+        },
+        {
+          "path": "references/platform-limits.md",
+          "sha256": "6ecc6b40ff82b95c48906341f7d3c58337671d4d94f624c858764f1ed5a77c3c",
+          "executable": false
+        },
+        {
+          "path": "references/platforms.md",
+          "sha256": "3c4e1b15717a3bcd4ed0cf29dc167dac28aa88bbf01723fde53815122396090f",
+          "executable": false
+        },
+        {
+          "path": "references/post-templates.md",
+          "sha256": "febd0aca9557e6575188379f012b019b36839926bdf7924661f125f900b24d0f",
+          "executable": false
+        },
+        {
+          "path": "references/reverse-engineering.md",
+          "sha256": "c27bef59d463b3b11331c1770f4a23e9e6bbce7d7c8db1e7f7f4f14ba206243f",
+          "executable": false
+        },
+        {
+          "path": "references/short-form-video.md",
+          "sha256": "38e7de4049f39d116b815a8d07f5e45777501e9f506e3a5fe005c5d204d32ee7",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "sofia-getting-started",
       "tree_sha256": "89ee5f9b3547ced3194b8b139f30a6c7f8641528f369b6137bbb52423fd0654e",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "d907d41827ee1410ee9de4e9a61557ba0de83db2e662e99d9c7ee91a64d53234",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "software-debugging",
+      "tree_sha256": "a966bc123a3fd2ce42253685e4afb29a9632bdad6248709eca482de983378c8e",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "dbad8be1f3a421c230c0bb730e01715a2e1c4ec54efd53b784bac4179ccf6613",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "f89abb55d9f073f38f1703e4518f0613c788c6174be7f13b8dfe48a1c076c746",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "4e23d987cdad229d59e9cffe2edac29cef174dc45fb0661564f1b81fd1b27a7a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "software-incident-response",
+      "tree_sha256": "4e8ed62b6bca0b1f6761e84c759785109953767782e7dc1d858a147a258bed52",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "2e76472e61a781c788e25e523ed75b644bf405f3495696f7b6c710e7d0528d9e",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "c65c9dc4c9494db584f44cb50351ee2331ae1f143a0e99d7f8fb3356e640fb1f",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "bb07c262961f5b14601f9010eb86dfff57918c74f795a9d84e75ca5e05db8c30",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "software-test-planning",
+      "tree_sha256": "40fac6c595a067bc1d9eacff974895fb6442d5b757bfff3bd5c41cfa0188cda0",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "d4a59b8cfaf06aa9958b428e28706a359998d901c51cd6f93f2804522e5500e0",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "70bd10beb985d1ed06b1e35aef1cd24522f39919abc2d72c0f23dd7a240e6465",
           "executable": false
         }
       ]
@@ -3831,6 +5635,47 @@
       ]
     },
     {
+      "slug": "supply-chain-risk-auditor",
+      "tree_sha256": "5b4db1a307e575d81fed3aff1935bb42990b4379c9d7b1971f1869557c6570e7",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "a487c51f9652ced7ccbf26c606b9d81db0d87767c7a3fb26294c9ee3503f0515",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "355e5eca44f51aea4e74ebe3e3337c0ece65c3180f9c8b03359a63743c940888",
+          "executable": false
+        },
+        {
+          "path": "scripts/collect.py",
+          "sha256": "fd75cffad628980a6da521b5d3a40fb5dd16c5bb9ad63a25245e5208d08abff7",
+          "executable": false
+        },
+        {
+          "path": "scripts/model.py",
+          "sha256": "78a20954b76e81216991b57453ceddbdb867035a0d6993b98cfa05a7f8d008d3",
+          "executable": false
+        },
+        {
+          "path": "scripts/render.py",
+          "sha256": "9d6091645c8a8edf5c50d24bd70ff881efa30b920d93b46ea1775ee2dd328bc7",
+          "executable": false
+        },
+        {
+          "path": "scripts/sources.py",
+          "sha256": "4eb66952dca285b4790d1193b39f240e8015025ee054a215f4c696cbba2478e2",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "support-getting-started",
       "tree_sha256": "a5658f0219a91033c64d82d27c6bef3165d40594d705e1b601f99e2f7d87774d",
       "files": [
@@ -3870,6 +5715,99 @@
         {
           "path": "SKILL.md",
           "sha256": "f6525bbb9df8b2647721d65e5aaba7f155e9d49cc4d5b68ba8906cbd240d5b02",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "support-ticket-triage",
+      "tree_sha256": "751894f64e9b0b35cd01b321b4ede3e17d926093e36ac8c0cf5c98c7d38dfde5",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "f11f0d915f004bb37425c93b156b6885332da443c4bf1bb5e5d19ff12050971a",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "2b00cdc0c2b8dc40713d2e7573aa095672bb4b8b3ef381ba45de4930e00e346b",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "4a1fd39837a96068f2c04fa62508a001a0f6dc407be7ff1ae32537101ff1afa8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "task-list-management",
+      "tree_sha256": "0eddc0e928d80c721a63a6df6f4862069c571a1e787861949cb5053a9cee1ab3",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "eb8ffb1db06b1bd779aa98e0459bb3368cd663230631d85fd68b500ea5655ee9",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ca88d086e9ae42967dd182293f2afe7e04d267b40b83fa4e70816e10a75b0929",
+          "executable": false
+        },
+        {
+          "path": "assets/dashboard.html",
+          "sha256": "742286836fb80daea7e593fad4c7b7397fb768fea2c5761a069011f1b795ea1c",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "ce358f3e913082e4170e6fd52bb1cbf2d78c10744d2324ff128e1078b6c10183",
+          "executable": false
+        },
+        {
+          "path": "references/start.md",
+          "sha256": "67519d8ebb704b7d37d0108bd0d798c7c1c025fd03b760cb762f119c7ae5990e",
+          "executable": false
+        },
+        {
+          "path": "references/update.md",
+          "sha256": "0156e0486a8ab5647ec6883dc8dd6705b45e8670f13664bc7b7ede755c89c1d9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "team-capacity-planning",
+      "tree_sha256": "13977e445cdecada6718e33f51c8e5e9fd8da991ca8fd18c194cb604c0685dbd",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "b0343e57cba54ea5c431e73572c1ab74922485f90d099bc79733cb4c3be69a9d",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "8d53b357f67075ab92d0ebb2f64712a5d2e8346a675feb650ecb8281f4530ad2",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "83eec7fe46793517fe2154687452f31612c5c8b39f6cd4e71ac67f07352ada9f",
           "executable": false
         }
       ]
@@ -4007,6 +5945,27 @@
       ]
     },
     {
+      "slug": "user-cohort-analysis",
+      "tree_sha256": "d6073e4ca8148559712201c138968e11d9e21d31a1cd1d1e3a8a14c4c3a8d0e0",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "21341703270e8a65c71a456286c59a7a7abdd17333974181882ab6ac3fa8aad7",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "ef06d995d47e790ba848339443245cc1433a63f64159a092de7a3f703756ff9a",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "user-interview-guide",
       "tree_sha256": "209798dde4be1128525f03a239f2f68b504ef6375acceb0a6aab8da74c9fbbcd",
       "files": [
@@ -4029,12 +5988,64 @@
       ]
     },
     {
+      "slug": "vendor-contract-status",
+      "tree_sha256": "5ea7b98c931317ced0c497efad8489c5d1585ce58aa540910c05d7b285092133",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "43560512907ef9be0cb59e5a825386edbec23e42279a29fbf591cdeb720fc4c9",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "489c4ba695029242b6ba040cc65f8019c5edebdc743319bfd77c0076a6d35028",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "841eacea6064a6b108ad40ede286e08b0bbe5e64ea735374b97d05ccd0aa0882",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "vendor-due-diligence",
       "tree_sha256": "de72e416e0d18c2a97fe9dc1f235f5af6ae08a9f3a2aeacc12c373ff080cd7df",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "e5adcfef2f4537875ccb7148fc5cf541aee7f91d3ba250ded3c88d14cfff00fe",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "vendor-evaluation",
+      "tree_sha256": "c9141c12a23380400dc97b7afac72247a24cb44c9f90d4c99404742c5af89365",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "11f368b088ef2e54c407575b8e08756c3a30d12b6802070cd63bd6138c0ffdca",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "b434d89d8c51aedb58ee2fd3b53a1a2ac0055aa6b5bdf220af8e8a88afaecd43",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "83eec7fe46793517fe2154687452f31612c5c8b39f6cd4e71ac67f07352ada9f",
           "executable": false
         }
       ]
@@ -4068,6 +6079,27 @@
         {
           "path": "SKILL.md",
           "sha256": "f963a400a54ad22c5b185cc3c1eef05903c8a4c7196dabecf50f3b248c9e3464",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "verification-before-completion",
+      "tree_sha256": "13b524cc8047c2f3d7a53eaf71413f6065a3625b840e0251a87e264cefa380d6",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "2f3f13632f60155bc70099e1de2d15ccb934470b5a24b1fd45d10a16efa595aa",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "0f09182e512bac77d881907d81b16a0166d9f107c8dec8dbfdbcd3b1898c4b05",
           "executable": false
         }
       ]
@@ -4150,6 +6182,32 @@
       ]
     },
     {
+      "slug": "website-seo-audit",
+      "tree_sha256": "96a4f844a918554546a6ee6801219c1f71e9fb43427a0395be747bc7aff552c6",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "19188713bb99f4b85787d4c8f50d7292035bb91fe3086bf98adea6a5fa15055d",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "c23e0aa0cdc924726993ffc8eb96e5283a7e8aaa7e068f1200277eb6df0f0f06",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "e02649b916240ac0aa24e0c05b6b32c01a1eb8f92b040f518844497ddce8ea8e",
+          "executable": false
+        },
+        {
+          "path": "references/seo-report.md",
+          "sha256": "51d9558d248ebb1c97f99cc41cedd25b1038580156e51ad2a74b5b65db31fb8a",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "weekly-kpi-digest",
       "tree_sha256": "c8cd031b34bddd686bed0402543c43fd8c245f76bcc010bcd4885a7b56b6f216",
       "files": [
@@ -4200,6 +6258,52 @@
         {
           "path": "SKILL.md",
           "sha256": "f29a8e22ae1f02408d5c668f9bada4fd8405e54666e10c57c5c30afd279079de",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "workplace-memory-management",
+      "tree_sha256": "d8fd72de11f90e732dc411cda3f23b52b290e099891b9a0ce877113330d0a611",
+      "files": [
+        {
+          "path": "ATTRIBUTION.md",
+          "sha256": "261b94b18a88148c0a91f8302a249e170d259709cc7ec40151da0286eb9ce1ab",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "336dbcf6797b2f38975891db10930d8f5491b1f04a69a6ccd48e38a1e2b3f23f",
+          "executable": false
+        },
+        {
+          "path": "assets/dashboard.html",
+          "sha256": "742286836fb80daea7e593fad4c7b7397fb768fea2c5761a069011f1b795ea1c",
+          "executable": false
+        },
+        {
+          "path": "references/CONNECTORS.md",
+          "sha256": "ce358f3e913082e4170e6fd52bb1cbf2d78c10744d2324ff128e1078b6c10183",
+          "executable": false
+        },
+        {
+          "path": "references/start.md",
+          "sha256": "3c9eccfc5ac622ebc0733298fde4642e567ead9651d5a4471f835e0b71ade24b",
+          "executable": false
+        },
+        {
+          "path": "references/task-management.md",
+          "sha256": "d1390c54776d86a4e9987caad1e6b89ec21175ef9cc911689a0c08f854788973",
+          "executable": false
+        },
+        {
+          "path": "references/update.md",
+          "sha256": "0156e0486a8ab5647ec6883dc8dd6705b45e8670f13664bc7b7ede755c89c1d9",
           "executable": false
         }
       ]

@@ -1,0 +1,118 @@
+{
+  "schema_version": 3,
+  "slug": "lifecycle-email-marketing",
+  "name": "lifecycle-email-marketing",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "path": "skills/emails"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/emails/SKILL.md",
+  "discovery_url": "https://www.skills.sh/coreyhaines31/marketingskills/emails",
+  "author": "Corey Haines / contributors; retain upstream copyright and notices.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/lifecycle-email-marketing/LICENSE",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
+    "obligations": [
+      "Retain copyright and permission notice in copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "1fbd54df4c59f48408057e7db0dfb1a53c033e6a4ca5cd1927a47c51ec28d8f1",
+  "assignments": [
+    {
+      "expert": "Remy",
+      "role": "Email Marketing Manager",
+      "status": "core",
+      "essential_function": "Plan lifecycle sequences, timing, triggers, exits and individual emails.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "Maya",
+      "role": "Marketing Manager",
+      "status": "core",
+      "essential_function": "Design segmented lifecycle and nurture email sequences with entry triggers, cadence, complete drafts, calls to action, exit conditions and measurement plans.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "27f965272fb371ef7de004bd",
+    "12843469c87c24da1ce965f5",
+    "e12751dc43af8207be6af149",
+    "8b1e2a7e99c0c48f45506c40",
+    "c22dc71f7440f38bb8ad91e4",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "c06a726216ccb3263aff116b",
+    "ff76d03760cd05e420cff1c6",
+    "48190ac73d2a5ff706b3cf18"
+  ],
+  "review": "Native lifecycle sequence planning and copy, with sequence triggers, timing, segments, exits and templates. The author’s cadence is accepted as supplied; no 48-hour override or custom cancellation policy is proposed. This is campaign strategy/copy, not certified deliverability or legal compliance.",
+  "native_prerequisites": [
+    "Drafting works from supplied product/audience/sequence facts. Live implementation needs the chosen provider account, credentials, permission and native API/MCP support.",
+    "Customer.io, Mailchimp, Nitrosend, Resend, SendGrid and Kit are alternative authored providers, not six mandatory accounts.",
+    "Resend guide uses its externally installed official resend-cli or resend SDK; SendGrid SDK examples likewise require the external package. Template ./emails/welcome in a React example is user application code, not a missing upstream file.",
+    "The general upstream tools registry remains a pinned optional discovery link. No local repository CLI is needed for the kept guide examples.",
+    "Audience/trigger/goal context; actual performance exports; optional email-service credentials for implementation."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "emails",
+  "previous_catalog_slug": "emails",
+  "packaged_sha256": "6ab72bffa44a8842d0e2ba7ab8da7100b0bdea630e32d5d723a2583684f38b03",
+  "original_native_prerequisites": [
+    "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
+    "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/.",
+    "Email-platform connection only for implementation; drafts can be produced from supplied campaign inputs."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      {
+        "scope": "shared tools directory",
+        "decision": "include only named guide files",
+        "reason": "Only direct skill/reference file edges create local support requirements. The general registry and related-skills lists are discovery, while external APIs/CLIs require native access rather than copied wrapper code."
+      },
+      {
+        "scope": "evals/evals.json",
+        "decision": "exclude",
+        "reason": "No selected instruction calls or reads the development fixture; source evidence remains in provenance."
+      },
+      {
+        "scope": "project context files",
+        "decision": "runtime state, do not vendor or rename",
+        "reason": "The instructions intentionally exchange persistent project context through .agents/.claude paths; packaging must not turn them into skill assets."
+      }
+    ],
+    "excluded_files": [
+      {
+        "source": "skills/coreyhaines31/marketingskills/skills/emails/evals/evals.json",
+        "reason": "Development evaluation fixture; no runtime or reference edge from this skill. Not needed in an installed package."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/emails",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "1fbd54df4c59f48408057e7db0dfb1a53c033e6a4ca5cd1927a47c51ec28d8f1"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "The source includes implementation integrations; sending still requires host/account authority. It is not a rigorous holdout-analysis or deliverability-certification workflow.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

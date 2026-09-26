@@ -1,0 +1,115 @@
+{
+  "schema_version": 3,
+  "slug": "marketing-copywriting",
+  "name": "marketing-copywriting",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "path": "skills/copywriting"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/copywriting/SKILL.md",
+  "discovery_url": "https://www.skills.sh/coreyhaines31/marketingskills/copywriting",
+  "author": "Corey Haines / contributors; retain upstream copyright and notices.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/marketing-copywriting/LICENSE",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Root MIT text inspected; no nested licence in the selected skill folder. Supporting source retained.",
+    "obligations": [
+      "Retain copyright and permission notice in copies or substantial portions."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "ce18137ae31ab37f261078501431649865ab6b403054d97490754e82acb002d8",
+  "assignments": [
+    {
+      "expert": "Maria",
+      "role": "SEO Content Manager",
+      "status": "core",
+      "essential_function": "Create conversion-focused page copy, headlines and CTAs.",
+      "optional_new_kit": false
+    },
+    {
+      "expert": "Maya",
+      "role": "Marketing Manager",
+      "status": "core",
+      "essential_function": "Draft clear marketing-page copy, headlines and calls to action around one audience, a supported value proposition, relevant proof and objections.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "59f44e4275cb5a4ba105466d",
+    "12843469c87c24da1ce965f5",
+    "e12751dc43af8207be6af149",
+    "8b1e2a7e99c0c48f45506c40",
+    "e823906dcab67d5278b66da3",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "a3239196be9106bbc5ee22c7",
+    "cd6bbfdbc9dbfaff6d9c6517",
+    "48190ac73d2a5ff706b3cf18"
+  ],
+  "review": "Writes structured marketing page copy, headlines, calls to action and alternatives from audience, offer and proof inputs. Useful for Maria’s commercial pages alongside editorial planning. Its numerical conversion/clarity claims are upstream marketing claims, not an independently verified lift promise.",
+  "native_prerequisites": [
+    "Product/audience/proof input and a draft/page brief; no executable runtime support.",
+    "The AI-writing-detection cross-skill reference is optional reading retained as a pinned upstream link, not an installed seo-audit dependency.",
+    "Product/audience context, page objective and actual approved proof; writable draft destination."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "copywriting",
+  "previous_catalog_slug": "copywriting",
+  "packaged_sha256": "1565ef8d089df7e66f479abda91704b92c251bfe644c64aae53326fc49edb141",
+  "original_native_prerequisites": [
+    "Persistent project workspace supporting the author’s .agents/product-marketing.md context file.",
+    "Keep the complete original skill references; for package-wide links, preserve the unchanged repository layout including tools/."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      {
+        "scope": "shared tools directory",
+        "decision": "exclude entire tools tree",
+        "reason": "Only direct skill/reference file edges create local support requirements. The general registry and related-skills lists are discovery, while external APIs/CLIs require native access rather than copied wrapper code."
+      },
+      {
+        "scope": "evals/evals.json",
+        "decision": "exclude",
+        "reason": "No selected instruction calls or reads the development fixture; source evidence remains in provenance."
+      },
+      {
+        "scope": "project context files",
+        "decision": "runtime state, do not vendor or rename",
+        "reason": "The instructions intentionally exchange persistent project context through .agents/.claude paths; packaging must not turn them into skill assets."
+      }
+    ],
+    "excluded_files": [
+      {
+        "source": "skills/coreyhaines31/marketingskills/skills/copywriting/evals/evals.json",
+        "reason": "Development evaluation fixture; no runtime or reference edge from this skill. Not needed in an installed package."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/copywriting",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "ce18137ae31ab37f261078501431649865ab6b403054d97490754e82acb002d8"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "Primarily website conversion copy, not all social, press or release-note formats. Introductory conversion-lift statistics are not independently validated guarantees.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

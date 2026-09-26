@@ -1,2 +1,4 @@
 # Release hashes bind exact bytes, including line endings.
 * text=auto eol=lf
+skills/** -text -eol
+provenance/originals/** -text -eol

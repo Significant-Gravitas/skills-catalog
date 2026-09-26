@@ -1,0 +1,74 @@
+{
+  "schema_version": 3,
+  "slug": "seo-report-generation",
+  "name": "seo-report-generation",
+  "source": {
+    "repo": "every-app/open-seo",
+    "commit": "0ffff93101043aad7600a3b6a499a0cd2887ef49",
+    "path": "plugins/openseo/skills/seo-report"
+  },
+  "source_url": "https://github.com/every-app/open-seo/blob/0ffff93101043aad7600a3b6a499a0cd2887ef49/plugins/openseo/skills/seo-report/SKILL.md",
+  "discovery_url": "https://www.skills.sh/every-app/open-seo/seo-report",
+  "author": "OpenSEO (plugin-declared author); root MIT copyright Ben Senescu, 2026.",
+  "license": {
+    "spdx": "MIT",
+    "file": "skills/seo-report-generation/LICENSE",
+    "source_url": "https://github.com/every-app/open-seo/blob/0ffff93101043aad7600a3b6a499a0cd2887ef49/LICENSE",
+    "scope": "Root MIT text and plugin licence declaration inspected; no nested licence file overrides the selected plugin. Grant covers skill source, not a free subscription or third-party data resale rights.",
+    "obligations": [
+      "Retain the original copyright and MIT permission/disclaimer notice."
+    ]
+  },
+  "status": "conditional",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "51d9558d248ebb1c97f99cc41cedd25b1038580156e51ad2a74b5b65db31fb8a",
+  "assignments": [
+    {
+      "expert": "Maria",
+      "status": "conditional",
+      "essential_function": "Run evidence-backed SEO audits and create the original saved HTML report.",
+      "native_prerequisites": [
+        "Native OpenSEO MCP tools, account, credits and report storage; preserve the original plugin layout."
+      ],
+      "limitations": [
+        "Current AutoGPT integration has not been tested. seo-report is a required companion with only 368 standalone installs, not an independently high-adoption recommendation.",
+        "Upstream Snyk scan flags medium indirect prompt-injection exposure through third-party crawl content. Source remains unchanged."
+      ]
+    }
+  ],
+  "evidence_ids": [
+    "c35b76075431675cd8c775aa",
+    "79201898c6e0fa55645b5ffe",
+    "606c3d48761715a2049a006e"
+  ],
+  "review": "Required original companion for OpenSEO audits. Saves a self-contained HTML report with source/uncertainty documentation, duplicate protection, static charts and no external assets/scripts. Its standalone adoption is only368 installs; included transparently as the author-required reporting dependency, not an independently high-adoption specialist recommendation.",
+  "native_prerequisites": [
+    "Original OpenSEO MCP endpoint/account and service credits; native tool names and project/report persistence must be supported."
+  ],
+  "evidence_qualification": "368 installs; included only as the required original seo-audit dependency.",
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "seo-report",
+  "previous_catalog_slug": "seo-report",
+  "packaged_sha256": "ea229601e3205e86a59498ed4cc3892f91c88bab748c0f11ec726afe3df0b28a",
+  "original_native_prerequisites": [
+    "Original OpenSEO MCP endpoint/account and service credits; native tool names and project/report persistence must be supported.",
+    "Install seo-audit with unchanged seo-report and preserve complete original plugin layout; service/API terms are separate from the MIT source grant."
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Do not rename service skill: \"seo-audit\", docs URLs, source identity links or report attribution when changing marketplace display/registration names."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [
+      "A package cannot provide OpenSEO authentication, credits, live SEO data or save_report/project persistence. Preserve the authored stop on missing connection."
+    ],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}
