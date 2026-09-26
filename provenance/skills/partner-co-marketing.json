@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "slug": "partner-co-marketing",
+  "name": "partner-co-marketing",
+  "original_name": "co-marketing",
+  "source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/co-marketing",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022"
+  },
+  "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/co-marketing/SKILL.md",
+  "discovery_url": "https://skills.sh/coreyhaines31/marketingskills/co-marketing",
+  "author": "Corey Haines",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/LICENSE",
+    "scope": "Original repository skill and support files; separately credited reference notices retained where applicable.",
+    "obligations": [
+      "Retain copyright and permission notice with copies or substantial portions.",
+      "Retain authored attribution in supporting references."
+    ],
+    "file": "skills/partner-co-marketing/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "5fe1124e8b6ff64ad0644d1483bed2cc6598c6f0cf6d89219c3198b6b066f1fb",
+  "packaged_sha256": "ea0b7992a31fbac085a52d03b6a6d9c2d7b34ef102d79b1a930e724a7a691aab",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Anika",
+      "role": "Partnerships Manager",
+      "status": "core",
+      "essential_function": "Find compatible audience-sharing partners, design mutual-value proposals, coordinate joint campaigns, and assess their leads, engagement and commercial contribution.",
+      "coverage_review": "provenance/expert-coverage.json"
+    },
+    {
+      "expert": "Max",
+      "role": "Sales Development Representative",
+      "status": "core",
+      "essential_function": "Find compatible audience-sharing partners, design mutual-value proposals, coordinate joint campaigns, and assess their leads, engagement and commercial contribution.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "71ed6cbebd8e60fd8020cd03",
+    "516ba3b133cba205666e1b88",
+    "5177282a68f1eb08c7f3d4db",
+    "5efc34ed3fdc0de538ac6621",
+    "0edf59b873cca1927eb4d255",
+    "48190ac73d2a5ff706b3cf18"
+  ],
+  "review": "A concrete partner-fit scorecard, format selection, outreach template, simple collaboration agreement, ownership/timeline checklist and campaign measurements. Partnership-types reference adds integration, reseller, affiliate and marketplace categories.",
+  "essential_function": "Find compatible audience-sharing partners, design mutual-value proposals, coordinate joint campaigns, and assess their leads, engagement and commercial contribution.",
+  "native_prerequisites": [
+    "Shared product/audience context; browser research; optional Crossbeam, Introw or PartnerStack access for operational data.",
+    "Keep authored .agents/.claude product-marketing context paths and native command names as working-project state; they are not bundled assets or newly registered command dispatch.",
+    "The documented provider alternatives are crossbeam, introw, partnerstack. Use only the chosen authored branch, with its real account, credentials, API/MCP/SDK/CLI capability and permissions; these are not all mandatory accounts.",
+    "Bundled JavaScript CLIs need Node.js with global fetch (Node18+), network access and their named provider environment variables. Resolve tools/... paths against this installed skill directory before invocation; keep user input/output paths anchored to the intended working project. No CLI was executed during packaging."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Only exact counted local-path/link adaptations plus standard name/licence/attribution headers and notices are permitted. Original expert guidance, workflow branches, native providers and project-state locations remain intact.",
+      "General related-skills lists are discovery suggestions, not implied bundled workflows.",
+      "No source script is executed or transformed. Retained provider guide CLI links are real transitive dependencies, unlike the optional full tools registry."
+    ],
+    "excluded_files": [
+      {
+        "source_path": "skills/co-marketing/evals/evals.json",
+        "reason": "Development evaluation fixture, not read/invoked by the selected workflow."
+      }
+    ],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "coreyhaines31/marketingskills",
+    "path": "skills/co-marketing",
+    "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+    "primary_sha256": "5fe1124e8b6ff64ad0644d1483bed2cc6598c6f0cf6d89219c3198b6b066f1fb"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "GTM collaboration planning, not a full alliance-management operating system. Generic partnership categories do not implement hyperscaler programs, regulated alliances, partner delivery, M&A or portfolio P&L.",
+    "Original instructions are unchanged; actual credentials, publishing authority and deployment compatibility are not verified.",
+    "Original shared tools and relative support hierarchy must be preserved; a single-folder skills.sh copy can omit them (documented in upstream issue #524)."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

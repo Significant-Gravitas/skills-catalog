@@ -1,0 +1,80 @@
+{
+  "schema_version": 3,
+  "slug": "verification-before-completion",
+  "name": "verification-before-completion",
+  "original_name": "verification-before-completion",
+  "source": {
+    "repo": "obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "5bf4e78011075bcfc0dc295f0724994cd123ee71"
+  },
+  "source_url": "https://github.com/obra/superpowers/blob/5bf4e78011075bcfc0dc295f0724994cd123ee71/skills/verification-before-completion/SKILL.md",
+  "discovery_url": "https://www.skills.sh/obra/superpowers/verification-before-completion",
+  "author": "Jesse Vincent",
+  "license": {
+    "spdx": "MIT",
+    "source_url": "https://github.com/obra/superpowers/blob/5bf4e78011075bcfc0dc295f0724994cd123ee71/LICENSE",
+    "scope": "Complete clean root licence at the same immutable commit as this package.",
+    "obligations": [
+      "Retain original copyright/attribution and license text."
+    ],
+    "file": "skills/verification-before-completion/LICENSE"
+  },
+  "status": "core",
+  "assessed_at": "2026-09-25",
+  "primary_sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+  "packaged_sha256": "0f09182e512bac77d881907d81b16a0166d9f107c8dec8dbfdbcd3b1898c4b05",
+  "source_modified": true,
+  "runtime_verified": false,
+  "assignments": [
+    {
+      "expert": "Casey",
+      "role": "QA Engineer",
+      "status": "core",
+      "essential_function": "Require fresh verification commands and inspected results before claiming that a change, test, build or requirement is complete.",
+      "coverage_review": "provenance/expert-coverage.json"
+    }
+  ],
+  "evidence_ids": [
+    "f741c2d3d3e9bcf20ade8c8b",
+    "95397b570facd6ea5d603ece",
+    "5746da8ae71ba07e7f701e85",
+    "cfd6f25688edde07fe15d7c7",
+    "7361cce286b5d91582aa2d60"
+  ],
+  "review": "Distinguishes evidence needed for tests, builds, bug fixes, regression tests and requirement completion; rejects conclusions from stale output or another agent's unsupported assurance. Self-contained original method.",
+  "essential_function": "Require fresh verification commands and inspected results before claiming that a change, test, build or requirement is complete.",
+  "native_prerequisites": [
+    "Permission and environment to run the project's actual verification commands, and access to complete output/diffs."
+  ],
+  "evidence_qualification": null,
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Preserve original guidance and all branches; apply only the counted local-path edits, standard header metadata/name, and prominent packaging modification notice.",
+      "Preserve slash-command identifiers and $ARGUMENTS examples; changing the installed name does not create native command dispatch. Ordinary direct invocation with supplied task context remains possible where authored.",
+      "Record the upstream revision, Git blob SHA-1, SHA-256 and original bytes in provenance; generated ATTRIBUTION.md is curator packaging documentation, not upstream-authored advice.",
+      "The full primary contains its required guidance and examples; it names no required local supporting file or sibling skill. Do not add unrelated repository content.",
+      "Only this independently selected verification skill is packaged; the broader Superpowers repository is archived research context, not a dependency of this source."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [],
+    "preserved_native_fields": {},
+    "runtime_verified": false,
+    "manifest": "provenance/files.json",
+    "catalog_import_format": "existing flat skills/<slug> layout"
+  },
+  "additional_research_source": {
+    "repo": "obra/superpowers",
+    "path": "skills/verification-before-completion",
+    "commit": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
+    "primary_sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3"
+  },
+  "research_pin_note": "The installed source pin remains explicit above; already clean licensed packages may retain their earlier reviewed pin rather than mix historical support files.",
+  "source_review_limitations": [
+    "A verification discipline, not a test generator, deploy/rollback checklist or proof of general correctness.",
+    "Its literal fresh-command requirement is strict; adopters must accept the native process without rewriting it."
+  ],
+  "source_review_limitations_scope": "Original-source research observations retained verbatim. Statements about unchanged instructions or upstream folder layout describe the reviewed originals; this package applies only the recorded metadata/name/path adaptations. Current packaging decisions and runtime requirements are recorded separately."
+}

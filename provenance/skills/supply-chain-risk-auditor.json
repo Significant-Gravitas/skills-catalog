@@ -1,0 +1,82 @@
+{
+  "schema_version": 3,
+  "slug": "supply-chain-risk-auditor",
+  "name": "supply-chain-risk-auditor",
+  "source": {
+    "repo": "trailofbits/skills",
+    "commit": "32e34f8173796e3566a51aee877dc96bc5191f64",
+    "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor"
+  },
+  "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/SKILL.md",
+  "discovery_url": "https://www.skills.sh/trailofbits/skills/supply-chain-risk-auditor",
+  "author": "Eric Quintero; published by Trail of Bits",
+  "license": {
+    "spdx": "CC-BY-SA-4.0",
+    "file": "skills/supply-chain-risk-auditor/LICENSE",
+    "source_url": "https://github.com/trailofbits/skills/blob/32e34f8173796e3566a51aee877dc96bc5191f64/LICENSE",
+    "scope": "Root LICENSE is CC-BY-SA-4.0; no nested license override in the complete selected plugin directories. Unchanged skill material can be commercially redistributed with required attribution/license and without extra restrictions. It cannot be relabeled proprietary; unrelated separable AutoGPT platform code is not automatically share-alike.",
+    "obligations": [
+      "Credit Trail of Bits and retained source attributions, link the source and CC-BY-SA-4.0, and indicate modifications.",
+      "Distribute adaptations of the skill material under CC-BY-SA-4.0 or a compatible license; commercial use is permitted but proprietary-only relicensing of adapted material is not.",
+      "Do not impose additional legal/technical restrictions on the licensed material; no endorsement or trademark permission is implied."
+    ]
+  },
+  "status": "core",
+  "assessed_at": "2026-09-24",
+  "primary_sha256": "a1254b7f8d3a1731a9a7e1f9cd6c67b59cf84ed6ef7c7fb455db9a14c528ceb4",
+  "assignments": [
+    {
+      "expert": "Devon",
+      "role": "Application Security Engineer",
+      "status": "core",
+      "essential_function": "Audit npm, PyPI and Go dependency metadata for version-matched advisories, abandoned upstreams, publisher concentration and install-script risk.",
+      "optional_new_kit": false
+    }
+  ],
+  "evidence_ids": [
+    "66313de9b8d9eceb6e02e741",
+    "eba7d676b7717345bd3cfd03",
+    "4383bcc9d54816ba20963711",
+    "de0f98bea0e1463958854f3d",
+    "695e9f5df81b8440c5fe9f11"
+  ],
+  "review": "Read unchanged SKILL.md and README and statically inspected collector/parser/network boundaries, metadata and tests. Strong scoped dependency-risk workflow uses deterministic collection, exact-version advisory checking where a supported lockfile provides versions, explicit coverage, and distinct unavailable/clean/flagged states. The source already refuses unsupported ecosystems and failed collection rather than improvising. No edits or corrective wrappers proposed. Scripts and tests were not run; this is not a complete implementation audit.",
+  "native_prerequisites": [
+    "Python >=3.11 and uv; bundled scripts are stdlib-only",
+    "Authenticated gh strongly recommended for GitHub rate limits; collector can return unassessable without it",
+    "Network to OSV, npm/PyPI registries, Go module proxy, deps.dev, OpenSSF Scorecard and GitHub",
+    "Optional pip-audit integration detected by source; no project/package installation by collector",
+    "Run documented uv commands from the skill package directory; Python >=3.11 is declared by the scripts’ inline PEP 723 metadata."
+  ],
+  "evidence_qualification": null,
+  "runtime_verified": false,
+  "source_modified": true,
+  "original_name": "supply-chain-risk-auditor",
+  "previous_catalog_slug": "supply-chain-risk-auditor",
+  "packaged_sha256": "355e5eca44f51aea4e74ebe3e3337c0ece65c3180f9c8b03359a63743c940888",
+  "original_native_prerequisites": [
+    "Python >=3.11 and uv; bundled scripts are stdlib-only",
+    "Authenticated gh strongly recommended for GitHub rate limits; collector can return unassessable without it",
+    "Network to OSV, npm/PyPI registries, Go module proxy, deps.dev, OpenSSF Scorecard and GitHub",
+    "Optional pip-audit integration detected by source; no project/package installation by collector",
+    "Full scripts directory must accompany SKILL.md; not a text-only drop-in"
+  ],
+  "packaging": {
+    "adapted_at": "2026-09-25",
+    "adapter": "AutoGPT",
+    "dependency_decisions": [
+      "Excluded test_*.py, evals, fixtures, icon assets, agent UI metadata, pyproject.toml and uv.lock. Executed scripts use inline Python>=3.11 metadata and only import model.py/sources.py plus stdlib; test/lint manifests are not runtime inputs."
+    ],
+    "excluded_files": [],
+    "runtime_blockers": [
+      "Requires an actual script execution environment, uv/Python3.11+, target manifests and network API access. Never replace script measurements with model estimates."
+    ],
+    "preserved_native_fields": {
+      "allowed-tools": "Read Write Bash Glob Grep"
+    },
+    "runtime_verified": false,
+    "catalog_import_format": "existing flat skills/<slug> layout",
+    "manifest": "provenance/files.json",
+    "original_snapshot_commit": "65dae9c71533d0a50dce097a8fb22e9855caee18"
+  }
+}
