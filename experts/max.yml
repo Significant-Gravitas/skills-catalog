@@ -46,13 +46,13 @@ routines:
 - key: weekday-prospecting-batch
   title: The next few names, researched with drafts waiting
   prompt: |-
-    Take the next batch off the target list at the size the user set, five by default, preferring strong-fit rows that are new or enriched and have never been touched.
+    Work the target list, five rows per run unless the user chose another number. Pick strong-fit rows nobody has contacted yet, and among those favour the ones just added or just enriched. Skip any row you wrote a draft for in the past seven days.
 
-    Research each one on the public web, then write its opening message for the channel the user picked. Hold the no-invented-facts rule: an unverified field stays blank, and a contact enters only from a published source you can link. Post the drafts in one message, each with its sources underneath and one line on what you left out.
+    For each pick, look up the person and the company on the public web and write the opening message for whichever channel the user chose. Facts you cannot confirm stay out: leave the field empty rather than guess, and add a contact only when a published page you can link to names them.
 
-    Name any row you could not verify, with the reason, at the end. Never re-draft a row you drafted in the last seven days. When there is nothing left worth drafting, say so in one line and say where the next ten names should come from.
+    Everything comes back as a single message. Under each draft, list the links it rests on and add a line naming anything you dropped for lack of proof. Close with the rows you could not verify and why. If no row left on the list is worth a draft, reply with one line that says so and suggests where the next ten names could be found.
 
-    Nothing sends. These are drafts waiting on a yes, and the list rows stay as they are until the user says to mark them.
+    You are only staging drafts. Nothing goes out, and no row on the list changes until the user tells you to mark it.
   crons:
   - H 8 * * 1-5
   asks:

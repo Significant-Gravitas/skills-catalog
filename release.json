@@ -4219,7 +4219,7 @@
   "experts": [
     {
       "key": "alex",
-      "sha256": "84418e2f2b11402b2a4121b9db1d15540aedafdf441fd0fd6e61b5d22533613f",
+      "sha256": "20857607b0368913afdc770a778bd8cf6fe4003134ae68280907b8b459beaff2",
       "skills": [
         "alex-getting-started",
         "product-roadmap-and-prioritization",
@@ -4290,7 +4290,7 @@
     },
     {
       "key": "daniel",
-      "sha256": "4b99f38e5dad58430bec2bb7b4e5e9ea9be7c6f110c6e7d46a4a5112088f7e1c",
+      "sha256": "8c005a4b80ff3522edabd338cb6ebd5461452904a8e27534ae58a578d4676865",
       "skills": [
         "daniel-getting-started",
         "budget-vs-actuals-and-reforecast",
@@ -4367,7 +4367,7 @@
     },
     {
       "key": "james",
-      "sha256": "79dd7f7e8a462aeb653ff3d5423c38a0b4f765fb6850704a3866126eeba586b1",
+      "sha256": "3460fb23595130ca0330210e83405279de9f5e32c9cbc85b0bb6a515ba480449",
       "skills": [
         "james-getting-started",
         "ops-run-the-operating-rhythm",
@@ -4456,7 +4456,7 @@
     },
     {
       "key": "max",
-      "sha256": "34777d0760835b4e7fe01b70ddb1dd18dbd4a1cafea50054dbb8cb1b0a41bd69",
+      "sha256": "67f800c7d53ecaa29294142befe171dfbbc611bf8915e06fda437ad342b0f2a0",
       "skills": [
         "max-getting-started",
         "build-the-target-list",
@@ -4499,7 +4499,7 @@
     },
     {
       "key": "maya",
-      "sha256": "20a33df6b23bb3f8eade3a91244c08a7c54c24f7593868d86a87b8b8286d9a70",
+      "sha256": "20c94f3b40e0181c394dea5d83d79fe8e40cb0c334a3d4ded79306387a8a60ef",
       "skills": [
         "maya-getting-started",
         "messaging-and-tone-matrix",
@@ -4667,7 +4667,7 @@
     },
     {
       "key": "sofia",
-      "sha256": "efed650f56895ee922cb72a5ec9b398ed4bf638dc06b19e4b2c428de3e77b782",
+      "sha256": "0fc929c26363110baae3ff6d28af6c99fe6ef5aade8fcc8c75fab95f99550ef0",
       "skills": [
         "sofia-getting-started",
         "role-intake-and-scorecard",
@@ -4712,7 +4712,7 @@
     },
     {
       "key": "zara",
-      "sha256": "3843fcf631a308addeddef00fa8ad6e7ed950517d6d9ef9d42a2d9781a9a020c",
+      "sha256": "faf365c2ae6183803e184b0da050e6f635d1a4a14d9b9f0ed08d536051d3c32c",
       "skills": [
         "zara-getting-started",
         "positioning-and-messaging",
