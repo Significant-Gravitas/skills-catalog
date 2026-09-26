@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "release_key": "catalogue-baseline-2026-09-25",
+  "schema_version": 2,
+  "release_key": "catalogue-experts-2026-09-26",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -4219,6 +4219,7 @@
   "experts": [
     {
       "key": "alex",
+      "sha256": "558030040f4c9ce6e462f26ae1c6cbc3e43a4e12236811a904dfa2c69e1af725",
       "skills": [
         "alex-getting-started",
         "product-roadmap-and-prioritization",
@@ -4235,6 +4236,7 @@
     },
     {
       "key": "anika",
+      "sha256": "7899255ff0d96c5318868feb010b909406b07851602070ded34c3c5d420ebc69",
       "skills": [
         "anika-getting-started",
         "define-the-partner-icp",
@@ -4274,6 +4276,7 @@
     },
     {
       "key": "casey",
+      "sha256": "02bf9db46090e7461434a124066cb14caedf31a996ebb5738f163ed7ef356767",
       "skills": [
         "code-quality-getting-started",
         "pull-request-review",
@@ -4287,6 +4290,7 @@
     },
     {
       "key": "daniel",
+      "sha256": "8a2875964dd0e088504f7aa176b954bed15a0e97ded09e6068f9217f1a738eeb",
       "skills": [
         "daniel-getting-started",
         "budget-vs-actuals-and-reforecast",
@@ -4302,6 +4306,7 @@
     },
     {
       "key": "devon",
+      "sha256": "e248ae42a65158eaef00aa9993ee984b2648338b93f8f0afd5e666e5a8755183",
       "skills": [
         "dependency-security-getting-started",
         "dependency-inventory",
@@ -4315,6 +4320,7 @@
     },
     {
       "key": "ellis",
+      "sha256": "9a313e6dd05a94da109820ca3f8989002d5b93f989c84b89b8619979400d7123",
       "skills": [
         "contract-ops-getting-started",
         "nda-playbook-review",
@@ -4328,10 +4334,12 @@
     },
     {
       "key": "frankie",
+      "sha256": "5ee95ad24b47087af8d68746ea3c112dc3c8e114d7fde63909cfb43cce1b084f",
       "skills": []
     },
     {
       "key": "harper",
+      "sha256": "2e1e937aecfabe4626ebe27d36dc7eee3dfbd2900d2f44318ea52336de2b0c0d",
       "skills": [
         "recruiting-getting-started",
         "role-intake-and-job-description",
@@ -4345,6 +4353,7 @@
     },
     {
       "key": "ines",
+      "sha256": "2ded63216743b5a46181b9dbd3e073973b53a4c5f616f9903bb84b502f6cf6db",
       "skills": [
         "people-ops-getting-started",
         "new-hire-onboarding-plan",
@@ -4358,6 +4367,7 @@
     },
     {
       "key": "james",
+      "sha256": "5abe41713b3f6b195fcc51f8a27f428f2f54d7d8ea38cc621546419b2500c866",
       "skills": [
         "james-getting-started",
         "ops-run-the-operating-rhythm",
@@ -4373,6 +4383,7 @@
     },
     {
       "key": "jordan",
+      "sha256": "bcbf8ded8dc5c29c554b26e695a096c830886c2b74799712a539764eda095678",
       "skills": [
         "deal-desk-getting-started",
         "proposal-draft",
@@ -4386,6 +4397,7 @@
     },
     {
       "key": "jules",
+      "sha256": "86f349617a24a8dc466d2a5d84af969f931e1a3616d8e97b09bf51f2afd27e29",
       "skills": [
         "brand-voice-guide",
         "content-repurposing"
@@ -4393,6 +4405,7 @@
     },
     {
       "key": "kai",
+      "sha256": "557cd6b93f27465dd69a0a2bf791b3804cb9cb4bb9cfe0286a79a5507e001484",
       "skills": [
         "executive-assistant-getting-started",
         "inbox-triage",
@@ -4406,6 +4419,7 @@
     },
     {
       "key": "lena",
+      "sha256": "bd73d6fe39bb2a805b47574261ee00a3c5d4862949c44a17fe19178885bc802a",
       "skills": [
         "compliance-ops-getting-started",
         "security-questionnaire-answers",
@@ -4419,6 +4433,7 @@
     },
     {
       "key": "marco",
+      "sha256": "0cfab9061ac922cd978557ea899ada64c25f1732620be89c0ae26ade35afedf6",
       "skills": [
         "paid-ads-getting-started",
         "campaign-structure-plan",
@@ -4432,6 +4447,7 @@
     },
     {
       "key": "maria",
+      "sha256": "8db5f5186c2fbf7dbf018bb089d18bcce5bd043fa1eb5b40c528f006b950737a",
       "skills": [
         "brand-voice-guide",
         "seo-content-brief",
@@ -4440,6 +4456,7 @@
     },
     {
       "key": "max",
+      "sha256": "7c32a62e94000c65823f718b7692e1c40e1a4407c8892420fbd959c35cd21f05",
       "skills": [
         "max-getting-started",
         "build-the-target-list",
@@ -4482,6 +4499,7 @@
     },
     {
       "key": "maya",
+      "sha256": "c03a388176929e13354a839f018f9df3cf1adc181c735c7188faa46ee49fe5ab",
       "skills": [
         "maya-getting-started",
         "messaging-and-tone-matrix",
@@ -4495,6 +4513,7 @@
     },
     {
       "key": "mina",
+      "sha256": "fcbc86de4fda27162719aa561bd3dcdf9f26022b5a6713288c2850f689e033b5",
       "skills": [
         "bookkeeping-getting-started",
         "expense-categorization",
@@ -4508,6 +4527,7 @@
     },
     {
       "key": "nadia",
+      "sha256": "eac02bd3c046c03027092efb117286e77f4db2327d210607017a4f31188d00ba",
       "skills": [
         "competitor-teardown",
         "icp-and-positioning"
@@ -4515,6 +4535,7 @@
     },
     {
       "key": "noor",
+      "sha256": "ec1bffd708d477240494c28d9f8a755244a3f4f08b57e22c9bc8fd7082a7a58a",
       "skills": [
         "communications-getting-started",
         "news-angle-and-key-messages",
@@ -4528,6 +4549,7 @@
     },
     {
       "key": "omar",
+      "sha256": "b2e86c80e987508e8a963dc67d44d6996f539dc1bbd0be6a9f8aa0f62a6f5c88",
       "skills": [
         "revops-getting-started",
         "crm-field-audit",
@@ -4541,6 +4563,7 @@
     },
     {
       "key": "priya",
+      "sha256": "1ffb90779d892435e820b73e36cce091b2059d83d4e867e3c1760ee7a51040e3",
       "skills": [
         "product-getting-started",
         "feedback-synthesis",
@@ -4554,6 +4577,7 @@
     },
     {
       "key": "quinn",
+      "sha256": "e31b35fde02f7842e77a634423f76c3aa871b4f4a50379f8597ead36bbf3b11c",
       "skills": [
         "kpi-analysis-getting-started",
         "metric-definition-and-data-quality",
@@ -4567,6 +4591,7 @@
     },
     {
       "key": "remy",
+      "sha256": "5e43c05e5dd5e65f372304d1db1311c2748c18f6f785375b04e752a4e601269d",
       "skills": [
         "lifecycle-email-map",
         "email-deliverability-guardrails"
@@ -4574,6 +4599,7 @@
     },
     {
       "key": "riley",
+      "sha256": "508a0dab2019fcaefd1d7eebe8adfdeb2e553d07cf334fd2f19b8e9c043965f1",
       "skills": [
         "customer-success-getting-started",
         "customer-onboarding-plan",
@@ -4587,6 +4613,7 @@
     },
     {
       "key": "robin",
+      "sha256": "37ae02f6acc817b4738e89dc51b3613724d54c7a0faac6116ad734386a3388c8",
       "skills": [
         "robin-getting-started",
         "triage-and-prioritize",
@@ -4626,6 +4653,7 @@
     },
     {
       "key": "sasha",
+      "sha256": "c9fab2bf30c76af706cf105cf778987cea103ddfed57af95fe0629c2a598676c",
       "skills": [
         "support-getting-started",
         "ticket-triage",
@@ -4639,6 +4667,7 @@
     },
     {
       "key": "sofia",
+      "sha256": "ebc685c09dc1092d6a673b58e6e2cd6a1cccb7c7f52e9f1a07c6026613a9d827",
       "skills": [
         "sofia-getting-started",
         "role-intake-and-scorecard",
@@ -4655,6 +4684,7 @@
     },
     {
       "key": "theo",
+      "sha256": "a81549f5a9ab468411c615248f45912b1814a43bda57acb1d96e240aa3c23d04",
       "skills": [
         "investor-relations-getting-started",
         "pitch-deck-review",
@@ -4668,6 +4698,7 @@
     },
     {
       "key": "vera",
+      "sha256": "d3fd5aa01bd8861da21ab3115f6cccc267108d485fbcb1367f44d15d6fc6edc5",
       "skills": [
         "procurement-getting-started",
         "vendor-requirements-brief",
@@ -4681,6 +4712,7 @@
     },
     {
       "key": "zara",
+      "sha256": "6249e15f4ef59d4c5d792d9ce43d7a15b84ae1f98a38b8183bc1668434d3d584",
       "skills": [
         "zara-getting-started",
         "positioning-and-messaging",
@@ -4699,5 +4731,8 @@
     }
   ],
   "retirements": [],
+  "retired_experts": [
+    "blake"
+  ],
   "system_packages": []
 }
