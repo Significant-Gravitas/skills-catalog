@@ -30,11 +30,4 @@ day_one:
 preloads: []
 routines: []
 skills:
-- paid-ads-getting-started
-- campaign-structure-plan
-- ad-copy-variants
-- landing-page-message-match
-- wasted-spend-audit
-- budget-pacing-review
-- creative-test-readout
-- paid-performance-report
+- conversion-rate-optimization
