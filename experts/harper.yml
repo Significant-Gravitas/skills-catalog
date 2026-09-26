@@ -30,11 +30,6 @@ day_one:
 preloads: []
 routines: []
 skills:
-- recruiting-getting-started
-- role-intake-and-job-description
-- hiring-rubric-design
-- resume-screening
-- interview-plan-and-scorecard
-- candidate-interview-debrief
-- candidate-rejection-email
-- candidate-offer-draft
+- candidate-interview-planning
+- employment-offer-drafting
+- recruiting-pipeline
