@@ -30,11 +30,5 @@ day_one:
 preloads: []
 routines: []
 skills:
-- contract-ops-getting-started
-- nda-playbook-review
-- msa-playbook-review
-- contract-clause-comparison
-- contract-key-term-extraction
-- contract-deviation-triage
-- contract-obligation-tracker
-- counsel-escalation-brief
+- contract-amendment-history
+- nda-risk-review

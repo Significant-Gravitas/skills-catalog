@@ -30,11 +30,9 @@ day_one:
 preloads: []
 routines: []
 skills:
-- support-getting-started
-- ticket-triage
-- support-reply-draft
-- support-macro-library
-- help-article-from-tickets
-- bug-report-handoff
-- refund-and-exception-brief
-- weekly-ticket-themes
+- customer-escalation
+- customer-response-drafting
+- customer-support-research
+- knowledge-base-article-writing
+- product-research-synthesis
+- support-ticket-triage
