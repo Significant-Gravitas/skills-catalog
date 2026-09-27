@@ -47,6 +47,5 @@ routines:
   - What day and hour should the brief land, and in which timezone?
   session_mode: THREAD
 skills:
-- competitor-profiling
-- customer-insight-research
-- product-marketing-context
+- competitor-teardown
+- icp-and-positioning

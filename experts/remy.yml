@@ -43,6 +43,5 @@ routines:
   - What day and hour should this land, and in which timezone?
   session_mode: THREAD
 skills:
-- lifecycle-email-marketing
-- marketing-copy-editing
-- product-marketing-context
+- lifecycle-email-map
+- email-deliverability-guardrails
