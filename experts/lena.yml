@@ -30,6 +30,12 @@ day_one:
 preloads: []
 routines: []
 skills:
-- compliance-evidence-tracking
-- legal-response-drafting
+- compliance-ops-getting-started
+- security-questionnaire-answers
+- dpa-checklist-review
+- personal-data-map
+- subprocessor-register
+- data-subject-request-draft
+- compliance-escalation-brief
+- policy-gap-review
 - vendor-contract-status

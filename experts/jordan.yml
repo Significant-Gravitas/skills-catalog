@@ -30,5 +30,11 @@ day_one:
 preloads: []
 routines: []
 skills:
-- client-proposal-writing
-- sales-pipeline-review
+- deal-desk-getting-started
+- proposal-draft
+- statement-of-work-draft
+- proposal-quality-check
+- pricing-and-terms-approval-brief
+- renewal-negotiation-brief
+- deal-risk-review
+- pipeline-stage-aging-review

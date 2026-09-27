@@ -30,7 +30,13 @@ day_one:
 preloads: []
 routines: []
 skills:
-- customer-escalation
-- customer-insight-research
-- customer-response-drafting
+- customer-success-getting-started
+- customer-health-score
+- churn-risk-review
+- customer-onboarding-plan
+- customer-success-plan
+- renewal-readiness-review
+- renewal-touchpoint-draft
+- expansion-opportunity-brief
 - customer-support-research
+- customer-escalation

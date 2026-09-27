@@ -31,8 +31,13 @@ day_one:
 preloads: []
 routines: []
 skills:
-- multi-source-research-synthesis
-- productivity-setup
-- productivity-task-sync
+- executive-assistant-getting-started
+- inbox-triage
+- reply-draft-in-your-voice
+- meeting-prep-brief
+- meeting-follow-up-draft
+- calendar-conflict-review
+- weekly-priorities-review
+- travel-plan
 - task-list-management
-- workplace-memory-management
+- multi-source-research-synthesis

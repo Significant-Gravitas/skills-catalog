@@ -30,7 +30,12 @@ day_one:
 preloads: []
 routines: []
 skills:
+- people-ops-getting-started
+- hr-escalation-brief
+- new-hire-onboarding-plan
+- handbook-policy-draft
+- performance-review-prep
+- engagement-survey-readout
+- offboarding-checklist
+- one-to-one-agenda
 - company-policy-lookup
-- employee-onboarding-planning
-- employee-performance-review
-- people-analytics-reporting

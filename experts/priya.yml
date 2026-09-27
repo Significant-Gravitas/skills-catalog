@@ -31,8 +31,13 @@ day_one:
 preloads: []
 routines: []
 skills:
-- customer-insight-research
-- product-requirements-writing
+- product-getting-started
+- feedback-synthesis
+- feature-request-triage
+- user-interview-guide
+- opportunity-brief
+- product-requirements-draft
+- roadmap-prioritisation
+- release-notes-draft
 - product-research-synthesis
 - product-roadmap-planning
-- product-stakeholder-update

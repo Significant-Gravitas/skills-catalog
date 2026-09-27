@@ -30,8 +30,12 @@ day_one:
 preloads: []
 routines: []
 skills:
-- code-review-quality
-- software-debugging
-- software-incident-response
-- software-test-planning
+- code-quality-getting-started
+- pull-request-review
+- regression-risk-review
+- test-plan-draft
+- bug-reproduction-report
+- flaky-test-triage
+- release-readiness-checklist
+- incident-postmortem-draft
 - verification-before-completion

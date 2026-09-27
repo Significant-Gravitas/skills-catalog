@@ -51,9 +51,9 @@ routines:
   - What time should this land, and in which timezone?
   session_mode: THREAD
 skills:
-- marketing-content-strategy
+- seo-content-brief
+- on-page-seo-audit
+- brand-voice-guide
 - marketing-copy-editing
-- marketing-copywriting
 - product-marketing-context
-- seo-report-generation
-- website-seo-audit
+- marketing-content-strategy

@@ -31,6 +31,12 @@ day_one:
 preloads: []
 routines: []
 skills:
-- operational-risk-assessment
+- procurement-getting-started
+- vendor-requirements-brief
+- vendor-quote-comparison
+- vendor-due-diligence
+- procurement-decision-memo
+- contract-renewal-tracker
 - vendor-contract-status
-- vendor-evaluation
+- vendor-performance-review
+- spend-anomaly-review

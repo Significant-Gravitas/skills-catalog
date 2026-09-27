@@ -36,6 +36,13 @@ day_one:
 preloads: []
 routines: []
 skills:
-- data-visualization
+- kpi-analysis-getting-started
+- metric-definition-and-data-quality
 - dataset-exploration
-- user-cohort-analysis
+- weekly-kpi-digest
+- metric-movement-analysis
+- metric-anomaly-detection
+- cohort-and-retention-analysis
+- funnel-conversion-analysis
+- experiment-readout
+- data-visualization
