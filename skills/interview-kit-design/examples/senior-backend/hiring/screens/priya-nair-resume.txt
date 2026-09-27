@@ -1,0 +1,5 @@
+Priya Nair - Staff Engineer, Ledgerline (2022-present)
+Led the migration of our 4TB invoices table from a single Postgres instance to a partitioned cluster with zero downtime, using a shadow-copy tool I wrote (pg-shadow-copy).
+Primary on-call for the payments ledger service (Go), one week in four.
+Built the nightly reconciliation job that matches processor payouts to invoices; cut unmatched items from 2.1% to 0.3%.
+Senior Engineer, Brightpay (2018-2022): payment webhooks and retry handling.

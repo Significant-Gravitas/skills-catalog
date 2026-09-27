@@ -1,0 +1,7 @@
+candidate,role,date,start,end,tz,interviewers,coverage,status,scorecards
+Tom Becker,Senior Backend Engineer,2026-10-05,10:00,14:00,Europe/Lisbon,Lena Ortiz; Dev Rao; Sam Lee,billing; system design; debugging,done,2/3
+Priya Nair,Senior Backend Engineer,2026-10-01,10:00,14:00,Europe/Lisbon,Lena Ortiz; Dev Rao; Sam Lee,billing; system design; debugging,done,in
+Ana Ruiz,Product Designer,2026-10-13,10:00,12:00,Europe/Lisbon,Ana Costa; Joana Reis,craft; research,booked,
+Aisha Bello,Senior Backend Engineer,2026-10-13,14:00,17:00,Europe/Lisbon,Dev Rao; Sam Lee,system design; debugging,booked,
+Kenji Mori,Senior Backend Engineer,2026-10-13,09:00,10:00,Europe/Lisbon,Dev Rao,debugging,booked,
+Rui Santos,Senior Backend Engineer,2026-10-15,11:00,12:00,Europe/Lisbon,Lena Ortiz,screen,booked,

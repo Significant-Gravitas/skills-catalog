@@ -1,0 +1,20 @@
+[
+ {
+  "name": "<as published>",
+  "title": "<current title as published>",
+  "company": "<current company as published>",
+  "github": "<login, only if found via gh api; else omit>",
+  "location_as_stated": "<only what they state publicly, or UNKNOWN>",
+  "evidence": [
+   {"must_have": "M1", "text": "<one line: what the proof shows>", "url": "<link that proves it>"},
+   {"must_have": "M2", "text": "<...>", "url": "<...>"}
+  ],
+  "tenure": "<pattern, e.g. '3.5 and 4 years in the last two roles'; short-tenure note if it applies>",
+  "next_move": null,
+  "gap": "<the biggest gap or risk against the bar; UNKNOWN is not a no>",
+  "tier": "strong | worth-a-look | stretch",
+  "reason": "<one line, evidence against the bar only>",
+  "search_id": "<from searches.csv>",
+  "channel": "web_search | gh | xray | orbit | owner-export"
+ }
+]

@@ -1,0 +1,8 @@
+track,owner,due_date,tz,status,notes
+approvals (band approver signs the brief),Tom Weber,2026-10-12,Europe/Lisbon,done,signed 2026-10-12 16:10
+verbal offer,Lena Ortiz,2026-10-13,Europe/Lisbon,done,call 11:00; Priya asked about on-call
+letter sent (after verbal yes),Lena Ortiz,2026-10-14,Europe/Lisbon,open,Lena sends the approved DRAFT from the company template
+questions answered,Dev Rao,2026-10-15,Europe/Lisbon,open,on-call rota question
+answer-by,Lena Ortiz,2026-10-16,Europe/Lisbon,open,Priya answers by 17:00 Lisbon (agreed on the verbal call); Lena chases
+signature,Lena Ortiz,2026-10-19,Europe/Lisbon,open,Priya signs; Lena chases
+first-week hand-off,Lena Ortiz,2026-10-20,Europe/Lisbon,open,to Marta (onboarding) with start date + team

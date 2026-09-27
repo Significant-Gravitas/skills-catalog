@@ -1,0 +1,7 @@
+category,line,detail
+zero_day_hire,4,Marta Silva: applied and hired the same day (data-entry artefact)
+offer_not_resolved,7,"Ben Olsen: offer out 2026-08-18, stage 'Rejected'"
+missing_owner,8,Chen Wu
+unparseable_date,11,applied_on='03/04/2026'
+evergreen_or_reused_opening,0,opening SUP-1: 3 hires (time-to-fill per hire is unreliable)
+duplicate,0,chen wu / support specialist x2 (merges can drop source credit - check before counting)

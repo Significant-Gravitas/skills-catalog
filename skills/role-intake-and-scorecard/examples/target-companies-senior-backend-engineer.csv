@@ -1,0 +1,4 @@
+company,why,link,link_status,boundary
+Ledgerline,Invoicing platform with a public engineering blog on Postgres migrations,https://ledgerline.example,ok,fair game
+Cloudkite,Subscription infra; runs its own billing stack,https://cloudkite.example,ok,fair game
+Paywise,Payments API; our customer,https://paywise.example,ok,off limits (customer)

@@ -1,0 +1,5 @@
+name,company,role,date_added,source_url,tier,reason,status,search_id,channel,stage
+Ines Duarte,Tidepool,Senior Backend Engineer,2026-10-06,https://example.org/ines-billing-talk,1,talk on invoice reconciliation at scale,new,S12,email,prospect
+Hugo Lam,Pleo-like Co,Senior Backend Engineer,2026-10-07,https://example.org/hugo-repo,2,maintains a payments retry library,new,S12,email,prospect
+Clara Voss,Freightly,Senior Backend Engineer,2026-10-08,https://example.org/clara-blog,1,wrote on idempotent billing jobs,new,S13,email,prospect
+Jon Park,Unknown,Senior Backend Engineer,2026-10-08,,3,no public link found,new,S13,,prospect

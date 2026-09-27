@@ -1,0 +1,31 @@
+# Columns dropped from every input before any number is computed.
+# One header per line; matching ignores case, spaces and punctuation.
+# scripts/pipeline_io.py also drops any header matching its PROTECTED_RE
+# (gender, race, ethnic, veteran, disab, birth, age, marital, religion,
+# nationality, eeo, self id, pronoun, photo, pregnancy, orientation,
+# health, medical, salary history / current salary).
+# Harvest v3 GET /v3/eeoc returns row-level self-ID keyed by application [118];
+# the in-app Greenhouse EEOC report is aggregated [89]. Either way: dropped.
+Gender
+Race
+Ethnicity
+Race/Ethnicity
+Veteran Status
+Disability Status
+Date of Birth
+DOB
+Age
+Marital Status
+Religion
+Nationality
+EEOC Race
+EEOC Gender
+EEOC Veteran Status
+EEOC Disability Status
+Self-Identification
+Voluntary Self-Identification
+Pronouns
+Photo
+Current Salary
+Salary History
+Previous Salary

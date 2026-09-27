@@ -1,0 +1,27 @@
+{
+  "owner_tz": "Europe/Lisbon",
+  "candidate_tz": "America/New_York",
+  "candidate_windows": [
+    {"start": "2026-10-23T08:00", "end": "2026-10-23T12:30"},
+    {"start": "2026-10-26T08:00", "end": "2026-10-26T12:30"},
+    {"start": "2026-10-27T08:00", "end": "2026-10-27T10:00"}
+  ],
+  "owner_hours": {"days": ["Mon", "Tue", "Wed", "Thu", "Fri"], "start": "09:30", "end": "17:30"},
+  "slots": [
+    {"label": "Billing debugging (M3)", "minutes": 60, "interviewers": ["Dev Rao"], "alternates": ["Mia Chen"]},
+    {"label": "Live data changes (M2)", "minutes": 45, "interviewers": ["Ana Silva"]},
+    {"label": "Hiring manager close (M4)", "minutes": 45, "interviewers": ["Lena Ortiz"]}
+  ],
+  "busy": {
+    "Dev Rao": [
+      {"start": "2026-10-23T09:00:00+01:00", "end": "2026-10-23T18:00:00+01:00"},
+      {"start": "2026-10-26T09:00:00+00:00", "end": "2026-10-26T18:00:00+00:00"}
+    ],
+    "Lena Ortiz": [{"start": "2026-10-26T14:00:00+00:00", "end": "2026-10-26T15:00:00+00:00"}]
+  },
+  "buffer_minutes": 10,
+  "break_after_slot": 2,
+  "break_minutes": 30,
+  "step_minutes": 15,
+  "max_options": 3
+}

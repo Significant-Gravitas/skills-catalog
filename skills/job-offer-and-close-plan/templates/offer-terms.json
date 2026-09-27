@@ -1,0 +1,36 @@
+{
+  "_help": "Every term: value, source (document/message + date), approver, approved_on (ISO). Unknown = leave value empty; the letter shows [OWNER TO CONFIRM: key]. Never a source that is current or past pay. above_band_approval is needed only when base_pay is above band.max: approver, approved_on (ISO) and amount (the highest base the approver signed off) are all required, and base_pay may not exceed amount.",
+  "candidate_ref": "",
+  "role": "",
+  "band": {"min": "", "max": "", "currency": "", "approver": "", "approved_on": ""},
+  "above_band_approval": {"approver": "", "approved_on": "", "amount": ""},
+  "notice_days": null,
+  "terms": {
+    "entity":               {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "title":                {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "level":                {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "position_type":        {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "manager":              {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "location":             {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "work_terms":           {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "start_date":           {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "base_pay":             {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "currency":             {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "pay_period":           {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "bonus_text":           {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "signing":              {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "equity_text":          {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "variable_target":      {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "ote":                  {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "commission_plan_text": {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "ramp_text":            {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "benefits_source":      {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "probation":            {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "response_by":          {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "contact_for_questions":{"value": "", "source": "", "approver": "", "approved_on": ""},
+    "signatory":            {"value": "", "source": "", "approver": "", "approved_on": ""}
+  },
+  "contingencies": [
+    {"name": "", "source": "company template section", "fcra_disclosure_on_record": false, "post_offer": false, "all_entrants_in_category": false}
+  ]
+}

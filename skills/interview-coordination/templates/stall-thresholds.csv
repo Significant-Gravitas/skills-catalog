@@ -1,0 +1,10 @@
+item,threshold,unit,description
+awaiting_feedback,2,business_days,Candidate awaiting feedback after an interview
+scorecard_late,1,days,Scorecard not filed after the slot
+offer_open,0,days_past_due_by,Offer still open past its answer-by date
+scheduling_unbooked,2,business_days,Scheduling request with no loop booked
+no_reply,3,touches,Candidate with no reply
+invite_unaccepted,24,hours_before_loop,Interviewer invite not accepted inside 24 hours of the loop
+decline_undrafted,48,hours,Decline not drafted after the decision
+no_update,3,business_days,Any thread with no update sent
+response_window,24,hours,Candidate past the promised response window with no update drafted (48 at most)
