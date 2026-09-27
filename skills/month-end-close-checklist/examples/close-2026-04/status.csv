@@ -1,0 +1,22 @@
+id,control,level,depends_on,skill_to_load,status,evidence,blocker,owner,updated_on,approval_ref,reason
+S1,Bank and card statements for the full period received,1,,,blocked,,Main statement received; Amex April statement not yet issued (due 3 May),Jo,2026-09-27,,
+S2,Sales invoice credit and refund list through cutoff received,1,,,ready_for_review,"billing export 6 May: 18 invoices, 22750.00",,Jo,2026-09-27,,
+S3,Bills receipts and expense claims through cutoff received,1,,,in_progress,bills export 6 May: 31 bills,9 card receipts missing (requests sent via BX-4),Jo,2026-09-27,,
+S4,Payroll report received,1,,,blocked,,payroll report not supplied; asked Jo 6 May,Jo,2026-09-27,,
+S5,Loan transfer and owner-account statements received,1,,,not_applicable,,,Jo,2026-09-27,,no loans; savings transfers appear on the main statement
+S6,Processor reports received (Stripe PayPal Square),1,,,not_applicable,,,Jo,2026-09-27,,no processor accounts (intake.json)
+1,Bank and card statements reconciled,2,S1,statement-reconciliation,in_progress,"main-4411: unexplained -12.00 (line 194, BX-3); amex-1009 waits on S1",,Jo,2026-09-27,,
+2,Sales invoices complete through cutoff; credits and refunds recorded,2,S2,,ready_for_review,18 invoices 22750.00 tie to billing export; 0 credits,,Jo,2026-09-27,,
+3,Bills receipts expenses and employee claims complete through cutoff,2,S3,expense-categorization,not_started,,,,2026-09-27,,
+4,Receivables and payables aged; disputes and stale items listed,2,S2;S3,accounts-receivable-follow-up,not_started,,,,2026-09-27,,
+5,Payroll records received and tied to approved payroll reports,2,S4;S1,,not_started,,,,2026-09-27,,
+10,Processor clearing reconciled,2,S6;S1,statement-reconciliation,not_applicable,,,Jo,2026-09-27,,no processor accounts
+12,Opening Balance Equity zero or routed to the accountant,2,,bookkeeping-exception-escalation,ready_for_review,OBE balance 0.00 at 30 Apr (balance sheet export 6 May),,Jo,2026-09-27,,
+13,Bills not yet received checked (cutoff),2,S3,,not_started,,,,2026-09-27,,
+6,Loans interest transfers and owner or intercompany items reconciled,3,S5;1,statement-reconciliation,not_applicable,,,Jo,2026-09-27,,no loans or intercompany; savings transfers matched in control 1
+11,Undeposited Funds and suspense at zero or explained,3,1;10,bookkeeping-exception-escalation,not_started,,,,2026-09-27,,
+14,Owner sign-off recorded on each bank reconciliation,3,1,,not_started,,,,2026-09-27,,
+7,Fixed-asset accrual prepayment tax and revenue-policy items sent to the accountant,3,1;3;4;13,bookkeeping-exception-escalation,not_started,,,,2026-09-27,,
+8,Profit-and-loss and balance movements reviewed against prior period and plan,4,1;2;3;7;10;11,monthly-profit-and-loss-summary,not_started,,,,2026-09-27,,
+9,Every proposed adjustment has a source reason preparer and approver,3,7,,not_started,,,,2026-09-27,,
+15,Period lock date recorded (owner or ledger admin locks in their own system),5,8;9;14,,not_started,,,,2026-09-27,,

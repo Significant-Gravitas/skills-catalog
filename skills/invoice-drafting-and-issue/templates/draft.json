@@ -1,0 +1,24 @@
+{
+  "draft_id": null,
+  "status": "draft",
+  "number": "to be assigned",
+  "invoice_date": null,
+  "supply_period": null,
+  "due_date": null,
+  "terms": null,
+  "terms_source": null,
+  "currency": null,
+  "seller": {"legal_name": null, "address": null, "contact": null, "company_number": null, "vat_number": null},
+  "customer": {"legal_name": null, "address": null, "billing_contact": null, "vat_number": null},
+  "references": {"contract": null, "po": null},
+  "lines": [
+    {"key": "<contract>/<line>/<service period>", "description": null, "period": null, "supply_date": null,
+     "qty": null, "unit": null, "rate": null, "discount": null, "tax_rate": null, "source": null}
+  ],
+  "discount": {"amount": null, "source": null},
+  "tax": {"regime": null, "requested": false, "rounding": null, "source": null},
+  "payment": {"instructions": null, "remittance_reference": null},
+  "conflicts": [{"field": null, "options": [], "resolved": null}],
+  "missing": [],
+  "approver": null
+}

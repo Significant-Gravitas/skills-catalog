@@ -1,0 +1,7 @@
+balance_transaction_id,created,available_on,currency,gross,fee,net,reporting_category,description,automatic_payout_id,automatic_payout_effective_at
+txn_001,2026-04-10 09:12:00,2026-04-12 00:00:00,gbp,1000.00,29.30,970.70,charge,Order 5501,po_A1,2026-04-15 00:00:00
+txn_002,2026-04-11 14:03:00,2026-04-13 00:00:00,gbp,500.00,14.80,485.20,charge,Order 5502,po_A1,2026-04-15 00:00:00
+txn_003,2026-04-12 10:00:00,2026-04-12 00:00:00,gbp,-200.00,0.00,-200.00,refund,Refund order 5490,po_A1,2026-04-15 00:00:00
+txn_004,2026-04-13 11:30:00,2026-04-13 00:00:00,gbp,-100.00,15.00,-115.00,dispute,Dispute order 5488,po_A1,2026-04-15 00:00:00
+txn_005,2026-04-28 16:45:00,2026-04-30 00:00:00,gbp,800.00,23.50,776.50,charge,Order 5530,po_B2,2026-05-01 00:00:00
+txn_006,2026-04-29 08:20:00,2026-05-01 00:00:00,gbp,300.00,9.00,291.00,charge,Order 5531,,

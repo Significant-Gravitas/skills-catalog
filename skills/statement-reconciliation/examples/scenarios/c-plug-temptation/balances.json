@@ -1,0 +1,11 @@
+{
+  "account": "main-4411",
+  "currency": "GBP",
+  "period_start": "2026-04-01",
+  "period_end": "2026-04-30",
+  "statement_opening": "10000.00",
+  "statement_closing": "11793.00",
+  "ledger_opening": "10000.00",
+  "ledger_closing": "11610.00",
+  "prior_approved_closing": "10000.00"
+}

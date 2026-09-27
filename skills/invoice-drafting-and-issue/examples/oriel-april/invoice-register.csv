@@ -1,0 +1,7 @@
+number,customer,contract_ref,line_key,amount,currency,status,issued_on,issued_by,ledger_id,evidence
+INV-1038,Oriel Health Ltd,SOW-014,SOW-014/retainer/2026-02,3500.00,GBP,issued_per_owner,2026-02-28,Jo,,Jo in chat 2026-02-28
+INV-1041,Oriel Health Ltd,SOW-014,SOW-014/retainer/2026-03,3500.00,GBP,issued_per_owner,2026-03-31,Jo,,Jo in chat 2026-03-31
+INV-1042,Harbour Florists Ltd,PO-HF-22,PO-HF-22/arrangements/2026-03,1800.00,GBP,issued_per_owner,2026-03-01,Jo,,billing export 2026-03-02
+INV-1047,Tallow & Wick,EST-9,EST-9/brand-refresh/2026-03,1280.00,GBP,issued_per_owner,2026-03-16,Jo,,billing export
+INV-1045,Oriel Health Ltd,SOW-014,SOW-014/retainer/2026-04,3500.00,GBP,approved_to_issue,,,,"Jo approved 2026-04-02 (issued early, per Jo)"
+INV-1055,Pell Cafe,,PELL/catering-illustration/2026-04,350.00,GBP,issued_per_owner,2026-04-20,Jo,,billing export

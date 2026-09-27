@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DRAFT - NOT AN INVOICE - $draft_id</title>
+<style>
+  @page { size: A4; margin: 18mm; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #111; position: relative; }
+  .watermark { position: fixed; top: 40%; left: 5%; width: 90%; text-align: center;
+               font-size: 54pt; font-weight: bold; color: rgba(200, 0, 0, 0.15);
+               transform: rotate(-30deg); z-index: 0; pointer-events: none; }
+  .banner { border: 2px solid #c00; color: #c00; padding: 6px 10px; font-weight: bold; margin-bottom: 12px; }
+  h1 { font-size: 16pt; margin: 0 0 8px 0; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; position: relative; z-index: 1; }
+  th, td { border: 1px solid #999; padding: 4px 6px; text-align: left; vertical-align: top; }
+  td.num, th.num { text-align: right; }
+  .missing { color: #c00; font-weight: bold; }
+  .parties { display: flex; gap: 24px; }
+  .parties div { flex: 1; }
+  .small { font-size: 9pt; color: #444; }
+</style>
+</head>
+<body>
+<div class="watermark">DRAFT - NOT AN INVOICE</div>
+<div class="banner">DRAFT for approval by $approver. Not issued. Not valid for payment.</div>
+<h1>Invoice $number</h1>
+<p>Invoice date: $invoice_date &nbsp;|&nbsp; Supply: $supply_period &nbsp;|&nbsp; Due: $due_date ($terms)</p>
+<div class="parties">
+  <div><strong>From</strong><br>$seller_block</div>
+  <div><strong>Bill to</strong><br>$customer_block</div>
+</div>
+<p>References: $references</p>
+<table>
+  <thead><tr><th>Description</th><th>Period</th><th class="num">Qty</th><th class="num">Rate</th><th class="num">Tax rate</th><th class="num">Line total</th><th>Source</th></tr></thead>
+  <tbody>
+$line_rows
+  </tbody>
+</table>
+<table>
+  <tr><td>Subtotal</td><td class="num">$subtotal</td></tr>
+  <tr><td>Discount</td><td class="num">$discount</td></tr>
+  <tr><td>Tax</td><td class="num">$tax_total</td></tr>
+  <tr><td><strong>Total ($currency)</strong></td><td class="num"><strong>$grand_total</strong></td></tr>
+</table>
+<p>Payment: $payment_instructions<br>Remittance reference: $remittance_reference</p>
+<p class="small">Totals from invoice_totals.py. Every line and term cites its source. Blanks in red are not yet supplied and must not be filled by guess.</p>
+</body>
+</html>

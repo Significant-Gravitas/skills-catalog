@@ -1,0 +1,7 @@
+Date,Time,TimeZone,Name,Type,Status,Currency,Gross,Fee,Net,Balance Impact,Transaction ID
+2026-04-06,10:01:00,Europe/London,Ada Clients,Express Checkout Payment,Completed,USD,100.00,-3.20,96.80,Credit,PQ-2001
+2026-04-07,11:00:00,Europe/London,Lumen GmbH,Express Checkout Payment,Completed,EUR,200.00,-6.10,193.90,Credit,PQ-2002
+2026-04-08,09:00:00,Europe/London,Font Foundry,General Payment,Completed,USD,-40.00,0.00,-40.00,Debit,PQ-2003
+2026-04-09,09:05:00,Europe/London,,General Currency Conversion,Completed,EUR,-193.90,0.00,-193.90,Debit,PQ-2004
+2026-04-09,09:05:00,Europe/London,,General Currency Conversion,Completed,USD,210.00,0.00,210.00,Credit,PQ-2005
+2026-04-20,08:00:00,Europe/London,,General Withdrawal,Completed,USD,-266.80,0.00,-266.80,Debit,PQ-2006

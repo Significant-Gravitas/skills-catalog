@@ -1,0 +1,6 @@
+{
+  "trap": "Period chaining. The statement opening (20000.00) does not equal last month's approved closing (19880.00). The run must stop before matching: suspect an edit to a reconciled period. Nothing is undone.",
+  "runs": [
+    {"label": "stop on opening gap", "expect": {"status": "STOPPED"}}
+  ]
+}

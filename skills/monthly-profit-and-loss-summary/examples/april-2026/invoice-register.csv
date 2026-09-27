@@ -1,0 +1,14 @@
+number,customer,contract_ref,line_key,amount,currency,status,issued_on,issued_by,ledger_id,evidence
+INV-1036,Lumen Ltd,C-3,C-3/retainer/2026-03,5000.00,GBP,issued_per_owner,2026-03-01,Jo,L-8801,Jo in chat 2026-03-01
+INV-1037,Harbour Co,C-4,C-4/retainer/2026-03,4500.00,GBP,issued_per_owner,2026-03-01,Jo,L-8802,Jo in chat 2026-03-01
+INV-1038,Kestrel Studio,C-5,C-5/retainer/2026-03,3500.00,GBP,issued_per_owner,2026-03-01,Jo,L-8803,Jo in chat 2026-03-01
+INV-1040,Harbour Co,P-12,P-12/project/2026-03,5200.00,GBP,issued_per_owner,2026-03-20,Jo,L-8810,billing export 2026-03-21
+INV-1043,Lumen Ltd,C-3,C-3/retainer/2026-04,5000.00,GBP,issued_per_owner,2026-04-01,Jo,L-8841,Jo in chat 2026-04-01
+INV-1044,Harbour Co,C-4,C-4/retainer/2026-04,4500.00,GBP,issued_per_owner,2026-04-01,Jo,L-8842,Jo in chat 2026-04-01
+INV-1045,Kestrel Studio,C-5,C-5/retainer/2026-04,3500.00,GBP,issued_per_owner,2026-04-01,Jo,L-8843,Jo in chat 2026-04-01
+INV-1049,Oriel Health,C-7,C-7/retainer/2026-04,3500.00,GBP,issued_per_owner,2026-04-03,Jo,L-8849,Jo in chat 2026-04-03
+INV-1046,Harbour Co,P-13,P-13/project/2026-04,600.00,GBP,voided_per_owner,2026-04-10,Jo,,Jo in chat 2026-04-12 (voided)
+INV-1047,Lumen Ltd,P-14,P-14/project/2026-04,5200.00,GBP,issued_per_owner,2026-04-18,Jo,L-8847,billing export 2026-04-19
+INV-1051,Oriel Health,C-7,C-7/deposit/2026-04,250.00,GBP,issued_per_owner,2026-04-22,Jo,L-8851,billing export 2026-04-23
+INV-1050,Workshop day,W-2,W-2/workshop/2026-04,900.00,GBP,issued_per_owner,2026-04-29,Jo,L-8850,billing export 2026-04-30
+INV-1052,Kestrel Studio,C-5,C-5/retainer/2026-05,3500.00,GBP,approved_to_issue,,,,Jo approved 2026-04-30 (issue on 1 May)

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Statement of account - $customer - $as_at</title>
+<style>
+  @page { size: A4; margin: 18mm; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #111; }
+  .banner { border: 2px solid #c60; color: #c60; padding: 6px 10px; font-weight: bold; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { border: 1px solid #999; padding: 4px 6px; text-align: left; }
+  td.num, th.num { text-align: right; }
+  .small { font-size: 9pt; color: #444; }
+</style>
+</head>
+<body>
+<div class="banner">DRAFT for approval by $approver. Not sent.</div>
+<h1>Statement of account</h1>
+<p><strong>$seller</strong><br>To: <strong>$customer</strong><br>As at: $as_at (payment records to $cutoff)</p>
+<table>
+  <thead><tr><th>Invoice</th><th>Issued</th><th>Due</th><th class="num">Original</th><th class="num">Paid / credited</th><th class="num">Open</th></tr></thead>
+  <tbody>
+$rows
+  </tbody>
+  <tfoot><tr><td colspan="5"><strong>Total open ($currency)</strong></td><td class="num"><strong>$total</strong></td></tr></tfoot>
+</table>
+<p>If you have already paid any of these, please send the remittance so we can match it. If anything here does not match your records, reply and we will look into it.</p>
+<p>Remittance reference: the invoice number(s).</p>
+<p class="small">Prepared from the receivables records at the cutoff above (ar_aging.py). Contains this customer's invoices only.</p>
+</body>
+</html>

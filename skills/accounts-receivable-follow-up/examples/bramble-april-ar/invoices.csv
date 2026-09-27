@@ -1,0 +1,8 @@
+invoice,customer,currency,issue_date,due_date,terms_days,amount,credits,billing_contact
+INV-1039,Kestrel Joinery Ltd,GBP,2026-01-29,2026-02-28,,2150.00,0.00,accounts@kestrel.example
+INV-1042,Harbour Florists Ltd,GBP,2026-03-01,2026-03-31,,1800.00,0.00,priya@harbour.example
+INV-1045,Oriel Health Ltd,GBP,2026-04-02,2026-05-02,,3500.00,0.00,ap@oriel.example
+INV-1047,Tallow & Wick,GBP,2026-03-16,2026-04-15,,1280.00,0.00,hello@tallow.example
+INV-1049,Marsh & Co,GBP,2026-03-26,2026-04-25,,900.00,0.00,ap@marsh.example
+INV-1051,Greyline Studio,GBP,2026-03-21,2026-04-20,,2400.00,0.00,finance@greyline.example
+INV-1055,Pell Cafe,GBP,2026-04-20,,,350.00,0.00,

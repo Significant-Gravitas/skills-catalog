@@ -1,0 +1,4 @@
+side,id,class,pair_id,note
+statement,195,correction,,bank interest not in ledger; draft for accountant
+statement,192,match,J-302,Jo confirmed one parking charge; J-303 is a duplicate entry
+ledger,J-303,correction,,duplicate of J-302; owner to reverse after accountant approval

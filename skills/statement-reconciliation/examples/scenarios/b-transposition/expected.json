@@ -1,0 +1,10 @@
+{
+  "trap": "A transposed amount (95.00 keyed as 59.00). The matcher must not force the pair; it lists them as a transposition candidate (difference 36.00, divisible by 9). Only after the owner confirms is the pair classified as a ledger error.",
+  "runs": [
+    {"label": "first pass: both sides left open",
+     "expect": {"status": "NOT RECONCILED", "unexplained_difference": "-48.50"}},
+    {"label": "after the owner confirms the ledger error",
+     "classify": "classify.csv",
+     "expect": {"status": "RECONCILED", "unexplained_difference": "0.00", "adjusted_ledger_balance": "23042.50"}}
+  ]
+}

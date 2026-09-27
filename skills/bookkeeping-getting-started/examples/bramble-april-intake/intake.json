@@ -1,0 +1,100 @@
+{
+  "intake_version": 1,
+  "prepared_on": "2026-05-02",
+  "prepared_by": "Mina (draft for owner review)",
+  "entity": {
+    "legal_name": "Bramble Design Ltd",
+    "slug": "bramble-design",
+    "jurisdiction": "UK",
+    "registration_number": "not supplied",
+    "address": "not supplied",
+    "contact": "not supplied",
+    "vat_or_sales_tax_registered": "yes (owner stated; VAT number not supplied)",
+    "vat_number": "not supplied",
+    "mtd_income_tax_status": "not applicable: limited company",
+    "fiscal_year_end": "31 March"
+  },
+  "period": {"start": "2026-04-01", "end": "2026-04-30", "catch_up": false},
+  "reporting_currency": "GBP",
+  "other_currencies": ["USD (one Stripe line on the card)"],
+  "basis": "open",
+  "chart": {"source": "chart-of-accounts-v2.csv", "version": "v2", "owner": "Dev Patel (external accountant)", "account_definitions": "none supplied"},
+  "coding_rules": {"source": "coding-rules.txt (5 rules)", "count": 5},
+  "dimensions": [],
+  "system_of_record": {
+    "name": "Xero",
+    "connection": "export_only (no Xero capability found in this workspace)",
+    "owner_holds_export_copy": true,
+    "documents_live_in": "Google Drive folder named by Jo; receipts also in Amex app"
+  },
+  "sources": [
+    {
+      "file": "bank-main-2026-04.csv",
+      "system": "Bank",
+      "account": "****4417",
+      "entity_confirmed": true,
+      "dates": {"from": "2026-04-01", "to": "2026-04-12"},
+      "export_time": "2026-05-01 09:14",
+      "rows": 8,
+      "currency": "GBP",
+      "control_total": {"kind": "closing balance", "value": "29407.79", "evidence": "last row balance"},
+      "date_format": null,
+      "date_format_ambiguous": true,
+      "date_format_confirmed": null,
+      "sign_convention_confirmed": true,
+      "masked_fields": ["Reference"],
+      "state": "blocked",
+      "warning": "ends 12 Apr; balance break at line 8 (30.00 unexplained)"
+    },
+    {
+      "file": "amex-2026-04.csv",
+      "system": "Card",
+      "account": "****1009",
+      "entity_confirmed": true,
+      "dates": {"from": "2026-04-03", "to": "2026-04-28"},
+      "export_time": "2026-05-01 09:20",
+      "rows": 8,
+      "currency": "GBP",
+      "control_total": {"kind": "sum of rows as exported", "value": "900.69", "evidence": "profile_sources.py"},
+      "date_format": "%Y-%m-%d",
+      "date_format_ambiguous": false,
+      "date_format_confirmed": true,
+      "sign_convention_confirmed": true,
+      "masked_fields": [],
+      "state": "usable_with_warning",
+      "warning": "one exact duplicate pair (Pret, 18 Apr); statement total not yet supplied to tie to"
+    },
+    {
+      "file": "ledger trial balance to 31 Mar",
+      "system": "Xero",
+      "account": null,
+      "entity_confirmed": true,
+      "dates": {"from": null, "to": "2026-03-31"},
+      "export_time": null,
+      "rows": null,
+      "currency": "GBP",
+      "control_total": {"kind": "opening balances", "value": null, "evidence": null},
+      "state": "blocked",
+      "warning": "March not yet signed off by the accountant"
+    }
+  ],
+  "opening_balances": [{"account": "Bank ****4417", "value": "29617.59", "evidence": "implied by first row of export only; not an approved closing", "approved_by": null}],
+  "approvers": {
+    "invoices": "Jo (director)",
+    "customer_contact": "Jo (director)",
+    "adjustments": "Dev Patel (external accountant)",
+    "final_reports": "Dev Patel (external accountant)",
+    "next_owner_if_approver_conflicted": "Dev Patel"
+  },
+  "accountant": "Dev Patel",
+  "ar": {"account_owner": "not supplied", "mailbox": "not supplied", "aging_buckets_confirmed": null},
+  "cadence": {"close_target": "not agreed", "ar_review": "not agreed", "routines_created": []},
+  "open_questions": [
+    {"id": "Q1", "question": "Are dates in bank-main-2026-04.csv day/month or month/day?", "options": ["Day/Month/Year", "Month/Day/Year", "Not sure: I will check the bank app"], "asked_on": "2026-05-02", "answer": null, "answered_by_as_stated": null},
+    {"id": "Q2", "question": "The bank export stops on 12 April. Can you export 1-30 April?", "options": ["Yes, uploading now", "That is all there is", "Not sure"], "asked_on": "2026-05-02", "answer": null, "answered_by_as_stated": null},
+    {"id": "Q3", "question": "Has Dev signed off the March closing balances?", "options": ["Yes: I will upload the signed trial balance", "Not yet", "Not sure: ask Dev"], "asked_on": "2026-05-02", "answer": null, "answered_by_as_stated": null},
+    {"id": "Q4", "question": "Cash or accrual basis for management reports?", "options": ["Cash", "Accrual", "Not sure: ask the accountant"], "asked_on": "2026-05-02", "answer": "Not sure: ask the accountant", "answered_by_as_stated": "Jo"}
+  ],
+  "can_start_now": ["expense categorisation of amex-2026-04.csv (duplicate pair flagged)", "invoice list check"],
+  "blocked_work": ["statement reconciliation (Q1, Q2, Q3, balance break)", "payroll tie-out (payroll report not supplied)"]
+}
