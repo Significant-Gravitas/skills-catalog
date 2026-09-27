@@ -1,0 +1,31 @@
+{
+  "candidate_ref": "Priya Nair (fictional)",
+  "role": "Senior Backend Engineer",
+  "band": {"min": "95000", "max": "110000", "currency": "EUR", "approver": "Lena Ortiz + finance (Tom Weber)", "approved_on": "2026-09-01"},
+  "notice_days": 30,
+  "terms": {
+    "entity":               {"value": "Northwind Labs GmbH", "source": "offer template header", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "title":                {"value": "Senior Backend Engineer", "source": "role scorecard", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "level":                {"value": "L5", "source": "level grid, debrief record 2026-10-09", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "position_type":        {"value": "full-time, permanent", "source": "hiring plan", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "manager":              {"value": "Lena Ortiz", "source": "hiring plan", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "location":              {"value": "in Lisbon", "source": "hiring plan", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "work_terms":           {"value": "hybrid, two office days a week", "source": "hiring plan", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "start_date":           {"value": "2026-12-01", "source": "candidate's stated notice 'one month', screen notes 2026-09-18", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "base_pay":             {"value": "104000", "source": "approved band; offer_math output 2026-10-11", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "monthly_base":         {"value": "7428.57", "source": "derived: base_pay / 14 payments (Lisbon contract: 12 monthly + holiday and Christmas subsidies), finance 2026-10-12", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "currency":             {"value": "EUR", "source": "approved band", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "pay_period":           {"value": "year", "source": "offer template", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "bonus_text":           {"value": "none for this level", "source": "bonus plan 2026", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "equity_text":          {"value": "0.15% options, standard four-year vesting with a one-year cliff", "source": "equity grid L5", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "benefits_source":      {"value": "the Northwind benefits summary 2026", "source": "people team", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "probation":            {"value": "six months", "source": "offer template", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "response_by":          {"value": "2026-10-16", "source": "agreed with the owner 2026-10-11", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "contact_for_questions":{"value": "Lena Ortiz (hiring manager), lena@northwind.example", "source": "owner", "approver": "Lena Ortiz", "approved_on": "2026-10-12"},
+    "signatory":            {"value": "Tom Weber, COO", "source": "offer template", "approver": "Tom Weber", "approved_on": "2026-10-12"},
+    "candidate_first_name": {"value": "Priya", "source": "tracker", "approver": "Lena Ortiz", "approved_on": "2026-10-12"}
+  },
+  "contingencies": [
+    {"name": "right to work in Portugal", "source": "offer template section 6", "fcra_disclosure_on_record": false, "post_offer": false, "all_entrants_in_category": false}
+  ]
+}

@@ -1,0 +1,7 @@
+candidate,role,date,channel,route_source,touch,status,reply_type,check_back_date,sender,candidate_tz
+Priya Nair,Senior Backend Engineer,2026-10-05,email,priyanair.dev contact page,1,sent,none,,Maya Chen,Europe/Dublin
+Priya Nair,Senior Backend Engineer,2026-10-05,email,priyanair.dev contact page,2,drafted,none,,Maya Chen,Europe/Dublin
+Aisha Bello,Senior Backend Engineer,2026-10-01,email,conference speaker page,1,sent,none,,Maya Chen,
+Aisha Bello,Senior Backend Engineer,2026-10-05,email,conference speaker page,2,sent,none,,Maya Chen,
+Chen Wei,Senior Backend Engineer,2026-10-02,linkedin,LinkedIn InMail,1,replied,not-now,2026-11-02,Maya Chen,Asia/Singapore
+Marek Nowak,Senior Backend Engineer,2026-10-06,linkedin,LinkedIn InMail,1,declined,not-interested,,Maya Chen,Europe/Warsaw

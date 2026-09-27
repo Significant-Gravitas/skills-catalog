@@ -1,0 +1,4 @@
+line,type,amount,currency,estimate
+job board (Indeed) Q3,external,1800,EUR,no
+referral bonuses Q3,internal,1000,EUR,no
+recruiter time (owner estimate supplied by finance),internal,4200,EUR,yes

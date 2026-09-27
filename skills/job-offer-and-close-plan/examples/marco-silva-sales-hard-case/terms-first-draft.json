@@ -1,0 +1,13 @@
+{
+  "candidate_ref": "Marco Silva (fictional)",
+  "role": "Account Executive, Mid-Market",
+  "band": {"min": "90000", "max": "105000", "currency": "USD", "approver": "Rita Cole (VP Sales) + finance", "approved_on": "2026-09-20"},
+  "terms": {
+    "base_pay":        {"value": "105000", "source": "matches his current base salary of 105k (screen call)", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "variable_target": {"value": "95000", "source": "AE comp plan FY27", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "ote":             {"value": "190000", "source": "AE comp plan FY27", "approver": "Rita Cole", "approved_on": "2026-10-20"}
+  },
+  "contingencies": [
+    {"name": "background check", "source": "offer template section 7", "fcra_disclosure_on_record": false}
+  ]
+}

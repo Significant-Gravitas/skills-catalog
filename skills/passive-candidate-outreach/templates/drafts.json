@@ -1,0 +1,15 @@
+{
+  "company": "Northwind Tools",
+  "sender": "Maya Chen",
+  "role": "Senior Backend Engineer, Billing",
+  "drafts": [
+    {
+      "candidate": "Priya Nair",
+      "touch": 1,
+      "hook_source": "Postgres migration post (priyanair.dev, 2026-03)",
+      "subject": "Your zero-downtime Postgres migration post",
+      "body": "Hi Priya, I read your post on moving a 4TB Postgres table with zero downtime.\nWe're hiring one engineer at Northwind Tools to own billing end to end, and live migrations on a revenue path are most of the job.\nOpen to a short chat?\nMaya Chen, Head of Engineering, Northwind Tools",
+      "send_slot": "Tue 13 Oct 09:30 Europe/Dublin"
+    }
+  ]
+}

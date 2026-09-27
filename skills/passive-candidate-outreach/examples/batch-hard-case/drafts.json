@@ -1,0 +1,35 @@
+{
+  "company": "Northwind Tools",
+  "sender": "Maya Chen",
+  "role": "Senior Backend Engineer, Billing",
+  "drafts": [
+    {
+      "candidate": "Tomas Varga",
+      "touch": 1,
+      "hook_source": "Kafka exactly-once talk (Berlin Buzzwords 2026)",
+      "subject": "Your Buzzwords talk on exactly-once billing events",
+      "body": "Hi Tomas, I watched your Berlin Buzzwords talk on exactly-once billing events.\nNorthwind Tools is hiring one engineer to own our billing service, and duplicate charges from event replays are the problem we most need solved.\nWorth a reply?\nMaya Chen, Head of Engineering, Northwind Tools"
+    },
+    {
+      "candidate": "Lena Hoffmann",
+      "touch": 1,
+      "hook_source": "Kafka exactly-once talk (Berlin Buzzwords 2026)",
+      "subject": "Your Buzzwords talk on exactly-once billing events",
+      "body": "Hi Lena, I watched your Berlin Buzzwords talk on exactly-once billing events.\nNorthwind Tools is hiring one engineer to own our billing service; replays are our biggest problem.\nWorth a reply?\nMaya Chen, Northwind Tools"
+    },
+    {
+      "candidate": "Ravi Menon",
+      "touch": 1,
+      "hook_source": "stripe-reconcile repository",
+      "subject": "Your stripe-reconcile repo",
+      "body": "Hi Ravi, since you're open to new opportunities, I saw your stripe-reconcile repo. We pay well. Can we move this to WhatsApp? Or grab time here: calendly.com/maya-nw. What do you think?\nMaya, Northwind Tools"
+    },
+    {
+      "candidate": "Jo Okafor",
+      "touch": 1,
+      "hook_source": "PGConf talk",
+      "subject": "Your PGConf talk",
+      "body": "Hi Jo, I saw your PGConf talk on online schema changes.\nNorthwind Tools is hiring one billing engineer.\nOpen to a chat?\nMaya Chen, Northwind Tools"
+    }
+  ]
+}

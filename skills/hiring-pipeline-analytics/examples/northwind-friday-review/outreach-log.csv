@@ -1,0 +1,9 @@
+candidate,role,date,channel,route_source,touch,status,reply_type,check_back_date,sender,candidate_tz
+Rui Santos,Senior Backend Engineer,2026-09-29,email,personal site,1,sent,,,Sofia,Europe/Lisbon
+Rui Santos,Senior Backend Engineer,2026-10-01,email,personal site,2,replied,positive,,Sofia,Europe/Lisbon
+Mia Keller,Senior Backend Engineer,2026-10-04,email,conference page,1,sent,,,Sofia,Europe/Berlin
+Mia Keller,Senior Backend Engineer,2026-10-06,email,conference page,2,sent,,,Sofia,Europe/Berlin
+Paulo Dias,Senior Backend Engineer,2026-09-30,linkedin,profile,1,replied,not-interested,,Sofia,Europe/Lisbon
+Maya Chen,Product Designer,2026-09-20,email,portfolio,1,sent,,,Sofia,Europe/Lisbon
+Maya Chen,Product Designer,2026-09-22,email,portfolio,2,sent,,,Sofia,Europe/Lisbon
+Maya Chen,Product Designer,2026-09-25,email,portfolio,3,sent,,,Sofia,Europe/Lisbon

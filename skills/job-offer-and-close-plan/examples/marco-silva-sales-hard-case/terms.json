@@ -1,0 +1,25 @@
+{
+  "candidate_ref": "Marco Silva (fictional)",
+  "role": "Account Executive, Mid-Market",
+  "band": {"min": "90000", "max": "105000", "currency": "USD", "approver": "Rita Cole (VP Sales) + finance", "approved_on": "2026-09-20"},
+  "notice_days": 14,
+  "terms": {
+    "entity":               {"value": "Harbor Analytics Inc.", "source": "offer template", "approver": "Jin Park (People)", "approved_on": "2026-10-20"},
+    "title":                {"value": "Account Executive, Mid-Market", "source": "role scorecard", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "level":                {"value": "AE2", "source": "sales level grid", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "start_date":           {"value": "2026-11-16", "source": "candidate's stated notice 'two weeks', call 2026-10-19", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "base_pay":             {"value": "100000", "source": "approved band; offer_math output 2026-10-20", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "currency":             {"value": "USD", "source": "approved band", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "pay_period":           {"value": "year", "source": "offer template", "approver": "Jin Park (People)", "approved_on": "2026-10-20"},
+    "variable_target":      {"value": "95000", "source": "AE comp plan FY27", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "ote":                  {"value": "195000", "source": "AE comp plan FY27", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "commission_plan_text": {"value": "as set out in the FY27 Mid-Market AE Commission Plan, which governs", "source": "AE comp plan FY27", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "ramp_text":            {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "response_by":          {"value": "2026-10-23", "source": "agreed with the owner", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "contact_for_questions":{"value": "Rita Cole (VP Sales), rita@harbor.example", "source": "owner", "approver": "Rita Cole", "approved_on": "2026-10-20"},
+    "signatory":            {"value": "Jin Park, Head of People", "source": "offer template", "approver": "Jin Park (People)", "approved_on": "2026-10-20"}
+  },
+  "contingencies": [
+    {"name": "background check", "source": "offer template section 7", "fcra_disclosure_on_record": false, "post_offer": false, "all_entrants_in_category": false}
+  ]
+}

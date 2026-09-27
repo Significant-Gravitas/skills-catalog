@@ -1,0 +1,5 @@
+name,role,stage,source,owner,last_contact,next_step,waiting_on,days_in_stage,notes,stage_since,due_by,tz,is_prospect,verification_step
+Priya Nair,Senior Backend Engineer,Onsite done,Sourced,Maya Chen,2026-10-06,Debrief Fri 9 Oct 11:00,Lena Ortiz,,,2026-10-05,,Europe/Dublin,no,
+Tom Becker,Senior Backend Engineer,Onsite booked,Referral,Maya Chen,2026-10-07,Onsite Fri 9 Oct,,,,2026-10-06,,Europe/Berlin,no,
+Aisha Bello,Senior Backend Engineer,To schedule,Applied,Maya Chen,2026-10-02,Send loop options,,,,2026-10-02,,,no,
+Chen Wei,Senior Backend Engineer,Prospect,Sourced,Maya Chen,2026-09-20,,,,,,,,yes,

@@ -1,0 +1,13 @@
+Candidate ID,First Name,Last Name,Job,Current Stage,Source,Recruiter,Applied On,Hired Date,Rejection Reason,Rejection Reason Type,Opening ID,Gender,Race,Veteran Status,Disability Status,Offer Sent
+101,Jonas,Meyer,Support Specialist,Hired,LinkedIn (Prospecting),Rita Cole,2026-07-01,2026-08-04,,,SUP-1,Male,Decline to self identify,No,No,2026-07-28
+102,Lea,Schmidt,Support Specialist,Hired,Referral,Rita Cole,2026-07-10,2026-08-20,,,SUP-1,Female,White,No,No,2026-08-12
+103,Marta,Silva,Support Specialist,Hired,Company Website,Rita Cole,2026-08-25,2026-08-25,,,SUP-1,,,,,2026-08-25
+104,Ivo,Petrov,Support Specialist,Offer,Referral,Rita Cole,2026-08-30,,,,SUP-1,,,,,2026-09-10
+105,Sana,Iqbal,Support Specialist,Rejected,Company Website,Rita Cole,2026-08-02,,No SaaS support experience,We rejected them,SUP-1,,,,,
+106,Ben,Olsen,Support Specialist,Rejected,Indeed,Rita Cole,2026-08-05,,Declined offer - compensation,They rejected us,SUP-1,,,,,2026-08-18
+107,Chen,Wu,Support Specialist,Application Review,Indeed,,2026-09-20,,,,SUP-1,,,,,
+108,Chen,Wu,Support Specialist,Application Review,Indeed,Rita Cole,2026-09-21,,,,SUP-1,,,,,
+109,Dara,Kim,Support Specialist,Prospect,LinkedIn (Prospecting),Rita Cole,,,,,SUP-1,,,,,
+110,Ola,Nordmann,Support Specialist,Phone Interview,Company Website,Rita Cole,03/04/2026,,,,SUP-1,,,,,
+111,Aya,Tanaka,Support Specialist,Face to Face,Referral,Rita Cole,2026-09-02,,,,SUP-1,,,,,
+112,Luis,Ortega,Support Specialist,Rejected,Company Website,Rita Cole,2026-09-03,,Withdrew - took another job,They rejected us,SUP-1,,,,,

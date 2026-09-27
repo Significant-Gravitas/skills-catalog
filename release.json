@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-dedupe-upstream-2026-09-27",
+  "release_key": "catalogue-recruiting-sofia-2026-09-27",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -453,11 +453,101 @@
     },
     {
       "slug": "candidate-sourcing-strategy",
-      "tree_sha256": "332313eac4152338280534a6c1f2bb111b5dfb9c93bba1ad9b1bb97cc025c094",
+      "tree_sha256": "2e51ed0170e81a967d5d4ca8e3ea4073fc042edcf9f106c5f2d4786096ba2317",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "71eef8482b29e92fef9b9dbb9079242144b560b53a6abc1921e70c5975a05e2c",
+          "sha256": "d992af5b3f53f4a9dab8f4026199c4c11cc1a125dc73684b34c0b81ee18825c8",
+          "executable": false
+        },
+        {
+          "path": "checklists/batch-run.md",
+          "sha256": "9ebda801d0738604189c89da8853457bdfa2252f15fde8191af2405c0c9ad039",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-raw.json",
+          "sha256": "7787ddb8bfec0296b41e85a0a14abc86a770350d0ead50d86f106ee912c984db",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-senior-backend.md",
+          "sha256": "d1fc0f1371ea8522ba5a619422c1b2913627651e58367015f0c0f72ec1469617",
+          "executable": false
+        },
+        {
+          "path": "examples/links-verified.csv",
+          "sha256": "45530d5bc997a6538efc32f50b37f36c84a7e5712b2614449451ad8a53c5f335",
+          "executable": false
+        },
+        {
+          "path": "references/boolean-and-xray-patterns.md",
+          "sha256": "584b7a500d1af5eade5328fe77579bd8533770d6da767c5724984f9c86550140",
+          "executable": false
+        },
+        {
+          "path": "references/github-sourcing.md",
+          "sha256": "06d6677a477c1d807656e76c419fd419e5ab74b7533b9f929734b130fdac93da",
+          "executable": false
+        },
+        {
+          "path": "references/nicknames.csv",
+          "sha256": "edfe510729d584edc9372a6b14486932f14a756c033f843d162b032bbfef1ea0",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "ce6244442fa29b1b18dd3e60a257475351af27e23e62656c3be331af629aa0d3",
+          "executable": false
+        },
+        {
+          "path": "references/sourcing-guardrails.md",
+          "sha256": "47811f185bb6aadd168f2da99c21709b0cfc4f9ee69cb131fd2026df44aaba38",
+          "executable": false
+        },
+        {
+          "path": "scripts/append_rows.py",
+          "sha256": "b54dc6de2997b8d87b6e77ea233e16c4e67e3166c1a1c0615114fce9536ed3eb",
+          "executable": false
+        },
+        {
+          "path": "scripts/card_check.py",
+          "sha256": "9c03a3a8974c4acc641c0bd39f7293b7d1ee5dc414694f8875dcfd096963f584",
+          "executable": false
+        },
+        {
+          "path": "scripts/dedupe_names.py",
+          "sha256": "56513d144a5d0d5fa951f4fbdd3ae0592f4e147b43acd9a304e51c1c8d48f73f",
+          "executable": false
+        },
+        {
+          "path": "scripts/posted_pay.py",
+          "sha256": "b0f4a2dcd2a76b8edaca956c66a59f6ba8d7ab792525cd99c44bc83725c53958",
+          "executable": false
+        },
+        {
+          "path": "templates/batch-card.json",
+          "sha256": "1c2fa06d161f89ed6b81180e1841920899f886a148dcc04a305a3aee813190f9",
+          "executable": false
+        },
+        {
+          "path": "templates/card.md",
+          "sha256": "30012725834c1c4de20670aded5f60a9d2beda7a841962889bba7e78319721f1",
+          "executable": false
+        },
+        {
+          "path": "templates/links.csv",
+          "sha256": "20f9b46e48a9c815c476d4f3cb757aa9cc20448d1ca6768f17050a63d4e1ac70",
+          "executable": false
+        },
+        {
+          "path": "templates/market-read.md",
+          "sha256": "8dfa0f0917e9ab20193183f3e00eb23e3361ded42135c975ff15211bb0e2c79c",
+          "executable": false
+        },
+        {
+          "path": "templates/source-subtask-prompt.md",
+          "sha256": "7bb5561edba083dda96077d9da02816ddcf065a5d3de490f26c09b8638112232",
           "executable": false
         }
       ]
@@ -1980,22 +2070,337 @@
     },
     {
       "slug": "hiring-debrief-and-decision",
-      "tree_sha256": "ed67557438edddf5e5fa66934e1d1c6237ade5378785066c1a29685fa377f953",
+      "tree_sha256": "56b8ccbc22e1b71b8b5db4cac159dc0278b5a8ec27b4a69168f78eedd3acb8d5",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "eadb59f89d459c7bfdefe9df5966315aa751a36bf3583d09ec02a01c0a4fea23",
+          "sha256": "3abcb5ea1df79de21ed41f526a74909c1221e7ce57b04ae11bcd8de478479c49",
+          "executable": false
+        },
+        {
+          "path": "checklists/debrief-day.md",
+          "sha256": "180b61fdb8f409aa45fa3e7947be8bc17c7617b765cee3f980dcd834f663d1ae",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case/hiring/debriefs/platform-engineer/kofi-mensah/scorecards/ana-silva.md",
+          "sha256": "186aec7e993dc647d0954602a16791977084a2f3c22611a3b58ebd0cedd891e9",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case/hiring/debriefs/platform-engineer/kofi-mensah/scorecards/dev-rao.md",
+          "sha256": "f754adfa8a6ca415ebbd992ad5cb07e6ae49f46e4506b5def3e9998f3bc54ad4",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case/hiring/tracker/loops.csv",
+          "sha256": "8615fcad01ef89091eb1846e2adeb0724ad25a18fc773deb4fafca28984b8887",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case/panel-chat-notes.txt",
+          "sha256": "462233c932a9108d85b88a76741feeb6982bf1d67949747d19b5cea826a54241",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case/walkthrough.md",
+          "sha256": "188adfc38a75fc3a36df1a461aca7957b5260f5748ce53b6fb44c6ffeb9c5b57",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-debrief/hiring/debriefs/senior-backend-engineer/priya-nair/scorecards/ana-silva.md",
+          "sha256": "75cd881e2cf2d6d26af14d63412f2f3fbd9af53dce07225f21978da9e5b70465",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-debrief/hiring/debriefs/senior-backend-engineer/priya-nair/scorecards/dev-rao.md",
+          "sha256": "4501341440448b3a08c790f8ce04e29348c53edc31fb80ae867186f34940ebd4",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-debrief/hiring/debriefs/senior-backend-engineer/priya-nair/scorecards/lena-ortiz.md",
+          "sha256": "b4d46678a4a2a9ac9b379b5ba73c265e9dbedf1f8f0ff3091e7cca04a010d83f",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-debrief/hiring/debriefs/senior-backend-engineer/priya-nair/scorecards/sam-lee.md",
+          "sha256": "1ef174f48d46f6d6982a2aa0fd85d23358af16339b5fdf042e5fbc48cb21e361",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-debrief/hiring/tracker/loops.csv",
+          "sha256": "7fd943e5c858819b068baeed0ec2458289ed5f31405cb38b86271cd4298ff607",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-debrief/hiring/tracker/roles.csv",
+          "sha256": "360e5372135fe8341d8627cb0cab88665882e864dfce76cb600702c0bf9da260",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-debrief/walkthrough.md",
+          "sha256": "a112980800b0b5cc3cd9f108d186d35ae86cd95871dc6f30ee0e77233e3fd749",
+          "executable": false
+        },
+        {
+          "path": "references/debrief-integrity-checklist.md",
+          "sha256": "fb57d7447bd0060648e707de7a7490a7479904bad39b630eb570685ba7290b80",
+          "executable": false
+        },
+        {
+          "path": "references/notes-and-mail-inputs.md",
+          "sha256": "ff71b8a9528d73d367d5980ff9b6c65171acff6ab11ffea9c709ff477b83949f",
+          "executable": false
+        },
+        {
+          "path": "scripts/collate_scorecards.py",
+          "sha256": "b8c96042724b2acb97a18abb493b46d3ee23cb1f86c31475d5298ee199687e7b",
+          "executable": false
+        },
+        {
+          "path": "scripts/decision_log.py",
+          "sha256": "07aa6d2b85b9099087ebb75f947ae956576e4841433fbef05aa45e0b70b8ca35",
+          "executable": false
+        },
+        {
+          "path": "scripts/flag_remarks.py",
+          "sha256": "31d42577acc2a49ccda865b54fd3c261008e180227820b4cfecd73c314584dc0",
+          "executable": false
+        },
+        {
+          "path": "scripts/snapshot_scorecards.py",
+          "sha256": "4a5b68d3fe5a669ecb7774fc463739264a20294e7bd96ebe73755d3c7729fd3c",
+          "executable": false
+        },
+        {
+          "path": "templates/competency-brief.md",
+          "sha256": "23819c410b8f00204b30dd48beeccd40beda3690dfe523e2397af63d69fbfd9b",
+          "executable": false
+        },
+        {
+          "path": "templates/decision-record.md",
+          "sha256": "4b8d92ca284b2125ccc2a335342358b954a13a266fc922b84f3071603904f342",
+          "executable": false
+        },
+        {
+          "path": "templates/decisions-header.csv",
+          "sha256": "bd70a599659458ef24e1b47b1bef024122bac470a50a064b8f575a8421b3538b",
+          "executable": false
+        },
+        {
+          "path": "templates/remark-flags.csv",
+          "sha256": "636c4c4ae7183f3de81454bf4e416934e210de4756f6524e46cc68675c3eca75",
+          "executable": false
+        },
+        {
+          "path": "templates/scorecard-format.md",
+          "sha256": "b2adb1f3d2e89fcd24d7d8c410fba93d49761a194eb10514bb3077d95e0186ca",
           "executable": false
         }
       ]
     },
     {
       "slug": "hiring-pipeline-analytics",
-      "tree_sha256": "2a284674ea3635d7f1681adef09540478075cba72021d2a497f0e4f616b03bc5",
+      "tree_sha256": "82575e91f79fc4fb7fad08e1fb4dfb74d13aae07642b3aebd5d7952e9fc33a09",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "bc9d79eafd3138b275dac2eb3c5d5b84b6b68ad29177256e2aabf7c901bf8204",
+          "sha256": "4accfd399858ddfabc2043f2db83ed61ff0b8494816878c930e1f607bc78c0ab",
+          "executable": false
+        },
+        {
+          "path": "checklists/run-and-share.md",
+          "sha256": "fec15eff9f4852ed85d82436f107e4a293b007f3c4d4894966fdc7fe1dd7985e",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/costs.csv",
+          "sha256": "8f0b757fd69c0563d0580a0bfe538a2995ceac8dec3721df82e0c4c2ed21cbd5",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/expected/hygiene.csv",
+          "sha256": "a85a6fe8b5ae3cc56dbfb9ff66051fdc00602dbda991fce696e069c9dd36d2a2",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/expected/report-share.md",
+          "sha256": "7bc5cf5abef43ffc1669f477f11eece2c74a3d8d98195d000a6d40e4eb94c58f",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/expected/report.md",
+          "sha256": "9d84042f76bdf11476bdbccedb1c7ffbb7ace01bf619b21634ac86d3002bd8c7",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/greenhouse-export.csv",
+          "sha256": "d958c2cea90cbafaa04de62fad1b044020226c9a4ef06cba8378f9dfe7ecdebd",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/hires.csv",
+          "sha256": "cd26992d02163df9c227ed1fbee6869b5e10e2b784984985d1d2c4dd44563f2e",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/roles.csv",
+          "sha256": "41fed27b520cdfa390cf5de73c239a0b544643de7e8927039a0c87472d6b6a21",
+          "executable": false
+        },
+        {
+          "path": "examples/greenhouse-export-hard-case/walkthrough.md",
+          "sha256": "68ea460f05163f3c994874e67a62b229468c2da1cc3532f560c81b7e549339c8",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/expected/diff.md",
+          "sha256": "6913d339df87b539526fd5a73e93e10f171b539e7a69b0bff3f8877b3ffd2703",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/expected/report-share.md",
+          "sha256": "c1e05b77b366d6cedfe4ceb1b7dc8356b2846cca2b838e76b60343ef1e6fc6fc",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/expected/report.md",
+          "sha256": "d0782911f3effc01285e47f91b4cb23334b243f29c4daa680445beb426bf8f33",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/outreach-log.csv",
+          "sha256": "46d40d27b96b977b4294b8a175c6f3e65acae7f4c09c15c37b2f4f7cd5cf082b",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/preferences.md",
+          "sha256": "6a831bdd6e59f2b7a9a1c142c9e90157cd40d50eadf11d5e5ca6908f7fe53685",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/prior-week/candidates.csv",
+          "sha256": "32a5f13918cea5a585c138970d34e3724f210e4f22f9249345bafc130ac52126",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/shortlist.csv",
+          "sha256": "bc6a10b40d06c2cb83e76ca76221ccfd3e9ad3ce4d4dbc8679c445cef7e5bf5f",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/stage-map.csv",
+          "sha256": "b6a63871b4cba53a05c6c18417b950fbf394c418282b4766beed7509d05d3429",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/tracker/candidates.csv",
+          "sha256": "35e5be30fcc78735dbbc012c1d48e4f77fd38d624808e2a1257a7d0bac5d77dc",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/tracker/loops.csv",
+          "sha256": "52006252669567b8e96292eda71bf4efaeb501478f557da3d388c1c747fd6c4a",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/tracker/roles.csv",
+          "sha256": "ed3617b217f5cfec07e051defe8e4988bf238defdd3f9f07b91b7cb0f7bce293",
+          "executable": false
+        },
+        {
+          "path": "examples/northwind-friday-review/walkthrough.md",
+          "sha256": "474f3a0f8d5473c1c69a2464b796932f11cf4063ee96937e0f1dbbe71f628855",
+          "executable": false
+        },
+        {
+          "path": "references/cost-per-hire.md",
+          "sha256": "bb5b7bc71929a943db48bd0461780744888956cb18897f26e60eb0cdcec357a3",
+          "executable": false
+        },
+        {
+          "path": "references/data-hygiene-checklist.md",
+          "sha256": "d992659a7dddc1478433e857eacba4f572473e635cfe1c5d60d1a4b8b15a90a5",
+          "executable": false
+        },
+        {
+          "path": "references/inputs-and-files.md",
+          "sha256": "1a78a07f6b8a828c761373a40ccdf3165b0eea616f772c2c3242320aef262b85",
+          "executable": false
+        },
+        {
+          "path": "references/metric-definitions.md",
+          "sha256": "1451304e4b957bee4e6ede3a83ad0bc718c3cae1e42fa303b2e8d1ba34f631e3",
+          "executable": false
+        },
+        {
+          "path": "references/protected-columns.txt",
+          "sha256": "1423d4471afdb009abf77e52a551ec4988fa70275a5c3f592c97a239f65e6c07",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "7e1b2229bab6c84fd044860509ce5a41a23e30d273a8e7570512f61e1809cba0",
+          "executable": false
+        },
+        {
+          "path": "scripts/funnel.py",
+          "sha256": "a1b3b6c0474a1b8df505fa178adb9376dcfff44c89bfbb72578241bdaaf85fc2",
+          "executable": false
+        },
+        {
+          "path": "scripts/normalize_export.py",
+          "sha256": "afeb2a7cc79c3987d67a67cf3326740aef43160aac4a0003f2d199b8962770d2",
+          "executable": false
+        },
+        {
+          "path": "scripts/pipeline_io.py",
+          "sha256": "13f2a600ab71f245880684cefdc12a41c72c7d89b5e068bb1b4d225e331032de",
+          "executable": false
+        },
+        {
+          "path": "scripts/share_safe.py",
+          "sha256": "d7ac9926b86d227401697652b6d4894bb9f815e456b6d359ca4b020ae4baf5a4",
+          "executable": false
+        },
+        {
+          "path": "scripts/snapshot_and_chart.py",
+          "sha256": "67d4e736cc620a73747c20bafd336ca6cfd08098366e2145fe4eac477186d89a",
+          "executable": false
+        },
+        {
+          "path": "templates/cost-lines.csv",
+          "sha256": "285f2e62ef0bdc421aa652e1c30aeb9db58d169fda13d4f5cf24328841efe135",
+          "executable": false
+        },
+        {
+          "path": "templates/export-map.csv",
+          "sha256": "70b7161ddf9a7c8fb5439eceb99d18092283a239f0ce10e7de80bf31e4e1bc31",
+          "executable": false
+        },
+        {
+          "path": "templates/funnel-read.md",
+          "sha256": "6c854a382f09486f00b338f0d42aef25ff4da50b026d9bce74aebfdd0e626f96",
+          "executable": false
+        },
+        {
+          "path": "templates/hires.csv",
+          "sha256": "533ffcea49f58b4bfc18ccebb5dd7f1e77a65807775daad35937b422a939b0de",
+          "executable": false
+        },
+        {
+          "path": "templates/hm-survey.csv",
+          "sha256": "507f4bb632adc5690e3d18bc46565b75847b660884d66f8e22b422a8c9406a4c",
+          "executable": false
+        },
+        {
+          "path": "templates/stage-map.csv",
+          "sha256": "6068107d4b46a84e135f6835292d8cd7056b39678a1b322bd065023c9800e59a",
+          "executable": false
+        },
+        {
+          "path": "templates/weekly-pipeline-review.md",
+          "sha256": "2555ea0648cc3613e3d7a43539ec60f91fca0d43070c8b95b59d60f249f6f124",
           "executable": false
         }
       ]
@@ -2090,22 +2495,252 @@
     },
     {
       "slug": "interview-coordination",
-      "tree_sha256": "e1acc6f59d720115a94d18a3907f7ed698dfb1b604efeafa9c9f7e77f676ab16",
+      "tree_sha256": "4314a4cf61d27502e89108f51f7041e47ad9c97a85901acd49ab435dae6ecafb",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "d4df36262027d2affcb34339c73e956d9a436f52a160c53e9197ad70927ed7d0",
+          "sha256": "1d5dca029f1a6b908b2d7c16e2b7cbdfe140fe60869e1661a50664ccc3eff985",
+          "executable": false
+        },
+        {
+          "path": "checklists/booking-and-sweep.md",
+          "sha256": "2921736765d8be7acfc725041738ba7210dc314de08b185b4e4889da0db594ba",
+          "executable": false
+        },
+        {
+          "path": "examples/rebuild-hard-case/availability.json",
+          "sha256": "57d89aebeb415152eafb798e1fce1335a4c2020e0fab2bc08d3bbe06794aac82",
+          "executable": false
+        },
+        {
+          "path": "examples/rebuild-hard-case/walkthrough.md",
+          "sha256": "1c6abadebb85e6d569d92de38ded0cbe67577a7402b176a7c34cfbd34185aef5",
+          "executable": false
+        },
+        {
+          "path": "examples/stall-sweep/hiring/tracker/candidates.csv",
+          "sha256": "f98be04233a8da748221d9eb9f96349a1bf26c3c4712d2098d5e9e54d5d3a210",
+          "executable": false
+        },
+        {
+          "path": "examples/stall-sweep/hiring/tracker/loops.csv",
+          "sha256": "e95e1152ac4c63481c658739a8d8460ddadd12019ff2f2666e728b3a25f9e567",
+          "executable": false
+        },
+        {
+          "path": "examples/stall-sweep/hiring/tracker/roles.csv",
+          "sha256": "360e5372135fe8341d8627cb0cab88665882e864dfce76cb600702c0bf9da260",
+          "executable": false
+        },
+        {
+          "path": "examples/stall-sweep/walkthrough.md",
+          "sha256": "8f0feac934ec2e5e018088657fce5ce0b458cea6d340eae06e77a1d7cebdd310",
+          "executable": false
+        },
+        {
+          "path": "references/ats-import-notes.md",
+          "sha256": "97dc534d5308b54ab6b7ff549a28d81b7a85ff4c1bf0142bc9e9121367380a07",
+          "executable": false
+        },
+        {
+          "path": "references/brief-and-mail-sweep.md",
+          "sha256": "b8e534d6ee7fc871d7ccdcd9d41011c144e9e29556ad3e96cf405a6d869c93e6",
+          "executable": false
+        },
+        {
+          "path": "references/calendar-and-booking.md",
+          "sha256": "a01b02296737bfe0881bb57cf8e9e990938e05339635e0472c5e924024923397",
+          "executable": false
+        },
+        {
+          "path": "references/fcra-and-verification.md",
+          "sha256": "58af0e34043b2ce28b31987c4173fca22f377a94b48fc65c3f6b053a3a98c6c3",
+          "executable": false
+        },
+        {
+          "path": "references/tracker-schema.md",
+          "sha256": "2c2ab6913bf77cf1d0b86697f414d53f97250d26a6b8e8405d8adfcd8e4bb3b0",
+          "executable": false
+        },
+        {
+          "path": "scripts/flag_ledger.py",
+          "sha256": "9333a3c270b1f6eb0124c935f79a59aeeefdab74b9c9403b806a9bca908bf7e7",
+          "executable": false
+        },
+        {
+          "path": "scripts/forget_candidate.py",
+          "sha256": "600cf42d5a419a6fc738af35b1f8c6ced178bfdaf4c5964afb01366d504b0418",
+          "executable": false
+        },
+        {
+          "path": "scripts/merge_tracker.py",
+          "sha256": "b25d7f713593d0b56e8b260be0d230e7b41d7360e575466cb0f8ad061298e449",
+          "executable": false
+        },
+        {
+          "path": "scripts/stall_sweep.py",
+          "sha256": "0925350eae11f6602fbaf382217b6dab7d2937f83fb42aa1914e7cc95c625a53",
+          "executable": false
+        },
+        {
+          "path": "scripts/tz_slots.py",
+          "sha256": "05aff2acfba553d961ef7d79261b86544e3216bbc53acaecccb0b7bd5a617833",
+          "executable": false
+        },
+        {
+          "path": "templates/availability-example.json",
+          "sha256": "cd4ccf6909da896a8661dac5e0b9e189c151f8b66d08ce3a39bc999b819d0d35",
+          "executable": false
+        },
+        {
+          "path": "templates/messages.md",
+          "sha256": "37b0c6bfbc93342a1580ba24e88c3784063bcd91a1d691ed5965f7b1c7204cb4",
+          "executable": false
+        },
+        {
+          "path": "templates/morning-brief.md",
+          "sha256": "cc20c736a87d8aa64fc5aa829651a1bbbc69f7cd4fd96f640dd46fabd311c8ce",
+          "executable": false
+        },
+        {
+          "path": "templates/stall-thresholds.csv",
+          "sha256": "3c8c35c445140b976201a5370a6902cfc621dbaec40628844915712694765f80",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/candidates.csv",
+          "sha256": "9057c902438288b3c0b0fa3e765e7a26ae4520ebdd4c426ac9e542b77794d060",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/loops.csv",
+          "sha256": "77fed2cd97dc0c2bd3f378db0bdbfe46db31ed1a7598d851ac7593408a2f2c93",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/roles.csv",
+          "sha256": "7f8fbfd527076e58980dc09c40f0dae627b7dd9dfd3949b2f620d819b7fd6545",
           "executable": false
         }
       ]
     },
     {
       "slug": "interview-kit-design",
-      "tree_sha256": "66febeca7c90c3c065e4386051e0822c5997ada449b3f8e5008ae729df4238ac",
+      "tree_sha256": "74adb09e5f66c80c44367b094e38b96e750c7e0760cadb255e797b8098cb02e7",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "403d28f291dda99e4bff10b3b0a4e84741c908d16827eb246a2685542f7ebab0",
+          "sha256": "839a42f19770c1f632c5e6d798b8923ff0d50401f171751228b604b8df9d2fc8",
+          "executable": false
+        },
+        {
+          "path": "checklists/kit-review.md",
+          "sha256": "9bbd328b3f9754479d8ebfd66c5856951818e180800f5e1f46ec1ce05729c85e",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case/owner-questions.md",
+          "sha256": "e7a008cbe60568fadeacc1bdd531e6210e704e315cd6fa7c8f2aad410cc8c16a",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case/walkthrough.md",
+          "sha256": "ac7febdbca51fd8cbcfe25b4020d5c2810a539e980f1ea1f4b0f0ffb52e4fc3d",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend/hiring/debriefs/senior-backend-engineer/2026-10-21-priya-nair-screen.md",
+          "sha256": "81b3d0fba1b7aad583c7f435e987aa8a29823e234578d36e3e143061693d9a4d",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend/hiring/roles/senior-backend-engineer/kit.md",
+          "sha256": "b6cf4e8d97071c451e9cd931eb86e79eabf39999f0b77dfdcb547f7854d4a1fb",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend/hiring/roles/senior-backend-engineer/scorecard.md",
+          "sha256": "472fb032404a873d5b867a291b18a05c3a0ce2ae30a03fa1a9a96624dfa0481b",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend/hiring/screens/priya-nair-resume.txt",
+          "sha256": "70388c4ef473177ce59e823d6f76c961176f2b5b06346d3aad2877895df386ad",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend/hiring/tracker/loops.csv",
+          "sha256": "09819d318c976e9fdba5b623e8757c234c638a6a02d4a730da6f1d8811997e2a",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend/packet-slot3-filled.md",
+          "sha256": "106bf193b8633f28f9fa92995723cc5dc748eecb8ed946e11c40cce0f13236e7",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend/walkthrough.md",
+          "sha256": "178d8eb2e9342bc02029822fd6458035a42de54798d94229e1749f783418ce23",
+          "executable": false
+        },
+        {
+          "path": "references/ai-affect-and-candidate-ai.md",
+          "sha256": "10bb2db359076863495e5040e04ddc8584c794ec065a78c665e51570c2d82cc1",
+          "executable": false
+        },
+        {
+          "path": "references/question-bank-patterns.md",
+          "sha256": "aca8bb36878e0fc67aaa4f8ae556f1f0180bbb37a31ef17ba40138a844b3c267",
+          "executable": false
+        },
+        {
+          "path": "references/structured-interview-science.md",
+          "sha256": "b424dd0eb673f7091eaad90bda1d560ed14bb23d533a4aa47376696b14b976e1",
+          "executable": false
+        },
+        {
+          "path": "references/unlawful-question-rewrites.md",
+          "sha256": "fba7d5c96a34ed05c20b0e74e5c1ad2efae95fd6c1705ca2ff188f9d15cbbbf7",
+          "executable": false
+        },
+        {
+          "path": "scripts/build_packets.py",
+          "sha256": "cd788e1d99ae65b24b632527844156924b34beee957c3297a8acbeef7a37d68c",
+          "executable": false
+        },
+        {
+          "path": "scripts/check_kit.py",
+          "sha256": "706a6de9f74db6a6f3955370dd421cdb293f181af91f52d2bfa7537216d749f0",
+          "executable": false
+        },
+        {
+          "path": "scripts/kitparse.py",
+          "sha256": "5d845c47fd5ac6841757d884854e1db793f06b45c9450588ab36f0db9d89bfdb",
+          "executable": false
+        },
+        {
+          "path": "scripts/question_lint.py",
+          "sha256": "3495bdd30192c19740a74b7eaebc2a755a06274bb33eb003b68bd7732ee6a8dc",
+          "executable": false
+        },
+        {
+          "path": "scripts/verify_quotes.py",
+          "sha256": "74a406bb61a92fb481e56ee9eece2e57f83c70fbbc7d04b3c7868739fdf0e788",
+          "executable": false
+        },
+        {
+          "path": "templates/kit.md",
+          "sha256": "3846a5dfa54e05308c656d8f1b757260d5eee864308a80c4edbdbc5d9bfa99ee",
+          "executable": false
+        },
+        {
+          "path": "templates/prep-packet.md",
+          "sha256": "7b03bbaed0e94a2f7af183d4d0e75ce3149699eb9260d5e3a7e689309c293957",
+          "executable": false
+        },
+        {
+          "path": "templates/scorecard-1to5.md",
+          "sha256": "bd8bd06a4fe1a0e9adef9162e5189e19693e8812ec4fd7b1ca791722b54a5437",
           "executable": false
         }
       ]
@@ -2167,22 +2802,267 @@
     },
     {
       "slug": "job-description-drafting",
-      "tree_sha256": "0db4c746f6ce39148a9231606a5e85935555012e3115da84d7e511ced99efedb",
+      "tree_sha256": "7c51f64656116816847dd9144292d50efb567a94fad0657d404b7b781d2432f5",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "336ce25e93ab34927deed4e391ab4665360f9819619c77520a3d23e3f0e5ea45",
+          "sha256": "9cc2eadeebc706c83f1318d1d38e8e64a67c3a2deb930058494c103fe723c56a",
+          "executable": false
+        },
+        {
+          "path": "checklists/pre-publish.md",
+          "sha256": "2598343939263aacc4d484ccf82ee07e440464cc9d73df605efbd826d7af7981",
+          "executable": false
+        },
+        {
+          "path": "examples/old-posting-senior-backend.md",
+          "sha256": "2c0840cc62e065a14a52529e8ddd8160f33e1dfe3a9ae3b6dc9a5ee39c7b072d",
+          "executable": false
+        },
+        {
+          "path": "examples/posting-senior-backend-v1.md",
+          "sha256": "2863e9bffa72425f57d05a17270106067de263577f642a9a25a24e4b6379c625",
+          "executable": false
+        },
+        {
+          "path": "examples/scorecard-senior-backend-engineer.md",
+          "sha256": "1e13b639af132224e6ff653857591ffb3ba93d41dd10ae5a2d89b97432553653",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend-posting.md",
+          "sha256": "020057196077ae0ebfcae2e93fa4210fd0412c8aa159ec2b79eaf0fab642fa59",
+          "executable": false
+        },
+        {
+          "path": "references/inclusive-language-lint.md",
+          "sha256": "08aba17550b0488fa28543bf39b94aa4af62d424b63a94cb12475ee06e16d2e0",
+          "executable": false
+        },
+        {
+          "path": "references/lint-terms.csv",
+          "sha256": "9c179d097e2e3a91b95e73f8d77ae4f4c3245cc9afaa2521037e82cb2ea36c86",
+          "executable": false
+        },
+        {
+          "path": "references/posting-law-fields.md",
+          "sha256": "f3bcf976c16238514a1168e782891cf7c815cc67173c444fff7af5fe175baad2",
+          "executable": false
+        },
+        {
+          "path": "references/protected-traits-and-proxies.md",
+          "sha256": "0bcc9c0b920fd4aebecca089af5cbefd1436dfdb0db41625744d49352d54a94d",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "c9f3698934f75925fd3bffac64b62c59aa6d7b4205800a49a4ec1963e883508c",
+          "executable": false
+        },
+        {
+          "path": "scripts/diff_postings.py",
+          "sha256": "31974246b4348611916015cb10099f328e5ed5b65c28b2edfa4f3b23f7a724c2",
+          "executable": false
+        },
+        {
+          "path": "scripts/jd_lint.py",
+          "sha256": "c5d1ba19452f542344971c704289c4f6ab20b786de76f7ae2a0c6d1a6d4abbbb",
+          "executable": false
+        },
+        {
+          "path": "scripts/mirror_check.py",
+          "sha256": "8f67e1f9a569de7b96ba80dcca2e13776665406f9bc521d87ca7c94c0c8b1daa",
+          "executable": false
+        },
+        {
+          "path": "scripts/render_posting.py",
+          "sha256": "8fed036d93bdbceb07370982052f02d7828af7d59fe09457696586a495c28b30",
+          "executable": false
+        },
+        {
+          "path": "templates/posting.md",
+          "sha256": "3f367ee4314b743e87961ee9eca0720d06a2b71067554cc4b18b54109ae189ba",
           "executable": false
         }
       ]
     },
     {
       "slug": "job-offer-and-close-plan",
-      "tree_sha256": "28ed8565befb410c679bea31f3bb038775914fa0866fc1dc086f44937647c3cd",
+      "tree_sha256": "251ea05481832db645c690e877a965a1277a5778d84ff0fe685c6fa51ce5a215",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "c6f117ce54ebce8728ea9cffeecb872bd68aa6bcf6db782d02afea21da3f68c7",
+          "sha256": "c7eaa4aad55caae98a3916d04ef197e56fff1e6b5442b4035c1ad808c8e8e57d",
+          "executable": false
+        },
+        {
+          "path": "checklists/before-anything-reaches-the-candidate.md",
+          "sha256": "72cb23953618eb8f1e8e5c5e06f7c3f959415ceb680872ec22843f74fc44e3c2",
+          "executable": false
+        },
+        {
+          "path": "examples/marco-silva-sales-hard-case/company-template-us.md",
+          "sha256": "1060cb74f174e76cfdea204f415ba47b9576c6103fc1f47af892e976bcd08202",
+          "executable": false
+        },
+        {
+          "path": "examples/marco-silva-sales-hard-case/letter-us-DRAFT.md",
+          "sha256": "ebe89264bd9b850c34fbd00a811336f0ec0596d108fa99726a815a8b2eea5302",
+          "executable": false
+        },
+        {
+          "path": "examples/marco-silva-sales-hard-case/terms-first-draft.json",
+          "sha256": "3136bf7d9d85bbc451b82bc61330f2c195fd3d2808a262281a051429903263b5",
+          "executable": false
+        },
+        {
+          "path": "examples/marco-silva-sales-hard-case/terms.json",
+          "sha256": "8568eff8fa53d69ea4734c271ee61e8097bb895e77eedbc1ca827efc55833db4",
+          "executable": false
+        },
+        {
+          "path": "examples/marco-silva-sales-hard-case/walkthrough.md",
+          "sha256": "6b892bdad9a4112af4da8d1fbb7bc88b3c4bb2cfeacc7b328336ed7a4ae3ef6f",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/close-plan.csv",
+          "sha256": "3810d0ec6dc55c9dfb04b8a3522528d03721f5856e0e80e12f7620c8236b6c54",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/company-template-pt.md",
+          "sha256": "5c535c14fee2a4af81689bf2dacad04f9dfc11b6bf5625abf812693c96f5288b",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/company-template.md",
+          "sha256": "fbe55a87a726c2b23233fd94e85954dc2a9f45512218ab1134b6b078c305e230",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/counter-log.csv",
+          "sha256": "acdb099bd932d144e52bc40761383bf1439d9bffac6b2a48f3b73ed7ca1357c2",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/de-euro-mistake.md",
+          "sha256": "4015f5a285325e077d09cc103a9225b7f5db43e17f976a7843e70555ece22b6f",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/email-mistake.txt",
+          "sha256": "9b7257cc5973634df23a51e4a4a0c32db4d73041c836c14df2683944dddc6618",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/email.txt",
+          "sha256": "04835cc73d6906ca1c427034f812b008a6b5bb317aef8e267bcdc33bb6fd44c7",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/letter-pt-DRAFT.md",
+          "sha256": "7453d7f5fda6351b385296ef0e80413483fb3ac176a73fecada735fdc67fadbd",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/pt-euros-mistake.md",
+          "sha256": "2efbce338221d4d79609aa0945872d13615b9b89d4d76da24e58d1d59462f8f3",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/terms.json",
+          "sha256": "8cbb0d981993f1995b1238a06dd3eb38730779efb0c85ab84f73b93a7d187bf2",
+          "executable": false
+        },
+        {
+          "path": "examples/priya-nair-backend/walkthrough.md",
+          "sha256": "68fa36daf99a20300307a35e37121835a31dc60e5e49fe6807fa2d28b756a31b",
+          "executable": false
+        },
+        {
+          "path": "references/contingency-order.md",
+          "sha256": "b78652febe7b3b9ce39a5e9241b5372b0ca960b4f800ae95629be63103ef500a",
+          "executable": false
+        },
+        {
+          "path": "references/negotiation-and-close.md",
+          "sha256": "203d15b27b8c5645d565c628197c56d162a667e1a750237b173a2af1c40056fa",
+          "executable": false
+        },
+        {
+          "path": "references/offer-brief-fields.md",
+          "sha256": "eb6fdaac1b8a0e96cd1a4c31e9f955ee15dfa4334ad44812e5b04538f78cfa1a",
+          "executable": false
+        },
+        {
+          "path": "references/pay-history-and-transparency.md",
+          "sha256": "d719bb6900aa77200cef96ba23f49c3655f4520f4642d00ab3a2d53cd47e540c",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "e469d4ebeab89baff9a741e9eb6745f3353c1aa78732c0028c03ceb6caf816f7",
+          "executable": false
+        },
+        {
+          "path": "scripts/check_terms.py",
+          "sha256": "ea5dd5cea47e9e8daba284312503b78c269ddcc4f0d6dce3266bea7b19970554",
+          "executable": false
+        },
+        {
+          "path": "scripts/close_plan.py",
+          "sha256": "5378c0aeb61959d3b7b50a921faf98a6a03a16316717d8670cd2ad26ea15b4af",
+          "executable": false
+        },
+        {
+          "path": "scripts/fill_offer_template.py",
+          "sha256": "d145b9af45508684b31a2870de51e33b58a3230a2f34060907432ba048d4db9d",
+          "executable": false
+        },
+        {
+          "path": "scripts/offer_math.py",
+          "sha256": "819d08ac3195375bc34c18824c3542e61fd4216c68d8021521cf86a51bcec718",
+          "executable": false
+        },
+        {
+          "path": "scripts/pay_history.py",
+          "sha256": "e6438ab89cf9d88984138ed4bb68f7c6b37e78b5325fbb247e4284dfe0edaf3c",
+          "executable": false
+        },
+        {
+          "path": "templates/attorney-brief.md",
+          "sha256": "8b9db9f98952326732727aeaf14e52801eb396d8b56235352033dcdef83c393a",
+          "executable": false
+        },
+        {
+          "path": "templates/close-messages.md",
+          "sha256": "f82a420a0478dc411657b36a2a58fcab9f063051cc6d3ac20de2165f21b96c28",
+          "executable": false
+        },
+        {
+          "path": "templates/close-plan.csv",
+          "sha256": "6abe47db48341ef522e3501ec8efc55abd76d4701f97b896be007daca5dc1f61",
+          "executable": false
+        },
+        {
+          "path": "templates/counter-log.csv",
+          "sha256": "82a029445f4a9bdfbfda3696fdb7cff2a655b1f2bb5f203e2202db6e60680727",
+          "executable": false
+        },
+        {
+          "path": "templates/offer-brief.md",
+          "sha256": "fb5a4c11a72709d20e972c89e5019bd396c019c1a37a487395a307fa54d22fd6",
+          "executable": false
+        },
+        {
+          "path": "templates/offer-letter-outline.md",
+          "sha256": "153ff692ac4815174c34ce533a7cbfb064591217032d45fb3c33ea0d70a8c56a",
+          "executable": false
+        },
+        {
+          "path": "templates/offer-terms.json",
+          "sha256": "387fc3012e62c0f1728f8327dee39bdabd51acb6266980cedff47afd21307c20",
           "executable": false
         }
       ]
@@ -3542,11 +4422,91 @@
     },
     {
       "slug": "passive-candidate-outreach",
-      "tree_sha256": "74ba2f895b9a9332e2bbb06fcbf58fbc7c19c7c52361a9cdf8c27253f1b2bd48",
+      "tree_sha256": "a2134aa72293064859aea3e272da609b3e94cec84c5f4362271ab76b490190e7",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "3e7eb2514c7fbf30815e67824c9b8bb0565454e9b091b88a636b6a455798571f",
+          "sha256": "ecdf665875c4713baad791c6d66fd5e95697cc24e6082e06cfc3204271507117",
+          "executable": false
+        },
+        {
+          "path": "checklists/before-showing-drafts.md",
+          "sha256": "e4528e4c626372c0e3f9b418370e73346cf73b978dc0ae804c7a809b72ebb82b",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-hard-case/dnc.csv",
+          "sha256": "3c1d43e5815f5e4f8dbe87fd3ea4456eac37d62a45bffb345d39644d7814d2f8",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-hard-case/drafts.json",
+          "sha256": "5b176fd93d13cd4eb2bd8d11de340d587846c32e7c10a82a34128b8d7fb481f1",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-hard-case/outreach-log.csv",
+          "sha256": "89a4c3da133bcb15b0af677ec37e40136a0aa6999ec6f808578262ac8f2e6db6",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-hard-case/walkthrough.md",
+          "sha256": "9d6028071145c93c0253e5775dc5e5af6ed3e6a6f2cc9aa15746bc4c5f676467",
+          "executable": false
+        },
+        {
+          "path": "examples/single-note-priya.md",
+          "sha256": "be349f1e51598ac453f2bb72b3c1a716f9ea6a73a797a27e91df865507c10a4e",
+          "executable": false
+        },
+        {
+          "path": "references/gmail-and-reply-check.md",
+          "sha256": "e28fa276478c369708f27ba98a0018bce09073137bf576ab58093ca6571d2559",
+          "executable": false
+        },
+        {
+          "path": "references/outreach-honesty-rules.md",
+          "sha256": "1d7c8cee241f534391254e3019c02d486d005ca8c0ea523eaf3a81e7320066f7",
+          "executable": false
+        },
+        {
+          "path": "scripts/followups_due.py",
+          "sha256": "7295c0941b47758b0c347eaa593b477a93cd548fb3074561b6f333fe183545d6",
+          "executable": false
+        },
+        {
+          "path": "scripts/lint_outreach.py",
+          "sha256": "0d2abdcdb4b4047f73d9c8266adf31d8a38df6f510d91c7e01c5c80ef61254bd",
+          "executable": false
+        },
+        {
+          "path": "scripts/log_touch.py",
+          "sha256": "135c26ebbac001fd1726af10a371e6c04728ba497f8d996404bfa32f6a7ea8fc",
+          "executable": false
+        },
+        {
+          "path": "templates/dnc.csv",
+          "sha256": "d2dc15f02e7d86522b7ccf46768a65bc0e89bb0c1dadc4f9d3fede0e9140e962",
+          "executable": false
+        },
+        {
+          "path": "templates/drafts.json",
+          "sha256": "005db87e49a0be8ff4b54467c004954266137ea82e7c8a05facc6a722b733701",
+          "executable": false
+        },
+        {
+          "path": "templates/first-note.md",
+          "sha256": "8516986156d2af6c92043255e0b33c39597b2e7211288829425a6be6f926e769",
+          "executable": false
+        },
+        {
+          "path": "templates/follow-ups.md",
+          "sha256": "b3d72af4307c239f8f3367f832f11502b202280b4128cd8f46342d266b56a76c",
+          "executable": false
+        },
+        {
+          "path": "templates/outreach-log.csv",
+          "sha256": "f8069d3b1ad0599014b3160e8ee197b653fb8a523d447da9549f9c070a9ef6a7",
           "executable": false
         }
       ]
@@ -4720,11 +5680,71 @@
     },
     {
       "slug": "role-intake-and-scorecard",
-      "tree_sha256": "89efff7d50ed091201ea883ce4c7df3d8edc86b56d11eb4b2b592b4df21e510e",
+      "tree_sha256": "c9f4962bbb25acf576ca29888cff8a52c9f7c46fa6210b9caa9a87f1b67601ff",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "67a7c3d86beb6b57a3940d7ea2728a6c70ab66037a6d450307e8cee466492499",
+          "sha256": "f40010e01b51f698022b2a9d6684eb825c87a886126474d282ded63d747d8a53",
+          "executable": false
+        },
+        {
+          "path": "checklists/intake-sitting.md",
+          "sha256": "0eb09f1f2e3405488e32ce2cc47c81a9704e06606485913db14d8971ddb83295",
+          "executable": false
+        },
+        {
+          "path": "examples/scorecard-senior-backend-engineer.md",
+          "sha256": "df849fb09b0d260aabc976b080ff74ee591bb6a7a3b70105b96a2fa2a7daa003",
+          "executable": false
+        },
+        {
+          "path": "examples/senior-backend-intake.md",
+          "sha256": "1c5719076b6e0b0c147162468de18472f8997bed7906066c36b060f79ab7a5a9",
+          "executable": false
+        },
+        {
+          "path": "examples/target-companies-senior-backend-engineer.csv",
+          "sha256": "29caf938cac083b74154f09fa31ac71457e5b91d21ba17dcdcd68d67417bf7ac",
+          "executable": false
+        },
+        {
+          "path": "references/integrations.md",
+          "sha256": "294a12b8fff5caa6ee44fca60990c736f67138ddf30e059edec7a07113715215",
+          "executable": false
+        },
+        {
+          "path": "references/protected-traits-and-proxies.md",
+          "sha256": "0bcc9c0b920fd4aebecca089af5cbefd1436dfdb0db41625744d49352d54a94d",
+          "executable": false
+        },
+        {
+          "path": "references/requirement-inflation.md",
+          "sha256": "d65094a4eaa56b7d4f9be3f31df987b396fa0f4a3dfad2bebf69f7b559f7fff5",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "7cc7ceaf404086caf8c19afd480ee094b401bbe1ce979b6fe3fdce6817a554f9",
+          "executable": false
+        },
+        {
+          "path": "references/target-map-guide.md",
+          "sha256": "683c80c7f6a1c81402fb4e7e5a54891781f8f3078329694e6bd824ba2aea82ae",
+          "executable": false
+        },
+        {
+          "path": "scripts/scorecard_check.py",
+          "sha256": "7f56e67083b6ad47a9ef5ca423bf521a479389ddecdfbc900a617fb73fe725f4",
+          "executable": false
+        },
+        {
+          "path": "templates/role-scorecard.md",
+          "sha256": "01f047e00d60a1e1ab41a77b4ce76feb3cdf6171e9d7df3a31aaa3412104ed68",
+          "executable": false
+        },
+        {
+          "path": "templates/target-companies.csv",
+          "sha256": "1a683798e92102138ab7a77ec358b7baebd7a29afa1dbda63d56bc3832932fae",
           "executable": false
         }
       ]
@@ -5196,11 +6216,106 @@
     },
     {
       "slug": "sofia-getting-started",
-      "tree_sha256": "89ee5f9b3547ced3194b8b139f30a6c7f8641528f369b6137bbb52423fd0654e",
+      "tree_sha256": "f58f0a0b78288a8ae73dd536e7345b1e4dc9abfcb11f2d1a9d7ee1f7fb213c95",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "d907d41827ee1410ee9de4e9a61557ba0de83db2e662e99d9c7ee91a64d53234",
+          "sha256": "fe93fa62f88ea6a95b9a43bdce2aedfeaf4250aa0bf1f26bdcb6a8bce9f63b36",
+          "executable": false
+        },
+        {
+          "path": "checklists/first-session.md",
+          "sha256": "58b93107af8c4aa11ed82e53980d57edcf927a93d9982bbe7cf224e923eef294",
+          "executable": false
+        },
+        {
+          "path": "examples/first-session.md",
+          "sha256": "ff9d0ba5d745b54ec937aa079b445fe029f44ba90103ab6dafe514b8fffb16a7",
+          "executable": false
+        },
+        {
+          "path": "references/connectors.md",
+          "sha256": "ccfd22a018301ae95722035e992da9354873861ccdfa61bf61285ab0ef3b8aec",
+          "executable": false
+        },
+        {
+          "path": "references/hiring-folder.md",
+          "sha256": "ed6954dcc2d73e0a7dd5fe106ce45a11ca4373298e47b090a4b9f7d1186e69e2",
+          "executable": false
+        },
+        {
+          "path": "references/jurisdiction-flags.md",
+          "sha256": "0091cfb118db3e8781a5903ab3d7248db0357a9bf0d50e2dc8491dc7d42092dd",
+          "executable": false
+        },
+        {
+          "path": "references/preference-questions.md",
+          "sha256": "a7802fc86293fb00bc52b7e8510d385336f8aea98bf2e66e24968f507b4e194c",
+          "executable": false
+        },
+        {
+          "path": "references/routine-setup.md",
+          "sha256": "5e8e880fecbf808883a5c711176f50bdc66b97761f3f5c30780ebbd8f0fbb1ef",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "e43b6569121a3eed0a809e2c231b20124da731766275d6c072266b8ccf32d806",
+          "executable": false
+        },
+        {
+          "path": "scripts/init_hiring_folder.sh",
+          "sha256": "d9ce407bd66ac5d141dce112052240f08abacb395b7fbdd45061eac904509369",
+          "executable": false
+        },
+        {
+          "path": "scripts/prefs.py",
+          "sha256": "28d258992fc9c79e98904fc285aa5a28777de2cc3e28409ee3edc6042828ede2",
+          "executable": false
+        },
+        {
+          "path": "templates/preferences.md",
+          "sha256": "54ef668e90915ce0297f45a76492cfa091e932a72b23a1ab69766a7aa087ad41",
+          "executable": false
+        },
+        {
+          "path": "templates/session-summary.md",
+          "sha256": "4ea57a3559e070d9ad7de9d44fc2a2820d2038cb4206b2d29825e9c9a63b6558",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/candidates.csv",
+          "sha256": "16c2156b0bf2aeff4c57ba586d7dd9548cba0758565c8a3fdb747bb862564e08",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/dnc.csv",
+          "sha256": "d2dc15f02e7d86522b7ccf46768a65bc0e89bb0c1dadc4f9d3fede0e9140e962",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/loops.csv",
+          "sha256": "1b9ee3de4395df6bdfb6403be56c673b6aff1a883c097c487b7ed908c3264e30",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/outreach-log.csv",
+          "sha256": "17e127ed8591f1666c596330d346bb46949ec1d1f2e6a91b98a7012049c59457",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/roles.csv",
+          "sha256": "7f8fbfd527076e58980dc09c40f0dae627b7dd9dfd3949b2f620d819b7fd6545",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/searches.csv",
+          "sha256": "f429f9dfa1091496423bc49f364eaba6fa62462117d716105963d90b29bca158",
+          "executable": false
+        },
+        {
+          "path": "templates/tracker-headers/shortlist.csv",
+          "sha256": "706af7229d14179f1454e5f41a4c6b736c7c5656c05922e88270dde0d5f059f8",
           "executable": false
         }
       ]

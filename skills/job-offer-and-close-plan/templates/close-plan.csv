@@ -1,0 +1,11 @@
+track,owner,due_date,tz,status,notes
+approvals (band approver signs the brief),,YYYY-MM-DD,,open,
+verbal offer,,YYYY-MM-DD,,open,hiring-manager follow-up right after
+letter sent (after verbal yes),,YYYY-MM-DD,,open,from the company template only
+questions answered,,YYYY-MM-DD,,open,
+answer-by,,YYYY-MM-DD,,open,window set before the offer lands
+signature,,YYYY-MM-DD,,open,
+first-week hand-off,,YYYY-MM-DD,,open,start date + team to the first-week owner
+standalone FCRA disclosure + authorisation signed,,YYYY-MM-DD,,open,OPTIONAL: only with a background check; dated before the check is ordered; delete the row if there is no check
+background check ordered,,YYYY-MM-DD,,open,OPTIONAL: only with a background check in the template; after the disclosure row
+medical exam (post-offer; all entrants in the job category),,YYYY-MM-DD,,open,OPTIONAL: only with a medical contingency; dated after written acceptance (skill rule); no results or health details here
