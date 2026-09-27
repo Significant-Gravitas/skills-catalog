@@ -1,0 +1,2 @@
+side,id,date,amount,description,reference,originated,class,owner,next_step
+ledger,M17,2026-03-27,500.00,Deposit cheque Harbour Co,,2026-03,timing,Sam,confirm it cleared

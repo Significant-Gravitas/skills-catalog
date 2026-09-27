@@ -1,0 +1,39 @@
+{
+  "trap": "A stale timing item used as a plug. Ledger row L9, a 4,000.00 cash-sales deposit dated 3 April, never reaches the bank by 30 April. A 27-day-old deposit in transit is an unrecorded-deposit or lapping signal, not timing: it must default to investigate and block RECONCILED. A timing item carried from last month that still has not cleared is also investigate.",
+  "runs": [
+    {
+      "label": "old deposit in transit is investigate, not timing",
+      "classify": "classify.csv",
+      "next_statement": "next-statement.csv",
+      "expect": {
+        "status": "NOT RECONCILED",
+        "deposits_in_transit": "900.00",
+        "outstanding_payments": "-1250.00",
+        "investigate_items": 1
+      }
+    },
+    {
+      "label": "carried timing item that did not clear this period is investigate",
+      "classify": "classify.csv",
+      "next_statement": "next-statement.csv",
+      "carried": "carried.csv",
+      "expect": {
+        "status": "NOT RECONCILED",
+        "deposits_in_transit": "900.00",
+        "investigate_items": 2
+      }
+    },
+    {
+      "label": "carried id equal to a current id (March L3 vs April L3): both rows kept",
+      "classify": "classify.csv",
+      "next_statement": "next-statement.csv",
+      "carried": "carried-same-id.csv",
+      "expect": {
+        "status": "NOT RECONCILED",
+        "matched_groups": 5,
+        "deposits_in_transit": "900.00",
+        "investigate_items": 2
+      }
+    }
+  ]
+}

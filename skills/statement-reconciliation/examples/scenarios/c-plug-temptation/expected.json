@@ -1,0 +1,11 @@
+{
+  "trap": "Plugging. The unexplained 12.00 equals a May ledger row (J-305). The matcher must refuse it (out of period) and say so. Two identical parking rows must not be auto-matched; the statement line is ambiguous until the owner confirms which one is real.",
+  "runs": [
+    {"label": "first pass",
+     "expect": {"status": "NOT RECONCILED", "unexplained_difference": "183.00", "matched_groups": 2}},
+    {"label": "after classification: 12.00 still open, never plugged",
+     "classify": "classify.csv",
+     "expect": {"status": "NOT RECONCILED", "unexplained_difference": "-12.00", "adjusted_statement_balance": "11793.00",
+                "adjusted_ledger_balance": "11805.00", "investigate_items": 1}}
+  ]
+}

@@ -1,0 +1,10 @@
+account,group,amount,basis
+Sales - Retainers,revenue,13000.00,cash
+Sales - Projects,revenue,5200.00,cash
+Workshops,revenue,0.00,cash
+Freelancers,direct_costs,5100.00,cash
+Rent,operating_expenses,3000.00,cash
+Salaries,operating_expenses,6800.00,cash
+Software,operating_expenses,580.00,cash
+Travel,operating_expenses,0.00,cash
+Marketing,operating_expenses,600.00,cash

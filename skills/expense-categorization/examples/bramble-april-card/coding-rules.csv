@@ -1,0 +1,5 @@
+rule_id,pattern,account,dimension,rule_source,approved_by,approved_on,status
+R1,FIGMA,Software subscriptions,,coding-rules.txt rule 1,Jo,2026-03-02,approved
+R4a,TRAINLINE,Travel,,coding-rules.txt rule 4 (client visits),Jo,2026-03-02,approved
+R4b,TRAINLINE,Staff training,,coding-rules.txt rule 4 (courses),Jo,2026-03-02,approved
+R7,AMZN,Office supplies,,suggested by Mina in March,,,proposed

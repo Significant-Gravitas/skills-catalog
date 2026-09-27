@@ -1,0 +1,66 @@
+{
+  "intake_version": 1,
+  "prepared_on": null,
+  "prepared_by": "Mina (draft for owner review)",
+  "entity": {
+    "legal_name": null,
+    "slug": null,
+    "jurisdiction": null,
+    "registration_number": null,
+    "address": null,
+    "contact": null,
+    "vat_or_sales_tax_registered": null,
+    "vat_number": null,
+    "mtd_income_tax_status": null,
+    "fiscal_year_end": null
+  },
+  "period": {"start": null, "end": null, "catch_up": false, "first_period": false},
+  "reporting_currency": null,
+  "other_currencies": [],
+  "basis": null,
+  "chart": {"source": null, "version": null, "owner": null, "account_definitions": null},
+  "coding_rules": {"source": null, "count": null},
+  "dimensions": [],
+  "system_of_record": {
+    "name": null,
+    "connection": null,
+    "owner_holds_export_copy": null,
+    "documents_live_in": null
+  },
+  "sources": [
+    {
+      "file": null,
+      "system": null,
+      "account": "masked, last 4 only",
+      "entity_confirmed": null,
+      "dates": {"from": null, "to": null},
+      "export_time": null,
+      "rows": null,
+      "currency": null,
+      "control_total": {"kind": null, "value": null, "evidence": null},
+      "date_format": null,
+      "date_format_ambiguous": null,
+      "date_format_confirmed": null,
+      "sign_convention_confirmed": null,
+      "masked_fields": [],
+      "state": null,
+      "warning": null
+    }
+  ],
+  "opening_balances": [{"account": null, "value": null, "evidence": null, "approved_by": null}],
+  "approvers": {
+    "invoices": null,
+    "customer_contact": null,
+    "adjustments": null,
+    "final_reports": null,
+    "next_owner_if_approver_conflicted": null
+  },
+  "accountant": null,
+  "ar": {"account_owner": null, "mailbox": null, "aging_buckets_confirmed": null},
+  "cadence": {"close_target": null, "ar_review": null, "routines_created": []},
+  "open_questions": [
+    {"id": null, "question": null, "options": [], "asked_on": null, "answer": null, "answered_by_as_stated": null}
+  ],
+  "can_start_now": [],
+  "blocked_work": []
+}

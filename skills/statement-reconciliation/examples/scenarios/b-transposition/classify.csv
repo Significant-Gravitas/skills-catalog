@@ -1,0 +1,3 @@
+side,id,class,pair_id,note
+statement,S6,correction,,monthly account fee not yet in ledger
+statement,S3,ledger-error,L3,Adobe invoice shows 95.00; ledger keyed 59.00 (confirmed by Jo)

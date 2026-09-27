@@ -1,0 +1,10 @@
+id,date,amount,description,reference,fitid
+L1,2026-04-02,3500.00,Oriel Health receipt,INV-1049,F1001
+L2,2026-04-04,-1800.00,Kestrel Studio bill 551,551,
+L3,2026-04-10,-95.00,Adobe subscription,,
+L4,2026-04-15,1400.00,Harbour Co part receipt,INV-1046,
+L5,2026-04-15,1000.00,Harbour Co part receipt,INV-1046,
+L6,2026-04-20,-600.00,Transfer to savings,TFR0420,
+L7,2026-04-30,900.00,Workshop day receipt,INV-1050,
+L8,2026-04-30,-1250.00,Payment bill 553,553,
+L9,2026-04-03,4000.00,Deposit cash sales,,

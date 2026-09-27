@@ -1,0 +1,12 @@
+{
+  "account": "<label with last 4 digits only, e.g. main-4411>",
+  "currency": "<ISO code, e.g. GBP>",
+  "period_start": "YYYY-MM-DD",
+  "period_end": "YYYY-MM-DD",
+  "statement_opening": "<from the real statement>",
+  "statement_closing": "<from the real statement>",
+  "ledger_opening": "<ledger balance the day before period_start>",
+  "ledger_closing": "<ledger balance at period_end>",
+  "prior_approved_closing": "<from recs/<account>-<prior>.json if approved; delete this line for a first period>",
+  "window_days": 3
+}

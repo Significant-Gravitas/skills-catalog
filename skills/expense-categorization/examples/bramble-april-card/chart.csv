@@ -1,0 +1,13 @@
+account,type,definition
+Software subscriptions,expense,Recurring SaaS seats and licences used by staff
+Travel,expense,Travel to client sites and meetings (coding rule 4)
+Staff training,expense,Courses and travel to courses (coding rule 4)
+Office supplies,expense,Consumables under the owner's capitalisation limit
+Meals and subsistence,expense,Staff meals while working away; kept apart because deductibility differs
+Bank and processor fees,expense,Bank charges and Stripe or PayPal fees
+Equipment (fixed asset review),asset,Items the accountant may capitalise; bookkeeper flags only
+Loan: Funding Circle,liability,Principal repayments; interest goes to Loan interest
+Loan interest,expense,Interest element of loan repayments per lender schedule
+Owner drawings,equity,Personal items and transfers to the director
+VAT control,liability,VAT paid to or reclaimed from HMRC
+Suspense,other,Never used by Mina; unresolved items stay unresolved

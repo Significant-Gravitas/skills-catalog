@@ -1,0 +1,11 @@
+{
+  "trap": "None: the clean baseline. Tests FITID, windowed-with-reference, date+amount-unique and batch passes, and timing confirmed by the next statement.",
+  "runs": [
+    {"label": "no classification: the fee is left to investigate",
+     "expect": {"status": "NOT RECONCILED", "unexplained_difference": "-12.50", "matched_groups": 5}},
+    {"label": "fee classified as a book-side correction, timing confirmed",
+     "classify": "classify.csv", "next_statement": "next-statement.csv",
+     "expect": {"status": "RECONCILED", "unexplained_difference": "0.00", "adjusted_statement_balance": "23042.50",
+                "adjusted_ledger_balance": "23042.50", "deposits_in_transit": "900.00", "outstanding_payments": "-1250.00"}}
+  ]
+}

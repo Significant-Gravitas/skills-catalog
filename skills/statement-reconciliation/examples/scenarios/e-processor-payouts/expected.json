@@ -1,0 +1,44 @@
+{
+  "trap": "Net payouts never match invoices. The breakdown must tie po_A1's net (1140.90) to bank line B1, treat po_B2 (effective 1 May) as in transit rather than missing, report the row with no automatic_payout_id instead of dropping it, and exclude the PayPal Memo row from cash.",
+  "stripe": {
+    "report": "stripe-payout-recon.csv",
+    "unassigned": 1,
+    "payouts": {
+      "po_A1": {
+        "net": "1140.90",
+        "fees": "59.10",
+        "state": "tied to bank"
+      },
+      "po_B2": {
+        "net": "776.50",
+        "state": "after cutoff: in transit (timing), not missing"
+      }
+    }
+  },
+  "paypal": {
+    "report": "paypal-activity.csv",
+    "opening": "0.00",
+    "closing": "0.00",
+    "memo": 1,
+    "payouts": {
+      "PP-1004": {
+        "net": "190.95",
+        "state": "tied to bank"
+      }
+    }
+  },
+  "paypal_two_currency": {
+    "report": "paypal-two-currency.csv",
+    "currency": "USD",
+    "activity": {
+      "gross_sales": "100.00",
+      "fees": "3.20",
+      "payments_sent": "-40.00",
+      "fx_conversion": "210.00",
+      "net": "266.80"
+    },
+    "other_currencies": [
+      "EUR"
+    ]
+  }
+}

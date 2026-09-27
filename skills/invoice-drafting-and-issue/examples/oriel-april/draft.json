@@ -1,0 +1,39 @@
+{
+  "draft_id": "oriel-2026-04",
+  "status": "draft",
+  "number": "to be assigned",
+  "invoice_date": "2026-04-30",
+  "supply_period": "April 2026",
+  "due_date": "2026-05-30",
+  "terms": "net 30 days from invoice date",
+  "terms_source": "SOW-014 clause 6",
+  "currency": "GBP",
+  "seller": {
+    "legal_name": "Bramble Design Ltd",
+    "address": "12 Mill Lane, Bristol BS1 4XX",
+    "contact": "accounts@bramble.example",
+    "company_number": null,
+    "vat_number": null
+  },
+  "customer": {
+    "legal_name": "Oriel Health Ltd",
+    "address": "4 Quay St, Bristol",
+    "billing_contact": "Priya Shah, ap@oriel.example",
+    "vat_number": null
+  },
+  "references": {"contract": "SOW-014 (signed 2 Jan 2026)", "po": "PO 7781"},
+  "lines": [
+    {"key": "SOW-014/retainer/2026-04", "description": "Design retainer", "period": "April 2026", "supply_date": "2026-04-30",
+     "qty": "1", "unit": "month", "rate": "3500.00", "discount": null, "tax_rate": null, "source": "SOW-014 cl. 4"},
+    {"key": "SOW-014/extra-day/2026-04-14", "description": "Extra workshop day", "period": "14 April 2026", "supply_date": "2026-04-14",
+     "qty": "1", "unit": "day", "rate": "900.00", "discount": null, "tax_rate": null, "source": "Email approval, M. Ode, 10 Apr"}
+  ],
+  "discount": {"amount": null, "source": null},
+  "tax": {"regime": "uk-vat", "requested": false, "rounding": null, "source": "VAT treatment not supplied: ask the accountant"},
+  "payment": {"instructions": null, "remittance_reference": "INV number once assigned"},
+  "conflicts": [
+    {"field": "lines[2].rate", "options": ["850.00 per SOW-014 cl. 5", "900.00 per M. Ode email 10 Apr"], "resolved": null}
+  ],
+  "missing": ["number", "seller.vat_number", "tax treatment and rates", "payment.instructions"],
+  "approver": "Jo (director)"
+}

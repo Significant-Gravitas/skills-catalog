@@ -1,0 +1,10 @@
+account,group,amount
+Sales - Retainers,revenue,13000.00
+Sales - Projects,revenue,5200.00
+Workshops,revenue,0.00
+Freelancers,direct_costs,5100.00
+Rent,operating_expenses,3000.00
+Salaries,operating_expenses,6800.00
+Software,operating_expenses,580.00
+Travel,operating_expenses,0.00
+Marketing,operating_expenses,600.00

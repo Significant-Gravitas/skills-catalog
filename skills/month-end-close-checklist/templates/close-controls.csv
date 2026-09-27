@@ -1,0 +1,22 @@
+id,control,level,depends_on,evidence_required,default_owner_role,skill_to_load
+S1,Bank and card statements for the full period received,1,,statement files with opening and closing balances covering every day of the period,owner,
+S2,Sales invoice credit and refund list through cutoff received,1,,invoice register or billing export with row count and total,owner,
+S3,Bills receipts and expense claims through cutoff received,1,,bills export and receipt files with count and total,owner,
+S4,Payroll report received,1,,approved payroll register for the period,owner,
+S5,Loan transfer and owner-account statements received,1,,lender and savings statements for the period,owner,
+S6,Processor reports received (Stripe PayPal Square),1,,payout reconciliation or activity report for the period in the statement time zone,owner,
+1,Bank and card statements reconciled,2,S1,workpaper per account from statement-reconciliation with status and owner sign-off,bookkeeper,statement-reconciliation
+2,Sales invoices complete through cutoff; credits and refunds recorded,2,S2,invoice register total tied to the billing export; credits listed,bookkeeper,
+3,Bills receipts expenses and employee claims complete through cutoff,2,S3,expense review table with ready-to-post and needs-review totals,bookkeeper,expense-categorization
+4,Receivables and payables aged; disputes and stale items listed,2,S2;S3,aging tables at cutoff with disputes and stale items,bookkeeper,accounts-receivable-follow-up
+5,Payroll records received and tied to approved payroll reports,2,S4;S1,payroll register net pay and tax deposits tied to bank lines,bookkeeper,
+10,Processor clearing reconciled,2,S6;S1,payout breakdown with every payout tied or in transit,bookkeeper,statement-reconciliation
+12,Opening Balance Equity zero or routed to the accountant,2,,OBE balance at cutoff and exception id if not zero,bookkeeper,bookkeeping-exception-escalation
+13,Bills not yet received checked (cutoff),2,S3,list of expected recurring bills and suppliers with no bill for the period,bookkeeper,
+6,Loans interest transfers and owner or intercompany items reconciled,3,S5;1,lender balance tied to ledger liability; transfers matched both sides,bookkeeper,statement-reconciliation
+11,Undeposited Funds and suspense at zero or explained,3,1;10,balance at cutoff with each item explained or raised as an exception,bookkeeper,bookkeeping-exception-escalation
+14,Owner sign-off recorded on each bank reconciliation,3,1,approvals.csv row per reconciliation workpaper,owner,
+7,Fixed-asset accrual prepayment tax and revenue-policy items sent to the accountant,3,1;3;4;13,accountant hand-off list with source for each candidate,bookkeeper,bookkeeping-exception-escalation
+8,Profit-and-loss and balance movements reviewed against prior period and plan,4,1;2;3;7;10;11,draft P&L brief with basis and currency and open items,bookkeeper,monthly-profit-and-loss-summary
+9,Every proposed adjustment has a source reason preparer and approver,3,7,adjustment list with approvals.csv references,accountant,
+15,Period lock date recorded (owner or ledger admin locks in their own system),5,8;9;14,lock date as stated by the owner,owner,

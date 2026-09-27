@@ -1,0 +1,7 @@
+account,group,amount
+Sales,revenue,9000.00
+Stripe 1099-K gross,revenue,2500.00
+Cost of goods,direct_costs,3000.00
+Sales tax expense,operating_expenses,640.00
+Owner drawings,operating_expenses,1500.00
+Rent,operating_expenses,1200.00

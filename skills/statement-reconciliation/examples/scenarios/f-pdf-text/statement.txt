@@ -1,0 +1,12 @@
+Northbank plc                               Business Current Account ****4411
+Bramble Design Ltd                          Statement 1 Apr 2026 to 30 Apr 2026
+Date     Description                        Paid out    Paid in     Balance
+01 Apr   BALANCE BROUGHT FORWARD                                  20,000.00
+02 Apr   FPS ORIEL HEALTH INV-1049                     3,500.00   23,500.00
+05 Apr   BACS KESTREL STUDIO 551           1,800.00               21,700.00
+10 Apr   DD ADOBE SYSTEMS                     95.00               21,605.00
+15 Apr   FPS HARBOUR CO INV-1046                       2,400.00   24,005.00
+20 Apr   TFR TO SAVINGS                      600.00               23,405.00
+28 Apr   ACCOUNT FEE APR                      12.50               23,392.50
+30 Apr   BALANCE CARRIED FORWARD                                  23,392.50
+Page 1 of 1

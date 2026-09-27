@@ -1,0 +1,2 @@
+invoice,customer,open_balance,bank_row,bank_date,bank_amount,bank_description,match
+INV-1042,Harbour Florists Ltd,1800.00,bank-main-2026-04.csv:9,2026-04-10,1800.00,HARBOUR FLORISTS INV-1042,invoice number in description

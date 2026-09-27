@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-dedupe-upstream-2026-09-27",
+  "release_key": "catalogue-bookkeeping-skills-2026-09-27",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -46,11 +46,141 @@
     },
     {
       "slug": "accounts-receivable-follow-up",
-      "tree_sha256": "7b12c9f2b68d19603ca2f99fcb9a21efa9f005fd72af0eee2d55331aea1a1a87",
+      "tree_sha256": "a6e1610597ed4053b007f4bd1969fca3742af61583c713fea08995ccdb66dacd",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "7b2c73d9760fa10da0b73e0ae8e6ae049d2a2072c04b5513651d1cace1dc3e14",
+          "sha256": "f29a2fa115c3c69a3a0ad74ca68d83df9b26405fe934c291c09fbc7bbdde4714",
+          "executable": false
+        },
+        {
+          "path": "checklists/before-drafting.md",
+          "sha256": "ce17c8e9bed987096227a1fdbf3ac5cea83076101a5905e65279b8f3c0f04d17",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-ar/bank-main-2026-04.csv",
+          "sha256": "ebadb262c483eb332a57fa80e5b9366cbf20e7dba8f03e5189246a83b4644e7b",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-ar/contact-log.csv",
+          "sha256": "ec63edd82ccb967280d76c0e6d0e41322bea8018a6d23dd949b6f5a19dac204a",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-ar/dispute-log.csv",
+          "sha256": "1d9c9e972e2b7da7b94897c15248180017518771059e6cd7b7085ef812a191bc",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-ar/invoices.csv",
+          "sha256": "2bfa9d5075d87ae161067ae5ae7b9a22b6da10f2751c7a5e7904dd12dbb13a6d",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-ar/payments.csv",
+          "sha256": "2ce26af67bbebb8d738851cbd31401109ffca5657644ffd150d910ab4635e544",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-ar/unapplied-expected.csv",
+          "sha256": "43e68785cae54fc5e747898f8d235231ac744d126502ad5978d833cbfbdb0afe",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-ar/walkthrough.md",
+          "sha256": "0ec88741801b2027b022212c140a8dd36638e7d3cafcafc1b5e9af11cae2c2d6",
+          "executable": false
+        },
+        {
+          "path": "references/aging-and-terms.md",
+          "sha256": "1b93b21c764f7eb1e4cf24913b5c1cfad3bfc6154f9ea41aa3daf05d6fc48fe5",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/evidence-and-sending.md",
+          "sha256": "962cbed16c593f8b0db516aa0f3584525b05a3780ed66336b30040d9a422a21d",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "20ce3038630201a483253ced4017d1adb8f42ce81b71b670dfaab3a0e029894a",
+          "executable": false
+        },
+        {
+          "path": "references/uk-late-payment.md",
+          "sha256": "705a27bcadc50e392883c79bd4796a7fb9ea62025ccdb339fe579ab4227be9bf",
+          "executable": false
+        },
+        {
+          "path": "scripts/ar_aging.py",
+          "sha256": "b3e24198917d419b85a2b75e8477325bd97ca62f00eb756e966ad21d00bc0323",
+          "executable": false
+        },
+        {
+          "path": "scripts/bkio.py",
+          "sha256": "950af3169eb8d23a9aa67742d9dcd607e1a61767378289f09dd273212e96e230",
+          "executable": false
+        },
+        {
+          "path": "scripts/find_unapplied.py",
+          "sha256": "5b031b7423733d1346fe265de4d3925cf67cafd5dd9cbdf6752f8b5fda024829",
+          "executable": false
+        },
+        {
+          "path": "scripts/log_approval.py",
+          "sha256": "3c9d1643fe380e2d4fedf696f1873d8fe9bcf20fbf7e2472d5488b21571a563a",
+          "executable": false
+        },
+        {
+          "path": "scripts/normalize_export.py",
+          "sha256": "9ef4c9540ec30bddaed46ca20f9885ec1d34187d64aa9d245b07a9ed7df6bceb",
+          "executable": false
+        },
+        {
+          "path": "scripts/render_statement.py",
+          "sha256": "64019789305edd492cd1f61d51530644ca910dfd8e75e6e2aff67a5c79667ce3",
+          "executable": false
+        },
+        {
+          "path": "scripts/uk_late_interest.py",
+          "sha256": "2805ef91e07924685de8051f7e4ad10cfd17d1c886cf26b03ece88edbacef51f",
+          "executable": false
+        },
+        {
+          "path": "templates/contact-log.csv",
+          "sha256": "b2ef9bac24866cabe54a23b4ef6c4503c35f45b1e32f4359f2644779cf09c403",
+          "executable": false
+        },
+        {
+          "path": "templates/dispute-log.csv",
+          "sha256": "e1be8ba94b9d745d9e92412b978b39d9c0f9bc165c0d7e57a2060d69036ae2af",
+          "executable": false
+        },
+        {
+          "path": "templates/follow-up-and-routine.md",
+          "sha256": "146dc0711446403c99c3bf86b566876c6379d751f143fcfe0bdddbae41a7aaa7",
+          "executable": false
+        },
+        {
+          "path": "templates/invoice-export.csv",
+          "sha256": "a4716d15da0f60ec8355b871d02b53711b19ec0eb6b8bfdf7b96d0b904780e9b",
+          "executable": false
+        },
+        {
+          "path": "templates/reminder-stages.md",
+          "sha256": "95e801c772216ae4b3b35419c4ad0af882b196e1decb1e75769b07d922d37cec",
+          "executable": false
+        },
+        {
+          "path": "templates/statement-of-account.html",
+          "sha256": "bd65b81344b069d512f5d2ecac0a257eb0def175c840b47f25a8d32e0c770daa",
           "executable": false
         }
       ]
@@ -176,22 +306,217 @@
     },
     {
       "slug": "bookkeeping-exception-escalation",
-      "tree_sha256": "754858e6bfd9352e910bc15eb7d39d5a0635845ca5e1e9138e8b18f51ca8c4d8",
+      "tree_sha256": "884476f9a2a197279cbd4d1639ac1c9ea1aab3d452803f3dcc2285fa24ce00b6",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "a7a541dd84ba3f572730fc181cb1bff4ccfb5033ebdf15653cfdf4f8d6f51fb5",
+          "sha256": "fe717003370c952c222ee1f079cccacbccc0b099c36f348a3ea475d98433a2e5",
+          "executable": false
+        },
+        {
+          "path": "checklists/pack-quality.md",
+          "sha256": "6b46f346da31a6a6239b5c52789012b83486c4ec8451e79cf172c6087bfd78a6",
+          "executable": false
+        },
+        {
+          "path": "examples/bank-detail-change/bank.csv",
+          "sha256": "6efddea059944a623e4574cba1953b18a60d1cf9d3cc5d846f023d30da0ba231",
+          "executable": false
+        },
+        {
+          "path": "examples/bank-detail-change/bills.csv",
+          "sha256": "f24529f5c3a87851bcdae2611b8a07597481daaa240c98aec6c9dd8646b56e83",
+          "executable": false
+        },
+        {
+          "path": "examples/bank-detail-change/pack-BX-7.md",
+          "sha256": "72f91487a2189a954d20b650edb17395839f446f53149f005d2e9af964789cf9",
+          "executable": false
+        },
+        {
+          "path": "examples/bank-detail-change/vendor-master.csv",
+          "sha256": "644602d905fdfd7a2522066129ecf666189bbd26f8ad59da2caffd393a2e088d",
+          "executable": false
+        },
+        {
+          "path": "examples/worked-example.md",
+          "sha256": "1cb874a7097a43ae554ac23e3b7dffca66f03b2ade63cc43077089afd5b88495",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/red-flags.md",
+          "sha256": "6dd2783c28f09280420a988067472270b7367356e869d36991a78b35de589ee3",
+          "executable": false
+        },
+        {
+          "path": "references/routing-matrix.md",
+          "sha256": "ab432e12da8b1396cc5c5bc205d5563137eb9477e40761f7526905f5e4b3794e",
+          "executable": false
+        },
+        {
+          "path": "scripts/build_pack.py",
+          "sha256": "2a641899de5d072c8163fca5146af2dbf95d206120b16aea1628f70b8d71d1fc",
+          "executable": false
+        },
+        {
+          "path": "scripts/log_approval.py",
+          "sha256": "00819dade9881b5de656956fd467f0f48fcc4f6cd53a487a5c8745df772c537d",
+          "executable": false
+        },
+        {
+          "path": "scripts/register.py",
+          "sha256": "2333c1bb38fb4e0802632686a0db4c923f5c17f3c50efdb198eeb6adcfa34ec6",
+          "executable": false
+        },
+        {
+          "path": "templates/accountant-handoff-pack.md",
+          "sha256": "b976ac89f9e2a06eac518a8046aff8170b2ec49de8bf18663f9939dbc36ea8df",
+          "executable": false
+        },
+        {
+          "path": "templates/exception-pack.md",
+          "sha256": "8aacba3dd684bb96ba7357c4b5221af996e80ecc2aaa82d238c724692eef3024",
+          "executable": false
+        },
+        {
+          "path": "templates/exceptions-register.csv",
+          "sha256": "02b1a5027e071ba5d58c296241700e913355f6cdf92c92fe10df01397fe54667",
+          "executable": false
+        },
+        {
+          "path": "templates/missing-documents-request.md",
+          "sha256": "cc6cd0d598b0bfe42fb6ebc5cda4edbf9a66793fac73b6bd07cf8a764b53a8e3",
+          "executable": false
+        },
+        {
+          "path": "templates/requests.csv",
+          "sha256": "5bc09c146630492cd5ffc14046f5031d9e955c15aeb1d79a3314bfef38a9b042",
           "executable": false
         }
       ]
     },
     {
       "slug": "bookkeeping-getting-started",
-      "tree_sha256": "dbd104ceaf64955a893f31fc6e729c31aa38f69a653dad59453c1824e8053934",
+      "tree_sha256": "dcd925e7b8ca503a1b2df5de5b574fab84e48118d1b84da3c864c03be7827ec2",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "6c46c766a7cf80a5e8e8abcdc6900e91bd64ce8fa09e5c4b727a1acfbb9fa57c",
+          "sha256": "ff9102e1a1816f81ca9df2d7ab1f2f5d314e1fd8ae4acc44237e272350b5fd6d",
+          "executable": false
+        },
+        {
+          "path": "checklists/intake-checklist.md",
+          "sha256": "613bd1d025a2f2e6eeba51480b82be27be883f46a89ec65dfab8bc612122c754",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-intake/amex-2026-04.csv",
+          "sha256": "4809790abac3db070dc06ff18a1130fafa46fc6b5217c1661cca9b130a55d0fe",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-intake/bank-main-2026-04.csv",
+          "sha256": "712ad135f1b68981b7c947c9ec7346b724b97c09a45c1bf04a215f0e04aa559f",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-intake/intake.json",
+          "sha256": "2fa616d1d3273ff346d8c0f74efaf77b8b6655b691a8e8350a5b1c15275239cf",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-intake/walkthrough.md",
+          "sha256": "f0472aca22d73c1cd846a6bf50c6dc39e9d037cddd10bd548800735a3d4449f1",
+          "executable": false
+        },
+        {
+          "path": "examples/catch-up-mixed-entity.md",
+          "sha256": "cfb2321b1b958d2a225e26b86aac85cdc7623f6d99b0fb64ab003c99fc32ca51",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/jurisdiction-flags.md",
+          "sha256": "99ab25519efe1c4e14b2c82fa8984a6645d9a85b688872d56f6908602409fa4a",
+          "executable": false
+        },
+        {
+          "path": "references/source-document-checklist.md",
+          "sha256": "c44984dd29584037216cd1d2e9e9275abcea1a825dca0c31d09224a02ececdae",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "6b15c8664538a513e87e61f777ddac040be981ba6837dc3b6343a844f3499c50",
+          "executable": false
+        },
+        {
+          "path": "references/system-of-record-and-connections.md",
+          "sha256": "51a1c91221ec41c8580c93c5d362b8613e8422f6bd077823501c48e07d97e776",
+          "executable": false
+        },
+        {
+          "path": "scripts/bkio.py",
+          "sha256": "950af3169eb8d23a9aa67742d9dcd607e1a61767378289f09dd273212e96e230",
+          "executable": false
+        },
+        {
+          "path": "scripts/intake_check.py",
+          "sha256": "3118ee8b228b9214e501e670e932554cde7f8cbafb63e9132a1046194d50dffa",
+          "executable": false
+        },
+        {
+          "path": "scripts/normalize_export.py",
+          "sha256": "9ef4c9540ec30bddaed46ca20f9885ec1d34187d64aa9d245b07a9ed7df6bceb",
+          "executable": false
+        },
+        {
+          "path": "scripts/profile_sources.py",
+          "sha256": "cf0bf0a060106642574566f84b7fa5b8f3caf318d05f6418754a28125e596a2d",
+          "executable": false
+        },
+        {
+          "path": "scripts/redact.py",
+          "sha256": "8a22d9c4bb1127ffe920e1facac0fe684ea01bce2e6aac92c4a90dc4c002e533",
+          "executable": false
+        },
+        {
+          "path": "templates/blocking-questions.md",
+          "sha256": "27ba26cd38ff4407f6fbcdd46438e3443582f0173bddcc76ee783139d2b9dcd1",
+          "executable": false
+        },
+        {
+          "path": "templates/cadence-routines.md",
+          "sha256": "3bc5d4d52ee352b92d56fb5034f2839ee8443dccdf43166fc8801af97e1af84c",
+          "executable": false
+        },
+        {
+          "path": "templates/intake-sheet.md",
+          "sha256": "dd1c8ce9b8e335f4a67915cc90cdf83d49e68b61a284b4d09ccd22b2e357abd0",
+          "executable": false
+        },
+        {
+          "path": "templates/intake.json",
+          "sha256": "455f36dd13f9590f5a8e3f92ba1249c15fe54ae3ffa58e9e99885d2b4cdb6013",
+          "executable": false
+        },
+        {
+          "path": "templates/missing-documents-request.md",
+          "sha256": "7adf3c7bd1f881920b5ad31833eaa1b266fe97f7b6c6c6c7b48266f0ceb49412",
+          "executable": false
+        },
+        {
+          "path": "templates/open-items.csv",
+          "sha256": "13f3fa32855dc83c831048662306572b1ff30a9aabe21ded3ce3a37bf94951d4",
           "executable": false
         }
       ]
@@ -1702,11 +2027,141 @@
     },
     {
       "slug": "expense-categorization",
-      "tree_sha256": "47318c7d7b7b5f1e4aace754512853cf8e668a63da89cbd04119d77eebd36a11",
+      "tree_sha256": "c0021bce9932bacc2f2e842a63962409afdd191d0a2cd166c1c56ce50676aa20",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "a486a389fd2ecc220051cbb81c7a3cf3836b591e59d773877704de73ff2b3be0",
+          "sha256": "d1f228310d33634e72b3876fc851ccad82a7ded497c33abe9a8b69a29a9d519a",
+          "executable": false
+        },
+        {
+          "path": "checklists/before-delivery.md",
+          "sha256": "0274c0507f22845713bc79a9099f4d4d08d047d412153d782095db8d2fca327b",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/amex-2026-04.csv",
+          "sha256": "4809790abac3db070dc06ff18a1130fafa46fc6b5217c1661cca9b130a55d0fe",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/chart.csv",
+          "sha256": "ffa7a06c85f60768715d2cb0e1f3db45efb621d6bff458ab06133a38f124449d",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/coding-rules.csv",
+          "sha256": "700a19e79d6a69831ff0af88ca37bb82cfdc3167ee67d05406346a9e7b0a15af",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/expected-review.csv",
+          "sha256": "b7559b07d62b49d7a011be3f456a6c9ec1029b6d0d2f49bde4afa6bd70de20c7",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/history/2026-03-review.csv",
+          "sha256": "232b78ad5a8b42d0a20f6f3a10664cdc05f5f8fc9b254387015defe77f8cec56",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/receipt-trainline.txt",
+          "sha256": "a8ba54968ca04d41a70c86c2201dac2c7c76a6f80e6aee3b8d1513911d1004bb",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/receipts.csv",
+          "sha256": "423b9068e79c7459db035b5aac4e5a9f8a7a68faf5218f14eb96b12abfcbb80c",
+          "executable": false
+        },
+        {
+          "path": "examples/bramble-april-card/walkthrough.md",
+          "sha256": "d9eba65478c4e72f70722fa893e4f3e9e3bb0aa3e0767b6a5c0e6fb1b2b4f986",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-lines/bank-main-2026-04.csv",
+          "sha256": "712ad135f1b68981b7c947c9ec7346b724b97c09a45c1bf04a215f0e04aa559f",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-lines/expected.md",
+          "sha256": "4e54f42fdc24733b1821158f9f066d05a3cacbea86f0b8411c0536a119cea149",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/confidence-and-coding.md",
+          "sha256": "4bcc142f6469f33bf174eb28b80eb0e03874413092b19f44cf3428d95ef386c6",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "bbbbc0fae387ead2bb13df555126b4a9b830d3fa358d3dd0bde05001c53ce908",
+          "executable": false
+        },
+        {
+          "path": "references/special-lines.md",
+          "sha256": "7f655153538ed920d637b904a88529dd675032d53f4733e258566465def3eebe",
+          "executable": false
+        },
+        {
+          "path": "references/substantiation-us.md",
+          "sha256": "e7ec7098e40fb650e896357268f6671cc6587bf88f2521c9a8bc864133e0bc1c",
+          "executable": false
+        },
+        {
+          "path": "scripts/bkio.py",
+          "sha256": "950af3169eb8d23a9aa67742d9dcd607e1a61767378289f09dd273212e96e230",
+          "executable": false
+        },
+        {
+          "path": "scripts/expense_checks.py",
+          "sha256": "494630fed55d40cf40a5c980199778259125aeab5063d5a406d41ec24210d71f",
+          "executable": false
+        },
+        {
+          "path": "scripts/normalize_export.py",
+          "sha256": "9ef4c9540ec30bddaed46ca20f9885ec1d34187d64aa9d245b07a9ed7df6bceb",
+          "executable": false
+        },
+        {
+          "path": "scripts/propose_from_history.py",
+          "sha256": "d15fd9ec22baaea2e27b3bbd9570c5249ea00b25fb26bb73a87ae18d54a5f7bb",
+          "executable": false
+        },
+        {
+          "path": "scripts/receipt_text.py",
+          "sha256": "6506411dd526cce87821251302d054c7dff424018406908186353ad13d2849b1",
+          "executable": false
+        },
+        {
+          "path": "scripts/write_review.py",
+          "sha256": "bcdab20e77230add1136c5f9fc5a57675f4987744adbf791fffcda89685824e0",
+          "executable": false
+        },
+        {
+          "path": "templates/coding-rules.csv",
+          "sha256": "338b50f91446b6926a78f32c8030572da6d9d0da8632586453454c980b8949ba",
+          "executable": false
+        },
+        {
+          "path": "templates/expense-review-template.csv",
+          "sha256": "d630ad881ad17bea2671590bbc5b5118562a8a82dd0141a2424351d5fa687ced",
+          "executable": false
+        },
+        {
+          "path": "templates/review-queue-questions.md",
+          "sha256": "9058381c87c99e4b609bf13247ec2f52fc4b624e3a0a275fff761840df223270",
+          "executable": false
+        },
+        {
+          "path": "templates/review-table-guide.md",
+          "sha256": "3d17de01705bbf81ad0502aeb51b793dba3b6243247fb3445784f817abe25b45",
           "executable": false
         }
       ]
@@ -2145,11 +2600,116 @@
     },
     {
       "slug": "invoice-drafting-and-issue",
-      "tree_sha256": "66f97b9888e872ce0d5802c03ffbc7e7a2ce4aae3662f5605e12437302f5b472",
+      "tree_sha256": "00179293fd1c7400c3eb0a9569b259de48a81bccc42831768aa24ab1e33ae633",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "6705252de55e622782362c8f0b220417f1aa724ac1a6cae19f9eb1ba5f47f1e0",
+          "sha256": "a2939af96107bcf2fb3d4fc8e82371784550e72263ac2fd77b15b27fde2e0661",
+          "executable": false
+        },
+        {
+          "path": "checklists/before-approval.md",
+          "sha256": "a35b193f441139f5d1a0c61086b759891b392aab68553c75a154bf68a18d72c6",
+          "executable": false
+        },
+        {
+          "path": "examples/oriel-april/draft.json",
+          "sha256": "a06a52b36382182b159d4409efa83afa16a9702809a6142320e6826021eaf716",
+          "executable": false
+        },
+        {
+          "path": "examples/oriel-april/invoice-register.csv",
+          "sha256": "7e48a30d4eb68788c6a2c670f7d39dc6b1bb9599ef7be98b5becb93a48e7c334",
+          "executable": false
+        },
+        {
+          "path": "examples/oriel-april/walkthrough.md",
+          "sha256": "109727723b6724cf72de4a2620f8a1ec88f575bb5aa5c05e709e1efac96bde88",
+          "executable": false
+        },
+        {
+          "path": "references/approval-and-ledger-draft.md",
+          "sha256": "6c178fd4ede82ae187cf00720d468a930819bfa2e5160e3b5c868cd564adf5fc",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/invoice-field-checklists.md",
+          "sha256": "71504e19cf7e7bb30e1232ac1a39aa0b95be4e30eba5201421f882a0c9affd1d",
+          "executable": false
+        },
+        {
+          "path": "references/recurring-billing.md",
+          "sha256": "96f4cab2d8491b501a88cc671244974bf82d944f809c1f9aa836da6a2bb78356",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "843310e48594633cfbb3c9ff7fe361f18cf27a049361959e0b31fcb1d6fd767d",
+          "executable": false
+        },
+        {
+          "path": "references/tax-id-checks.md",
+          "sha256": "d763e9885bc1e2d90bbea3b48121530b201e8d3974af22958a3e1e9c1800a0e3",
+          "executable": false
+        },
+        {
+          "path": "scripts/bkio.py",
+          "sha256": "950af3169eb8d23a9aa67742d9dcd607e1a61767378289f09dd273212e96e230",
+          "executable": false
+        },
+        {
+          "path": "scripts/field_check.py",
+          "sha256": "e4bc051d3778b04c93ad4ba24469fda645cc21b55c861c64384595fded0596e2",
+          "executable": false
+        },
+        {
+          "path": "scripts/invoice_totals.py",
+          "sha256": "887b588e8c548e1eca30ceb9ec8cc5dffb97f35b2bdfdbfe4bb53879d958a6fd",
+          "executable": false
+        },
+        {
+          "path": "scripts/log_approval.py",
+          "sha256": "3c9d1643fe380e2d4fedf696f1873d8fe9bcf20fbf7e2472d5488b21571a563a",
+          "executable": false
+        },
+        {
+          "path": "scripts/register_check.py",
+          "sha256": "c677b1735402e9e906088a3edf33531cab593ea0fae3a40f9d04ba919ce14a7c",
+          "executable": false
+        },
+        {
+          "path": "scripts/render_invoice.py",
+          "sha256": "6f173ddc9b8a40f4c9b0b856e9782449c3f521b32fba560fcc1cb83dbb2ca2e0",
+          "executable": false
+        },
+        {
+          "path": "templates/approval-questions.md",
+          "sha256": "471cc70129c2813a5aedcc31d7d1786f2e4362e56d8c65aa3bf4b9a88915a6bf",
+          "executable": false
+        },
+        {
+          "path": "templates/draft.json",
+          "sha256": "537b167643734431c4b8f03c90a018d312ac4ecf2e68cf33ec54ae568288593e",
+          "executable": false
+        },
+        {
+          "path": "templates/invoice-draft.html",
+          "sha256": "5ffa15a271108a8f5706645d6130969092dd68e466dc4f0fc2040c8377c35243",
+          "executable": false
+        },
+        {
+          "path": "templates/invoice-register.csv",
+          "sha256": "69083756396e3b071faac43feec413a1867575a1c6c795f3b04f9ba0221cf3b8",
+          "executable": false
+        },
+        {
+          "path": "templates/review-block.md",
+          "sha256": "c4ff41806411d5376c777963080ca4a89ce76f0be1266541641602821899bf19",
           "executable": false
         }
       ]
@@ -2846,11 +3406,86 @@
     },
     {
       "slug": "month-end-close-checklist",
-      "tree_sha256": "6d3918f2f732f67c5af9ed683794fe15d3361a0de26dde5354e5c96feb5180f0",
+      "tree_sha256": "64c923612b3c23af84d25171d7972372b42db5028ac2ec7ef32106346234bfdc",
       "files": [
         {
+          "path": "ATTRIBUTION.md",
+          "sha256": "b8c5c90ffdfd33fed049b3fb04a601a672a699cda5d9297751f17e2fa92338c2",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
           "path": "SKILL.md",
-          "sha256": "94bf32eb0c0b88b8abbfc604d5418bfcb323c94bed7a96c64ec177249183c575",
+          "sha256": "80a1fd662467cda77d99471e2c4f0e719a82402b3627a744b74695cf9f712736",
+          "executable": false
+        },
+        {
+          "path": "checklists/close-quality.md",
+          "sha256": "5e971d65454ba284d4b1fb30964c10591302906f823a6c65758a2658343a9d76",
+          "executable": false
+        },
+        {
+          "path": "examples/close-2026-04/status.csv",
+          "sha256": "6202b8824c35df5d36075ffbb82ae965225f7fe66dfeb021ab16097d47cd13b5",
+          "executable": false
+        },
+        {
+          "path": "examples/worked-example.md",
+          "sha256": "36a252c215236c81091ae5a0720b9f90aa0defcd73b733d728f90ad0da2c2e09",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/close-calendar.md",
+          "sha256": "5ef867d96f16f21ee534b2cf42f1ffa6ee7a6a1f4f0683237c2a647a9bf28709",
+          "executable": false
+        },
+        {
+          "path": "references/close-dependency-map.md",
+          "sha256": "12a1b804483809eaf418d80761c9b7bb7f9827d74a2c5a8b8866aeccfe8ad1c4",
+          "executable": false
+        },
+        {
+          "path": "references/controls-guide.md",
+          "sha256": "c0b256ec0dace21a83672e0ac92d468363398707303f091396543aabd1fc7d2f",
+          "executable": false
+        },
+        {
+          "path": "scripts/build_binder.py",
+          "sha256": "01f3b84cdf9f55ed1493d535edd55e0c2e8130f23df5a59053728d18f845f5b5",
+          "executable": false
+        },
+        {
+          "path": "scripts/close_status.py",
+          "sha256": "65b955e1bc58b2e651aabaee1bad56f738589288d9fef186def1ac8c4a0f83c9",
+          "executable": false
+        },
+        {
+          "path": "scripts/log_approval.py",
+          "sha256": "00819dade9881b5de656956fd467f0f48fcc4f6cd53a487a5c8745df772c537d",
+          "executable": false
+        },
+        {
+          "path": "templates/close-controls.csv",
+          "sha256": "a01b73877176a6fac0dde188572df646eadf641063a0c25a1124054e30bd4371",
+          "executable": false
+        },
+        {
+          "path": "templates/close-report.md",
+          "sha256": "b9872b7d1efecc0e8e037e93c5dcfb1f086a65385a52e748efa59fa847244079",
+          "executable": false
+        },
+        {
+          "path": "templates/close-status.csv",
+          "sha256": "549221e089bfad7261a7455bb9174ad16e65e42ff7f7e787ccaabd546c2de4e7",
           "executable": false
         }
       ]
@@ -2889,11 +3524,136 @@
     },
     {
       "slug": "monthly-profit-and-loss-summary",
-      "tree_sha256": "4c726c4f44c89aed920854092a882484e37cc5da6f2fe4e1d34b91ed2bed13bc",
+      "tree_sha256": "e4ebc3aa8ee2053c862d35fd2a94a1112794b2e12ddb1a28ce118382fcbb9b1b",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "a1383985283895304ab1e309c7024e2a0fed26bdc1de88041a1bbc6403acbc14",
+          "sha256": "129eb106b1bff403287700052211ea46c8394ca4a421803ac08f9609149fc736",
+          "executable": false
+        },
+        {
+          "path": "checklists/review-pass.md",
+          "sha256": "425aa73515edb6dc4971cd0a70471c5565381b91f6cf3e59fa2a56f705fb96c7",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/budget.csv",
+          "sha256": "1d6a9652507a66df72b6daf21c097dad6c55ad4ba56e7a7936d7c195b2e1d6cf",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/gl-detail.csv",
+          "sha256": "79c8365abdf0adcfb5e644b277d6e386e9b789e25c389446c75377dea9097dc9",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/invoice-register.csv",
+          "sha256": "f0c17eea3993302f0d3ad9b893dd0a4a5266e9e7972ad4c6d4bd4c51b1dcc988",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/line-accounts.csv",
+          "sha256": "f1afc7d33641a8a5c694490b4f9136e506a4924b4891ac086b495599d6a62b80",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/pl-2026-03-cash.csv",
+          "sha256": "2678f0bd72c39d034b2152a1c33b430c78077184d1ad87ec3a393dc8d9480a0f",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/pl-2026-03.csv",
+          "sha256": "d4e997e9bb03ea2035b038622757cdc19d8d59b62552991c8d8b24e0a8367448",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/pl-2026-04-traps.csv",
+          "sha256": "d0f033770d0b90572907149d0d31330bf35e7438f131445a67fe45715e25903a",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/pl-2026-04.csv",
+          "sha256": "5c7fe6b19838cf1931c5dc00b7298b276acfc8c58678b3dae00f4088904f1ac3",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/reported-2026-04.csv",
+          "sha256": "2d6d1ce6bc1bbbbf1dad268f91f8325f1963f5cf0a9c01f8043ec7085c9e3797",
+          "executable": false
+        },
+        {
+          "path": "examples/april-2026/sources.csv",
+          "sha256": "9b05a08d97998407d458514fac41df537f6d83eab25d4478c9cbbd4da27af1fb",
+          "executable": false
+        },
+        {
+          "path": "examples/worked-example.md",
+          "sha256": "8e982f2b30c09ab3036e93f8ffaf42834d30c6c7b16c79cc1ff02e5374183aa5",
+          "executable": false
+        },
+        {
+          "path": "references/basis-and-comparability.md",
+          "sha256": "20687d4a3cdb6796cd24d8577f120f6c48e6cd240dd4b162b4d916ae7d838e46",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/pl-traps.md",
+          "sha256": "36b5e0b6709cfbd5f90b28df0b4aa633ba27de76372ccaca005f0f51fe2c4231",
+          "executable": false
+        },
+        {
+          "path": "scripts/log_approval.py",
+          "sha256": "00819dade9881b5de656956fd467f0f48fcc4f6cd53a487a5c8745df772c537d",
+          "executable": false
+        },
+        {
+          "path": "scripts/pl_chart.py",
+          "sha256": "360cff3d6566fe27f47e85f13afac6745956d83e4ee2a8d5cffd7ba987a69a65",
+          "executable": false
+        },
+        {
+          "path": "scripts/pl_variance.py",
+          "sha256": "db75f8831b836f7b74106e283f149a2623bb3060d40ed936005331c166f06a6b",
+          "executable": false
+        },
+        {
+          "path": "scripts/trace_movement.py",
+          "sha256": "29c011eec5b801e683de9e5b4a767eddb64ee227ef388b589833d48c86470ae8",
+          "executable": false
+        },
+        {
+          "path": "templates/budget-template.csv",
+          "sha256": "81d3a32a9f5716ebcbb3982a616625a1f08ec86ab700cad2af15396bc2d48a3f",
+          "executable": false
+        },
+        {
+          "path": "templates/line-accounts.csv",
+          "sha256": "4df15f4356d423c0f4438d2d2ae90a0324ee842126ab2d3eedeccac7311e1f05",
+          "executable": false
+        },
+        {
+          "path": "templates/pl-brief.md",
+          "sha256": "3e863bd7d7e25379545b4115739ac7010f4de54cf58e92e24b9b176cfc22dc13",
+          "executable": false
+        },
+        {
+          "path": "templates/pl-export.csv",
+          "sha256": "6fd15237c40e107b0f0cb94462fa8aa6159eecc3f10f210b50c1c90813c4e61c",
+          "executable": false
+        },
+        {
+          "path": "templates/reported-totals.csv",
+          "sha256": "f6ff9622eef53a16b31cbd9829a87d45d3404be998d80d9e344094b302a2fbbe",
+          "executable": false
+        },
+        {
+          "path": "templates/trace-sources.csv",
+          "sha256": "b3ab73ba1699d837ce9b87084022e9d5b952f5cc4e91f6970b5ea16156ca0a89",
           "executable": false
         }
       ]
@@ -5330,11 +6090,301 @@
     },
     {
       "slug": "statement-reconciliation",
-      "tree_sha256": "dedf887921684b134c925a621d9b09caa5103838313c9dc07e5cf3b5473dca27",
+      "tree_sha256": "e4574c3ad9dfe1014678204900fe3ed660f3f2feac0c91de80290ab8ed0220d8",
       "files": [
         {
+          "path": "ATTRIBUTION.md",
+          "sha256": "334457a7557c6c594212f30fa4e673ca361519e806f94fa9d46cd112811a18de",
+          "executable": false
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "executable": false
+        },
+        {
           "path": "SKILL.md",
-          "sha256": "dbeedc94a4660462de91870b607a12b2acfbf5579d5b460f430acdc82d6475cc",
+          "sha256": "2682d425a8bf0ad58431f27f802a43fed782f37ac880f89ca5cc29757658c863",
+          "executable": false
+        },
+        {
+          "path": "checklists/before-release.md",
+          "sha256": "dd0167522fd096140b00a73b0944d7c876b99b6931c16f124106d34f631b9d69",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/a-clean-tie/balances.json",
+          "sha256": "4cf9e2db6e6ef7c811b6c3fa7d4e32fd941e0bb5cd3b1e43792cf4a0e0937e50",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/a-clean-tie/classify.csv",
+          "sha256": "fa228cf816b8bfc01e7aff992a4afb02b1a089dfd9bd0c89542c2c6bbc5ecf5e",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/a-clean-tie/expected.json",
+          "sha256": "4be3b495a0f8cd2f974d293c5012cb8ba44a3913f39baf9ef58fd74f23539ba9",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/a-clean-tie/ledger.csv",
+          "sha256": "511cd63a60ce8915096674cf02b2a2c79ee17adb24632649df85cb0d84e54077",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/a-clean-tie/next-statement.csv",
+          "sha256": "d83ba695c0664c855fe62e500cd11fd16d286cbca13c7704682bac7c86bbd579",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/a-clean-tie/statement.csv",
+          "sha256": "d5fc394a7a347ceb509782e66e3b59f08c345b5fe38886b3da49894477c90ae3",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/b-transposition/balances.json",
+          "sha256": "195d92b29f92ec0d4d9a4a497fb5237326a32fc4754d3f93b85ee6628422f32a",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/b-transposition/classify.csv",
+          "sha256": "56e58723ad7464e2ad0ca5fa7a8e5817ab97f6104decb66942014540b4f1e322",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/b-transposition/expected.json",
+          "sha256": "aac96196539e6f7312266df033620dbefb2a52f49187c9cb3f541242011e0f1e",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/b-transposition/ledger.csv",
+          "sha256": "c45113cb5be17a413942acdc12d657ebe61e4f7e0fedb684cc52f7406e590a1b",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/b-transposition/statement.csv",
+          "sha256": "d5fc394a7a347ceb509782e66e3b59f08c345b5fe38886b3da49894477c90ae3",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/c-plug-temptation/balances.json",
+          "sha256": "b97dccdbf8d27158c905dca4dc12b1377443e39c19bffe6ac8276f9265ba0898",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/c-plug-temptation/classify.csv",
+          "sha256": "a6d6a9bb4d2372dd23a21461fdf06b9b135350b3b9ad69cd5339a568a0f4a75a",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/c-plug-temptation/expected.json",
+          "sha256": "42aa209fb9eceb3dd88bffc4b36b7318ccf56e2feeec0e5239116942bd51f464",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/c-plug-temptation/ledger.csv",
+          "sha256": "41b84ab01b58f951c4d1945b63a047e43089d549659f909e1c737405a3c9e1ed",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/c-plug-temptation/statement.csv",
+          "sha256": "d980098130cbd1e8b6cca2a74bb2be5bfe17dc96000240f3fadbdbe06cb36ad4",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/d-opening-gap/balances.json",
+          "sha256": "9696ec34aa9d6c6e2c19e71ec577b5cf1de8a3991cded0286ac7dff8ba252c57",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/d-opening-gap/expected.json",
+          "sha256": "18ab07ff954fb49b3a132312251116dd570b06002a5cf4d6828975d4ab374edd",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/d-opening-gap/ledger.csv",
+          "sha256": "511cd63a60ce8915096674cf02b2a2c79ee17adb24632649df85cb0d84e54077",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/d-opening-gap/statement.csv",
+          "sha256": "d5fc394a7a347ceb509782e66e3b59f08c345b5fe38886b3da49894477c90ae3",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/e-processor-payouts/bank.csv",
+          "sha256": "ce38271d9214f20ca2ead2a50a330fd1b6f4f4e1503eee4cc06fa617857f407f",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/e-processor-payouts/expected.json",
+          "sha256": "e47a4d5b7a0dc0dbd9028e70e0513073f6aed7d355156d8b0bea91bd238a9a10",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/e-processor-payouts/paypal-activity.csv",
+          "sha256": "59d88928945ab5a92315889ac6e451d172aa456ca249f05a8cb1151cfb7430dc",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/e-processor-payouts/paypal-two-currency.csv",
+          "sha256": "b5092435e0a59a0ff7bbec6c615d1659c11e3f3b098419b4519fe5b70ab5d9ea",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/e-processor-payouts/stripe-payout-recon.csv",
+          "sha256": "bb9ae33049306b24dc23537ca407718467e30d8544dc1c6e140fe4033e3126fd",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/f-pdf-text/expected.md",
+          "sha256": "d3b04beb72daac85ebac71cd0720a1794a4d3f698aaee89a6794ddf61b823bd1",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/f-pdf-text/statement-missing-line.txt",
+          "sha256": "add1d85c6768f13b8d803b92e30597b6def49edf3f85dd37b1702d4e3d7ac507",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/f-pdf-text/statement.txt",
+          "sha256": "56899d09949ff45da6ccc37c35abff9d91c7295b74759b6b7e8c4750aa20376a",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/balances.json",
+          "sha256": "ab01431432e8a4ba8f445da449b86a61661ba55998bbe04fb34bbcda204fa9d3",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/carried-same-id.csv",
+          "sha256": "ce5c968682d608f31584ba730b19123f422d97ffaec9ca4883c812290680fa4d",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/carried.csv",
+          "sha256": "810636affe5d5d71596e5bfaae56315cb8e76a61e0912edb1f256908457a8c91",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/classify.csv",
+          "sha256": "fa228cf816b8bfc01e7aff992a4afb02b1a089dfd9bd0c89542c2c6bbc5ecf5e",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/expected.json",
+          "sha256": "c6c0e84d9647b511357fd55dcf23e3cab57807ddd6a68481467c5f62e72414f4",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/ledger.csv",
+          "sha256": "8d3aabb5c16e1e4462d79e8f2e20063cbd613fc2cb60d1d6dce99ab7429b2f83",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/next-statement.csv",
+          "sha256": "d83ba695c0664c855fe62e500cd11fd16d286cbca13c7704682bac7c86bbd579",
+          "executable": false
+        },
+        {
+          "path": "examples/scenarios/g-stale-timing/statement.csv",
+          "sha256": "d5fc394a7a347ceb509782e66e3b59f08c345b5fe38886b3da49894477c90ae3",
+          "executable": false
+        },
+        {
+          "path": "examples/worked-example.md",
+          "sha256": "18b8b0494f7c1b3a66c6058da924cc6aca8d3db21914f83a711d745519ef47b1",
+          "executable": false
+        },
+        {
+          "path": "references/account-types.md",
+          "sha256": "ba504d4d99dd5949311b1c3414eae55c6cbc7850b120e9519bbd6c376a82a1e8",
+          "executable": false
+        },
+        {
+          "path": "references/bank-rec-layout.md",
+          "sha256": "94122c5760bc84166361a4193388075448b922bbaba0eed96dadfdf0a6f109fd",
+          "executable": false
+        },
+        {
+          "path": "references/books-state.md",
+          "sha256": "4ac296eb87cbc1b75dba4d8e2bd1f42f988439b4b979bf2f36c1004260c3d8be",
+          "executable": false
+        },
+        {
+          "path": "references/input-schema.md",
+          "sha256": "5c088cb81d1dfca2ca269189560867f09d2c849e78dcc4ff4b247a1c91e41480",
+          "executable": false
+        },
+        {
+          "path": "references/ledger-diagnostics.md",
+          "sha256": "ea0da01dd8895435f302accd86cf087635790f652abb373a39026df1c414997b",
+          "executable": false
+        },
+        {
+          "path": "references/processor-clearing.md",
+          "sha256": "b7c8299318639ff63003b6154950063dc829a10ca8b40d0a932a043b12cba5ce",
+          "executable": false
+        },
+        {
+          "path": "scripts/extract_statement.py",
+          "sha256": "3377aa4d4e62453177e2c691a887825a7d0b27d966982238c86a206ba4f51f4a",
+          "executable": false
+        },
+        {
+          "path": "scripts/log_approval.py",
+          "sha256": "00819dade9881b5de656956fd467f0f48fcc4f6cd53a487a5c8745df772c537d",
+          "executable": false
+        },
+        {
+          "path": "scripts/payout_breakdown.py",
+          "sha256": "c0301e02043d184a963dc2f0164ef160b3c637c11d4bbe5fdaed2a6ed5eee8e5",
+          "executable": false
+        },
+        {
+          "path": "scripts/rec_match.py",
+          "sha256": "35dccb7d8f4c58f3a2e2a947c555693dcd95fa68f7b11fab41b34d500e5dc250",
+          "executable": false
+        },
+        {
+          "path": "scripts/write_workpaper.py",
+          "sha256": "1a30a79b95562eaf4434fcb6224f9f2f7d2dedac041f635d0219c9e250a44d46",
+          "executable": false
+        },
+        {
+          "path": "templates/balances.json",
+          "sha256": "c4e1a12d52040c9e75ac7df4bc3b1aa657749b9fcefcf7ac948a8e1d53c9d937",
+          "executable": false
+        },
+        {
+          "path": "templates/carried.csv",
+          "sha256": "9f22ee476949ee8c2dee2a2431b85cc9fea569e0ef63f0fd034ded4382a63cae",
+          "executable": false
+        },
+        {
+          "path": "templates/classify.csv",
+          "sha256": "dbbb044275df3606bb0fc3b49e73495de7af152c2128ab8a74972b11e456d6f5",
+          "executable": false
+        },
+        {
+          "path": "templates/ledger.csv",
+          "sha256": "5d07fd1d868448ea47f1365bc7685b2af1261d9a7b74619db487effc9bc73a46",
+          "executable": false
+        },
+        {
+          "path": "templates/owners.csv",
+          "sha256": "218afd3882378d8cd338ec135c7f52f55c7e75f17aea237e33cf382bbbc4cf09",
+          "executable": false
+        },
+        {
+          "path": "templates/reconciliation-workpaper.md",
+          "sha256": "cc7b30babb519c35077b05f279b489ca245e1efee1345c66e759c3349d8d7729",
+          "executable": false
+        },
+        {
+          "path": "templates/statement.csv",
+          "sha256": "5d07fd1d868448ea47f1365bc7685b2af1261d9a7b74619db487effc9bc73a46",
           "executable": false
         }
       ]

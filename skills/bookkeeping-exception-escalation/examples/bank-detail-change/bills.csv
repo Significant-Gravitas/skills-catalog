@@ -1,0 +1,3 @@
+bill,date,payee,amount,currency,due,bank_account,reference,approver_email
+8790,2026-05-02,Oak & Ash Supplies,1250.00,GBP,2026-06-01,40-22-19 55501234,OA-2231,alex@northgate.example
+8812,2026-05-26,Kestrel Timber,4960.00,GBP,2026-06-06,20-44-10 12340937,KT-5518,alex@northgate.example

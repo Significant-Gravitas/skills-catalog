@@ -1,0 +1,5 @@
+receipt_id,date,amount,currency,merchant,file
+R1,2026-04-03,45.00,GBP,Figma,figma-2026-04.pdf
+R2,2026-04-07,118.40,GBP,Trainline,trainline-0407.pdf
+R3,2026-04-18,14.60,GBP,Pret A Manger,pret-0418.jpg
+R4,2026-04-20,89.00,GBP,Screwfix,screwfix-0420.pdf

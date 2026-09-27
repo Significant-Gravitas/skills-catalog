@@ -1,0 +1,14 @@
+date,account,amount,ref,source
+2026-03-01,Sales - Retainers,5000.00,INV-1036,invoice-register.csv
+2026-03-01,Sales - Retainers,4500.00,INV-1037,invoice-register.csv
+2026-03-01,Sales - Retainers,3500.00,INV-1038,invoice-register.csv
+2026-03-20,Sales - Projects,5200.00,INV-1040,invoice-register.csv
+2026-04-01,Sales - Retainers,5000.00,INV-1043,invoice-register.csv
+2026-04-01,Sales - Retainers,4500.00,INV-1044,invoice-register.csv
+2026-04-01,Sales - Retainers,3500.00,INV-1045,invoice-register.csv
+2026-04-03,Sales - Retainers,3500.00,INV-1049,invoice-register.csv
+2026-04-18,Sales - Projects,5200.00,INV-1047,invoice-register.csv
+2026-04-29,Workshops,900.00,INV-1050,invoice-register.csv
+2026-03-31,Freelancers,5100.00,#540;#541;#544,bills-export.csv
+2026-04-12,Freelancers,3200.00,#551,bills-export.csv
+2026-04-30,Freelancers,3700.00,#553,bills-export.csv
