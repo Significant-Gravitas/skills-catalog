@@ -1,0 +1,15 @@
+{
+  "id": "A-005",
+  "rubric_version": 1,
+  "rows": [
+    {"criterion_id": "C1", "result": "EVIDENCE FOUND", "quote": "Ran the month-end close for the UK entity and signed off the billing reconciliation.", "location": "role 1, bullet 1", "note": ""},
+    {"criterion_id": "C2", "result": "EVIDENCE MISSING", "quote": "", "location": "", "note": "not stated; tested by the SQL work sample"},
+    {"criterion_id": "C3", "result": "EVIDENCE FOUND", "quote": "Authored the refund policy for support and finance.", "location": "role 1, bullet 2", "note": ""}
+  ],
+  "interview_questions": [
+    "C1: Which parts of the UK close did you own, and what happened when a deadline slipped?",
+    "C3: Who followed the refund policy you wrote, and how was it kept current?"
+  ],
+  "needs_a_look": false,
+  "needs_a_look_reason": ""
+}

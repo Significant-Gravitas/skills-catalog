@@ -1,0 +1,36 @@
+{
+  "id": "A-002",
+  "rubric_version": 1,
+  "rows": [
+    {
+      "criterion_id": "C1",
+      "result": "CONFIRM IN INTERVIEW",
+      "quote": "Took part in the quarterly close alongside the controller.",
+      "location": "role 1, bullet 2",
+      "note": "participation stated; own steps and ownership not stated",
+      "quote_check": "exact"
+    },
+    {
+      "criterion_id": "C2",
+      "result": "EVIDENCE FOUND",
+      "quote": "Built SQL reports in BigQuery that reconcile Stripe payouts to the ledger each week.",
+      "location": "role 1, bullet 1",
+      "note": "",
+      "quote_check": "exact"
+    },
+    {
+      "criterion_id": "C3",
+      "result": "CONFIRM IN INTERVIEW",
+      "quote": "Drafted billing FAQ articles for the help centre.",
+      "location": "role 2, bullet 2",
+      "note": "customer-facing writing; whether a team followed it is not stated",
+      "quote_check": "exact"
+    }
+  ],
+  "interview_questions": [
+    "C1: Which steps of the quarterly close were yours, and what did you do when one ran late?",
+    "C3: Who used the FAQ articles you drafted, and did any become an internal procedure?"
+  ],
+  "needs_a_look": false,
+  "needs_a_look_reason": ""
+}

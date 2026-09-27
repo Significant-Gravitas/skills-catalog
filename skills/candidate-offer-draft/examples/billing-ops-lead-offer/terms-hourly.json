@@ -1,0 +1,23 @@
+{
+ "candidate": {"candidate_id": "B-011", "chosen_name": "Sam", "legal_name": "Samira Okafor"},
+ "jurisdiction": "UK (England)",
+ "fcra_disclosure_on_record": true,
+ "terms": {
+    "entity":        {"value": "Acme Ltd", "source": "offer template", "approver": "Luis Ortega", "approved_on": "2026-09-25"},
+    "title":         {"value": "Billing Clerk", "source": "hiring plan", "approver": "Maya Chen", "approved_on": "2026-09-10"},
+    "level":         {"value": "L4", "source": "hiring plan", "approver": "Maya Chen", "approved_on": "2026-09-10"},
+    "manager":       {"value": "Maya Chen", "source": "hiring plan", "approver": "Maya Chen", "approved_on": "2026-09-10"},
+    "location":      {"value": "Leeds office, 5 days on site", "source": "hiring plan", "approver": "Maya Chen", "approved_on": "2026-09-10"},
+    "work_terms":    {"value": "Full time, permanent", "source": "hiring plan", "approver": "Maya Chen", "approved_on": "2026-09-10"},
+    "start_date":    {"value": "2026-11-15", "source": "Maya Chen email 2026-09-26", "approver": "Maya Chen", "approved_on": "2026-09-26"},
+    "base_pay":      {"value": "18.50", "source": "Luis Ortega email 2026-09-26 (L4 band, approved)", "approver": "Luis Ortega", "approved_on": "2026-09-26"},
+    "currency":      {"value": "GBP", "source": "offer template", "approver": "Luis Ortega", "approved_on": "2026-09-25"},
+    "pay_period":    {"value": "hour", "source": "offer template", "approver": "Luis Ortega", "approved_on": "2026-09-25"},
+    "bonus_text":    {"value": "Not applicable for this role", "source": "Luis Ortega email 2026-09-26", "approver": "Luis Ortega", "approved_on": "2026-09-26"},
+    "equity_text":   {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "benefits_source":  {"value": "Acme benefits summary 2026 (attached)", "source": "offer template", "approver": "Luis Ortega", "approved_on": "2026-09-25"},
+    "contingencies":  {"value": ["right-to-work check (template section 4.1)", "background check (template section 4.2)"], "source": "offer template section 4", "approver": "Luis Ortega", "approved_on": "2026-09-25"},
+    "response_by":   {"value": "2026-10-12", "source": "Maya Chen email 2026-09-26", "approver": "Maya Chen", "approved_on": "2026-09-26"},
+    "signatory":     {"value": "Luis Ortega, People Lead", "source": "offer template", "approver": "Luis Ortega", "approved_on": "2026-09-25"}
+  }
+}

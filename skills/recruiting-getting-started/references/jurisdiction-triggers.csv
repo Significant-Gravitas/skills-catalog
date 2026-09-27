@@ -1,0 +1,19 @@
+id,region,condition,flag,sources,checked_on
+us-retention,US,,"US: keep hiring records (applications, resumes, notes) for at least 1 year, and all relevant records once a charge is filed. Harper never advises deleting records.",[44],2026-09-27
+us-salary-history,US,,"US: several states and cities ban asking about salary history; Harper never asks for or records past pay anywhere in the process.",[56][75],2026-09-27
+us-federal-contractor,US,federal_contractor,"Section 503 record-keeping still applies (2 years for 150+ employees or a $150k+ contract, 1 year otherwise); EO 11246 duties under 41 CFR 60-1.12 end when the rescission takes effect on 2026-10-26.",[116][98][50],2026-09-27
+us-background-check,US,background_check,"US background checks: FCRA disclosure and authorisation first; before declining anyone on a report, the pre-adverse and adverse-action steps apply. A plain rejection email is never used for this.",[48][76],2026-09-27
+nyc-aedt,NYC,ai_screening,"New York City: an automated tool that substantially assists screening may need a bias audit no older than 1 year, a public summary, and candidate notice 10 business days before use (Local Law 144).",[52][69],2026-09-27
+il-ai-notice,IL,ai_screening,"Illinois: HB 3773 (in force 2026) requires notice when AI is used in hiring decisions, bars discriminatory effect, and names ZIP code as a proxy.",[72],2026-09-27
+il-video,IL,video_interviews,"Illinois: AI analysis of video interviews needs notice, an explanation and consent, and deletion within 30 days of the applicant's request (AI Video Interview Act).",[55],2026-09-27
+us-pay-posting,US,,"US: several other states and cities (for example New York, Washington, Illinois) also require a pay range in postings; this checklist covers only CA and CO; ask the people lead which apply.",[75],2026-09-27
+ca-pay,CA,,"California: employers with 15 or more employees must put a good-faith pay scale in postings and must not seek salary history (Labor Code 432.3).",[56],2026-09-27
+ca-ads,CA,ai_screening,"California: FEHA automated-decision rules (from 2025-10-01) can make vendors liable as agents and require keeping automated-decision records for 4 years.",[71],2026-09-27
+co-admt,CO,ai_screening,"Colorado: SB 26-189 (effective 2027-01-01) replaced the stayed 2024 AI Act: notice before automated decision-making technology is used in a consequential decision such as hiring, a disclosure after an adverse outcome, and records kept for at least 3 years.",[120],2026-09-27
+co-pay,CO,,"Colorado: postings need pay as a closed range, a general description of benefits, and how and when to apply; 'open until filled' is not enough.",[57],2026-09-27
+eu-ai-act,EU,ai_screening,"EU: AI used in recruitment or selection is high-risk under the AI Act (Annex III 4(a)); the high-risk obligations apply from 2027-12-02 under Regulation (EU) 2026/1744.",[53][109][119],2026-09-27
+eu-art22,EU,ai_screening,"EU: GDPR Art. 22 restricts decisions based solely on automated processing; a named person must make each decision.",[54],2026-09-27
+eu-emotion,EU,video_interviews,"EU: inferring emotion from video or voice in the workplace, hiring included, is prohibited under the AI Act.",[73][53],2026-09-27
+uk-adm,UK,ai_screening,"UK: under UK GDPR Arts. 22A-22D (as amended by the Data (Use and Access) Act 2025, in force 2026-02-05) a significant decision with no meaningful human involvement needs safeguards (information, a way to contest, human review); one based on special-category data is restricted.",[121],2026-09-27
+uk-health,UK,,"UK: no health or disability questions before an offer, except in narrow cases (Equality Act 2010 s.60).",[58],2026-09-27
+uk-retention,UK,talent_pool,"UK: keep recruitment records no longer than needed and tell candidates before keeping them in a talent pool (ICO guidance).",[100],2026-09-27

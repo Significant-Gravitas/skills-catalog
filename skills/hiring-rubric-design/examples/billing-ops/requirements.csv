@@ -1,0 +1,7 @@
+req_id,requirement,group,what_fails_without_it,objective,non_comparative,job_relevant,evidence_method,change_reason,approved_by,approved_on,rubric_criterion_id
+R1,has run a recurring billing or finance process end to end,must-show,month-end close slips without an owner who has done it,yes,yes,yes,resume and interview,,Maya Chen,2026-09-26,
+R2,can write reporting queries in SQL,test-in-process,reconciliation from month 2 needs queries,yes,yes,yes,work sample,,Maya Chen,2026-09-26,
+R3,knows our billing tool,learn-after-hire,day-to-day billing work,yes,yes,yes,,,Maya Chen,2026-09-26,
+R4,degree in finance,removed,,,,,,no work need given by Maya; screening on it would contradict the posting,Maya Chen,2026-09-26,
+R5,rockstar self-starter,removed,,,,,,personality label; no observable behaviour behind it,Maya Chen,2026-09-26,
+R6,writes procedures a team follows,test-in-process,the billing runbook must be in use by day 90,yes,yes,yes,writing exercise and interview,added 2026-09-27 when the rubric showed the runbook outcome had no requirement,Maya Chen,2026-09-27,

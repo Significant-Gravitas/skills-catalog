@@ -1,0 +1,6 @@
+slot,interviewer,criterion_ids,secondary_ids,method,minutes,questions_ref,reason
+1,Maya Chen,C1,,question,30,Q1,
+2,Tom Reyes,C2,,work-sample,45,WS1,
+3,Priya Nair,C1;C3,,question,45,Q2-Q3,
+4,Luis Ortega,C3,,question,30,Q4,
+5,Maya Chen,C4,,question,30,Q5,

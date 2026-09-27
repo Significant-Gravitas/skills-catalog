@@ -1,0 +1,21 @@
+Chris Diaz
+Revenue Operations Specialist
+chris.diaz@example.org | 0113 496 0000
+
+Profile
+Finance operations specialist with a focus on billing systems and reporting.
+
+Experience
+
+Revenue Operations Specialist, Contoso Cloud (2023 - present)
+- Built SQL reports in BigQuery that reconcile Stripe payouts to the ledger each week.
+- Took part in the quarterly close alongside the controller.
+
+Career break (2021 - 2023)
+
+Billing Coordinator, Litware Inc (2017 - 2021)
+- Handled failed-payment emails and card updates for enterprise customers.
+- Drafted billing FAQ articles for the help centre.
+
+Education
+Diploma in Business Administration, 2016
