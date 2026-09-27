@@ -6,7 +6,7 @@ Source: https://github.com/coreyhaines31/marketingskills/blob/5b2c0007766c6a1cf1
 Pinned commit: `5b2c0007766c6a1cf1d53fd8fc73e979e0821022`.
 Licence: MIT; see LICENSE and any bundled notices.
 
-AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.
+AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in the catalog repository's provenance/skills/partner-co-marketing.json.
 
 ## Files and recorded changes
 

@@ -96,7 +96,7 @@ value prop. Not generic ("they're growing") but specific ("they posted
 
 CRM status (owned / net new); company snapshot; recent signals (dated,
 sourced); the contact section if requested; the fit table + rationale;
-relevance hooks; and the suggested next step ("run draft-outreach
+relevance hooks; and the suggested next step ("run sales-outreach-drafting
 targeting [contact]", "low fit - log as disqualified", or "owned by
 [name] - coordinate before reaching out").
 
@@ -107,5 +107,5 @@ tiers:
   files-only:   research brief from web search where available + the uploaded book for the dedup check. No web and no enrichment: say so at the top, fill sections only from uploaded or pasted material, mark the rest not verified, and offer to use pasted site copy or articles
   read-only:    adds the live crm dedup/owner check and richer
                 enrichment tools
-  gated-writes: none (record creation/logging hands off to the the skills that make changes (update-opportunity, log-activity and others))
+  gated-writes: none (record creation/logging hands off to the skills that make changes (update-opportunity, log-activity and others, upstream `anthropics/knowledge-work-plugins/sales`; not installed))
 ```

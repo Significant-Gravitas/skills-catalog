@@ -16,7 +16,7 @@ metadata:
 > Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and file references; see ATTRIBUTION.md in this skill package.
 
 
-# /vendor-check -- Vendor Agreement Status
+# /vendor-contract-status -- Vendor Agreement Status
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](references/CONNECTORS.md).
 
@@ -27,7 +27,7 @@ Check the status of existing agreements with a vendor across all connected syste
 ## Invocation
 
 ```
-/vendor-check [vendor name]
+/vendor-contract-status [vendor name]
 ```
 
 If no vendor name is provided, prompt the user to specify which vendor to check.

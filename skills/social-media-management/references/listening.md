@@ -24,7 +24,7 @@ Use listening when the goal is **commenting and relationships**, not posting. Ty
 - "Surface posts from my 20 target accounts in the last 24h"
 - "What's the conversation around [topic] this week?"
 
-If the user wants to **create** content, use the rest of the social skill. Listening feeds creation (it surfaces angles, language, objections), but the output is different.
+If the user wants to **create** content, use the rest of the social-media-management skill. Listening feeds creation (it surfaces angles, language, objections), but the output is different.
 
 ---
 

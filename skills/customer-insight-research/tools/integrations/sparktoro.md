@@ -120,8 +120,8 @@ SparkToro aggregates from three sources:
 ## Relevant Skills
 
 - customer-research
-- content-strategy
-- competitors
-- ads
+- marketing-content-strategy
+- competitors (upstream `coreyhaines31/marketingskills`; not installed)
+- ads (upstream `coreyhaines31/marketingskills`; not installed)
 - social
 - cold-email

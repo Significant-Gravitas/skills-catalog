@@ -1,6 +1,6 @@
 ---
 name: marketing-content-strategy
-description: When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "content strategy," "what should I write about," "content ideas," "blog strategy," "topic clusters," "content planning," "editorial calendar," "content marketing," "content roadmap," "what content should I create," "blog topics," "content pillars," or "I don't know what to write." Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit. For social media content specifically, see social.
+description: When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "content strategy," "what should I write about," "content ideas," "blog strategy," "topic clusters," "content planning," "editorial calendar," "content marketing," "content roadmap," "what content should I create," "blog topics," "content pillars," or "I don't know what to write." Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see website-seo-audit. For social media content specifically, see social.
 metadata:
   version: 2.1.1
   author: Corey Haines / contributors; retain upstream copyright and notices.
@@ -143,16 +143,16 @@ When the goal of a piece is backlinks specifically, format choice matters more t
 |---|---|
 | Statistics / data roundups | **4.25x** |
 | Glossary / definition pages | 1.47x |
-| Interactive tools / calculators (see **free-tools**) | 1.38x |
+| Interactive tools / calculators (see the upstream free-tools skill, coreyhaines31/marketingskills; not in this catalog) | 1.38x |
 | How-to / tutorials | 1.36x |
 | Original research / reports | 0.80x |
 | Ultimate guides | 0.77x |
 | Thought leadership | 0.74x |
 | Templates / frameworks | 0.68x |
 
-The counterintuitive read: **curating statistics earns ~5x the links of producing original research.** Writers link to whatever makes citation easiest — a maintained stat-roundup page is citation infrastructure, while original research often gets cited *via* the roundups that aggregate it. Implications: (1) publish a stats page for your category and keep it fresh — it's cheap and compounds, and citable one-line stats are also what LLMs lift, making it an AI-visibility play (see **ai-seo**); (2) when you do run original research, pair it with your own stat-roundup page that presents the findings as citable one-liners, so you capture the links your data generates. The formats at the bottom aren't dead — guides, templates, and thought leadership earn their keep on rankings, conversions, and brand. Judge each piece by the job it's for, and don't expect links from formats that don't earn them.
+The counterintuitive read: **curating statistics earns ~5x the links of producing original research.** Writers link to whatever makes citation easiest — a maintained stat-roundup page is citation infrastructure, while original research often gets cited *via* the roundups that aggregate it. Implications: (1) publish a stats page for your category and keep it fresh — it's cheap and compounds, and citable one-line stats are also what LLMs lift, making it an AI-visibility play (see the upstream ai-seo skill, coreyhaines31/marketingskills; not in this catalog); (2) when you do run original research, pair it with your own stat-roundup page that presents the findings as citable one-liners, so you capture the links your data generates. The formats at the bottom aren't dead — guides, templates, and thought leadership earn their keep on rankings, conversions, and brand. Judge each piece by the job it's for, and don't expect links from formats that don't earn them.
 
-For programmatic content at scale, see **programmatic-seo** skill.
+For programmatic content at scale, see the upstream programmatic-seo skill (coreyhaines31/marketingskills; not in this catalog).
 
 ---
 
@@ -441,10 +441,10 @@ Visual or structured representation of how content interconnects.
 ## Related Skills
 
 - **marketing-copywriting**: For writing individual content pieces
-- **seo-audit**: For technical SEO and on-page optimization
-- **ai-seo**: For optimizing content for AI search engines and getting cited by LLMs
-- **programmatic-seo**: For scaled content generation
-- **site-architecture**: For page hierarchy, navigation design, and URL structure
+- **website-seo-audit**: For technical SEO and on-page optimization
+- ai-seo (upstream coreyhaines31/marketingskills skill; not in this catalog): For optimizing content for AI search engines and getting cited by LLMs
+- programmatic-seo (upstream coreyhaines31/marketingskills skill; not in this catalog): For scaled content generation
+- site-architecture (upstream coreyhaines31/marketingskills skill; not in this catalog): For page hierarchy, navigation design, and URL structure
 - **lifecycle-email-marketing**: For email-based content
 - **social-media-management**: For social media content, content atomization, and repurposing execution
 - **product-launch-marketing**: For the ORB channel-type playbook and launch-day distribution

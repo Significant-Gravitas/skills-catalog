@@ -3,7 +3,7 @@
 Quick reference for detecting common security issues in code changes.
 
 **Specialized Pattern Resources:**
-For specific contexts, reference these additional pattern databases:
+For specific contexts, reference these additional pattern databases (upstream Trail of Bits repositories such as `trailofbits/skills` and `crytic/building-secure-contracts`; not bundled in this package):
 
 **Domain-Specific:**
 - `domain-specific-audits/defi-bridges/resources/` - 127 bridge-specific findings

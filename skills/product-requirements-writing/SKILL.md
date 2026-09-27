@@ -25,7 +25,7 @@ Write a feature specification or product requirements document (PRD).
 ## Usage
 
 ```
-/write-spec $ARGUMENTS
+/product-requirements-writing $ARGUMENTS
 ```
 
 ## Workflow

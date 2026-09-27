@@ -6,7 +6,7 @@ Detailed phase-by-phase workflow for security-focused code review.
 
 **FIRST ACTION - Build complete baseline understanding:**
 
-If `audit-context-building` skill is available:
+If `audit-context-building` skill is available (upstream Trail of Bits `trailofbits/skills`; not installed in this catalog):
 
 ```bash
 # Checkout baseline commit

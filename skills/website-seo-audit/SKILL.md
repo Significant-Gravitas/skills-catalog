@@ -21,12 +21,12 @@ metadata:
 
 Find the work that would most improve a site's useful organic traffic, then explain it so a non-expert can act on it. Research broadly; recommend selectively. The report leads with one to three recommendations that either capture meaningfully more qualified search demand or stop a real loss.
 
-Use this when asked for an SEO audit or review of a domain, especially for a shareable report. For expert-facing analysis of a competitor or market, use `competitor-analysis` or `competitive-landscape` instead.
+Use this when asked for an SEO audit or review of a domain, especially for a shareable report. For expert-facing analysis of a competitor or market, use the OpenSEO competitor-analysis or competitive-landscape skills instead (every-app/open-seo; not installed in this catalog).
 
 ## Inputs and project context
 
 - Domain to audit and `projectId` (`list_projects`; if no project matches, `create_project`).
-- Call `get_project_context` first. This skill needs `business_overview`. If it is empty, infer what the business does from the site, confirm it with the user in one question, write it back with `update_project_context`, and continue. Suggest `seo-project-setup` at the end for the rest; never front-load the full interview.
+- Call `get_project_context` first. This skill needs `business_overview`. If it is empty, infer what the business does from the site, confirm it with the user in one question, write it back with `update_project_context`, and continue. Suggest the OpenSEO seo-project-setup skill (every-app/open-seo; not installed in this catalog) at the end for the rest; never front-load the full interview.
 - Reuse research-log results under 30 days old for discovery. A ranking claim that drives a recommendation still needs a live check made during this audit.
 - On finish, write back what is durable with `update_project_context` (a corrected `business_overview`, the pages the report names via `addKeyPages`) and append `{ appendResearchLog: { summary: "Site audit: <domain>. Verdict: <conclusion>" } }`.
 

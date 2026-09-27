@@ -1,6 +1,6 @@
 ---
 name: sales-enablement-content
-description: When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI analysis,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona card,' 'help my sales team,' 'sales materials,' or 'what should I give my sales reps.' Use this for any document or asset that helps a sales team close deals. For competitor comparison pages and battle cards, see competitors. For marketing website copy, see copywriting. For cold outreach emails, see cold-email. For the offer being sold (bonuses, guarantees, pricing structure), see offers.
+description: When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI analysis,' 'demo script,' 'talk track,' 'sales playbook,' 'proposal template,' 'buyer persona card,' 'help my sales team,' 'sales materials,' or 'what should I give my sales reps.' Use this for any document or asset that helps a sales team close deals. For competitor comparison pages and battle cards, see the upstream competitors skill (not installed in this catalog). For marketing website copy, see copywriting. For cold outreach emails, see cold-email. For the offer being sold (bonuses, guarantees, pricing structure), see the upstream offers skill (not installed in this catalog).
 metadata:
   version: 2.0.1
   author: Corey Haines
@@ -362,9 +362,9 @@ For partner sales enablement, see the [tools registry](https://github.com/coreyh
 
 ## Related Skills
 
-- **competitors**: For public-facing comparison and alternative pages
+- competitors (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For public-facing comparison and alternative pages
 - **marketing-copywriting**: For marketing website copy
 - **cold-email**: For outbound prospecting emails
-- **revops**: For lead lifecycle, scoring, routing, and pipeline management
+- revops (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For lead lifecycle, scoring, routing, and pipeline management
 - **pricing-and-packaging-strategy**: For pricing decisions and packaging
-- **product-marketing**: For foundational positioning and messaging
+- **product-marketing-context**: For foundational positioning and messaging

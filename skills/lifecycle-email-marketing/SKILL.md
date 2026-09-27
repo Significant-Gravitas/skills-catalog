@@ -313,10 +313,10 @@ For implementation, see the [tools registry](https://github.com/coreyhaines31/ma
 
 ## Related Skills
 
-- **lead-magnets**: For planning lead magnets that feed into nurture sequences
+- **lead-magnets** (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For planning lead magnets that feed into nurture sequences
 - **churn-prevention**: For cancel flows, save offers, and dunning strategy (email supports this)
 - **onboarding**: For in-app onboarding (email supports this)
 - **marketing-copywriting**: For landing pages emails link to
-- **ab-testing**: For testing email elements
-- **popups**: For email capture popups
-- **revops**: For lifecycle stages that trigger email sequences
+- **ab-testing** (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For testing email elements
+- **popups** (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For email capture popups
+- **revops** (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For lifecycle stages that trigger email sequences

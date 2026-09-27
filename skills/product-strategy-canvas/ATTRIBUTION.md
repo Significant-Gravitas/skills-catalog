@@ -6,7 +6,7 @@ Source: https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219
 Pinned commit: `8607e3b077817f89bf4a9b623246219734ac3be0`.
 Licence: MIT; see LICENSE and any bundled notices.
 
-AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.
+AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/skills/product-strategy-canvas.json.
 
 ## Files and recorded changes
 

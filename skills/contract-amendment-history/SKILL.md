@@ -41,9 +41,11 @@ controlling language.
 4. **Offer follow-ups after output:**
    - "Want me to trace another provision?"
    - "Want a full playbook review of the current agreement as amended?"
-     (routes to vendor-agreement-review)
+     (routes to vendor-agreement-review, an upstream anthropics/claude-for-legal
+     commercial-legal skill that is not installed in this catalog)
    - "Want a stakeholder summary of the key changes?"
-     (routes to stakeholder-summary)
+     (routes to stakeholder-summary, an upstream anthropics/claude-for-legal
+     commercial-legal skill that is not installed in this catalog)
 
 ## Examples
 
@@ -304,6 +306,7 @@ End with the next-steps decision tree per CLAUDE.md `## Outputs`. Customize the 
   legal interpretation question. It flags conflicts and routes to Legal.
 - It does not draft new amendments.
 - It does not compare against the playbook in `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` — that is the
-  vendor-agreement-review skill's job. This skill is purely historical.
+  job of the upstream claude-for-legal vendor-agreement-review skill (not
+  installed in this catalog). This skill is purely historical.
 - It does not infer what an amendment means if the language is
   ambiguous — it quotes exactly and flags ambiguity for Legal.

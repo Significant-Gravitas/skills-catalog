@@ -16,7 +16,7 @@ metadata:
 > Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and local references; see ATTRIBUTION.md in this package.
 
 
-# /ticket-triage
+# /support-ticket-triage
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](references/CONNECTORS.md).
 
@@ -25,14 +25,14 @@ Categorize, prioritize, and route an incoming support ticket or customer issue. 
 ## Usage
 
 ```
-/ticket-triage <ticket text, customer message, or issue description>
+/support-ticket-triage <ticket text, customer message, or issue description>
 ```
 
 Examples:
-- `/ticket-triage Customer says their dashboard has been showing a blank page since this morning`
-- `/ticket-triage "I was charged twice for my subscription this month"`
-- `/ticket-triage User can't connect their SSO — getting a 403 error on the callback URL`
-- `/ticket-triage Feature request: they want to export reports as PDF`
+- `/support-ticket-triage Customer says their dashboard has been showing a blank page since this morning`
+- `/support-ticket-triage "I was charged twice for my subscription this month"`
+- `/support-ticket-triage User can't connect their SSO — getting a 403 error on the callback URL`
+- `/support-ticket-triage Feature request: they want to export reports as PDF`
 
 ## Workflow
 

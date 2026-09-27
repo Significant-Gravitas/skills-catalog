@@ -1,6 +1,6 @@
 ---
 name: pricing-and-packaging-strategy
-description: When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' 'monetization,' 'how much should I charge,' 'my pricing is wrong,' 'pricing page,' 'annual vs monthly,' 'per seat pricing,' 'should I offer a free plan,' 'pricing page teardown,' 'pricing page audit,' 'is my pricing page AI-readable,' or 'can AI read my pricing.' Use this whenever someone is figuring out what to charge, how to structure their plans, or wants to audit a pricing page (for humans and for the AI agents that shortlist tools). For in-app upgrade screens, see paywalls. For offer construction (bonuses, guarantees, value framing, naming) on services/courses/coaching/high-ticket B2B, see offers.
+description: When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' 'monetization,' 'how much should I charge,' 'my pricing is wrong,' 'pricing page,' 'annual vs monthly,' 'per seat pricing,' 'should I offer a free plan,' 'pricing page teardown,' 'pricing page audit,' 'is my pricing page AI-readable,' or 'can AI read my pricing.' Use this whenever someone is figuring out what to charge, how to structure their plans, or wants to audit a pricing page (for humans and for the AI agents that shortlist tools). For in-app upgrade screens, see the upstream paywalls skill (not installed in this catalog). For offer construction (bonuses, guarantees, value framing, naming) on services/courses/coaching/high-ticket B2B, see the upstream offers skill (not installed in this catalog).
 metadata:
   version: 2.1.1
   author: Corey Haines
@@ -251,14 +251,14 @@ Expect — and accept — some churn. The customers most likely to leave over a 
 
 ## Pricing Page Teardown
 
-When someone wants to audit an existing pricing *page* for **clarity, transparency, and AI-readability** (not the pricing strategy itself, and not conversion-rate optimization — that's `cro`), run a **teardown** that scores it across two axes and returns prioritized fixes:
+When someone wants to audit an existing pricing *page* for **clarity, transparency, and AI-readability** (not the pricing strategy itself, and not conversion-rate optimization — that's `conversion-rate-optimization`), run a **teardown** that scores it across two axes and returns prioritized fixes:
 
 - **Human buyer experience** — value-prop clarity, plan differentiation, cognitive load, trust signals, pricing psychology, and price transparency.
 - **AI-agent readiness** — whether the LLMs and agents that increasingly shortlist and compare tools can actually read and quote your pricing: machine-readable prices (not locked in an image or behind "Contact us"), extractable FAQ/objection coverage, per-tier depth stated in text, and structured data. Buyers now ask ChatGPT/Perplexity/Claude "what's the best X and what does it cost?" *before* visiting — a pricing page an agent can't parse loses deals you never see.
 
 **Fast check — the "paste test":** give the pricing URL to a browsing-capable AI (Perplexity, ChatGPT with search, Claude with web) — or paste the rendered page text — and ask "what are the plans and prices?" A clean miss means agents fetching your page will struggle too (a heuristic, not proof every agent fails).
 
-The AI-readiness fixes are usually high-impact, low-effort (put prices in text, add `Offer` schema). Hand implementation to **schema** (Product/Offer JSON-LD) and **ai-seo** (extractability, AI-bot access, `llms.txt`).
+The AI-readiness fixes are usually high-impact, low-effort (put prices in text, add `Offer` schema). Hand implementation to the upstream schema skill (Product/Offer JSON-LD) and the upstream ai-seo skill (extractability, AI-bot access, `llms.txt`); both are from coreyhaines31/marketingskills and not installed in this catalog.
 
 **For the full 10-dimension rubric, scoring, and report template:** See [references/pricing-page-teardown.md](references/pricing-page-teardown.md). *(AI-agent-readiness lens adapted from Kyle Poyar / Growth Unhinged.)*
 
@@ -296,11 +296,11 @@ The AI-readiness fixes are usually high-impact, low-effort (put prices in text, 
 ## Related Skills
 
 - **churn-prevention**: For cancel flows, save offers, and reducing revenue churn
-- **cro**: For optimizing pricing page conversion
-- **ai-seo**: For making the pricing page extractable/citable by AI (the teardown's AI-agent-readiness axis)
-- **schema**: For Product/Offer structured data so machines can read your tiers and prices
+- **conversion-rate-optimization**: For optimizing pricing page conversion
+- ai-seo (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For making the pricing page extractable/citable by AI (the teardown's AI-agent-readiness axis)
+- schema (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For Product/Offer structured data so machines can read your tiers and prices
 - **marketing-copywriting**: For pricing page copy
-- **marketing-psychology**: For pricing psychology principles
-- **ab-testing**: For testing pricing changes
-- **revops**: For deal desk processes and pipeline pricing
+- marketing-psychology (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For pricing psychology principles
+- ab-testing (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For testing pricing changes
+- revops (upstream coreyhaines31/marketingskills skill, not installed in this catalog): For deal desk processes and pipeline pricing
 - **sales-enablement-content**: For proposal templates and pricing presentations

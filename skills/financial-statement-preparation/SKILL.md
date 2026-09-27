@@ -184,7 +184,7 @@ Provide:
 2. Key metrics summary
 3. Material variance listing with investigation flags
 4. Suggested follow-up questions for unexplained variances
-5. Offer to drill into any specific variance with `/flux`
+5. Offer to drill into any specific variance with the `variance-and-flux-analysis` skill (upstream `/flux`)
 
 ## GAAP Presentation Requirements
 

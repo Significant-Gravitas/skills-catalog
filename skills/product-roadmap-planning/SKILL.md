@@ -25,7 +25,7 @@ Update, create, or reprioritize a product roadmap.
 ## Usage
 
 ```
-/roadmap-update $ARGUMENTS
+/product-roadmap-planning $ARGUMENTS
 ```
 
 ## Workflow

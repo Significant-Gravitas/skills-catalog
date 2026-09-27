@@ -131,11 +131,11 @@ Before delivering:
 
 ## Integration
 
-**audit-context-building skill:**
+**audit-context-building skill** (upstream Trail of Bits `trailofbits/skills`; not installed in this catalog):
 - Pre-Analysis: Build baseline context
 - Phase 4: Deep context on HIGH RISK changes
 
-**issue-writer skill:**
+**issue-writer skill** (upstream Trail of Bits `trailofbits/skills`; not installed in this catalog):
 - Transform findings into formal audit reports
 - Command: `issue-writer --input DIFFERENTIAL_REVIEW_REPORT.md --format audit-report`
 

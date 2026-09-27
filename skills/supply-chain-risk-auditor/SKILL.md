@@ -94,8 +94,9 @@ verbatim. State the finding, the datum behind it, and the action.
   future for the consequences of acting or not.
 - Constructive: a recommendation names the action and its cost, never a culprit.
 
-If the `report-writing:writing-style` skill is available in the session, follow it —
-it is the full version of this register.
+If the writing-style skill from Trail of Bits' report-writing plugin (trailofbits/skills;
+not installed in this catalog) is available in the session, follow it — it is the full version of this
+register.
 
 The rendered report carries facts only. The interpretive rules below are instructions
 to you, not content for the reader — do not copy them into the deliverable as caveats

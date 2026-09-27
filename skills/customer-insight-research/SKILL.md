@@ -1,6 +1,6 @@
 ---
 name: customer-insight-research
-description: When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to customers," "analyze transcripts," "customer interviews," "survey analysis," "support ticket analysis," "voice of customer," "VOC," "build personas," "customer personas," "jobs to be done," "JTBD," "what do customers say," "what are customers struggling with," "Reddit mining," "G2 reviews," "review mining," "digital watering holes," "community research," "forum research," "competitor reviews," "customer sentiment," "PMF survey," "product/market fit survey," "customer interview questions," "interview outreach," "Sales Safari," or "find out why customers churn/convert/buy." Use for analyzing existing research assets, mining online sources, AND running primary research (interviews and surveys). For writing copy informed by research, see copywriting. For acting on research to improve pages, see cro.
+description: When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to customers," "analyze transcripts," "customer interviews," "survey analysis," "support ticket analysis," "voice of customer," "VOC," "build personas," "customer personas," "jobs to be done," "JTBD," "what do customers say," "what are customers struggling with," "Reddit mining," "G2 reviews," "review mining," "digital watering holes," "community research," "forum research," "competitor reviews," "customer sentiment," "PMF survey," "product/market fit survey," "customer interview questions," "interview outreach," "Sales Safari," or "find out why customers churn/convert/buy." Use for analyzing existing research assets, mining online sources, AND running primary research (interviews and surveys). For writing copy informed by research, see copywriting. For acting on research to improve pages, see conversion-rate-optimization.
 metadata:
   version: 2.0.2
   author: Corey Haines / contributors; retain upstream copyright and notices.
@@ -306,11 +306,11 @@ Don't ask all five at once — lead with #1 and #2, then follow up as needed.
 | When to hand off | Skill |
 |-----------------|-------|
 | Writing copy informed by the research | `marketing-copywriting` |
-| Optimizing a page using VOC insights | `cro` |
-| Building a competitor comparison page | `competitors` |
+| Optimizing a page using VOC insights | `conversion-rate-optimization` |
+| Building a competitor comparison page | competitors (upstream `coreyhaines31/marketingskills`; not installed) |
 | Creating a churn prevention strategy from churn research | `churn-prevention` |
-| Planning paid ads informed by research | `ads` |
+| Planning paid ads informed by research | ads (upstream `coreyhaines31/marketingskills`; not installed) |
 | Writing cold email using research on pain/trigger | `cold-email` |
 | Translating customer research into an ICP for outbound | `prospecting` |
-| Planning content based on discovered topics | `content-strategy` |
-| Rolling research into a comprehensive marketing plan | `marketing-plan` |
+| Planning content based on discovered topics | `marketing-content-strategy` |
+| Rolling research into a comprehensive marketing plan | marketing-plan (upstream `coreyhaines31/marketingskills`; not installed) |

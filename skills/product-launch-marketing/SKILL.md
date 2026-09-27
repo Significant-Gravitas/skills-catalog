@@ -1,6 +1,6 @@
 ---
 name: product-launch-marketing
-description: When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'how do I launch this,' 'launch checklist,' 'GTM plan,' or 'we're about to ship.' Use this whenever someone is preparing to release something publicly. For ongoing marketing after launch, see marketing-ideas. For the offer being launched (bonuses, guarantees, scarcity, naming), see offers.
+description: When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'product update,' 'how do I launch this,' 'launch checklist,' 'GTM plan,' or 'we're about to ship.' Use this whenever someone is preparing to release something publicly. For ongoing marketing after launch, see the upstream marketing-ideas skill (coreyhaines31/marketingskills; not installed here). For the offer being launched (bonuses, guarantees, scarcity, naming), see the upstream offers skill (coreyhaines31/marketingskills; not installed here).
 metadata:
   version: 2.0.2
   author: Corey Haines
@@ -384,9 +384,9 @@ Even small changelog updates remind customers your product is evolving. This bui
 
 ## Related Skills
 
-- **marketing-ideas**: For additional launch tactics (#22 Product Hunt, #23 Early Access Referrals)
+- **marketing-ideas** (upstream coreyhaines31/marketingskills skill; not installed here): For additional launch tactics (#22 Product Hunt, #23 Early Access Referrals)
 - **lifecycle-email-marketing**: For launch and onboarding email sequences
-- **cro**: For optimizing launch landing pages
-- **marketing-psychology**: For psychology behind waitlists and exclusivity
-- **programmatic-seo**: For comparison pages mentioned in post-launch
+- **conversion-rate-optimization**: For optimizing launch landing pages
+- **marketing-psychology** (upstream coreyhaines31/marketingskills skill; not installed here): For psychology behind waitlists and exclusivity
+- **programmatic-seo** (upstream coreyhaines31/marketingskills skill; not installed here): For comparison pages mentioned in post-launch
 - **sales-enablement-content**: For launch sales collateral and enablement materials

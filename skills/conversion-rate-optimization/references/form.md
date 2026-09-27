@@ -416,7 +416,7 @@ Ideas to A/B test with expected outcomes
 
 ## Related Skills
 
-- **signup**: For account creation forms
-- **popups**: For forms inside popups/modals
-- **cro**: For the page containing the form
-- **ab-testing**: For testing form changes
+- signup (upstream coreyhaines31/marketingskills skill, not installed here): For account creation forms
+- popups (upstream coreyhaines31/marketingskills skill, not installed here): For forms inside popups/modals
+- **conversion-rate-optimization**: For the page containing the form
+- **product-experiment-design**: For testing form changes

@@ -6,7 +6,7 @@ Source: https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c
 Pinned commit: `574ed3624aebd0418c7e96cd101262f30210ab26`.
 Licence: Apache-2.0; see LICENSE and any bundled notices.
 
-AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.
+AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/skills/portfolio-company-performance-review.json.
 
 ## Files and recorded changes
 

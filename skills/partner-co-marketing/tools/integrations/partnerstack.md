@@ -215,8 +215,8 @@ All responses follow the format:
 
 ## Relevant Skills
 
-- referrals
-- affiliate-marketing
-- partner-enablement
-- saas-metrics
-- launch-sequence
+- referrals (upstream coreyhaines31/marketingskills skill; not in this catalog)
+- affiliate-marketing (upstream coreyhaines31/marketingskills skill; not in this catalog)
+- partner-enablement (upstream coreyhaines31/marketingskills skill; not in this catalog)
+- saas-metrics (upstream coreyhaines31/marketingskills skill; not in this catalog)
+- launch-sequence (upstream coreyhaines31/marketingskills skill; not in this catalog)

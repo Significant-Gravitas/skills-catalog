@@ -25,11 +25,11 @@
     },
     {
       "slug": "account-reconciliation",
-      "tree_sha256": "413f518844b47d09edfff66ff0b5ace087930434f51e9e115fe266e8d43a35d1",
+      "tree_sha256": "bf72f5a58a20d94d350ed5a5fbfdf369082c2d916dde60e8e7a5fd5a01d66ec8",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "4681298e7008cbe7a027d8893f05217b0a8dd8acbdb96a65ec2a51ec6ad34fd1",
+          "sha256": "6699d30dea95b9add85402473f4bc0fb4f880eef320685c5191c4081bfefa88b",
           "executable": false
         },
         {
@@ -319,11 +319,11 @@
     },
     {
       "slug": "business-process-documentation",
-      "tree_sha256": "5fbd37b03b4dd9f97a70c50f0abeb4ef69c109038e1f6901333cff0f7ad1a636",
+      "tree_sha256": "e8c9eacc6aedb11d67c2f1bf766e4c8cad5322b080670cafd48792796d94ed73",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "59a4dc9891b7ddb5dbb94d09285ecda1909909ce5d83d2ee6125106b664994a0",
+          "sha256": "7ec507bc8757634783fcc756aa3185137e98783bc0dc77bd39291c5b7410e158",
           "executable": false
         },
         {
@@ -345,11 +345,11 @@
     },
     {
       "slug": "business-process-optimization",
-      "tree_sha256": "42c4e6f5566c8b83cd2c3eb320157eddd0ce7d6ebcd9b5d5878fc77ba60396cb",
+      "tree_sha256": "341e02bd439fd33ccb856e7724862127e5ab91edc36fc179dcac5b0b8769c909",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "ee2596e62205de4e6be75de24acd2e811090ff6eaa5a05a6ee3688aeed18f3a5",
+          "sha256": "3d370e2ada4e781c212124fd9ffa27a0eaf0fa0b77a905814f401af0b7a4d4cb",
           "executable": false
         },
         {
@@ -410,11 +410,11 @@
     },
     {
       "slug": "candidate-interview-planning",
-      "tree_sha256": "3962920c589c572023491dab15df02070599854be5d8874fe1f6dfbc679feffb",
+      "tree_sha256": "ba48d8fc441ca3d2711974a81de83d583a1dc6654f265183de491630a0783622",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "10ea2a37b77cc0a3fafb3e1c59c87d9fe631ee473e6575f7ee70243ebf2f0f1b",
+          "sha256": "17ae4d0f6dcfb3f7cae71bda910544a0b5555ada1aa7b27d8e53d2870a8dbb7c",
           "executable": false
         },
         {
@@ -577,7 +577,7 @@
     },
     {
       "slug": "code-change-security-review",
-      "tree_sha256": "5bb5a5942cedb7f75879e39e32195e2a8357674e2cfd5851c0ab0f3b60f41844",
+      "tree_sha256": "99d2cd2c389fdcedeea67324b3fdfa94ff276c86d0c2fae0b22dc01f544f6b7f",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -591,7 +591,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "9903ac72f297eddf500b045781030063f94a914d71bb9e7e25ae603c0032eecd",
+          "sha256": "5bed76bae1f142faf107802e95494083211d801adc471044b8ed6c97da66c8f1",
           "executable": false
         },
         {
@@ -601,12 +601,12 @@
         },
         {
           "path": "methodology.md",
-          "sha256": "16b335d24cf2145e3dc4a37f50056550d29db2efa20e6df78fec95ec1e6fb0b4",
+          "sha256": "c0577c21ce1147e2acfde17dc865e1955269851c35706e52324f3b8c043e2fb4",
           "executable": false
         },
         {
           "path": "patterns.md",
-          "sha256": "52abb18abbc73502a3d3b2f36a7a035adc1db40fd812d1d5424cf065036a06e9",
+          "sha256": "3e2bb54c0b6ab94fa022801bd591e57d72de329392f7670df95849aeaf6e57a6",
           "executable": false
         },
         {
@@ -629,11 +629,11 @@
     },
     {
       "slug": "code-review-quality",
-      "tree_sha256": "4a17741ea46f41f6d5516032fda3a833bb5eb4b1d5997b00e0a4087f4b791b7c",
+      "tree_sha256": "9e06423e54c28a8092e601218514251388bc5e876e27cb6456c6d4216eed3187",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "1fe4c333ae955d30ef97c82e950db961337efadbb478617c6f6b97b5088e2bf7",
+          "sha256": "ba82d996b39b556ba9d5dde88af16025c2e6306ecaf76c5a34af4977aadad910",
           "executable": false
         },
         {
@@ -724,11 +724,11 @@
     },
     {
       "slug": "company-policy-lookup",
-      "tree_sha256": "c25e7cedcaa67fd8acf3fcacc764063ae7ca2b8c0ce8e052de388cd6645a49be",
+      "tree_sha256": "1080749dd0edb43a8d058358099fbaa5927526bbfb3aa19d4be5252ba240638e",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "77c26d5d51ce718bd39066f59fcdf30c534d3d37ae29f45f53d6eb15b213e87b",
+          "sha256": "ea6f6024d963723583429a2b2c5d49bb04adbdc3bdcedbcd186c6b9f35537b20",
           "executable": false
         },
         {
@@ -761,7 +761,7 @@
     },
     {
       "slug": "competitor-profiling",
-      "tree_sha256": "8444a4325673a0aefe36de9e5caf74d236051c92d2da3146a996b978b2dd7949",
+      "tree_sha256": "1da19215781a47ae07156db3538797cb4707fe29d55cd992084428df3f82bf19",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -775,7 +775,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "2cf9c9b8d377fd49a6d62856b842109accdd3c24397235455a1ea87be11bdb10",
+          "sha256": "dc71ef19fcaa85bb0c91a6072c17f17911bda59f553087ea80826c2c596c10e0",
           "executable": false
         },
         {
@@ -825,11 +825,11 @@
     },
     {
       "slug": "compliance-evidence-tracking",
-      "tree_sha256": "8646a6c4fca17e0eade8bfcb543173072e2fe4b36795567c7135e51c996f3f7c",
+      "tree_sha256": "1b1fc825627b75e1108875048eb42f908c402bb53a3db184cfbbbea95ec8c1ab",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "448cb57b891f378c47e5218526f28cdb8b0af47a1507cdc8d772e8c39356db6d",
+          "sha256": "9c204393cc4c12b4076ca29146d745f832bbdf2b0c7d7003e46e76633fccae50",
           "executable": false
         },
         {
@@ -890,7 +890,7 @@
     },
     {
       "slug": "contract-amendment-history",
-      "tree_sha256": "a8898c5efc6799c0f06cc9521750b0cc28469797100709e5e9a820ba1891c253",
+      "tree_sha256": "123c9bd21200e55f55b0e1088dcfcf81cccfe5f4d59e522e85d1e92208c7cd69",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -904,7 +904,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "805491d9583b1f53e38d32009d12f333100a6f142cd25e6bc0cea92d6c2976c7",
+          "sha256": "5495cfa6bab10e468e2485d38c71a4284d547a2c7e97bb97a2a8446bddd5541c",
           "executable": false
         },
         {
@@ -919,7 +919,7 @@
         },
         {
           "path": "references/practice-profile-template.md",
-          "sha256": "8c5844f7b88aa8574e74613966090bb69e21bb96768049f34454a52066bc6596",
+          "sha256": "733d75e77f437e88232080b30751c8eebf68a4fc771659966813d8d17857fea4",
           "executable": false
         }
       ]
@@ -992,11 +992,11 @@
     },
     {
       "slug": "conversion-rate-optimization",
-      "tree_sha256": "12b973ebda3c57ca628f97adae4a6bab0d56a531ff7e379797405255a9998b47",
+      "tree_sha256": "a02c4fc326607e30e36892177b4245edd71bd0d4967832ef8e897b20c1aee90c",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "01d274358970c9ae4a57916f10507c2ecc9065dee40fed62d7a1ad59d56d0bf6",
+          "sha256": "e06286d74daa46c12b8e5d5b1ce27ac606dfb3e469ff0bd9e9b96c10d4744757",
           "executable": false
         },
         {
@@ -1006,7 +1006,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "4c37a93365b9a8002305daf1ca1460d42c0086977731de3864651f3ca008b11f",
+          "sha256": "e3ca812907a76c74fab21b9976a2d33aa90a668bc052ed117fee5a28e8b7a017",
           "executable": false
         },
         {
@@ -1016,7 +1016,7 @@
         },
         {
           "path": "references/form.md",
-          "sha256": "e3115b0fdfb3968915b8e3acdc32a6e5f1d2c6a335ebbed25bee9b601ec573d7",
+          "sha256": "19477c15fc410349480d6d49d308785d20d37917e35a678cc2aede51f581fc9f",
           "executable": false
         }
       ]
@@ -1089,11 +1089,11 @@
     },
     {
       "slug": "customer-escalation",
-      "tree_sha256": "b477f3a3fd2cd3846f5ed8c5537748fce99fcf267bdd0b270baf6525831818ca",
+      "tree_sha256": "6813c28afc56c5ed024c48e84ba4887ac78076cfbb93baaf3b961e35d7ec3827",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "4f114e486043486967da4038161838694d43b35e8f9755c8b18e1f11f7221f82",
+          "sha256": "02adb5b19a6bf8409b2e47ddcd8e3c929994b684752a70d0500df0bc5977c7d6",
           "executable": false
         },
         {
@@ -1126,7 +1126,7 @@
     },
     {
       "slug": "customer-insight-research",
-      "tree_sha256": "60b6cd93c94b624b47a29f821974ebd3bdbf1965d9f24bc9257f69a36b2bf2c9",
+      "tree_sha256": "dce43cb4e1af9a8fa971388b6a2a11f6bd7c3280cfcae2b6eef51bb709e20bd9",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -1140,7 +1140,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "b2a7cd93485a93b84f18314fc3fd859094b67c1c94c4153475c2431bbb16225c",
+          "sha256": "5b1a4f3911d42b9700bbf6eaccf40265c32eb4ca40893c1fbf75b9e190f546df",
           "executable": false
         },
         {
@@ -1155,7 +1155,7 @@
         },
         {
           "path": "tools/integrations/sparktoro.md",
-          "sha256": "00961feb89821d20b61ecc0a7bef196669190eac8bb2bbe8029fd596c5fd6118",
+          "sha256": "16f1ee96ed4ec2f25b82c67dc12c3a2568e1274cd791b10972f35f370e7fb475",
           "executable": false
         }
       ]
@@ -1173,11 +1173,11 @@
     },
     {
       "slug": "customer-response-drafting",
-      "tree_sha256": "df22b6297385ae464c00dc2cd01aaddcfbf8172fdb008bcbf0d49a5440d3793f",
+      "tree_sha256": "9c87d00b0d46951291a8b6e5b987f4e234e59184c0817245c7e84b442d923aca",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "3af4d4f470d23358d4e030d552f68c0d54cac69f40728f80b9368ff8501ac659",
+          "sha256": "396187c484ba41df99107086328187b2c13a79c9da1ea119d4b5903e8fd7460b",
           "executable": false
         },
         {
@@ -1187,7 +1187,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "4aef491e7cd95032a7759a088980fe4fb574d274511cc9f147bf185aeb651197",
+          "sha256": "796cd066bb9e888092c6a3c6baa5e9dc634eb64b4807da7f076f83f74e7ddd7a",
           "executable": false
         },
         {
@@ -1221,11 +1221,11 @@
     },
     {
       "slug": "customer-support-research",
-      "tree_sha256": "2e705ed4ff8a7b21a50cfd6615cc56c5c721a85a5a37ff6918ab8d2ac2a5f658",
+      "tree_sha256": "ae480703ffa6468fc6d2f72603edd6d468a81a62d988c39ddaef55311afad0df",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "a11831b86f71ac3d5525e3aa58b61fd171514f49abd7acb2983abf412b23bce2",
+          "sha256": "0826dcd77e7a681796ed86f8c6647e4ec1944118a2453ff6baaf928779104c68",
           "executable": false
         },
         {
@@ -1280,11 +1280,11 @@
     },
     {
       "slug": "data-visualization",
-      "tree_sha256": "bc680212a64b904129371212c98c6cddc903f4ebf846243be1e5e2219f99b7fb",
+      "tree_sha256": "ddb6fa91c9888e8a11c4fee090e3f089f07865ee55d14dfe71b181a4ec41a97f",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "b040679d39025eadf3a298392bcf809c56aecfc73b288a3cb5015fa5a0a20c2f",
+          "sha256": "adea25f5a91c20f62f22c88d8a74ddf50cfb70f98f813bc2ded9bfa300e762c7",
           "executable": false
         },
         {
@@ -1301,11 +1301,11 @@
     },
     {
       "slug": "dataset-exploration",
-      "tree_sha256": "16054cea60e2a30555711246136b829ace317434385c449cd3d54d41eea78d97",
+      "tree_sha256": "99435b494792491764b25447f7decda41045007b11f0cd540b9a8931b2f089cc",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "6f7bfe5a506fc1380e7ea3b809cdeb8353c8d4e3c75a025559ed206d39d89c0a",
+          "sha256": "bcf49da8142084a34d8ef7238e1d572f8d9dbb5e5d0fedef3acb3c991adab18b",
           "executable": false
         },
         {
@@ -1536,11 +1536,11 @@
     },
     {
       "slug": "employee-onboarding-planning",
-      "tree_sha256": "6bce8c25fd0ce23b39b92dcd641c9ecacf00cc6e42e8c43c0ffc7f704d3a80ca",
+      "tree_sha256": "03c33a81df0728dfb97ea1c82977ac3cd13663fc2c72003effa776206e872714",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "d014f42dfec5aaf6c4e236d36c87e7a83b7e1cc1aff5bfc4904ff9c432cf2c02",
+          "sha256": "15af5491f8fc89d9a13aeb4ef2b6b6612cb4829911ee792675d4adb2e5e3582a",
           "executable": false
         },
         {
@@ -1562,11 +1562,11 @@
     },
     {
       "slug": "employee-performance-review",
-      "tree_sha256": "358d04ec0f58d51d6c2cff80673f6fda018a8404fbd2a3955c650ceb7b74a3c2",
+      "tree_sha256": "ae5c7cac6b6a1540472b562e9d1879f638e527ace7fd3aa72c2ab3794febd2f6",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "99e02ffe0ee1fe367bc76107e26b2f7674ff75cee4b50edef5515baee4514bec",
+          "sha256": "eacda6a2eab6940c8fe1203e99f762daab2a10ac1889a86eded7f7fa842d5295",
           "executable": false
         },
         {
@@ -1588,11 +1588,11 @@
     },
     {
       "slug": "employment-offer-drafting",
-      "tree_sha256": "3eba76f598af513fd81a1c836878bcf020337f38ab269e0d69a178ddc6c295cf",
+      "tree_sha256": "9998f4846562b563480b31d028cff178f18776cbf39dfea72f47b86a2a27680b",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "2c8fe591e06cc49af57bb167002e1f52f920eab18a537b7e60ad82a76e0a298e",
+          "sha256": "f1d44df9f086034601559d363a4ecd1f353c0059d38508ed4aaf3b8d6950336b",
           "executable": false
         },
         {
@@ -1602,7 +1602,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "06897d2f3364d134ef6483f6711723f3beada4e2d3ce67716afb4e12ccdb584b",
+          "sha256": "4465f893d3609db5500d7857b4a3cf9793de90df67eacbeb844c5f27b14c14c3",
           "executable": false
         },
         {
@@ -1779,11 +1779,11 @@
     },
     {
       "slug": "financial-statement-preparation",
-      "tree_sha256": "760e67af415a1af7dfa22bfec5880544828e1b2e8e8e66f39a44b7e9794a3e7b",
+      "tree_sha256": "37fa7fc06499428ecbb76654edb23c17423672bda42c25d9422cdc21dd3db94e",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "f8a32033bb5b8ae1949ad70bfc6c464800d74dbebeaefef00747ca00d3eb062e",
+          "sha256": "583b202558318d9f31ae342037232442f4f291d6d83e4eba582205cec44022e2",
           "executable": false
         },
         {
@@ -1793,7 +1793,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "619c9c6fa1b28b6a15607d5657f7ecf8b5d0583ab87f76d58bd5e31b6597bf6e",
+          "sha256": "c6a403ca72ea82aed28491a39fc7be6099c34552dab103634259015e5f295e68",
           "executable": false
         },
         {
@@ -1871,11 +1871,11 @@
     },
     {
       "slug": "go-to-market-strategy",
-      "tree_sha256": "bb317a717f36690f74b546817117759cde4eaa89646652d654a46d585f30e87c",
+      "tree_sha256": "15732b38044b030b6f972683f5c7ba496ee4946f1f42c8960de021adb71c18d2",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "5ea09542e2f2e57f4fe308b5f72fff8c281502165bfc4878c42f712a2bb898ee",
+          "sha256": "3e215ecb40d2560ff1758f70ed922f3fe345617fd99968869c0a98ef57858bc7",
           "executable": false
         },
         {
@@ -2230,11 +2230,11 @@
     },
     {
       "slug": "knowledge-base-article-writing",
-      "tree_sha256": "bc6dd0e18af716f6085a182bad34248d6eef8b256c7f4ba2b8561d25da6e914d",
+      "tree_sha256": "079b17d293e671183fa5a6aff47265f67ee40fe241db0921311070e28d2a909d",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "b591a916f9aba99714b77924bd0ba78a4b0c1c3fe67df6142678a3cbd9901364",
+          "sha256": "9ce46cfa4e3cb79680cb8b33a93dc278c99a2190a80d865df79a6b579483e4f8",
           "executable": false
         },
         {
@@ -2311,11 +2311,11 @@
     },
     {
       "slug": "legal-meeting-briefing",
-      "tree_sha256": "c2ee52bb6d6b1262e80236145b3827f035c8fdd0a89d860743fa0ea35cdfc3b0",
+      "tree_sha256": "6ee0ffa202745de22df91f9835268d8167a0727c1cff9150e8e64c704f5afd80",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "fc60f6c5942634c2a85a2ee3a9972dcbc52b204b5a19c4f4f06b0a0a53ebb48f",
+          "sha256": "87fbc27d2ffb45de807b3afb90b9542fb8c7196e47abce8a6e15925bc6d55158",
           "executable": false
         },
         {
@@ -2332,11 +2332,11 @@
     },
     {
       "slug": "legal-response-drafting",
-      "tree_sha256": "4962fbd60556b03faa06e4984fac25df9fc8c23206ddba6666ee108a2b7af673",
+      "tree_sha256": "26bd0098622b929f6469fd5da43ce7ad0b4372b2f6c2467ede29d271b35df9e8",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "3081c8f56f8f5d7f585cbca1fb52465d0ef71b569a96b05064c50c15b111f0a7",
+          "sha256": "aa49ff2651036d67b829e364926752756831e38ddbdf28ace4c63b665b386b6c",
           "executable": false
         },
         {
@@ -2369,7 +2369,7 @@
     },
     {
       "slug": "lifecycle-email-marketing",
-      "tree_sha256": "8a31f10ee0f29b7e83d1908bfc6176794e71f34ae8bcf98afef6da3f0d724f16",
+      "tree_sha256": "08605b8db5b93efa3f450bee32b625367b31b310ebc39a7abda251e8a8c9547e",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -2383,7 +2383,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "808f2d624713e426a4df3e3c21b2ef0d0c07fe34540c1eee1b40cbe8d6c9192a",
+          "sha256": "c65e2aeea83981a085a52bc25210b1e28ba98dca1ea4141cc820572742afc0bd",
           "executable": false
         },
         {
@@ -2490,11 +2490,11 @@
     },
     {
       "slug": "market-size-estimation",
-      "tree_sha256": "a60ad1c85a0b6b47ef30b40a6b0e39712560f78815e7fbd605240f4b9d4e6b85",
+      "tree_sha256": "f415d7987f903bc20b4092f16358a568a9a1fe5a9d335dfa984e02e6290bc67c",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "86cf782197b5ece5bcc9ad44eb450c0ca443f92386cfec4959009b0534584ffc",
+          "sha256": "55b5181f47a6a6be2e2db444600515be4ba98301386d68d9aaf03937bef5a52a",
           "executable": false
         },
         {
@@ -2511,7 +2511,7 @@
     },
     {
       "slug": "marketing-content-strategy",
-      "tree_sha256": "4d61f8e151ee5cfa40e8c43f42cc5b667271c19d508dcb561c951e922c22bd0f",
+      "tree_sha256": "2d5e29fd16936dc54574d4dd301ce1074e974918e6dcf741d596ab408ebc6fc3",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -2525,39 +2525,39 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "64f7f42547c28adb60a4f42f5abf6950ba0f501fc58e439a5d70f3401a4b1e45",
+          "sha256": "a631c9369b90e279333c5e5060e3b2d2e1f76faa26752a0ce3a344c489f541a4",
           "executable": false
         },
         {
           "path": "references/content-distribution.md",
-          "sha256": "3e896593ff7e10d8800977072e997c289bf434c256a7d88cd0874d893e33e296",
+          "sha256": "842f87b9c15900235eae7f9ad2eba511dfec87ba6a315d6a4a156c059e3ab130",
           "executable": false
         },
         {
           "path": "references/headless-cms.md",
-          "sha256": "b348deb99f07cb8f546e831c447f256d7231e0f2c812b784198d1a01ba529f7e",
+          "sha256": "1b7dbba43a527245d8295f5c0c234d4f901495da31f9cf9aed5d1854a4f9e825",
           "executable": false
         },
         {
           "path": "tools/integrations/contentful.md",
-          "sha256": "17526825260159bc60b3c8ba6e644acd30a7126397da1dc2b633f214037a1686",
+          "sha256": "8009b7a91c8158df952415a8c3491e3819ba51c57d89f22378f1ad8a80d67b24",
           "executable": false
         },
         {
           "path": "tools/integrations/sanity.md",
-          "sha256": "f084bbd1d7d38f142c67c7877e4d57fc46f0452c145741eeee293b90fd34467a",
+          "sha256": "1c3ccf3e74313fcd2ef5460f58ad0f773ae9b978e0646c70451a72d81d3a4d2c",
           "executable": false
         },
         {
           "path": "tools/integrations/strapi.md",
-          "sha256": "e78e9898f0aa05c8ef1d435a28c0c87467c8e00bfbfb9b9d7be11ff796bd654b",
+          "sha256": "d7b6a8788936082c9f2157ce1fcb111cbad1d29c32cdfb7f70fa4bc2f561c8b6",
           "executable": false
         }
       ]
     },
     {
       "slug": "marketing-copy-editing",
-      "tree_sha256": "342d42f79aa7f5e0809136613e76f426400be4a731dc1947a6cd879a0d31d256",
+      "tree_sha256": "20cd314b9bdb6102e1c2fa73c9f5d8b7b744427a05225c669ac678337f4b5e65",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -2571,7 +2571,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "2b19a451776c9377201a74294b757eae23bb6008a6544fe440e2d256d856ac9b",
+          "sha256": "43eabe004cc2db4843dc9a0cc8d3b913a45498912c13d3acd5370bbcd6029871",
           "executable": false
         },
         {
@@ -2581,7 +2581,7 @@
         },
         {
           "path": "references/content-refresh.md",
-          "sha256": "8a3a2d301bb2b8b2a780f5bef43093ab42295041b2fea2a9caeca2421ef3c79b",
+          "sha256": "33dd3304dc2fb14ecaae8c641e9fbda2d12c8b1671966d5322e6822b836b14ea",
           "executable": false
         },
         {
@@ -2593,7 +2593,7 @@
     },
     {
       "slug": "marketing-copywriting",
-      "tree_sha256": "bff4990bf6e4e1e16614cf3c1defd2c868f1a84241838babd38a576308077acf",
+      "tree_sha256": "ac81ec3c1f02c32127897d3737377e6fc6a440ee1b390344ea6e436dd274de2e",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -2607,7 +2607,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "4a786b626b721a3e2584e1b7116e495ac6f94cab541b36d8284482a78fb6ccb4",
+          "sha256": "acde0ee9e347bffd80e21f30ebf20357dc28568fc4af8382eb168e1b2088aefe",
           "executable": false
         },
         {
@@ -2857,11 +2857,11 @@
     },
     {
       "slug": "month-end-close-management",
-      "tree_sha256": "60a6bcaddf0ab35e6eb6d6e7a21428315105dc01f01242b9635182ce2246d111",
+      "tree_sha256": "7ee52dacf62d4fceea59f1354b920440c77ee36e4735808eb777f5e8736a5618",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "c2cc4c4d7ed46686498eb23060c379107ef4fd5cec7e279d00d0b812e9c8f087",
+          "sha256": "ab2f42cd1a9818a00045107e275f0f95f29fa8f2cbb15053429b7b144cd0c1c4",
           "executable": false
         },
         {
@@ -2911,11 +2911,11 @@
     },
     {
       "slug": "multi-source-research-synthesis",
-      "tree_sha256": "0b69d9a3cb51dbc57bda69b9197df51b890b8fc3b5cb65137de60d6cb2621c16",
+      "tree_sha256": "44cd5c7058711945f9f9424f2d4b9e4fbe0f906c7c82515f396f8273a47a4fef",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "99e58d4e1276405ff9465e60783d7d99e8e8ed3068cf72e249d7b46410d7dc74",
+          "sha256": "17b86d46aec3b28f741e6ccb2df86283d64d40093cc36d79ab6f18d040b2aebf",
           "executable": false
         },
         {
@@ -2959,7 +2959,7 @@
     },
     {
       "slug": "nda-risk-review",
-      "tree_sha256": "8e45dd96f6d1c10d784f8a3cb424faaee9c1b8100e76c9494b7172f7af7561c5",
+      "tree_sha256": "6982297df1f675576e230938b39e71c4421dd9e99169eccaa8a52615383fe17d",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -2973,7 +2973,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "25c07c5b924838885d717f9caa734a6a43e47f7fe10d4ffbb66dcbe27a1d5034",
+          "sha256": "daefc2c239ec6a67424060f9ea5d8b0a8012ef16582ac0c1134d9bef8a64fc88",
           "executable": false
         },
         {
@@ -2988,7 +2988,7 @@
         },
         {
           "path": "references/practice-profile-template.md",
-          "sha256": "8c5844f7b88aa8574e74613966090bb69e21bb96768049f34454a52066bc6596",
+          "sha256": "7367e7f9751f1843f8e46e770ec59487514e7306b8782aaa67c9d4276b269814",
           "executable": false
         }
       ]
@@ -3213,11 +3213,11 @@
     },
     {
       "slug": "operational-risk-assessment",
-      "tree_sha256": "033ef881406bbe9bea7641a673a23c137c5bfec8ea036a67b419e3adf4a54335",
+      "tree_sha256": "ddbf0ec73a56167e297ecc10ce66b928aee453dac05562e4d708710edfd4edb9",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "30cd38b67f253dffe48085dd513be8f73e38bc86be66b16a8ac436b125ecf28d",
+          "sha256": "95caaa89d8664675db52e6aff2ef3f03fd253fd255168babb5a32eb6d50795ce",
           "executable": false
         },
         {
@@ -3234,11 +3234,11 @@
     },
     {
       "slug": "operational-runbook-writing",
-      "tree_sha256": "b5a12c3b83cdcd6052b8b9c5d25e014e94004b6c133deddb1c19d6a9b620fa5b",
+      "tree_sha256": "b9e038bc1ac3b3aadf1839b4183508bdf6f2ef916aa216c53c1f3dbaa334da19",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "1441d876c15ef0f722ec6a7174c6b8174eb9a08aa68a60ac0469518b5ea17dd0",
+          "sha256": "c0cde09cb482b03b812a1fc2e5327db0f02465e241fc959bc8186d51d9db1af2",
           "executable": false
         },
         {
@@ -3480,11 +3480,11 @@
     },
     {
       "slug": "partner-co-marketing",
-      "tree_sha256": "add67276e37d6831ccc7eaf5b627bbc4df49762d7ab351c57012687f9886c3a5",
+      "tree_sha256": "59f92cee6f930abb8336a964607ba461043d762eeda7fab59ef0a18ccfc18f14",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "d7d1b31f8f9f804a04b11892b08486b122046c535394d77eeb7152fb48bd209d",
+          "sha256": "26d5cee1083bdb10f11bce3b8447095497a65be02f534e7585a69a2b816ca782",
           "executable": false
         },
         {
@@ -3494,12 +3494,12 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "12c6b6bc24530cbbf9efb515bb6adec58859ce279e950912c03d5a30aa2046ac",
+          "sha256": "39ac160045fa8719f95653de3a88fe3c698166229979e05a6842f20b85329370",
           "executable": false
         },
         {
           "path": "references/partnership-types.md",
-          "sha256": "58f73473ab3a903c5c74a963b11e9b2d0710b856b5644ca914ecb88ad67030aa",
+          "sha256": "7d80095e42f79bae543d1587903e52fbb72f714937d2157025671e4c51f922d4",
           "executable": false
         },
         {
@@ -3514,17 +3514,17 @@
         },
         {
           "path": "tools/integrations/crossbeam.md",
-          "sha256": "0721600e99da5a54ee5abc7bcc71739b42fe8aec9129973cdd9101cdf9c5bb8d",
+          "sha256": "b4950d4184dcda129cc8854774032ee056ac4e85dab844594d015be90fd4ab86",
           "executable": false
         },
         {
           "path": "tools/integrations/introw.md",
-          "sha256": "5b893d2e95993fe8da7383801989d7e791aab732c5a306632a69d9bc7d4f47ae",
+          "sha256": "c3f92776fe6141f02ba94bdf37c809069bda9d9e0c9fa35f4a165540e0e193ae",
           "executable": false
         },
         {
           "path": "tools/integrations/partnerstack.md",
-          "sha256": "0245f1c76582e244f0c8aed7882604d55c441d5781d9e27339b6c6e861222fb1",
+          "sha256": "3088d03f2cf024cd75898a5c3983373a5c57e0e8ef49f9c43efbe88b1d252b4d",
           "executable": false
         }
       ]
@@ -3553,11 +3553,11 @@
     },
     {
       "slug": "people-analytics-reporting",
-      "tree_sha256": "471ebcafff6a8db0dd1a58fa2fdab11541a14618fea0c1f0cf651f27b06fb54d",
+      "tree_sha256": "0880e654acbbb1b3cb2f63f9dcba40dd9711e286d846c4b9d98342531345e0fd",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "eb1e84381d20aa4cf0691a60a44819af6c5e729d7f48ca04228fb8eddeb76946",
+          "sha256": "d1f7659c6ac0c8c561f5b7c63583c1a746ff459d0c87975f7cdb3c1ea2d1c727",
           "executable": false
         },
         {
@@ -3678,11 +3678,11 @@
     },
     {
       "slug": "portfolio-company-performance-review",
-      "tree_sha256": "f908ea633427fd75345a448107d638b7e098750ff884887706a71d7109e1e42a",
+      "tree_sha256": "a6b23279e7ddc388d614db45338fec0b828c44f5f955886d5e32038a44a1fc69",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "3b7a915b299ea8ed09d52c4aba26afe0e0c23c839dfa82f5bf9648c4cafd87c6",
+          "sha256": "c1adcf233528bf632e3a816fca738b6bc2ed22f093febb5f4f32145714d30b25",
           "executable": false
         },
         {
@@ -3799,11 +3799,11 @@
     },
     {
       "slug": "pricing-and-packaging-strategy",
-      "tree_sha256": "3d8885fac82a0193cdb8942bd62f55a7159eb0d82decdd40ceb6855c273b007b",
+      "tree_sha256": "84523da38acdcaf35093699059e96341a4e2199bd8978555ed4dad11a0190d05",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "fea15f6d019250feaf307657044de4feeaa2d0f815831978c5e64031d8048676",
+          "sha256": "8924023a963335cef636a7d00dc12fafe4a93617e7c638db2ffc4425ecd87d8b",
           "executable": false
         },
         {
@@ -3813,7 +3813,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "ee60e38d0b68673c51d4706bd30a66c83abd81c423a2bd5965127cd59ef802c0",
+          "sha256": "16d0113ed018e6bae11a75390ba73b250320d5e1b2dfe49872f8f3663fd78e12",
           "executable": false
         },
         {
@@ -3823,7 +3823,7 @@
         },
         {
           "path": "references/pricing-page-teardown.md",
-          "sha256": "b0c299d9ed6ba792fcecef0772d4103290293879471e0472accf02c16d1704ec",
+          "sha256": "05552bd74b3c682b9b8e4550a038f3175a9f9cf28b10ef85f362109b351c1790",
           "executable": false
         },
         {
@@ -3884,11 +3884,11 @@
     },
     {
       "slug": "product-assumption-testing",
-      "tree_sha256": "21468650adc4b2491d88f7ab10ca774d5930d88a56e1c3bc9f0e45cec172410b",
+      "tree_sha256": "da8ddab5d9f75920d431e17c8b2128756da6b782e264a6bcfc70f9342a5da03e",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "029efa23e6c65fbd76ea13fda2c62ffee484a8d7ecacc42999a24e940d0c5f89",
+          "sha256": "65cb4560c8ea2e1ccb92219f6b9cf848edddfae09c77228916527c3d7cce9806",
           "executable": false
         },
         {
@@ -3949,11 +3949,11 @@
     },
     {
       "slug": "product-launch-marketing",
-      "tree_sha256": "d883cde03c0a7f9eb4a0748ff3785b1e10d2e19f3cbfcc8b658fad4f60ab12e8",
+      "tree_sha256": "106e15bb6a76caf6c8c50c33183edf5eba42282f17197f411ce0d1a8b64f5e47",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "af5a8f8149cb7e3e8c81f2f9a80f45a888a4595977e96e04013ed5dc1cc80776",
+          "sha256": "e98122fc139a0ba250417f8ced562c61f0e6ec01977eee33851ae33b07c1fb2e",
           "executable": false
         },
         {
@@ -3963,7 +3963,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "cce1dc738a8d79cde539064bca61ff2368b8f40fffaafdf58f70077d69cfbafc",
+          "sha256": "f9497a63cb83835dbbf4bc6e7eb82e448faf5eb04ab7ef98bb04c60c2228b955",
           "executable": false
         },
         {
@@ -3997,7 +3997,7 @@
     },
     {
       "slug": "product-marketing-context",
-      "tree_sha256": "ad38d8fd3360250eb7c1bd93e7e22d3d5383a397883859940f7457de0404f545",
+      "tree_sha256": "d8342482436edb8a5cb76298b610cfbbad30f20ca36cd8b594d048417d2fc07a",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -4011,7 +4011,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "855e09838f1e73a846104238297fadcc075e0799e17468636f835a25ce8e889a",
+          "sha256": "89cb1df587c418d227feb1bac34ef6737e9246177cb28cf35fe1b2d8c2d78f63",
           "executable": false
         }
       ]
@@ -4029,11 +4029,11 @@
     },
     {
       "slug": "product-metrics-dashboard-design",
-      "tree_sha256": "cc944259e79e0d0acc0412f6b714865e3338816529406d3dbe7f5487dc2c6470",
+      "tree_sha256": "97365a443865e8a1697743eb76aed116fe8734c1cd126e8de9ee955014656aad",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "f100fa816689078511d682d9cf97bfdef13c1de29e56495e229d47697e876066",
+          "sha256": "abaea3c8e6b4f1e02897c6253cc50f1059a2a138b086769d748d0d5abb6c8977",
           "executable": false
         },
         {
@@ -4072,11 +4072,11 @@
     },
     {
       "slug": "product-requirements-writing",
-      "tree_sha256": "2321ae900a99b5136acf3069945b688adbad306beb0521bc3a8a8e284a284205",
+      "tree_sha256": "987e7f3a6798a963456195d01d7f4963d361da04379ef4c9c152a4d29e749a52",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "7c842254b66a945082233a47b20d9acf8e10601e65f8259f535964fe02a8e68e",
+          "sha256": "b9342b2a37e50fe5544fe62bcb14149c4a00d7dfcecb0b045476bee47c262d6d",
           "executable": false
         },
         {
@@ -4086,7 +4086,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "4b7b736606945bce80536edd0ed3acd92fbdd472f27a77d436226f979d80de50",
+          "sha256": "38f0a1f40c7d3644e35e200f380bcfd04d9b565f9f14040ed89ef3a8933014c8",
           "executable": false
         },
         {
@@ -4098,11 +4098,11 @@
     },
     {
       "slug": "product-research-synthesis",
-      "tree_sha256": "f879f062bcb92c3908c3c8e3a1a982d0c1b914b8fa64bdd8cca3a020ef093ead",
+      "tree_sha256": "133988169137c0e31d6fa1ad479e62ea6285a6dcec0e254b89929d6795455fb7",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "40f0ba96d439f9d48700f8701aa6a0a30659e79895b8d08ee1a5acb7ca81d824",
+          "sha256": "781ac119ab35c9492018ea0cd31c89b167ebb2e0254318f86dfce0bf66525c15",
           "executable": false
         },
         {
@@ -4135,11 +4135,11 @@
     },
     {
       "slug": "product-roadmap-planning",
-      "tree_sha256": "9b7c61200ff6fdfce493f7311a192b7c075d580bb4399f88fbfcfeb0d0c89713",
+      "tree_sha256": "d7d40dbc813b2fbe92ab6ec14a940c043d314661cdda4a8823d474af0ac6c992",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "764604070d431a70b42fb03681796e3c6e4712d0393d79630f20498fb33467a8",
+          "sha256": "7448e8881a81ce1692464050599913ac95e4e1407dd208631403010c2ee2a869",
           "executable": false
         },
         {
@@ -4149,7 +4149,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "56d6461296b41795e123909247fe64c06d9cd697eb51a2b5553a4a1291f8c67b",
+          "sha256": "fd703535c0fa27ce593bec09dcdd148e2a0540849cb25b7ed334424ae1708e96",
           "executable": false
         },
         {
@@ -4161,11 +4161,11 @@
     },
     {
       "slug": "product-stakeholder-update",
-      "tree_sha256": "e70230f1d0d3f85fb54169dc25b0691f9311c1a75ca93b8b8ea5896ac8740a7a",
+      "tree_sha256": "49b50a7fd5a596cf16a3922dc72af1a370ef167948c93c339597b6b76ff2afea",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "4cda119f0c31e40990e996073924396e944d9d6bedd94f71e3e5ce42c0cf83db",
+          "sha256": "35d89190f78f85c7d67727f8bc6c0db551a95a8d5894bddcce88b8332163e171",
           "executable": false
         },
         {
@@ -4198,11 +4198,11 @@
     },
     {
       "slug": "product-strategy-canvas",
-      "tree_sha256": "1cfb27afe515050b28dbebc467c2b9df4e4cc95f945d4c3071795168e0616817",
+      "tree_sha256": "2d29b449429acacecccf9b8482fbb809b31c212febdb8a0ad83a024d6f58f4fb",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "efbd9d5c53bbc72aa2db6d636cb913ea6d4ba782de24674e5c6c9ba258ba1110",
+          "sha256": "98212645c61e4d0e4c68bab6d86ce8e8551142df3cd0e344985bf069e96cb595",
           "executable": false
         },
         {
@@ -4212,18 +4212,18 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "118340b1354c63cdbb646a3d2749a3c9026c18a1ae8a70452564b148bbbe3dc7",
+          "sha256": "66fb7d2704470cb372c77882feaec26ba1af18feabdad50fdface39dacfc2012",
           "executable": false
         }
       ]
     },
     {
       "slug": "productivity-setup",
-      "tree_sha256": "7fb485e95b295fd61d701dc436ecfb0ae0ce04497b39a55a476b63167718c8a1",
+      "tree_sha256": "5501084fd3e298911031dce5bb7d7250c645df31799fd8279d86c324a7cd5699",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "416efbd207053902e1a1f7a13e10e2f5b6db45b64c5dbcf4ef724f498ba37c84",
+          "sha256": "b765fd116043dd6c6a4d930d6ee277936fe6df2790ff11b95a5839600f2626b8",
           "executable": false
         },
         {
@@ -4260,11 +4260,11 @@
     },
     {
       "slug": "productivity-task-sync",
-      "tree_sha256": "2247180149fd04dde44634dbcae2c2655c949f1901f0fbf0c0e51a046e68ae46",
+      "tree_sha256": "3f912a9023ed49191db94e8196c588bca8b1e32ce5dba1ed33afab0f46a8a19c",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "3451b3f174cd7704dd33f2e4bce791c47c6c4e3a01a03fc46a0007193061c533",
+          "sha256": "87f10608de21034a17d69630062312db3791d21ee726fb027da4a13699334d82",
           "executable": false
         },
         {
@@ -4274,7 +4274,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "e6030e1f4cb86cf2fbd26a2991a4c6bbafbdfe0468a4ddc7681900bbfd6f32b4",
+          "sha256": "9a93ad53b151c6ecb905b103dc08fd8fc872607f9d018eee09591d5e69d39699",
           "executable": false
         },
         {
@@ -4294,18 +4294,18 @@
         },
         {
           "path": "references/task-management.md",
-          "sha256": "d1390c54776d86a4e9987caad1e6b89ec21175ef9cc911689a0c08f854788973",
+          "sha256": "90ab2845019d1b0313c561a78b4c1c6d05f8437fe0ac0a7bef2bec27097a3e00",
           "executable": false
         }
       ]
     },
     {
       "slug": "project-status-report",
-      "tree_sha256": "5fd96c0dd478442f7f9ec8126f9f13acb755f51cc2c0cb27b936d057a837d7b4",
+      "tree_sha256": "228bd6d371a17701d3409e750a09a5c356689bc99d669c289ddeead547ed6a67",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "cc9eb35f5d88beacc81429c71e9ed30257358dd4b8fbeb5918eeedc067ecc805",
+          "sha256": "079e3f20fbe10a7c4f338e2bbd0d884584cad7d9ec606355302e0443c0312600",
           "executable": false
         },
         {
@@ -4490,11 +4490,11 @@
     },
     {
       "slug": "recruiting-pipeline",
-      "tree_sha256": "2192be9e11529c9cd321ad267c86a9dab412d62f912bfc9fcaa303c716fc3d39",
+      "tree_sha256": "c867422bed42786afc5d867669e31dd5a2a55d1ecada06288dea52044bbab841",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "c4a4ffcba5f98cc7ad3feadf831641ddbc5bf0d69e991573d2465a352ce8498c",
+          "sha256": "5ad64bab55e26decabb23189cd32f8a428c9a97393c283f7649d3f53712bb0ab",
           "executable": false
         },
         {
@@ -4830,11 +4830,11 @@
     },
     {
       "slug": "sales-account-research",
-      "tree_sha256": "d1c12a881a8be882f2d2e38b43e4177dcd34f68a16c84a4013a2d81754da1ee7",
+      "tree_sha256": "4625cd25217ffa740c48c2489da7e8009a8419fe50914cc574a4feec98c3e10f",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "bdbaef33628b60aaa1def87c0d619587715280b099db6bdd388d81b2b9487751",
+          "sha256": "879819960a0b54a3f9fd99d114e66d09f8eb09b89fb53077f0cf339d7c7c0ff6",
           "executable": false
         },
         {
@@ -4844,18 +4844,18 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "58f9a408fa34a6b637ac20c51a05fe22c8793fea82eb68e0cdaeb9ca8765c512",
+          "sha256": "b956db4ce3ce389b568e70b472a06a0ac971b18cc4b65c886c2fc5a4c9e53f8e",
           "executable": false
         }
       ]
     },
     {
       "slug": "sales-call-preparation",
-      "tree_sha256": "f94eb95d83e9d3cee9c223e6944f5e177f55b3e7141f9c70f684ad10c0df4764",
+      "tree_sha256": "9ffa071659e24d4fe82681bde032201caab413db88f99962641b7b3f571a5bda",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "55390312da7eea3175e1975ba6d06243c8ece09188dd0e9208db190ecb41c5ae",
+          "sha256": "57af47a7561eb9cc4793326250eda0b6399f47168a3dd43a54bcb3d6f5b1a134",
           "executable": false
         },
         {
@@ -4865,18 +4865,18 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "51bd1bfa0f63555c25e5e7baf9df0da8657dc1f5116650873af33e1f39c84037",
+          "sha256": "645abb0508c199137e7496385b50db5a9242afec8b306ca4a2fb2757332b3de1",
           "executable": false
         }
       ]
     },
     {
       "slug": "sales-enablement-content",
-      "tree_sha256": "0734011360e984db52767ab8ad6cd576dd36fc2728a924829fde8eb37606fd5d",
+      "tree_sha256": "998d3af072d0b6e809cf25b66df9ba4e19001baf1d0120e84773af9881e05b09",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "10f8b4511bf1fe75b9f91440720b376b63205b574d5b36b11724cf093a4f2bbd",
+          "sha256": "e72692fb68cb12e4a976e22481de8539aaea4939233977f393046df4b6c37102",
           "executable": false
         },
         {
@@ -4886,7 +4886,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "0d39a943c6ecaa9449bfae555f74a67ba9b2d7c543c7e5bf0933c477616626e4",
+          "sha256": "a8eca220caf6629a8f58817ac0ea358b5ea9a9d544781211c1f199b68cabf2a0",
           "executable": false
         },
         {
@@ -4951,11 +4951,11 @@
     },
     {
       "slug": "sales-outreach-drafting",
-      "tree_sha256": "6f95e3aebb5ef9189eadd023e696610e05dfaae35ce34f90cdd1c380d6bb5f6b",
+      "tree_sha256": "b4d418066cdea399dbe99ea889e8f9584d56e6ce4ee730eb0f0b4b127981ec4e",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "6251492d06d15e0054ecce8c95ae4ea8596d46834e0f083a41b7d1221a8c372b",
+          "sha256": "b123caf14d21dae208a5be6a04e437aed7d86e9eb45f6fbb2aabfe849f9ee78b",
           "executable": false
         },
         {
@@ -4965,18 +4965,18 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "d29e45358d95a0988daaa722e9897bd82c8e716b1febf6d93e470e4ec10bdf96",
+          "sha256": "ae927a0d02465d016d5121338bb2a8f2b9ee2bb035f99f80d5dd5632c8254bf6",
           "executable": false
         }
       ]
     },
     {
       "slug": "sales-pipeline-review",
-      "tree_sha256": "471f180b3f081b32e1a46451e1dc71920f48f37ae5be077368a5dd8d136fbd39",
+      "tree_sha256": "7b42fa23b5bd84e35ff5b9787212082e82fcc97aab2c329ad86eda9c61b8d79c",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "f188972ef7c0402c5faf068e0e7864ef0a05a137c4c032d7e42099b145f7fc48",
+          "sha256": "4d5d7711406a1ceb8db210daca0677118a212f4375111c28fef57c785a702221",
           "executable": false
         },
         {
@@ -4986,7 +4986,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "094251ad7b5c88cfe667a17178fe244121110c179181ee9225c564e2b897b5f3",
+          "sha256": "1f78325164338f4e68eb832884ebcc76c2d146a0adb430e1e83580bd1b0a2f5a",
           "executable": false
         }
       ]
@@ -5135,7 +5135,7 @@
     },
     {
       "slug": "social-media-management",
-      "tree_sha256": "5d1acab7611e7a44ebdc48986f83d9ca446074b67f1e337f098ecbaa4ba9d662",
+      "tree_sha256": "44f03a73f13d98378f7ce6845d79e0c69dc7abd3d12d31af968ac69591f2119c",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -5149,7 +5149,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "1f4663c46950bd4320e7c6b8f69fcb4c2607a7712ca8f3cf6bb53744f02644b2",
+          "sha256": "1525de90ecafe398a7cbc6cb9b0c6e12c32a05f109ebff94a0f4d55d62642d34",
           "executable": false
         },
         {
@@ -5164,7 +5164,7 @@
         },
         {
           "path": "references/listening.md",
-          "sha256": "ed1177fe8e5cffbc5f318b5a8c37631776bce35b5668431173e60f06ef1fd251",
+          "sha256": "01bbde0a1f527e43ba867e3c5342c72f188a6c6b021bd42c735a1d8a4599be2f",
           "executable": false
         },
         {
@@ -5207,11 +5207,11 @@
     },
     {
       "slug": "software-debugging",
-      "tree_sha256": "a966bc123a3fd2ce42253685e4afb29a9632bdad6248709eca482de983378c8e",
+      "tree_sha256": "7e98ede416f2e07eb253b4f4e65dc74a86dc652ea3fe8db0c1dd3a5894270cb5",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "dbad8be1f3a421c230c0bb730e01715a2e1c4ec54efd53b784bac4179ccf6613",
+          "sha256": "c38f9cd0c0665faece81e024d1e2dfdbb34eecee507853a7d2c90ad0130b60b7",
           "executable": false
         },
         {
@@ -5228,11 +5228,11 @@
     },
     {
       "slug": "software-incident-response",
-      "tree_sha256": "4e8ed62b6bca0b1f6761e84c759785109953767782e7dc1d858a147a258bed52",
+      "tree_sha256": "fdd2ed34310dc22867d873e704b1e5145f0f6bf5a23d5821eac379152f8e0ebe",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "2e76472e61a781c788e25e523ed75b644bf405f3495696f7b6c710e7d0528d9e",
+          "sha256": "9ab4c7db1d36655f4224b48b177e87dc48d3905d32e77c8779d79b073a1713ea",
           "executable": false
         },
         {
@@ -5254,11 +5254,11 @@
     },
     {
       "slug": "software-test-planning",
-      "tree_sha256": "40fac6c595a067bc1d9eacff974895fb6442d5b757bfff3bd5c41cfa0188cda0",
+      "tree_sha256": "f0e4e82bda9fd8312906d3ab2359d2f30f6cedab066253920d69d768d1583df8",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "d4a59b8cfaf06aa9958b428e28706a359998d901c51cd6f93f2804522e5500e0",
+          "sha256": "23493f05737250355fe04b9e56087d87307728e5155ebccef0613cebb3586fb0",
           "executable": false
         },
         {
@@ -5409,7 +5409,7 @@
     },
     {
       "slug": "supply-chain-risk-auditor",
-      "tree_sha256": "5b4db1a307e575d81fed3aff1935bb42990b4379c9d7b1971f1869557c6570e7",
+      "tree_sha256": "c2f21eb18effac6adab18e2fbf34bac82a267f02ea5ffb73d40eeebd12ae2440",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -5423,7 +5423,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "355e5eca44f51aea4e74ebe3e3337c0ece65c3180f9c8b03359a63743c940888",
+          "sha256": "b5b1c51f2f1529982bb4e86069ac1c18dba3632c3f0b17dc51650099a09a10cf",
           "executable": false
         },
         {
@@ -5494,11 +5494,11 @@
     },
     {
       "slug": "support-ticket-triage",
-      "tree_sha256": "751894f64e9b0b35cd01b321b4ede3e17d926093e36ac8c0cf5c98c7d38dfde5",
+      "tree_sha256": "bea3158f535aeaeaed4a1833b914b104d1f9120e9fe8c1ae6d2eb9f0d61b5cb3",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "f11f0d915f004bb37425c93b156b6885332da443c4bf1bb5e5d19ff12050971a",
+          "sha256": "5811a48724f35f3193c1e898e3f5f0559ff4cb3b6e434a32276ae0cc353160de",
           "executable": false
         },
         {
@@ -5508,7 +5508,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "2b00cdc0c2b8dc40713d2e7573aa095672bb4b8b3ef381ba45de4930e00e346b",
+          "sha256": "86c26ed10ea3bfff7479158a3a80f1daccdf74d351fb43f9f6a1ee838efae8cc",
           "executable": false
         },
         {
@@ -5520,11 +5520,11 @@
     },
     {
       "slug": "task-list-management",
-      "tree_sha256": "0eddc0e928d80c721a63a6df6f4862069c571a1e787861949cb5053a9cee1ab3",
+      "tree_sha256": "3aaf7c8691712d826dac92ccd94dabc57afa654ccc266c7c7dbf5934e942a5b7",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "eb8ffb1db06b1bd779aa98e0459bb3368cd663230631d85fd68b500ea5655ee9",
+          "sha256": "97afbde6f51f6c10a21107e105d54dd741ba975ae08e8a649b6f7bd385ea0eb8",
           "executable": false
         },
         {
@@ -5561,11 +5561,11 @@
     },
     {
       "slug": "team-capacity-planning",
-      "tree_sha256": "13977e445cdecada6718e33f51c8e5e9fd8da991ca8fd18c194cb604c0685dbd",
+      "tree_sha256": "99c11f2093d02add39897020d8e894ab34b3aaeebc791ed6b1fff6bf2f8a10ce",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "b0343e57cba54ea5c431e73572c1ab74922485f90d099bc79733cb4c3be69a9d",
+          "sha256": "75383bea9e83917978e4a6337fdaa2effd94553b27b5e311acf1878243d28b41",
           "executable": false
         },
         {
@@ -5762,11 +5762,11 @@
     },
     {
       "slug": "vendor-contract-status",
-      "tree_sha256": "5ea7b98c931317ced0c497efad8489c5d1585ce58aa540910c05d7b285092133",
+      "tree_sha256": "64f9cfcca17423b0f914902ae6c2a618d8100c9640c5eaa7a48acf8885ec2c63",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "43560512907ef9be0cb59e5a825386edbec23e42279a29fbf591cdeb720fc4c9",
+          "sha256": "37e05bc720cf169f4082cb873de735b9334bf41e46ec9079e780496f9c964b0d",
           "executable": false
         },
         {
@@ -5776,7 +5776,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "489c4ba695029242b6ba040cc65f8019c5edebdc743319bfd77c0076a6d35028",
+          "sha256": "bde2a02c47f6dc0baefb13dcb1b7563c5cfe540eb075c4fe59f06f22f2704686",
           "executable": false
         },
         {
@@ -5799,11 +5799,11 @@
     },
     {
       "slug": "vendor-evaluation",
-      "tree_sha256": "c9141c12a23380400dc97b7afac72247a24cb44c9f90d4c99404742c5af89365",
+      "tree_sha256": "4227cc2516405531d1b37603c5dbb59f058e05c357efaccad1c0310a7b4caa8d",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "11f368b088ef2e54c407575b8e08756c3a30d12b6802070cd63bd6138c0ffdca",
+          "sha256": "16398297841de1e88b6654f2d84adfc349f7d3db120c68d94d5ed492f50635a3",
           "executable": false
         },
         {
@@ -5858,11 +5858,11 @@
     },
     {
       "slug": "verification-before-completion",
-      "tree_sha256": "13b524cc8047c2f3d7a53eaf71413f6065a3625b840e0251a87e264cefa380d6",
+      "tree_sha256": "62f100971de4b4c620dc3df4acb2b913f2611d2822ec8052b2099c708af2795d",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "2f3f13632f60155bc70099e1de2d15ccb934470b5a24b1fd45d10a16efa595aa",
+          "sha256": "24cd9219442fa7d5860c69246861711929fa991dd1170ecf33e2a964a6c85c16",
           "executable": false
         },
         {
@@ -5956,7 +5956,7 @@
     },
     {
       "slug": "website-seo-audit",
-      "tree_sha256": "96a4f844a918554546a6ee6801219c1f71e9fb43427a0395be747bc7aff552c6",
+      "tree_sha256": "d40aefdcd55874823f501b0c5e1c7821d4c164775b96068b6b9eb61c4c0e1b3a",
       "files": [
         {
           "path": "ATTRIBUTION.md",
@@ -5970,7 +5970,7 @@
         },
         {
           "path": "SKILL.md",
-          "sha256": "e02649b916240ac0aa24e0c05b6b32c01a1eb8f92b040f518844497ddce8ea8e",
+          "sha256": "aa280ddb37be1f68fd41702c3508c55d0c05e24534e114be24eb79a282928d3d",
           "executable": false
         },
         {
@@ -6037,11 +6037,11 @@
     },
     {
       "slug": "workplace-memory-management",
-      "tree_sha256": "d8fd72de11f90e732dc411cda3f23b52b290e099891b9a0ce877113330d0a611",
+      "tree_sha256": "9dad5ae7e43a1177b91477628831f48ff7b6beb8828a95c7809f14ce061b411d",
       "files": [
         {
           "path": "ATTRIBUTION.md",
-          "sha256": "261b94b18a88148c0a91f8302a249e170d259709cc7ec40151da0286eb9ce1ab",
+          "sha256": "27101659ec41383f65f8862659c6c8a63e7fdebc19e2df9c916d042541fa5ab6",
           "executable": false
         },
         {

@@ -176,7 +176,7 @@ share_lead_or_register_deal
 
 ## Relevant Skills
 
-- revops
+- revops (upstream coreyhaines31/marketingskills skill; not in this catalog)
 - sales-enablement
-- referrals
-- competitors
+- referrals (upstream coreyhaines31/marketingskills skill; not in this catalog)
+- competitors (upstream coreyhaines31/marketingskills skill; not in this catalog)

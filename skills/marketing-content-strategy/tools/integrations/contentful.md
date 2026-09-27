@@ -155,6 +155,6 @@ Rate limits are plan-dependent. Check `X-Contentful-RateLimit-Second-Limit` resp
 
 ## Relevant Skills
 
-- content-strategy (CMS selection, content modeling)
-- programmatic-seo (CMS as data source for generated pages)
-- site-architecture (multi-locale URL structure)
+- marketing-content-strategy (CMS selection, content modeling)
+- programmatic-seo (upstream coreyhaines31/marketingskills skill; not in this catalog) (CMS as data source for generated pages)
+- site-architecture (upstream coreyhaines31/marketingskills skill; not in this catalog) (multi-locale URL structure)

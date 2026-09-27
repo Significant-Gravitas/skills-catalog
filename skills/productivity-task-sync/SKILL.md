@@ -16,7 +16,7 @@ metadata:
 > Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and file references; see ATTRIBUTION.md in this skill package.
 
 
-**Package resources:** The original companion guidance is bundled here: [task-management](references/task-management.md), [start](references/start.md). The dashboard source is `assets/dashboard.html` in this skill package. Native `/productivity:start` and `/productivity:update` command references remain unchanged; this package does not register those commands. All workflows must use the same persistent working directory for their task and memory state.
+**Package resources:** The original companion guidance is bundled here: [task-management](references/task-management.md), [start](references/start.md). The dashboard source is `assets/dashboard.html` in this skill package. Native `/productivity:start` and `/productivity:update` command references remain unchanged; this package does not register those commands. They correspond to the installed skills `productivity-setup` (start) and `productivity-task-sync` (update). All workflows must use the same persistent working directory for their task and memory state.
 
 # Update Command
 
@@ -38,7 +38,7 @@ Keep your task list and memory current. Two modes:
 
 ### 1. Load Current State
 
-Read `TASKS.md` and `memory/` directory. If they don't exist, suggest `/productivity:start` first.
+Read `TASKS.md` and `memory/` directory. If they don't exist, suggest `/productivity:start` (installed here as the `productivity-setup` skill) first.
 
 ### 2. Sync Tasks from External Sources
 

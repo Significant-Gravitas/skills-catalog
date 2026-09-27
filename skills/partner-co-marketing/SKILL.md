@@ -1,6 +1,6 @@
 ---
 name: partner-co-marketing
-description: When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,' 'integration marketing,' 'cross-promotion,' 'collaborate with another company,' 'partnership ideas,' or 'co-brand.' For customer referral programs, see referrals. For launch-specific partnerships, see launch.
+description: When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use when the user says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,' 'integration marketing,' 'cross-promotion,' 'collaborate with another company,' 'partnership ideas,' or 'co-brand.' For customer referral programs, see the upstream referrals skill (coreyhaines31/marketingskills; not in this catalog). For launch-specific partnerships, see launch.
 metadata:
   version: 2.0.1
   author: Corey Haines
@@ -106,7 +106,7 @@ Co-marketing is one of **five partnership types**. Know the taxonomy so you rout
 
 Standout moves: **integrations** as a decision factor (83% of enterprise buyers), Calendly's staged ladder (calendar → sales → marketing); **affiliate** power law (20% of affiliates drive 80% of revenue) and buyout clauses (~12× monthly commission); **permissionless co-marketing** (Notion building templates for Airbnb/Amazon/Tesla to ride their brand — no contract needed); App Store distribution (Grammarly 0→10M).
 
-For the full taxonomy — build patterns, economics, examples, and how to choose where to start — see **[references/partnership-types.md](references/partnership-types.md)**. (Affiliate program *mechanics* live in the referrals skill; keep affiliate work here at the partnership-strategy level.)
+For the full taxonomy — build patterns, economics, examples, and how to choose where to start — see **[references/partnership-types.md](references/partnership-types.md)**. (Affiliate program *mechanics* live in the upstream referrals skill (coreyhaines31/marketingskills; not in this catalog); keep affiliate work here at the partnership-strategy level.)
 
 ---
 
@@ -315,7 +315,7 @@ For implementation, see the [tools registry](https://github.com/coreyhaines31/ma
 
 ## Related Skills
 
-- **referrals** — For customer referral and affiliate programs (customers referring customers)
+- referrals (upstream coreyhaines31/marketingskills skill; not in this catalog) — For customer referral and affiliate programs (customers referring customers)
 - **product-launch-marketing** — For product launches with partners; covers co-marketing as a "borrowed channel"
-- **content-strategy** — For content planning including co-created content
+- **marketing-content-strategy** — For content planning including co-created content
 - **sales-enablement-content** — For partner-facing collateral and enablement materials

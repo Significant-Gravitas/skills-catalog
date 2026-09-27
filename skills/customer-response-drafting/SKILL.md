@@ -16,7 +16,7 @@ metadata:
 > Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and file references; see ATTRIBUTION.md in this skill package.
 
 
-# /draft-response
+# /customer-response-drafting
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](references/CONNECTORS.md).
 
@@ -25,14 +25,14 @@ Draft a professional, customer-facing response tailored to the situation, custom
 ## Usage
 
 ```
-/draft-response <context about the customer question, issue, or request>
+/customer-response-drafting <context about the customer question, issue, or request>
 ```
 
 Examples:
-- `/draft-response Acme Corp is asking when the new dashboard feature will ship`
-- `/draft-response Customer escalation — their integration has been down for 2 days`
-- `/draft-response Responding to a feature request we won't be building`
-- `/draft-response Customer hit a billing error and wants a resolution ASAP`
+- `/customer-response-drafting Acme Corp is asking when the new dashboard feature will ship`
+- `/customer-response-drafting Customer escalation — their integration has been down for 2 days`
+- `/customer-response-drafting Responding to a feature request we won't be building`
+- `/customer-response-drafting Customer hit a billing error and wants a resolution ASAP`
 
 ## Workflow
 

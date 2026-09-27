@@ -6,7 +6,7 @@ Source: https://github.com/obra/superpowers/blob/5bf4e78011075bcfc0dc295f0724994
 Pinned commit: `5bf4e78011075bcfc0dc295f0724994cd123ee71`.
 Licence: MIT; see LICENSE and any bundled notices.
 
-AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.
+AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/skills/verification-before-completion.json.
 
 ## Files and recorded changes
 

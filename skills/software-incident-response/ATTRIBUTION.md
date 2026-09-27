@@ -6,7 +6,7 @@ Source: https://github.com/anthropics/knowledge-work-plugins/blob/8f8779a1681ea2
 Pinned commit: `8f8779a1681ea2f8dc697a6b3063d5e3e7f7460c`.
 Licence: Apache-2.0; see LICENSE and any bundled notices.
 
-AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/files.json.
+AutoGPT curates and adapts packaging. The original author wrote the skill instructions. No expert advice or approval gate was rewritten. Original bytes and counted packaging edits are retained in provenance/skills/software-incident-response.json.
 
 ## Files and recorded changes
 

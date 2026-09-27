@@ -16,7 +16,7 @@ metadata:
 > Packaging adaptation by AutoGPT, 2026-09-25. Original authorship and licence are retained. Changes are limited to the recorded name, metadata and local references; see ATTRIBUTION.md in this package.
 
 
-# /draft-offer
+# /employment-offer-drafting
 
 > If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](references/CONNECTORS.md).
 
@@ -25,7 +25,7 @@ Draft a complete offer letter for a new hire.
 ## Usage
 
 ```
-/draft-offer $ARGUMENTS
+/employment-offer-drafting $ARGUMENTS
 ```
 
 ## What I Need From You

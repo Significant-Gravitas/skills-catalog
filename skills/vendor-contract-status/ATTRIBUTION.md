@@ -17,7 +17,7 @@ AutoGPT adapted the packaging on 2026-09-25. AutoGPT did not author the original
 ## Runtime requirements
 
 - Original vendor agreements in connected CLM/CRM/email/docs/chat or manually supplied source material.
-- legal/CONNECTORS.md; missing-source behavior is authored.
+- references/CONNECTORS.md; missing-source behavior is authored.
 - Qualified legal verification of agreement interpretation is an upstream requirement.
 
 Native frontmatter is retained. Preserving it does not establish platform enforcement:
@@ -40,7 +40,7 @@ References to original skill names can be resolved using this table. Native API/
 | anthropics/knowledge-work-plugins/finance/skills/reconciliation | `account-reconciliation` |
 | anthropics/knowledge-work-plugins/finance/skills/close-management | `month-end-close-management` |
 | anthropics/knowledge-work-plugins/finance/skills/financial-statements | `financial-statement-preparation` |
-| anthropics/knowledge-work-plugins/small-business/skills/invoice-chase | `overdue-invoice-follow-up` |
+| anthropics/knowledge-work-plugins/small-business/skills/invoice-chase | not installed in this catalog (upstream `invoice-chase`) |
 | anthropics/knowledge-work-plugins/operations/skills/vendor-review | `vendor-evaluation` |
 | anthropics/knowledge-work-plugins/legal/skills/vendor-check | `vendor-contract-status` |
 | anthropics/knowledge-work-plugins/enterprise-search/skills/knowledge-synthesis | `multi-source-research-synthesis` |

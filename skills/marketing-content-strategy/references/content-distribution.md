@@ -80,4 +80,4 @@ For each major piece, produce (see **social-media-management** for the platform-
 - **product-launch-marketing** — ORB channel-type playbook and launch-day distribution
 - **social-media-management** — atomization/repurposing workflows and platform-native execution
 - **lifecycle-email-marketing** — the owned channel that converts distributed attention
-- **ai-seo** — making owned content citable by LLMs (another distribution surface)
+- ai-seo (upstream coreyhaines31/marketingskills skill; not in this catalog) — making owned content citable by LLMs (another distribution surface)
