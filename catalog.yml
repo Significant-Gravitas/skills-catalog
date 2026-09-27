@@ -28,18 +28,6 @@ skills:
     source: coreyhaines31/marketingskills/skills/cold-email
     license: MIT
 
-  - slug: copywriting
-    categories: [content]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/copywriting
-    license: MIT
-
-  - slug: emails
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/emails
-    license: MIT
-
   - slug: onboarding
     categories: [marketing]
     required_providers: []
@@ -52,24 +40,6 @@ skills:
     source: coreyhaines31/marketingskills/skills/prospecting
     license: MIT
 
-  - slug: sales-enablement
-    categories: [sales]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/sales-enablement
-    license: MIT
-
-  - slug: customer-research
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/customer-research
-    license: MIT
-
-  - slug: pricing
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/pricing
-    license: MIT
-
   - slug: churn-prevention
     categories: [marketing]
     required_providers: []
@@ -80,18 +50,6 @@ skills:
     categories: [marketing]
     required_providers: []
     source: coreyhaines31/marketingskills/skills/public-relations
-    license: MIT
-
-  - slug: social
-    categories: [content]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/social
-    license: MIT
-
-  - slug: launch
-    categories: [marketing]
-    required_providers: []
-    source: coreyhaines31/marketingskills/skills/launch
     license: MIT
 
   # wondelai/skills — MIT

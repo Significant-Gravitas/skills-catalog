@@ -363,8 +363,8 @@ For partner sales enablement, see the [tools registry](https://github.com/coreyh
 ## Related Skills
 
 - **competitors**: For public-facing comparison and alternative pages
-- **copywriting**: For marketing website copy
+- **marketing-copywriting**: For marketing website copy
 - **cold-email**: For outbound prospecting emails
 - **revops**: For lead lifecycle, scoring, routing, and pipeline management
-- **pricing**: For pricing decisions and packaging
+- **pricing-and-packaging-strategy**: For pricing decisions and packaging
 - **product-marketing**: For foundational positioning and messaging

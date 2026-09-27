@@ -2,7 +2,7 @@
 
 The "distribute" half of content strategy. Creating a great piece is table stakes; the leverage is in getting it seen. This reference expands the **Create Once, Distribute Twice** section of the skill.
 
-Cross-links: ORB channel-type playbook lives in **launch**; atomization/repurposing workflows (podcast → clips, blog → thread) live in **social**. This file consolidates the strategy that ties them together—don't re-derive ORB from scratch here.
+Cross-links: ORB channel-type playbook lives in **product-launch-marketing**; atomization/repurposing workflows (podcast → clips, blog → thread) live in **social-media-management**. This file consolidates the strategy that ties them together—don't re-derive ORB from scratch here.
 
 ## Create Once, Distribute Twice
 
@@ -67,7 +67,7 @@ Each turn of the loop lowers the cost of the next piece (you learn what lands) a
 
 ## Atomization Checklist (per flagship)
 
-For each major piece, produce (see **social** for the platform-native execution):
+For each major piece, produce (see **social-media-management** for the platform-native execution):
 - [ ] 3–5 standalone social posts from the subheads/key points
 - [ ] 1 thread (Twitter/X) or carousel (LinkedIn/Instagram) of the core argument
 - [ ] 2–4 short-form video clips (if source is video/podcast)
@@ -77,7 +77,7 @@ For each major piece, produce (see **social** for the platform-native execution)
 
 ## Related
 
-- **launch** — ORB channel-type playbook and launch-day distribution
-- **social** — atomization/repurposing workflows and platform-native execution
-- **emails** — the owned channel that converts distributed attention
+- **product-launch-marketing** — ORB channel-type playbook and launch-day distribution
+- **social-media-management** — atomization/repurposing workflows and platform-native execution
+- **lifecycle-email-marketing** — the owned channel that converts distributed attention
 - **ai-seo** — making owned content citable by LLMs (another distribution surface)

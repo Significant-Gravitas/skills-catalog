@@ -316,7 +316,7 @@ For implementation, see the [tools registry](https://github.com/coreyhaines31/ma
 - **lead-magnets**: For planning lead magnets that feed into nurture sequences
 - **churn-prevention**: For cancel flows, save offers, and dunning strategy (email supports this)
 - **onboarding**: For in-app onboarding (email supports this)
-- **copywriting**: For landing pages emails link to
+- **marketing-copywriting**: For landing pages emails link to
 - **ab-testing**: For testing email elements
 - **popups**: For email capture popups
 - **revops**: For lifecycle stages that trigger email sequences

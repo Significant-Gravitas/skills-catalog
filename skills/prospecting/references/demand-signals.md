@@ -47,7 +47,7 @@ Search several angles, not one query repeated. Adapt wording to how the audience
 - **social-fetch** — pull the full content of a specific post/thread you find, normalized.
 - **scraping** / **Firecrawl** / **Browserbase** — read the original public page (a forum thread, a GitHub issue, a review), never qualify from a search snippet alone.
 - **deep-research** — for a multi-source sweep with adversarial verification when the wedge is broad.
-- **competitor-profiling** / **customer-research** — competitor switching signals and review-mining for the pain language.
+- **competitor-profiling** / **customer-insight-research** — competitor switching signals and review-mining for the pain language.
 
 ## Step 3 — Source mix (public only)
 

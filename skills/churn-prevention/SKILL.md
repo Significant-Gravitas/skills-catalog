@@ -384,9 +384,9 @@ Test one variable at a time:
 
 ## Related Skills
 
-- **emails**: For win-back email sequences after cancellation
+- **lifecycle-email-marketing**: For win-back email sequences after cancellation
 - **paywalls**: For in-app upgrade moments and trial expiration
-- **pricing**: For plan structure and annual discount strategy
+- **pricing-and-packaging-strategy**: For plan structure and annual discount strategy
 - **onboarding**: For activation to prevent early churn
 - **analytics**: For setting up churn signal events
 - **ab-testing**: For testing cancel flow variations with statistical rigor

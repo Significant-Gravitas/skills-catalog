@@ -418,7 +418,7 @@ Tools: CapCut (free), Descript, Captions.ai, Premiere Pro
 
 ## Related Skills
 
-- **copywriting**: For longer-form content that feeds social
-- **launch**: For coordinating social with launches
-- **emails**: For nurturing social audience via email
+- **marketing-copywriting**: For longer-form content that feeds social
+- **product-launch-marketing**: For coordinating social with launches
+- **lifecycle-email-marketing**: For nurturing social audience via email
 - **marketing-psychology**: For understanding what drives engagement

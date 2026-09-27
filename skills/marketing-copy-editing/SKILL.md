@@ -451,7 +451,7 @@ Copy editing isn't just for new content. Existing pages decay over time — outd
 
 ## Related Skills
 
-- **copywriting**: For writing new copy from scratch (use this skill to edit after your first draft is complete)
+- **marketing-copywriting**: For writing new copy from scratch (use this skill to edit after your first draft is complete)
 - **cro**: For broader page optimization beyond copy
 - **marketing-psychology**: For understanding why certain edits improve conversion
 - **ab-testing**: For testing copy variations

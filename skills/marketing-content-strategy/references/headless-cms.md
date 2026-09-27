@@ -163,7 +163,7 @@ Use CMS as the data source for programmatic pages. Store structured data (FAQs, 
 
 ### Copywriting
 
-CMS content models enforce consistent structure. Define fields that match your copy frameworks (headline, subheadline, social proof, CTA). See **copywriting** skill.
+CMS content models enforce consistent structure. Define fields that match your copy frameworks (headline, subheadline, social proof, CTA). See **marketing-copywriting** skill.
 
 ### Site Architecture
 
@@ -171,7 +171,7 @@ URL structure, navigation hierarchy, and internal linking all depend on how cont
 
 ### Email Sequences
 
-Pull CMS content into email templates for consistent messaging across web and email. Case studies, testimonials, and blog posts can feed email nurture sequences. See **emails** skill.
+Pull CMS content into email templates for consistent messaging across web and email. Case studies, testimonials, and blog posts can feed email nurture sequences. See **lifecycle-email-marketing** skill.
 
 ---
 

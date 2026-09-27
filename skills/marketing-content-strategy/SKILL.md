@@ -368,11 +368,11 @@ This is a starting ratio, not a rule. A brand-new blog may over-index on searcha
 
 Treating content like a product means each format has a production standard, not just a topic:
 
-- **Blog post** — write **10 title options** before drafting (the title does most of the work; pick the strongest). Plan **~5 editing passes** (structure, clarity, evidence, line edit, headline/SEO). For the writing itself, see **copywriting**.
+- **Blog post** — write **10 title options** before drafting (the title does most of the work; pick the strongest). Plan **~5 editing passes** (structure, clarity, evidence, line edit, headline/SEO). For the writing itself, see **marketing-copywriting**.
 - **Long-form guide** — the flagship of a pillar. Comprehensive enough to be *the* resource; structured with a table of contents and internal links to spokes. Build the hub before the spokes.
-- **Video** — script the hook first; front-load the payoff. Repurpose into short-form clips at creation time (see **social**).
+- **Video** — script the hook first; front-load the payoff. Repurpose into short-form clips at creation time (see **social-media-management**).
 - **Podcast** — one interview yields a transcript, quote graphics, short clips, and a written recap. Design the episode knowing it will be atomized.
-- **Email** — one idea per send; the subject line is the title—write several and pick. For sequences and lifecycle, see **emails**.
+- **Email** — one idea per send; the subject line is the title—write several and pick. For sequences and lifecycle, see **lifecycle-email-marketing**.
 
 ---
 
@@ -388,7 +388,7 @@ Build **distribution hooks into the piece at creation time**, not after: write s
 - **Rented** (social platforms, ad networks) — engagement, but you don't own the audience or the algorithm.
 - **Owned** (email list, blog, community) — conversion and the only durable asset. Everything upstream should funnel here.
 
-ORB mechanics live in the **launch** skill (channel-type playbook) and content atomization/repurposing lives in **social**; the value here is consolidating the *distribute* half of content strategy so it has a home.
+ORB mechanics live in the **product-launch-marketing** skill (channel-type playbook) and content atomization/repurposing lives in **social-media-management**; the value here is consolidating the *distribute* half of content strategy so it has a home.
 
 **Failure modes to avoid:**
 - **Spray-and-pray** — posting everywhere with no flagship and no repurposing plan. Effort scatters, nothing compounds.
@@ -440,11 +440,11 @@ Visual or structured representation of how content interconnects.
 
 ## Related Skills
 
-- **copywriting**: For writing individual content pieces
+- **marketing-copywriting**: For writing individual content pieces
 - **seo-audit**: For technical SEO and on-page optimization
 - **ai-seo**: For optimizing content for AI search engines and getting cited by LLMs
 - **programmatic-seo**: For scaled content generation
 - **site-architecture**: For page hierarchy, navigation design, and URL structure
-- **emails**: For email-based content
-- **social**: For social media content, content atomization, and repurposing execution
-- **launch**: For the ORB channel-type playbook and launch-day distribution
+- **lifecycle-email-marketing**: For email-based content
+- **social-media-management**: For social media content, content atomization, and repurposing execution
+- **product-launch-marketing**: For the ORB channel-type playbook and launch-day distribution

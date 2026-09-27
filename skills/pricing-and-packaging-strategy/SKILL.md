@@ -299,8 +299,8 @@ The AI-readiness fixes are usually high-impact, low-effort (put prices in text, 
 - **cro**: For optimizing pricing page conversion
 - **ai-seo**: For making the pricing page extractable/citable by AI (the teardown's AI-agent-readiness axis)
 - **schema**: For Product/Offer structured data so machines can read your tiers and prices
-- **copywriting**: For pricing page copy
+- **marketing-copywriting**: For pricing page copy
 - **marketing-psychology**: For pricing psychology principles
 - **ab-testing**: For testing pricing changes
 - **revops**: For deal desk processes and pipeline pricing
-- **sales-enablement**: For proposal templates and pricing presentations
+- **sales-enablement-content**: For proposal templates and pricing presentations
