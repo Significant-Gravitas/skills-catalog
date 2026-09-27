@@ -82,4 +82,4 @@ Dimensions 7 and 10 hand off to **`schema`** (Product/Offer JSON-LD) and **`ai-s
 - `schema` — Product/Offer JSON-LD so machines read your tiers and prices.
 - `ai-seo` — extractability, AI-bot access, `llms.txt`, getting cited by AI answers.
 - `cro` — converting the human once the page is clear.
-- `copywriting` — the value-prop and tier copy the teardown flags.
+- `marketing-copywriting` — the value-prop and tier copy the teardown flags.

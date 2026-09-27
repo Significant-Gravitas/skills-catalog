@@ -237,9 +237,9 @@ score,business,category,area,distance_km,website_status,website_url,social_urls,
 ## Related Skills
 
 - **cold-email**: For writing outbound sequences against the qualified list (the natural next step after prospecting)
-- **customer-research**: For understanding why current customers buy — informs the ICP definition
+- **customer-insight-research**: For understanding why current customers buy — informs the ICP definition
 - **competitor-profiling**: For deeper research on individual accounts (different from list-building qualification)
 - **revops**: For lead routing, lifecycle, and CRM handoff after prospecting
-- **sales-enablement**: For battle cards and one-pagers used in the outreach
+- **sales-enablement-content**: For battle cards and one-pagers used in the outreach
 - **directory-submissions**: For inbound discovery surfaces (the prospects might find you back)
 - **product-marketing**: For the ICP definition that anchors every prospecting engagement

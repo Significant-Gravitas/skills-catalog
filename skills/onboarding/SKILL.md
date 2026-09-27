@@ -260,6 +260,6 @@ When recommending experiments, consider tests for:
 ## Related Skills
 
 - **signup**: For optimizing the signup before onboarding
-- **emails**: For onboarding email series
+- **lifecycle-email-marketing**: For onboarding email series
 - **paywalls**: For converting to paid during/after onboarding
 - **ab-testing**: For testing onboarding changes

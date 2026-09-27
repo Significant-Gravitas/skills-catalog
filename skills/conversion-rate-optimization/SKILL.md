@@ -188,7 +188,7 @@ When recommending experiments, consider tests for:
 
 - **signup**: If the issue is in the signup process itself
 - **popups**: If considering popups as part of the strategy
-- **copywriting**: If the page needs a complete copy rewrite
+- **marketing-copywriting**: If the page needs a complete copy rewrite
 - **ab-testing**: To properly test recommended changes
 
 ---

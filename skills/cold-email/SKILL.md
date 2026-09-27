@@ -156,8 +156,8 @@ Use this data to inform your writing — not as a checklist to satisfy.
 ## Related Skills
 
 - **prospecting**: For building and qualifying the prospect list that this skill writes outreach against — the natural upstream step before cold-email
-- **copywriting**: For landing pages and web copy
-- **emails**: For lifecycle/nurture email sequences (not cold outreach)
-- **social**: For LinkedIn and social posts
+- **marketing-copywriting**: For landing pages and web copy
+- **lifecycle-email-marketing**: For lifecycle/nurture email sequences (not cold outreach)
+- **social-media-management**: For LinkedIn and social posts
 - **product-marketing**: For establishing foundational positioning
 - **revops**: For lead scoring, routing, and pipeline management
