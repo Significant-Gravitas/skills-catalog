@@ -1,0 +1,2 @@
+candidate_id,interviewer,slot,criterion_id,criterion,score,evidence_quote,source,confidence,submitted_at
+B-003,Maya Chen,1,C1,Runs a recurring finance process end to end,3,"Ran close for 3 entities; fixed late accruals by moving the accrual cut-off to day 2 and said close finished a day earlier after that",question,high,2026-10-02T11:05+01:00

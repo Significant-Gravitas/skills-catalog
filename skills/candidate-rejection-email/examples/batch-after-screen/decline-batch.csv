@@ -1,0 +1,7 @@
+candidate_id,chosen_name,email,role,company,stage,decision_maker,decision_date,consumer_report_involved,feedback_approved_verbatim,comparative_approved,thanks_detail,expenses_line,retention_line,sender,sender_title
+A-101,Jordan,jordan@example.com,Billing Operations Lead,Acme,application,Maya Chen,2026-10-05,no,,,,,,Maya Chen,Head of Finance Operations
+A-102,Sam,sam@example.com,Billing Operations Lead,Acme,screen,Maya Chen,2026-10-05,no,,,on our screening call on 2 October,,,Maya Chen,Head of Finance Operations
+A-103,Lee,lee@example.com,Billing Operations Lead,Acme,screen,,,no,,,on the screening call on 1 October,,,Maya Chen,Head of Finance Operations
+A-104,Ravi,ravi@example.com,Billing Operations Lead,Acme,loop,Maya Chen,2026-10-05,unknown,,,and for the time you put into the SQL work sample,,,Maya Chen,Head of Finance Operations
+A-105,Chris,chris@example.com,Billing Operations Lead,Acme,screen,Maya Chen,2026-10-05,no,We went with candidates who had more experience with multi-entity close.,,on the screening call on 3 October,,,Maya Chen,Head of Finance Operations
+B-003,Priya,priya.k@example.com,Billing Operations Lead,Acme,loop,Maya Chen,2026-10-05,yes,,,and for the time you put into the SQL work sample,,,Maya Chen,Head of Finance Operations

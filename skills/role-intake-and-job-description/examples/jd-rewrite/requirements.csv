@@ -1,0 +1,10 @@
+req_id,requirement,group,what_fails_without_it,objective,non_comparative,job_relevant,evidence_method,change_reason,approved_by,approved_on,rubric_criterion_id
+R1,has owned renewals for a book of B2B software accounts,must-show,renewal targets are missed in the first quarter without someone who has carried a book,yes,yes,yes,resume and interview,rewritten from '5+ years of experience in customer success' (the years stood in for this),,,
+R2,has run onboarding for new business customers,must-show,new accounts stall in the first month without a structured onboarding,yes,yes,yes,resume and interview,,,,
+R3,can calm and resolve an escalated customer issue,test-in-process,escalations currently land on the founder,yes,yes,yes,role-play in interview,,,,
+R4,knows our CRM,learn-after-hire,account records,yes,yes,yes,,,,,
+R5,bachelor's degree in business or a related field,removed,,,,,,no work need given; Sam agreed the renewal record is the evidence,,,
+R6,must live within 15 miles of our Denver office,removed,,,,,,commute radius is a location proxy; replaced by work terms (onsite Tue and Thu),,,
+R7,must be able to lift 25 lbs,removed,,,,,,Sam confirmed no lifting in the role,,,
+R8,great culture fit,removed,,,,,,no observable behaviour behind it; Sam's meaning (writes up every escalation) is covered by R3,,,
+R9,digital native,removed,,,,,,age proxy; the tools needed are named instead,,,

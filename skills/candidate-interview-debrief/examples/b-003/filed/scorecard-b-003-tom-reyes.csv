@@ -1,0 +1,2 @@
+candidate_id,interviewer,slot,criterion_id,criterion,score,evidence_quote,source,confidence,submitted_at
+B-003,Tom Reyes,2,C2,Writes reporting queries,2,"Query ran and totals matched for 40 of 43 invoices but missed the duplicate invoices in the sample; seemed nervous throughout",work-sample,high,2026-10-02T15:20+01:00

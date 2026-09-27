@@ -1,0 +1,23 @@
+{
+  "candidate": {"candidate_id": "", "chosen_name": "", "legal_name": ""},
+  "jurisdiction": "<hiring jurisdiction from the hiring plan, e.g. US-CA or UK; empty = treated as US for the background-check flag>",
+  "fcra_disclosure_on_record": null,
+  "terms": {
+    "entity":          {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "title":           {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "level":           {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "manager":         {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "location":        {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "work_terms":      {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "start_date":      {"value": "YYYY-MM-DD", "source": "", "approver": "", "approved_on": ""},
+    "base_pay":        {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "currency":        {"value": "ISO 4217 code, e.g. GBP", "source": "", "approver": "", "approved_on": ""},
+    "pay_period":      {"value": "year | month | week | hour", "source": "", "approver": "", "approved_on": ""},
+    "bonus_text":      {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "equity_text":     {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "benefits_source": {"value": "", "source": "", "approver": "", "approved_on": ""},
+    "contingencies":   {"value": [], "source": "offer template section <n>", "approver": "", "approved_on": ""},
+    "response_by":     {"value": "YYYY-MM-DD", "source": "", "approver": "", "approved_on": ""},
+    "signatory":       {"value": "", "source": "", "approver": "", "approved_on": ""}
+  }
+}

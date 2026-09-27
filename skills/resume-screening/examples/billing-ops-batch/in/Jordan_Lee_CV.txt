@@ -1,0 +1,21 @@
+Jordan Lee
+Billing Operations Analyst
+jordan.lee@example.com | +44 7700 900123 | Leeds LS1 4AP
+Date of birth: 14/03/1991
+(they/them)
+
+Experience
+
+Billing Analyst, Northwind Payments (2021 - present)
+- Owned the monthly billing close for 3,000 business accounts, from invoice run to sign-off with finance.
+- Cut close from 9 days to 5 by moving reconciliations to a daily check.
+- Wrote the failed-payment runbook used by the 12-person support team.
+
+Finance Assistant, Fabrikam Ltd (2018 - 2021)
+- Supported month-end close and prepared accrual schedules.
+
+Education
+BSc Accounting, University of Leeds, 2012
+
+Skills
+Excel, NetSuite, Stripe billing

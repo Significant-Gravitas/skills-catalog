@@ -1,0 +1,33 @@
+{
+  "rubric": {
+    "path": "hiring/billing-ops-lead/rubric-v1.md",
+    "format": "harper",
+    "version": 1,
+    "approved_by": "Maya Chen",
+    "approved_on": "2026-09-27",
+    "checksum": "ok"
+  },
+  "criteria": [
+    {
+      "id": "C1",
+      "text": "Runs a recurring finance process end to end",
+      "must": true,
+      "resume_screenable": true,
+      "evidence_sources": "resume; interview 1"
+    },
+    {
+      "id": "C2",
+      "text": "Writes reporting queries for reconciliation",
+      "must": false,
+      "resume_screenable": false,
+      "evidence_sources": "SQL work sample"
+    },
+    {
+      "id": "C3",
+      "text": "Writes procedures a team follows",
+      "must": false,
+      "resume_screenable": false,
+      "evidence_sources": "writing exercise; interview 2"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+slot,interviewer,criterion_ids,secondary_ids,method,minutes,questions_ref,reason
+1,<interviewer name>,C1,,question,30,Q1-Q2,
+2,<interviewer name>,C2,C1,work-sample,45,WS1,
+3,<interviewer name>,C3,,question,45,Q3-Q4,

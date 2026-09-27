@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-dedupe-upstream-2026-09-27",
+  "release_key": "catalogue-recruiting-harper-2026-09-27",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -399,11 +399,101 @@
     },
     {
       "slug": "candidate-interview-debrief",
-      "tree_sha256": "73834a4a54767eede2726a85805ce205f98e68947448f3f6b5648131239c6e80",
+      "tree_sha256": "cd2aa7e6a461c9341a25b9282a4ae06d6cedaeb0192b54e0c47afea539680d4e",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "c1a37c0f9d5fbe08dfd53792aa1e2328d9b19d764e51cdc3e8c9ca71c5da786b",
+          "sha256": "37a2b42dc7260a873a0000504b3703d677c09a13d59c2ef87c2d206d5436ab2d",
+          "executable": false
+        },
+        {
+          "path": "checklists/debrief-run-checklist.md",
+          "sha256": "425c1cb73af265e0da6e26984a3a9c3a2b2b99004a3f7095c3baac6a90c549a5",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/ats-export/greenhouse-export.csv",
+          "sha256": "09e4b502ea80beb029a9899f171ff56c10ef6cad6078f97259b754e1f56504a1",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/filed/scorecard-b-003-maya-chen.csv",
+          "sha256": "16956181478d0bf2be39387711a48d6451f5eac56d5cf43bf9be5666ddbc8794",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/filed/scorecard-b-003-priya-nair.csv",
+          "sha256": "76767a0f95c7aeac2ad5999c99c10bb538524f89e01f51116579455064a2b544",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/filed/scorecard-b-003-tom-reyes.csv",
+          "sha256": "cc9a81f961f6d62632644ef0178e13258875855fa9f5d8521f8f2d96f2d9d5cd",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/filed/scorecard-b-003-tom-reyes.md",
+          "sha256": "ae691edb35159354cdec01d57012544ddbde62cb4f16425e95858d009f632da3",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/loop.csv",
+          "sha256": "9a28197443217041d5958540813227a8f9ef567cef60676a10b8350b1cc441d7",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/panel-notes.txt",
+          "sha256": "9e9a2cf9d269bedbd11dfb16d6e1805d056579aceb464407f3f36e3cb4331628",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/rubric.csv",
+          "sha256": "5dfd137e943eebf3df3dc231579f8fbd44685bd7c138f5bca26126cd8dce1816",
+          "executable": false
+        },
+        {
+          "path": "examples/b-003/walkthrough.md",
+          "sha256": "55c08ebfc3d24cf3e04d20241e234246f9adce4eb31f13b5513ab7c8ab325779",
+          "executable": false
+        },
+        {
+          "path": "references/debrief-integrity-checklist.md",
+          "sha256": "e7a86a82e6595b5b2275458ec7d7b6aab6975e7a58a45d7af8963dbd550ed750",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "9a702390c1c761dbbd950253f69a714014c0d1919003a8b5faf52ada5f7d38b6",
+          "executable": false
+        },
+        {
+          "path": "scripts/collate_scorecards.py",
+          "sha256": "93a34e0b8f3074a4f1e597e7e6a7147ff7a37650cc70805b8f02c10ea9a79b91",
+          "executable": false
+        },
+        {
+          "path": "scripts/flag_remarks.py",
+          "sha256": "82650d32912fa83ae69e28813071c98b2f5a6f5ee8fb04a69122d8316c4f1c33",
+          "executable": false
+        },
+        {
+          "path": "scripts/remark_flags.csv",
+          "sha256": "8dc185108af3224c587b5b485318e4a754b4870d0e9935da1a958ffb2abb4b7a",
+          "executable": false
+        },
+        {
+          "path": "scripts/snapshot_scorecards.py",
+          "sha256": "3432ca0b457d0c1834e995b06a908ad89dc98fffc3057a9a73b48a6662692586",
+          "executable": false
+        },
+        {
+          "path": "templates/debrief-pack.md",
+          "sha256": "3437e46798b41c0351b478f4185ca6237fd3cf4a359724f989d403d942e5cea9",
+          "executable": false
+        },
+        {
+          "path": "templates/decision-record.md",
+          "sha256": "2a01e48a4d31b7d4451569cc89f20d09d6545bf07f650aec50446bde98d75262",
           "executable": false
         }
       ]
@@ -431,22 +521,197 @@
     },
     {
       "slug": "candidate-offer-draft",
-      "tree_sha256": "5155ab20a0782be7ca13feb06d8f08ef4f7a8335834545c5478c5b56b69fdc69",
+      "tree_sha256": "3cdf732aacfcd7997dd2a8c0f4c2700b0190fbf67cc14c813a0e980f63d3af72",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "77a5403c21d5b5109a864f26d63a7f4fca08c4d9cfe73aee0988e4f4ca92b76e",
+          "sha256": "843dc2d3c831edad0f2bc9d9109f79e76d9f847e67c82167a2c7568988cd63ec",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-bare-amount.txt",
+          "sha256": "86c7430a944db620dee1e671789af94e3ebac7650254c32813bcd8837dccb2be",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-currency-word.txt",
+          "sha256": "5698ae1ca3b8098a4c52b3a3325159bf330703bb418f6442939295487d565d73",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-draft.txt",
+          "sha256": "9d8baabe5ef0682d15adad345733b917263d2ced3af0ef0ce02abc618f1996b1",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-extra-amount.txt",
+          "sha256": "1ac33c7d09bc946cfb90529330bacfde7c21fd102be9e36ef8d34bd8cf682c7c",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-hourly-wrong-rate.txt",
+          "sha256": "af02743153c5a5e50f0b6ce552fddf706854af726cf4f77438c8a87cae3941f3",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-unapproved-percent.txt",
+          "sha256": "f1cf3e39b8d231f40fd9f321d4adc17f2d8b32344dfc78ea75f7eced0cd30720",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-wrong-currency.txt",
+          "sha256": "35ce73046f3dae04c63270a1902d05274018d33fb24bb1ce6c7d384a9100d69e",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-wrong-period.txt",
+          "sha256": "aaa0de95d0c46aacc58aaa5b3544c532e9ca43ab07cc5eb5301d7d2f2ed1c089",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email-yearless-date.txt",
+          "sha256": "117bfb30aa8a308546b3afdeb4e451ccab752a623a99dcf5f869cce055c69c9d",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/email.txt",
+          "sha256": "f9052ae1faba5ed6ff277c5eb3e6e60b40b944086256610f14d52f6927713ab7",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/offer-template.md",
+          "sha256": "a101dd19289432fb30130e61e9b7bb488533b7c6fe1018bc4b3d5a6fafc080e1",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/terms-draft.json",
+          "sha256": "b30d11e81c5cd942fd4e86d5814cba96cc7f1dc7f8804106952457f13d56c4a0",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/terms-hourly.json",
+          "sha256": "8272a960cb4cb902d663a48a01eed31504e20b50276a22b0f460f15d1e929158",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/terms.json",
+          "sha256": "bda52903a800d0ba9f0d802cb8e4842934ae7f8b7dfc8b372b68e3ddfecd8e7b",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-offer/walkthrough.md",
+          "sha256": "f64762ab70701abda8790eeeda49a7c6249759dafd1620630a461f2aecd7b7f2",
+          "executable": false
+        },
+        {
+          "path": "references/contingency-order.md",
+          "sha256": "2c0e36caf07dcc545126dc9669520869103e8d2f2b4817113ea51bb3d0005d35",
+          "executable": false
+        },
+        {
+          "path": "references/pay-terms-rules.md",
+          "sha256": "fd37aaff3cc2964d8210ce94806f70a23846714f8ef10582fb4fb63970dcfab1",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "305456ccc9be735946629af3545547cd4ba6761b35c9482f0848cc56944b3f6a",
+          "executable": false
+        },
+        {
+          "path": "scripts/check_terms.py",
+          "sha256": "bd2d530cc85af9537560f5cd72a24deecca333f0e0e82013edc1b4b4d7270842",
+          "executable": false
+        },
+        {
+          "path": "scripts/fill_offer_template.py",
+          "sha256": "fe3f001451af7a551f413e827782280877dee5678b1dece7a79adaa125bd971c",
+          "executable": false
+        },
+        {
+          "path": "templates/offer-checklist.md",
+          "sha256": "bdec561541a000346d1bbf0b4a5d7bf920312b1a8bd48655e702444a27a971a3",
+          "executable": false
+        },
+        {
+          "path": "templates/offer-email.md",
+          "sha256": "faf56e5c2f375483328938d1d991dc45d89a36bc4541097daf09b927169d0609",
+          "executable": false
+        },
+        {
+          "path": "templates/offer-terms.json",
+          "sha256": "ac471ea5cd71039be7de722f584a2d48ad0866203a84215a2a50553324005239",
+          "executable": false
+        },
+        {
+          "path": "templates/term-summary.md",
+          "sha256": "e0d218bc8f5747c5960e98773c094dab6c27e94590fbc3000570962b155c663f",
           "executable": false
         }
       ]
     },
     {
       "slug": "candidate-rejection-email",
-      "tree_sha256": "16b02bb5bdd98be3267c8444e6b284773e4324314819c413915c6846506f5c01",
+      "tree_sha256": "5cf71048c2bf1c15870e29c9006511a8cfab4dcc8ba5fde9f4231ff5500acc16",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "05e57b17f939dcd572e54aee7449f159ed36e9e4f90bce62bbedbfa1532cd807",
+          "sha256": "7085f04a4f74516cafc0d7a77e61621402d9ebac56f9609ba24399e4bfd45b19",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-after-screen/decline-batch-names.csv",
+          "sha256": "67232b843dd3b104f3234742e9375dd1ba1c530dcc0976a5b11cbc695814868b",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-after-screen/decline-batch.csv",
+          "sha256": "60afe09e7dc24f0f96e39a6c5fa067cb83b0affba2d09f645cfa03f19adea597",
+          "executable": false
+        },
+        {
+          "path": "examples/batch-after-screen/walkthrough.md",
+          "sha256": "13e6baeb258622c0c34873a4ecd0cce33726ee9e6008aa09355b39097ac24cd3",
+          "executable": false
+        },
+        {
+          "path": "examples/declines-by-stage.md",
+          "sha256": "18a7bd9ccc0dc4eb4cd8397f646d7b9ade2bb7af27c061cad48ab412d11ba916",
+          "executable": false
+        },
+        {
+          "path": "references/decline-content-rules.md",
+          "sha256": "a3539c23d6e5415ff6fc3683d1c245a2172763f766c8a88714335d4da21c4a6a",
+          "executable": false
+        },
+        {
+          "path": "references/fcra-adverse-action-routing.md",
+          "sha256": "52e9c4da019724a85c90072fe0951b99fc8c8f4906661302fb4c3c804387341d",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "7b1c4164f47825fad37bfebfe9f8455bf0e2b0c566fb9f8eb1415bbfe77e0d92",
+          "executable": false
+        },
+        {
+          "path": "scripts/lint_decline.py",
+          "sha256": "e4e5d0c24f5e02de29d03c8042419da9b546bc3d58b2e931a1953adc2cb37688",
+          "executable": false
+        },
+        {
+          "path": "scripts/merge_declines.py",
+          "sha256": "b0e1c6097599d34ac6a44563248039268c1b7eefa1f9cc1ace3298ba08617783",
+          "executable": false
+        },
+        {
+          "path": "templates/decline-batch.csv",
+          "sha256": "f14326a767fa38b6fd1216b6d287f06ec666f02c896ee3e29b56f0cfb67f61a6",
+          "executable": false
+        },
+        {
+          "path": "templates/decline-by-stage.md",
+          "sha256": "491950b791b4053239dc964ff9cba575e4c8a5459d9e33eea429a99d024990c5",
           "executable": false
         }
       ]
@@ -2002,11 +2267,86 @@
     },
     {
       "slug": "hiring-rubric-design",
-      "tree_sha256": "97379a2a222b3fa2265c7628a76786470f53d439eeb313b178234d4ff8f61276",
+      "tree_sha256": "326d146a0abdb4183188fa55dbf2f06b67ab6159fed227fbecf7f4bcced56109",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "a2d32d697d2be192d810ac659999aa0f0329991d2de71aa89dcb2ae6b90a505c",
+          "sha256": "6bc79dab4ad9214b367d89b0b3e0e8151c7db4e32ffe39c9f3c1c9352bf3d2c9",
+          "executable": false
+        },
+        {
+          "path": "checklists/pre-approval-checklist.md",
+          "sha256": "885ff8785cbf0a1b2a113b9df8cfd7ed65163184ea909f0b9ec719e7ed445307",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-rubric.md",
+          "sha256": "5a75c0d2e7c9e2c123afd68fe1544f3e7c3f3984c99850aab8a489195bc2049f",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops/requirements.csv",
+          "sha256": "b042a244ac6637b37f7ec0584cdafb43a2bae344504a8b7fb1cacb39da12da39",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops/rubric-v1-first-draft.md",
+          "sha256": "5b5c14cb130460653608dd3cd0134afbdfaad1263cc9e363785f15da5d47cea9",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops/rubric-v1.md",
+          "sha256": "b62eeb1b526e65b9e7169c09616b1e9bf4f5c741996886683677f0b571143bdc",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case-fit-prestige-and-change.md",
+          "sha256": "44bbc65ea86cfa5298643decbd378745b932307dd078bbd1e50c6d9a39ec657f",
+          "executable": false
+        },
+        {
+          "path": "references/anchor-writing-guide.md",
+          "sha256": "f269217e2620e9235a3bc05b9783157b7e2e9cb46df0cf38a9251c24b39dbc6a",
+          "executable": false
+        },
+        {
+          "path": "references/disallowed-signals.csv",
+          "sha256": "f0191956e273e339a149d70bcedf46f73da61ba1d4ff5811f77a1012f16f9678",
+          "executable": false
+        },
+        {
+          "path": "references/hiring-state.md",
+          "sha256": "8301afd64ba5b5904a74d13b4f908ef32846b98f09d40e18767f248ea9e043f2",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "23eb213fe4efb14f9c31cbe09c44a26a372c76f9eeb256944deacb1a9c74802c",
+          "executable": false
+        },
+        {
+          "path": "references/structure-components-checklist.md",
+          "sha256": "967ae58333f6047ffebd58d84c3cac2826f1afb263cd2981dabe78b6227eafad",
+          "executable": false
+        },
+        {
+          "path": "scripts/approve_rubric.py",
+          "sha256": "7d7141c827ee1b78fb39a1abfe90e5f8782afbc22c2538a55f7d1d08e31ed5de",
+          "executable": false
+        },
+        {
+          "path": "scripts/rubric_io.py",
+          "sha256": "2403bbd9db0e1e3162b2e168a9681343a95811822ca484f6b91d164258895b20",
+          "executable": false
+        },
+        {
+          "path": "scripts/validate_rubric.py",
+          "sha256": "d3197fea5582bd46241b7b4d62486eeec55eea37b146e186d880f5c666209105",
+          "executable": false
+        },
+        {
+          "path": "templates/rubric.md",
+          "sha256": "7f645ed942cfc456ef9d6c002ff05c96dc2f6b54ceead0e04855140eb7f3e5f2",
           "executable": false
         }
       ]
@@ -2112,11 +2452,116 @@
     },
     {
       "slug": "interview-plan-and-scorecard",
-      "tree_sha256": "a35c901ffa25edc4d01028ef4ee191f40eab9a468c1a82f2f0a57fbef1eae95b",
+      "tree_sha256": "88f586feb855fc3857a9b6bf4b0430c5c708bbb2e5497c978c87e2749eabf710",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "d37e1aa76d885a009c97bcc3cc7d79e211350ead073e2259288f6ef3af9d1c69",
+          "sha256": "b30c45af7f112bdc204a5c3c8dda89625ed227df04a2e6e1df4218fd3e59ef5b",
+          "executable": false
+        },
+        {
+          "path": "checklists/loop-quality-checklist.md",
+          "sha256": "d10160d504410d438e018157294ef8f6311e7fadeffa960b808c6dcee9436ab7",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead/loop-draft.csv",
+          "sha256": "e00a83d4903db7f4e56b2fc2a7d2cf795895e1bb776fc2297e82f995d4ae47fc",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead/loop.csv",
+          "sha256": "9a28197443217041d5958540813227a8f9ef567cef60676a10b8350b1cc441d7",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead/question-bank.md",
+          "sha256": "7b5bbad74c7c568a756a76439b35906ff6057ef3ffefce6314c60d23f2bc639a",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead/questions-draft.md",
+          "sha256": "0921f3c517abd04e052584dc61a5110217b6254c1b8e8f974abcb188e1244c6b",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead/questions.md",
+          "sha256": "f02a58399a1ee67d929c2b7f332c62358b0c365c3f39ccc5276b5260c43bbf68",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead/rubric.csv",
+          "sha256": "5dfd137e943eebf3df3dc231579f8fbd44685bd7c138f5bca26126cd8dce1816",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead/walkthrough.md",
+          "sha256": "1c6b9c6cbdd5746c9a0d8afae25abd67deff2f3419b0928c3b1fe6999584c3b9",
+          "executable": false
+        },
+        {
+          "path": "references/question-bank-patterns.md",
+          "sha256": "b473599d7c0cdb736a40c05fdd6fd537d3e02ae22223f7489d8085ffd00c855f",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "200d4409c15a3990e0494f06c03045c721d4b232b2810d09a3d1ebfd73a95433",
+          "executable": false
+        },
+        {
+          "path": "references/unlawful-question-rewrites.md",
+          "sha256": "20b1d3a8ec5ecab6d57ca3c506f5178edfeaff2872417d276b54591b05ba8933",
+          "executable": false
+        },
+        {
+          "path": "scripts/check_loop.py",
+          "sha256": "1dc0e97742a83591d944583df06a1858117f1081a5f1b028b79e1b84e70371e2",
+          "executable": false
+        },
+        {
+          "path": "scripts/make_scorecards.py",
+          "sha256": "592a56c23f9f68c036d851976311116e57989786f0cc20610479001c8e375816",
+          "executable": false
+        },
+        {
+          "path": "scripts/question_lint.py",
+          "sha256": "d3f80a55e1bf24a1ec8e924b88d2ad875e5a3c0c0fdcb401f847aea826172a75",
+          "executable": false
+        },
+        {
+          "path": "scripts/tables.py",
+          "sha256": "61f8581bfe0d84ee8a3c74c9b424441f55fd876bde27ee37f4321913af4e213d",
+          "executable": false
+        },
+        {
+          "path": "templates/candidate-info-note.md",
+          "sha256": "78b536f5f099f9e7d521e1d5eecc9b4240931c76595d800bd14488abf2df3592",
+          "executable": false
+        },
+        {
+          "path": "templates/interview-plan.md",
+          "sha256": "06fc94374e200124fc988b51d8e665d9ca9d3fe81451275e20e63e43ab511b27",
+          "executable": false
+        },
+        {
+          "path": "templates/loop.csv",
+          "sha256": "f79c83600aac926d75dfa0736e98d9bc7dac4eca1edb1cb69c4b0a5ec65f2ab5",
+          "executable": false
+        },
+        {
+          "path": "templates/question-bank.md",
+          "sha256": "0f5158ef05544c6b74840b523632d203576258327c9a388ad2faee4d569eac23",
+          "executable": false
+        },
+        {
+          "path": "templates/rubric.csv",
+          "sha256": "eb8627e216a29160fdcb47a50ac124d4ee5d8af8043633e54f8a968765f8185a",
+          "executable": false
+        },
+        {
+          "path": "templates/scorecard-template.md",
+          "sha256": "4cde1583cb3c8fa91edf7dfde27d2e19571701c81e29e8ac4bb8610be0631012",
           "executable": false
         }
       ]
@@ -4479,11 +4924,76 @@
     },
     {
       "slug": "recruiting-getting-started",
-      "tree_sha256": "eac6bb0497b159eae032593fed380e3515dfda07d87e5b1e34a67f162ae9c03e",
+      "tree_sha256": "9ea6e6dcb4c354689e70854e94886d89a9533feed7abcc04d31f4955b3b2c686",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "b24e28327ff6dc3143874d629398715771b011f8783264930a5fac9651d56ca8",
+          "sha256": "a47a8b3b7d185efa07f3a998139f2865a3622e603eac4bc3ec5d00b8ee22f7d6",
+          "executable": false
+        },
+        {
+          "path": "checklists/kickoff-checklist.md",
+          "sha256": "3ba8ce9a308e81bb272669cdc2da53e2fbb387de3a06e6fbb846d4ebb3faea39",
+          "executable": false
+        },
+        {
+          "path": "evals/scenarios.md",
+          "sha256": "55a781ed20f5cfb4f0a807771afa4014db44eb03b299014645302ca0e4511ea0",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-lead-kickoff.md",
+          "sha256": "e641041eea675e29921775901384d8d307cb77b0ba5541cc68dfb231aac306d5",
+          "executable": false
+        },
+        {
+          "path": "examples/hard-case-founder-nyc-rush.md",
+          "sha256": "383d6c71af46a724366deba85df301bfbb890e491cab63ff1dc6e1c9bdf5079f",
+          "executable": false
+        },
+        {
+          "path": "references/hiring-state.md",
+          "sha256": "8301afd64ba5b5904a74d13b4f908ef32846b98f09d40e18767f248ea9e043f2",
+          "executable": false
+        },
+        {
+          "path": "references/jurisdiction-triggers.csv",
+          "sha256": "ab809239c29fb69288eae538caac7bfe54b3e875c40ad096d232ff4b46d232f9",
+          "executable": false
+        },
+        {
+          "path": "references/policy-intake-checklist.md",
+          "sha256": "ce86f8b5c21faa7553be52f4103ddb7a630b0025c0040170d575513d2344b31e",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "2c9b518fba00be7bb7aa16dcaedc0e025f7e70da52d3ea1bd566a66020dbecd0",
+          "executable": false
+        },
+        {
+          "path": "scripts/init_role.sh",
+          "sha256": "1e317597e03045859c7f2c129d96b95903a4e0de76ae56322cdbb763dd3fc0cb",
+          "executable": false
+        },
+        {
+          "path": "scripts/plan_check.py",
+          "sha256": "21e0476504e71d761aff383832839347fe6786f7ab9c7f94a20b9727cda42d07",
+          "executable": false
+        },
+        {
+          "path": "scripts/policy_flags.py",
+          "sha256": "05c0ac2982d98d9186ff268afae8537a95a9363b588ad2d7ba17dfa2e479bcb0",
+          "executable": false
+        },
+        {
+          "path": "templates/hiring-plan.md",
+          "sha256": "11be5135aa24b567811bd7bc585d665beadce13c7bcf09f71109fc8b38dd03b9",
+          "executable": false
+        },
+        {
+          "path": "templates/intake-questions.md",
+          "sha256": "2c3e5fee04665c666a2665873c00e6a3da3fd7ff64dd9840cf9acbb09273928a",
           "executable": false
         }
       ]
@@ -4643,11 +5153,226 @@
     },
     {
       "slug": "resume-screening",
-      "tree_sha256": "be7c73397d83cf566b253b97c61c3e5d78cc2409a17f2b361ecb588a353837f9",
+      "tree_sha256": "0bf71eafb488b059e136384c5bc0e196ff4ed2ba73d32eeb378b01c410fb0632",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "502298074eb751472fbdb9995a6f117d20c79d8af5e99cdc3d23de7861ba6b31",
+          "sha256": "52e1529faa973402134a6e921ce5e73ddd9c49e145291ec66b5534b2079c7c3e",
+          "executable": false
+        },
+        {
+          "path": "checklists/screening-run.md",
+          "sha256": "6f869dce1b5f4a87a3b6f0918817b0ae7195e2333c2e557714c804ae83cc569d",
+          "executable": false
+        },
+        {
+          "path": "evals/scenarios.md",
+          "sha256": "d2dad9bb1c25e4a282a82782ca338d4fd228db45a7c9f19868d6c300c7a30ad9",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/criteria.json",
+          "sha256": "571f4b826faf2b62d444650a6574fdefcc6bc00478ef04373cbfc79bf4b2906b",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/hiring/billing-ops-lead/hiring-plan.md",
+          "sha256": "4dd546db59059039565d3547f2ca88374a58c0c0bf537018eb98dc545e70fcc7",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/hiring/billing-ops-lead/requirements.csv",
+          "sha256": "b042a244ac6637b37f7ec0584cdafb43a2bae344504a8b7fb1cacb39da12da39",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/hiring/billing-ops-lead/rubric-v1.md",
+          "sha256": "c9096e429fd3f4d41e45b6f44d6a3f4be0634402752f925e0014dd1882a1cc10",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/hiring/billing-ops-lead/rubric-v1.md.sha256",
+          "sha256": "7ab49f5a80bf9c6e30ec17679ec328f746522e63418ad60cd9794042450933de",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/hiring/dnc.csv",
+          "sha256": "d9db9dc2ad993fe0a1cd4f6eb394ff07037c1c204263d0f9fe233c7103b0fe48",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/in/Alex_Morgan_resume.txt",
+          "sha256": "fa5b820505017008e9a3be7c863f7b3a481bc3a09206d995613d88fff5b8920f",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/in/Chris_Diaz.txt",
+          "sha256": "19b6d508d71e7210e1f7664fc2ea14a7680ec7bc8f1997eca39f024daed2fa7d",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/in/Jordan_Lee_CV.txt",
+          "sha256": "3f4d8ad5f8c43ae8d279a2160dd88ae8fe0c6a8f8d339334d062fc00e35e715a",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/in/Priya_Nair_CV.pdf",
+          "sha256": "e332ba4565ea75c2eb3efa2d11c748dc9c914587fd6f98dc4ced994e20e642f4",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/in/Sam_Okafor_resume.docx",
+          "sha256": "ba21612fae6da7a4f450082f240327d6b3c6b6375bd0b8b4e77cff1a2873ed97",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/records/A-002.json",
+          "sha256": "d3e121c472fd22dd3a7c88ea15eaaaa36e6727ce5018d123b463a389e6fc1d8b",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/records/A-002.json.orig",
+          "sha256": "c3a8aae8d81bc52f7eb53a42e9ea715695cbe84a671e3485a2d5f2535b135a28",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/records/A-003.json",
+          "sha256": "deefb694048e2bf75401b6734f2b39d1dd6480a8727e954d72d3b971bd60dab7",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/records/A-003.json.orig",
+          "sha256": "d1bf326625ee0d6c520900723dab04f1cfbde04a7ca402d08e739b24f3d02cfe",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/records/A-005.json",
+          "sha256": "dc451c4528299a492521cb55a76fc41702b564e88014c3aeff155c6d382bb54e",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/records/A-005.json.orig",
+          "sha256": "d520f01cdadcb837cc5babbdcb6908659c22331e169360348c261cd519e2d1ec",
+          "executable": false
+        },
+        {
+          "path": "examples/billing-ops-batch/walkthrough.md",
+          "sha256": "ef87fbe4835d74a85d5d5fb3c65dad6aa51ef786e43e6b661f226d9ab37d8579",
+          "executable": false
+        },
+        {
+          "path": "examples/rank-request-refusal.md",
+          "sha256": "43bce3e5b0301651da884ad7b34349461eb9f112a41aff4b4a3fc30050c82532",
+          "executable": false
+        },
+        {
+          "path": "examples/screen-with-injection.md",
+          "sha256": "5c8b546e2ad5165e87dc0292a1cc906c78f9c4c4c1553be91cef66857383bee0",
+          "executable": false
+        },
+        {
+          "path": "references/ai-hiring-law-watch.md",
+          "sha256": "32e7478a5277bc9106ee5cfb94f6ee9c4c91fbee3212892f19a0eef089180e6c",
+          "executable": false
+        },
+        {
+          "path": "references/persona-vocabulary.md",
+          "sha256": "5cecac11b4299e0afd53faad3300ba640ada2663bd7acc8c285d44b03bffdac7",
+          "executable": false
+        },
+        {
+          "path": "references/prompt-injection-handling.md",
+          "sha256": "e6aa21aca6241c22d237044b790c8c323dc8a4c89196a2d49ca9a5381594beac",
+          "executable": false
+        },
+        {
+          "path": "references/protected-columns.txt",
+          "sha256": "b90fa6c713e90484061579290b733f973502e6f197b0f253d8b7777957eb7c6c",
+          "executable": false
+        },
+        {
+          "path": "references/protected-traits-and-proxies.md",
+          "sha256": "50c737b09383cd0fce045d5be469e6430ab2463fcfbc5029e59ee612870e0d5a",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "16b5edb42733404c725cbf336c207260e0d1dcddbc683d7f5f95ca732977bc41",
+          "executable": false
+        },
+        {
+          "path": "scripts/batch_counts.py",
+          "sha256": "fbbcf2f9041a16f06ec4c05e8c5c75f3a8f8cbe9f6fee47b0be515ec2d4a66bb",
+          "executable": false
+        },
+        {
+          "path": "scripts/counterfactual_pairs.py",
+          "sha256": "a690f53f11d17800da885f30eee3d9b56aa1d5d2ce66e6decd6dee1b74faa5fb",
+          "executable": false
+        },
+        {
+          "path": "scripts/extract_resumes.py",
+          "sha256": "24dc76d6398a91604e6f5c57b5e9731105c2ca71862a2452df71139ad3d3413a",
+          "executable": false
+        },
+        {
+          "path": "scripts/find_rubric.py",
+          "sha256": "14d48cb71106fb1610acbfdc9b20911f311664faec9e50292ddad2c0ea80d333",
+          "executable": false
+        },
+        {
+          "path": "scripts/forget_candidate.py",
+          "sha256": "bf37db7d1638d0a58df20a86b57a8026c1bbf4c6a1bab1f5a56f58394353646b",
+          "executable": false
+        },
+        {
+          "path": "scripts/merge_matrices.py",
+          "sha256": "e74491bdd7070d53740a1051adfe06f3941d2f454ab8d16ed19068d2aadd1960",
+          "executable": false
+        },
+        {
+          "path": "scripts/redact.py",
+          "sha256": "743fd921cc39ba32fb56600a9aca9454011c08f86a4c309f4d2b74a253f4336b",
+          "executable": false
+        },
+        {
+          "path": "scripts/redact_export.py",
+          "sha256": "437e7e9b7ef49887b2860d0c2b9ead22aef8d0654385865587123cff92012325",
+          "executable": false
+        },
+        {
+          "path": "scripts/screenio.py",
+          "sha256": "163353194db65d1f64eb9602353e22d385f6ac06310d6ae75049bd6c6051292f",
+          "executable": false
+        },
+        {
+          "path": "scripts/tracker_mark_screened.py",
+          "sha256": "dcb6f735d035a08ea99fce51320a18b98f6eb223f69694f0640e9dfc4f026595",
+          "executable": false
+        },
+        {
+          "path": "scripts/verify_quotes.py",
+          "sha256": "e40f01a634c50362443314e999da723f04e8524460109647b5c68af65b718836",
+          "executable": false
+        },
+        {
+          "path": "templates/batch-summary.md",
+          "sha256": "ffc982ef55a95f2f2ec36d42fc53d506b7df096bae1a6ee506f60e65e68cc057",
+          "executable": false
+        },
+        {
+          "path": "templates/evidence-matrix.md",
+          "sha256": "4f2a57c38de7d970102193d97fefaea0f5c0fa0416d5407ee565129833bc7f50",
+          "executable": false
+        },
+        {
+          "path": "templates/screen-plan.md",
+          "sha256": "a5e253c03dfff9bdbccec30f0f558d372b6c767e4b2266e463622e768321c645",
+          "executable": false
+        },
+        {
+          "path": "templates/screen-subtask-prompt.md",
+          "sha256": "eaa3dba2cc64943d94f58af4a8e7fd89df4f9040e642b3cdc2ef954a71569fe6",
           "executable": false
         }
       ]
@@ -4709,11 +5434,116 @@
     },
     {
       "slug": "role-intake-and-job-description",
-      "tree_sha256": "2c21c266ff3322aa4d14f80ad1be82839a7b6b2f0892be5bb409653610cd4034",
+      "tree_sha256": "1974f263dc70685f1b2ae48e11e9872c4774fb2fa80ed5c71df993ed46c0f4c8",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "5dd6f90975cc56ff54ec663de0a3ec8d7dce484e83c398e107e842f90dc66816",
+          "sha256": "ccd0bd635d37fa173e0abda9c7371f9fb257a84b4273a8f4a24165f082596be4",
+          "executable": false
+        },
+        {
+          "path": "checklists/review-checks.md",
+          "sha256": "a577f7b7566a529cdd6dcd57f1ea3d9f9c64a51c9da9b23987e520a1f03327cd",
+          "executable": false
+        },
+        {
+          "path": "examples/jd-rewrite-with-lint.md",
+          "sha256": "2c4f4e8b1e89bdcd1bcad052104c1f1e4599b6aaae32ec426c21ea6b3fd46a49",
+          "executable": false
+        },
+        {
+          "path": "examples/jd-rewrite/jd-v1.md",
+          "sha256": "7e4699f95456ff94ad89cddee583c41cc37579de5e8a09656e9a2566cb77c6a4",
+          "executable": false
+        },
+        {
+          "path": "examples/jd-rewrite/old-posting.md",
+          "sha256": "5b7ca6ed7781f27026bc35cbd87bafe829d487699135cd9b70854345e3e6e25b",
+          "executable": false
+        },
+        {
+          "path": "examples/jd-rewrite/requirements.csv",
+          "sha256": "ac329697332ef40448b5445897e08fe2e2e32f3de4316786f51c1f9d23a8d4dc",
+          "executable": false
+        },
+        {
+          "path": "examples/job-description-example.md",
+          "sha256": "5b00282f22a1131e2062e050165753044e6e9783c83959dcd741e921f706ece7",
+          "executable": false
+        },
+        {
+          "path": "references/hiring-state.md",
+          "sha256": "8301afd64ba5b5904a74d13b4f908ef32846b98f09d40e18767f248ea9e043f2",
+          "executable": false
+        },
+        {
+          "path": "references/inclusive-language-lint.md",
+          "sha256": "5f643720c7a3c6ac9b15570ff130005575ac114861915010cf15d3c2a1dc2928",
+          "executable": false
+        },
+        {
+          "path": "references/lint-terms.csv",
+          "sha256": "bcfcc77c1cad195f208e7a89d978888b0848ee52a55ea79d2b9a77ce6449926c",
+          "executable": false
+        },
+        {
+          "path": "references/posting-law-fields.md",
+          "sha256": "e3be9ea3392c8e03d40489098bf9c8d771188b65e52b4168c1e5da5af7aab9a7",
+          "executable": false
+        },
+        {
+          "path": "references/requirement-tests.md",
+          "sha256": "3d98bd173531316ee872154d242d5a2ed47ff7b78767af8ba8a670387bf87c50",
+          "executable": false
+        },
+        {
+          "path": "references/sources.md",
+          "sha256": "c7d11fb99b460de68065528e12658248c041c4088d104f5555abefe454e724c7",
+          "executable": false
+        },
+        {
+          "path": "scripts/diff_postings.py",
+          "sha256": "8fd2ef69e92d75f845ad245f78a56c92cf87b97cacf8e17413f60f597cc6d76b",
+          "executable": false
+        },
+        {
+          "path": "scripts/extract_text.py",
+          "sha256": "4defb47b05dd4260612efeec557d92c0df184844dab916a2d2de109af0adbcda",
+          "executable": false
+        },
+        {
+          "path": "scripts/jd_lint.py",
+          "sha256": "7b972987f7be5aa15c2b5fbdff62c5ff1a61a251c49ef35db9121112b0c5dd4a",
+          "executable": false
+        },
+        {
+          "path": "scripts/req_check.py",
+          "sha256": "4990f9656f9548a005359cf95bb0eb5adda5b823a30e301320ed66a86bb755ac",
+          "executable": false
+        },
+        {
+          "path": "scripts/to_docx.py",
+          "sha256": "5b16b40af2adf0f7f01636b170cdcfc60f0675470f0b80c05f5ee1227cea7f63",
+          "executable": false
+        },
+        {
+          "path": "templates/approval-checklist.md",
+          "sha256": "e02dc4e26a6871b2026222c8ec284a16f72cb0a8b385cf74ee19b60b6d0c6f59",
+          "executable": false
+        },
+        {
+          "path": "templates/intake-brief.md",
+          "sha256": "42eea76b37bfef5ae4256722f1d3b496a8d964deafc91f7747a642e3504720e7",
+          "executable": false
+        },
+        {
+          "path": "templates/job-description.md",
+          "sha256": "b04fb11fe86bd3cfc6931aa614fa30f5f7f5f4bd7be213315c4d49d1968176a7",
+          "executable": false
+        },
+        {
+          "path": "templates/requirements.csv",
+          "sha256": "a89f310ad75d61d2eff1c004b291ff3ddea184fb3e3096f292eebab3d04d542d",
           "executable": false
         }
       ]

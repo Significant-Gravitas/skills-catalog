@@ -1,0 +1,2 @@
+criterion_id,criterion,outcome_supported,anchor_1,anchor_2,anchor_3,anchor_4
+C1,<criterion from the approved rubric>,<job outcome>,<1: method completed and no qualifying evidence>,<2: partial or indirect evidence>,<3: clear evidence at the required scope>,<4: clear evidence at greater scope with a stated result>

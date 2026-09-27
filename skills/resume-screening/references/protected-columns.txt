@@ -1,0 +1,40 @@
+# One column header per line (case-insensitive, exact match after trimming).
+# redact_export.py also drops any header matching its built-in pattern
+# (gender, sex, race, ethnic, hispanic, latino/a/x, veteran, disab, dob,
+# birth, age, marital, religion, nationality, citizen, eeo, self id, photo,
+# pronoun, sexual orientation, pregnan), and moves proxy columns (graduation,
+# school, salary, pay, location, city, state, country, region, commute) to
+# the owner-only identity file.
+# Sources: Greenhouse Harvest v3 EEOC returns row-level self-ID keyed by
+# application [118]; self-ID data must never reach screeners [51][99].
+gender
+race
+ethnicity
+race/ethnicity
+veteran status
+disability status
+eeoc
+eeo
+eeo category
+self-identification
+self identification
+date of birth
+dob
+age
+marital status
+religion
+nationality
+citizenship
+photo
+photo url
+avatar
+avatar url
+headshot
+pronouns
+sexual orientation
+protected veteran
+hispanic/latino
+hispanic or latino
+sex
+graduation year
+current salary

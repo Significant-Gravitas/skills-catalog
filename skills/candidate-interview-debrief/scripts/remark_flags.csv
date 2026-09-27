@@ -1,0 +1,19 @@
+pattern,category,action,ask_or_note
+\b(gel|gelled|vibe|vibes|chemistry|one of us|like us)\b,fit,ask-for-behaviour,Which approved criterion does this relate to and what did you see or hear?
+\bculture ?fit|\bcultur\w* (match|fit|add)\b|\bnot a fit\b|\bgood fit\b|\bfit (in|with)\b,fit,ask-for-behaviour,Which approved criterion does this relate to and what did you see or hear?
+\b(energy|energetic|spark|presence|charisma|polish|polished|gravitas)\b,label-no-behaviour,ask-for-behaviour,What did the candidate say or do that you are describing?
+\b(nervous|anxious|confident|confidence|enthusias|passionate|excited|timid|shy|cold|warm|awkward|arrogant)\w*,affect,exclude,"Affect and demeanour are not rubric criteria, so this is out-of-rubric evidence; keep only what was said or done (Harper never infers affect itself: AI emotion inference in hiring is prohibited in the EU, dossier [73])."
+\b(eye contact|body language|smile|smiled|tone of voice|seemed honest|seemed dishonest|evasive|shifty)\b,affect,exclude,"Affect and demeanour are not rubric criteria, so this is out-of-rubric evidence (AI video scoring tracked nothing job-related, dossier [106]); keep only what was said or done."
+\b(young|old|older|too senior|overqualified|digital native|near retirement|junior-sounding|mature|twenties|thirties|forties|fifties|sixties|recent grad\w*|new grad\w*|fresh graduate)\b,age,exclude,Age or age proxy (dossier [34][45]); exclude and note the criterion evidence instead.
+\b(kids|children|pregnan|maternity|family plans|married|husband|wife|childcare|caring for)\w*,family,exclude,Family status (dossier [74]); exclude.
+\b(mum|mom|mother|father|dad|parent) of\b|\bsingle (mum|mom|mother|father|dad|parent)\b,family,exclude,Family status (dossier [74]); exclude.
+\b(accent\w*|english (is not|isn't) (their|her|his) (first|native)|english (was|is) (hard|difficult|poor|broken|weak)\w*|second language|native speaker|foreign\w*|where (she|he|they) (is|are) from|nationality|immigrant|visa)\b,origin,exclude,National origin proxy (dossier [34]); exclude unless it is the yes/no work-authorisation fact from the owner's process.
+\b(pretty|attractive|well dressed|scruffy|overweight|looks|appearance|tattoo)\w*,appearance,exclude,Appearance is not job evidence; exclude.
+\b(church\w*|religio\w*|faith\w*|hijab\w*|headscar(f|ves)|turbans?|kippah\w*|yarmulke\w*|pray\w*|observan\w*|kosher|halal|mosque\w*|synagogue\w*|temple\w*)\b,religion,exclude,Religion (dossier [34]); exclude.
+\b(health|sick|illness|disab|medication|mental|anxiety disorder|adhd|autis|wheelchair)\w*,health,exclude,Health or disability before an offer (dossier [35][46]); exclude and route accommodation questions to the named owner.
+\b(gap in (her|his|their) (cv|resume)|career break|time off)\b,gap,ask-for-behaviour,Gaps are not scored (dossier [64][108]); ask which criterion evidence is missing instead.
+\b(school|ivy|oxbridge|pedigree|big-name|brand name|top-tier)\b,prestige,ask-for-behaviour,Prestige is not a criterion; ask for the observed evidence.
+\b(strong instincts|gut|feel(ing)? (good|bad)|just (felt|knew)|red flag)\b,label-no-behaviour,ask-for-behaviour,What did you see or hear that led to this?
+\b(attitude|personality|likeable|likable)\b,label-no-behaviour,ask-for-behaviour,What did the candidate say or do that you are describing? Which approved criterion does it relate to?
+\b(straight with|trustworth\w*|honest\w*|dishonest\w*|sincer\w*|lying|liar)\b,honesty,ask-for-behaviour,"An honesty impression is not scoreable evidence; what exactly did the candidate say or do, and which approved criterion or process check (for example references, if policy allows) covers it?"
+\b(ai|chatgpt|automated) (score|rating|said)\b,automated,exclude,Automated or AI scores are not interviewer evidence; exclude from the decision record.

@@ -1,0 +1,3 @@
+candidate_id,chosen_name,email,role,company,stage,decision_maker,decision_date,consumer_report_involved,feedback_approved_verbatim,comparative_approved,thanks_detail,expenses_line,retention_line,sender,sender_title
+D-201,Zoë,zoe@example.com,Medical Billing Specialist,Brightside Family Dental,application,Dana Ruiz,2026-10-05,no,,,,,,Dana Ruiz,Practice Manager
+D-202,Ben,ben@example.com,Medical Billing Specialist,Brightside Family Dental,screen,Dana Ruiz,2026-10-05,no,,,on our call on 2 October,,,Dana Ruiz,Practice Manager

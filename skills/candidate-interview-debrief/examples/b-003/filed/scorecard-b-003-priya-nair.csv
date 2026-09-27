@@ -1,0 +1,3 @@
+candidate_id,interviewer,slot,criterion_id,criterion,score,evidence_quote,source,confidence,submitted_at
+B-003,Priya Nair,3,C3,Writes policy others follow,3,"Rewrote the escalation guide used by the 12-person support team and reviews it each quarter",question,medium,2026-10-03T10:40+01:00
+B-003,Priya Nair,3,C2,Writes reporting queries,4,"Described building the refund dashboard in SQL",question,low,2026-10-03T10:40+01:00

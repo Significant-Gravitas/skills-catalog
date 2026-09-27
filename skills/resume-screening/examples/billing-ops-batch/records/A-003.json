@@ -1,0 +1,35 @@
+{
+  "id": "A-003",
+  "rubric_version": 1,
+  "rows": [
+    {
+      "criterion_id": "C1",
+      "result": "EVIDENCE FOUND",
+      "quote": "Owned the monthly billing close for 3,000 business accounts, from invoice run to sign-off with finance.",
+      "location": "role 1, bullet 1",
+      "note": "",
+      "quote_check": "exact"
+    },
+    {
+      "criterion_id": "C2",
+      "result": "EVIDENCE MISSING",
+      "quote": "",
+      "location": "",
+      "note": "not stated; tested by the SQL work sample"
+    },
+    {
+      "criterion_id": "C3",
+      "result": "EVIDENCE FOUND",
+      "quote": "Wrote the failed-payment runbook used by the 12-person support team.",
+      "location": "role 1, bullet 3",
+      "note": "",
+      "quote_check": "exact"
+    }
+  ],
+  "interview_questions": [
+    "C1: Walk me through the last close you ran; how did the move to daily checks change it?",
+    "C3: How did you keep the failed-payment runbook current?"
+  ],
+  "needs_a_look": false,
+  "needs_a_look_reason": ""
+}
