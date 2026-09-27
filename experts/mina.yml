@@ -36,6 +36,11 @@ day_one:
 preloads: []
 routines: []
 skills:
-- account-reconciliation
-- financial-statement-preparation
-- month-end-close-management
+- bookkeeping-getting-started
+- expense-categorization
+- invoice-drafting-and-issue
+- accounts-receivable-follow-up
+- statement-reconciliation
+- month-end-close-checklist
+- monthly-profit-and-loss-summary
+- bookkeeping-exception-escalation

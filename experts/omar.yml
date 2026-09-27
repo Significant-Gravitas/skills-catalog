@@ -31,5 +31,11 @@ day_one:
 preloads: []
 routines: []
 skills:
-- dataset-exploration
-- sales-pipeline-review
+- revops-getting-started
+- crm-field-audit
+- crm-duplicate-review
+- pipeline-stage-definitions
+- lead-routing-rules
+- sales-forecast-rollup
+- lost-deal-analysis
+- crm-hygiene-report

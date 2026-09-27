@@ -30,5 +30,11 @@ day_one:
 preloads: []
 routines: []
 skills:
-- code-change-security-review
-- supply-chain-risk-auditor
+- dependency-security-getting-started
+- dependency-inventory
+- outdated-dependency-review
+- vulnerability-triage
+- cve-stack-relevance
+- dependency-upgrade-plan
+- dependency-upgrade-pr
+- dependency-change-risk-review
