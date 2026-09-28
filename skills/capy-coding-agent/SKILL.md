@@ -50,12 +50,36 @@ Paste the facts the user gave you (the exact error, the reproduction steps);
 don't summarise them away. Give the thread a short title so it is easy to find
 on the user's Capy board.
 
-New threads run on Muse Spark 1.3 (`meta/muse-spark-1.3`) by default. Keep it
-unless the user names another model; then set `model_id` to its Capy ID from
-docs.capy.ai/models-and-pricing (for example `openai/gpt-6-astra`), or clear it
-to use the project's default. Leave `reasoning` and `machine_size` empty unless
-the user asks or the task is unusually heavy. If Capy rejects a model, say
-which and why, and ask which model to use instead; don't cycle through guesses.
+## Choose the model and who pays
+
+Leave `model_id` empty to use the project's default model. When the user names
+a model, set `model_id` to its name (for example `gpt-6-astra`,
+`claude-opus-4-8`, `grok-4.5`) and pick who pays with `model_route`:
+
+- `capy_balance` bills the organization's Capy balance.
+- `codex`, `copilot`, `supergrok` or `azure` run the model through that
+  provider linked in Capy's settings (a ChatGPT, GitHub Copilot or SuperGrok
+  subscription, or an Azure organization account), so the tokens bill the
+  subscription instead.
+
+When the user says to use their subscription ("run it on my Codex"), use that
+route. When they don't say, and the conversation shows they have a
+subscription linked in Capy, prefer it over the balance. Not every model is
+offered on every route (docs.capy.ai/models-and-pricing lists them).
+
+A rejected model starts nothing and costs nothing, so trying a route is safe.
+If the linked provider is disconnected or was never linked, the error says
+which. Tell the user to reconnect or link it in Capy under Settings > Models,
+and ask whether to run on the Capy balance meanwhile. Set
+`fall_back_to_capy_balance` only when the user has said the balance may pay,
+since it moves the cost off their subscription. For an unknown model, say so
+and ask which to use; don't cycle through guesses.
+
+When you report a result, include `billed_via` from Capy Wait For Thread
+when the user cares who paid.
+
+Leave `reasoning` and `machine_size` empty unless the user asks or the task is
+unusually heavy.
 
 ## Start, wait, report
 
@@ -87,6 +111,8 @@ agent's reply says so.
   through **Capy Send Message**. The default `interrupt` delivery stops the
   current work and handles the message now; use `steer` to fold it into the
   work in progress, and `queue` to have it wait until the current step ends.
+- To move a thread to another model or payer, send the next message with
+  `model_id` and `model_route` set; the thread keeps its context.
 - If the agent is clearly heading the wrong way and spending credits on it,
   **Capy Interrupt Thread** stops it; then send the corrected instruction.
 - After any message, wait with **Capy Wait For Thread** again, exactly as for
