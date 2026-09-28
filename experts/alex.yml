@@ -98,13 +98,17 @@ routines:
   session_mode: THREAD
 skills:
 - alex-getting-started
-- product-roadmap-and-prioritization
-- product-prd-and-acceptance-criteria
-- product-discovery-and-user-research
 - product-metrics-and-instrumentation
-- product-strategy-and-bets
 - product-experiment-design
 - product-ai-feature-scoping-and-evals
 - product-launch-plan
 - product-market-and-competitor-read
-- product-exec-briefing
+- customer-insight-research
+- product-research-synthesis
+- product-requirements-writing
+- product-roadmap-planning
+- product-strategy-canvas
+- product-metrics-dashboard-design
+- product-assumption-testing
+- product-stakeholder-update
+- competitor-profiling

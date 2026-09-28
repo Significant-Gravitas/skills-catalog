@@ -32,10 +32,9 @@ preloads: []
 routines: []
 skills:
 - product-getting-started
-- feedback-synthesis
-- feature-request-triage
-- user-interview-guide
-- opportunity-brief
-- product-requirements-draft
-- roadmap-prioritisation
 - release-notes-draft
+- customer-insight-research
+- product-research-synthesis
+- product-requirements-writing
+- product-roadmap-planning
+- product-stakeholder-update
