@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-expert-skill-routing-2026-09-28",
+  "release_key": "catalogue-ines-review-instructions-2026-09-28",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -6256,7 +6256,7 @@
     },
     {
       "key": "ines",
-      "sha256": "cf7c0bd2da77378b8fce4ad27a6c62de08b2663505a43453c1cd21324c19a901",
+      "sha256": "3437005dc1ed4fdf0aae08a1b42696417d39f5edfe7fa3f660cac94d0977ceeb",
       "skills": [
         "people-ops-getting-started",
         "handbook-policy-draft",
