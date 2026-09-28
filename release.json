@@ -475,11 +475,11 @@
     },
     {
       "slug": "capy-coding-agent",
-      "tree_sha256": "92de2724a7d33e556b30b6f4d975ce6754c282ca459ad8f52015917f1a45c904",
+      "tree_sha256": "5448b7c2e2245ce377c182457807959b70facf52ce4b2cd0a0fe1ff7eeb2e160",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "9039e887af1579f64b93d151df84c5d427b81c1204f622e1f76b5126aa0c699e",
+          "sha256": "71718ea69c3e450f7c1c38ac4a5a99767147580011f6ba5be6db7de5b0f6cb27",
           "executable": false
         }
       ]

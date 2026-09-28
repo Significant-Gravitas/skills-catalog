@@ -31,6 +31,16 @@ If two could fit, or none lists the repository the user named, say so and ask;
 never start a thread in a guessed project. Remember the project ID for the rest
 of the conversation.
 
+## Is it worth sending?
+
+Before briefing an agent on a bug, spend a minute confirming there is still
+something to fix. Read the failing code on the branch the fix would target:
+an error report can come from an old build or someone's stale local checkout,
+and the fix may already be merged. Check for an open pull request that already
+covers it. If it is already fixed, say so and close the ticket instead of
+starting a thread. When the root cause is clear, put it in the brief; the
+agent works faster from a diagnosis than from a symptom.
+
 ## Write the brief
 
 The brief is the thread's first message and the agent's only context. Write
@@ -41,8 +51,13 @@ conversation:
 - **Where to look**: files, services, error messages, stack traces, issue or
   PR links, and anything the user already ruled out.
 - **Done means**: the tests that must pass, the behaviour to verify, and
-  whether to open a pull request (say so explicitly, and against which
-  branch if not the project's default).
+  whether to open a pull request. Name the target branch every time: the
+  project's base branch is often the release branch, not the one pull
+  requests go to (the repository's contributing guide says which).
+- **Ticket**: when the work came from a tracked issue (Sentry, Linear,
+  GitHub), link it and ask for its closing keyword in the commit message and
+  pull request body (for example `Fixes AUTOGPT-SERVER-5E4`), so the tracker
+  closes it when the fix ships.
 - **Limits**: files or areas not to touch, and anything the user said must not
   change.
 
@@ -96,7 +111,7 @@ unusually heavy.
      question to the user in their words, then send the answer with **Capy
      Send Message**, and go back to step 2.
    - **idle**: the agent delivered. Report what it did and the pull request
-     link from its reply. If the reply is a summary without the detail the
+     (`pull_request_url`, found from its replies). If the reply is a summary without the detail the
      user needs, read more of the transcript with **Capy List Thread
      Messages**.
    - **failed**: say it failed, quote what the transcript shows about why,
@@ -104,6 +119,37 @@ unusually heavy.
 
 Don't paraphrase a pull request as merged or tests as passing unless the
 agent's reply says so.
+
+## After the pull request opens
+
+The agent opening a pull request is not the end of the job.
+
+1. **Read the diff** with the GitHub pull request blocks before you call it
+   done, and check it against the brief: does it fix the root cause, and does
+   it weaken anything? For example, dropping validation on data a user can
+   write is a security regression, even when it silences the error. Send
+   anything wrong back to the same thread with **Capy Send Message**; the agent
+   keeps its branch and context.
+2. **Check CI** with the GitHub CI results block. When a check fails, send the
+   agent the failing check's name and the fix instructions from its log,
+   verbatim, then wait again.
+3. **Watch for the merge.** Merging is the repository owner's call; merge only
+   when the user asks you to. Reviews can take hours or days, so don't wait
+   in chat. Schedule a follow-up in this conversation (`schedule_followup`
+   with this chat's session id, a few hours out) that reads the pull request
+   with the GitHub Read Pull Request block. If `merged` is true, close the
+   loop. If the PR is still open, schedule the next check. If it was closed
+   without merging, tell the user. Chain one-off follow-ups rather than a
+   repeating one, so nothing keeps firing after the PR is done.
+4. **Close the loop** when it merges. Mark the ticket it came from: for a
+   Sentry issue use `resolvedInNextRelease`, because a merge to a development
+   branch is not yet running in production. Then tell the user, and archive
+   the Capy thread.
+
+When this is standing work rather than one ticket (for example "every morning,
+triage new Sentry errors and send the fixable ones to Capy"), set it up as a
+routine (`schedule_routine`), so it has its own thread that remembers which
+tickets it already sent.
 
 ## Steering a thread
 
