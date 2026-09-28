@@ -31,10 +31,9 @@ preloads: []
 routines: []
 skills:
 - deal-desk-getting-started
-- proposal-draft
-- statement-of-work-draft
-- pipeline-stage-aging-review
 - deal-risk-review
 - renewal-negotiation-brief
 - pricing-and-terms-approval-brief
 - proposal-quality-check
+- sales-pipeline-review
+- client-proposal-writing

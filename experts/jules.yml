@@ -46,5 +46,6 @@ routines:
   - What time should this land, and in which timezone?
   session_mode: THREAD
 skills:
-- brand-voice-guide
-- content-repurposing
+- product-marketing-context
+- social-media-management
+- marketing-copy-editing

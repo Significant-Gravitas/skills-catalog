@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-dedupe-upstream-2026-09-27",
+  "release_key": "catalogue-expert-skill-routing-2026-09-28",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -6096,24 +6096,28 @@
   "experts": [
     {
       "key": "alex",
-      "sha256": "558030040f4c9ce6e462f26ae1c6cbc3e43a4e12236811a904dfa2c69e1af725",
+      "sha256": "79145367441a2262147b35bb8a163ea89ed741a1564fccce059d9ee007a95d14",
       "skills": [
         "alex-getting-started",
-        "product-roadmap-and-prioritization",
-        "product-prd-and-acceptance-criteria",
-        "product-discovery-and-user-research",
         "product-metrics-and-instrumentation",
-        "product-strategy-and-bets",
         "product-experiment-design",
         "product-ai-feature-scoping-and-evals",
         "product-launch-plan",
         "product-market-and-competitor-read",
-        "product-exec-briefing"
+        "customer-insight-research",
+        "product-research-synthesis",
+        "product-requirements-writing",
+        "product-roadmap-planning",
+        "product-strategy-canvas",
+        "product-metrics-dashboard-design",
+        "product-assumption-testing",
+        "product-stakeholder-update",
+        "competitor-profiling"
       ]
     },
     {
       "key": "anika",
-      "sha256": "7899255ff0d96c5318868feb010b909406b07851602070ded34c3c5d420ebc69",
+      "sha256": "b3dec7fbf7662345bc1c1ba6644f2fe2c84d0dc64a25987ba3c47c29968cbfa1",
       "skills": [
         "anika-getting-started",
         "define-the-partner-icp",
@@ -6148,42 +6152,48 @@
         "own-the-alliance-pnl",
         "run-global-partner-executive-councils",
         "drive-alliance-ma-and-strategic-investments",
-        "build-partner-led-category-creation"
+        "build-partner-led-category-creation",
+        "partner-co-marketing",
+        "sales-enablement-content"
       ]
     },
     {
       "key": "casey",
-      "sha256": "02bf9db46090e7461434a124066cb14caedf31a996ebb5738f163ed7ef356767",
+      "sha256": "390433eda4c1c923d945753ee8f4a83fa509257532ada5fa361fb5b1680ff56f",
       "skills": [
         "code-quality-getting-started",
-        "pull-request-review",
         "test-plan-draft",
-        "bug-reproduction-report",
         "flaky-test-triage",
         "regression-risk-review",
         "release-readiness-checklist",
-        "incident-postmortem-draft"
+        "code-review-quality",
+        "software-debugging",
+        "software-test-planning",
+        "verification-before-completion",
+        "software-incident-response"
       ]
     },
     {
       "key": "daniel",
-      "sha256": "8a2875964dd0e088504f7aa176b954bed15a0e97ded09e6068f9217f1a738eeb",
+      "sha256": "6b9dd7ad1c47c4b28de1e9f67eb1bcf2f19415c9163cf78ceb82075cceb60247",
       "skills": [
         "daniel-getting-started",
         "budget-vs-actuals-and-reforecast",
-        "variance-and-flux-analysis",
         "cash-treasury-and-fx",
-        "close-controls-and-accounting",
         "unit-economics-and-roi",
         "saas-gtm-finance",
         "deal-economics-and-pricing-guardrails",
-        "finance-board-and-investor-reporting",
-        "automate-finance-reporting"
+        "automate-finance-reporting",
+        "portfolio-company-performance-review",
+        "financial-statement-preparation",
+        "account-reconciliation",
+        "month-end-close-management",
+        "board-deck-builder"
       ]
     },
     {
       "key": "devon",
-      "sha256": "e248ae42a65158eaef00aa9993ee984b2648338b93f8f0afd5e666e5a8755183",
+      "sha256": "51ba49c946550bd1732744c19268fa3030625ea1c5f913f9d712edad67accf1d",
       "skills": [
         "dependency-security-getting-started",
         "dependency-inventory",
@@ -6192,12 +6202,14 @@
         "cve-stack-relevance",
         "dependency-upgrade-plan",
         "dependency-upgrade-pr",
-        "dependency-change-risk-review"
+        "dependency-change-risk-review",
+        "supply-chain-risk-auditor",
+        "code-change-security-review"
       ]
     },
     {
       "key": "ellis",
-      "sha256": "9a313e6dd05a94da109820ca3f8989002d5b93f989c84b89b8619979400d7123",
+      "sha256": "d86c2be71621ecdc597c34054a08f9aeed3d0d93c51afc54f61b7bfc59a84cc0",
       "skills": [
         "contract-ops-getting-started",
         "nda-playbook-review",
@@ -6206,17 +6218,28 @@
         "contract-key-term-extraction",
         "contract-deviation-triage",
         "contract-obligation-tracker",
-        "counsel-escalation-brief"
+        "counsel-escalation-brief",
+        "nda-risk-review",
+        "contract-amendment-history"
       ]
     },
     {
       "key": "frankie",
-      "sha256": "5ee95ad24b47087af8d68746ea3c112dc3c8e114d7fde63909cfb43cce1b084f",
-      "skills": []
+      "sha256": "054ca7594f1b17b97179f933782fc5a629fab22dfa22c4c36f80e802abe5a5fb",
+      "skills": [
+        "multi-source-research-synthesis",
+        "project-status-report",
+        "operational-risk-assessment",
+        "task-list-management",
+        "workplace-memory-management",
+        "productivity-setup",
+        "productivity-task-sync",
+        "legal-meeting-briefing"
+      ]
     },
     {
       "key": "harper",
-      "sha256": "2e1e937aecfabe4626ebe27d36dc7eee3dfbd2900d2f44318ea52336de2b0c0d",
+      "sha256": "fe36672ed30f82e8b384f0ff278a9fed07e55d82e95c22934130843ffd520192",
       "skills": [
         "recruiting-getting-started",
         "role-intake-and-job-description",
@@ -6225,26 +6248,32 @@
         "interview-plan-and-scorecard",
         "candidate-interview-debrief",
         "candidate-rejection-email",
-        "candidate-offer-draft"
+        "candidate-offer-draft",
+        "candidate-interview-planning",
+        "recruiting-pipeline",
+        "employment-offer-drafting"
       ]
     },
     {
       "key": "ines",
-      "sha256": "2ded63216743b5a46181b9dbd3e073973b53a4c5f616f9903bb84b502f6cf6db",
+      "sha256": "cf7c0bd2da77378b8fce4ad27a6c62de08b2663505a43453c1cd21324c19a901",
       "skills": [
         "people-ops-getting-started",
-        "new-hire-onboarding-plan",
         "handbook-policy-draft",
         "one-to-one-agenda",
         "performance-review-prep",
         "engagement-survey-readout",
         "offboarding-checklist",
-        "hr-escalation-brief"
+        "hr-escalation-brief",
+        "employee-onboarding-planning",
+        "company-policy-lookup",
+        "employee-performance-review",
+        "people-analytics-reporting"
       ]
     },
     {
       "key": "james",
-      "sha256": "5abe41713b3f6b195fcc51f8a27f428f2f54d7d8ea38cc621546419b2500c866",
+      "sha256": "f70cd33b66cff18f2e28c413aba18b9ed864144580c193014bf650e7525bba69",
       "skills": [
         "james-getting-started",
         "ops-run-the-operating-rhythm",
@@ -6255,34 +6284,42 @@
         "ops-vendor-and-procurement",
         "ops-capacity-and-headcount-plan",
         "ops-controls-and-escalations",
-        "ops-govern-a-program"
+        "ops-govern-a-program",
+        "business-process-documentation",
+        "business-process-optimization",
+        "team-capacity-planning",
+        "project-status-report",
+        "operational-risk-assessment",
+        "vendor-evaluation",
+        "operational-runbook-writing",
+        "compliance-evidence-tracking"
       ]
     },
     {
       "key": "jordan",
-      "sha256": "bcbf8ded8dc5c29c554b26e695a096c830886c2b74799712a539764eda095678",
+      "sha256": "104aac2f65a135f17c76c7f2dbf3002ac88ecbcd38467ec0cc3357fbbb6d9b2a",
       "skills": [
         "deal-desk-getting-started",
-        "proposal-draft",
-        "statement-of-work-draft",
-        "pipeline-stage-aging-review",
         "deal-risk-review",
         "renewal-negotiation-brief",
         "pricing-and-terms-approval-brief",
-        "proposal-quality-check"
+        "proposal-quality-check",
+        "sales-pipeline-review",
+        "client-proposal-writing"
       ]
     },
     {
       "key": "jules",
-      "sha256": "86f349617a24a8dc466d2a5d84af969f931e1a3616d8e97b09bf51f2afd27e29",
+      "sha256": "a33cfe3206c410d53078ef582812ceddbd8e29d83c9ccb5132bb4bcf40539f26",
       "skills": [
-        "brand-voice-guide",
-        "content-repurposing"
+        "product-marketing-context",
+        "social-media-management",
+        "marketing-copy-editing"
       ]
     },
     {
       "key": "kai",
-      "sha256": "557cd6b93f27465dd69a0a2bf791b3804cb9cb4bb9cfe0286a79a5507e001484",
+      "sha256": "456065728de3b1b5f1e4fb59140cf9e68646437e347f3a156afa84a9e423f183",
       "skills": [
         "executive-assistant-getting-started",
         "inbox-triage",
@@ -6291,12 +6328,17 @@
         "meeting-follow-up-draft",
         "calendar-conflict-review",
         "travel-plan",
-        "weekly-priorities-review"
+        "weekly-priorities-review",
+        "productivity-setup",
+        "task-list-management",
+        "workplace-memory-management",
+        "productivity-task-sync",
+        "multi-source-research-synthesis"
       ]
     },
     {
       "key": "lena",
-      "sha256": "bd73d6fe39bb2a805b47574261ee00a3c5d4862949c44a17fe19178885bc802a",
+      "sha256": "d9c41f6a130d84f7af66d65242e9404e2cbc8054c8133c010b0e6b3104b68c0a",
       "skills": [
         "compliance-ops-getting-started",
         "security-questionnaire-answers",
@@ -6305,39 +6347,46 @@
         "dpa-checklist-review",
         "policy-gap-review",
         "data-subject-request-draft",
-        "compliance-escalation-brief"
+        "compliance-escalation-brief",
+        "compliance-evidence-tracking",
+        "vendor-contract-status",
+        "legal-response-drafting"
       ]
     },
     {
       "key": "marco",
-      "sha256": "0cfab9061ac922cd978557ea899ada64c25f1732620be89c0ae26ade35afedf6",
+      "sha256": "02c059150fa19828bef8b8c12e4a22915f73ea6a924a0d237778888c4cb7364e",
       "skills": [
         "paid-ads-getting-started",
         "campaign-structure-plan",
         "ad-copy-variants",
-        "landing-page-message-match",
         "wasted-spend-audit",
         "budget-pacing-review",
         "creative-test-readout",
-        "paid-performance-report"
+        "paid-performance-report",
+        "conversion-rate-optimization"
       ]
     },
     {
       "key": "maria",
-      "sha256": "8db5f5186c2fbf7dbf018bb089d18bcce5bd043fa1eb5b40c528f006b950737a",
+      "sha256": "c6e1d563468ee109f21760de5c6bb512227fd81af8f0c6a4524ab45a80329f0e",
       "skills": [
-        "brand-voice-guide",
         "seo-content-brief",
-        "on-page-seo-audit"
+        "on-page-seo-audit",
+        "product-marketing-context",
+        "marketing-content-strategy",
+        "marketing-copywriting",
+        "marketing-copy-editing",
+        "website-seo-audit",
+        "seo-report-generation"
       ]
     },
     {
       "key": "max",
-      "sha256": "7c32a62e94000c65823f718b7692e1c40e1a4407c8892420fbd959c35cd21f05",
+      "sha256": "a56bed1f5945dee95b243092a678eef4946fe7eecb1e8de1fe0bab5bba35f2c0",
       "skills": [
         "max-getting-started",
         "build-the-target-list",
-        "research-an-account",
         "find-the-decision-makers",
         "draft-a-first-touch",
         "draft-a-follow-up",
@@ -6371,12 +6420,21 @@
         "regulated-access-and-clinical-selling",
         "retail-jbp-trade-and-sellout",
         "showroom-fi-and-internet-bdc",
-        "field-call-route-discipline"
+        "field-call-route-discipline",
+        "sales-account-research",
+        "sales-outreach-drafting",
+        "sales-call-preparation",
+        "sales-pipeline-review",
+        "sales-enablement-content",
+        "client-proposal-writing",
+        "customer-insight-research",
+        "partner-co-marketing",
+        "go-to-market-strategy"
       ]
     },
     {
       "key": "maya",
-      "sha256": "c03a388176929e13354a839f018f9df3cf1adc181c735c7188faa46ee49fe5ab",
+      "sha256": "7e613681164cce80f101a443e1e15b5791b789cffedbc4f273a38b8abdd287c1",
       "skills": [
         "maya-getting-started",
         "messaging-and-tone-matrix",
@@ -6385,34 +6443,40 @@
         "editorial-calendar-ops",
         "channel-draft-shapes",
         "nurture-sequence-build-and-readout",
-        "weekly-marketing-read"
+        "weekly-marketing-read",
+        "product-marketing-context",
+        "marketing-content-strategy",
+        "marketing-copywriting",
+        "lifecycle-email-marketing"
       ]
     },
     {
       "key": "mina",
-      "sha256": "fcbc86de4fda27162719aa561bd3dcdf9f26022b5a6713288c2850f689e033b5",
+      "sha256": "2e64f9d5cb677f65e6f0c789627c656f767fe61f1434ff7c51a52dfd639177e3",
       "skills": [
         "bookkeeping-getting-started",
         "expense-categorization",
         "invoice-drafting-and-issue",
         "accounts-receivable-follow-up",
-        "statement-reconciliation",
-        "month-end-close-checklist",
-        "monthly-profit-and-loss-summary",
-        "bookkeeping-exception-escalation"
+        "bookkeeping-exception-escalation",
+        "account-reconciliation",
+        "month-end-close-management",
+        "financial-statement-preparation"
       ]
     },
     {
       "key": "nadia",
-      "sha256": "eac02bd3c046c03027092efb117286e77f4db2327d210607017a4f31188d00ba",
+      "sha256": "fd4017ab7087898fe49bf42dab79b7308abe6d84d25205e78928932e4d421d5b",
       "skills": [
         "competitor-teardown",
-        "icp-and-positioning"
+        "customer-insight-research",
+        "competitor-profiling",
+        "product-marketing-context"
       ]
     },
     {
       "key": "noor",
-      "sha256": "ec1bffd708d477240494c28d9f8a755244a3f4f08b57e22c9bc8fd7082a7a58a",
+      "sha256": "df3d1c02253faf595f4b545e7db5e3ae60cabf6336359f13ecc2210879e77a86",
       "skills": [
         "communications-getting-started",
         "news-angle-and-key-messages",
@@ -6421,12 +6485,14 @@
         "media-pitch-email",
         "launch-communications-plan",
         "holding-statement-draft",
-        "spokesperson-briefing"
+        "spokesperson-briefing",
+        "product-launch-marketing",
+        "marketing-copy-editing"
       ]
     },
     {
       "key": "omar",
-      "sha256": "b2e86c80e987508e8a963dc67d44d6996f539dc1bbd0be6a9f8aa0f62a6f5c88",
+      "sha256": "2586e1d89e3da1bbc57cf6c71878ff9d94247b3530f72db687046d068171c1b9",
       "skills": [
         "revops-getting-started",
         "crm-field-audit",
@@ -6435,26 +6501,27 @@
         "lead-routing-rules",
         "sales-forecast-rollup",
         "lost-deal-analysis",
-        "crm-hygiene-report"
+        "crm-hygiene-report",
+        "dataset-exploration",
+        "sales-pipeline-review"
       ]
     },
     {
       "key": "priya",
-      "sha256": "1ffb90779d892435e820b73e36cce091b2059d83d4e867e3c1760ee7a51040e3",
+      "sha256": "d599db9d070a1ed2ff2832b9059efc67d0ffa312a8368dad958af132ed94758f",
       "skills": [
         "product-getting-started",
-        "feedback-synthesis",
-        "feature-request-triage",
-        "user-interview-guide",
-        "opportunity-brief",
-        "product-requirements-draft",
-        "roadmap-prioritisation",
-        "release-notes-draft"
+        "release-notes-draft",
+        "customer-insight-research",
+        "product-research-synthesis",
+        "product-requirements-writing",
+        "product-roadmap-planning",
+        "product-stakeholder-update"
       ]
     },
     {
       "key": "quinn",
-      "sha256": "e31b35fde02f7842e77a634423f76c3aa871b4f4a50379f8597ead36bbf3b11c",
+      "sha256": "91cec2160c377dcaad72cabbc8035d8245eb24b8528bd40c8f65723cc741ce10",
       "skills": [
         "kpi-analysis-getting-started",
         "metric-definition-and-data-quality",
@@ -6463,41 +6530,47 @@
         "metric-movement-analysis",
         "cohort-and-retention-analysis",
         "funnel-conversion-analysis",
-        "experiment-readout"
+        "experiment-readout",
+        "dataset-exploration",
+        "data-visualization",
+        "user-cohort-analysis"
       ]
     },
     {
       "key": "remy",
-      "sha256": "5e43c05e5dd5e65f372304d1db1311c2748c18f6f785375b04e752a4e601269d",
+      "sha256": "40cfff53f44ee7cb08b6dbc4790fa6fc1e55b305aaef78c8847accd0faee7ee3",
       "skills": [
-        "lifecycle-email-map",
-        "email-deliverability-guardrails"
+        "email-deliverability-guardrails",
+        "product-marketing-context",
+        "lifecycle-email-marketing",
+        "marketing-copy-editing"
       ]
     },
     {
       "key": "riley",
-      "sha256": "508a0dab2019fcaefd1d7eebe8adfdeb2e553d07cf334fd2f19b8e9c043965f1",
+      "sha256": "7c99fcd5f048b8ded6f2fc8fef8ad587cd4f9c307100ff68ad983dd8c7309ad2",
       "skills": [
         "customer-success-getting-started",
         "customer-onboarding-plan",
         "customer-health-score",
         "churn-risk-review",
         "renewal-readiness-review",
-        "renewal-touchpoint-draft",
         "expansion-opportunity-brief",
-        "customer-success-plan"
+        "customer-success-plan",
+        "customer-support-research",
+        "customer-response-drafting",
+        "customer-escalation",
+        "customer-insight-research"
       ]
     },
     {
       "key": "robin",
-      "sha256": "37ae02f6acc817b4738e89dc51b3613724d54c7a0faac6116ad734386a3388c8",
+      "sha256": "c4bcaef76be1b689a19cf4e60fc30ce0642b5908a8bf034740fd44c4e94e98cb",
       "skills": [
         "robin-getting-started",
         "triage-and-prioritize",
-        "draft-the-reply",
         "troubleshoot-and-resolve",
         "own-to-closure",
-        "help-center-answers-and-kb",
         "billing-refunds-and-exceptions",
         "escalations-and-incidents",
         "orders-returns-and-warranty",
@@ -6525,26 +6598,35 @@
         "marketplace-two-sided-mediation",
         "travel-disruption-and-rebooking",
         "logistics-shipment-and-customs",
-        "member-benefits-and-claims"
+        "member-benefits-and-claims",
+        "customer-support-research",
+        "customer-response-drafting",
+        "customer-escalation",
+        "knowledge-base-article-writing",
+        "product-research-synthesis",
+        "software-debugging",
+        "support-ticket-triage"
       ]
     },
     {
       "key": "sasha",
-      "sha256": "c9fab2bf30c76af706cf105cf778987cea103ddfed57af95fe0629c2a598676c",
+      "sha256": "b72859497e4568d3d867f8c60ccd81a086f8fbc3b1704112e9fe4af5a5e4d15f",
       "skills": [
         "support-getting-started",
-        "ticket-triage",
-        "support-reply-draft",
         "support-macro-library",
-        "help-article-from-tickets",
         "bug-report-handoff",
         "refund-and-exception-brief",
-        "weekly-ticket-themes"
+        "customer-support-research",
+        "customer-response-drafting",
+        "customer-escalation",
+        "knowledge-base-article-writing",
+        "product-research-synthesis",
+        "support-ticket-triage"
       ]
     },
     {
       "key": "sofia",
-      "sha256": "ebc685c09dc1092d6a673b58e6e2cd6a1cccb7c7f52e9f1a07c6026613a9d827",
+      "sha256": "c0b17cb986b7d5cd0facfe1d4061447cc4a37c5689ad00cf21153f41a7bf13a9",
       "skills": [
         "sofia-getting-started",
         "role-intake-and-scorecard",
@@ -6556,54 +6638,62 @@
         "interview-coordination",
         "hiring-debrief-and-decision",
         "job-offer-and-close-plan",
-        "hiring-pipeline-analytics"
+        "hiring-pipeline-analytics",
+        "candidate-interview-planning",
+        "recruiting-pipeline",
+        "employment-offer-drafting"
       ]
     },
     {
       "key": "theo",
-      "sha256": "a81549f5a9ab468411c615248f45912b1814a43bda57acb1d96e240aa3c23d04",
+      "sha256": "b6803ada961cd92a4d39df358b14e5db34fe6d2942d0e0638c54cc1826acb607",
       "skills": [
         "investor-relations-getting-started",
-        "pitch-deck-review",
         "fundraising-data-room-checklist",
         "investor-targeting-and-research",
         "fundraising-pipeline-review",
         "cap-table-hygiene",
-        "monthly-investor-update",
-        "board-and-investor-metrics-brief"
+        "financial-statement-preparation",
+        "board-deck-builder",
+        "multi-source-research-synthesis"
       ]
     },
     {
       "key": "vera",
-      "sha256": "d3fd5aa01bd8861da21ab3115f6cccc267108d485fbcb1367f44d15d6fc6edc5",
+      "sha256": "da284327158dbf3f98dbf0b307fe22f97ccfaff8a592af4f74a76b956dedb139",
       "skills": [
         "procurement-getting-started",
         "vendor-requirements-brief",
         "vendor-quote-comparison",
         "vendor-due-diligence",
-        "procurement-decision-memo",
-        "contract-renewal-tracker",
-        "vendor-performance-review",
-        "spend-anomaly-review"
+        "spend-anomaly-review",
+        "vendor-evaluation",
+        "vendor-contract-status",
+        "operational-risk-assessment"
       ]
     },
     {
       "key": "zara",
-      "sha256": "6249e15f4ef59d4c5d792d9ce43d7a15b84ae1f98a38b8183bc1668434d3d584",
+      "sha256": "eb4d229f2d601a5832c0c450133e0ef29362122f6f2fbd810b8ecf03e866d487",
       "skills": [
         "zara-getting-started",
         "positioning-and-messaging",
         "icp-and-segmentation",
-        "pricing-and-packaging",
         "commercial-launch-strategy",
         "competitive-intelligence",
         "gtm-performance-diagnostics",
         "gtm-planning-and-market-entry",
         "opportunity-sizing-and-business-case",
         "sales-marketing-alignment-and-sla",
-        "field-enablement-content",
         "vertical-industry-plays",
-        "developer-and-api-motion"
+        "developer-and-api-motion",
+        "product-marketing-context",
+        "pricing-and-packaging-strategy",
+        "go-to-market-strategy",
+        "market-size-estimation",
+        "sales-enablement-content",
+        "competitor-profiling",
+        "product-launch-marketing"
       ]
     }
   ],
