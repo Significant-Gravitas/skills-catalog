@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-expert-skill-assignments-2026-09-28",
+  "release_key": "catalogue-expert-skill-routing-2026-09-28",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -6096,7 +6096,7 @@
   "experts": [
     {
       "key": "alex",
-      "sha256": "610393b4f2fb68d1f77492839f7f3d3398ae26c74ba443b27d3966d9d81b4351",
+      "sha256": "79145367441a2262147b35bb8a163ea89ed741a1564fccce059d9ee007a95d14",
       "skills": [
         "alex-getting-started",
         "product-metrics-and-instrumentation",
@@ -6175,7 +6175,7 @@
     },
     {
       "key": "daniel",
-      "sha256": "cee8516db0db80a889373f2a03d4036095e499ca6624ffdff83353ad96d25e0b",
+      "sha256": "6b9dd7ad1c47c4b28de1e9f67eb1bcf2f19415c9163cf78ceb82075cceb60247",
       "skills": [
         "daniel-getting-started",
         "budget-vs-actuals-and-reforecast",
@@ -6565,7 +6565,7 @@
     },
     {
       "key": "robin",
-      "sha256": "7da5b17c67490dfdd0769e340d784c2766eae6ed6e600e82c67fce78cdde6f5b",
+      "sha256": "c4bcaef76be1b689a19cf4e60fc30ce0642b5908a8bf034740fd44c4e94e98cb",
       "skills": [
         "robin-getting-started",
         "triage-and-prioritize",
@@ -6674,7 +6674,7 @@
     },
     {
       "key": "zara",
-      "sha256": "62a6ec0dbe8158e69d94a81c9f279ffac5ce6a6926fd73c946b01f1e6517beed",
+      "sha256": "eb4d229f2d601a5832c0c450133e0ef29362122f6f2fbd810b8ecf03e866d487",
       "skills": [
         "zara-getting-started",
         "positioning-and-messaging",
