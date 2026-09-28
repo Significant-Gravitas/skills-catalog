@@ -2142,3 +2142,8 @@ skills:
     required_providers: []
     source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
     license: Apache-2.0
+
+  - slug: capy-coding-agent
+    categories: [development]
+    required_providers: [capy]
+    source: platform
