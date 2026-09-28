@@ -50,9 +50,12 @@ Paste the facts the user gave you (the exact error, the reproduction steps);
 don't summarise them away. Give the thread a short title so it is easy to find
 on the user's Capy board.
 
-Leave `model_id`, `reasoning` and `machine_size` empty unless the user asks for
-a specific model or the task is unusually heavy. If Capy rejects a model, its
-error lists the models the organization can use; pick from that list or ask.
+New threads run on Muse Spark 1.3 (`meta/muse-spark-1.3`) by default. Keep it
+unless the user names another model; then set `model_id` to its Capy ID from
+docs.capy.ai/models-and-pricing (for example `openai/gpt-6-astra`), or clear it
+to use the project's default. Leave `reasoning` and `machine_size` empty unless
+the user asks or the task is unusually heavy. If Capy rejects a model, say
+which and why, and ask which model to use instead; don't cycle through guesses.
 
 ## Start, wait, report
 
