@@ -1,0 +1,1568 @@
+<title>Expert Skill Workshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F4F5F7;--surface:#FFFFFF;--surface-2:#ECEEF2;--surface-3:#E2E5EA;--line:#D9DDE4;--line-2:#C4CAD4;
+  --ink:#14161B;--ink-2:#465061;--ink-3:#747D8C;--ink-inv:#FFFFFF;
+  --g-original:#56677F;--g-nick:#4549CF;--g-toran:#9C2C74;--g-pr:#0C7468;
+  --g-original-bg:#E6EAF0;--g-nick-bg:#E7E8FB;--g-toran-bg:#F6E4EF;--g-pr-bg:#DDF1EE;
+  --ok:#1C7337;--ok-bg:#E1F2E6;--warn:#9A5400;--warn-bg:#FBEEDB;--bad:#B0261B;--bad-bg:#FBE4E1;
+  --hl:#FFE47A;--hl-ink:#2E2400;--iss:#D97718;--focus:#2F6FEB;
+  --s1:#E4E8EE;--s2:#BFC8D6;--s3:#8B99B0;--s4:#52668A;--s5:#1F3257;
+  --shadow:0 1px 2px rgba(20,22,27,.06),0 8px 24px rgba(20,22,27,.08);
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#0E1014;--surface:#161920;--surface-2:#1D2129;--surface-3:#252A34;--line:#2A303B;--line-2:#3A414E;
+  --ink:#E6E8EC;--ink-2:#AAB1BD;--ink-3:#7B8391;--ink-inv:#0E1014;
+  --g-original:#9AAAC2;--g-nick:#9A9EFF;--g-toran:#E583C4;--g-pr:#52C7B6;
+  --g-original-bg:#232A36;--g-nick-bg:#23244A;--g-toran-bg:#3A1C30;--g-pr-bg:#123530;
+  --ok:#62C983;--ok-bg:#15301E;--warn:#E6A850;--warn-bg:#352512;--bad:#F2786C;--bad-bg:#3A1A17;
+  --hl:#5E4E0E;--hl-ink:#FFF2BF;--iss:#F09A45;--focus:#7AA5FF;
+  --s1:#252A33;--s2:#384254;--s3:#55678A;--s4:#8FA3C6;--s5:#D2DDF2;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.45);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1014;--surface:#161920;--surface-2:#1D2129;--surface-3:#252A34;--line:#2A303B;--line-2:#3A414E;
+  --ink:#E6E8EC;--ink-2:#AAB1BD;--ink-3:#7B8391;--ink-inv:#0E1014;
+  --g-original:#9AAAC2;--g-nick:#9A9EFF;--g-toran:#E583C4;--g-pr:#52C7B6;
+  --g-original-bg:#232A36;--g-nick-bg:#23244A;--g-toran-bg:#3A1C30;--g-pr-bg:#123530;
+  --ok:#62C983;--ok-bg:#15301E;--warn:#E6A850;--warn-bg:#352512;--bad:#F2786C;--bad-bg:#3A1A17;
+  --hl:#5E4E0E;--hl-ink:#FFF2BF;--iss:#F09A45;--focus:#7AA5FF;
+  --s1:#252A33;--s2:#384254;--s3:#55678A;--s4:#8FA3C6;--s5:#D2DDF2;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{color:var(--ink);font:14px/1.55 var(--f-body);-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+a{color:var(--g-nick)}
+code,.mono{font-family:var(--f-mono);font-size:.86em}
+h1,h2,h3,h4{font-family:var(--f-display);letter-spacing:.005em;text-wrap:balance;margin:0}
+.muted{color:var(--ink-3)}
+.small{font-size:12.5px}
+.eyebrow{font:600 11px/1.2 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- shell */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:10px 20px;background:var(--surface);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand h1{font-size:19px;font-weight:700}
+.brand .mark{font:500 12px var(--f-mono);color:var(--ink-3)}
+.views{display:flex;gap:2px;background:var(--surface-2);border-radius:8px;padding:3px}
+.views button{border:0;background:none;padding:5px 12px;border-radius:6px;font-weight:500;color:var(--ink-2)}
+.views button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.sync{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-3)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ink-3);display:inline-block}
+.dot.on{background:var(--ok)}.dot.off{background:var(--bad)}
+.layout{display:grid;grid-template-columns:268px minmax(0,1fr);min-height:calc(100vh - 54px)}
+.rail{border-right:1px solid var(--line);background:var(--surface);padding:14px 12px 40px;position:sticky;top:calc(54px + env(safe-area-inset-top,0px));
+  height:calc(100vh - 54px);overflow:auto}
+.rail input[type=search]{width:100%;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.rail-list{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:1px}
+.rail-item{display:grid;grid-template-columns:18px 1fr auto;gap:8px;align-items:center;padding:7px 8px;border-radius:7px;border:0;background:none;text-align:left;width:100%}
+.rail-item:hover{background:var(--surface-2)}
+.rail-item[aria-current="true"]{background:var(--surface-3)}
+.rail-item .nm{font-weight:600}
+.rail-item .rl{display:block;font-size:12px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rail-item .ct{font:500 11px var(--f-mono);color:var(--ink-3)}
+.st{width:14px;height:14px;border-radius:50%;border:1.6px solid var(--ink-3);display:inline-block;position:relative}
+.st.reviewing{border-color:var(--warn);background:linear-gradient(90deg,var(--warn) 50%,transparent 50%)}
+.st.done{border-color:var(--ok);background:var(--ok)}
+.st.done::after{content:"";position:absolute;left:3.5px;top:1.2px;width:3.5px;height:7px;border:solid var(--ink-inv);border-width:0 1.8px 1.8px 0;transform:rotate(45deg)}
+main{min-width:0;padding-block:22px 80px;padding-inline:28px}
+.banner{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 14px;margin-bottom:16px;font-size:13px}
+.banner.warn{border-color:var(--warn);background:var(--warn-bg)}
+.banner.claude{border-left:3px solid var(--g-nick)}
+
+/* ---------- chips */
+.chip{display:inline-flex;align-items:center;gap:5px;font:500 11.5px/1 var(--f-body);padding:4px 7px;border-radius:5px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.chip.g-original{background:var(--g-original-bg);color:var(--g-original)}
+.chip.g-nick{background:var(--g-nick-bg);color:var(--g-nick)}
+.chip.g-toran{background:var(--g-toran-bg);color:var(--g-toran)}
+.chip.g-pr{background:var(--g-pr-bg);color:var(--g-pr)}
+.chip.ok{background:var(--ok-bg);color:var(--ok)}.chip.warn{background:var(--warn-bg);color:var(--warn)}.chip.bad{background:var(--bad-bg);color:var(--bad)}
+.chip.line{background:none;border:1px solid var(--line-2)}
+.gbar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--surface-2);min-width:80px}
+.gbar i{display:block;height:100%}
+.gbar .g-original{background:var(--g-original)}.gbar .g-nick{background:var(--g-nick)}.gbar .g-toran{background:var(--g-toran)}.gbar .g-pr{background:var(--g-pr)}
+.stripe{width:4px;align-self:stretch;border-radius:2px}
+.stripe.g-original{background:var(--g-original)}.stripe.g-nick{background:var(--g-nick)}.stripe.g-toran{background:var(--g-toran)}.stripe.g-pr{background:var(--g-pr)}
+
+/* ---------- score */
+.score{display:inline-flex;align-items:center;gap:6px;font:600 13px var(--f-mono)}
+.score .bar{width:46px;height:5px;border-radius:3px;background:var(--surface-3);overflow:hidden}
+.score .bar i{display:block;height:100%}
+.band-bad{color:var(--bad)}.band-warn{color:var(--warn)}.band-ok{color:var(--ok)}
+.bar i.band-bad{background:var(--bad)}.bar i.band-warn{background:var(--warn)}.bar i.band-ok{background:var(--ok)}
+.dims{display:inline-grid;grid-template-columns:repeat(7,12px);gap:2px;vertical-align:middle}
+.dims i{width:12px;height:12px;border-radius:2px;display:block}
+.s1{background:var(--s1)}.s2{background:var(--s2)}.s3{background:var(--s3)}.s4{background:var(--s4)}.s5{background:var(--s5)}
+
+/* ---------- expert header */
+.xhead{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;margin-bottom:14px}
+.xhead h2{font-size:30px;font-weight:700;line-height:1.1}
+.xhead .role{font-size:15px;color:var(--ink-2);margin-top:4px}
+.xhead .tag{margin-top:6px;color:var(--ink-3)}
+.statusSeg{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.seg{display:inline-flex;flex-wrap:wrap;gap:4px}
+.seg button{border:1px solid var(--line-2);background:var(--surface);border-radius:6px;padding:4px 10px;font-size:12.5px;font-weight:500;color:var(--ink-2)}
+.seg button:hover{border-color:var(--ink-3)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ink-inv);border-color:var(--ink)}
+.seg button[data-choice="reject"][aria-pressed="true"],.seg button[data-choice="drop"][aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:#fff}
+.seg button[data-choice="accept"][aria-pressed="true"],.seg button[data-choice="keep"][aria-pressed="true"],.seg button[data-choice="done"][aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.stats{display:flex;flex-wrap:wrap;gap:18px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:14px}
+.stat .v{font:600 20px var(--f-display)}
+.stat .k{font-size:11.5px;color:var(--ink-3)}
+.summary{max-width:78ch;font-size:14.5px;color:var(--ink-2);margin:0 0 16px}
+.summary.clamp{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tabs{position:sticky;top:calc(54px + env(safe-area-inset-top,0px));z-index:20;background:var(--bg);display:flex;gap:4px;border-bottom:1px solid var(--line);margin:0 0 18px;padding-top:6px;overflow-x:auto}
+.tabs button{border:0;background:none;padding:8px 12px;font-weight:600;color:var(--ink-3);border-bottom:2px solid transparent;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.tabs .n{font:500 11px var(--f-mono);color:var(--ink-3);margin-left:4px}
+
+/* ---------- conflict blocks */
+.conflict{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-bottom:16px;overflow:hidden}
+.conflict-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.marker{font:500 12px var(--f-mono);color:var(--ink-3)}
+.conflict-head h3{font-size:16px;font-weight:600;margin-right:auto}
+.lanes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-bottom:1px solid var(--line)}
+.lane{display:flex;gap:10px;padding:12px 14px;border-right:1px solid var(--line);min-width:0}
+.lane:last-child{border-right:0}
+.lane .body{min-width:0;display:flex;flex-direction:column;gap:5px}
+.lane .ttl{font-weight:600;word-break:break-word}
+.lane .slug{font:12px var(--f-mono);color:var(--ink-3);word-break:break-all}
+.lane .lnote{font-size:12.5px;color:var(--ink-2)}
+.mrole{font:600 10.5px var(--f-body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;border:1px solid var(--line-2);color:var(--ink-2)}
+.mrole.base{border-color:var(--ok);color:var(--ok)}
+.mrole.redundant{border-color:var(--bad);color:var(--bad)}
+.mrole.graft{border-color:var(--warn);color:var(--warn)}
+.resolution{padding:12px 14px;display:grid;gap:8px}
+.resolution .res-t{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.resolution .res-t b{font-size:15px}
+.resolution ul{margin:0;padding-left:18px}
+.resolution li{margin:3px 0}
+.decide{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:10px 14px;border-top:1px dashed var(--line);background:var(--bg)}
+.decide select,.decide input[type=text]{border:1px solid var(--line-2);border-radius:6px;padding:4px 8px;background:var(--surface);max-width:100%}
+.decide input[type=text]{flex:1 1 240px}
+.linkbtn{border:0;background:none;padding:0;color:var(--g-nick);font-weight:500;text-decoration:underline;text-underline-offset:2px}
+.iconbtn{border:1px solid var(--line-2);background:var(--surface);border-radius:6px;padding:3px 8px;font-size:12px;color:var(--ink-2)}
+.iconbtn:hover{border-color:var(--ink-3);color:var(--ink)}
+
+/* ---------- tables / rows */
+.section{margin:24px 0 10px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.section h3{font-size:18px}
+.rows{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.row{display:grid;grid-template-columns:4px minmax(0,2.2fr) auto auto auto auto;gap:12px;align-items:center;padding:9px 12px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--surface-2)}
+.row .t{min-width:0}
+.row .t b{display:block;font-weight:600;word-break:break-word}
+.row .t span{font-size:12.5px;color:var(--ink-3);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .tags{display:flex;gap:4px;flex-wrap:wrap}
+.legend{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:12px;color:var(--ink-3)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table.tbl{border-collapse:collapse;width:100%;min-width:880px}
+.tbl th,.tbl td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+.tbl th{font:600 11px var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);background:var(--surface-2)}
+.tbl tr:last-child td{border-bottom:0}
+.tbl tbody tr{cursor:pointer}
+.tbl tbody tr:hover{background:var(--surface-2)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h4{font-size:16px}
+.card ul{margin:0;padding-left:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.kpi .v{font:700 26px var(--f-display)}
+.kpi .k{font-size:12px;color:var(--ink-3)}
+.kpi .sub{font-size:12px;color:var(--ink-2);margin-top:2px}
+
+/* ---------- kit */
+.kit{display:grid;grid-template-columns:1fr 1.4fr;gap:16px}
+.kit ol{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.kit li{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--line)}
+.kit li:last-child{border-bottom:0}
+.kit .pos{font:500 12px var(--f-mono);color:var(--ink-3)}
+.kit li.rejected .t{text-decoration:line-through;color:var(--ink-3)}
+.kit .t b{display:block;font-weight:600}
+.kit .t span{font-size:12.5px;color:var(--ink-3)}
+
+/* ---------- prose / markdown */
+.prose{max-width:82ch;line-height:1.62}
+.prose h1{font-size:22px;margin:18px 0 8px}.prose h2{font-size:18px;margin:20px 0 8px}.prose h3{font-size:15.5px;margin:16px 0 6px}.prose h4{font-size:14px;margin:14px 0 6px}
+.prose p{margin:8px 0}
+.prose ul,.prose ol{padding-left:22px;margin:6px 0}
+.prose li{margin:3px 0}
+.prose pre{background:var(--surface-2);padding:10px 12px;border-radius:8px;overflow-x:auto;font-size:12.5px}
+.prose code{background:var(--surface-2);padding:1px 4px;border-radius:4px}
+.prose pre code{background:none;padding:0}
+.prose table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;font-size:13px}
+.prose th,.prose td{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}
+.prose blockquote{margin:8px 0;padding:4px 12px;border-left:3px solid var(--line-2);color:var(--ink-2)}
+.raw{white-space:pre-wrap;word-break:break-word;font:12.5px/1.55 var(--f-mono);background:var(--surface-2);padding:12px;border-radius:8px;max-width:100%;overflow-x:auto}
+mark.note-hl{background:var(--hl);color:var(--hl-ink);border-radius:2px;cursor:pointer;padding:0 1px}
+mark.iss-hl{background:none;color:inherit;text-decoration:underline wavy var(--iss);text-decoration-thickness:1.4px;text-underline-offset:3px;cursor:help}
+mark.flash{outline:2px solid var(--focus);outline-offset:1px}
+.fm{font:12px var(--f-mono);color:var(--ink-3);background:var(--surface-2);border-radius:8px;padding:8px 10px;white-space:pre-wrap;word-break:break-word;margin-bottom:12px}
+.diff{font:12px/1.5 var(--f-mono);white-space:pre;overflow-x:auto;background:var(--surface-2);border-radius:8px;padding:8px 0;max-height:70vh}
+.diff div{padding:0 12px}
+.diff .add{background:var(--ok-bg);color:var(--ok)}.diff .del{background:var(--bad-bg);color:var(--bad)}.diff .hunk{color:var(--g-nick)}
+
+/* ---------- reader sheet */
+.sheet-back{position:fixed;inset:0;background:rgba(10,12,16,.35);z-index:40}
+.sheet{position:fixed;top:0;right:0;bottom:0;width:min(1120px,100%);background:var(--bg);z-index:41;display:flex;flex-direction:column;box-shadow:var(--shadow);
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet-h{padding:14px 22px 0;background:var(--surface);border-bottom:1px solid var(--line)}
+.sheet-h .top{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.sheet-h h3{font-size:21px;flex:1 1 300px}
+.sheet-h .desc{color:var(--ink-2);margin:6px 0 10px;max-width:90ch}
+.sheet-b{flex:1;overflow:auto;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0}
+.sheet-main{padding:18px 22px 60px;min-width:0}
+.sheet-side{border-left:1px solid var(--line);padding:16px;background:var(--surface);min-width:0}
+.closebtn{border:1px solid var(--line-2);background:var(--surface);border-radius:8px;padding:5px 12px;font-weight:600}
+.files{display:flex;flex-direction:column;gap:2px;margin-bottom:12px}
+.files button{border:0;background:none;text-align:left;padding:5px 8px;border-radius:6px;font:12.5px var(--f-mono);color:var(--ink-2);display:flex;justify-content:space-between;gap:8px}
+.files button:hover,.files button[aria-pressed="true"]{background:var(--surface-2);color:var(--ink)}
+
+/* ---------- notes */
+.note{border:1px solid var(--line);border-radius:9px;background:var(--surface);padding:10px 12px;display:grid;gap:6px}
+.note .q{font-size:12.5px;color:var(--ink-2);border-left:3px solid var(--hl);padding-left:8px;background:var(--surface-2);border-radius:0 4px 4px 0;padding-block:3px}
+.note .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:var(--ink-3)}
+.note .txt{white-space:pre-wrap;word-break:break-word}
+.note .reply{border-left:3px solid var(--g-nick);padding:4px 8px;background:var(--g-nick-bg);border-radius:0 6px 6px 0;font-size:13px;white-space:pre-wrap}
+.note.resolved{opacity:.65}
+.notes-list{display:grid;gap:8px}
+.composer-back{position:fixed;inset:0;background:rgba(10,12,16,.35);z-index:60;display:flex;align-items:flex-end;justify-content:center;padding:16px}
+.composer{width:min(620px,100%);background:var(--surface);border-radius:12px;box-shadow:var(--shadow);padding:16px;display:grid;gap:10px;margin-bottom:env(safe-area-inset-bottom,0px)}
+.composer textarea{width:100%;min-height:110px;border:1px solid var(--line-2);border-radius:8px;padding:8px 10px;background:var(--bg);resize:vertical}
+.composer .q{max-height:120px;overflow:auto}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--ink-inv);border-radius:8px;padding:6px 14px;font-weight:600}
+.btn.ghost{background:none;color:var(--ink);border-color:var(--line-2)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+#selTip{position:fixed;z-index:55;background:var(--ink);color:var(--ink-inv);border:0;border-radius:7px;padding:6px 10px;font-weight:600;font-size:12.5px;box-shadow:var(--shadow)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--ink-inv);padding:8px 14px;border-radius:8px;z-index:70;font-weight:500}
+.empty{padding:22px;text-align:center;color:var(--ink-3);border:1px dashed var(--line-2);border-radius:10px}
+.pill-sev{font:600 10.5px var(--f-body);text-transform:uppercase;letter-spacing:.05em}
+.sev-blocker{color:var(--bad)}.sev-major{color:var(--warn)}.sev-minor{color:var(--ink-3)}
+.issue{border-left:3px solid var(--line-2);padding:4px 10px;margin:8px 0}
+.issue.blocker{border-color:var(--bad)}.issue.major{border-color:var(--warn)}
+.scn{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);margin:6px 0}
+.dimtbl{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:center;max-width:420px}
+.dimtbl .b{height:8px;background:var(--surface-3);border-radius:4px;overflow:hidden}
+.dimtbl .b i{display:block;height:100%;background:var(--s4)}
+.bodyfield{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.bodyfield h4{font-size:13px;font-family:var(--f-body);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.bodyfield .v{white-space:pre-wrap;max-width:82ch}
+.routine{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
+.routine:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mobile-pick{display:none}
+
+/* ---------- merge editor */
+.me{border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:clip}
+.mhead{position:sticky;top:calc(96px + env(safe-area-inset-top,0px));z-index:15;display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1.2fr) 34px minmax(0,1fr);background:var(--surface-2);border-bottom:1px solid var(--line-2)}
+.mhc{display:flex;gap:6px;align-items:center;padding:6px 10px;min-width:0}
+.mhc.mid{gap:8px}
+.mhc select{flex:1;min-width:0;border:1px solid var(--line-2);border-radius:6px;padding:4px 6px;background:var(--surface);font-size:12.5px}
+.side-tag{font:700 12px var(--f-mono);background:var(--ink);color:var(--ink-inv);border-radius:4px;padding:2px 6px}
+.mlegend{display:flex;flex-wrap:wrap;gap:12px;font-size:11.5px;color:var(--ink-3)}
+.mbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--line);background:var(--surface)}
+.lg{display:inline-block;width:12px;height:10px;vertical-align:-1px;margin-right:4px;border-radius:2px}
+.lg.inres{border-left:3px solid var(--ok);background:var(--surface)}.lg.uniq{background:var(--warn-bg)}.lg.pend{border-left:3px solid var(--warn);background:var(--surface)}
+.me-menu{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--line);background:var(--warn-bg)}
+.mrow{display:grid;grid-template-columns:minmax(0,1fr) 34px minmax(0,1.2fr) 34px minmax(0,1fr);border-bottom:1px solid var(--line)}
+.mrow:last-child{border-bottom:0}
+.mcell{min-width:0;padding:8px 10px}
+.mcell.full{grid-column:1/-1}
+.mcell.side.none{background:repeating-linear-gradient(135deg,transparent 0 8px,var(--surface-2) 8px 9px)}
+.mcell.mid{background:var(--surface);border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.mrow.pending .mcell.mid{box-shadow:inset 3px 0 0 var(--warn)}
+.mrow.done .mcell.mid{box-shadow:inset 3px 0 0 var(--ok)}
+.mrow.orphan{background:var(--surface-2)}
+.mrow.orphan .mcell.side{opacity:.9}
+.mrow.left-out{color:var(--ink-3);font-size:12.5px}
+.mlines{font:12px/1.55 var(--f-mono);color:var(--ink-2)}
+.ml{white-space:pre-wrap;word-break:break-word;padding-left:6px;border-left:3px solid transparent;min-height:1.55em}
+.ml.inres{border-left-color:var(--ok)}
+.ml.uniq{background:var(--warn-bg)}
+.mg{display:flex;flex-direction:column;align-items:center;padding-top:30px;background:var(--surface-2)}
+.mbtn{width:26px;height:26px;border-radius:6px;border:1px solid var(--line-2);background:var(--surface);font-weight:700;color:var(--ink)}
+.mbtn:hover{background:var(--ink);color:var(--ink-inv)}
+.mtools{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-bottom:6px}
+.mtools button{font-size:11.5px;padding:2px 7px;border:1px solid var(--line-2);border-radius:5px;background:var(--surface);color:var(--ink-2)}
+.mtools button:hover{border-color:var(--ink);color:var(--ink)}
+.mtools button[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.prov{font:500 10.5px var(--f-body);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);margin-right:4px}
+.me-ta{width:100%;font:12.5px/1.55 var(--f-mono);border:1px solid var(--line-2);border-radius:6px;padding:6px 8px;background:var(--bg);color:var(--ink);resize:vertical;min-height:48px;overflow:hidden}
+.me-ta:focus{border-color:var(--focus);outline:none;box-shadow:0 0 0 2px color-mix(in srgb,var(--focus) 25%,transparent)}
+.morph{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--ink-2);padding-top:4px}
+.fmgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fmgrid label{display:grid;gap:2px;font-size:11.5px;color:var(--ink-3)}
+.fmgrid label.wide{grid-column:1/-1}
+.fmgrid input{border:1px solid var(--line-2);border-radius:6px;padding:4px 8px;background:var(--bg);font-size:13px}
+.mres{max-width:none}
+body.focus .layout{grid-template-columns:minmax(0,1fr)}
+body.focus .rail{display:none}
+@media (max-width:900px){
+  .mhead{position:static;grid-template-columns:minmax(0,1fr)}
+  .mhead>div:empty{display:none}
+  .mrow{grid-template-columns:minmax(0,1fr)}
+  .mg{display:none}
+  .mcell.side:not(.none)::before{font:700 11px var(--f-mono);color:var(--ink-3)}
+  .mcell.side.a:not(.none)::before{content:"A"}
+  .mcell.side.b:not(.none)::before{content:"B"}
+  .mcell.side.none{display:none}
+  .mcell.mid{border:0;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}
+}
+/* ---------- merge view (legacy) */
+.mv-nav{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.mv-nav select{max-width:min(520px,100%);border:1px solid var(--line-2);border-radius:6px;padding:5px 8px;background:var(--surface)}
+.mv-plan{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+.mv-plan>summary{cursor:pointer;padding:9px 12px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.mv-plan-b{padding:0 14px 12px;display:grid;gap:8px}
+.mv-plan-b ul{margin:0;padding-left:18px}
+.mv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr);gap:10px;align-items:stretch}
+.mv.noL{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+.mv.noR{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}
+.mv.noL.noR{grid-template-columns:minmax(0,1fr)}
+.mv.noL #paneL,.mv.noR #paneR{display:none}
+.mv-switch{display:none}
+.pane{background:var(--surface);border:1px solid var(--line);border-radius:10px;display:flex;flex-direction:column;min-width:0;height:calc(100vh - 230px);min-height:420px}
+.pane.mid{border-color:var(--line-2);box-shadow:0 0 0 1px var(--line-2)}
+.pane-h{display:flex;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--line);background:var(--surface-2);border-radius:10px 10px 0 0;flex-wrap:wrap}
+.pane-h select{flex:1;min-width:0;border:1px solid var(--line-2);border-radius:6px;padding:4px 6px;background:var(--surface);font-size:12.5px}
+.pane-b{overflow:auto;padding:10px 14px 30px;flex:1;position:relative}
+.pane-meta{padding-bottom:8px;margin-bottom:8px;border-bottom:1px dashed var(--line)}
+.pane .prose{max-width:none}
+.sec{border-left:3px solid transparent;padding-left:9px;margin-left:-12px;border-radius:2px;transition:background .2s}
+.sec.carried.g-original{border-left-color:var(--g-original)}.sec.carried.g-nick{border-left-color:var(--g-nick)}.sec.carried.g-toran{border-left-color:var(--g-toran)}.sec.carried.g-pr{border-left-color:var(--g-pr)}
+.sec.notcarried{opacity:.55}
+.sec.notcarried:hover{opacity:1}
+.sec.hov,.sec.flash{background:var(--hl);color:var(--hl-ink);opacity:1}
+.fmcard{background:var(--surface-2);border-radius:8px;padding:8px 10px;margin-bottom:10px;display:grid;gap:4px}
+.merged{display:grid;gap:2px}
+.msec{display:grid;grid-template-columns:132px minmax(0,1fr);gap:10px;padding:4px 0;border-top:1px dashed var(--line)}
+.msec:first-child{border-top:0}
+.msec:hover{background:var(--surface-2)}
+.ogut{display:flex;flex-direction:column;gap:3px;padding-top:6px;min-width:0}
+.ochip{border:0;border-left:3px solid var(--line-2);background:var(--surface-2);color:var(--ink-2);font:500 10.5px/1.3 var(--f-body);padding:3px 5px;border-radius:3px;text-align:left;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.ochip.g-original{border-left-color:var(--g-original)}.ochip.g-nick{border-left-color:var(--g-nick)}.ochip.g-toran{border-left-color:var(--g-toran)}.ochip.g-pr{border-left-color:var(--g-pr)}
+.ochip.glue{cursor:default;font-style:italic}
+.msec .prose h1,.msec .prose h2,.msec .prose h3{margin-top:6px}
+.mfoot{margin-top:16px;display:grid;gap:6px}
+.mfoot details summary{cursor:pointer}
+.mfoot ul{padding-left:18px}
+.mv-extra{margin-top:18px}
+.mv-extra>summary{cursor:pointer;display:flex;gap:10px;align-items:baseline;margin-bottom:8px}
+.mv-extra>summary h3{font-size:17px;display:inline}
+body.focus .layout{grid-template-columns:minmax(0,1fr)}
+body.focus .rail{display:none}
+@media (max-width:1100px){
+  .mv,.mv.noL,.mv.noR{grid-template-columns:minmax(0,1fr)}
+  .mv-switch{display:inline-flex;margin-bottom:4px}
+  .mv #paneL,.mv #paneM,.mv #paneR{display:none}
+  .mv[data-active="L"] #paneL,.mv[data-active="M"] #paneM,.mv[data-active="R"] #paneR{display:flex}
+  .msec{grid-template-columns:minmax(0,1fr)}
+  .ogut{flex-direction:row;flex-wrap:wrap}
+}
+@media (max-width:980px){
+  .sheet-b{grid-template-columns:1fr}
+  .sheet-side{border-left:0;border-top:1px solid var(--line)}
+  .kit,.grid2{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .rail{display:none}
+  .mobile-pick{display:block;margin-bottom:14px}
+  .mobile-pick select{width:100%;padding:8px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface)}
+  main{padding-inline:16px}
+  .topbar{padding:10px 16px}
+  .xhead{grid-template-columns:1fr}
+  .statusSeg{justify-content:flex-start}
+  .row{grid-template-columns:4px minmax(0,1fr) auto;row-gap:6px}
+  .row .hide-sm{display:none}
+  .sheet-h,.sheet-main{padding-inline:16px}
+  .lane{border-right:0;border-bottom:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="topbar">
+  <div class="brand"><h1>Expert Skill Workshop</h1><span class="mark">skills-catalog · 32 experts</span></div>
+  <div class="views" role="group" aria-label="View">
+    <button id="v-overview" data-view="overview">Overview</button>
+    <button id="v-expert" data-view="expert">Experts</button>
+    <button id="v-roster" data-view="roster">Roster</button>
+  </div>
+  <div class="sync"><span class="dot" id="syncDot"></span><span id="syncText">Connecting…</span></div>
+</div>
+<div class="layout">
+  <nav class="rail" aria-label="Experts">
+    <input type="search" id="railSearch" placeholder="Filter experts" aria-label="Filter experts">
+    <ul class="rail-list" id="railList"></ul>
+  </nav>
+  <main id="main"><div class="empty">Loading the catalog…</div></main>
+</div>
+<button id="selTip" hidden type="button">Add note on selection</button>
+<div id="modalRoot"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<script>
+"use strict";
+const GROUPS = {
+  original: {label: "Original", long: "Original roster · pre-PR 2", cls: "g-original"},
+  nick: {label: "Nick · PR 2", long: "Nick · PR 2 (167 skills)", cls: "g-nick"},
+  toran: {label: "Toran · 74", long: "Toran · 74 upstream packages", cls: "g-toran"},
+  pr: {label: "PR rebuild", long: "Open rebuild PRs (#14 Mina, #15 Harper, #16 Sofia)", cls: "g-pr"},
+};
+const DIMS = [["trigger","Trigger"],["procedure","Procedure"],["output","Output"],["expertise","Expertise"],["guardrails","Guardrails"],["platform_fit","Platform fit"],["efficiency","Efficiency"]];
+const CLUSTER_CHOICES = [["accept","Accept proposal"],["base","Use a different base"],["separate","Keep separate"],["drop","Drop all"],["discuss","Discuss"]];
+const SKILL_CHOICES = [["keep","Keep"],["merge","Merge"],["rewrite","Rewrite"],["move","Move expert"],["drop","Drop"],["discuss","Discuss"]];
+const REC_CHOICES = [["accept","Accept"],["maybe","Maybe"],["reject","Reject"]];
+const NOTE_TYPES = [["comment","Comment"],["change","Change request"],["question","Question"],["keep","Keep this"],["drop","Cut this"]];
+
+const S = {index: null, cache: {}, key: null, view: "overview", tab: "merge", notes: [], decisions: {}, status: {}, meta: {},
+  db: null, dbState: "connecting", me: null, user: null, names: {}, reader: null, pending: null};
+
+function esc(s){return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function $(sel, root=document){return root.querySelector(sel);}
+function $$(sel, root=document){return Array.from(root.querySelectorAll(sel));}
+function docId(s){return String(s).replace(/[^A-Za-z0-9_\-.~:@+]/g, "_").slice(0, 190);}
+
+
+
+
+function groupChip(g, pr){
+  const G = GROUPS[g] || {label: g, cls: ""};
+  return `<span class="chip ${G.cls}">${esc(g === "pr" && pr ? "PR #" + pr : G.label)}</span>`;
+}
+function toast(msg){
+  const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2200);
+}
+function md(text){
+  if (window.marked && window.DOMPurify) {
+    try { return DOMPurify.sanitize(marked.parse(String(text || ""), {gfm: true})); } catch (e) {}
+  }
+  return `<pre class="raw">${esc(text)}</pre>`;
+}
+function relTime(ts){
+  if (!ts) return "";
+  const d = new Date(ts); if (isNaN(d)) return "";
+  return d.toLocaleString(undefined, {month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"});
+}
+
+/* ---------------- data */
+async function loadIndex(){
+  const r = await fetch("data/index.json"); S.index = await r.json();
+}
+async function loadExpert(key){
+  if (S.cache[key]) return S.cache[key];
+  const r = await fetch(`data/x/${key}.json`); const d = await r.json();
+  S.cache[key] = d; return d;
+}
+function skillOf(d, ref){ return d.skills[ref] || d.extra[ref] || null; }
+function clusterOf(d, ref){
+  if (!d.analysis) return null;
+  return (d.analysis.clusters || []).find(c => (c.members || []).some(m => m.ref === ref)) || null;
+}
+
+/* ---------------- db */
+async function initDb(){
+  const cl = window.claude;
+  if (!cl || !cl.use) { setSync("off", "Notes can't be saved outside claude.ai"); return; }
+  try {
+    const [db, user] = await Promise.all([cl.use("db"), cl.use("user")]);
+    S.user = user;
+    if (user) { try { S.me = await user.id(); } catch (e) {} }
+    if (!db) { setSync("off", "Saving is unavailable in this view"); return; }
+    S.db = db;
+    setSync("on", "Live · notes save for everyone");
+    db.collection("notes").onSnapshot(snap => {
+      S.notes = snap.docs.map(d => Object.assign({id: d.id}, d.data()));
+      resolveNames(); onDataChange("notes");
+    }, onDbError);
+    db.collection("decisions").onSnapshot(snap => {
+      const m = {}; snap.docs.forEach(d => { m[d.id] = d.data(); }); S.decisions = m; onDataChange("decisions");
+    }, onDbError);
+    db.collection("status").onSnapshot(snap => {
+      const m = {}; snap.docs.forEach(d => { m[d.id] = d.data(); }); S.status = m; onDataChange("status");
+    }, onDbError);
+    db.collection("meta").onSnapshot(snap => {
+      const m = {}; snap.docs.forEach(d => { m[d.id] = d.data(); }); S.meta = m; onDataChange("meta");
+    }, onDbError);
+  } catch (e) { setSync("off", "Saving is unavailable in this view"); }
+}
+function onDbError(e){
+  if (e && e.code === "revoked") setSync("off", "Access changed; reload to continue");
+  else setSync("off", "Lost connection to saved notes");
+}
+function setSync(state, text){
+  S.dbState = state; $("#syncDot").className = "dot " + (state === "on" ? "on" : state === "off" ? "off" : "");
+  $("#syncText").textContent = text;
+}
+async function resolveNames(){
+  if (!S.user || !S.user.profiles) return;
+  const ids = [...new Set(S.notes.map(n => n.author).filter(Boolean))].filter(id => !(id in S.names));
+  if (!ids.length) return;
+  try { const ps = await S.user.profiles(ids); ids.forEach(id => { S.names[id] = (ps[id] && ps[id].name) || ""; }); onDataChange("names"); } catch (e) {}
+}
+function authorName(id){
+  if (!id) return "Someone";
+  if (id === S.me) return "You";
+  return S.names[id] || "Someone";
+}
+function canWrite(){ return !!S.db; }
+async function saveDecision(id, patch){
+  if (!canWrite()) { toast("Saving is unavailable in this view"); return; }
+  const cur = S.decisions[id] || {};
+  const body = Object.assign({}, cur, patch, {updatedAt: new Date().toISOString(), author: S.me || null});
+  S.decisions[id] = body; onDataChange("decisions");
+  try { await S.db.doc("decisions/" + id).set(body); } catch (e) { toast("Couldn't save that choice. Try again."); }
+}
+async function addNote(note){
+  if (!canWrite()) { toast("Saving is unavailable in this view"); return false; }
+  const body = Object.assign({status: "open", createdAt: new Date().toISOString(), author: S.me || null}, note);
+  try { await S.db.collection("notes").add(body); toast("Note saved"); return true; }
+  catch (e) { toast(e && e.code === "quota_exceeded" ? "The notes store is full; resolve and delete old notes." : "Couldn't save the note. Try again."); return false; }
+}
+async function updateNote(id, patch){
+  if (!canWrite()) return;
+  try { await S.db.doc("notes/" + id).update(Object.assign({updatedAt: new Date().toISOString()}, patch)); } catch (e) { toast("Couldn't update the note."); }
+}
+async function deleteNote(id){
+  if (!canWrite()) return;
+  try { await S.db.doc("notes/" + id).delete(); toast("Note deleted"); } catch (e) { toast("Couldn't delete the note."); }
+}
+async function setStatus(key, state){
+  if (!canWrite()) { toast("Saving is unavailable in this view"); return; }
+  S.status[key] = {state, updatedAt: new Date().toISOString()}; onDataChange("status");
+  try { await S.db.doc("status/" + key).set(S.status[key]); } catch (e) { toast("Couldn't save the status."); }
+}
+
+let dataTimer = null;
+function onDataChange(kind){
+  clearTimeout(dataTimer);
+  dataTimer = setTimeout(() => {
+    renderRail();
+    syncDecisions();
+    refreshNoteCounts();
+    if (S.view === "overview") renderOverview();
+    if (S.view === "expert" && (S.tab === "notes" || (kind === "decisions" && (S.tab === "kit" || S.tab === "skills")))) renderTabBody();
+    if (S.view === "roster" && kind !== "decisions") renderRoster();
+    if (S.reader) refreshReaderNotes();
+    applyAllNoteHighlights();
+  }, 60);
+}
+
+/* ---------------- navigation */
+function go(view, key, tab){
+  S.view = view;
+  if (key) S.key = key;
+  if (tab) S.tab = tab;
+  $$(".views button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
+  const h = view === "expert" && S.key ? S.key : view;
+  if (location.hash.slice(1) !== h) history.replaceState(null, "", "#" + h);
+  render();
+}
+async function render(){
+  closeReader(true);
+  if (!S.focusUserSet && S.view !== "expert") document.body.classList.remove("focus");
+  renderRail();
+  if (S.view === "overview") return renderOverview();
+  if (S.view === "roster") return renderRoster();
+  if (!S.key) S.key = S.index.experts[0].key;
+  const main = $("#main");
+  main.innerHTML = `<div class="empty">Loading ${esc(S.key)}…</div>`;
+  const d = await loadExpert(S.key);
+  renderExpert(d);
+}
+
+/* ---------------- rail */
+function notesFor(key){ return S.notes.filter(n => n.expert === key); }
+function openCount(key){ return notesFor(key).filter(n => n.status !== "resolved").length; }
+function renderRail(){
+  if (!S.index) return;
+  const q = ($("#railSearch").value || "").toLowerCase();
+  const list = S.index.experts.filter(e => !q || (e.name + " " + e.role + " " + e.job_title + " " + e.key).toLowerCase().includes(q));
+  $("#railList").innerHTML = list.map(e => {
+    const st = (S.status[e.key] || {}).state || "todo";
+    const oc = openCount(e.key);
+    return `<li><button class="rail-item" data-go="${e.key}" aria-current="${S.view === "expert" && S.key === e.key}">
+      <span class="st ${st}" title="${st === "todo" ? "Not reviewed" : st === "reviewing" ? "In review" : "Reviewed"}"></span>
+      <span><span class="nm">${esc(e.name)}</span><span class="rl">${esc(e.role)}</span></span>
+      <span class="ct" title="Open notes">${oc ? oc + " open" : ""}</span></button></li>`;
+  }).join("");
+}
+
+/* ---------------- overview */
+function groupBar(counts){
+  const tot = Object.values(counts).reduce((a, b) => a + b, 0) || 1;
+  return `<span class="gbar" title="${Object.entries(counts).map(([g, n]) => GROUPS[g].label + ": " + n).join(" · ")}">${
+    Object.entries(counts).filter(([, n]) => n).map(([g, n]) => `<i class="${GROUPS[g].cls}" style="width:${n / tot * 100}%"></i>`).join("")}</span>`;
+}
+function renderOverview(){
+  const ix = S.index; const main = $("#main");
+  const ex = ix.experts;
+  const done = ex.filter(e => (S.status[e.key] || {}).state === "done").length;
+  const openNotes = S.notes.filter(n => n.status !== "resolved").length;
+  const sum = f => ex.reduce((a, e) => a + (f(e) || 0), 0);
+  const lastPass = S.meta.claude;
+  main.innerHTML = `
+    ${lastPass ? `<div class="banner claude"><b>Claude's last pass</b> <span class="muted small">${esc(relTime(lastPass.at))}</span><div>${esc(lastPass.text || "")}</div></div>` : ""}
+    <div class="kpis">
+      <div class="kpi"><div class="k">Reviewed</div><div class="v num">${done}/${ex.length}</div><div class="sub">experts marked done</div></div>
+      <div class="kpi"><div class="k">Open notes</div><div class="v num">${openNotes}</div><div class="sub">${S.notes.length} total</div></div>
+      <div class="kpi"><div class="k">Overlaps to resolve</div><div class="v num">${sum(e => e.clusters)}</div><div class="sub">${sum(e => e.drafts)} with a merged draft</div></div>
+      <div class="kpi"><div class="k">Recommended adds</div><div class="v num">${sum(e => e.recs)}</div><div class="sub">across all experts</div></div>
+      <div class="kpi"><div class="k">Skills in kits</div><div class="v num">${sum(e => e.current)} → ${sum(e => e.proposed)}</div><div class="sub">live today → proposed</div></div>
+    </div>
+    <p class="summary">Each row is one expert. The bar shows where the skills in its review scope come from: the live kit, the upstream packages proposed for it, and any open rebuild PR. Open an expert to work through its overlaps in the merge view: a source on the left, the merged draft in the middle, another source on the right.</p>
+    <div class="legend" style="margin-bottom:10px">${Object.entries(GROUPS).map(([g, G]) => `<span><span class="chip ${G.cls}">${G.label}</span> ${esc(G.long)}</span>`).join("")}</div>
+    ${prPanel()}
+    <div class="section"><h3>Experts</h3><span class="muted small">click a row to open the merge</span></div>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>Expert</th><th>Scope by source</th><th>Live → proposed</th><th>Overlaps</th><th>Drafts</th><th>Recs</th><th>Status</th><th>Notes</th></tr></thead>
+      <tbody>${ex.map(e => {
+        const st = (S.status[e.key] || {}).state || "todo";
+        return `<tr data-go="${e.key}"><td><b>${esc(e.name)}</b><div class="muted small">${esc(e.role)}</div></td>
+          <td>${groupBar(e.counts)}<div class="muted small num">${Object.entries(e.counts).filter(([, n]) => n).map(([g, n]) => GROUPS[g].label.split(" ")[0] + " " + n).join(" · ")}</div></td>
+          <td class="num">${e.current} → ${e.proposed ?? "…"}</td><td class="num">${e.clusters ?? "…"}</td><td class="num">${e.drafts ?? "…"}</td><td class="num">${e.recs ?? "…"}</td>
+          <td><span class="st ${st}"></span> <span class="small">${st === "todo" ? "To review" : st === "reviewing" ? "Reviewing" : "Done"}</span></td>
+          <td class="num">${openCount(e.key) || ""}</td></tr>`;
+      }).join("")}</tbody></table></div>`;
+}
+function prPanel(){
+  const prs = S.index.prs || {};
+  const cards = Object.entries(prs).sort((a, b) => Number(b[0]) - Number(a[0])).map(([n, p]) => {
+    const rows = p.rows || [];
+    const who = p.expert ? `<button class="linkbtn" data-go="${esc(p.expert)}">${esc(p.expert)}</button>` : "upstream packages";
+    const body = p.kind === "rebuild"
+      ? `<div class="small muted">${rows.length} skills rebuilt in place. Each one sits next to its main version in the expert's merge view, and the reader has a diff.</div>
+         <div class="small mono" style="line-height:1.7">${rows.map(r => esc(r.slug)).join("<br>")}</div>`
+      : `<div class="small muted">${rows.length} upstream packages get reference fixes so they resolve in the harness. Open one and use its "PR #13 changes" tab to see the diff.</div>`;
+    return `<div class="card"><div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center"><span class="chip g-pr">PR #${esc(n)}</span><span class="chip line">${esc(p.kind)}</span>${who}</div><h4>${esc(p.title)}</h4>${body}</div>`;
+  }).join("");
+  return `<div class="section"><h3>Open pull requests</h3></div><div class="cards" style="margin-bottom:10px">${cards}</div>`;
+}
+/* ---------------- expert */
+const TABS = [["merge","Merge"],["skills","Skills"],["kit","Proposed kit"],["recs","Recommended"],["body","Expert body"],["notes","Notes"]];
+function renderExpert(d){
+  const e = d.expert; const key = e.key; const main = $("#main");
+  const ix = S.index.experts.find(x => x.key === key);
+  const a = d.analysis;
+  const st = (S.status[key] || {}).state || "todo";
+  const lastPass = S.meta["claude_" + key];
+  main.innerHTML = `
+    <div class="mobile-pick"><label class="eyebrow" for="mpick">Expert</label>
+      <select id="mpick">${S.index.experts.map(x => `<option value="${x.key}" ${x.key === key ? "selected" : ""}>${esc(x.name)} — ${esc(x.role)}</option>`).join("")}</select></div>
+    ${lastPass ? `<div class="banner claude"><b>Claude on ${esc(e.name)}</b> <span class="muted small">${esc(relTime(lastPass.at))}</span><div>${esc(lastPass.text || "")}</div></div>` : ""}
+    <div class="xhead">
+      <div><div class="eyebrow">${esc(e.categories.join(" · "))} · <span class="mono">${esc(key)}</span></div>
+        <h2>${esc(e.name)}</h2><div class="role">${esc(e.role)} · ${esc(e.job_title)}</div><div class="tag">${esc(e.tagline)}</div></div>
+      <div class="statusSeg"><div class="seg" role="group" aria-label="Review status">
+        ${[["todo","To review"],["reviewing","Reviewing"],["done","Done"]].map(([k, l]) => `<button data-status="${k}" data-choice="${k}" aria-pressed="${st === k}">${l}</button>`).join("")}
+      </div><button class="iconbtn" data-note-target='${esc(JSON.stringify({kind: "expert", ref: key}))}'>Overall note</button></div>
+    </div>
+    <div class="stats">
+      ${Object.entries(ix.counts).filter(([, n]) => n).map(([g, n]) => `<div class="stat"><div class="v num">${n}</div><div class="k"><span class="chip ${GROUPS[g].cls}">${GROUPS[g].label}</span> in scope</div></div>`).join("")}
+      <div class="stat"><div class="v num">${d.scope.current.length} → ${a ? a.proposed_kit.length : "…"}</div><div class="k">live kit → proposed</div></div>
+      <div class="stat"><div class="v num">${a ? a.clusters.length : "…"}</div><div class="k">overlap clusters</div></div>
+      <div class="stat"><div class="v num">${d.recs ? d.recs.recommendations.length : "…"}</div><div class="k">recommended adds</div></div>
+    </div>
+    ${a ? `<p class="summary clamp" id="xsum" data-annot="summary" data-expert="${key}" data-ref="${key}">${esc(a.summary)}</p><button class="linkbtn small" id="xsumToggle" style="margin:-8px 0 14px">Show all</button>` : `<div class="banner warn">The merge proposal for ${esc(e.name)} is still being generated.</div>`}
+    ${a && a._stage === "first-pass" ? `<div class="banner warn">This is the first-pass merge proposal. The adversarial check and the recommendations for ${esc(e.name)} are still running and will replace it.</div>` : ""}
+    <div class="tabs" role="tablist">${TABS.map(([k, l]) => `<button role="tab" data-tab="${k}" aria-selected="${S.tab === k}">${l}<span class="n" data-count="${k}"></span></button>`).join("")}</div>
+    <div id="tabBody"></div>`;
+  refreshNoteCounts();
+  renderTabBody();
+}
+function refreshNoteCounts(){
+  if (S.view !== "expert" || !S.key) return;
+  const d = S.cache[S.key]; if (!d) return;
+  const c = {
+    merge: d.analysis ? d.analysis.clusters.length : "",
+    skills: Object.keys(d.skills).length,
+    kit: d.analysis ? d.analysis.proposed_kit.length : "",
+    recs: d.recs ? d.recs.recommendations.length : "",
+    notes: notesFor(S.key).filter(n => n.status !== "resolved").length || "",
+    body: d.analysis ? (d.analysis.body_review.issues || []).length : "",
+  };
+  $$("[data-count]").forEach(el => { el.textContent = c[el.dataset.count] === "" || c[el.dataset.count] == null ? "" : c[el.dataset.count]; });
+}
+function renderTabBody(){
+  const d = S.cache[S.key]; const el = $("#tabBody"); if (!d || !el) return;
+  $$(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === S.tab)));
+  const fn = {merge: tabMerge, skills: tabSkills, kit: tabKit, recs: tabRecs, body: tabBody, notes: tabNotes}[S.tab];
+  el.innerHTML = fn(d);
+  if (!S.focusUserSet) document.body.classList.toggle("focus", S.tab === "merge" && window.innerWidth > 900);
+  if (S.tab === "merge") renderMergeEditor();
+  syncDecisions();
+  applyAllNoteHighlights();
+  if (S.tab === "body") applyBodyIssueHighlights(d);
+}
+
+function skillName(s){ return (s && (s.fm_name || s.slug)) || ""; }
+
+function decisionSeg(id, choices, extra){
+  return `<div class="seg" data-dec="${esc(id)}" role="group">${choices.map(([k, l]) => `<button data-choice="${k}" aria-pressed="false">${l}</button>`).join("")}</div>${extra || ""}`;
+}
+function decNote(id, placeholder){
+  return `<input type="text" id="dn-${esc(id)}" data-dec-note="${esc(id)}" placeholder="${esc(placeholder || "Why? (saved with the choice)")}" aria-label="Decision note">`;
+}
+function curCluster(d){
+  S.mcid = S.mcid || {};
+  const cl = d.analysis.clusters;
+  return cl.find(x => x.id === S.mcid[d.expert.key]) || cl[0];
+}
+function tabMerge(d){
+  const a = d.analysis; const key = d.expert.key;
+  if (!a) return `<div class="empty">Merge proposal pending.</div>`;
+  const cl = a.clusters || [];
+  if (!cl.length) return `<div class="empty">No overlaps for this expert.</div>` + mergeExtras(d);
+  const c = curCluster(d); const idx = cl.indexOf(c); const p = c.proposed || {};
+  const id = docId(`${key}__cluster__${c.id}`);
+  const lab = x => { const dd = S.decisions[docId(`${key}__cluster__${x.id}`)] || {}; return (dd.edited ? " ✎" : "") + (dd.choice ? " ✓ " + dd.choice : ""); };
+  return `
+    <div class="mv-nav">
+      <button class="iconbtn" data-mvnav="-1" ${idx === 0 ? "disabled" : ""}>‹ Prev</button>
+      <select data-mvpick="1" aria-label="Overlap">${cl.map((x, i) => `<option value="${esc(x.id)}" ${x.id === c.id ? "selected" : ""}>${i + 1}. ${esc(x.job)}${esc(lab(x))}</option>`).join("")}</select>
+      <button class="iconbtn" data-mvnav="1" ${idx === cl.length - 1 ? "disabled" : ""}>Next ›</button>
+      <span class="muted small num">${idx + 1} of ${cl.length}</span>
+      <span class="chip line">${esc(c.overlap)} overlap</span><span class="chip">${esc(c.recommendation)}</span>
+      <span style="flex:1"></span>
+      <button class="iconbtn" data-focus="1" aria-pressed="${document.body.classList.contains("focus")}">Hide expert list</button>
+    </div>
+    <details class="mv-plan" ${S.mplan ? "open" : ""} data-mvplan="1"><summary><span class="eyebrow">Merge plan</span> <b>${esc(p.name || "—")}</b> <code>${esc(p.slug || "")}</code>${p.base_ref ? ` <span class="muted small">base ${esc(p.base_ref)}</span>` : ""}</summary>
+      <div class="mv-plan-b" data-annot="cluster" data-expert="${key}" data-ref="${esc(c.id)}">
+        ${p.description ? `<div>${esc(p.description)}</div>` : ""}
+        ${(p.grafts || []).length ? `<div><div class="eyebrow">Carry over</div><ul>${p.grafts.map(g => `<li><span class="mono small">${esc(g.from_ref)}</span> <span class="muted">§ ${esc(g.section)}</span> — ${esc(g.what)}</li>`).join("")}</ul></div>` : ""}
+        ${(p.drops || []).length ? `<div><div class="eyebrow">Leave out</div><ul>${p.drops.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
+        ${p.rationale ? `<div class="small" style="color:var(--ink-2)">${esc(p.rationale)}</div>` : ""}
+        <div><div class="eyebrow">Members</div><ul>${(c.members || []).map(m => `<li><span class="mono small">${esc(m.ref)}</span> <span class="mrole ${esc(m.role)}">${esc(m.role)}</span> <span class="small" style="color:var(--ink-2)">${esc(m.note)}</span></li>`).join("")}</ul></div>
+      </div></details>
+    <div id="me" class="me"><div class="empty">Loading the merge…</div></div>
+    <div class="decide" style="border:1px solid var(--line);border-radius:10px;margin-top:10px">${decisionSeg(id, CLUSTER_CHOICES)}
+      <select data-dec-base="${esc(id)}" id="db-${esc(id)}" aria-label="Base skill"><option value="">Base…</option>${(c.members || []).map(m => `<option value="${esc(m.ref)}">${esc(m.ref)}</option>`).join("")}</select>
+      ${decNote(id)}</div>
+    ${mergeExtras(d)}`;
+}
+
+/* ---------------- merge editor */
+function rid(){ return Math.random().toString(36).slice(2, 10); }
+function nl(l){ return String(l).trim().replace(/^([-*+]|\d+[.)])\s+/, "").replace(/[*_`]/g, "").replace(/\s+/g, " ").toLowerCase(); }
+function splitSections(text){
+  const lines = String(text || "").split("\n"); const out = []; let cur = {heading: "", lines: []}; let fence = false;
+  const push = () => { if (cur.heading || cur.lines.some(l => l.trim())) out.push(cur); };
+  for (const ln of lines) {
+    if (/^\s*(```|~~~)/.test(ln)) fence = !fence;
+    if (!fence && /^#{1,2}\s+\S/.test(ln)) { push(); cur = {heading: ln.replace(/^#+\s*/, "").trim(), lines: [ln]}; }
+    else cur.lines.push(ln);
+  }
+  push();
+  return out.map((x, i) => ({i, h: normH(x.heading), heading: x.heading, text: x.lines.join("\n").replace(/^\n+|\n+$/g, "")}));
+}
+function findSec(secs, heading){
+  if (!secs) return -1;
+  const h = normH(heading);
+  if (!h) { const p = secs.find(x => x.h === ""); return p ? p.i : -1; }
+  let x = secs.find(y => y.h === h); if (x) return x.i;
+  x = secs.find(y => y.text.split("\n").some(l => /^#{1,6}\s/.test(l) && normH(l) === h)); if (x) return x.i;
+  x = secs.find(y => y.h && (y.h.startsWith(h) || h.startsWith(y.h))); return x ? x.i : -1;
+}
+function sideSecs(d, ref){ const sk = skillOf(d, ref); return sk ? splitSections(sk.body) : null; }
+function msFor(d, c){
+  S.msc = S.msc || {};
+  const k = d.expert.key + "__" + c.id;
+  if (!S.msc[k]) {
+    const refs = (c.members || []).map(m => m.ref);
+    const base = (c.members || []).find(m => m.role === "base") || (c.members || [])[0];
+    const left = base ? base.ref : refs[0];
+    S.msc[k] = {k, key: d.expert.key, cid: c.id, left, right: refs.find(r => r !== left) || left, rows: null, fm: null, dismissed: [], hist: []};
+  }
+  return S.msc[k];
+}
+function msInit(d, c, ms, from){
+  const draft = (d.drafts || {})[c.id]; const p = c.proposed || {};
+  if (from === "draft" && draft) {
+    ms.rows = draft.sections.map(sec => ({id: rid(), text: ((sec.heading ? sec.heading + "\n\n" : "") + (sec.text || "")).replace(/\n+$/, ""), origins: sec.origin || [], state: "pending", src: "draft"}));
+    ms.fm = {name: draft.name, slug: draft.slug, description: draft.description, triggers: draft.triggers || []};
+  } else if (from === "empty") {
+    ms.rows = [];
+    ms.fm = {name: p.name || "", slug: p.slug || "", description: p.description || "", triggers: []};
+  } else {
+    const side = from === "B" ? ms.right : ms.left;
+    const sk = skillOf(d, side) || {};
+    ms.rows = (sideSecs(d, side) || []).map(sec => ({id: rid(), text: sec.text, origins: [{ref: side, heading: sec.heading}], state: "pending", src: from}));
+    ms.fm = {name: p.name || skillName(sk), slug: p.slug || sk.slug || side, description: p.description || sk.description || "", triggers: []};
+  }
+  ms.dismissed = [];
+}
+function msSubscribe(ms){
+  if (!S.db) return;
+  if (S.msUnsub && S.msUnsubKey === ms.k) return;
+  if (S.msUnsub) { try { S.msUnsub(); } catch (e) {} }
+  S.msUnsubKey = ms.k;
+  S.msUnsub = S.db.doc("merges/" + docId(ms.k)).onSnapshot(snap => {
+    if (!snap.exists) return;
+    const v = snap.data(); ms.savedAt = v.updatedAt;
+    const typing = document.activeElement && document.activeElement.closest && document.activeElement.closest("#me");
+    if (!ms.pending && !ms.saving && !typing && JSON.stringify([v.rows, v.fm, v.dismissed]) !== JSON.stringify([ms.rows, ms.fm, ms.dismissed])) {
+      ms.rows = v.rows || []; ms.fm = v.fm || ms.fm; ms.dismissed = v.dismissed || []; ms.left = v.left || ms.left; ms.right = v.right || ms.right;
+      if (S.view === "expert" && S.tab === "merge") renderMergeEditor();
+    } else saveState(ms);
+  }, () => {});
+}
+function msChanged(ms, rerender){
+  ms.pending = true; clearTimeout(ms.t); ms.t = setTimeout(() => msSave(ms), 700);
+  if (rerender !== false) renderMergeEditor(); else { meCounts(ms); saveState(ms); }
+}
+async function msSave(ms){
+  if (!S.db) { ms.pending = false; saveState(ms); return; }
+  ms.saving = true; saveState(ms);
+  const body = {expert: ms.key, cid: ms.cid, left: ms.left, right: ms.right, rows: ms.rows, fm: ms.fm, dismissed: ms.dismissed, updatedAt: new Date().toISOString(), author: S.me || null};
+  try {
+    await S.db.doc("merges/" + docId(ms.k)).set(body); ms.savedAt = body.updatedAt;
+    const id = docId(`${ms.key}__cluster__${ms.cid}`);
+    if (!(S.decisions[id] || {}).edited) saveDecision(id, Object.assign({edited: true}, decisionTarget(id)));
+  } catch (e) { toast(e && e.code === "invalid_argument" ? "This merge is too large to save in one piece." : "Couldn't save the merge. Your edits are still on screen."); }
+  ms.saving = false; ms.pending = false; saveState(ms);
+}
+function saveState(ms){
+  const el = $("#meSave"); if (!el) return;
+  el.textContent = !S.db ? "Not saved (open in claude.ai to save)" : ms.saving ? "Saving…" : ms.pending ? "Unsaved changes" : ms.savedAt ? "Saved " + relTime(ms.savedAt) : "Draft (not edited yet)";
+}
+function pushHist(ms){ ms.hist.push(JSON.stringify({rows: ms.rows, fm: ms.fm, dismissed: ms.dismissed})); if (ms.hist.length > 80) ms.hist.shift(); }
+function msUndo(ms){ const h = ms.hist.pop(); if (!h) { toast("Nothing to undo"); return; } Object.assign(ms, JSON.parse(h)); msChanged(ms); }
+function orphanKey(side, ref, sec){ return side + ":" + ref + ":" + sec.h + ":" + sec.i; }
+function alignRows(ms, L, R){
+  const disp = []; const usedL = new Set(), usedR = new Set();
+  const match = (row, ref, secs) => {
+    if (!secs) return -1;
+    const o = (row.origins || []).find(x => x.ref === ref);
+    if (o) { const i = findSec(secs, o.heading); if (i >= 0) return i; }
+    const hl = row.text.split("\n").find(l => /^#{1,6}\s/.test(l));
+    return hl ? findSec(secs, hl) : -1;
+  };
+  const rm = ms.rows.map(r => ({row: r, li: match(r, ms.left, L), ri: ms.right === ms.left ? -1 : match(r, ms.right, R)}));
+  rm.forEach(m => {
+    if (m.li >= 0) { if (usedL.has(m.li)) m.li = -1; else usedL.add(m.li); }
+    if (m.ri >= 0) { if (usedR.has(m.ri)) m.ri = -1; else usedR.add(m.ri); }
+  });
+  let nL = 0, nR = 0, nRows = 0;
+  const flush = (uL, uR) => {
+    const ls = [], rs = [];
+    for (; nL < uL; nL++) if (!usedL.has(nL)) ls.push(nL);
+    for (; nR < uR; nR++) if (!usedR.has(nR)) rs.push(nR);
+    const took = new Set();
+    ls.forEach(li => {
+      const ri = rs.find(x => !took.has(x) && R[x].h === L[li].h);
+      if (ri !== undefined) took.add(ri);
+      disp.push({li, ri: ri === undefined ? -1 : ri, insertAt: nRows});
+    });
+    rs.filter(x => !took.has(x)).forEach(ri => disp.push({li: -1, ri, insertAt: nRows}));
+  };
+  rm.forEach(m => {
+    flush(m.li >= 0 ? m.li : nL, m.ri >= 0 ? m.ri : nR);
+    disp.push({row: m.row, li: m.li, ri: m.ri});
+    nRows++;
+    if (m.li >= 0) nL = Math.max(nL, m.li + 1);
+    if (m.ri >= 0) nR = Math.max(nR, m.ri + 1);
+  });
+  flush(L ? L.length : 0, ms.right === ms.left ? 0 : (R ? R.length : 0));
+  return disp;
+}
+function meCounts(ms){
+  const todo = ms.rows.filter(r => r.state !== "done").length + (ms.disp || []).filter(e => !e.row && !isDismissed(ms, e)).length;
+  const el = $("#meTodo"); if (el) el.textContent = todo ? todo + " to review" : "All sections reviewed";
+  if (el) el.className = "chip " + (todo ? "warn" : "ok");
+}
+function isDismissed(ms, e){
+  const keys = []; if (e.li >= 0) keys.push(orphanKey("A", ms.left, ms.L[e.li])); if (e.ri >= 0) keys.push(orphanKey("B", ms.right, ms.R[e.ri]));
+  return keys.length && keys.every(k => ms.dismissed.includes(k));
+}
+function sideCell(ms, secs, i, other, resText, side, ref, key){
+  if (!secs || i < 0) return `<div class="mcell side ${side} none"></div>`;
+  const sec = secs[i];
+  if (S.meRendered) return `<div class="mcell side ${side}"><div class="prose" data-annot="skill" data-expert="${key}" data-ref="${esc(ref)}" data-file="SKILL.md">${md(sec.text)}</div></div>`;
+  const oset = other ? new Set(other.text.split("\n").map(nl).filter(Boolean)) : null;
+  const rset = resText != null ? new Set(resText.split("\n").map(nl).filter(Boolean)) : null;
+  const lines = sec.text.split("\n").map(l => { const n = nl(l);
+    const cls = (n && rset && rset.has(n) ? " inres" : "") + (n && oset && !oset.has(n) ? " uniq" : "");
+    return `<div class="ml${cls}">${esc(l) || " "}</div>`; }).join("");
+  return `<div class="mcell side ${side}"><div class="mlines" data-annot="skill" data-expert="${key}" data-ref="${esc(ref)}" data-file="SKILL.md">${lines}</div></div>`;
+}
+function renderMergeEditor(){
+  const d = S.cache[S.key]; const host = $("#me"); if (!d || !host || !d.analysis) return;
+  const c = curCluster(d); const ms = msFor(d, c); const key = d.expert.key;
+  const draft = (d.drafts || {})[c.id];
+  if (!ms.rows) msInit(d, c, ms, draft ? "draft" : c.recommendation === "keep-separate" ? "empty" : "A");
+  msSubscribe(ms);
+  const L = sideSecs(d, ms.left), R = ms.right === ms.left ? null : sideSecs(d, ms.right);
+  ms.L = L || []; ms.R = R || [];
+  const disp = ms.disp = alignRows(ms, L, R);
+  const refs = mvRefs2(d, c);
+  const sel = (side, cur) => `<select data-meside="${side}" aria-label="Source ${side}">${refs.map(r => { const sk = skillOf(d, r); const m = (c.members || []).find(x => x.ref === r);
+      return `<option value="${esc(r)}" ${r === cur ? "selected" : ""}>${esc(r + (sk ? " · " + GROUPS[sk.group].label + (sk.pr ? " #" + sk.pr : "") : "") + (m ? " · " + m.role : ""))}</option>`; }).join("")}</select>`;
+  const skA = skillOf(d, ms.left) || {}, skB = skillOf(d, ms.right) || {};
+  const head = `<div class="mbar">
+      <b>Result</b> <code class="small">${esc(ms.fm.slug || "")}</code><span id="meTodo" class="chip"></span>
+      <span class="small muted" id="meSave"></span><span style="flex:1"></span>
+      <span class="mlegend"><span><i class="lg inres"></i>in the result</span><span><i class="lg uniq"></i>differs from the other side</span><span><i class="lg pend"></i>not reviewed</span></span>
+      <button class="iconbtn" data-me="undo" title="Undo (Ctrl+Z)">Undo</button>
+      <button class="iconbtn" data-me="menu">Start over…</button>
+      <button class="iconbtn" data-me="rendered" aria-pressed="${!!S.meRendered}">${S.meRendered ? "Show markdown" : "Show rendered"}</button>
+      <button class="iconbtn" data-me="copy">Copy SKILL.md</button>
+    </div>
+    <div class="mhead">
+      <div class="mhc"><span class="side-tag">A</span>${sel("A", ms.left)}</div><div></div>
+      <div class="mhc mid"><b>Result</b><span class="small muted">edit freely; » and « take a whole section</span></div><div></div>
+      <div class="mhc"><span class="side-tag">B</span>${sel("B", ms.right)}</div>
+    </div>
+    ${S.meMenu ? `<div class="me-menu">Replace the result with: <button class="iconbtn" data-me="reset-draft" ${draft ? "" : "disabled"}>the merged draft</button><button class="iconbtn" data-me="reset-A">all of A</button><button class="iconbtn" data-me="reset-B">all of B</button><button class="iconbtn" data-me="reset-empty">nothing (build it up)</button><button class="linkbtn small" data-me="menu">Cancel</button><span class="muted small">Undo still works afterwards.</span></div>` : ""}
+    ${c.recommendation === "keep-separate" ? `<div class="banner" style="margin:8px">The proposal keeps these as separate skills. Take sections below to build a merge anyway.</div>` : ""}
+    ${!draft && c.recommendation !== "keep-separate" ? `<div class="banner warn" style="margin:8px">The merged draft for this overlap isn't ready yet, so the result starts from A. Your edits are kept if you continue.</div>` : ""}`;
+  const fmRow = `<div class="mrow fm">
+      <div class="mcell side a"><div class="eyebrow">A · description</div><div class="small">${esc(skA.description || "")}</div></div>
+      <div class="mg">${skA.description ? `<button class="mbtn" data-fmtake="A" title="Use A's description">»</button>` : ""}</div>
+      <div class="mcell mid"><div class="fmgrid">
+        <label>Name <input id="fmName" data-fm="name" value="${esc(ms.fm.name || "")}"></label>
+        <label>Slug <input id="fmSlug" data-fm="slug" value="${esc(ms.fm.slug || "")}" class="mono"></label>
+        <label class="wide">Description <textarea id="fmDesc" data-fm="description" class="me-ta" rows="3">${esc(ms.fm.description || "")}</textarea></label>
+      </div></div>
+      <div class="mg">${skB.description ? `<button class="mbtn" data-fmtake="B" title="Use B's description">«</button>` : ""}</div>
+      <div class="mcell side b"><div class="eyebrow">B · description</div><div class="small">${esc(skB.description || "")}</div></div>
+    </div>`;
+  const rows = disp.map((e, k) => {
+    const a = e.li >= 0 ? L[e.li] : null, b = e.ri >= 0 ? R[e.ri] : null;
+    const both = a && b;
+    const takeBtns = `${a ? `<button data-take="A" data-k="${k}" title="Use A's section">A</button>` : ""}${b ? `<button data-take="B" data-k="${k}" title="Use B's section">B</button>` : ""}${both ? `<button data-take="AB" data-k="${k}" title="A, then B">A then B</button><button data-take="BA" data-k="${k}" title="B, then A">B then A</button>` : ""}`;
+    if (e.row) {
+      const r = e.row;
+      const prov = r.src === "draft" ? "merged draft" : r.src === "edited" ? "edited" : r.src === "new" ? "new" : r.src === "AB" ? "A then B" : r.src === "BA" ? "B then A" : r.src;
+      return `<div class="mrow ${r.state === "done" ? "done" : "pending"}" data-rowid="${esc(r.id)}">
+        ${sideCell(ms, L, e.li, b, r.text, "a", ms.left, key)}
+        <div class="mg">${a ? `<button class="mbtn" data-take="A" data-k="${k}" title="Replace with A's section">»</button>` : ""}</div>
+        <div class="mcell mid"><div class="mtools"><span class="prov">${esc(prov)}</span>${takeBtns}
+            <button data-rowact="accept" data-id="${esc(r.id)}" title="Mark reviewed" ${r.state === "done" ? "aria-pressed=\"true\"" : ""}>✓</button>
+            <button data-rowact="up" data-id="${esc(r.id)}" title="Move up">↑</button><button data-rowact="down" data-id="${esc(r.id)}" title="Move down">↓</button>
+            <button data-rowact="add" data-id="${esc(r.id)}" title="Add a section below">+</button>
+            <button data-rowact="remove" data-id="${esc(r.id)}" title="Remove from the result">✕</button>
+            <button data-note-target='${esc(JSON.stringify({kind: "merged", ref: c.id, section: (r.text.split("\n").find(l => /^#/.test(l)) || "").replace(/^#+\s*/, "").slice(0, 100)}))}' title="Leave a note on this section">Note</button></div>
+          ${S.meRendered ? `<div class="prose mres">${md(r.text)}</div>` : `<textarea class="me-ta" data-row="${esc(r.id)}" spellcheck="false" aria-label="Result section">${esc(r.text)}</textarea>`}</div>
+        <div class="mg">${b ? `<button class="mbtn" data-take="B" data-k="${k}" title="Replace with B's section">«</button>` : ""}</div>
+        ${sideCell(ms, R, e.ri, a, r.text, "b", ms.right, key)}
+      </div>`;
+    }
+    const dismissed = isDismissed(ms, e);
+    const h = (a || b).heading || "(opening text)";
+    if (dismissed) return `<div class="mrow orphan left-out"><div class="mcell full">Left out: ${a ? "A" : ""}${both ? " + " : ""}${b ? "B" : ""} § ${esc(h)} <button class="linkbtn small" data-undismiss="${k}">Bring back</button></div></div>`;
+    return `<div class="mrow orphan">
+        ${sideCell(ms, L, e.li, b, null, "a", ms.left, key)}
+        <div class="mg">${a ? `<button class="mbtn" data-take="A" data-k="${k}" title="Take A's section">»</button>` : ""}</div>
+        <div class="mcell mid"><div class="morph"><span>Not in the result: <b>${esc(h)}</b></span><span class="mtools">${takeBtns}<button data-dismiss="${k}">Leave out</button></span></div></div>
+        <div class="mg">${b ? `<button class="mbtn" data-take="B" data-k="${k}" title="Take B's section">«</button>` : ""}</div>
+        ${sideCell(ms, R, e.ri, a, null, "b", ms.right, key)}
+      </div>`;
+  }).join("");
+  host.innerHTML = head + fmRow + rows + `<div class="mrow"><div class="mcell full"><button class="iconbtn" data-rowact="add-end">+ Add a section at the end</button></div></div>`;
+  $$(".me-ta", host).forEach(autoGrow);
+  meCounts(ms); saveState(ms);
+  applyAllNoteHighlights();
+}
+function mvRefs2(d, c){
+  const out = (c.members || []).map(m => m.ref);
+  const draft = (d.drafts || {})[c.id];
+  (draft ? draft.sections : []).forEach(sec => (sec.origin || []).forEach(o => { if (o.ref && !out.includes(o.ref) && skillOf(d, o.ref)) out.push(o.ref); }));
+  ((c.proposed || {}).grafts || []).forEach(g => { if (g.from_ref && !out.includes(g.from_ref) && skillOf(d, g.from_ref)) out.push(g.from_ref); });
+  return out;
+}
+function autoGrow(t){ t.style.height = "auto"; t.style.height = (t.scrollHeight + 2) + "px"; }
+function meTake(k, how){
+  const d = S.cache[S.key]; const ms = msFor(d, curCluster(d)); const e = ms.disp[Number(k)]; if (!e) return;
+  const a = e.li >= 0 ? ms.L[e.li] : null, b = e.ri >= 0 ? ms.R[e.ri] : null;
+  const parts = how === "A" ? [a] : how === "B" ? [b] : how === "AB" ? [a, b] : [b, a];
+  if (parts.some(x => !x)) { toast("That side has no matching section here"); return; }
+  pushHist(ms);
+  let text = parts[0].text;
+  if (parts[1]) {
+    let second = parts[1].text;
+    if (parts[0].h && parts[0].h === parts[1].h) second = second.split("\n").slice(1).join("\n").replace(/^\n+/, "");
+    text += "\n\n" + second;
+  }
+  const origins = parts.map(x => ({ref: x === a ? ms.left : ms.right, heading: x.heading}));
+  if (e.row) Object.assign(e.row, {text, origins, state: "done", src: how});
+  else ms.rows.splice(e.insertAt, 0, {id: rid(), text, origins, state: "done", src: how});
+  msChanged(ms);
+}
+function meRowAct(act, id){
+  const d = S.cache[S.key]; const ms = msFor(d, curCluster(d));
+  const i = ms.rows.findIndex(r => r.id === id);
+  if (act === "add-end") { pushHist(ms); ms.rows.push({id: rid(), text: "## New section\n\n", origins: [], state: "done", src: "new"}); msChanged(ms); return; }
+  if (i < 0) return;
+  pushHist(ms);
+  if (act === "accept") ms.rows[i].state = ms.rows[i].state === "done" ? "pending" : "done";
+  else if (act === "up" && i > 0) [ms.rows[i - 1], ms.rows[i]] = [ms.rows[i], ms.rows[i - 1]];
+  else if (act === "down" && i < ms.rows.length - 1) [ms.rows[i + 1], ms.rows[i]] = [ms.rows[i], ms.rows[i + 1]];
+  else if (act === "add") ms.rows.splice(i + 1, 0, {id: rid(), text: "## New section\n\n", origins: [], state: "done", src: "new"});
+  else if (act === "remove") ms.rows.splice(i, 1);
+  msChanged(ms);
+}
+function meMarkdown(ms){
+  const q = v => JSON.stringify(String(v || ""));
+  const fm = "---\nname: " + (ms.fm.slug || "") + "\ndescription: " + q(ms.fm.description) + "\n" + ((ms.fm.triggers || []).length ? "triggers:\n" + ms.fm.triggers.map(t => "  - " + q(t)).join("\n") + "\n" : "") + "---\n\n";
+  return fm + ms.rows.map(r => r.text.replace(/\s+$/, "")).join("\n\n") + "\n";
+}
+async function meCopy(ms){
+  const text = meMarkdown(ms);
+  try { await navigator.clipboard.writeText(text); toast("Copied the merged SKILL.md"); }
+  catch (e) {
+    const back = document.createElement("div"); back.className = "composer-back"; back.id = "composerBack";
+    back.innerHTML = `<div class="composer"><b>Merged SKILL.md</b><textarea id="copyBox" style="min-height:50vh" class="mono">${esc(text)}</textarea><div style="display:flex;justify-content:flex-end"><button class="btn" id="copyClose">Close</button></div></div>`;
+    document.body.appendChild(back); const tb = $("#copyBox"); tb.focus(); tb.select();
+    $("#copyClose").onclick = () => back.remove(); back.addEventListener("click", ev => { if (ev.target === back) back.remove(); });
+  }
+}
+function normH(t){
+  return String(t || "").replace(/^#+\s*/, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_`]/g, "").replace(/\s+/g, " ").replace(/[\s:.]+$/, "").trim().toLowerCase();
+}
+function mergeExtras(d){
+  const a = d.analysis; const key = d.expert.key;
+  const unique = (a.unique || []).map(u => {
+    const s = skillOf(d, u.ref); const id = docId(`${key}__skill__${u.ref}`);
+    return `<div class="row" style="grid-template-columns:4px minmax(0,1fr) auto auto auto"><span class="stripe ${s ? GROUPS[s.group].cls : ""}"></span>
+      <div class="t"><b><button class="linkbtn" data-open="${esc(u.ref)}">${esc(u.ref)}</button></b><span style="white-space:normal">${esc(u.note)}</span></div>
+      <span class="hide-sm">${s ? groupChip(s.group, s.pr) : ""}</span>
+      <span class="chip ${u.keep ? "ok" : "bad"}">${u.keep ? "proposed: keep" : "proposed: drop"}</span>
+      <span>${decisionSeg(id, [["keep","Keep"],["drop","Drop"],["discuss","Discuss"]])}</span></div>`;
+  }).join("");
+  const cross = (a.cross_expert || []).map(c => `<div class="row" style="grid-template-columns:4px minmax(0,1fr) auto"><span class="stripe"></span>
+      <div class="t"><b><button class="linkbtn" data-open="${esc(c.ref)}">${esc(c.ref)}</button> ↔ <button class="linkbtn" data-go="${esc(c.other_expert)}">${esc(c.other_expert)}</button> · <span class="mono">${esc(c.other_ref)}</span></b>
+      <span style="white-space:normal">${esc(c.suggestion)}</span></div><span class="chip">${esc(c.relation)}</span></div>`).join("");
+  const crit = (a.critique || []);
+  return `
+    <details class="mv-extra"><summary><h3>No conflict</h3><span class="muted small">${(a.unique || []).length} skills without an overlap in scope</span></summary><div class="rows">${unique || `<div class="empty">None.</div>`}</div></details>
+    <details class="mv-extra"><summary><h3>Across experts</h3><span class="muted small">${(a.cross_expert || []).length} jobs shared with other experts</span></summary><div class="rows">${cross || `<div class="empty">None flagged.</div>`}</div></details>
+    ${crit.length ? `<details class="mv-extra"><summary><h3>Verifier changes to the first proposal</h3><span class="muted small">${crit.length}</span></summary>
+      <div class="notes-list" style="margin-top:8px">${crit.map(c => `<div class="note"><div class="meta"><span class="chip ${c.applied ? "ok" : "warn"}">${c.applied ? "applied" : "disputed"}</span><b>${esc(c.kind)}</b> <code>${esc(c.target)}</code></div><div>${esc(c.issue)}</div><div class="muted small">${esc(c.fix)}</div></div>`).join("")}</div></details>` : ""}`;
+}
+function skillRow(d, ref){
+  const s = skillOf(d, ref); if (!s) return "";
+  const key = d.expert.key;
+  const inKit = d.scope.current.includes(ref);
+  const inToran = d.scope.toran_kit.includes(ref);
+  const c = clusterOf(d, ref);
+  const nc = notesFor(key).filter(n => n.ref === ref && n.status !== "resolved").length;
+  const dec = S.decisions[docId(`${key}__skill__${ref}`)];
+  return `<div class="row" data-open="${esc(ref)}" style="cursor:pointer;grid-template-columns:4px minmax(0,1fr) auto"><span class="stripe ${GROUPS[s.group].cls}"></span>
+    <div class="t"><b>${esc(skillName(s))}</b><span class="mono">${esc(ref)}${s.lines ? " · " + s.lines + " lines" : ""}${s.files && s.files.length ? " · " + s.files.length + " files" : ""}</span></div>
+    <span class="tags">${inKit ? '<span class="chip line">live</span>' : ""}${inToran ? '<span class="chip g-toran">proposed upstream</span>' : ""}${c ? `<span class="chip">${esc(c.job.slice(0, 40))}${c.job.length > 40 ? "…" : ""}</span>` : ""}${nc ? `<span class="chip warn">${nc} note${nc > 1 ? "s" : ""}</span>` : ""}${dec && dec.choice ? `<span class="chip ok">${esc(dec.choice)}</span>` : ""}</span></div>`;
+}
+function tabSkills(d){
+  const refs = d.scope.refs;
+  const by = {original: [], nick: [], toran: [], pr: []};
+  refs.forEach(r => { const s = skillOf(d, r); if (s) (by[s.group] || (by[s.group] = [])).push(r); });
+  const sortRefs = rs => rs.slice().sort((x, y) => {
+    const ix = d.scope.current.indexOf(x), iy = d.scope.current.indexOf(y);
+    if (ix >= 0 && iy >= 0) return ix - iy; if (ix >= 0) return -1; if (iy >= 0) return 1; return x.localeCompare(y);
+  });
+  return ["original", "nick", "toran", "pr"].filter(g => by[g] && by[g].length).map(g => `
+    <div class="section"><h3>${esc(GROUPS[g].long)}</h3><span class="chip ${GROUPS[g].cls}">${by[g].length}</span></div>
+    <div class="rows">${sortRefs(by[g]).map(r => skillRow(d, r)).join("")}</div>`).join("");
+}
+function tabKit(d){
+  const a = d.analysis; const key = d.expert.key;
+  const cur = d.scope.current.map((r, i) => {
+    const s = skillOf(d, r);
+    return `<li><span class="pos num">${i + 1}</span><div class="t"><b><button class="linkbtn" data-open="${esc(r)}">${esc(r)}</button></b><span>${s ? GROUPS[s.group].label : ""}</span></div><span></span></li>`;
+  }).join("");
+  if (!a) return `<div class="kit"><div><div class="section"><h3>Live kit today</h3></div><ol>${cur}</ol></div><div class="empty">Proposal pending.</div></div>`;
+  const orderDoc = S.decisions[docId(`${key}__kitorder`)];
+  let kit = a.proposed_kit.slice();
+  if (orderDoc && Array.isArray(orderDoc.order)) {
+    const pos = new Map(orderDoc.order.map((s, i) => [s, i]));
+    kit.sort((x, y) => (pos.has(x.slug) ? pos.get(x.slug) : 999) - (pos.has(y.slug) ? pos.get(y.slug) : 999));
+  }
+  const accRecs = (d.recs ? d.recs.recommendations : []).filter(r => (S.decisions[docId(`${key}__rec__${r.slug}`)] || {}).choice === "accept");
+  const prop = kit.map((k, i) => {
+    const id = docId(`${key}__kit__${k.slug}`);
+    const rejected = (S.decisions[id] || {}).choice === "reject";
+    return `<li class="${rejected ? "rejected" : ""}"><span class="pos num">${i + 1}</span>
+      <div class="t"><b>${esc(k.name)} <code class="muted">${esc(k.slug)}</code></b>
+        <span><span class="chip">${esc(k.status)}</span> ${(k.from_refs || []).map(r => `<button class="linkbtn small" data-open="${esc(r)}">${esc(r)}</button>`).join(" ")}</span>
+        ${k.note ? `<span style="display:block">${esc(k.note)}</span>` : ""}</div>
+      <span style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end"><button class="iconbtn" data-kitmove="${esc(k.slug)}" data-dir="-1" aria-label="Move up">↑</button><button class="iconbtn" data-kitmove="${esc(k.slug)}" data-dir="1" aria-label="Move down">↓</button>
+      ${decisionSeg(id, [["accept","Keep"],["reject","Cut"]])}</span></li>`;
+  }).join("");
+  const adds = accRecs.map(r => `<li><span class="pos">+</span><div class="t"><b>${esc(r.name)} <code class="muted">${esc(r.slug)}</code></b><span><span class="chip ok">accepted recommendation</span> ${esc(r.purpose)}</span></div><span></span></li>`).join("");
+  const dropped = (a.dropped || []).map(x => `<li><span class="pos">–</span><div class="t"><b><button class="linkbtn" data-open="${esc(x.ref)}">${esc(x.ref)}</button></b><span>${esc(x.reason)}</span></div><span></span></li>`).join("");
+  return `<div class="kit">
+    <div><div class="section"><h3>Live kit today</h3><span class="muted small">${d.scope.current.length}</span></div><ol>${cur || '<li><span></span><div class="t muted">No skills bundled.</div><span></span></li>'}</ol>
+      ${d.toran && d.toran.rationale ? `<div class="section"><h3>Upstream kit rationale</h3></div><div class="card"><div>${esc(d.toran.rationale)}</div>${(d.toran.remaining_gaps || []).length ? `<div class="eyebrow">Gaps recorded in the upstream review</div><ul>${d.toran.remaining_gaps.map(g => `<li>${esc(typeof g === "string" ? g : JSON.stringify(g))}</li>`).join("")}</ul>` : ""}${(d.toran.deferred || []).length ? `<div class="eyebrow">Deferred upstream (not installed)</div><ul>${d.toran.deferred.map(x => `<li class="mono small">${esc(x)}</li>`).join("")}</ul>` : ""}</div>` : ""}
+    </div>
+    <div><div class="section"><h3>Proposed kit</h3><span class="muted small">${kit.length}${accRecs.length ? " + " + accRecs.length + " accepted" : ""}</span></div><ol>${prop}${adds}</ol>
+      ${dropped ? `<div class="section"><h3>Left out</h3></div><ol>${dropped}</ol>` : ""}</div></div>`;
+}
+
+function tabRecs(d){
+  const r = d.recs; const key = d.expert.key;
+  if (!r) return `<div class="empty">Recommendations pending.</div>`;
+  const pc = {must: "bad", should: "warn", could: ""};
+  return `${r.notes ? `<details class="card" style="margin-bottom:14px"><summary class="eyebrow" style="cursor:pointer">Coverage notes from the recommender</summary><div class="prose small">${md(r.notes)}</div></details>` : ""}<div class="cards">${r.recommendations.map(x => {
+    const id = docId(`${key}__rec__${x.slug}`);
+    const src = x.source || {};
+    const inCat = src.type === "catalog" && skillOf(d, src.ref);
+    return `<div class="card" data-annot="rec" data-expert="${key}" data-ref="${esc(x.slug)}">
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip ${pc[x.priority] || ""}">${esc(x.priority)}</span><span class="chip line">${esc(src.type)}</span>${src.license ? `<span class="chip">${esc(src.license)}</span>` : ""}</div>
+      <h4>${esc(x.name)}</h4><code class="muted">${esc(x.slug)}</code>
+      <div>${esc(x.purpose)}</div>
+      <div class="small" style="color:var(--ink-2)">${esc(x.why)}</div>
+      ${src.ref || src.url ? `<div class="small">Source: ${inCat ? `<button class="linkbtn" data-open="${esc(src.ref)}">${esc(src.ref)}</button>` : `<span class="mono">${esc(src.ref)}</span>`}${src.url ? ` · <a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.url.replace(/^https?:\/\//, "").slice(0, 70))}</a>` : ""}</div>` : ""}
+      ${(x.overlaps_with || []).length ? `<div class="small muted">Touches: ${x.overlaps_with.map(o => esc(o)).join(", ")}</div>` : ""}
+      ${(x.sketch || []).length ? `<div><div class="eyebrow">Sketch</div><ul class="small">${x.sketch.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
+      <div class="decide" style="margin:auto -14px -14px;border-radius:0 0 10px 10px">${decisionSeg(id, REC_CHOICES)}${decNote(id, "Note")}</div></div>`;
+  }).join("")}</div>`;
+}
+
+function bodyVal(v){ return `<div class="v">${esc(v)}</div>`; }
+function tabBody(d){
+  const e = d.expert; const key = e.key; const br = d.analysis && d.analysis.body_review;
+  const f = (field, label, inner) => `<div class="bodyfield" data-annot="body" data-expert="${key}" data-ref="${esc(field)}" data-field="${esc(field)}"><h4>${esc(label)}</h4>${inner}</div>`;
+  const review = br ? `<div class="card" style="margin-bottom:16px"><div class="eyebrow">Body review</div><div>${esc(br.summary)}</div>
+      ${br.kit_alignment ? `<div class="small" style="color:var(--ink-2)"><b>Kit alignment:</b> ${esc(br.kit_alignment)}</div>` : ""}
+      ${(br.strengths || []).length ? `<div class="small"><b>Strengths:</b> ${br.strengths.map(esc).join(" · ")}</div>` : ""}
+      ${(br.issues || []).map(i => `<div class="issue ${esc(i.severity)}"><span class="pill-sev sev-${esc(i.severity)}">${esc(i.severity)}</span> <code>${esc(i.field)}</code> — ${esc(i.problem)}${i.quote ? `<div class="small muted">“${esc(i.quote)}”</div>` : ""}<div class="small"><b>Fix:</b> ${esc(i.fix)}</div></div>`).join("")}</div>` : "";
+  const routines = (e.routines || []).map((r, i) => `<div class="routine" data-annot="body" data-expert="${key}" data-ref="routines[${i}]" data-field="routines[${i}]">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:baseline"><b>${esc(r.title)}</b><code class="muted">${esc(r.key)}</code><span class="chip">${esc(r.session_mode)}</span>${(r.crons || []).map(c => `<span class="chip line mono">${esc(c)}</span>`).join("")}</div>
+      <div class="v" style="white-space:pre-wrap;margin-top:4px">${esc(r.prompt)}</div>
+      ${(r.asks || []).length ? `<div class="small muted">Asks: ${r.asks.map(esc).join(" · ")}</div>` : ""}</div>`).join("");
+  return review + `<div class="grid2"><div>
+    ${f("tagline", "Tagline", bodyVal(e.tagline))}
+    ${f("bio", "Bio", bodyVal(e.bio))}
+    ${f("identity", "Identity", bodyVal(e.identity))}
+    ${f("boundaries", "Boundaries", bodyVal(e.boundaries))}
+    ${f("voice_preferences", "Voice preferences", bodyVal(e.voice_preferences || "—"))}
+    ${f("voice_samples", "Voice samples", (e.voice_samples || []).map(v => `<div style="margin-bottom:8px"><div class="eyebrow">${esc(v.label)}</div><div class="v">${esc(v.text)}</div></div>`).join("") || "—")}
+  </div><div>
+    ${f("day_one", "Day one", (e.day_one || []).map(x => `<div style="margin-bottom:8px"><b>${esc(x.title)}</b> <span class="chip line">${esc(x.timing)}</span><div class="v">${esc(x.description)}</div></div>`).join("") || "—")}
+    ${f("preloads", "Preloads", (e.preloads || []).map(p => `<div><button class="linkbtn mono" data-open="${esc(p.slug)}">${esc(p.slug)}</button> ${p.cron ? `<span class="chip line mono">${esc(p.cron)}</span>` : ""}</div>`).join("") || "—")}
+    <div class="bodyfield"><h4>Routines</h4>${routines || "—"}</div>
+  </div></div>`;
+}
+function applyBodyIssueHighlights(d){
+  const br = d.analysis && d.analysis.body_review; if (!br) return;
+  (br.issues || []).forEach(i => {
+    if (!i.quote) return;
+    const field = String(i.field || "").replace(/\.prompt$|\.text$|\.description$/, "");
+    const scope = $$(`#tabBody [data-annot="body"]`).find(el => field.startsWith(el.dataset.field)) || $("#tabBody");
+    highlight(scope, i.quote, "iss-hl", `${i.severity}: ${i.problem}`);
+  });
+}
+
+function noteCard(n, opts){
+  const d = S.cache[n.expert];
+  const tgt = n.kind === "skill" ? `<button class="linkbtn" data-open="${esc(n.ref)}" data-file="${esc(n.file || "")}">${esc(n.ref)}</button>${n.file && n.file !== "SKILL.md" ? ` <span class="mono small">${esc(n.file)}</span>` : ""}`
+    : n.kind === "cluster" ? `<span class="mono">${esc(n.ref)}</span>` : `<span class="mono">${esc(n.ref || n.kind)}</span>`;
+  const typ = (NOTE_TYPES.find(t => t[0] === n.type) || ["", ""])[1];
+  return `<div class="note ${n.status === "resolved" ? "resolved" : ""}" data-note="${esc(n.id)}">
+    <div class="meta"><span class="chip">${esc(n.kind)}</span>${tgt}${n.section ? `<span>§ ${esc(n.section)}</span>` : ""}${typ ? `<span class="chip line">${esc(typ)}</span>` : ""}<span>${esc(authorName(n.author))} · ${esc(relTime(n.createdAt))}</span>${n.status === "resolved" ? '<span class="chip ok">resolved</span>' : ""}</div>
+    ${n.quote ? `<div class="q">${esc(n.quote)}</div>` : ""}
+    <div class="txt">${esc(n.body)}</div>
+    ${n.reply ? `<div class="reply"><b>Claude</b> <span class="muted small">${esc(relTime(n.replyAt))}</span>\n${esc(n.reply)}</div>` : ""}
+    <div style="display:flex;gap:6px;flex-wrap:wrap">${n.status === "resolved" ? `<button class="iconbtn" data-note-act="reopen">Reopen</button>` : `<button class="iconbtn" data-note-act="resolve">Resolve</button>`}
+      <button class="iconbtn" data-note-act="edit">Edit</button><button class="iconbtn" data-note-act="delete">Delete</button>
+      ${n.quote && !(opts && opts.noJump) ? `<button class="iconbtn" data-note-act="jump">Show in text</button>` : ""}</div></div>`;
+}
+function tabNotes(d){
+  const key = d.expert.key;
+  const ns = notesFor(key).slice().sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+  const open = ns.filter(n => n.status !== "resolved"), res = ns.filter(n => n.status === "resolved");
+  return `<div class="card" style="margin-bottom:16px"><div class="eyebrow">Overall note on ${esc(d.expert.name)}</div>
+      <textarea id="holistic" style="width:100%;min-height:90px;border:1px solid var(--line-2);border-radius:8px;padding:8px;background:var(--bg)" placeholder="Your holistic read: what this expert should be, what to keep, what to cut…"></textarea>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><select id="holisticType" aria-label="Note type">${NOTE_TYPES.map(([k, l]) => `<option value="${k}">${l}</option>`).join("")}</select><button class="btn" id="holisticSave">Save note</button>
+      <span class="muted small">Select any text in a skill, the merge blocks or the expert body to leave an anchored note.</span></div></div>
+    <div class="section"><h3>Open</h3><span class="chip warn">${open.length}</span></div>
+    <div class="notes-list">${open.map(n => noteCard(n)).join("") || `<div class="empty">No open notes yet.</div>`}</div>
+    ${res.length ? `<div class="section"><h3>Resolved</h3><span class="chip">${res.length}</span></div><div class="notes-list">${res.map(n => noteCard(n)).join("")}</div>` : ""}`;
+}
+
+/* ---------------- roster */
+function renderRoster(){
+  const r = S.index.roster; const main = $("#main");
+  if (!r) { main.innerHTML = `<div class="empty">The roster-level review is still being generated.</div>`; return; }
+  const rn = S.notes.filter(n => n.expert === "roster");
+  main.innerHTML = `<div class="xhead"><div><div class="eyebrow">Across all 32 experts</div><h2>Roster overlaps</h2></div>
+      <div class="statusSeg"><button class="iconbtn" data-note-target='${esc(JSON.stringify({kind: "roster", ref: "roster", expert: "roster"}))}'>Roster note</button></div></div>
+    <p class="summary" data-annot="roster" data-expert="roster" data-ref="summary">${esc(r.summary)}</p>
+    <div class="section"><h3>Experts that overlap</h3><span class="chip">${r.expert_overlaps.length}</span></div>
+    <div class="cards">${r.expert_overlaps.map((o, i) => { const id = docId(`roster__overlap__${o.experts.join("+")}`);
+      return `<div class="card" data-annot="roster" data-expert="roster" data-ref="${esc(o.experts.join("+"))}">
+        <div style="display:flex;gap:6px;flex-wrap:wrap">${o.experts.map(k => `<button class="chip line" data-go="${esc(k)}">${esc(k)}</button>`).join("")}<span class="chip ${o.overlap === "duplicate-role" ? "bad" : o.overlap === "heavy" ? "warn" : ""}">${esc(o.overlap)}</span><span class="chip">${esc(o.recommendation)}</span></div>
+        <div>${esc(o.proposal)}</div><div class="small" style="color:var(--ink-2)">${esc(o.evidence)}</div>
+        <div class="decide" style="margin:auto -14px -14px;border-radius:0 0 10px 10px">${decisionSeg(id, [["merge","Merge experts"],["differentiate","Differentiate"],["keep","Keep both"],["discuss","Discuss"]])}${decNote(id, "Note")}</div></div>`; }).join("")}</div>
+    <div class="section"><h3>Jobs that should share one skill</h3><span class="chip">${r.shared_skills.length}</span></div>
+    <div class="rows">${r.shared_skills.map(s => `<div class="row" style="grid-template-columns:4px 1fr"><span class="stripe"></span><div class="t"><b>${esc(s.job)}</b><span style="white-space:normal">${s.experts.map(k => `<button class="linkbtn" data-go="${esc(k)}">${esc(k)}</button>`).join(", ")} · <span class="mono">${s.refs.map(esc).join(", ")}</span></span><span style="white-space:normal;color:var(--ink-2)">${esc(s.recommendation)}</span></div></div>`).join("")}</div>
+    <div class="section"><h3>Roles the roster is missing</h3><span class="chip">${r.roster_gaps.length}</span></div>
+    <div class="cards">${r.roster_gaps.map(g => `<div class="card"><h4>${esc(g.role)}</h4><div class="small">${esc(g.why)}</div>${g.candidate_skills.length ? `<div class="small muted mono">${g.candidate_skills.map(esc).join(", ")}</div>` : ""}</div>`).join("")}</div>
+    ${r.kit_size_flags.length ? `<div class="section"><h3>Kit size flags</h3></div><div class="rows">${r.kit_size_flags.map(k => `<div class="row" style="grid-template-columns:4px 140px 1fr"><span class="stripe"></span><button class="linkbtn" data-go="${esc(k.expert)}">${esc(k.expert)}</button><span>${esc(k.issue)}</span></div>`).join("")}</div>` : ""}
+    <div class="section"><h3>Roster notes</h3></div><div class="notes-list">${rn.map(n => noteCard(n, {noJump: true})).join("") || `<div class="empty">Select text above to leave a note, or use Roster note.</div>`}</div>`;
+  syncDecisions();
+}
+
+/* ---------------- reader sheet */
+function openReader(ref, opts){
+  const d = S.cache[S.key]; if (!d) return;
+  const s = skillOf(d, ref);
+  if (!s) { toast("That skill isn't in this expert's scope"); return; }
+  S.reader = {ref, tab: (opts && opts.tab) || "skill", file: (opts && opts.file) || null, raw: false};
+  const root = $("#modalRoot");
+  root.innerHTML = `<div class="sheet-back" data-close="1"></div><div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(ref)}"><div class="sheet-h" id="rdHead"></div><div class="sheet-b"><div class="sheet-main" id="rdMain"></div><aside class="sheet-side" id="rdSide"></aside></div></div>`;
+  document.body.style.overflow = "hidden";
+  renderReader();
+}
+function closeReader(silent){
+  if (!S.reader && silent) return;
+  S.reader = null; $("#modalRoot").innerHTML = ""; document.body.style.overflow = "";
+}
+function renderReader(){
+  const d = S.cache[S.key]; const R = S.reader; if (!d || !R) return;
+  const s = skillOf(d, R.ref); const ev = s.eval; const key = d.expert.key;
+  const tabs = [["skill","SKILL.md"],["eval","Review"],["files",`Files (${(s.files || []).length})`]];
+  if (s.diff) tabs.push(["diff","Diff vs main"]);
+  if (s.pr13diff) tabs.push(["pr13","PR #13 changes"]);
+  const c = clusterOf(d, R.ref);
+  const id = docId(`${key}__skill__${R.ref}`);
+  $("#rdHead").innerHTML = `<div class="top"><h3>${esc(skillName(s))} <code class="muted" style="font-size:13px">${esc(R.ref)}</code></h3>
+      <span style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">${groupChip(s.group, s.pr)}<button class="closebtn" data-close="1">Close</button></span></div>
+    <div class="desc">${esc(s.description)}</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px" class="small">
+      ${s.source && s.source !== "platform" ? `<span class="muted">Upstream: <span class="mono">${esc(s.source)}</span>${s.license ? " · " + esc(s.license) : ""}</span>` : ""}
+      ${(s.assigned_to || []).length ? `<span class="muted">Live on: ${s.assigned_to.map(k => `<button class="linkbtn" data-go="${esc(k)}">${esc(k)}</button>`).join(", ")}</span>` : ""}
+      ${(s.toran_proposed_for || []).length ? `<span class="muted">Proposed for: ${s.toran_proposed_for.map(esc).join(", ")}</span>` : ""}
+      ${c ? `<span class="muted">Overlap: <button class="linkbtn" data-jump-cluster="${esc(c.id)}">${esc(c.job)}</button></span>` : ""}
+      ${s.mainRef ? `<button class="linkbtn" data-open="${esc(s.mainRef)}">Open main version</button>` : ""}
+      ${(d.scope.pr_variants || []).filter(v => v.endsWith(":" + R.ref)).map(v => `<button class="linkbtn" data-open="${esc(v)}">Open PR version ${esc(v.split(":")[0])}</button>`).join("")}
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-bottom:10px">${decisionSeg(id, SKILL_CHOICES)}${decNote(id)}<button class="iconbtn" data-note-target='${esc(JSON.stringify({kind: "skill", ref: R.ref}))}'>Note on this skill</button></div>
+    <div class="tabs" style="position:static;margin:0;border-bottom:0" role="tablist">${tabs.map(([k, l]) => `<button role="tab" data-rtab="${k}" aria-selected="${R.tab === k}">${l}</button>`).join("")}</div>`;
+  const m = $("#rdMain");
+  if (R.tab === "skill") {
+    m.innerHTML = `<div style="display:flex;justify-content:flex-end;margin-bottom:8px"><button class="iconbtn" data-raw="1">${R.raw ? "Rendered" : "Raw markdown"}</button></div>
+      <details><summary class="eyebrow" style="cursor:pointer">Frontmatter</summary><div class="fm">${esc(s.frontmatter)}</div></details>
+      ${R.raw ? `<div class="raw" data-annot="skill" data-expert="${key}" data-ref="${esc(R.ref)}" data-file="SKILL.md">${esc(s.body)}</div>`
+        : `<div class="prose" data-annot="skill" data-expert="${key}" data-ref="${esc(R.ref)}" data-file="SKILL.md">${md(s.body)}</div>`}`;
+    const body = $("[data-annot]", m);
+    if (ev) (ev.issues || []).forEach((i, n) => { if (i.quote) highlight(body, i.quote, "iss-hl", `${i.severity}: ${i.problem}`, "iss-" + n); });
+  } else if (R.tab === "eval") {
+    m.innerHTML = ev ? reviewHtml(ev) : `<div class="empty">No review for this skill.</div>`;
+  } else if (R.tab === "files") {
+    const files = s.files || [];
+    const cur = files.find(f => f.path === R.file) || files[0];
+    if (cur) R.file = cur.path;
+    m.innerHTML = files.length ? `<div class="files">${files.map(f => `<button data-rfile="${esc(f.path)}" aria-pressed="${cur && f.path === cur.path}"><span>${esc(f.path)}</span><span class="muted num">${(f.bytes / 1024).toFixed(1)} KB</span></button>`).join("")}</div>
+      ${cur ? (cur.text == null ? `<div class="empty">This file is binary or too large to preview (${(cur.bytes / 1024).toFixed(0)} KB).</div>`
+        : /\.md$/i.test(cur.path) ? `<div class="prose" data-annot="skill" data-expert="${key}" data-ref="${esc(R.ref)}" data-file="${esc(cur.path)}">${md(cur.text)}</div>`
+        : `<div class="raw" data-annot="skill" data-expert="${key}" data-ref="${esc(R.ref)}" data-file="${esc(cur.path)}">${esc(cur.text)}</div>`) : ""}`
+      : `<div class="empty">SKILL.md is the whole package.</div>`;
+  } else if (R.tab === "diff" || R.tab === "pr13") {
+    const txt = R.tab === "diff" ? s.diff : s.pr13diff;
+    m.innerHTML = `<div class="diff">${String(txt || "").split("\n").map(l => `<div class="${l.startsWith("@@") ? "hunk" : l.startsWith("+") && !l.startsWith("+++") ? "add" : l.startsWith("-") && !l.startsWith("---") ? "del" : ""}">${esc(l) || " "}</div>`).join("")}</div>`;
+  }
+  refreshReaderNotes();
+  syncDecisions();
+  applyAllNoteHighlights();
+}
+
+function reviewHtml(ev){
+  return `<div class="grid2"><div>
+    <p><b>What it does:</b> ${esc(ev.summary)}</p>
+    ${(ev.strengths || []).length ? `<div class="eyebrow">Strengths</div><ul class="small">${ev.strengths.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+    ${(ev.missing || []).length ? `<div class="eyebrow" style="margin-top:12px">What a senior practitioner would miss</div><ul class="small">${ev.missing.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+    ${ev.delta && ((ev.delta.better || []).length || (ev.delta.worse || []).length) ? `<div class="card"><div class="eyebrow">Compared with the main version</div>
+      ${(ev.delta.better || []).length ? `<div class="small"><b>Better</b><ul>${ev.delta.better.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
+      ${(ev.delta.worse || []).length ? `<div class="small"><b>Worse</b><ul>${ev.delta.worse.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}</div>` : ""}
+  </div><div>
+    <div class="eyebrow">Scenario walk-throughs</div>
+    ${(ev.scenarios || []).map(x => `<div class="scn"><span class="chip line">${esc(x.kind)}</span><div style="margin-top:6px"><i>“${esc(x.prompt)}”</i></div><div class="small" style="color:var(--ink-2);margin-top:4px">${esc(x.why)}</div></div>`).join("")}
+  </div></div>
+  <div class="eyebrow" style="margin-top:14px">Issues</div>
+  ${(ev.issues || []).map((i, n) => `<div class="issue ${esc(i.severity)}"><span class="pill-sev sev-${esc(i.severity)}">${esc(i.severity)}</span> ${i.section ? `<span class="muted small">§ ${esc(i.section)}</span>` : ""} — ${esc(i.problem)}
+    ${i.quote ? `<div class="small muted">“${esc(i.quote)}” <button class="linkbtn" data-jump-issue="${n}">show</button></div>` : ""}<div class="small"><b>Fix:</b> ${esc(i.fix)}</div></div>`).join("") || `<div class="muted">None.</div>`}`;
+}
+function refreshReaderNotes(){
+  const R = S.reader; const side = $("#rdSide"); if (!R || !side) return;
+  const ns = S.notes.filter(n => n.expert === S.key && n.ref === R.ref);
+  side.innerHTML = `<div class="eyebrow" style="margin-bottom:8px">Notes on this skill (${ns.filter(n => n.status !== "resolved").length} open)</div>
+    <div class="notes-list">${ns.map(n => noteCard(n)).join("") || `<div class="muted small">Select any passage in the skill or its files to leave an anchored note.</div>`}</div>`;
+}
+/* ---------------- highlights */
+function mdPlain(q){
+  return String(q || "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*|__|`/g, "").replace(/^\s*(?:[-*+]|\d+\.)\s+/, "").replace(/^#+\s*/, "").replace(/\s+/g, " ").trim();
+}
+function highlight(root, quote, cls, title, idAttr, noteId){
+  if (!root) return false;
+  const q = mdPlain(quote).toLowerCase(); if (q.length < 3) return false;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {acceptNode: n => n.parentElement && n.parentElement.closest("script,style") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT});
+  const nodes = []; let full = ""; let n;
+  while ((n = walker.nextNode())) { nodes.push({n, start: full.length}); full += n.nodeValue; }
+  let norm = "", map = [], prev = false;
+  for (let i = 0; i < full.length; i++) {
+    const ch = full[i]; const sp = /\s/.test(ch);
+    if (sp) { if (prev) continue; norm += " "; map.push(i); prev = true; }
+    else { norm += ch.toLowerCase(); map.push(i); prev = false; }
+  }
+  const at = norm.indexOf(q); if (at < 0) return false;
+  const s = map[at], e = map[at + q.length - 1] + 1;
+  for (const {n, start} of nodes) {
+    const end = start + n.nodeValue.length;
+    if (end <= s || start >= e) continue;
+    const a = Math.max(s, start) - start, b = Math.min(e, end) - start;
+    if (b <= a) continue;
+    try {
+      const r = document.createRange(); r.setStart(n, a); r.setEnd(n, b);
+      const m = document.createElement("mark"); m.className = cls; if (title) m.title = title;
+      if (idAttr) m.dataset.iss = idAttr; if (noteId) m.dataset.noteId = noteId;
+      r.surroundContents(m);
+    } catch (err) {}
+  }
+  return true;
+}
+function applyAllNoteHighlights(){
+  $$("mark.note-hl").forEach(m => { const p = m.parentNode; while (m.firstChild) p.insertBefore(m.firstChild, m); p.removeChild(m); p.normalize(); });
+  $$("[data-annot]").forEach(el => {
+    const ex = el.dataset.expert, ref = el.dataset.ref, file = el.dataset.file || null;
+    S.notes.filter(n => n.expert === ex && n.ref === ref && n.quote && n.status !== "resolved" && (!file || (n.file || "SKILL.md") === file))
+      .forEach(n => highlight(el, n.quote, "note-hl", n.body, null, n.id));
+  });
+}
+
+/* ---------------- decisions sync */
+function syncDecisions(){
+  $$("[data-dec]").forEach(seg => {
+    const dec = S.decisions[seg.dataset.dec] || {};
+    $$("button", seg).forEach(b => b.setAttribute("aria-pressed", String(dec.choice === b.dataset.choice)));
+  });
+  $$("[data-dec-note]").forEach(inp => { if (document.activeElement !== inp) inp.value = (S.decisions[inp.dataset.decNote] || {}).note || ""; });
+  $$("[data-dec-base]").forEach(sel => { sel.value = (S.decisions[sel.dataset.decBase] || {}).base || ""; });
+  $$("[data-status]").forEach(b => b.setAttribute("aria-pressed", String(((S.status[S.key] || {}).state || "todo") === b.dataset.status)));
+}
+const noteTimers = {};
+function decisionTarget(id){
+  const parts = id.split("__");
+  return {expert: parts[0], kind: parts[1] || "", target: parts.slice(2).join("__")};
+}
+
+/* ---------------- selection → note */
+function annotCtx(el){
+  return {kind: el.dataset.annot, expert: el.dataset.expert || S.key, ref: el.dataset.ref || null, file: el.dataset.file || null, field: el.dataset.field || null};
+}
+function nearestHeading(container, node){
+  const hs = $$("h1,h2,h3,h4", container);
+  let last = null;
+  for (const h of hs) { if (h.compareDocumentPosition(node) & Node.DOCUMENT_POSITION_FOLLOWING) last = h; }
+  return last ? last.textContent.trim().slice(0, 120) : null;
+}
+function onSelection(){
+  const tip = $("#selTip");
+  const sel = window.getSelection();
+  if (!sel || sel.isCollapsed || !sel.rangeCount) { tip.hidden = true; return; }
+  const r = sel.getRangeAt(0);
+  const el1 = (r.startContainer.nodeType === 1 ? r.startContainer : r.startContainer.parentElement);
+  const el2 = (r.endContainer.nodeType === 1 ? r.endContainer : r.endContainer.parentElement);
+  const c1 = el1 && el1.closest("[data-annot]"), c2 = el2 && el2.closest("[data-annot]");
+  if (!c1 || c1 !== c2) { tip.hidden = true; return; }
+  const text = sel.toString().replace(/\s+/g, " ").trim();
+  if (text.length < 2) { tip.hidden = true; return; }
+  S.pending = Object.assign(annotCtx(c1), {quote: text.slice(0, 900), section: nearestHeading(c1, r.startContainer)});
+  const rect = r.getBoundingClientRect();
+  tip.hidden = false;
+  const top = Math.max(8, rect.top - 40);
+  tip.style.top = top + "px";
+  tip.style.left = Math.min(window.innerWidth - 200, Math.max(8, rect.left + rect.width / 2 - 80)) + "px";
+}
+function openComposer(ctx, existing){
+  if (!canWrite()) { toast("Saving is unavailable in this view"); return; }
+  const root = document.createElement("div");
+  root.className = "composer-back"; root.id = "composerBack";
+  const title = existing ? "Edit note" : ctx.quote ? "Note on selection" : "Note";
+  const where = [ctx.kind, ctx.ref, ctx.file && ctx.file !== "SKILL.md" ? ctx.file : null, ctx.section ? "§ " + ctx.section : null].filter(Boolean).join(" · ");
+  root.innerHTML = `<div class="composer" role="dialog" aria-modal="true" aria-label="${esc(title)}">
+    <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><b>${esc(title)}</b><span class="muted small mono">${esc(where)}</span></div>
+    ${ctx.quote ? `<div class="note"><div class="q">${esc(ctx.quote)}</div></div>` : ""}
+    <textarea id="cmpText" placeholder="What should change, stay, or be answered?">${esc(existing ? existing.body : "")}</textarea>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><select id="cmpType" aria-label="Note type">${NOTE_TYPES.map(([k, l]) => `<option value="${k}" ${existing && existing.type === k ? "selected" : ""}>${l}</option>`).join("")}</select>
+      <span style="margin-left:auto;display:flex;gap:8px"><button class="btn ghost" id="cmpCancel">Cancel</button><button class="btn" id="cmpSave">${existing ? "Save" : "Add note"}</button></span></div></div>`;
+  document.body.appendChild(root);
+  const ta = $("#cmpText"); ta.focus();
+  const close = () => root.remove();
+  root.addEventListener("click", e => { if (e.target === root) close(); });
+  $("#cmpCancel").onclick = close;
+  ta.addEventListener("keydown", e => { if ((e.metaKey || e.ctrlKey) && e.key === "Enter") $("#cmpSave").click(); if (e.key === "Escape") close(); });
+  $("#cmpSave").onclick = async () => {
+    const body = ta.value.trim(); if (!body) { ta.focus(); return; }
+    $("#cmpSave").disabled = true;
+    if (existing) { await updateNote(existing.id, {body, type: $("#cmpType").value}); close(); return; }
+    const ok = await addNote({expert: ctx.expert || S.key, kind: ctx.kind, ref: ctx.ref, file: ctx.file || null, field: ctx.field || null, section: ctx.section || null, quote: ctx.quote || null, body, type: $("#cmpType").value});
+    if (ok) close(); else $("#cmpSave").disabled = false;
+  };
+}
+
+/* ---------------- events */
+document.addEventListener("click", e => {
+  const t = e.target.closest("button,[data-go],[data-open],[data-close],tr[data-go],.row[data-open],mark");
+  if (!t) return;
+  if (t.matches("mark.note-hl")) {
+    const n = S.notes.find(x => x.id === t.dataset.noteId);
+    if (n) { const card = $(`[data-note="${CSS.escape(n.id)}"]`); if (card) { card.scrollIntoView({block: "center", behavior: "smooth"}); card.style.outline = "2px solid var(--focus)"; setTimeout(() => card.style.outline = "", 1400); } }
+    return;
+  }
+  if (t.dataset.close) { closeReader(); return; }
+  if (t.dataset.view) { go(t.dataset.view); return; }
+  if (t.dataset.go !== undefined && t.dataset.go) {
+    const k = t.dataset.go;
+    if (S.index.experts.some(x => x.key === k)) { closeReader(); go("expert", k, S.tab); }
+    return;
+  }
+  if (t.dataset.open) { openReader(t.dataset.open, t.dataset.file ? {tab: t.dataset.file && t.dataset.file !== "SKILL.md" ? "files" : "skill", file: t.dataset.file} : null); return; }
+  if (t.dataset.tab) { S.tab = t.dataset.tab; renderTabBody(); return; }
+  if (t.dataset.rtab) { S.reader.tab = t.dataset.rtab; renderReader(); return; }
+  if (t.dataset.rfile) { S.reader.file = t.dataset.rfile; renderReader(); return; }
+  if (t.dataset.raw) { S.reader.raw = !S.reader.raw; renderReader(); return; }
+  if (t.dataset.jumpIssue !== undefined) {
+    S.reader.tab = "skill"; renderReader();
+    const m = $(`mark[data-iss="iss-${t.dataset.jumpIssue}"]`);
+    if (m) { m.scrollIntoView({block: "center", behavior: "smooth"}); m.classList.add("flash"); setTimeout(() => m.classList.remove("flash"), 1600); } else toast("That quote isn't in the rendered text");
+    return;
+  }
+  if (t.dataset.jumpCluster) { closeReader(); S.tab = "merge"; const d0 = S.cache[S.key]; S.mcid = S.mcid || {}; S.mcid[S.key] = t.dataset.jumpCluster; renderTabBody(); const v = $(".mv-nav"); if (v) v.scrollIntoView({block: "start", behavior: "smooth"}); return; }
+  if (t.dataset.status) { setStatus(S.key, t.dataset.status); return; }
+  if (t.dataset.noteTarget) { const ctx = JSON.parse(t.dataset.noteTarget); openComposer(Object.assign({expert: S.key}, ctx)); return; }
+  if (t.dataset.choice && t.parentElement && t.parentElement.dataset.dec) {
+    const id = t.parentElement.dataset.dec; const cur = (S.decisions[id] || {}).choice;
+    const next = cur === t.dataset.choice ? null : t.dataset.choice;
+    saveDecision(id, Object.assign({choice: next}, decisionTarget(id))); return;
+  }
+  if (t.dataset.kitmove) {
+    const d = S.cache[S.key]; const id = docId(`${S.key}__kitorder`);
+    const cur = (S.decisions[id] && S.decisions[id].order) || d.analysis.proposed_kit.map(k => k.slug);
+    const order = cur.slice(); d.analysis.proposed_kit.forEach(k => { if (!order.includes(k.slug)) order.push(k.slug); });
+    const i = order.indexOf(t.dataset.kitmove), j = i + Number(t.dataset.dir);
+    if (i < 0 || j < 0 || j >= order.length) return;
+    [order[i], order[j]] = [order[j], order[i]];
+    saveDecision(id, {order, expert: S.key, kind: "kitorder"}).then(() => renderTabBody()); renderTabBody(); return;
+  }
+  if (t.dataset.noteAct) {
+    const card = t.closest("[data-note]"); const n = S.notes.find(x => x.id === card.dataset.note); if (!n) return;
+    const act = t.dataset.noteAct;
+    if (act === "resolve") updateNote(n.id, {status: "resolved"});
+    else if (act === "reopen") updateNote(n.id, {status: "open"});
+    else if (act === "edit") openComposer({kind: n.kind, ref: n.ref, file: n.file, section: n.section, quote: n.quote, expert: n.expert}, n);
+    else if (act === "delete") {
+      if (t.dataset.armed) deleteNote(n.id);
+      else { t.dataset.armed = "1"; t.textContent = "Confirm delete"; setTimeout(() => { if (t.isConnected) { delete t.dataset.armed; t.textContent = "Delete"; } }, 3000); }
+    } else if (act === "jump") {
+      if (n.kind === "skill") { openReader(n.ref, {tab: n.file && n.file !== "SKILL.md" ? "files" : "skill", file: n.file}); setTimeout(() => flashNote(n.id), 60); }
+      else if (n.kind === "body") { S.tab = "body"; renderTabBody(); flashNote(n.id); }
+      else if (n.kind === "cluster" || n.kind === "merged") { S.tab = "merge"; S.mcid = S.mcid || {}; S.mcid[S.key] = n.ref; if (n.kind === "cluster") S.mplan = true; renderTabBody(); setTimeout(() => flashNote(n.id), 60); }
+      else if (n.kind === "rec") { S.tab = "recs"; renderTabBody(); flashNote(n.id); }
+      else flashNote(n.id);
+    }
+    return;
+  }
+  if (t.dataset.mvnav) { const d = S.cache[S.key]; const cl = d.analysis.clusters; const c = curCluster(d); const i = cl.indexOf(c); const j = Math.max(0, Math.min(cl.length - 1, i + Number(t.dataset.mvnav))); S.mcid[S.key] = cl[j].id; renderTabBody(); window.scrollTo({top: 0}); return; }
+  if (t.dataset.focus) { S.focusUserSet = true; document.body.classList.toggle("focus"); t.setAttribute("aria-pressed", String(document.body.classList.contains("focus"))); return; }
+  if (t.dataset.take) { meTake(t.dataset.k, t.dataset.take); return; }
+  if (t.dataset.rowact) { meRowAct(t.dataset.rowact, t.dataset.id); return; }
+  if (t.dataset.dismiss !== undefined || t.dataset.undismiss !== undefined) {
+    const d = S.cache[S.key]; const ms = msFor(d, curCluster(d)); const e = ms.disp[Number(t.dataset.dismiss ?? t.dataset.undismiss)]; if (!e) return;
+    const keys = []; if (e.li >= 0) keys.push(orphanKey("A", ms.left, ms.L[e.li])); if (e.ri >= 0) keys.push(orphanKey("B", ms.right, ms.R[e.ri]));
+    pushHist(ms); ms.dismissed = t.dataset.dismiss !== undefined ? ms.dismissed.concat(keys) : ms.dismissed.filter(x => !keys.includes(x)); msChanged(ms); return;
+  }
+  if (t.dataset.fmtake) {
+    const d = S.cache[S.key]; const ms = msFor(d, curCluster(d)); const sk = skillOf(d, t.dataset.fmtake === "A" ? ms.left : ms.right); if (!sk) return;
+    pushHist(ms); ms.fm = Object.assign({}, ms.fm, {description: sk.description || ""}); msChanged(ms); return;
+  }
+  if (t.dataset.me) {
+    const d = S.cache[S.key]; const c = curCluster(d); const ms = msFor(d, c); const a = t.dataset.me;
+    if (a === "undo") msUndo(ms);
+    else if (a === "menu") { S.meMenu = !S.meMenu; renderMergeEditor(); }
+    else if (a === "rendered") { S.meRendered = !S.meRendered; renderMergeEditor(); }
+    else if (a === "copy") meCopy(ms);
+    else if (a.startsWith("reset-")) { pushHist(ms); msInit(d, c, ms, a.slice(6) === "draft" ? "draft" : a.slice(6)); S.meMenu = false; msChanged(ms); }
+    return;
+  }
+  if (t.id === "xsumToggle") { const el = $("#xsum"); const open = el.classList.toggle("clamp"); t.textContent = open ? "Show all" : "Show less"; return; }
+  if (t.id === "holisticSave") {
+    const v = $("#holistic").value.trim(); if (!v) return;
+    addNote({expert: S.key, kind: "expert", ref: S.key, body: v, type: $("#holisticType").value}).then(ok => { if (ok) $("#holistic").value = ""; });
+  }
+});
+function flashNote(id){
+  const m = $(`mark[data-note-id="${CSS.escape(id)}"]`);
+  if (m) { m.scrollIntoView({block: "center", behavior: "smooth"}); m.classList.add("flash"); setTimeout(() => m.classList.remove("flash"), 1600); }
+  else toast("The quoted text has changed since this note was left");
+}
+document.addEventListener("change", e => {
+  const t = e.target;
+  if (t.id === "mpick") { go("expert", t.value); return; }
+  if (t.dataset.mvpick) { S.mcid[S.key] = t.value; renderTabBody(); return; }
+  if (t.dataset.meside) { const d = S.cache[S.key]; const ms = msFor(d, curCluster(d)); if (t.dataset.meside === "A") ms.left = t.value; else ms.right = t.value; msChanged(ms); return; }
+  if (t.dataset.decBase) { saveDecision(t.dataset.decBase, Object.assign({base: t.value, choice: t.value ? "base" : (S.decisions[t.dataset.decBase] || {}).choice || null}, decisionTarget(t.dataset.decBase))); }
+});
+document.addEventListener("input", e => {
+  const t = e.target;
+  if (t.dataset.decNote) {
+    const id = t.dataset.decNote; clearTimeout(noteTimers[id]);
+    noteTimers[id] = setTimeout(() => saveDecision(id, Object.assign({note: t.value}, decisionTarget(id))), 700);
+  }
+  if (t.id === "railSearch") renderRail();
+  if (t.dataset.row || t.dataset.fm) {
+    const d = S.cache[S.key]; if (!d) return; const ms = msFor(d, curCluster(d));
+    if (!ms.typing) { pushHist(ms); ms.typing = true; }
+    clearTimeout(ms.typingT); ms.typingT = setTimeout(() => { ms.typing = false; }, 1200);
+    if (t.dataset.row) { const r = ms.rows.find(x => x.id === t.dataset.row); if (r) { r.text = t.value; r.state = "done"; if (r.src !== "new") r.src = "edited"; } }
+    else ms.fm = Object.assign({}, ms.fm, {[t.dataset.fm]: t.value});
+    if (t.classList.contains("me-ta")) autoGrow(t);
+    msChanged(ms, false);
+  }
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape" && S.reader && !$("#composerBack")) closeReader(); });
+document.addEventListener("toggle", e => { if (e.target && e.target.dataset && e.target.dataset.mvplan) S.mplan = e.target.open; }, true);
+document.addEventListener("keydown", e => {
+  if (!(e.metaKey || e.ctrlKey) || e.key.toLowerCase() !== "z" || e.shiftKey) return;
+  if (S.view !== "expert" || S.tab !== "merge" || !$("#me")) return;
+  const a = document.activeElement; if (a && (a.tagName === "TEXTAREA" || a.tagName === "INPUT")) return;
+  e.preventDefault(); const d = S.cache[S.key]; msUndo(msFor(d, curCluster(d)));
+});
+document.addEventListener("mouseup", () => setTimeout(onSelection, 0));
+document.addEventListener("keyup", e => { if (e.shiftKey || e.key === "Shift") onSelection(); });
+document.addEventListener("touchend", () => setTimeout(onSelection, 30));
+document.addEventListener("selectionchange", () => { const s = window.getSelection(); if (!s || s.isCollapsed) $("#selTip").hidden = true; });
+$("#selTip").addEventListener("pointerdown", e => e.preventDefault());
+$("#selTip").addEventListener("click", () => { $("#selTip").hidden = true; if (S.pending) openComposer(S.pending); window.getSelection().removeAllRanges(); });
+window.addEventListener("hashchange", () => route());
+
+function route(){
+  const h = location.hash.slice(1);
+  if (h === "roster") go("roster");
+  else if (h && S.index.experts.some(x => x.key === h)) go("expert", h);
+  else go("overview");
+}
+(async function boot(){
+  try { await loadIndex(); }
+  catch (e) { $("#main").innerHTML = `<div class="empty">The catalog data didn't load. Reload the page to try again.</div>`; return; }
+  route();
+  initDb();
+})();
+</script>
