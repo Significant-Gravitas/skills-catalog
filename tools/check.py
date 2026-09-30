@@ -61,6 +61,30 @@ _KEY_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 # references/ beside tools/ and link across), an error when it leaves the
 # package or points at nothing: the platform copies the package alone.
 _RELATIVE_LINK_RE = re.compile(r"\]\((\.\./[^)#?]+)[^)]*\)")
+# An expert told to wait for its owner's yes asks twice where the platform's
+# approval gate holds the step, and never starts delegated work where it asks
+# first. Who holds a decision (a signature, a discount band) is fine to state.
+_APPROVAL_WAIT_RE = re.compile(
+    r"\b(?:owner|user|principal|approver)'s (?:explicit |clear )?"
+    r"(?:yes|approval|sign-?off|go-?ahead|say-?so)\b"
+    r"|\b(?:your|their) (?:explicit |clear )?(?:yes|say-?so|go-?ahead|sign-?off)\b"
+    r"|\b(?:without|for|on|at|awaiting|until) (?:a |an |the |your |their |explicit |human )*"
+    r"(?:yes|approval|sign-?off)\b"
+    r"|\b(?:until|after|once) (?:you|they|the owner|the user|a person|a human) "
+    r"(?:say|says|said|approve|approves|approved|confirm|confirms)\b"
+    r"|\bwithout (?:a |the )?(?:person|human|owner|user) approving\b"
+    r"|\bfor (?:them|you|the owner|a person|a human) to (?:approve|confirm|send|review)\b"
+    r"|\bapproves? and send\b"
+    r"|\bsay (?:yes|send)\b|\bnot that yes\b|\bwhen you say so\b"
+    r"|\band wait\b(?=\s*(?:[.;,:—]|$))",
+    re.IGNORECASE,
+)
+APPROVAL_WAIT_HINT = (
+    "tells the expert to wait for the owner's approval before acting; the platform "
+    "holds outward steps for approval itself (its approval gate, or the protected "
+    "rule where there is none), so say what the expert does, not when to ask"
+)
+_UNCHECKED_FIELDS = {"key", "name", "avatar_url", "categories", "preloads", "skills"}
 
 
 def main() -> int:
@@ -297,6 +321,10 @@ def _check_expert(
     if "routines" in data:
         _check_routines(label, data["routines"], errors)
 
+    for where, text in _roster_text(data):
+        for match in _APPROVAL_WAIT_RE.finditer(text):
+            errors.append(f"{label}: {where} '{match.group(0)}' {APPROVAL_WAIT_HINT}")
+
     if "skills" in data:
         skills = data["skills"]
         if not isinstance(skills, list) or not all(isinstance(s, str) for s in skills):
@@ -307,6 +335,26 @@ def _check_expert(
             for slug in skills:
                 if slug not in slugs:
                     errors.append(f"{label}: skill '{slug}' is not in catalog.yml")
+
+
+def _roster_text(data: dict) -> list[tuple[str, str]]:
+    """Every string an expert file puts in front of the model, with its path."""
+    found: list[tuple[str, str]] = []
+
+    def walk(node: object, where: str) -> None:
+        if isinstance(node, str):
+            found.append((where, node))
+        elif isinstance(node, dict):
+            for key, value in node.items():
+                walk(value, f"{where}.{key}")
+        elif isinstance(node, list):
+            for i, value in enumerate(node):
+                walk(value, f"{where}[{i}]")
+
+    for field, value in data.items():
+        if field not in _UNCHECKED_FIELDS:
+            walk(value, str(field))
+    return found
 
 
 def _check_day_one(label: str, rows: object, errors: list[str]) -> None:
