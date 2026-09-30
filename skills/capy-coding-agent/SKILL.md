@@ -218,6 +218,12 @@ rather than starting a new one: the agent keeps its context, its machine and
 its branch. **Capy List Threads** finds an earlier thread when the user refers
 to one ("the Node upgrade Capy did last week").
 
+When the user asks what Capy is doing, check live with **Capy List Threads**
+rather than answering from memory: threads also start in the Capy app and
+from automations, where you never saw them. Report each active or waiting
+thread by title with its `url`, and say which ones need an answer
+(`needs_you`).
+
 ## Pull request reviews
 
 **Capy Start Review** runs Capy's reviewer on a GitHub pull request in a
