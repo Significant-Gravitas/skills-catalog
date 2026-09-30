@@ -1,6 +1,6 @@
 ---
 name: "capy-coding-agent"
-description: "Hand coding work to Capy, an AI software engineer that runs background coding agents in the cloud, and see it through: pick the project, write the brief, start the thread, wait for the result, answer its questions, and report the pull request. Also runs Capy pull request reviews. Use when the user wants code written, fixed, or reviewed in a repository their Capy workspace covers."
+description: "Hand coding work to Capy, an AI software engineer that runs background coding agents in the cloud, and see it through: pick the project, write the brief, start the thread, wait for the result, answer its questions, and report the pull request. Also runs Capy pull request reviews and sets up Capy automations that start runs on a schedule or an event. Use when the user wants code written, fixed, or reviewed in a repository their Capy workspace covers."
 triggers: ["capy", "have capy fix this", "open a pull request for this", "fix this bug in the repo", "write the code for this", "delegate this to a coding agent", "review this pull request", "what is capy working on", "check on the capy thread", "how much has capy spent"]
 version: "1"
 ---
@@ -215,10 +215,35 @@ Your part is what Capy can't do for the user:
    branch is not yet running in production. Then tell the user, and archive
    the Capy thread.
 
-When this is standing work rather than one ticket (for example "every morning,
-triage new Sentry errors and send the fixable ones to Capy"), set it up as a
-routine (`schedule_routine`), so it has its own thread that remembers which
-tickets it already sent.
+When this is standing work rather than one ticket, see the next section.
+
+## Standing work: a Capy automation or an Otto routine
+
+Work that recurs can run two ways.
+
+- **Capy Create Automation** has Capy start runs by itself: on a schedule, on
+  a GitHub, Sentry, Linear or Slack event, or when something POSTs to its
+  webhook. Use it for work the agent can finish alone, such as "open a fix
+  pull request for every new Sentry error in autogpt-server" or "fix the
+  failing checks on any pull request". Capy never reports back to you, so
+  the user hears about a run through Capy's own notifications (browser or
+  Slack, if they turned them on) or when someone looks: **Capy List
+  Automations** shows each automation's run count and last run, and every
+  run is a thread that **Capy List Threads** finds.
+- **An Otto routine** (`schedule_routine`) keeps you in the loop. It can read
+  each diff, tell the user what happened, and close the ticket when the pull
+  request merges. Use it when someone should see every result, and give it
+  its own thread that remembers which tickets it already sent.
+
+When you create an automation:
+
+- Narrow the trigger with `conditions` (repositories, projects, labels) and a
+  one-sentence `run_when`, so it doesn't fire on everything.
+- Keep `max_runs_per_day` low to start (the default is 10), and tell the user
+  what triggers it, the daily cap, and that **Capy Set Automation Enabled**
+  pauses it.
+- An `incoming_webhook` automation returns a `webhook_url`. Treat it like a
+  password: every request to it can start a paid run.
 
 ## Steering a thread
 
