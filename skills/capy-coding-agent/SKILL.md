@@ -1,7 +1,7 @@
 ---
 name: "capy-coding-agent"
 description: "Hand coding work to Capy, an AI software engineer that runs background coding agents in the cloud, and see it through: pick the project, write the brief, start the thread, wait for the result, answer its questions, and report the pull request. Also runs Capy pull request reviews. Use when the user wants code written, fixed, or reviewed in a repository their Capy workspace covers."
-triggers: ["capy", "have capy fix this", "open a pull request for this", "fix this bug in the repo", "write the code for this", "delegate this to a coding agent", "background coding agent", "async coding agent", "AI software engineer", "review this pull request", "what is capy working on", "check on the capy thread", "how much has capy spent"]
+triggers: ["capy", "have capy fix this", "open a pull request for this", "fix this bug in the repo", "write the code for this", "delegate this to a coding agent", "review this pull request", "what is capy working on", "check on the capy thread", "how much has capy spent"]
 version: "1"
 ---
 
