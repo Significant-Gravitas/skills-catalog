@@ -113,7 +113,8 @@ unusually heavy.
    - **idle**: the agent delivered. Report what it did and the pull request
      (`pull_request_url`, found from its replies). If the reply is a summary without the detail the
      user needs, read more of the transcript with **Capy List Thread
-     Messages**.
+     Messages**; pass its `older_cursor` back as `before_cursor` to go
+     further back.
    - **failed**: say it failed, quote what the transcript shows about why,
      and offer a corrected brief rather than retrying the same one.
 
@@ -193,6 +194,8 @@ the pull request, so they are visible to everyone on it.
 - Read the result with **Capy Get Review Round** using the returned
   `request_id`. Poll until `is_settled` is true, then report the
   high-severity issues first with their file and line, then the rest briefly.
+  A round that settles as `failed` or `stale` reviewed nothing: say so, and
+  never report it as a clean review.
   Confirmed findings are proven by the diff; investigate findings are risks
   to check, so say which is which.
 - A closed or draft pull request, or one Capy can't read, is refused with a
