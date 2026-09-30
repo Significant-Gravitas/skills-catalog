@@ -21,15 +21,40 @@ own sandbox, do that instead; don't start an agent for it.
 ## Before the first thread
 
 The blocks need the user's Capy API key. If no Capy credential is connected,
-ask them to create one in the Capy app under **Settings → API** and connect
-it. Keys can be set to expire; a `capy/Unauthorized` error on a key that used
-to work usually means it did, so ask for a fresh one rather than retrying.
+ask them to create one at https://capy.ai/settings/api and connect it. Keys
+can be set to expire; a `capy/Unauthorized` error on a key that used to work
+usually means it did, so ask for a fresh one rather than retrying.
 
 Run **Capy List Projects** to see which projects the key reaches and which
 repositories each covers. Pick the project whose repositories match the work.
 If two could fit, or none lists the repository the user named, say so and ask;
 never start a thread in a guessed project. Remember the project ID for the rest
 of the conversation.
+
+If the key reaches no project, or none covers the repository, the user has to
+fix that in Capy: create a project at https://capy.ai and install the Capy
+GitHub App on the repository. The blocks can't do either for them.
+
+### A project Capy hasn't worked in yet
+
+An agent that can't install the dependencies and run the tests guesses, and
+the user finds out in CI. Capy fixes that with the project's dev environment:
+setup scripts, the processes to start, named test commands, and a snapshot
+so machines boot ready. When **Capy List Threads** shows the project has no
+threads yet, open the first brief with: "First, check this project's dev
+environment. If the setup can't install dependencies and run the tests, set
+it up (setup scripts and a test command), verify it on your machine, and
+enable snapshots. Then do the task." Tell the user you did, and give them the
+project's `dev_environment_url` to review what it set up.
+
+### Secrets
+
+Never ask the user to paste a secret into this chat. When the agent needs a
+value (an API key, a `DATABASE_URL`), send the user to the project's
+`environment_variables_url` to set it once for every thread, or to the
+thread's own page (`thread_url`) to hand it to that thread alone. Then tell
+the agent the value is set and to carry on. The agent sees variable names,
+never values.
 
 ## Is it worth sending?
 
@@ -67,9 +92,12 @@ on the user's Capy board.
 
 ## Choose the model and who pays
 
-Leave `model_id` empty to use the project's default model. When the user names
-a model, set `model_id` to its name (for example `gpt-6-astra`,
-`claude-opus-4-8`, `grok-4.5`) and pick who pays with `model_route`:
+Leave `model_id` empty to use the default model the user set in Capy. When
+they want the strongest agent for real engineering work, use
+`claude-opus-5-5`, or, when a ChatGPT subscription is linked in Capy, a GPT
+model on the `codex` route. When the user names a model, set `model_id` to its name
+(for example `gpt-6-astra`, `claude-opus-5-5`, `grok-4.5`) and pick who pays
+with `model_route`:
 
 - `capy_balance` bills the organization's Capy balance.
 - `codex`, `copilot`, `supergrok` or `azure` run the model through that
@@ -96,25 +124,33 @@ when the user cares who paid.
 Leave `reasoning` and `machine_size` empty unless the user asks or the task is
 unusually heavy.
 
-## Start, wait, report
+## Hand off, then follow up
 
 1. **Capy Create Thread** with the project ID, brief and title. Tell the user
-   it has started and give the thread ID.
-2. **Capy Wait For Thread** with `timeout_seconds` of 240 or less. A block
-   call from chat is cancelled after five minutes, so wait in rounds: if
-   `finished` is false, call it again. Between rounds, give the user a
-   one-line progress note only when something changed; if they said they'll
-   check back later, stop waiting and tell them how to ask for the result.
+   it has started in one or two lines: what you asked for, and the
+   `thread_url`, where they can watch the agent's plan, commands and diff
+   live.
+2. Decide how to wait. A block call from chat is cancelled after five
+   minutes, so **Capy Wait For Thread** runs in rounds of `timeout_seconds`
+   240 or less; if `finished` is false, call it again.
+   - Quick work (a question about the code, a one-file fix): wait in rounds
+     now. Between rounds, add a one-line note only when something changed.
+   - Anything longer (a feature, a multi-file fix, anything that goes through
+     CI): don't hold the chat. Tell the user you'll report back, then
+     schedule a follow-up in this conversation (`schedule_followup` with this
+     chat's session id, about 15 minutes out) that runs one Wait For Thread
+     round. If it isn't finished, schedule the next follow-up; when it is,
+     report.
 3. When `finished` is true, read `last_reply`, then act on the status:
    - **needs_you is true**: the agent asked a question. Answer it yourself
      when the conversation already holds the answer; otherwise put the
      question to the user in their words, then send the answer with **Capy
      Send Message**, and go back to step 2.
-   - **idle**: the agent delivered. Report what it did and the pull request
-     (`pull_request_url`, found from its replies). If the reply is a summary without the detail the
-     user needs, read more of the transcript with **Capy List Thread
-     Messages**; pass its `older_cursor` back as `before_cursor` to go
-     further back.
+   - **idle**: the agent delivered. Report what it did, the pull request
+     (`pull_request_url`, found from its replies) and the `thread_url`. If
+     the reply is a summary without the detail the user needs, read more of
+     the transcript with **Capy List Thread Messages**; pass its
+     `older_cursor` back as `before_cursor` to go further back.
    - **failed**: say it failed, quote what the transcript shows about why,
      and offer a corrected brief rather than retrying the same one.
 
@@ -123,18 +159,22 @@ agent's reply says so.
 
 ## After the pull request opens
 
-The agent opening a pull request is not the end of the job.
+Capy follows its own pull request. A failing check wakes the thread, and the
+agent reads the job, fixes it and pushes again. Review comments reach the
+thread and it answers them. The merge wakes it to wrap up. So a thread that
+goes back to `working` or `waiting` after the pull request opened is usually
+handling CI or a review: let it, and don't run a CI loop of your own.
+
+Your part is what Capy can't do for the user:
 
 1. **Read the diff** with the GitHub pull request blocks before you call it
    done, and check it against the brief: does it fix the root cause, and does
    it weaken anything? For example, dropping validation on data a user can
    write is a security regression, even when it silences the error. Send
    anything wrong back to the same thread with **Capy Send Message**; the agent
-   keeps its branch and context.
-2. **Check CI** with the GitHub CI results block. When a check fails, send the
-   agent the failing check's name and the fix instructions from its log,
-   verbatim, then wait again.
-3. **Watch for the merge.** Merging is the repository owner's call; merge only
+   keeps its branch and context. For a risky change, also check it out in
+   your own sandbox (`gh pr checkout`) and run the tests the brief named.
+2. **Watch for the merge.** Merging is the repository owner's call; merge only
    when the user asks you to. Reviews can take hours or days, so don't wait
    in chat. Schedule a follow-up in this conversation (`schedule_followup`
    with this chat's session id, a few hours out) that reads the pull request
@@ -142,7 +182,7 @@ The agent opening a pull request is not the end of the job.
    loop. If the PR is still open, schedule the next check. If it was closed
    without merging, tell the user. Chain one-off follow-ups rather than a
    repeating one, so nothing keeps firing after the PR is done.
-4. **Close the loop** when it merges. Mark the ticket it came from: for a
+3. **Close the loop** when it merges. Mark the ticket it came from: for a
    Sentry issue use `resolvedInNextRelease`, because a merge to a development
    branch is not yet running in production. Then tell the user, and archive
    the Capy thread.
@@ -163,7 +203,9 @@ tickets it already sent.
 - If the agent is clearly heading the wrong way and spending credits on it,
   **Capy Interrupt Thread** stops it; then send the corrected instruction.
 - After any message, wait with **Capy Wait For Thread** again, exactly as for
-  a new thread.
+  a new thread, and pass Send Message's `message_id` as `after_message_id`.
+  The wait then ends on the reply to your message, not the agent's previous
+  one, which matters most with `queue` delivery.
 - **Capy List Thread Tasks** shows how a big thread split its work across
   subagents and what each part spent. Tasks are read-only; steer them through
   the thread.
