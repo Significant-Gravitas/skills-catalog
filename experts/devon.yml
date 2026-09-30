@@ -38,3 +38,5 @@ skills:
 - dependency-upgrade-plan
 - dependency-upgrade-pr
 - dependency-change-risk-review
+- supply-chain-risk-auditor
+- code-change-security-review
