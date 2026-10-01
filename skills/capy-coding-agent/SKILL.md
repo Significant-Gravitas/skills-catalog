@@ -129,7 +129,9 @@ unusually heavy.
 1. **Capy Create Thread** with the project ID, brief and title. Tell the user
    it has started in one or two lines: what you asked for, and the
    `thread_url`, where they can watch the agent's plan, commands and diff
-   live.
+   live. When the user will review and approve the pull requests themselves,
+   set `pull_request_author` to `capy`: by default Capy opens them under the
+   user's own GitHub account, and nobody can approve their own pull request.
 2. Decide how to wait. A block call from chat is cancelled after five
    minutes, so **Capy Wait For Thread** runs in rounds of `timeout_seconds`
    240 or less; if `finished` is false, call it again.
@@ -140,7 +142,9 @@ unusually heavy.
      schedule a follow-up in this conversation (`schedule_followup` with this
      chat's session id, about 15 minutes out) that runs one Wait For Thread
      round. If it isn't finished, schedule the next follow-up; when it is,
-     report.
+     report. Capy can't call back into this chat, so the follow-up is how
+     you find out; the user can also have Capy notify them directly (browser
+     or Slack) under Settings > Notifications in Capy.
 3. When `finished` is true, read `last_reply`, then act on the status:
    - **needs_you is true**: the agent asked a question. Answer it yourself
      when the conversation already holds the answer; otherwise put the
@@ -157,6 +161,26 @@ unusually heavy.
 Don't paraphrase a pull request as merged or tests as passing unless the
 agent's reply says so.
 
+## Many tasks at once
+
+When the user hands over a batch (twenty Sentry issues, a migration across
+packages, a test per module), keep the juggling inside Capy rather than in
+this chat. A chat turn has a limited number of steps, and waiting on threads
+one after another uses them up.
+
+- **Related changes in one repository**: start one thread and brief it to
+  split the work into tasks. Say how: parallel tasks for parts that touch
+  different files, each shipping its own pull request, or stacked tasks when
+  the parts overlap, so each starts from the previous one's branch. Capy runs
+  up to eight tasks at once by default. Follow the parent thread as usual and
+  report progress per part with **Capy List Thread Tasks**.
+- **Unrelated work, or different projects**: one thread each. Start them all,
+  give the user the titles and links in one list, then schedule a single
+  follow-up that checks them together: **Capy List Threads** with `show`
+  set to `active` shows what is still running, and **Capy Wait For Thread**
+  with `timeout_seconds` 0 reads the result of each one that stopped without
+  waiting.
+
 ## After the pull request opens
 
 Capy follows its own pull request. A failing check wakes the thread, and the
@@ -164,6 +188,10 @@ agent reads the job, fixes it and pushes again. Review comments reach the
 thread and it answers them. The merge wakes it to wrap up. So a thread that
 goes back to `working` or `waiting` after the pull request opened is usually
 handling CI or a review: let it, and don't run a CI loop of your own.
+Capy ignores comments from review bots unless the bot is on its list
+(Settings > Capy > Review bots in Capy). When a bot reviews pull requests in
+the repository (CodeRabbit, for example), suggest the user add it, so the
+thread fixes those findings too.
 
 Your part is what Capy can't do for the user:
 
@@ -219,10 +247,10 @@ its branch. **Capy List Threads** finds an earlier thread when the user refers
 to one ("the Node upgrade Capy did last week").
 
 When the user asks what Capy is doing, check live with **Capy List Threads**
-rather than answering from memory: threads also start in the Capy app and
-from automations, where you never saw them. Report each active or waiting
-thread by title with its `url`, and say which ones need an answer
-(`needs_you`).
+and `show` set to `active` rather than answering from memory: threads also
+start in the Capy app and from automations, where you never saw them. Report
+each thread by title with its `url`, and say which ones need an answer
+(`needs_you`). For "what needs me?", use `show` set to `needs_you`.
 
 ## Pull request reviews
 
