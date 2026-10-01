@@ -2142,3 +2142,10 @@ skills:
     required_providers: []
     source: anthropics/knowledge-work-plugins/productivity/skills/memory-management
     license: Apache-2.0
+
+  # Clip's skill, ported from an expert raised on the production platform.
+
+  - slug: code-motion-ad-15s
+    categories: [marketing, content]
+    required_providers: []
+    source: platform
