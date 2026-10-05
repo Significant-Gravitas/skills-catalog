@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-expert-skill-routing-2026-09-28",
+  "release_key": "catalogue-clip-expert-2026-10-01",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "6400ce990f50c17a9eda2ff2ada387701b932b4f96eec31e6506ccd05377b009",
+  "catalog_sha256": "ad48967bae1ac3b82771452a72375cc5e8edd48d72d378e288ee3439ad867341",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -623,6 +623,17 @@
         {
           "path": "reporting.md",
           "sha256": "0016876dc6f158e926448bff1b6f634796757c7afe09dff177cfe30250724fc4",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "code-motion-ad-15s",
+      "tree_sha256": "1675ccaecd7221c5ab2b2fe8cc83b90ee03a494e4fb6a6f1ea984baf8ecf50fb",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "5ed46465634d621dd2373bcb1cba50220761325a622b90ee9db9a0277ac2b988",
           "executable": false
         }
       ]
@@ -6182,6 +6193,13 @@
         "software-test-planning",
         "verification-before-completion",
         "software-incident-response"
+      ]
+    },
+    {
+      "key": "clip",
+      "sha256": "89e197efa5755a14b7489199b0be596418a07126fdfac6762609c883576dc44d",
+      "skills": [
+        "code-motion-ad-15s"
       ]
     },
     {

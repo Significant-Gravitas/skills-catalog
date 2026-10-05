@@ -2147,3 +2147,10 @@ skills:
     categories: [development]
     required_providers: [capy]
     source: platform
+
+  # Clip's skill, ported from an expert raised on the production platform.
+
+  - slug: code-motion-ad-15s
+    categories: [marketing, content]
+    required_providers: []
+    source: platform
