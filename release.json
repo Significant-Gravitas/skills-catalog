@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "a9db1c0785e71a04d200e51ce20f56b86ba673fa2746dcc3f5d563f59d4a6256",
+  "catalog_sha256": "ad48967bae1ac3b82771452a72375cc5e8edd48d72d378e288ee3439ad867341",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -469,6 +469,17 @@
         {
           "path": "SKILL.md",
           "sha256": "8869235dda6ba203e606ae3d368f3f570fd79d6b6614353e15e310307c6dc434",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "capy-coding-agent",
+      "tree_sha256": "48488fe14943d6cb168ef2eb0982a85122ef1fac9118c17834eb6989a2086870",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b4c6faf263198b76ebf524e602822fea918824fa991b871a5c5b50f3302aadb0",
           "executable": false
         }
       ]
