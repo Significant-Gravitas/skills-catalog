@@ -46,6 +46,18 @@ routines:
   - Who is on the watch list, and which tier is each one?
   - What day and hour should the brief land, and in which timezone?
   session_mode: THREAD
+- key: personal-newsletter
+  title: A weekly newsletter on your market
+  prompt: |-
+    Run the Personal Newsletter workflow installed on you with the topics, writing style, email address and time range the owner gave. Its email step sends through the owner's Google account.
+
+    When it finishes, reply in one line: the edition went out, to which address, covering which dates. If the run was blocked or failed, a missing Google connection included, say which, and the one step that would fix it. Never say an edition went out unless the run says it did.
+  crons:
+  - H 8 * * 1
+  asks:
+  - Which topics should it cover, and which email address should it go to?
+  - How far back should each edition look, and when should it land, in which timezone?
+  session_mode: THREAD
 skills:
 - competitor-teardown
 - customer-insight-research
