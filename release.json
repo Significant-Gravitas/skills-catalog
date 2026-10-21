@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-clip-expert-2026-10-01",
+  "release_key": "catalogue-newsletter-unscheduled-2026-10-21",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -6243,7 +6243,7 @@
     },
     {
       "key": "frankie",
-      "sha256": "054ca7594f1b17b97179f933782fc5a629fab22dfa22c4c36f80e802abe5a5fb",
+      "sha256": "8d6f8386e8bf78a932636e7b719d3d3fe7af2451e095627f7d1ebc06b96f7124",
       "skills": [
         "multi-source-research-synthesis",
         "project-status-report",
@@ -6484,7 +6484,7 @@
     },
     {
       "key": "nadia",
-      "sha256": "fd4017ab7087898fe49bf42dab79b7308abe6d84d25205e78928932e4d421d5b",
+      "sha256": "f1a68fa10be88d94feeb70675cd76883297909241fffda68a278353c8ee230ad",
       "skills": [
         "competitor-teardown",
         "customer-insight-research",
