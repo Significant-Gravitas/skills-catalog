@@ -1,0 +1,27 @@
+---
+import { site } from '../site.config.mjs';
+const year = new Date().getFullYear();
+const a = site.address;
+const addressLine = [a.street, a.locality, a.postalCode].filter(Boolean).join(', ');
+const tel = site.phoneHref || site.phone.replace(/[^\d+]/g, '');
+---
+<footer class="border-t border-line text-sm">
+  <div class="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:grid-cols-3">
+    <div class="space-y-1">
+      <p class="font-semibold">{site.name}</p>
+      {addressLine && <p>{addressLine}</p>}
+      {site.phone && <p><a href={`tel:${tel}`} class="hover:underline">{site.phone}</a></p>}
+      {site.email && <p><a href={`mailto:${site.email}`} class="hover:underline">{site.email}</a></p>}
+    </div>
+    {site.hoursText.length > 0 && (
+      <div class="space-y-1">
+        <p class="font-semibold">Opening hours</p>
+        {site.hoursText.map((line) => <p>{line}</p>)}
+      </div>
+    )}
+    <div class="space-y-1 sm:text-right sm:col-start-3">
+      <p><a href="/privacy/" class="hover:underline">Privacy</a></p>
+      <p class="text-muted">&copy; {year} {site.name}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site.config.mjs';
+import { forms } from '../forms.config.mjs';
+// A plain-language starting point. The owner must read and approve it; adjust
+// it to what the site really collects (forms, analytics, embeds, bookings).
+---
+<Base title="Privacy notice" description={`How ${site.name} collects, uses and protects the personal information you share through this website.`}>
+  <article class="mx-auto max-w-3xl space-y-5 px-5 py-16 leading-relaxed">
+    <h1 class="font-display text-3xl font-semibold tracking-tight">Privacy notice</h1>
+    <p>This notice explains what information {site.name} collects through this website and how it is used.</p>
+    {forms.web3formsKey && (
+      <>
+        <h2 class="pt-4 text-xl font-semibold">Contact form</h2>
+        <p>When you use the contact form we receive your name, email address, phone number if you give it, and your message. We use them only to reply to you. The form is delivered by Web3Forms, which passes your message to us by email.</p>
+      </>
+    )}
+    {site.analytics && (
+      <>
+        <h2 class="pt-4 text-xl font-semibold">Visitor statistics</h2>
+        <p>We count visits with Cloudflare Web Analytics, which does not use cookies and does not track you across other websites.</p>
+      </>
+    )}
+    <h2 class="pt-4 text-xl font-semibold">Your rights</h2>
+    <p>You can ask us what information we hold about you, or ask us to correct or delete it{site.email ? <>, by emailing <a class="underline" href={`mailto:${site.email}`}>{site.email}</a></> : ''}.</p>
+  </article>
+</Base>

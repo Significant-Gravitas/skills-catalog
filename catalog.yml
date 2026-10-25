@@ -2149,3 +2149,31 @@ skills:
     categories: [marketing, content]
     required_providers: []
     source: platform
+
+  # Wes, the web developer expert: build, host on the owner's GitHub and
+  # Cloudflare, preview every change, connect the domain, launch and look after it.
+
+  - slug: website-build
+    categories: [development, marketing]
+    required_providers: []
+    source: platform
+
+  - slug: website-hosting-setup
+    categories: [development]
+    required_providers: [github]
+    source: platform
+
+  - slug: website-preview-publish
+    categories: [development]
+    required_providers: [github]
+    source: platform
+
+  - slug: website-custom-domain
+    categories: [development]
+    required_providers: []
+    source: platform
+
+  - slug: website-launch-care
+    categories: [development, marketing]
+    required_providers: []
+    source: platform

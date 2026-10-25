@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-clip-expert-2026-10-01",
+  "release_key": "catalogue-wes-expert-2026-10-25",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "a9db1c0785e71a04d200e51ce20f56b86ba673fa2746dcc3f5d563f59d4a6256",
+  "catalog_sha256": "3e6398d4b69335fa15c8c2f33dfc85cb3e7f4782e364041ce924d6b94a21c337",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -5966,6 +5966,251 @@
       ]
     },
     {
+      "slug": "website-build",
+      "tree_sha256": "5fe6ccbc6e211044a114952b1cd23a56618efc6f597b33e5ad45492b719ed7d4",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ec687410dc2ef50575cf20a1c6e8134514607bdb1900ebdc133df04d0255b16f",
+          "executable": false
+        },
+        {
+          "path": "reference/content-and-seo.md",
+          "sha256": "6d5409b6c8b381bb483decb4f6dff6cad52085f8590147b7c28f7223be07be48",
+          "executable": false
+        },
+        {
+          "path": "reference/design-direction.md",
+          "sha256": "09a79ff76c28475446f1e586f2ca8ce1c110f24397f77c8520e7231d8c00bb93",
+          "executable": false
+        },
+        {
+          "path": "reference/forms-and-extras.md",
+          "sha256": "e3184b90c26518ce0bf13fa8414f60351648c69059aec50d82fc0b936ad75a52",
+          "executable": false
+        },
+        {
+          "path": "reference/quality-bar.md",
+          "sha256": "0111ff46e7290e3311f0980ae9fe6e868914076f2a3f3b59282f4437d7835e85",
+          "executable": false
+        },
+        {
+          "path": "scripts/new-site.sh",
+          "sha256": "9a07d33b89f5c2b067534b79b2a94710542a4d60c8bc8642f22285b9275990bd",
+          "executable": true
+        },
+        {
+          "path": "scripts/qa.mjs",
+          "sha256": "70d0f8a957dc6ece1e4b8db79f9d652a201e26f1029ea21468923627b5d2fbc6",
+          "executable": true
+        },
+        {
+          "path": "scripts/shoot.mjs",
+          "sha256": "3a716ebde8c8b8f1a09adcaa8b4444ef6250af96dafb71bb71b72766a3c707d6",
+          "executable": false
+        },
+        {
+          "path": "scripts/shoot.sh",
+          "sha256": "9b7f18811fa257cd34fa1b94c0c8735d0000a09b940245303d13ed7da19f1896",
+          "executable": true
+        },
+        {
+          "path": "starter/astro.config.mjs",
+          "sha256": "98e462191a23bf28ebb24cb683887868762297d9edaeecae01e3987b4ff18eee",
+          "executable": false
+        },
+        {
+          "path": "starter/gitignore.txt",
+          "sha256": "9f6cc85a71d43a38731cae392c0c4b2514e65d4a05e2429cd566184e5b361d63",
+          "executable": false
+        },
+        {
+          "path": "starter/node-version.txt",
+          "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53",
+          "executable": false
+        },
+        {
+          "path": "starter/package.json",
+          "sha256": "3d367a837ff9e3ea1c74d47ebe01951f0c5d1b2ca1c546d1c3901bafd2959e99",
+          "executable": false
+        },
+        {
+          "path": "starter/public/_headers",
+          "sha256": "08102bc46cdcd8e80e67bad649605aad88bf0be2dddd7f6dd21397cc1e905731",
+          "executable": false
+        },
+        {
+          "path": "starter/src/components/Footer.astro",
+          "sha256": "28d08d906b3c0c59d4402bef34afc1b6f14adab1243a909ce325cdbcbc3db0af",
+          "executable": false
+        },
+        {
+          "path": "starter/src/components/Header.astro",
+          "sha256": "c9a932d06a02b1fd456c67d30d274f56bb04d01b19faa577be89e2668a3de766",
+          "executable": false
+        },
+        {
+          "path": "starter/src/forms.config.mjs",
+          "sha256": "c8c29683c255b684365884b4e8f3bfafb8eaea7b39c9e8e45d6e3371976b41b0",
+          "executable": false
+        },
+        {
+          "path": "starter/src/layouts/Base.astro",
+          "sha256": "8f901e0ed9b3e5103facc128110a23df75ee9fada217c78594f475f7dc1736a8",
+          "executable": false
+        },
+        {
+          "path": "starter/src/pages/404.astro",
+          "sha256": "6b8601e68bebb337c6af88ce9bb3ff70aa7080f02386f3153bb2fcba3c7b1bca",
+          "executable": false
+        },
+        {
+          "path": "starter/src/pages/contact.astro",
+          "sha256": "7221c15ad0d12655571db59b090c1c8855e9df8c2b57c59e4f00bf05e3056781",
+          "executable": false
+        },
+        {
+          "path": "starter/src/pages/index.astro",
+          "sha256": "82e205057680b46e86330b81b24a60162a3885eed75ee6fbc8339923e1fc0261",
+          "executable": false
+        },
+        {
+          "path": "starter/src/pages/privacy.astro",
+          "sha256": "40ffe2577166056149e1e4614694988082a2d8a29cbfad2b1883a9bd3a47edc1",
+          "executable": false
+        },
+        {
+          "path": "starter/src/pages/robots.txt.ts",
+          "sha256": "8b60de211eb9dd0a9a854676a69d9857aead28d7282404a755ab1c674db433ea",
+          "executable": false
+        },
+        {
+          "path": "starter/src/pages/thanks.astro",
+          "sha256": "161fd9e9ded10aa044981a492a68ec8e731785506b716f60a9629a6ac4e12d8f",
+          "executable": false
+        },
+        {
+          "path": "starter/src/site.config.mjs",
+          "sha256": "79b1979ad546d4495a7e287226c8e2b09c131cc9b6ce048d5a7ddf6ce7c8962d",
+          "executable": false
+        },
+        {
+          "path": "starter/src/styles/global.css",
+          "sha256": "3ecbc8fba1bfa3f7b23a12ca82dba7ec43f71937faf3feaa9d1d55cf96006dc9",
+          "executable": false
+        },
+        {
+          "path": "starter/wrangler.jsonc",
+          "sha256": "e1aa9d50e47c02dc591c17c1e6c31c45a054aadf209ed76af6001be1f2f9ee7f",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "website-custom-domain",
+      "tree_sha256": "bb1552f3311387542f1b472c806c4fb86534c9cdb57abd87d496577539636b74",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4205a0b6196dc5d86093f9247a91a7fdcf9d3b2915e3e77c9760f7c0f892760a",
+          "executable": false
+        },
+        {
+          "path": "reference/cloudflare-api.md",
+          "sha256": "7dac1cdb373b01bd2b433ffad6e2ad05eeae29c768e6cea4027e690c16ba3ec9",
+          "executable": false
+        },
+        {
+          "path": "reference/registrars.md",
+          "sha256": "2dd2ef917b8e8d9ba651ba520fa036c6c234a2d476b9278622cf821ebf070ad8",
+          "executable": false
+        },
+        {
+          "path": "scripts/dnscheck.py",
+          "sha256": "0804ce7c03228e29d13235e28e5c94f8569be772eee313ca59934d7ea53144b4",
+          "executable": true
+        }
+      ]
+    },
+    {
+      "slug": "website-hosting-setup",
+      "tree_sha256": "74cf6220d27abfc9b4113af3fce7c93baa2e7274b3e71928ac3c90fc1c10e060",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "941be88f9c1dd5c32832b3eca555130cfbc41ed8443f166f5ed95c619cb23843",
+          "executable": false
+        },
+        {
+          "path": "reference/accounts.md",
+          "sha256": "b3069561ab2f23ee02490f795ce43deb0c797086eaf5bf1aa449171ee326aaff",
+          "executable": false
+        },
+        {
+          "path": "scripts/deploy-status.sh",
+          "sha256": "e0bfd75005b84e7ae455411ec470dab1ede7b23a49e756c8454b08f3328a8711",
+          "executable": true
+        }
+      ]
+    },
+    {
+      "slug": "website-launch-care",
+      "tree_sha256": "330c2130540915766e0980e85292f13c28dfd4bd4e15e03585493ba384eb6806",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "eb5688a90c8ec1092f28048a0f4d93fc758862da0944ecbdee91d60e7a5f085c",
+          "executable": false
+        },
+        {
+          "path": "reference/handover-template.md",
+          "sha256": "b15d86e5939a4cccb131c93ba4009c9d93db5ced8fb0e35b93331b80309d9394",
+          "executable": false
+        },
+        {
+          "path": "scripts/check-redirects.sh",
+          "sha256": "8fdf04547dbc95a646b5f287bdfc54ef6beb31ef15e870a58e2784cc703ad330",
+          "executable": true
+        },
+        {
+          "path": "scripts/old-urls.py",
+          "sha256": "35805cf2b254fe6c0ede8b0d57d4e68bf4d0b1455bcefb2c37092adc89a56f62",
+          "executable": true
+        },
+        {
+          "path": "scripts/speed.sh",
+          "sha256": "6c666b31372c1e08680c954d0a9a7574293d4db8c61f399c75e9400439f43388",
+          "executable": true
+        }
+      ]
+    },
+    {
+      "slug": "website-preview-publish",
+      "tree_sha256": "8ba23cc0f824f2b2b82db789ae7c0a36063245937dc4740255ec7e5075c6013a",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "68ff1517ae6c164487cb5801421c5074e57af668213283c48eb1f406a3505bb7",
+          "executable": false
+        },
+        {
+          "path": "scripts/deploy-status.sh",
+          "sha256": "e0bfd75005b84e7ae455411ec470dab1ede7b23a49e756c8454b08f3328a8711",
+          "executable": true
+        },
+        {
+          "path": "scripts/shoot.mjs",
+          "sha256": "3a716ebde8c8b8f1a09adcaa8b4444ef6250af96dafb71bb71b72766a3c707d6",
+          "executable": false
+        },
+        {
+          "path": "scripts/shoot.sh",
+          "sha256": "9b7f18811fa257cd34fa1b94c0c8735d0000a09b940245303d13ed7da19f1896",
+          "executable": true
+        }
+      ]
+    },
+    {
       "slug": "website-seo-audit",
       "tree_sha256": "96a4f844a918554546a6ee6801219c1f71e9fb43427a0395be747bc7aff552c6",
       "files": [
@@ -6688,6 +6933,17 @@
         "vendor-evaluation",
         "vendor-contract-status",
         "operational-risk-assessment"
+      ]
+    },
+    {
+      "key": "wes",
+      "sha256": "b1680ff62ba54655cde0cf3076e1e71338cdec8c9be8a8afa9e05ac2d65ee15c",
+      "skills": [
+        "website-build",
+        "website-hosting-setup",
+        "website-preview-publish",
+        "website-custom-domain",
+        "website-launch-care"
       ]
     },
     {
