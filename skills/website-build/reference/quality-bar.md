@@ -1,6 +1,6 @@
 # Quality bar
 
-A page is done when all of this is true. `qa.mjs` checks the mechanical items; you check the rest by looking at the screenshots and reading the page.
+These are the technical and legal floors. The design bar, which matters most, is in `design-standard.md`: a page that passes everything here but scores below 9 on the critique is not done. `qa.mjs` checks the mechanical items; you check the rest by looking at the screenshots and frames and reading the page.
 
 ## Content
 - Every fact is from the owner or their materials. No placeholders on anything you call finished, and none at all at launch.
@@ -24,7 +24,7 @@ A page is done when all of this is true. `qa.mjs` checks the mechanical items; y
 - No information is carried by colour alone. Motion respects reduced-motion.
 
 ## Performance
-- No client-side framework unless the brief needs one. Total JS on a normal page is under about 50 KB.
+- No client-side UI framework. GSAP with ScrollTrigger plus Lenis (about 50 KB compressed) is fine; total JS stays under about 80 KB compressed. Animate only transform, opacity, clip-path and filter.
 - Photos go through `astro:assets` `<Image>`, with width and height set, lazy below the fold, and the first image eager.
 - At most two font families, self-hosted.
 - Third-party embeds (maps, booking, video) load lazily or behind a click, never on every page by default.

@@ -11,6 +11,8 @@ Read this before writing copy. Good copy is specific, true and written for the c
 - **Facts come from the owner, their existing site, their Google Business Profile or their materials.** Never invent prices, reviews, awards, years, team members, guarantees or numbers. If a strong claim would help but you don't have it, ask for it as a specific question ("How many years have you been trading?").
 - **Keep the owner's voice.** If their Instagram is chatty, the site can be too. A solicitor's site should sound like a careful solicitor.
 - **No filler sections.** No "Our Mission/Vision/Values" unless the owner has real ones. No lorem ipsum ever; QA blocks it.
+- **Headings say something.** Never "Our services", "How we can help", "Why choose us" or "What our clients say". Write headings in the concept's voice that carry information ("Fixed by Friday, priced on the board" only if both facts are true; "The tide table" for opening hours in an almanac concept).
+- **Voice is where you have freedom; facts are where you have none.** Write like the brand's best copywriter: rhythm, wit, specificity. Every claim still traces to the owner's facts.
 
 ## Page set by business type (adapt, don't pad)
 

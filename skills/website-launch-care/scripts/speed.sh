@@ -1,13 +1,24 @@
 #!/usr/bin/env bash
 # Lighthouse scores (mobile) for a live URL: performance, accessibility,
 # best practices, SEO, plus the top problems to fix.
-# Usage: bash speed.sh https://example.com/
+# Usage: bash speed.sh https://example.com/     (a live or preview address)
+#        bash speed.sh dist                     (the local build, served for the test)
 # Tries local Lighthouse with the sandbox's Chrome first (about 1-2 minutes on a
 # small machine, so its performance score is a little pessimistic), then
 # Google's PageSpeed API, then prints a link the owner can open.
 set -uo pipefail
-URL="${1:?give a full https:// URL}"
+URL="${1:?give a full https:// URL or a dist folder}"
 OUT="/tmp/lh-$$.json"
+SERVER_PID=""
+trap '[[ -n "$SERVER_PID" ]] && kill "$SERVER_PID" 2>/dev/null' EXIT
+if [[ -d "$URL" ]]; then
+  PORT=$(( 4900 + RANDOM % 500 ))
+  python3 -m http.server "$PORT" --bind 127.0.0.1 --directory "$URL" >/dev/null 2>&1 &
+  SERVER_PID=$!
+  for _ in $(seq 1 20); do curl -s -o /dev/null "http://127.0.0.1:$PORT/" && break; sleep 0.3; done
+  URL="http://127.0.0.1:$PORT/"
+  echo "(local build: performance is indicative; SEO reads low before launch because of the pre-launch noindex)"
+fi
 
 summarise() { # json file, source label
   node -e '
@@ -31,7 +42,7 @@ for b in google-chrome google-chrome-stable chromium chromium-browser; do
 done
 if [[ -n "$CHROME" ]]; then
   CHROME_PATH="$CHROME" timeout 300 npx -y lighthouse@13 "$URL" --quiet \
-    --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage" \
+    --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --disable-extensions --disable-background-networking --disable-component-update" \
     --only-categories=performance,accessibility,best-practices,seo --form-factor=mobile \
     --output=json --output-path="$OUT" >/dev/null 2>&1
   if [[ -s "$OUT" ]]; then summarise "$OUT" "Lighthouse in the sandbox"; rm -f "$OUT"; exit 0; fi

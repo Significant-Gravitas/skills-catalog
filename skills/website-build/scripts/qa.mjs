@@ -77,7 +77,8 @@ for (const f of htmlFiles) {
   if (h1s > 1) warn(`${route}: ${h1s} <h1> elements (use one)`);
 
   for (const img of html.match(/<img\b[^>]*>/gi) || []) {
-    if (!/\salt=/i.test(img)) err(`${route}: image without alt: ${img.slice(0, 90)}`);
+    // Astro may compress alt="" to a bare `alt`, which is valid (decorative).
+    if (!/\salt(\s|=|>|\/)/i.test(img)) err(`${route}: image without alt: ${img.slice(0, 90)}`);
     if (!/\swidth=/i.test(img) || !/\sheight=/i.test(img)) warn(`${route}: image without width/height (layout shift): ${img.slice(0, 70)}`);
   }
 
@@ -127,7 +128,8 @@ if (existsSync(ph)) {
     const [hash, file] = line.trim().split(/\s+/);
     const p = join(root, file);
     if (existsSync(p) && createHash('sha256').update(readFileSync(p)).digest('hex') === hash) {
-      (launch ? err : warn)(`${file} is still the starter placeholder; replace it with the real logo or image`);
+      if (/\.(astro|css)$/.test(file)) err(`${file} is still the starter version: design it for this site's concept (header, footer and tokens are never left stock)`);
+      else (launch ? err : warn)(`${file} is still the starter placeholder; replace it with the real logo or image`);
     }
   }
 }

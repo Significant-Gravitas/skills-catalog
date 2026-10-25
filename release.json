@@ -5967,21 +5967,26 @@
     },
     {
       "slug": "website-build",
-      "tree_sha256": "5fe6ccbc6e211044a114952b1cd23a56618efc6f597b33e5ad45492b719ed7d4",
+      "tree_sha256": "f970af876158adcfd4ea227624b9690781b8fbf63cc2adeab33b55b38748c5f8",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "ec687410dc2ef50575cf20a1c6e8134514607bdb1900ebdc133df04d0255b16f",
+          "sha256": "1b6aec20be6ca4d92a6833fcb9222002ff627fdbd0a59027505137fc768aa672",
           "executable": false
         },
         {
           "path": "reference/content-and-seo.md",
-          "sha256": "6d5409b6c8b381bb483decb4f6dff6cad52085f8590147b7c28f7223be07be48",
+          "sha256": "3baa500b7e9f657f5138bad19f422209e251079add0f0b00510df6f718f0825b",
           "executable": false
         },
         {
-          "path": "reference/design-direction.md",
-          "sha256": "09a79ff76c28475446f1e586f2ca8ce1c110f24397f77c8520e7231d8c00bb93",
+          "path": "reference/craft-techniques.md",
+          "sha256": "a9a4bbbe54bbce82fdfabb42e21663b074cd6d1433abfaa48e8b1eefb9ed2a8b",
+          "executable": false
+        },
+        {
+          "path": "reference/design-standard.md",
+          "sha256": "e38e6d42f5f15d365001e1c46f9ea7dd81889f133f65577e6966c316300eb3f8",
           "executable": false
         },
         {
@@ -5991,27 +5996,37 @@
         },
         {
           "path": "reference/quality-bar.md",
-          "sha256": "0111ff46e7290e3311f0980ae9fe6e868914076f2a3f3b59282f4437d7835e85",
+          "sha256": "c2f52e93839e40e1885bf3f0218afce151060d5807f1d4b6133e3dc601c1ec2a",
+          "executable": false
+        },
+        {
+          "path": "scripts/add-font.mjs",
+          "sha256": "a07e646c151663fdd2841dd6c3d31244524db5eda5ef191d10107af6df652a77",
           "executable": false
         },
         {
           "path": "scripts/new-site.sh",
-          "sha256": "9a07d33b89f5c2b067534b79b2a94710542a4d60c8bc8642f22285b9275990bd",
+          "sha256": "7f4c39b200cddabebe2387cb847a29ca14004fa6d8a0aec163291e506d988bca",
           "executable": true
         },
         {
           "path": "scripts/qa.mjs",
-          "sha256": "70d0f8a957dc6ece1e4b8db79f9d652a201e26f1029ea21468923627b5d2fbc6",
+          "sha256": "9ef987ef38bd14961765be03b4dbb526ec7f591c55148be1d406753c5ce82651",
           "executable": true
         },
         {
           "path": "scripts/shoot.mjs",
-          "sha256": "3a716ebde8c8b8f1a09adcaa8b4444ef6250af96dafb71bb71b72766a3c707d6",
+          "sha256": "72dc85f31efe12e30684d457fde6805dfb70e0f3ef2362d71b49cc220abe5e8b",
           "executable": false
         },
         {
           "path": "scripts/shoot.sh",
-          "sha256": "9b7f18811fa257cd34fa1b94c0c8735d0000a09b940245303d13ed7da19f1896",
+          "sha256": "dca775908023e964927fca03eca82a792458b876e67f2e0cafe5bae44cd196eb",
+          "executable": true
+        },
+        {
+          "path": "scripts/speed.sh",
+          "sha256": "bedef5959987b638199b1023de6b2f1e4eae5cff68b1ef54922266af2fe4b112",
           "executable": true
         },
         {
@@ -6041,12 +6056,12 @@
         },
         {
           "path": "starter/src/components/Footer.astro",
-          "sha256": "28d08d906b3c0c59d4402bef34afc1b6f14adab1243a909ce325cdbcbc3db0af",
+          "sha256": "76379a288694760a86ad284b2aa96384309930dc6f11fd09725125751c7313d0",
           "executable": false
         },
         {
           "path": "starter/src/components/Header.astro",
-          "sha256": "c9a932d06a02b1fd456c67d30d274f56bb04d01b19faa577be89e2668a3de766",
+          "sha256": "2c57039774ab02b41d2055028e1c06f968412e458f0fbf6c8314b2cc848e1d9d",
           "executable": false
         },
         {
@@ -6056,7 +6071,7 @@
         },
         {
           "path": "starter/src/layouts/Base.astro",
-          "sha256": "8f901e0ed9b3e5103facc128110a23df75ee9fada217c78594f475f7dc1736a8",
+          "sha256": "35f6b9e27c454e4aeefec0077a9ba8fde252f08929586cfd6d85e2a23e626b9a",
           "executable": false
         },
         {
@@ -6091,12 +6106,17 @@
         },
         {
           "path": "starter/src/site.config.mjs",
-          "sha256": "79b1979ad546d4495a7e287226c8e2b09c131cc9b6ce048d5a7ddf6ce7c8962d",
+          "sha256": "9947641b7eab5e985e0526b18d6bb74a839dfc52486ac6a4d0134a7df838dc47",
+          "executable": false
+        },
+        {
+          "path": "starter/src/styles/fonts.css",
+          "sha256": "2e8e18e99520f957900b38917fd4cf4851f59d18fa813f284acd331152cb8765",
           "executable": false
         },
         {
           "path": "starter/src/styles/global.css",
-          "sha256": "3ecbc8fba1bfa3f7b23a12ca82dba7ec43f71937faf3feaa9d1d55cf96006dc9",
+          "sha256": "70ec097f07678122f2d02c605a46a7a975b99040d6c01ff82116b4e9b8c8c203",
           "executable": false
         },
         {
@@ -6155,7 +6175,7 @@
     },
     {
       "slug": "website-launch-care",
-      "tree_sha256": "330c2130540915766e0980e85292f13c28dfd4bd4e15e03585493ba384eb6806",
+      "tree_sha256": "270e599fa64153ae0c552a87cfece603ac5528eee35118ce47426894fea89988",
       "files": [
         {
           "path": "SKILL.md",
@@ -6179,14 +6199,14 @@
         },
         {
           "path": "scripts/speed.sh",
-          "sha256": "6c666b31372c1e08680c954d0a9a7574293d4db8c61f399c75e9400439f43388",
+          "sha256": "bedef5959987b638199b1023de6b2f1e4eae5cff68b1ef54922266af2fe4b112",
           "executable": true
         }
       ]
     },
     {
       "slug": "website-preview-publish",
-      "tree_sha256": "8ba23cc0f824f2b2b82db789ae7c0a36063245937dc4740255ec7e5075c6013a",
+      "tree_sha256": "f428d7cf85880cfbee0d7913dc1aa2726177d8b1cc47b16fb5391f361b1f9d05",
       "files": [
         {
           "path": "SKILL.md",
@@ -6200,12 +6220,12 @@
         },
         {
           "path": "scripts/shoot.mjs",
-          "sha256": "3a716ebde8c8b8f1a09adcaa8b4444ef6250af96dafb71bb71b72766a3c707d6",
+          "sha256": "72dc85f31efe12e30684d457fde6805dfb70e0f3ef2362d71b49cc220abe5e8b",
           "executable": false
         },
         {
           "path": "scripts/shoot.sh",
-          "sha256": "9b7f18811fa257cd34fa1b94c0c8735d0000a09b940245303d13ed7da19f1896",
+          "sha256": "dca775908023e964927fca03eca82a792458b876e67f2e0cafe5bae44cd196eb",
           "executable": true
         }
       ]
@@ -6937,7 +6957,7 @@
     },
     {
       "key": "wes",
-      "sha256": "b1680ff62ba54655cde0cf3076e1e71338cdec8c9be8a8afa9e05ac2d65ee15c",
+      "sha256": "657cad8000edd71436d4a57edcec3df80977207a6fc5fbcc54619a0043ba1b50",
       "skills": [
         "website-build",
         "website-hosting-setup",

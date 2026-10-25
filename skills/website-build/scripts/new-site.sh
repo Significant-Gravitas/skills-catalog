@@ -62,7 +62,7 @@ if [[ ! -s public/og.png ]] && command -v convert >/dev/null 2>&1; then
   convert -size 1200x630 xc:'#141414' public/og.png
 fi
 [[ -s public/og.png ]] || echo "WARN: could not make public/og.png; make a 1200x630 PNG before launch"
-sha256sum public/favicon.svg public/og.png 2>/dev/null > starter-placeholders.txt || true
+sha256sum public/favicon.svg public/og.png src/components/Header.astro src/components/Footer.astro src/styles/global.css 2>/dev/null > starter-placeholders.txt || true
 
 echo "== installing dependencies (about a minute)"
 npm install --no-audit --no-fund --loglevel=error

@@ -14,7 +14,7 @@ export const site = {
   locale: 'en',
   // Shown as written; phoneHref is the same number in international format.
   phone: '',
-  phoneHref: '', // e.g. '+441326555014'
+  phoneHref: '', // e.g. '+441632960960' (no spaces, country code first)
   email: '',
   address: {
     street: '',
