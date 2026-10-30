@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-short-expert-souls-2026-10-26",
+  "release_key": "catalogue-newsletter-unscheduled-2026-10-21",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -6243,7 +6243,7 @@
     },
     {
       "key": "frankie",
-      "sha256": "f9b19936b93a3d263aa1d3a5ae640959e78ca3215ec582dbf8e76f0511797e23",
+      "sha256": "43e78798bab978a14acdfd0741d9451f33711247b643ce4e2789481428d07910",
       "skills": [
         "multi-source-research-synthesis",
         "project-status-report",
@@ -6484,7 +6484,7 @@
     },
     {
       "key": "nadia",
-      "sha256": "9753e68e85fab85d0507dae18686622cf5776883343948a92e4bc7b991ec7471",
+      "sha256": "b8f0e0f548494e3c58e972efab2db1c0ac9a3d6228db113b88f91804bac408d4",
       "skills": [
         "competitor-teardown",
         "customer-insight-research",
