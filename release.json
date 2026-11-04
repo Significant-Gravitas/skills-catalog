@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-short-expert-souls-2026-10-26",
+  "release_key": "catalogue-zara-account-sourcing-2026-11-04",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "a9db1c0785e71a04d200e51ce20f56b86ba673fa2746dcc3f5d563f59d4a6256",
+  "catalog_sha256": "19994086b2b5b8cc53dc2feb4886998085c92061077f80860de2c6bd1609b3de",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -1908,6 +1908,17 @@
         {
           "path": "SKILL.md",
           "sha256": "4ab9a214fbb9e9f2e35cb73f594aea30bfb4e9ca5e2db644f76b49adc63efde8",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "gtm-account-sourcing",
+      "tree_sha256": "820937436999f4e0944e54d0a61503ac8813741aca4c23a99d8ab30b560c3275",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "428042653fa3b3e9b14a253882ec8c512e125d5b114d2e7a6547812dcae5e27f",
           "executable": false
         }
       ]
@@ -6692,11 +6703,12 @@
     },
     {
       "key": "zara",
-      "sha256": "c71fc9c78b0f1b72481d4080afdc2e6a887be3e488245285edf74dbc6131d706",
+      "sha256": "28fe36e2e89fd4fc9e125868ac486805fe9027f145c4c524d0fd372c6c6b1f35",
       "skills": [
         "zara-getting-started",
         "positioning-and-messaging",
         "icp-and-segmentation",
+        "gtm-account-sourcing",
         "commercial-launch-strategy",
         "competitive-intelligence",
         "gtm-performance-diagnostics",
