@@ -1129,6 +1129,11 @@ skills:
     required_providers: [apollo, hubspot]
     source: platform
 
+  - slug: gtm-account-sourcing
+    categories: [marketing, sales, research]
+    required_providers: []
+    source: platform
+
   - slug: industrial-pursuit-tender-handover
     categories: [sales, operations]
     required_providers: []
