@@ -239,3 +239,34 @@ Public articles and guides the web sweep cited are named inline in the notes bel
 Clip was raised on the production platform on 2026-09-26 by Toran Bruce Richards (AutoGPT team) and copied here read-only on 2026-10-01. The production expert carried a name, role, job title, identity, a writing-style note and one skill of its own; it had no routines, workflows or bundled listings. The identity's four sentences were recast in the second person the roster uses, and three paragraphs were added from the skill: which requests go to it, asking for the website first, and its honest-QA and delivery rules. The writing-style note keeps texting in short single lines and adds the skill's no-em-dashes rule. The tagline, bio, categories, voice samples, boundaries and day-one rows were written for the roster from that identity and the skill, scoped to the software and AI products the skill is written for. The avatar is the image Toran set for Clip; its colour token and his weekly budget have no roster field and do not carry over.
 
 - **`code-motion-ad-15s`** (built as `code_motion_ad_15s`) — Saved to Clip's own skill folder during Toran's work with Clip (this version last saved 2026-10-01); no external reuse recorded. Copied from production (source `SKILL.md` SHA-256 `3858fcd11ed851fa53804945b020a2eb787f7067992311ac91affcc4e457a2ed`, 7,996 bytes). The body is unchanged except the Trigger line, which drops an aside about one owner's preferences. The slug is kebab-case because the catalogue does not allow underscores, and the frontmatter uses the platform's quoted form with `version: "1"`.
+
+## Coding Expert — authored for this catalog
+
+Ported from the muse-made-bots `coding-expert` package (persona Devon Park), itself built from 105 fetched software-engineering job postings. The ten skills below keep their authored bodies; only the envelope changed (kebab-case slugs, catalog frontmatter). The expert file carries the package's three routines with their crons. License: authored for this catalog (`source: platform`).
+
+- **`coding-getting-started`** — first-run repo intake: acceptance criteria, stack, landing path, approval owner, starter menu, routine offers.
+- **`ship-feature-from-spec`** — spec-to-PR feature implementation with verification log.
+- **`fix-bug-with-repro`** — repro-first root-cause bug fixing with regression test.
+- **`review-code`** — diff review ranked blocker/should-fix/question/nit with file and line.
+- **`refactor-safely`** — behavior-preserving refactors with test corroboration.
+- **`build-backend-api`** — API implementation following repo conventions and error shapes.
+- **`build-frontend-ui`** — frontend implementation from specs and design surfaces.
+- **`add-tests-and-fix-ci`** — test backfill and CI repair through the real caller chain.
+- **`secure-and-speed-pass`** — focused security and performance pass without a full review.
+- **`automate-with-code`** — developer-workflow automation where code is the deliverable.
+
+## Text-to-CAD & CAD Expert — authored for this catalog, adapted from earthtojake/text-to-cad (MIT)
+
+Ported from the muse-made-bots `text-to-cad-expert` package (persona Marta Kowalczyk), built from 113 fetched CAD/mechanical-engineering job postings. Its eleven skills are adapted, with attribution retained in each skill body, from the MIT-licensed (Copyright 2026 Thompson Labs LLC) `earthtojake/text-to-cad` repository at commit `4d42cb0bd9a61b46254bc8cf9bd9ae1f45c3295b` (release 0.10.3): `skills/cad` and its references (model contract, build123d modeling, positioning, kinematics, animation, exports, project layout, inspection, snapshot review), plus `skills/dxf`, `skills/engineering-drawing`, `skills/dfm`, `skills/dfam-check`, `skills/gcode`, `skills/step-parts`, `skills/sendcutsend`, `skills/bambu-labs`, `skills/urdf`, `skills/srdf`, and `skills/sdf`. Bodies were rewritten for this package's voice and gates; no upstream file is copied verbatim, so the packages are listed as `source: platform` with this provenance record as the attribution trail. The expert file carries the package's three routines with their crons.
+
+- **`cad-getting-started`** — first-run design intake: dimension ledger, standard, shops, approval owner, starter menu.
+- **`model-a-part-from-text`** — text/sketch/spec to parametric build123d model via the text-to-cad CAD server (adapted from `cad`).
+- **`build-an-assembly`** — assemblies with placements, joints, poses, and fit checks (adapted from `cad` positioning/kinematics/animation).
+- **`inspect-and-verify-geometry`** — measured verification: check scripts, reference resolution, design gates (adapted from `cad` inspection/snapshot references).
+- **`export-files-on-request`** — STEP/STL/3MF/GLB/xbf export discipline (adapted from `cad` exports/project-layout).
+- **`make-dxf-cut-layout`** — 2D profiles, gaskets, panels, flat patterns (adapted from `dxf`).
+- **`draw-engineering-drawing`** — dimensioned PDF shop drawings projected from geometry (adapted from `engineering-drawing`).
+- **`check-manufacturability`** — DFM/DfAM measured verdicts per process (adapted from `dfm` + `dfam-check`).
+- **`source-catalog-parts`** — purchasable STEP hardware sourcing with checksum verification (adapted from `step-parts`).
+- **`slice-and-ship-to-print`** — slicing presets, cutting-service preflight, printer handoff; the agent never runs the machine (adapted from `gcode` + `sendcutsend` + `bambu-labs`).
+- **`hand-off-robot-and-sim-files`** — URDF/SRDF/SDF robot and simulator handoff with validators (adapted from `urdf` + `srdf` + `sdf`).

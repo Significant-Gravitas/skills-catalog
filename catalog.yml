@@ -2149,3 +2149,89 @@ skills:
     categories: [marketing, content]
     required_providers: []
     source: platform
+
+  # Coding Expert and Text-to-CAD & CAD Expert skills, authored for this catalog.
+  - slug: coding-getting-started
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: ship-feature-from-spec
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: fix-bug-with-repro
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: review-code
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: refactor-safely
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: build-backend-api
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: build-frontend-ui
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: add-tests-and-fix-ci
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: secure-and-speed-pass
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: automate-with-code
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: cad-getting-started
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: model-a-part-from-text
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: build-an-assembly
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: inspect-and-verify-geometry
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: export-files-on-request
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: make-dxf-cut-layout
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: draw-engineering-drawing
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: check-manufacturability
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: source-catalog-parts
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: slice-and-ship-to-print
+    categories: [development]
+    required_providers: []
+    source: platform
+  - slug: hand-off-robot-and-sim-files
+    categories: [development]
+    required_providers: []
+    source: platform

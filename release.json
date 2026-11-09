@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-clip-expert-2026-10-01",
+  "release_key": "catalogue-coding-cad-experts-2026-11-09",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "a9db1c0785e71a04d200e51ce20f56b86ba673fa2746dcc3f5d563f59d4a6256",
+  "catalog_sha256": "d648da363829373aaaa10bf47e5bc5653cb071c0f23f2fd62fafbe9e69154baa",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -67,6 +67,17 @@
       ]
     },
     {
+      "slug": "add-tests-and-fix-ci",
+      "tree_sha256": "db56f4e5fbba67bbaae5865409e88783fbd534387b4210259d535dbb3d06b6b3",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b7301fee0db437184b561ce694c410a3f9e01966663ef9328fa1394f6bccec3b",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "alex-getting-started",
       "tree_sha256": "9fd18a42bc0f925666d3d1b68e8ea58ae8c2386668d28b14ff9026bd72c3e84d",
       "files": [
@@ -117,6 +128,17 @@
         {
           "path": "SKILL.md",
           "sha256": "aab9849f8b22015b763a874bd24e0b4a9891a16cb775cf9a6e1161f2167d578a",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "automate-with-code",
+      "tree_sha256": "0193cd6c2b3ffeaa2ff9969fc230af84dba0757d3f3e73d28e19ed74820318a9",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6ec63e65efdab314aaa401443286777dc9dc27cff126b33d68cf9078c0ebcf57",
           "executable": false
         }
       ]
@@ -263,12 +285,45 @@
       ]
     },
     {
+      "slug": "build-an-assembly",
+      "tree_sha256": "b6aec918a00cc3e48a489e014778779dd496b7db9c9d6e41c65afa1c2cdec69b",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dfc37de3fbbf74c3383f206909d76524caa6a292c7c834ae4be33f4416968be0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "build-backend-api",
+      "tree_sha256": "a9b51f1335c3a2b3346822e8b6128686b72b83126b1cf8a672c81640e92c61d0",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8883fb7e2e13c8b9854e4835af77e324ae7bad3fd095a2359d69c478ed3aa090",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "build-data-and-r-d-alliances",
       "tree_sha256": "dc17c44871966268ed7028df4fb5a50af119e68756b1e31832d4a75aafa1b69e",
       "files": [
         {
           "path": "SKILL.md",
           "sha256": "9291201dc1cdc144eb2b1c7abdc8c2b34f04f2befd5babab0b43c83140b899a9",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "build-frontend-ui",
+      "tree_sha256": "7bb16a4dc5a17ab7460b5200c9a0c87327a22c548587d2aeba771c9b11083c0e",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "0b601cb29d8d752d659c89801320700ddf7444fe41ef0584e34d1f112def7e10",
           "executable": false
         }
       ]
@@ -360,6 +415,17 @@
         {
           "path": "SKILL.md",
           "sha256": "8fb8ee8a04411f56d5cf5bb6a3bfd6a567c84489e76589d77dd3af045d5ebaeb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "cad-getting-started",
+      "tree_sha256": "0bec800c0cd7dab14256d9bb8bbb73b5f45b24e48efff790adc97bf73fa37565",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "44d04bc334dfea435f5d2ab472a94bf9174007e160229f38d661d32b87de6719",
           "executable": false
         }
       ]
@@ -491,6 +557,17 @@
         {
           "path": "SKILL.md",
           "sha256": "9ee0aeab4ec65b333c2d3e3d83a42395cc0b36d720b57f10492285a9fbee5e09",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "check-manufacturability",
+      "tree_sha256": "9fa0f0c1032dedde0ad82c8d2d2f3c02c9f9e5885c7b18a8259ad22210095002",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "259c52564cc88ec81474fe3330d75a083a1a965043da88af7612dea1e8f15907",
           "executable": false
         }
       ]
@@ -655,6 +732,17 @@
         {
           "path": "SKILL.md",
           "sha256": "b3f8b4df69aa8ba1c9bc5649ca6b30b7d96b9318a3699171fc48beb8181c18cb",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "coding-getting-started",
+      "tree_sha256": "24b9fe99e294153ab03162afb97c4d3804f5e6965f8edb4a072323a52c6bbcb7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f30d474a91742864b3b48d9cb821c9ca104ed267dc4548def4f206305253fd86",
           "executable": false
         }
       ]
@@ -1513,6 +1601,17 @@
       ]
     },
     {
+      "slug": "draw-engineering-drawing",
+      "tree_sha256": "48ab4eff71a90467a93e3cf0a259a9aa651519c28991a2aebf47ef6bf5cc2b23",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "d65d02ae6088a1e269ce10f911a6fabcf3c06718ac2a06d9cb23f880fced3bb0",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "drive-alliance-ma-and-strategic-investments",
       "tree_sha256": "29bb112523c75c8d2d52ccf92f24d3d0f6c85eb87bf3bd154fd46b06efa66cad",
       "files": [
@@ -1734,6 +1833,17 @@
       ]
     },
     {
+      "slug": "export-files-on-request",
+      "tree_sha256": "fcfaa10c991cfa933cbc3f0175086e8a6a5503099d771cc58e6b6648a6c3c490",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6b3db759b685213d61ce6da1de7c515bc6b42f19edb183cb5061123ced896dcb",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "feature-request-triage",
       "tree_sha256": "d391ce670b4dcf85d28ca1a85df9ccde072552d8bafcaf490d67377c02c59208",
       "files": [
@@ -1821,6 +1931,17 @@
         {
           "path": "SKILL.md",
           "sha256": "ce72e2a1301ef4074ec362729b23d3bb2f63d06c3a98fa07fc6329df4479883c",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "fix-bug-with-repro",
+      "tree_sha256": "a450811fe88a76888637e7d0effd107526ac6843d7076d872ad4c7d2325ab1c6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bea1de4f570f71ae8c6c614aad144fe60bf0a9c48aae0040ff83e17da9765989",
           "executable": false
         }
       ]
@@ -1930,6 +2051,17 @@
         {
           "path": "SKILL.md",
           "sha256": "f46f7b138ff1a3326acd60689271d3bfb280eac8288d09ab2700914b15e12f00",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "hand-off-robot-and-sim-files",
+      "tree_sha256": "1a549a6af6d12f470b92f28ebe70a35e9a24b119831b685e7366e5af84b5aaae",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "bda681747978e73045d1b750adefd179289ca6a25626c61fe5e84865d1b9a9d4",
           "executable": false
         }
       ]
@@ -2095,6 +2227,17 @@
         {
           "path": "SKILL.md",
           "sha256": "736703d420f0fe16c15dbc4bf5dbb52c1080b57e6067a029682ee90300f16b60",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "inspect-and-verify-geometry",
+      "tree_sha256": "c6b603a53c10170d76156b6359b8aacee46d81578062f3aa574594a71b0e4114",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "215c25eb5b7e9606b757a58f294480d2a11e0607a2a798a09e0fe69d098fb877",
           "executable": false
         }
       ]
@@ -2478,6 +2621,17 @@
       ]
     },
     {
+      "slug": "make-dxf-cut-layout",
+      "tree_sha256": "dc5bae568bfeb7d1e460b738e5e8c08bd5d0ef68150b8374ea5c9b3db4fb6175",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "425494d1bad11a8755a3db18b7eab0816e32f37910277d63d175f764e4f7e939",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "manage-partner-renewals-and-exits",
       "tree_sha256": "826a6b27479dbb470a5c22b6532ea74298313b24ca5f1307796047a047cda8a2",
       "files": [
@@ -2794,6 +2948,17 @@
         {
           "path": "SKILL.md",
           "sha256": "b696ef79713eb051e9e1fc282a91a4f587ddb2fc1184c6ad329aed7e790efe92",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "model-a-part-from-text",
+      "tree_sha256": "8f60575025ed7d4d86bd7ce7d9c4fcd3281fa10cc99dc2bab4401dbc6bdbcbe6",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b7f4351176e76c166b14b6d9c1efcffe27bfa7206d6b2742e931467a0a24abbc",
           "executable": false
         }
       ]
@@ -4521,6 +4686,17 @@
       ]
     },
     {
+      "slug": "refactor-safely",
+      "tree_sha256": "c3a3bca713ea18e15df743b5d10fda617a16a579bfcd16d424aed6bd9bc01c77",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b42fb9294bf082c17c6abf3018dac20066effdbcfd12e02ef604bf49734f8694",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "refund-and-exception-brief",
       "tree_sha256": "1c2475eb98dc4b87b36afc573fc54517f3f1f2d7f6b85915cfa1c4e7b8882784",
       "files": [
@@ -4670,6 +4846,17 @@
         {
           "path": "SKILL.md",
           "sha256": "47f03e7dca4a8d988b89c3e7a83802acfc836a2a31f238bef408da6078d39ec6",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "review-code",
+      "tree_sha256": "42d5cc6ca7215312ff25c0d5395ef110cfc4b4e0a509525209a5b7de333ad657",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dbbf7bd258a26b527419e3489227cc9a4856415ede87f74a7cee3efe5b154508",
           "executable": false
         }
       ]
@@ -5036,6 +5223,17 @@
       ]
     },
     {
+      "slug": "secure-and-speed-pass",
+      "tree_sha256": "8590db4d67afab5765c7d765978b8ff95d172dd19868a8ec8bf34e5c6acda4f1",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a291e2316535acbf17efb0e25ac08ced1c2a0b52a11ad941febf1eac00b79cf6",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "security-questionnaire-answers",
       "tree_sha256": "d4ec35060a412fbbfe0e0ffa78f1b199d16a56d0b71b7c472a4c448472cabbf2",
       "files": [
@@ -5112,6 +5310,17 @@
       ]
     },
     {
+      "slug": "ship-feature-from-spec",
+      "tree_sha256": "9c459650d3bdbf762e9317837607060fdf33a568350b7bfbe96f2aff00d62376",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b90e69b09ba92bbeb9632513a46e9f2fcba7199669f53c1e7d5ba983a4e92c35",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "showroom-fi-and-internet-bdc",
       "tree_sha256": "df580d8da0196db073868073258a32271b5ff14780e3bb92c378dd16b820343e",
       "files": [
@@ -5129,6 +5338,17 @@
         {
           "path": "SKILL.md",
           "sha256": "0b2e69df33e7a48772b87379069b015fabd22a5a87da5fe2658c1a6fa78ff6c0",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "slice-and-ship-to-print",
+      "tree_sha256": "e507926594190696f8e38d714599ff989942333367ebe12f85379a4e71492c59",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "2c322610926e14e031fbb91337145ee0025d3dd574a233db0ccc75f143c50e98",
           "executable": false
         }
       ]
@@ -5291,6 +5511,17 @@
         {
           "path": "SKILL.md",
           "sha256": "49174065345feee5de148b249fe8828604d25c2eb81bd61ede3e0d79a44af363",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "source-catalog-parts",
+      "tree_sha256": "b5ef46fb083a9762aea7a7b2b6db8257435c6f7880360d33961017a4b85ee4c5",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "653d9b3f80be6f84bdd6a41516d5432354f5e8a1e51599a0d7887f5e5dc3d8aa",
           "executable": false
         }
       ]
@@ -6192,6 +6423,22 @@
       ]
     },
     {
+      "key": "coding-expert",
+      "sha256": "db3c536ffe0e6f5515866d260ea14317e0406bf118f580886352b37c22c244c9",
+      "skills": [
+        "coding-getting-started",
+        "ship-feature-from-spec",
+        "fix-bug-with-repro",
+        "review-code",
+        "refactor-safely",
+        "build-backend-api",
+        "build-frontend-ui",
+        "add-tests-and-fix-ci",
+        "secure-and-speed-pass",
+        "automate-with-code"
+      ]
+    },
+    {
       "key": "daniel",
       "sha256": "6b9dd7ad1c47c4b28de1e9f67eb1bcf2f19415c9163cf78ceb82075cceb60247",
       "skills": [
@@ -6660,6 +6907,23 @@
         "candidate-interview-planning",
         "recruiting-pipeline",
         "employment-offer-drafting"
+      ]
+    },
+    {
+      "key": "text-to-cad-expert",
+      "sha256": "6f28d82f11ade458232a81ddd3e548f4c56a3e27cbb50dfcbb654807f0f80a21",
+      "skills": [
+        "cad-getting-started",
+        "model-a-part-from-text",
+        "build-an-assembly",
+        "inspect-and-verify-geometry",
+        "export-files-on-request",
+        "make-dxf-cut-layout",
+        "draw-engineering-drawing",
+        "check-manufacturability",
+        "source-catalog-parts",
+        "slice-and-ship-to-print",
+        "hand-off-robot-and-sim-files"
       ]
     },
     {
