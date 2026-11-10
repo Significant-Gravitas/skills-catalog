@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-short-expert-souls-2026-10-26",
+  "release_key": "catalogue-max-perfect-fit-leads-2026-11-10",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "a9db1c0785e71a04d200e51ce20f56b86ba673fa2746dcc3f5d563f59d4a6256",
+  "catalog_sha256": "58646d36baca1fbef2ee1d528b93e6b63ab1d87ac44d7c21575c6bf4421e2e8c",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -297,11 +297,11 @@
     },
     {
       "slug": "build-the-target-list",
-      "tree_sha256": "b900863296593c9e12d6a287918cdc5b04e625d0c7844107720bb763ddb3569f",
+      "tree_sha256": "3bb930cb89007bb71fa66788adaf0884f1afdf1eb9d7dd626687368f23b4cf49",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "d14c2915f3f5616de9d4f155aeb67b6925ce3108dec714e1c2f71846b2cf5472",
+          "sha256": "4d4f1e6f5215c9d4fe6889f94a5f75253588cdfa8e287c3ff2fc5938715361ad",
           "executable": false
         }
       ]
@@ -2668,11 +2668,11 @@
     },
     {
       "slug": "max-getting-started",
-      "tree_sha256": "0e1a4882fdeab030fa78c3202c7d44282af391c8d0e232c0df46901b0febbf00",
+      "tree_sha256": "053a55c12c9ad01c50da5b870cf25da72d455e9cbaf7621f1b372d3419a0c9c0",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "b65b465f4af30285793cda8fba459b07ba23a81d54532a46cdc0d9aa1c5ae285",
+          "sha256": "0c25d6bfa827478223b234b56f1c983ab634586c039796d9078c896d7a2e844d",
           "executable": false
         }
       ]
@@ -3595,6 +3595,17 @@
         {
           "path": "SKILL.md",
           "sha256": "ae99f15787d626ee32ae2b1e93d46133a5100bbab95f3732ccf7b0bc69df8297",
+          "executable": false
+        }
+      ]
+    },
+    {
+      "slug": "perfect-fit-lead-finding",
+      "tree_sha256": "f3a2f52e2d862f04081534421726aa2ebe77d4a4291fc9b89c17b09cc03b5378",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "fcd3eea1c2b069c3d46728a6db5ffcfa671c7f090ea1daeec73ff2b54894b68d",
           "executable": false
         }
       ]
@@ -6401,9 +6412,10 @@
     },
     {
       "key": "max",
-      "sha256": "15a008dbb5e5047c5fb012283809051f33fc886a0ebae304496c9693907203cc",
+      "sha256": "74b9db87b6c6ba9a6c37c044780873c0afec9d8c7b26e3cc3127d82fa3933772",
       "skills": [
         "max-getting-started",
+        "perfect-fit-lead-finding",
         "build-the-target-list",
         "find-the-decision-makers",
         "draft-a-first-touch",

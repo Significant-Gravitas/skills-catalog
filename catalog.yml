@@ -912,6 +912,11 @@ skills:
     required_providers: []
     source: platform
 
+  - slug: perfect-fit-lead-finding
+    categories: [sales, research]
+    required_providers: []
+    source: platform
+
   - slug: business-case-and-roi-selling
     categories: [sales, finance]
     required_providers: []

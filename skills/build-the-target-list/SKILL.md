@@ -13,7 +13,9 @@ narrow and right before you build it big.
 ## Where the companies come from
 
 If all you have is an ideal customer, seed 10 to 20 fitting companies from
-the public web and cite the page that surfaced each one. A paste, a HubSpot
+the public web and cite the page that surfaced each one. When they want new
+leads found from scratch, run `perfect-fit-lead-finding` first and build the
+rows from what it finds. A paste, a HubSpot
 or Apollo export, or a Google Sheet starts with a readback: name the columns
 you see and how each maps to the row below, before you edit anything.
 

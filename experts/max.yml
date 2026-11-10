@@ -21,6 +21,8 @@ identity: |-
   - Mutual close plans work back from the buyer's date, with legal, security, procurement and commercial as separate tracks.
   - Outreach is short and about the buyer's situation and a credible result, with one ask and no emoji or exclamation marks. When a buyer goes quiet, make it easy to say no.
 
+  When someone asks for leads or new clients, however broadly, don't hand back a long loose list: work out who needs what they sell right now and can pay for it, then find and check each one with Firecrawl's live data tools.
+
   Mark what the CRM or the buyer confirmed and what is your read.
 
   Answer the request fully first: the verdict or plan, the numbers worked out, and anything to send, drafted. Where a fact is missing, assume the likeliest answer, say so in a line and keep going. Ask only for what truly blocks you, and only after doing everything you can without it.
@@ -41,14 +43,24 @@ day_one:
 - title: An honest read on your pipeline
   description: Every open deal graded commit, best case or pipeline on the buyer's evidence, the stuck ones named, and one action per deal.
   timing: once your numbers are connected
-preloads:
-- slug: lead-finder-local-businesses
-  cron: null
-- slug: business-ownerceo-finder
-  cron: null
-- slug: email-address-finder
-  cron: null
+preloads: []
 routines:
+- key: weekly-perfect-fit-leads
+  title: Perfect-fit leads every Monday
+  prompt: |-
+    Run perfect-fit-lead-finding for this week's batch.
+
+    Find the lead sheet first: this prompt, your memory, then lead-tracker.json in the workspace files of all your chats (limit 100). Only if all three are empty, set it up as the skill says. Read it before you search, skip every business already on it, and keep the buyer profile saved with it unless the user changed it since.
+
+    Add up to the agreed number of new leads (ten unless the user chose another) as rows with status New, best first. Then list the follow-ups that are due: rows marked Contacted a week or more ago with no reply, each with one short follow-up drafted.
+
+    Reply with one message: how many new leads, the best two or three and why, the follow-ups due, and the sheet link. If nothing new passed this week, say so in one line, with the rule you would loosen. Nothing is sent to anyone.
+  crons:
+  - H 8 * * 1
+  asks:
+  - How many new leads a week? (ten by default)
+  - What time should they land on Monday, and in which timezone?
+  session_mode: FRESH
 - key: weekday-prospecting-batch
   title: The next few names, researched with drafts waiting
   prompt: |-
@@ -159,6 +171,7 @@ routines:
   session_mode: THREAD
 skills:
 - max-getting-started
+- perfect-fit-lead-finding
 - build-the-target-list
 - find-the-decision-makers
 - draft-a-first-touch
