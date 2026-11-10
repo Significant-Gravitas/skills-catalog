@@ -50,7 +50,7 @@ routines:
   prompt: |-
     Run perfect-fit-lead-finding for this week's batch.
 
-    Find the lead sheet first: this prompt, your memory, then lead-tracker.json in the workspace files of all your chats. If there is none, set it up as the skill says. Read it before you search, skip every business already on it, and keep the buyer profile saved with it unless the user changed it since.
+    Find the lead sheet first: this prompt, your memory, then lead-tracker.json in the workspace files of all your chats (limit 100). Only if all three are empty, set it up as the skill says. Read it before you search, skip every business already on it, and keep the buyer profile saved with it unless the user changed it since.
 
     Add up to the agreed number of new leads (ten unless the user chose another) as rows with status New, best first. Then list the follow-ups that are due: rows marked Contacted a week or more ago with no reply, each with one short follow-up drafted.
 

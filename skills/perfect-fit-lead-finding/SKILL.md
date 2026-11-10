@@ -125,7 +125,10 @@ their customer reviews in it.
 Put the batch in the lead sheet and link it. Then offer the weekly
 routine, "Perfect-fit leads every Monday", which runs this skill in a
 fresh chat each week and drafts one follow-up for anyone contacted a week
-earlier who hasn't replied.
+earlier who hasn't replied. It needs their yes to use their connected
+accounts, because it reads and writes the sheet and runs the data tools.
+Switch it on with `tool:schedule_routine` and `grants_credentials=true`,
+and add the sheet's saved spreadsheet object to its prompt.
 
 ## 6. The lead sheet
 
@@ -133,8 +136,10 @@ The user never has to make, name or point you to it. Use the same sheet
 in every chat, including scheduled runs.
 
 **Find it.** In order: the routine prompt, if it carries the sheet; your
-memory; then `list_workspace_files` with `include_all_sessions=true` for
-`lead-tracker.json`. If the user already keeps leads in their own sheet
+memory; then `list_workspace_files` with `include_all_sessions=true` and
+`limit=100` for `lead-tracker.json`. Make a new sheet only when all three
+come up empty; if you find a URL but no spreadsheet object, ask the user
+to pick the sheet once rather than make a second one. If the user already keeps leads in their own sheet
 or CRM, use theirs instead: read back its columns and map them once.
 
 **If there is none, make it on the first run**, without asking:
@@ -147,18 +152,19 @@ or CRM, use theirs instead: read back its columns and map them once.
    which every later run relies on: Found on, Business, Town, Fit, Why
    now, Decision maker, Email, Phone, Other contacts, Website, Evidence,
    First message, Status, Contacted on, Follow up on, Notes.
-3. **Google Sheets Format** `Leads!A1:P1`: bold, white text, background
-   red 0.13, green 0.2, blue 0.33.
+3. **Google Sheets Format** `Leads!A1:P1`: bold, text colour red 1,
+   green 1, blue 1, background red 0.13, green 0.2, blue 0.33.
 4. **Google Sheets Set Layout** on "Leads": freeze 1 row and 2 columns;
    column widths 95, 200, 110, 80, 320, 160, 210, 130, 200, 180, 220, 360,
    120, 110, 110, 240; wrap `A2:P1000`; filter and alternating colours on
    `A1:P1000`. If that block isn't available, skip this step.
-5. **Google Sheets Add Dropdown** on `Leads!M2:M1000` with New, Contacted,
+5. **Google Sheets Add Dropdown** on sheet "Leads", range `M2:M1000`, with New, Contacted,
    Replied, Meeting booked, Won, Not interested, No reply.
 6. Save `lead-tracker.json` with `write_workspace_file`: the spreadsheet
    object the create step returned (pass it through unchanged: it carries
    the hidden credential that later runs need), its URL, the column order
-   and the buyer profile. Save the sheet's name and URL to memory too.
+   and the buyer profile. Save the same spreadsheet object, name and URL
+   to memory too.
 
 **Every run:** read `Leads!A:P` first. Skip any business already there,
 matched by name and town, phone or website. Respect each status, and list
@@ -166,11 +172,12 @@ the follow-ups that are due. Then add each new lead with **Google Sheets
 Append Row** on sheet "Leads", one row per lead in the column order, with
 Status "New" and Found on today. Never write new leads to a range you
 worked out yourself: one row off overwrites a lead. Write links as
-`=HYPERLINK("url","label")` and dates as YYYY-MM-DD.
+`=HYPERLINK("url","label")`, with the bare domain as the label in the
+Website column so later runs can match it. Dates are YYYY-MM-DD.
 
-The first write to the sheet asks the user to approve it. Say once that
-choosing to allow it in every chat with you lets the Monday run add rows
-on its own.
+Writes to the sheet may ask the user to approve them. When an Append Row
+approval comes up, say once that allowing it in every chat with you lets
+the Monday run add rows on its own.
 
 ## Boundaries
 
