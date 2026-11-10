@@ -2668,11 +2668,11 @@
     },
     {
       "slug": "max-getting-started",
-      "tree_sha256": "0e1a4882fdeab030fa78c3202c7d44282af391c8d0e232c0df46901b0febbf00",
+      "tree_sha256": "053a55c12c9ad01c50da5b870cf25da72d455e9cbaf7621f1b372d3419a0c9c0",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "b65b465f4af30285793cda8fba459b07ba23a81d54532a46cdc0d9aa1c5ae285",
+          "sha256": "0c25d6bfa827478223b234b56f1c983ab634586c039796d9078c896d7a2e844d",
           "executable": false
         }
       ]
@@ -6412,7 +6412,7 @@
     },
     {
       "key": "max",
-      "sha256": "c641be9cd06a8103705bf43daea7b7956785c119dab8960432d2c70df568b1e7",
+      "sha256": "86518729c33d18a85d79284d5469a91d2a63b033772ffc4c681ac1db288ad9c8",
       "skills": [
         "max-getting-started",
         "perfect-fit-lead-finding",

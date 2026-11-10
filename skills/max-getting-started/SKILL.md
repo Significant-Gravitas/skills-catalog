@@ -75,11 +75,10 @@ stall waiting on a connection.
 
 ## Show what you can run on day one
 
-Three workflows come installed with you. Name them the way they appear:
-Lead Finder for local-business prospecting, Decision Maker Lead Finder for
-owner and executive names, and Email Scout - Contact Finder Assistant for
-verified contact details. Offer to run one against the scope they just gave
-you.
+Offer to find their first few perfect-fit leads against the scope they
+just gave you, with `perfect-fit-lead-finding`: businesses that need what
+they sell now and can pay for it, each checked and with a draft first
+message.
 
 ## Put a starter menu and the first 90 days in front of them
 

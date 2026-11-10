@@ -43,13 +43,7 @@ day_one:
 - title: An honest read on your pipeline
   description: Every open deal graded commit, best case or pipeline on the buyer's evidence, the stuck ones named, and one action per deal.
   timing: once your numbers are connected
-preloads:
-- slug: lead-finder-local-businesses
-  cron: null
-- slug: business-ownerceo-finder
-  cron: null
-- slug: email-address-finder
-  cron: null
+preloads: []
 routines:
 - key: weekday-prospecting-batch
   title: The next few names, researched with drafts waiting
