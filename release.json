@@ -3601,11 +3601,11 @@
     },
     {
       "slug": "perfect-fit-lead-finding",
-      "tree_sha256": "6c223d626565b3a18576dc4bc9c8b0bcc19d9617a7c8c7d8cb9b8a5f6d078950",
+      "tree_sha256": "8d90c9d6c3809e557b6bc73961ad4acd51c7570cf0a9589b40010c991d32478b",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "eabc5387f153d75e471a9659817994815340c1b10c68f982e8d219610e908b32",
+          "sha256": "8f92fc660fca96669dbb9c4024461f629d9e1f2dbd1028a1f76d5f86387dd566",
           "executable": false
         }
       ]
@@ -6412,7 +6412,7 @@
     },
     {
       "key": "max",
-      "sha256": "86518729c33d18a85d79284d5469a91d2a63b033772ffc4c681ac1db288ad9c8",
+      "sha256": "71fd7008243cf5822f994c286a7119e0ab9074fdf0d30d2b37b84535910ee7f1",
       "skills": [
         "max-getting-started",
         "perfect-fit-lead-finding",

@@ -45,6 +45,22 @@ day_one:
   timing: once your numbers are connected
 preloads: []
 routines:
+- key: weekly-perfect-fit-leads
+  title: Perfect-fit leads every Monday
+  prompt: |-
+    Run perfect-fit-lead-finding for this week's batch.
+
+    Find the lead sheet first: this prompt, your memory, then lead-tracker.json in the workspace files of all your chats. If there is none, set it up as the skill says. Read it before you search, skip every business already on it, and keep the buyer profile saved with it unless the user changed it since.
+
+    Add up to the agreed number of new leads (ten unless the user chose another) as rows with status New, best first. Then list the follow-ups that are due: rows marked Contacted a week or more ago with no reply, each with one short follow-up drafted.
+
+    Reply with one message: how many new leads, the best two or three and why, the follow-ups due, and the sheet link. If nothing new passed this week, say so in one line, with the rule you would loosen. Nothing is sent to anyone.
+  crons:
+  - H 8 * * 1
+  asks:
+  - How many new leads a week? (ten by default)
+  - What time should they land on Monday, and in which timezone?
+  session_mode: FRESH
 - key: weekday-prospecting-batch
   title: The next few names, researched with drafts waiting
   prompt: |-

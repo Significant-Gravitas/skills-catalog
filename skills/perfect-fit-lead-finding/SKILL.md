@@ -13,6 +13,9 @@ that need what they sell right now and can afford it. Do the narrowing
 yourself. Never wait for them to tell you to be selective, or which tools
 to use.
 
+Every run starts and ends with the lead sheet (section 6). Find it before
+you search, so nothing already on it comes back.
+
 ## 1. Turn what they sell into a buyer profile
 
 Work from what they sell, what it costs, and where they work: memory,
@@ -76,7 +79,8 @@ A search costs a few Firecrawl credits, about a cent. The cost is in the
 checking, so check only what survives the screen.
 
 1. Search wide: one places query per trade per town, plus register
-   searches for new businesses. Cover enough ground to find ten that
+   searches for new businesses. When they give a radius, search the main
+   town and the towns inside it. Cover enough ground to find ten that
    pass: several trades that fit the profile, and nearby towns when one
    runs dry. That is usually 10 to 30 searches, so don't stop at five.
 2. Screen on the fields you already have. Towns share names across
@@ -85,7 +89,10 @@ checking, so check only what survives the screen.
    is not proof: search the business name and town on the web before
    you call it site-less.
 3. Check the survivors: recent reviews, the register, site history, and
-   their own website and social pages.
+   their own website and social pages. Read their contact and about
+   pages with **Firecrawl Scrape**: a small business's own published
+   email and the owner's name are usually there, at no data cost. Use
+   an email finder only for a named person's work email at a domain.
 4. Confirm every fact on a page you can link before it goes in. Match
    register entries by address, not by name alone. Sole traders are not
    on company registers, so take the owner's name from their own site or
@@ -102,7 +109,9 @@ Moment signals rank it up. So does public proof of the pain, such as
 reviews saying customers couldn't find prices or get through. Hand back at
 most 10 per batch, best first. Three excellent leads beat ten average
 ones: if only three pass, give three and name the one rule you would
-loosen to get more.
+loosen to get more. When the user asks for a number or a full list, give
+them that many, still screened and ranked, with each marked Strong or
+Possible, rather than cutting it to ten.
 
 ## 5. What you hand back
 
@@ -113,11 +122,55 @@ Instagram), and a short, friendly first message for approval. The message
 names one specific, fixable thing about their situation. Never quote
 their customer reviews in it.
 
-Keep the list in a Google Sheet, or wherever the user keeps theirs: each
-business, its contacts, the date contacted and whether it replied. Read it
-before every search so no business comes up twice. Then offer a weekly
-batch, with one follow-up a week later for those who didn't reply. A
-weekly run reads the sheet for what came before, not an old conversation.
+Put the batch in the lead sheet and link it. Then offer the weekly
+routine, "Perfect-fit leads every Monday", which runs this skill in a
+fresh chat each week and drafts one follow-up for anyone contacted a week
+earlier who hasn't replied.
+
+## 6. The lead sheet
+
+The user never has to make, name or point you to it. Use the same sheet
+in every chat, including scheduled runs.
+
+**Find it.** In order: the routine prompt, if it carries the sheet; your
+memory; then `list_workspace_files` with `include_all_sessions=true` for
+`lead-tracker.json`. If the user already keeps leads in their own sheet
+or CRM, use theirs instead: read back its columns and map them once.
+
+**If there is none, make it on the first run**, without asking:
+
+1. **Google Sheets Create Spreadsheet**, titled "Lead tracker" plus their
+   business name, with one sheet named "Leads". If Google isn't connected,
+   the card asks once. Carry on with the batch meanwhile and fill the
+   sheet when it connects.
+2. **Google Sheets Write** the header to `Leads!A1:P1`, in this order,
+   which every later run relies on: Found on, Business, Town, Fit, Why
+   now, Decision maker, Email, Phone, Other contacts, Website, Evidence,
+   First message, Status, Contacted on, Follow up on, Notes.
+3. **Google Sheets Format** `Leads!A1:P1`: bold, white text, background
+   red 0.13, green 0.2, blue 0.33.
+4. **Google Sheets Set Layout** on "Leads": freeze 1 row and 2 columns;
+   column widths 95, 200, 110, 80, 320, 160, 210, 130, 200, 180, 220, 360,
+   120, 110, 110, 240; wrap `A2:P1000`; filter and alternating colours on
+   `A1:P1000`. If that block isn't available, skip this step.
+5. **Google Sheets Add Dropdown** on `Leads!M2:M1000` with New, Contacted,
+   Replied, Meeting booked, Won, Not interested, No reply.
+6. Save `lead-tracker.json` with `write_workspace_file`: the spreadsheet
+   object the create step returned (pass it through unchanged: it carries
+   the hidden credential that later runs need), its URL, the column order
+   and the buyer profile. Save the sheet's name and URL to memory too.
+
+**Every run:** read `Leads!A:P` first. Skip any business already there,
+matched by name and town, phone or website. Respect each status, and list
+the follow-ups that are due. Then add each new lead with **Google Sheets
+Append Row** on sheet "Leads", one row per lead in the column order, with
+Status "New" and Found on today. Never write new leads to a range you
+worked out yourself: one row off overwrites a lead. Write links as
+`=HYPERLINK("url","label")` and dates as YYYY-MM-DD.
+
+The first write to the sheet asks the user to approve it. Say once that
+choosing to allow it in every chat with you lets the Monday run add rows
+on its own.
 
 ## Boundaries
 
