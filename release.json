@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_key": "catalogue-short-expert-souls-2026-10-26",
+  "release_key": "catalogue-max-perfect-fit-leads-2026-11-10",
   "provenance": {
     "catalogue_repository": "Significant-Gravitas/skills-catalog",
     "baseline_revision": "c0237abc5a3503b1bb62d3422704132176305847",
@@ -10,7 +10,7 @@
       "snapshot_sha256": "2eb38fd457c1706499df20f9146d86f7985a2ecb44cb2197ede799db7c4903ac"
     }
   },
-  "catalog_sha256": "a9db1c0785e71a04d200e51ce20f56b86ba673fa2746dcc3f5d563f59d4a6256",
+  "catalog_sha256": "58646d36baca1fbef2ee1d528b93e6b63ab1d87ac44d7c21575c6bf4421e2e8c",
   "packages": [
     {
       "slug": "account-health-and-qbrs",
@@ -297,11 +297,11 @@
     },
     {
       "slug": "build-the-target-list",
-      "tree_sha256": "b900863296593c9e12d6a287918cdc5b04e625d0c7844107720bb763ddb3569f",
+      "tree_sha256": "3bb930cb89007bb71fa66788adaf0884f1afdf1eb9d7dd626687368f23b4cf49",
       "files": [
         {
           "path": "SKILL.md",
-          "sha256": "d14c2915f3f5616de9d4f155aeb67b6925ce3108dec714e1c2f71846b2cf5472",
+          "sha256": "4d4f1e6f5215c9d4fe6889f94a5f75253588cdfa8e287c3ff2fc5938715361ad",
           "executable": false
         }
       ]
@@ -3600,6 +3600,17 @@
       ]
     },
     {
+      "slug": "perfect-fit-lead-finding",
+      "tree_sha256": "6c223d626565b3a18576dc4bc9c8b0bcc19d9617a7c8c7d8cb9b8a5f6d078950",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "eabc5387f153d75e471a9659817994815340c1b10c68f982e8d219610e908b32",
+          "executable": false
+        }
+      ]
+    },
+    {
       "slug": "performance-review-prep",
       "tree_sha256": "ea6695bb4e4d43a179cf7bb859059aa39bf3afc30e9e60e73a1be06b2eecc1f9",
       "files": [
@@ -6401,9 +6412,10 @@
     },
     {
       "key": "max",
-      "sha256": "15a008dbb5e5047c5fb012283809051f33fc886a0ebae304496c9693907203cc",
+      "sha256": "c641be9cd06a8103705bf43daea7b7956785c119dab8960432d2c70df568b1e7",
       "skills": [
         "max-getting-started",
+        "perfect-fit-lead-finding",
         "build-the-target-list",
         "find-the-decision-makers",
         "draft-a-first-touch",
