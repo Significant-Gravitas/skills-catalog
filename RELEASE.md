@@ -88,7 +88,10 @@ no others:
 | `skills` | ordered list of unique catalogue package slugs |
 
 `python tools/check.py` enforces this schema; `python tools/release.py check`
-binds each file's bytes and `skills` into the manifest.
+binds each file's bytes and `skills` into the manifest. The check also refuses
+roster text that tells an expert to wait for its owner's yes or approval before
+acting: the platform holds outward steps for approval itself, so the roster says
+what the expert does and who decides, never when to ask.
 
 ## Editing and checking
 
@@ -99,7 +102,7 @@ git add catalog.yml skills/ experts/
 python tools/release.py refresh
 python tools/check.py
 python tools/release.py check
-python -m unittest discover -s tools -p test_release.py
+python -m unittest discover -s tools -p "test_*.py"
 ```
 
 `refresh` regenerates `schema_version`, `catalog_sha256`, `packages` and `experts`
